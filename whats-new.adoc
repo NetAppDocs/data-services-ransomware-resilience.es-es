@@ -38,18 +38,6 @@ Para obtener más detalles sobre lo que ha cambiado, consulte la https://docs.ne
 
 
 
-=== Protección contra violaciones de datos
-
-
-
-=== SIEM
-
-
-
-=== Entorno de restauración limpio
-
-
-
 == 15 de julio de 2025
 
 
