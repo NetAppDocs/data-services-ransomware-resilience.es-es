@@ -1,0 +1,323 @@
+---
+sidebar: sidebar 
+permalink: rp-use-alert.html 
+keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
+summary: Si Ransomware Resilience detecta un posible ataque, aparece una alerta en el Panel de Ransomware Resilience indicando un ataque potencial.  En este punto, debes mirar el riesgo potencial en la pestaña Alertas de resiliencia ante ransomware. 
+---
+= Gestione las alertas de ransomware detectadas con NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cuando NetApp Ransomware Resilience detecta un posible ataque, muestra una alerta en el Tablero y en el área de Notificaciones.  Ransomware Resilience toma una instantánea inmediatamente.  Revise el riesgo potencial en la pestaña *Alertas* de resiliencia ante ransomware.
+
+Si Ransomware Resilience detecta un posible ataque, aparece una notificación en la configuración de notificaciones de la consola y se envía un correo electrónico a la dirección configurada.  El correo electrónico incluye información sobre la gravedad, la carga de trabajo afectada y un enlace a la alerta en la pestaña *Alertas* de resiliencia ante ransomware.
+
+Puede descartar los falsos positivos o decidir recuperar sus datos inmediatamente.
+
+
+TIP: Si descarta la alerta, Ransomware Resilience aprende este comportamiento, lo asocia con operaciones normales y no vuelve a iniciar una alerta al respecto.
+
+Para comenzar a recuperar sus datos, marque la alerta como lista para recuperación para que su administrador de almacenamiento pueda comenzar el proceso de recuperación.
+
+Cada alerta puede incluir múltiples incidentes en diferentes volúmenes y estados.  Revisar todos los incidentes.
+
+Ransomware Resilience proporciona información llamada _evidencia_ sobre lo que causó que se emitiera la alerta, como la siguiente:
+
+* Se crearon o cambiaron extensiones de archivo
+* Creación de archivos con comparación de tasas detectadas y esperadas
+* Eliminación de archivos con una comparación de las tasas detectadas y esperadas
+* Cuando el cifrado es alto, sin cambios en la extensión del archivo
+
+
+Una alerta se clasifica como una de las siguientes:
+
+* *Ataque potencial*: se produce una alerta cuando Autonomous Ransomware Protection detecta una nueva extensión y la ocurrencia se repite más de 20 veces en las últimas 24 horas (comportamiento predeterminado).
+* *Advertencia*: Se produce una advertencia basada en los siguientes comportamientos:
++
+** No se ha identificado antes la detección de una nueva extensión y el mismo comportamiento no se repite suficientes veces como para declararlo como un ataque.
+** Se observa alta entropía.
+** La actividad de lectura, escritura, cambio de nombre o eliminación de archivos se duplicó en comparación con los niveles normales.
+
+
+
+
+
+NOTE: Para los entornos SAN, las advertencias solo se basan en alta entropía.
+
+La evidencia se basa en información de Autonomous Ransomware Protection en ONTAP. Para más detalles, consulte https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Descripción general de la protección autónoma contra ransomware"^] .
+
+Una alerta puede tener uno de los siguientes estados:
+
+* *Nuevo*
+* *Inactivo*
+
+
+Un incidente de alerta puede tener uno de los siguientes estados:
+
+* *Nuevo*: Todos los incidentes se marcan como "nuevos" cuando se identifican por primera vez.
+* *Descartado*: si sospecha que la actividad no es un ataque de ransomware, puede cambiar el estado a "Descartado".
++
+
+CAUTION: Después de descartar un ataque, no podrás volver a cambiarlo.  Si descarta una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente.
+
+* *Desestimando*: El incidente está en proceso de ser desestimado.
+* *Resuelto*: El incidente ha sido solucionado.
+* *Resuelto automáticamente*: para alertas de baja prioridad, el incidente se resuelve automáticamente si no se han tomado medidas al respecto dentro de cinco días.
+
+
+
+TIP: Si configuró un sistema de gestión de eventos y seguridad (SIEM) en Ransomware Resilience en la página Configuración, Ransomware Resilience envía detalles de alerta a su sistema SIEM.
+
+
+
+== Ver alertas
+
+Puede acceder a las alertas desde el Panel de resiliencia ante ransomware o desde la pestaña *Alertas*.
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de la organización, administrador de carpeta o proyecto, administrador de resiliencia ante ransomware o visor de resiliencia ante ransomware. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
+
+.Pasos
+. En el Panel de resiliencia ante ransomware, revise el panel Alertas.
+. Seleccione *Ver todo* en uno de los estados.
+. Seleccione una alerta para revisar todos los incidentes en cada volumen para cada alerta.
+. Para revisar alertas adicionales, seleccione *Alerta* en las rutas de navegación de la parte superior izquierda.
+. Revise las alertas en la página Alertas.
++
+image:screen-alerts.png["Página de alertas"]
+
+. Continúe con una de las siguientes opciones:
++
+** <<Detectar actividad maliciosa y comportamiento anómalo del usuario>> .
+** <<Marcar los incidentes de ransomware como listos para recuperación (después de que se neutralizan los incidentes)>> .
+** <<Descartar incidentes que no sean ataques potenciales>> .
+
+
+
+
+
+
+== Responder a un correo electrónico de alerta
+
+Cuando Ransomware Resilience detecta un ataque potencial, envía una notificación por correo electrónico a los usuarios suscritos según sus preferencias de notificación de suscripción.  El correo electrónico contiene información sobre la alerta, incluida la gravedad y los recursos afectados.
+
+Puede recibir notificaciones por correo electrónico sobre alertas de resiliencia ante ransomware.  Esta función le ayuda a mantenerse informado sobre las alertas, su gravedad y los recursos afectados.
+
+
+TIP: Para suscribirse a las notificaciones por correo electrónico, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["Establecer la configuración de notificaciones por correo electrónico"^] .
+
+. En Ransomware Resilience, vaya a la página *Configuración*.
+. En *Notificaciones*, busque la configuración de notificaciones por correo electrónico.
+. Introduzca la dirección de correo electrónico donde desea recibir alertas.
+. Guarde sus cambios.
+
+
+Ahora recibirá notificaciones por correo electrónico cuando se generen nuevas alertas.
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de la organización, administrador de carpeta o proyecto, administrador de resiliencia ante ransomware o visor de resiliencia ante ransomware. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
+
+.Pasos
+. Ver el correo electrónico.
+. En el correo electrónico, seleccione *Ver alerta* e inicie sesión en Ransomware Resilience.
++
+Aparece la página de Alertas.
+
+. Revise todos los incidentes en cada volumen para cada alerta.
+. Para revisar alertas adicionales, haga clic en *Alerta* en las rutas de navegación de la parte superior izquierda.
+. Continúe con una de las siguientes opciones:
++
+** <<Detectar actividad maliciosa y comportamiento anómalo del usuario>> .
+** <<Marcar los incidentes de ransomware como listos para recuperación (después de que se neutralizan los incidentes)>> .
+** <<Descartar incidentes que no sean ataques potenciales>> .
+
+
+
+
+
+
+== Detectar actividad maliciosa y comportamiento anómalo del usuario
+
+Al mirar la pestaña Alertas, puede identificar si hay actividad maliciosa.
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+
+*¿Qué detalles aparecen?*  Los detalles que aparecen dependen de cómo se activó la alerta:
+
+* Activado por la función de protección autónoma contra ransomware en ONTAP.  Esto detecta actividad maliciosa según el comportamiento de los archivos en el volumen.
+* Activado por la seguridad de la carga de trabajo de Data Infrastructure Insights .  Esto requiere una licencia para la seguridad de la carga de trabajo de Data Infrastructure Insights y que la habilite en Ransomware Resilience.  Esta función detecta un comportamiento anómalo del usuario en sus cargas de trabajo de almacenamiento y le permite bloquear a ese usuario para que no pueda acceder más.
++
+Para habilitar la seguridad de la carga de trabajo en Ransomware Resilience, vaya a la página *Configuración* y seleccione la opción *Conexión de seguridad de carga de trabajo*.
+
++
+Para obtener una descripción general de la seguridad de la carga de trabajo de Data Infrastructure Insights , revise https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Acerca de la seguridad de la carga de trabajo"^] .
+
+
+
+
+TIP: Si no tiene una licencia para la seguridad de la carga de trabajo de infraestructura de datos y no la habilita en Ransomware Resilience, no verá la información de comportamiento anómalo del usuario.
+
+Cuando ocurre una actividad maliciosa, se genera una alerta y se toma una instantánea automatizada.
+
+
+
+=== Ver actividad maliciosa solo desde Autonomous Ransomware Protection
+
+Cuando Autonomous Ransomware Protection activa una alerta en Ransomware Resilience, puedes ver los siguientes detalles:
+
+* Entropía de los datos entrantes
+* Tasa esperada de creación de nuevos archivos en comparación con la tasa detectada
+* Tasa de eliminación de archivos esperada en comparación con la tasa detectada
+* Tasa de cambio de nombre de archivos esperada en comparación con la tasa detectada
+* Archivos y directorios afectados
+
+
+
+NOTE: Estos detalles son visibles para las cargas de trabajo NAS.  Para entornos SAN, solo están disponibles los datos de entropía.
+
+.Pasos
+. En el menú Resiliencia ante ransomware, seleccione *Alertas*.
+. Seleccione una alerta.
+. Revise los incidentes en la alerta.
++
+image:screen-alerts-incidents3.png["Página de incidentes de alerta"]
+
+. Seleccione un incidente para revisar los detalles del mismo.
+
+
+
+
+=== Visualizar el comportamiento anómalo de los usuarios en Data Infrastructure Insights Seguridad de la carga de trabajo
+
+Cuando la seguridad de carga de trabajo de Data Infrastructure Insights activa una alerta en Ransomware Resilience, puede ver al usuario sospechoso, bloquearlo e investigar su actividad directamente en la seguridad de carga de trabajo de Data Infrastructure Insights .
+
+
+TIP: Estas características se suman a los detalles disponibles únicamente en Autonomous Ransomware Protection.
+
+.Antes de empezar
+Esta opción requiere una licencia para la seguridad de la carga de trabajo de Data Infrastructure Insights y que la habilite en Ransomware Resilience.
+
+Para habilitar la seguridad de la carga de trabajo en Ransomware Resilience, haga lo siguiente:
+
+. Vaya a la página *Configuración*.
+. Seleccione la opción *Conexión de seguridad de carga de trabajo*.
++
+Para obtener más información, consulte link:rp-use-settings.html["Configurar los ajustes de resiliencia frente al ransomware"] .
+
+
+
+.Pasos
+. En el menú Resiliencia ante ransomware, seleccione *Alertas*.
+. Seleccione una alerta.
+. Revise los incidentes en la alerta.
++
+image:screenshot-alerts.png["Captura de pantalla de la página de Alertas."]
+
+. Para bloquear a un usuario sospechoso y evitar que acceda más a su entorno monitoreado por la consola, seleccione el enlace *Bloquear usuario*.
+. Investigue la alerta o un incidente en la alerta:
++
+.. Para investigar más a fondo la alerta en Seguridad de carga de trabajo de Data Infrastructure Insights , seleccione el enlace *Investigar en Seguridad de carga de trabajo*.
+.. Seleccione un incidente para revisar los detalles del mismo.
+
+
+
+
+Seguridad de la carga de trabajo de Data Infrastructure Insights se abre en una nueva pestaña.
+
++image:screen-alerts-incidents-diiws-diiwspage.png["Investigar en seguridad de la carga de trabajo"]
+
+
+
+== Marcar los incidentes de ransomware como listos para recuperación (después de que se neutralizan los incidentes)
+
+Después de detener el ataque, notifique a su administrador de almacenamiento que los datos están listos para que puedan comenzar la recuperación.
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+
+.Pasos
+. En el menú Resiliencia ante ransomware, seleccione *Alertas*.
++
+image:screen-alerts.png["Página de alertas"]
+
+. En la página Alertas, seleccione la alerta.
+. Revise los incidentes en la alerta.
++
+image:screen-alerts-incidents3.png["Página de incidentes de alerta"]
+
+. Si determina que los incidentes están listos para recuperación, seleccione *Marcar como necesario para la restauración*.
+. Confirme la acción y seleccione *Marcar como necesaria la restauración*.
+. Para iniciar la recuperación de la carga de trabajo, seleccione *Recuperar* carga de trabajo en el mensaje o seleccione la pestaña *Recuperación*.
+
+
+.Resultado
+Una vez que la alerta se marca para restaurar, se mueve de la pestaña Alertas a la pestaña Recuperación.
+
+
+
+== Descartar incidentes que no sean ataques potenciales
+
+Después de revisar los incidentes, debe determinar si son ataques potenciales.  Si no se cumple la condición anterior podrán ser despedidos.
+
+Puede descartar los falsos positivos o decidir recuperar sus datos inmediatamente.  Si descarta la alerta, Ransomware Resilience aprende este comportamiento, lo asocia con operaciones normales y no vuelve a iniciar una alerta sobre dicho comportamiento.
+
+Si descarta una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta a un posible ataque de ransomware se eliminan de forma permanente.
+
+
+CAUTION: Si descarta una alerta, no podrá volver a cambiar ese estado a ningún otro y no podrá deshacer este cambio.
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+
+.Pasos
+. En el menú Resiliencia ante ransomware, seleccione *Alertas*.
++
+image:screen-alerts.png["Página de alertas"]
+
+. En la página Alertas, seleccione la alerta.
++
+image:screen-alerts-incidents3.png["Página de incidentes de alerta"]
+
+. Seleccione uno o más incidentes.  O bien, seleccione todos los incidentes seleccionando el cuadro ID de incidente en la parte superior izquierda de la tabla.
+. Si determina que el incidente no es una amenaza, deséchelo como un falso positivo:
++
+** Seleccione el incidente.
+** Seleccione el botón *Editar estado* encima de la tabla.
++
+image:screen-alerts-status-edit.png["Página de estado de edición de alertas"]
+
+
+
+. Desde el cuadro Editar estado, seleccione el estado *“Descartado”*.
++
+Aparece información adicional sobre la carga de trabajo y sobre que se eliminan copias de instantáneas.
+
+. Seleccione *Guardar*.
++
+El estado del incidente o incidentes cambia a “Descartado”.
+
+
+
+
+
+== Ver una lista de archivos afectados
+
+Antes de restaurar una carga de trabajo de la aplicación a nivel de archivo, puede ver una lista de los archivos afectados.  Puede acceder a la página de Alertas para descargar una lista de archivos afectados.  Luego utilice la página Recuperación para cargar la lista y elegir qué archivos restaurar.
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+
+.Pasos
+Utilice la página Alertas para recuperar la lista de archivos afectados.
+
+
+TIP: Si un volumen tiene varias alertas, es posible que deba descargar la lista CSV de los archivos afectados para cada alerta.
+
+. En el menú Resiliencia ante ransomware, seleccione *Alertas*.
+. En la página Alertas, ordene los resultados por carga de trabajo para mostrar las alertas de la carga de trabajo de la aplicación que desea restaurar.
+. De la lista de alertas para esa carga de trabajo, seleccione una alerta.
+. Para esa alerta, seleccione un solo incidente.
++
+image:screen-alerts-incidents-impacted-files.png["lista de archivos afectados por una alerta específica"]
+
+. Para ese incidente, seleccione el ícono de descarga y descargue la lista de archivos afectados en formato CSV.
+

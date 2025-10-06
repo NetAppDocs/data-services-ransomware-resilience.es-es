@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: rp-use-overview.html 
+keywords: ransomware protection, ransomware protection, detect ransomware attacks, recover from ransomware attack 
+summary: Con NetApp Ransomware Resilience, puede ver el estado de la carga de trabajo y protegerla. 
+---
+= Utilice la resiliencia contra ransomware de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Con NetApp Ransomware Resilience, puede ver el estado de la carga de trabajo y protegerla.
+
+* link:rp-start-discover.html["Descubra las cargas de trabajo en Ransomware Resilience"] .
+* link:rp-use-dashboard.html["Visualizar la protección y el estado de la carga de trabajo desde el Panel de Control"] .
++
+** Revise y actúe según las recomendaciones de protección contra ransomware.
+
+
+* link:rp-use-protect.html["Proteger las cargas de trabajo"]:
++
+** Asignar una estrategia de protección contra ransomware a las cargas de trabajo.
+** Aumente la protección de las aplicaciones para evitar futuros ataques de ransomware.
+** Crear, cambiar o eliminar una estrategia de protección.
+
+
+* link:rp-use-alert.html["Responder a la detección de posibles ataques de ransomware"] .
+* link:rp-use-recover.html["Recuperarse de un ataque"](después de que los incidentes sean neutralizados).
+* link:rp-use-settings.html["Configurar los ajustes de protección"] .
+

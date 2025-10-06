@@ -1,0 +1,215 @@
+---
+sidebar: sidebar 
+permalink: rp-start-simulate.html 
+keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
+summary: Realice un simulacro de preparación ante ransomware simulando un ataque de ransomware en una carga de trabajo de muestra recién creada.  Luego, investigue el ataque simulado y recupere la carga de trabajo de muestra.  Puede ejecutar un simulacro de preparación ante ransomware varias veces. 
+---
+= Realice un simulacro de preparación para ataques de ransomware en NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Ejecute un simulacro de preparación para un ataque de ransomware simulando un ataque en una nueva carga de trabajo de muestra.  Investigar el ataque simulado y recuperar la carga de trabajo.  Utilice esta función para probar las notificaciones de alerta, la respuesta y la recuperación.  Ejecute el ejercicio con tanta frecuencia como sea necesario.
+
+
+TIP: Sus datos de carga de trabajo reales no se verán afectados.
+
+Puede ejecutar simulacros de preparación en cargas de trabajo NFS y CIFS (SMB).
+
+
+
+== Configurar un simulacro de preparación para un ataque de ransomware
+
+Antes de ejecutar una simulación, configure un ejercicio en la página Configuración.  Acceda a la página de Configuración desde la opción Acciones en el menú superior.
+
+Debe ingresar un nombre de usuario y contraseña para las siguientes situaciones:
+
+* Si se produjeron cambios en el nombre de usuario o la contraseña para la máquina virtual de almacenamiento seleccionada anteriormente
+* Si selecciona una máquina virtual de almacenamiento CIFS (SMB) diferente
+* Si ingresa un nombre de carga de trabajo de prueba diferente
+
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+
+.Pasos
+. Desde el menú NetApp Ransomware Resilience, seleccione el botón *Ejecutar simulacro de preparación* en la parte superior derecha.
++
+image:screen-dashboard.png["Página del panel que muestra el botón de simulacro de preparación para la ejecución"]
+
+. En la tarjeta de simulacro de preparación de la página Configuración, seleccione *Configurar*.
++
+La consola muestra la página Configurar simulacro de preparación.
+
++
+image:screen-settings-alert-drill-configure.png["Configurar la página de simulacro de preparación"]
+
+. Haga lo siguiente:
++
+.. Seleccione el agente de consola que desea utilizar para el simulacro de preparación.
+.. Seleccione un sistema de prueba.
+.. Seleccione un SVM de almacenamiento de prueba.
+.. Si seleccionó una máquina virtual de almacenamiento CIFS (SMB), aparecerán los campos **Nombre de usuario** y **Contraseña**.  Introduzca el nombre de usuario y la contraseña para la máquina virtual de almacenamiento.
+.. Introduzca el nombre de una nueva carga de trabajo de prueba que se creará.  No incluya guiones en el nombre.
+
+
+. Seleccione *Guardar*.
+
+
+
+TIP: Puede editar la configuración del simulacro de preparación más tarde utilizando la página Configuración.
+
+
+
+== Iniciar un simulacro de preparación
+
+Después de configurar el simulacro de preparación, puede iniciarlo.
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+
+Cuando se inicia el simulacro de preparación, Ransomware Resilience omite el modo de aprendizaje y comienza el simulacro en modo activo.  El estado de detección de la carga de trabajo es Activo.
+
+
+TIP: Una carga de trabajo puede tener un estado de *Modo de aprendizaje* de detección de ransomware cuando se asigna recientemente una política de detección y Ransomware Resilience escanea las cargas de trabajo.
+
+.Pasos
+. Debe realizar una de las siguientes acciones:
++
+** Desde el menú Resiliencia ante ransomware, seleccione el botón *Ejecutar simulacro de preparación* en la parte superior derecha.
++
+image:screen-dashboard.png["Página del panel que muestra el botón de simulacro de preparación para la ejecución"]
+
+** O bien, desde la página Configuración, en la tarjeta de simulacro de preparación, seleccione *Iniciar*.
+
+
+. Si ya ha configurado el simulacro de preparación, después de seleccionar *Iniciar*, comenzará el simulacro de preparación.
+
+
+
+NOTE: Una vez iniciado el simulacro, no es posible editar la configuración de preparación del simulacro.  Puedes restablecerlo para comenzar de nuevo.
+
+
+
+== Responder a una alerta de simulacro de preparación
+
+Pon a prueba tu preparación respondiendo a una alerta de simulacro de preparación.
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+
+.Pasos
+. En el menú Resiliencia ante ransomware, seleccione *Alertas*.
++
+La consola muestra la página Alertas.  En la columna ID de alerta, verá "Simulacro de preparación" junto al ID.
+
++
+image:screen-alerts-readiness.png["Página de alertas que muestra la alerta de simulacro de preparación"]
+
+. Seleccione la alerta con la indicación "Simulacro de preparación".  En la página de detalles de Alertas aparece una lista de alertas de incidentes.
++
+image:screen-alerts-readiness-details.png["Página de detalles de alertas que muestra la alerta del simulacro de preparación"]
+
+. Revisar los incidentes de alerta.
+. Seleccione un incidente de alerta.
++
+image:screen-alerts-readiness-incidents2.png["Página de incidentes que muestra la alerta de simulacro de preparación"]
+
+
+
+Aquí hay algunas cosas que debes tener en cuenta:
+
+* Mira el tipo de ataque potencial.
++
+Si el Tipo indica que un usuario es sospechoso de actividad maliciosa, revise el nombre del usuario.  Es posible que desees investigar más al usuario en Seguridad de carga de trabajo de Data Infrastructure Insights seleccionando *Investigar en Seguridad de carga de trabajo*.
+
+
+
+* Observe la actividad del archivo y los procesos sospechosos:
++
+** Observe los datos detectados entrantes en comparación con los datos esperados.
+** Observe la tasa de creación de archivos que se detecta en comparación con la tasa esperada.
+** Observe la tasa de cambio de nombre de archivo que se detecta en comparación con la tasa esperada.
+** Observe la tasa de eliminación en comparación con la tasa esperada.
+
+
+* Mire la lista de archivos afectados.  Mira las extensiones que podrían estar causando el ataque.
+* Determine el impacto y la amplitud del ataque revisando la cantidad de archivos y directorios afectados.
+
+
+
+
+== Restaurar la carga de trabajo de prueba
+
+Después de revisar la alerta del simulacro de preparación, restaure la carga de trabajo de prueba si es necesario.
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+
+.Pasos
+. Regresar a la página de detalles de alerta.
+. Si se debe restaurar la carga de trabajo de prueba, haga lo siguiente:
++
+** Seleccione *Marcar como necesario restaurar*.
+** Revise la confirmación y seleccione *Marcar como necesaria la restauración* en el cuadro de confirmación.
++
+*** En el menú Resiliencia ante ransomware, seleccione *Recuperación*.
+*** Seleccione la carga de trabajo de prueba marcada con "Simulacro de preparación" que desea restaurar.
+*** Seleccione *Restaurar*.
+*** En la página Restaurar, proporcione información para la restauración:
+
+
+** Seleccione la copia de la instantánea de origen.
+** Seleccione el volumen de destino.
+
+
+. En la página de revisión de restauración, seleccione *Restaurar*.
++
+La consola muestra el estado de la restauración del simulacro de preparación como "En progreso" en la página Recuperación.
+
++
+Una vez completada la restauración, la consola cambia el estado de la carga de trabajo a *Restaurada*.
+
+. Revise la carga de trabajo restaurada.
+
+
+
+TIP: Para obtener detalles sobre el proceso de restauración, consultelink:rp-use-recover.html["Recuperarse de un ataque de ransomware (después de neutralizar los incidentes)"] .
+
+
+
+== Cambiar el estado de las alertas después del simulacro de preparación
+
+Después de revisar la alerta del simulacro de preparación y restaurar la carga de trabajo, cambie el estado de la alerta si es necesario.
+
+*Se requiere el rol de consola* Administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+
+.Pasos
+. Regresar a la página de detalles de alerta.
+. Seleccione la alerta nuevamente.
+. Indique el estado seleccionando *Editar estado* y cambie el estado a uno de los siguientes:
++
+** Descartado: si sospecha que la actividad no es un ataque de ransomware, cambie el estado a Descartado.
++
+
+IMPORTANT: Después de descartar un ataque, no puedes revertirlo.  Si descarta una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente.  Si descarta la alerta, el simulacro de preparación se considerará completado.
+
+** Resuelto: El incidente ha sido mitigado.
+
+
+
+
+
+
+== Revisar los informes sobre el simulacro de preparación
+
+Una vez finalizado el simulacro de preparación, es posible que desees revisar y guardar un informe sobre el simulacro.
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de la organización, administrador de carpeta o proyecto, administrador de resiliencia ante ransomware o visor de resiliencia ante ransomware. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
+
+.Pasos
+. En el menú Resiliencia ante ransomware, seleccione *Informes*.
++
+image:screen-reports.png["Página de informes que muestra el informe del simulacro de preparación"]
+
+. Seleccione *Simulacros de preparación* y *Descargar* para descargar el informe del simulacro de preparación.
+

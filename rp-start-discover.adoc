@@ -1,0 +1,105 @@
+---
+sidebar: sidebar 
+permalink: rp-start-discover.html 
+keywords: bluexp, ransomware protection, protection, risk, cyber attack, security,data security, data protection, data recovery, data discovery 
+summary: Durante el descubrimiento, Ransomware Resilience analiza todos los volúmenes y archivos de los sistemas en todos los agentes y cuentas de la consola. 
+---
+= Descubra las cargas de trabajo en NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Antes de poder utilizar NetApp Ransomware Resilience, primero debe descubrir datos.  Durante el descubrimiento, Ransomware Resilience analiza todos los volúmenes y archivos de los sistemas en todos los agentes de la consola y proyectos dentro de una organización.
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+
+¿Qué descubre Ransomware Resilience?  Ransomware Resilience evalúa aplicaciones MySQL, aplicaciones Oracle, almacenes de datos VMware, recursos compartidos de archivos y almacenamiento en bloques.
+
+
+NOTE: Ransomware Resilience no descubre cargas de trabajo con volúmenes que utilizan FlexGroup.
+
+Ransomware Resilience descubre y muestra configuraciones del sistema compatibles y no compatibles en el Panel de control.
+
+Ransomware Resilience verifica su protección de respaldo actual, copias instantáneas y opciones de protección autónoma contra ransomware de NetApp .  Luego recomienda formas de mejorar su protección contra ransomware.
+
+¿Cómo puedes descubrir las cargas de trabajo?  Puedes hacer lo siguiente:
+
+* Dentro de cada agente de consola, seleccione los sistemas en los que desea descubrir cargas de trabajo. Esta función puede resultarle beneficiosa si desea proteger cargas de trabajo específicas en su entorno y no otras.
+* Descubra cargas de trabajo recién creadas para sistemas previamente seleccionados.
+* Descubra nuevos sistemas.
+
+
+
+
+== Seleccione cargas de trabajo para descubrir y proteger
+
+Dentro de cada agente de consola, seleccione los sistemas en los que desea descubrir cargas de trabajo.
+
+.Pasos
+. Desde la consola de NetApp , seleccione *Protección* > *Protección contra ransomware*.
++
+Si este es su primer inicio de sesión, aparecerá la página de destino.
+
++
+image:screen-landing.png["Captura de pantalla de la página de destino de Ransomware Resilience"]
+
++
+
+NOTE: Si inició la prueba gratuita, la etiqueta del botón *Iniciar prueba gratuita de 30 días* cambia a *Comenzar descubriendo cargas de trabajo*.
+
+. Desde la página de destino inicial, seleccione *Comenzar por descubrir cargas de trabajo*.
++
+Ransomware Resilience encuentra sistemas compatibles y no compatibles. Este proceso puede tardar unos minutos.
+
++
+image:screen-discover-workloads-unsupported.png["Captura de pantalla de Descubrir cargas de trabajo"]
+
+. Para descubrir cargas de trabajo para un agente de consola específico, seleccione *Seleccionar sistemas* junto al agente de consola donde desea descubrir cargas de trabajo.
+. Seleccione los sistemas en los que desea descubrir cargas de trabajo.
+. Seleccione *Descubrir*.
++
+Ransomware Resilience descubre datos de carga de trabajo solo para aquellos agentes de consola con sistemas seleccionados. Este proceso puede tardar unos minutos.
+
+. Para descargar la lista de cargas de trabajo descubiertas, seleccione *Descargar resultados*.
+. Para mostrar el panel de resiliencia ante ransomware, seleccione *Ir al panel*.
++
+El panel de control muestra el estado de la protección de datos.  La cantidad de cargas de trabajo protegidas o en riesgo se actualiza a medida que se descubren nuevas cargas de trabajo.
+
++
+image:screen-dashboard.png["Panel de resiliencia frente al ransomware"]
+
++
+link:rp-use-dashboard.html["Descubra lo que le muestra el Dashboard."]
+
+
+
+
+
+== Descubra cargas de trabajo recién creadas para sistemas previamente seleccionados
+
+Si ya ha seleccionado sistemas para el descubrimiento, puede descubrir cargas de trabajo recién creadas para esos entornos desde el Panel de control.
+
+.Pasos
+. Para identificar la fecha del último descubrimiento, observe la fecha y la hora junto al ícono *Actualizar* en la parte superior derecha del panel de resiliencia ante ransomware.
+. Desde el Panel de control, seleccione el *ícono Actualizar* para buscar nuevas cargas de trabajo.
+
+
+
+
+== Descubra nuevos sistemas
+
+Si ya has descubierto sistemas, podrás encontrar otros nuevos o no seleccionados anteriormente.
+
+.Pasos
+. En el menú Resiliencia contra ransomware, seleccione la verticalimage:button-actions-vertical.png["Acciones verticales"] ...opción en la parte superior derecha.  En el menú desplegable, seleccione *Configuración*.
+. En la tarjeta Descubrimiento de carga de trabajo, seleccione *Descubrir cargas de trabajo*.
++
+
+TIP: Este proceso puede tardar unos minutos y un ícono de carga muestra el progreso.
+
+. Ransomware Resilience descubre sistemas compatibles y no compatibles.  Ransomware Resilience no admite un sistema si su versión de ONTAP es inferior a la versión requerida.  Cuando pasa el cursor sobre un sistema no compatible, aparece una información sobre herramientas que muestra el motivo.  Seleccione los sistemas en los que desea descubrir cargas de trabajo.
+. Seleccione *Descubrir*.
+

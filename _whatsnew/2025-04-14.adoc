@@ -1,0 +1,31 @@
+= Informes de simulacros de preparación
+:allow-uri-read: 
+
+
+
+
+=== Informes de simulacros de preparación
+
+Con esta versión, puedes revisar los informes de simulacros de preparación para ataques de ransomware.  Un simulacro de preparación le permite simular un ataque de ransomware en una carga de trabajo de muestra recién creada.  Luego, investigue el ataque simulado y recupere la carga de trabajo de muestra.  Esta función le ayuda a saber que está preparado en caso de un ataque de ransomware real al probar los procesos de notificación de alerta, respuesta y recuperación.
+
+Para más detalles, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Realizar un simulacro de preparación para un ataque de ransomware"] .
+
+
+
+=== Nuevos roles y permisos de control de acceso basados en roles
+
+Anteriormente, podía asignar roles y permisos a los usuarios en función de sus responsabilidades, lo que le ayudaba a administrar el acceso de los usuarios a la BlueXP ransomware protection.  Con esta versión, hay dos nuevos roles específicos para la BlueXP ransomware protection con permisos actualizados.  Los nuevos roles son:
+
+* Administrador de protección contra ransomware
+* Visor de protección contra ransomware
+
+
+Para obtener detalles sobre los permisos, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["Acceso basado en roles a las funciones de BlueXP ransomware protection"] .
+
+
+
+=== Mejoras en los pagos
+
+Esta versión incluye varias mejoras en el proceso de pago.
+
+Para más detalles, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Configurar opciones de licencia y pago"] .

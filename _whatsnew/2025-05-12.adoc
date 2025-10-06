@@ -1,0 +1,34 @@
+= Compatibilidad con Amazon FSx for NetApp ONTAP
+:allow-uri-read: 
+
+
+
+
+=== Compatibilidad con Amazon FSx for NetApp ONTAP
+
+Esta versión es compatible con Amazon FSx for NetApp ONTAP.  Esta función le ayuda a proteger sus cargas de trabajo de FSx para ONTAP con la BlueXP ransomware protection.
+
+FSx for ONTAP es un servicio totalmente administrado que proporciona la potencia del almacenamiento NetApp ONTAP en la nube.  Proporciona las mismas características, rendimiento y capacidades administrativas que utiliza en sus instalaciones con la agilidad y escalabilidad de un servicio nativo de AWS.
+
+Se realizaron los siguientes cambios en el flujo de trabajo de BlueXP ransomware protection :
+
+* Discovery incluye cargas de trabajo en FSx para entornos de trabajo de ONTAP 9.15.
+* La pestaña Protección muestra las cargas de trabajo en FSx para entornos ONTAP .  En este entorno, debe realizar operaciones de respaldo utilizando el servicio de respaldo FSx para ONTAP .  Puede restaurar estas cargas de trabajo utilizando instantáneas de BlueXP ransomware protection .
++
+
+TIP: Las políticas de respaldo para una carga de trabajo que se ejecuta en FSx para ONTAP no se pueden configurar en BlueXP.  Cualquier política de respaldo existente establecida en Amazon FSx for NetApp ONTAP permanecerá sin cambios.
+
+* Los incidentes de alerta muestran el nuevo entorno de trabajo de FSx para ONTAP .
+
+
+Para más detalles, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Obtenga más información sobre la BlueXP ransomware protection y los entornos de trabajo"] .
+
+Para obtener información sobre las opciones admitidas, consulte la https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["Limitaciones de la BlueXP ransomware protection"] .
+
+
+
+=== Se necesita el rol de acceso a BlueXP
+
+Ahora necesita uno de los siguientes roles de acceso para ver, descubrir o administrar la BlueXP ransomware protection: administrador de la organización, administrador de carpeta o proyecto, administrador de protección contra ransomware o visor de protección contra ransomware.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .

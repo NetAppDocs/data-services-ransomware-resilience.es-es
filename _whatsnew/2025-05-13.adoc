@@ -1,0 +1,15 @@
+= Informes de entornos de trabajo no compatibles con la BlueXP ransomware protection
+:allow-uri-read: 
+
+
+
+
+=== Informes de entornos de trabajo no compatibles con la BlueXP ransomware protection
+
+Durante el flujo de trabajo de descubrimiento, la BlueXP ransomware protection informa más detalles cuando pasa el cursor sobre Cargas de trabajo compatibles o No compatibles.  Esto le ayudará a comprender por qué el servicio de BlueXP ransomware protection no detecta algunas de sus cargas de trabajo.
+
+Hay muchas razones por las cuales el servicio no admite un entorno de trabajo, por ejemplo, la versión de ONTAP en su entorno de trabajo podría ser inferior a la versión requerida.  Cuando pasa el cursor sobre un entorno de trabajo no compatible, aparece una información sobre herramientas que muestra el motivo.
+
+Puede ver los entornos de trabajo no compatibles durante el descubrimiento inicial, donde también puede descargar los resultados.  También puede ver los resultados del descubrimiento desde la opción *Descubrimiento de carga de trabajo* en la página Configuración.
+
+Para más detalles, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Descubra las cargas de trabajo en la BlueXP ransomware protection"] .

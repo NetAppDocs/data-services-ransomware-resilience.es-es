@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: rp-start-login.html 
+keywords: bluexp login, ransomware protection, cyber attack, log in, access 
+summary: Comience a utilizar NetApp Ransomware Resilience a través de la consola de NetApp . 
+---
+= Acceda a la resiliencia contra ransomware de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Inicie sesión en NetApp Ransomware Resilience a través de la consola de NetApp .
+
+Para iniciar sesión en la consola, puede usar sus credenciales del sitio de soporte de NetApp o puede registrarse para iniciar sesión en la nube de NetApp usando su correo electrónico y una contraseña. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Obtenga más información sobre cómo iniciar sesión"^] .
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de la organización, administrador de carpeta o proyecto, administrador de resiliencia ante ransomware o visor de resiliencia ante ransomware. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
+
+.Pasos
+. Abra un navegador web y vaya alink:https://console.netapp.com/["la consola"^] .
++
+Aparece la página de inicio de sesión de la consola.
+
+. Inicie sesión en la consola.
+. Desde la navegación izquierda de la Consola, seleccione *Protección* > *Resiliencia ante ransomware*.
++
+Si es la primera vez que inicia sesión en este servicio, aparecerá la página de destino.
+
++
+
+NOTE: Si no tiene un agente de consola o no es el adecuado para este servicio, deberá implementar uno. link:rp-start-setup.html["Aprenda a configurar un agente de consola"] .
+
++
+image:screen-landing.png["Captura de pantalla de la página de inicio de Ransomware Resilience."]
+
++
+De lo contrario, aparecerá el panel de resiliencia ante ransomware.
+
++
+image:screen-dashboard.png["Captura de pantalla del panel de resiliencia ante ransomware"]
+
+. Si aún no lo ha hecho, seleccione la opción *Descubrir cargas de trabajo*.
++
+Consulte link:rp-start-discover.html["Descubrir cargas de trabajo"] .
+
+

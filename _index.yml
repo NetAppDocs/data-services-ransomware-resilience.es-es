@@ -1,0 +1,59 @@
+---
+indexpage:
+  title: Documentación de NetApp sobre resiliencia ante ransomware
+  summary: NetApp Ransomware Resilience es un servicio de orquestación para la protección,
+    detección y recuperación contra ransomware.  Ransomware Resilience protege cargas
+    de trabajo basadas en aplicaciones de Oracle, MySQL, almacenes de datos de VM
+    y recursos compartidos de archivos en el almacenamiento NAS local, así como en
+    Cloud Volumes ONTAP en Amazon Web Services (usando los protocolos NFS y CIFS)
+    en organizaciones de NetApp Console y realiza copias de seguridad de los datos
+    en el almacenamiento en la nube de Amazon Web Services (AWS) o NetApp StorageGRID.
+  keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon
+    web services, aws, storagegrid, protection, resilience
+  lead: NetApp Ransomware Resilience es un servicio de orquestación para la protección,
+    detección y recuperación contra ransomware.  Ransomware Resilience protege cargas
+    de trabajo basadas en aplicaciones de Oracle, MySQL, almacenes de datos de VM
+    y recursos compartidos de archivos en el almacenamiento NAS local, así como en
+    Cloud Volumes ONTAP en Amazon Web Services (usando los protocolos NFS y CIFS)
+    en organizaciones de consola y realiza copias de seguridad de los datos en el
+    almacenamiento en la nube de Amazon Web Services (AWS) o NetApp StorageGRID.
+  tiles:
+  - title: Empezar
+    links:
+    - title: Aprenda sobre la resiliencia frente al ransomware
+      url: "/concept-ransomware-resilience.html"
+    - title: Novedades en resiliencia frente al ransomware
+      url: "/whats-new.html"
+    - title: Prerrequisitos
+      url: "/rp-start-prerequisites.html"
+    - title: Inicio rápido
+      url: "/rp-start-quick-start.html"
+    - title: Configurar destinos de respaldo y habilitar la detección de amenazas
+      url: "/rp-use-settings.html"
+    - title: Simular un ataque de ransomware
+      url: "/rp-start-simulate.html"
+  - title: Utilice la resiliencia frente al ransomware
+    links:
+    - title: Descripción general del uso de la resiliencia frente al ransomware
+      url: "/rp-use-overview.html"
+    - title: Descubra las cargas de trabajo
+      url: "/rp-start-discover.html"
+    - title: Visualizar el estado de la carga de trabajo mediante el Panel de control
+      url: "/rp-use-dashboard.html"
+    - title: Proteger las cargas de trabajo
+      url: "/rp-use-protect.html"
+    - title: Busque información de identificación personal con la clasificación de
+        datos de NetApp
+      url: "/rp-use-protect-classify.html"
+    - title: Responder a una alerta detectada
+      url: "/rp-use-alert.html"
+    - title: Recuperarse de un ataque
+      url: "/rp-use-recover.html"
+  - title: Blogs y comunidad
+    links:
+    - title: Consola de NetApp
+      url: https://www.netapp.com/console
+    - title: Servicios de datos de NetApp
+      url: https://www.netapp.com/data-services/
+    - title: Comunidad de NetApp
+      url: https://community.netapp.com/

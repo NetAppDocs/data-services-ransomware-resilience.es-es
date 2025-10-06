@@ -1,0 +1,325 @@
+---
+sidebar: sidebar 
+permalink: rp-reference-roles.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
+summary: NetApp Ransomware Resilience emplea roles para gobernar el acceso que tiene cada usuario a funciones y acciones específicas. 
+---
+= Acceso basado en roles de NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience emplea roles para gobernar el acceso que tiene cada usuario a funciones y acciones específicas.
+
+Ransomware Resilience utiliza los siguientes roles que son específicos de Ransomware Resilience.
+
+* *Administrador de resiliencia contra ransomware*: administra acciones en las pestañas Proteger, Alertas, Recuperar, Configuración e Informes.
+* *Visor de resiliencia contra ransomware*: vea datos de carga de trabajo de NetApp , vea datos de alerta, descargue datos de recuperación y descargue informes.
+
+
+Estos roles se suman a los roles de la plataforma de la consola que rigen el acceso al servicio de la consola y otros servicios, como protección de datos, administración de la carga de trabajo, etc.  Para obtener detalles sobre todos los roles de la plataforma de consola, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["la documentación de configuración y administración"^] .
+
+La siguiente tabla indica las acciones que cada rol de Resiliencia contra Ransomware puede realizar.
+
+[cols="40,20a,20a"]
+|===
+| Característica y acción | Administrador de resiliencia frente al ransomware | Visor de resiliencia contra ransomware 
+
+
+| Ver el panel y todas las pestañas  a| 
+Sí
+ a| 
+Sí
+
+
+
+| En el panel, actualice el estado de la recomendación  a| 
+Sí
+ a| 
+No
+
+
+
+| Comience una prueba gratuita  a| 
+Sí
+ a| 
+No
+
+
+
+| Iniciar el descubrimiento de cargas de trabajo  a| 
+Sí
+ a| 
+No
+
+
+
+| Iniciar el redescubrimiento de cargas de trabajo  a| 
+Sí
+ a| 
+No
+
+
+
+3+| *En la pestaña Proteger*: 
+
+
+| Agregar, modificar o eliminar planes de protección  a| 
+Sí
+ a| 
+No
+
+
+
+| Proteger las cargas de trabajo  a| 
+Sí
+ a| 
+No
+
+
+
+| Identificar la exposición a datos confidenciales  a| 
+Sí
+ a| 
+No
+
+
+
+| Enumere los planes de protección y los detalles  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Lista de grupos de protección  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Ver detalles del grupo de protección  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Crear, editar o eliminar un grupo de protección  a| 
+Sí
+ a| 
+No
+
+
+
+| Descargar datos  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *En la pestaña Alertas*: 
+
+
+| Ver alertas y detalles de alertas  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Editar el estado del incidente  a| 
+Sí
+ a| 
+No
+
+
+
+| Marcar alerta para recuperación  a| 
+Sí
+ a| 
+No
+
+
+
+| Ver detalles del incidente  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Desestimar o resolver incidentes  a| 
+Sí
+ a| 
+No
+
+
+
+| Bloquear usuario  a| 
+Sí
+ a| 
+No
+
+
+
+| Obtenga la lista completa de archivos afectados  a| 
+Sí
+ a| 
+No
+
+
+
+| Descargar datos de alertas  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *En la pestaña Recuperar*: 
+
+
+| Descargar archivos afectados  a| 
+Sí
+ a| 
+No
+
+
+
+| Restaurar la carga de trabajo  a| 
+Sí
+ a| 
+No
+
+
+
+| Descargar datos de recuperación  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Descargar informes  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *En la pestaña Configuración*: 
+
+
+| Agregar o modificar destinos de copia de seguridad  a| 
+Sí
+ a| 
+No
+
+
+
+| Lista de destinos de copia de seguridad  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Ver objetivos SIEM conectados  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Agregar o modificar objetivos SIEM  a| 
+Sí
+ a| 
+No
+
+
+
+| Conectar objetivos de seguridad de la carga de trabajo  a| 
+Sí
+ a| 
+No
+
+
+
+| Ver el estado de la conexión de seguridad de la carga de trabajo  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Desconectar los objetivos de seguridad de la carga de trabajo  a| 
+Sí
+ a| 
+No
+
+
+
+| Configurar el simulacro de preparación  a| 
+Sí
+ a| 
+No
+
+
+
+| Simulacro de preparación para el inicio  a| 
+Sí
+ a| 
+No
+
+
+
+| Simulacro de preparación para el reinicio  a| 
+Sí
+ a| 
+No
+
+
+
+| Simulacro de preparación para la edición  a| 
+Sí
+ a| 
+No
+
+
+
+| Revisar el estado del simulacro de preparación  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Actualizar la configuración de descubrimiento  a| 
+Sí
+ a| 
+No
+
+
+
+| Ver configuración de descubrimiento  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *En la pestaña Informes*: 
+
+
+| Descargar informes  a| 
+Sí
+ a| 
+Sí
+
+|===
