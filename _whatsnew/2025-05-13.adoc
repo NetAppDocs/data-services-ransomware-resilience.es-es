@@ -12,4 +12,4 @@ Hay muchas razones por las cuales el servicio no admite un entorno de trabajo, p
 
 Puede ver los entornos de trabajo no compatibles durante el descubrimiento inicial, donde también puede descargar los resultados.  También puede ver los resultados del descubrimiento desde la opción *Descubrimiento de carga de trabajo* en la página Configuración.
 
-Para más detalles, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Descubra las cargas de trabajo en la BlueXP ransomware protection"] .
+Para más detalles, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html["Descubra las cargas de trabajo en la BlueXP ransomware protection"] .

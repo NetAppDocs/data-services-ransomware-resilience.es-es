@@ -6,14 +6,39 @@
 
 === La BlueXP ransomware protection ahora es NetApp Ransomware Resilience
 
-La replicación del ransomware BlueXP ha pasado a llamarse NetApp Ransomware Resilience.
+El servicio de BlueXP ransomware protection ha pasado a llamarse NetApp Ransomware Resilience.
 
 
 
 === BlueXP ahora es NetApp Console
 
-BlueXP ha sido renombrado y rediseñado para reflejar mejor su función en la gestión de su infraestructura de datos.
-
 La consola de NetApp proporciona una gestión centralizada de servicios de almacenamiento y datos en entornos locales y en la nube a nivel empresarial, brindando información en tiempo real, flujos de trabajo más rápidos y una administración simplificada.
 
-Para obtener más detalles sobre lo que ha cambiado, consulte la https://docs.netapp.com/us-en/bluexp-relnotes/index.html["Notas de la versión de la consola de NetApp"] .
+Para obtener más detalles sobre lo que ha cambiado, consulte la https://docs.netapp.com/us-en/console-relnotes/index.html["Notas de la versión de la consola de NetApp"] .
+
+
+
+=== Detección de violaciones de datos
+
+Ransomware Resilience incluye un nuevo mecanismo de detección que se puede activar en unos pocos pasos para detectar lecturas anómalas del usuario como un indicador temprano de violación de datos.  La resiliencia ante ransomware recopila y analiza eventos de lectura del usuario mediante la creación de una línea de base histórica, que es un perfil del comportamiento normal esperado a partir de datos pasados.  Cuando la actividad de un nuevo usuario se desvía significativamente de esta norma establecida (por ejemplo, un aumento inesperado de lectura combinado con patrones de lectura sospechosos), se genera una alerta.  Ransomware Resilience incluye un modelo de IA para detectar patrones de lectura sospechosos.
+
+A diferencia de la detección de cifrado por ARP en la capa de almacenamiento, la detección de la anomalía en el comportamiento del usuario se realiza en el servicio Ransomware Resilience SaaS mediante la recopilación de eventos FPolicy.
+
+Para obtener más información, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.htm["Habilitar la detección de actividad sospechosa de usuarios"] ylink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["Ver comportamiento anómalo del usuario"] .
+
+
+
+==== Detecciones adicionales de actividad sospechosa del usuario
+
+Además de la detección de violaciones de datos, Ransomware Resilience también detecta los siguientes tipos de alertas según la actividad sospechosa del usuario observada:
+
+* **Destrucción de datos - ataque potencial** - Se crea una alerta con la gravedad del ataque potencial cuando la cantidad de eliminaciones de archivos excede la norma histórica.
+* **Comportamiento sospechoso del usuario - posible ataque**: se crea una alerta con la gravedad del posible ataque cuando se observan operaciones de lectura, cambio de nombre y eliminación en una secuencia similar a un ataque de ransomware.
+* **Comportamiento sospechoso del usuario - Advertencia** - Se crea una alerta con la gravedad de advertencia cuando el número total de actividades de archivo (lectura, eliminación, cambio de nombre, etc.) excede la norma histórica.
+
+
+
+
+==== Nuevo rol de usuario para la detección de violaciones de datos
+
+Para gestionar las alertas de actividad sospechosa de los usuarios, Ransomware Resilience ha introducido dos nuevos roles para proporcionar acceso granular a datos confidenciales, como la actividad de archivos del usuario. Para obtener más información, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Acceso basado en roles de NetApp Ransomware Resilience"] .

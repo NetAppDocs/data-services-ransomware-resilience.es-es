@@ -1,0 +1,185 @@
+---
+sidebar: sidebar 
+permalink: suspicious-user-activity.html 
+keywords: data breach detection, data breach, user activity, suspicious, anomalous, 
+summary: La detección de actividad de usuarios sospechosa en Ransomware Resilience le permite detectar actividad de usuarios que podría representar una amenaza potencial. 
+---
+= Configurar la detección de actividad sospechosa de usuarios en NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Ransomware Resilience admite la detección de comportamiento sospechoso de los usuarios en las políticas de detección, lo que le permite abordar incidentes de ransomware a nivel de usuario.
+
+Ransomware Resilience detecta actividad sospechosa del usuario analizando los eventos de actividad del usuario generados por FPolicy en ONTAP.  Para recopilar datos de actividad del usuario, debe implementar uno o más agentes de actividad del usuario.  El agente es un servidor Linux o una máquina virtual con conectividad a los dispositivos de su inquilino.
+
+
+
+== Agentes y coleccionistas
+
+Se debe instalar al menos un agente de actividad del usuario para activar la detección de actividad de usuario sospechosa en Ransomware Resilience.  Cuando activa la función de actividad de usuario sospechosa desde el panel de Ransomware Resilience, debe proporcionar la información del host del agente para activar la función.
+
+Un agente puede alojar varios recopiladores de datos.  Los recopiladores de datos envían datos a una ubicación SaaS para su análisis.  Hay dos tipos de coleccionistas:
+
+* El **recopilador de datos** recopila datos de actividad del usuario de ONTAP.
+* El **conector de directorio de usuarios** se conecta a su directorio para asignar ID de usuarios a nombres de usuario.
+
+
+Los recopiladores se configuran en la configuración de Resiliencia ante ransomware.
+
+
+
+== Habilitar la detección de actividad sospechosa de usuarios
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de comportamiento del usuario de Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+
+
+
+=== Agregar un agente de actividad del usuario
+
+Los agentes de actividad del usuario son entornos ejecutables para los recopiladores de datos; los recopiladores de datos comparten eventos de actividad del usuario con Ransomware Resilience.  Debe crear al menos un agente de actividad de usuario para habilitar la detección de actividad de usuario sospechosa.
+
+
+
+==== Requisitos
+
+Para instalar un agente de actividad del usuario, necesita un host o una máquina virtual con cualquiera de los siguientes sistemas operativos y requisitos de servidor compatibles.
+
+**Requisitos del sistema operativo**
+
+[cols="2"]
+|===
+
+
+| Sistema operativo | Versiones compatibles 
+
+
+| AlmaLinux | 9.4 (64 bits) a 9.5 (64 bits) y 10 (64 bits), incluido SELinux 
+
+
+| CentOS | CentOS Stream 9 (64 bits) 
+
+
+| Debian | 11 (64 bits), 12 (64 bits), incluido SELinux 
+
+
+| OpenSUSE Leap | 15.3 (64 bits) a 15.6 (64 bits) 
+
+
+| Oracle Linux | 8.10 (64 bits) y 9.1 (64 bits) a 9.6 (64 bits), incluido SELinux 
+
+
+| Sombrero rojo | 8.10 (64 bits), 9.1 (64 bits) a 9.6 (64 bits) y 10 (64 bits), incluido SELinux 
+
+
+| Rocoso | Rocky 9.4 (64 bits) a 9.6 (64 bits), incluido SELinux 
+
+
+| SUSE Enterprise Linux | 15 SP4 (64 bits) a 15 SP6 (64 bits), incluido SELinux 
+
+
+| Ubuntu | 20.04 LTS (64 bits), 22.04 LTS (64 bits) y 24.04 LTS (64 bits) 
+|===
+**Requisitos del servidor**
+
+El servidor debe cumplir los siguientes requisitos mínimos:
+
+* **CPU**: 4 NÚCLEOS
+* **RAM**: 16 GB de RAM
+* **Espacio en disco**: 35 GB de espacio libre en disco
+
+
+.Pasos
+. Si es la primera vez que crea un agente de actividad de usuario, vaya al **Panel de control**.  En el mosaico **Actividad del usuario**, seleccione **Activar**.
++
+Si está agregando un agente de actividad de usuario adicional, vaya a *Configuración*, ubique el mosaico **Actividad de usuario** y luego seleccione **Administrar**.  En la pantalla Actividad del usuario, seleccione la pestaña **Agentes de actividad del usuario** y luego **Agregar**.
+
+. Seleccione un **Proveedor de nube** y luego una **Región**.  Seleccione **Siguiente**.
+. Proporcione los detalles del agente de actividad del usuario:
++
+** **Nombre del agente de actividad del usuario**
+** *Agente de consola*: el agente de consola debe estar en la misma red que el agente de actividad del usuario y tener conectividad SSH a la dirección IP del agente de actividad del usuario.
+** *Nombre DNS o dirección IP de la máquina virtual*
+** *Clave SSH de VM*
++
+image:user-activity-agent.png["Captura de pantalla de la interfaz del agente de agregar actividad."]
+
+
+
+. Seleccione **Siguiente**.
+. Revise su configuración.  Seleccione *Activar* para completar la adición del agente de actividad del usuario.
+. Confirme que el agente de actividad del usuario se creó correctamente.  En el mosaico Actividad del usuario, una implementación exitosa se muestra como En ejecución.
+
+
+.Resultado
+Una vez creado exitosamente el agente de actividad del usuario, regrese al menú **Configuración** y seleccione **Administrar** en el mosaico Actividad del usuario.  Seleccione la pestaña **Agente de actividad del usuario** y luego seleccione el agente de actividad del usuario para ver detalles al respecto, incluidos los recopiladores de datos y los conectores del directorio de usuarios.
+
+
+
+=== Agregar un recopilador de datos
+
+Los recopiladores de datos se crean automáticamente cuando habilita una estrategia de protección contra ransomware con detección de actividad de usuario sospechosa. Para obtener más información, consulte xref:rp-use-protect.adoc#add-a-detection-policy-to workloads-with-existing-backup-or-snapshot-policies [añadir una política de detección] .
+
+Puede ver los detalles del recopilador de datos.  Desde Configuración, seleccione **Administrar** en el mosaico Actividad del usuario.  Seleccione la pestaña **Recopilador de datos** y luego seleccione el recopilador de datos para ver sus detalles o pausarlo.
+
+image:user-activity-settings.png["Captura de pantalla de la configuración de la actividad del usuario"]
+
+
+
+=== Agregar un conector de directorio de usuarios
+
+Para asignar ID de usuario a nombres de usuario, debe crear un conector de directorio de usuarios.
+
+.Pasos
+. En Ransomware Resilience, vaya a *Configuración*.
+. En el mosaico Actividad del usuario, seleccione **Administrar**.
+. Seleccione la pestaña **Conectores de directorio de usuario** y luego **Agregar**.
+. Proporcione los detalles de la conexión:
++
+** *Nombre*
+** *Tipo de directorio de usuario*
+** *Dirección IP del servidor o nombre de dominio*
+** *Nombre del bosque o nombre de búsqueda*
+** *Nombre de dominio BIND*
+** *Contraseña BIND*
+** *Protocolo* (esto es opcional)
+** *Puerto*
++
+image:screenshot-user-directory-connection.png["Captura de pantalla de la conexión del directorio de usuarios"]
+
++
+Proporcione los detalles de mapeo de atributos:
+
+** *Nombre para mostrar*
+** *SID* (si estás usando LDAP)
+** *Nombre de usuario*
+** *ID de Unix* (si estás usando NFS)
+** Seleccione *Incluir atributos opcionales*.  También puede incluir dirección de correo electrónico, número de teléfono, función, estado, país, departamento, foto, DN de gerente o grupos.
++
+Seleccione *Avanzado* para agregar una consulta de búsqueda opcional.
+
+
+
+. Seleccione **Agregar**.
+. Regrese a la pestaña de conectores del directorio de usuarios para verificar el estado de su conector de directorio de usuarios.  Si se crea correctamente, el estado del conector del directorio de usuario se muestra como *En ejecución*.
+
+
+
+
+=== Eliminar un conector de directorio de usuarios
+
+. En Ransomware Resilience, vaya a *Configuración*.
+. Localice el mosaico Actividad del usuario y seleccione **Administrar**.
+. Seleccione la pestaña **Conector de directorio de usuarios**.
+. Identifique el conector del directorio de usuario que desea eliminar.  En el menú de acciones al final de la línea, seleccione los tres puntos `...` luego **Eliminar**.
+. En el cuadro de diálogo emergente, seleccione **Eliminar** para confirmar sus acciones.
+
+
+
+
+== Responder a alertas de actividad sospechosa del usuario
+
+Después de configurar la detección de actividad de usuarios sospechosas, puede monitorear eventos en la página de alertas. Para obtener más información, consulte link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["Detectar actividad maliciosa y comportamiento anómalo del usuario"] .

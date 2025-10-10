@@ -8,7 +8,7 @@
 
 Esta versión incluye soporte para cargas de trabajo SAN en la BlueXP ransomware protection.  Ahora puede proteger cargas de trabajo SAN además de cargas de trabajo NFS y CIFS.
 
-Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-prerequisites.html["Requisitos previos para la BlueXP ransomware protection"] .
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-prerequisites.html["Requisitos previos para la BlueXP ransomware protection"] .
 
 
 
@@ -16,7 +16,7 @@ Para obtener más información, consulte link:https://docs.netapp.com/us-en/blue
 
 Esta versión mejora el proceso de configuración para cargas de trabajo con políticas de instantáneas y respaldo de otras herramientas de NetApp , como SnapCenter o BlueXP backup and recovery.  En versiones anteriores, la BlueXP ransomware protection descubría las políticas de otras herramientas y solo le permitía cambiar la política de detección.  Con esta versión, ahora puede reemplazar las políticas de instantáneas y copias de seguridad con las políticas de BlueXP ransomware protection o continuar usando las políticas de otras herramientas.
 
-Para más detalles, consultelink:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Proteger las cargas de trabajo"] .
+Para más detalles, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteger las cargas de trabajo"] .
 
 
 
@@ -28,4 +28,4 @@ El correo electrónico incluye información sobre la gravedad, la carga de traba
 
 Si configuró un sistema de gestión de eventos y seguridad (SIEM) en la BlueXP ransomware protection, el servicio envía detalles de alerta a su sistema SIEM.
 
-Para más detalles, consultelink:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Gestionar alertas de ransomware detectadas"] .
+Para más detalles, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Gestionar alertas de ransomware detectadas"] .

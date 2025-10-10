@@ -39,6 +39,8 @@ sidebar:
     - title: Configurar copias de seguridad, detección de amenazas y simulaciones
         de ataques en Configuración
       url: "/rp-use-settings.html"
+    - title: Configurar la detección de actividad sospechosa de usuarios
+      url: "/suspicious-user-activity.html"
   - title: Utilice la resiliencia frente al ransomware
     entries:
     - title: Descripción general del uso de la resiliencia frente al ransomware

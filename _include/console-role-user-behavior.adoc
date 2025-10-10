@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de comportamiento del usuario de Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .

@@ -14,7 +14,7 @@ summary: Durante el descubrimiento, Ransomware Resilience analiza todos los vol�
 [role="lead"]
 Antes de poder utilizar NetApp Ransomware Resilience, primero debe descubrir datos.  Durante el descubrimiento, Ransomware Resilience analiza todos los volúmenes y archivos de los sistemas en todos los agentes de la consola y proyectos dentro de una organización.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
 
 ¿Qué descubre Ransomware Resilience?  Ransomware Resilience evalúa aplicaciones MySQL, aplicaciones Oracle, almacenes de datos VMware, recursos compartidos de archivos y almacenamiento en bloques.
 
@@ -55,7 +55,7 @@ NOTE: Si inició la prueba gratuita, la etiqueta del botón *Iniciar prueba grat
 Ransomware Resilience encuentra sistemas compatibles y no compatibles. Este proceso puede tardar unos minutos.
 
 +
-image:screen-discover-workloads-unsupported.png["Captura de pantalla de Descubrir cargas de trabajo"]
+image:screen-discover-workloads.png["Captura de pantalla de Descubrir cargas de trabajo"]
 
 . Para descubrir cargas de trabajo para un agente de consola específico, seleccione *Seleccionar sistemas* junto al agente de consola donde desea descubrir cargas de trabajo.
 . Seleccione los sistemas en los que desea descubrir cargas de trabajo.

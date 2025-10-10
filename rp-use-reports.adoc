@@ -17,7 +17,7 @@ Puede exportar datos de protección y descargar archivos CSV o JSON que muestran
 
 TIP: Antes de descargar los archivos, debes actualizar los datos, lo que también actualiza los datos que aparecerán en los archivos.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de la organización, administrador de carpeta o proyecto, administrador de resiliencia ante ransomware o visor de resiliencia ante ransomware. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de la organización, administrador de carpeta o proyecto, administrador de resiliencia ante ransomware o visor de resiliencia ante ransomware. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
 
 ¿Qué datos puedes descargar?  Puedes descargar archivos desde cualquiera de las opciones del menú principal:
 

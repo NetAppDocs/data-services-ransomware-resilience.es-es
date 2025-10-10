@@ -8,7 +8,7 @@
 
 Con esta versión, puedes revisar los informes de simulacros de preparación para ataques de ransomware.  Un simulacro de preparación le permite simular un ataque de ransomware en una carga de trabajo de muestra recién creada.  Luego, investigue el ataque simulado y recupere la carga de trabajo de muestra.  Esta función le ayuda a saber que está preparado en caso de un ataque de ransomware real al probar los procesos de notificación de alerta, respuesta y recuperación.
 
-Para más detalles, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Realizar un simulacro de preparación para un ataque de ransomware"] .
+Para más detalles, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["Realizar un simulacro de preparación para un ataque de ransomware"] .
 
 
 
@@ -20,7 +20,7 @@ Anteriormente, podía asignar roles y permisos a los usuarios en función de sus
 * Visor de protección contra ransomware
 
 
-Para obtener detalles sobre los permisos, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["Acceso basado en roles a las funciones de BlueXP ransomware protection"] .
+Para obtener detalles sobre los permisos, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Acceso basado en roles a las funciones de BlueXP ransomware protection"] .
 
 
 
@@ -28,4 +28,4 @@ Para obtener detalles sobre los permisos, consulte https://docs.netapp.com/us-en
 
 Esta versión incluye varias mejoras en el proceso de pago.
 
-Para más detalles, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Configurar opciones de licencia y pago"] .
+Para más detalles, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licenses.html["Configurar opciones de licencia y pago"] .

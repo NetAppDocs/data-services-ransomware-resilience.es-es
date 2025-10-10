@@ -14,7 +14,7 @@ summary: Puede proteger las cargas de trabajo contra ataques de ransomware asign
 [role="lead"]
 Puede proteger las cargas de trabajo contra ataques de ransomware habilitando una protección consistente con la carga de trabajo o creando estrategias de protección contra ransomware en NetApp Ransomware Resilience.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
 
 
 
@@ -22,7 +22,7 @@ Puede proteger las cargas de trabajo contra ataques de ransomware habilitando un
 
 Las estrategias de protección contra ransomware abarcan políticas tanto de _detección_ como de _protección_.
 
-* Las **políticas de detección** detectan amenazas de ransomware y, opcionalmente, bloquean extensiones de archivos sospechosas.
+* **Políticas de detección** detectan amenazas de ransomware
 * **Las políticas de protección** incluyen políticas de instantáneas y de copia de seguridad.  Se requieren políticas de detección y captura de instantáneas en una estrategia de protección.  Las políticas de respaldo son opcionales.
 +
 Si utiliza otros productos de NetApp para proteger su carga de trabajo, Ransomware Resilience los detecta y ofrece la opción de:
@@ -35,7 +35,7 @@ Si utiliza otros productos de NetApp para proteger su carga de trabajo, Ransomwa
 
 
 
-TIP: Para una mejor gestión y protección de su patrimonio de datos, puede crearlink:#group-file-shares-for-easier-protection["recursos compartidos de archivos grupales"] proteger colectivamente los volúmenes bajo una sola estrategia.
+TIP: Para una mejor gestión y protección de su patrimonio de datos, puede crearlink:#create-a-protection-group["recursos compartidos de archivos grupales"] proteger colectivamente los volúmenes bajo una sola estrategia.
 
 
 
@@ -138,7 +138,10 @@ Ransomware Resilience asigna una importancia o prioridad a cada carga de trabajo
 
 *Políticas de detección predefinidas* [[predefinidas]]
 
-Puede elegir una de las siguientes políticas predefinidas de resiliencia contra ransomware, que están alineadas con la importancia de la carga de trabajo:
+Puede elegir una de las siguientes políticas predefinidas de resiliencia ante ransomware, que están alineadas con la importancia de la carga de trabajo.
+
+
+NOTE: La política **Extensión de usuario de cifrado** es la única política predefinida que admite la detección de comportamiento sospechoso de usuarios.
 
 [cols="10,15a,20,15,15,15"]
 |===
@@ -203,6 +206,26 @@ Cada 1 semana
 | Mensual  a| 
 Cada 30 días
 | 60 | 2 | 93 
+
+
+.4+| *Extensión de usuario de cifrado*  a| 
+Cada cuarto de hora
+| Cada 30 min | 3 | 72 | 93 
+
+
+| Diario  a| 
+Cada 1 día
+| 14 | 14 | 93 
+
+
+| Semanalmente  a| 
+Cada 1 semana
+| 35 | 5 | 93 
+
+
+| Mensual  a| 
+Cada 30 días
+| 60 | 2 | 93 
 |===
 
 
@@ -216,8 +239,8 @@ Después de habilitar la protección consistente con la carga de trabajo, puede 
 
 Para obtener más información sobre cómo registrar SnapCenter o el SnapCenter Plug-in for VMware vSphere mediante Backup and Recovery, consulte la siguiente información:
 
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapcenter-server.html["Registrar el software del servidor SnapCenter"^]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html["Registrar el SnapCenter Plug-in for VMware vSphere"^]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/task-register-snapcenter-server.html["Registrar el software del servidor SnapCenter"^]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html["Registrar el SnapCenter Plug-in for VMware vSphere"^]
 
 
 .Pasos
@@ -266,7 +289,7 @@ La estrategia de protección contra ransomware incluye:
 La política de detección no cambia las políticas administradas en otros productos.
 
 +
-La política de detección habilita la protección autónoma contra ransomware y la protección FPolicy si ya están activadas en otros servicios.  Obtenga más información sobrelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protección autónoma contra ransomware"^] ,link:https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Copia de seguridad y recuperación"^] , ylink:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Política de ONTAP"^] .
+La política de detección habilita la protección autónoma contra ransomware y la protección FPolicy si ya están activadas en otros servicios.  Obtenga más información sobrelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protección autónoma contra ransomware"^] ,link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["Copia de seguridad y recuperación"^] , ylink:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Política de ONTAP"^] .
 
 
 
@@ -287,9 +310,6 @@ Si no existen políticas de instantáneas o de respaldo en la carga de trabajo, 
 image:screen-protection.png["Página de gestión de estrategia"]
 
 . Desde la página Protección, seleccione una carga de trabajo y luego *Proteger*.
-+
-image:screen-protection-strategy-list.png["Gestionar estrategias"]
-
 . Desde la página de estrategias de protección contra ransomware, seleccione *Agregar*.
 +
 image:screen-protection-strategy-add.png["Agregar página de estrategia que muestra la sección de instantáneas"]
@@ -361,9 +381,14 @@ image:screen-protection.png["Página de gestión de estrategia"]
 . Ransomware Resilience detecta si existen políticas activas de SnapCenter o de Backup and Recovery.
 . Para dejar sus políticas de Backup and Recovery o SnapCenter existentes en su lugar y solo aplicar una política de _detección_, deje la casilla **Reemplazar políticas existentes** sin marcar.
 . Para ver detalles de las políticas de SnapCenter , seleccione la *flecha hacia abajo*.
+. Seleccione la configuración de detección que desee: *Detección de cifrado* *Detección de comportamiento sospechoso del usuario* *Bloquear extensiones de archivos sospechosas*
+. Seleccione **Siguiente**.
+. Si seleccionó *Detección de comportamiento sospechoso del usuario* como configuración de detección, seleccione el agente de actividad del usuario olink:suspicious-user-activity.html#add-a-user-activity-agent["o crea uno"] .
 +
-Seleccione una política de detección y luego seleccione **Proteger**.
+El agente de actividad del usuario aloja los nuevos recopiladores de datos.  Ransomware Resilience crea automáticamente el recopilador de datos para transmitir eventos de actividad del usuario a Ransomware Resilience para detectar un comportamiento anómalo del usuario.
 
+. Seleccione **Siguiente**.
+. Revise sus opciones  Seleccione **Crear** para activar la detección.
 . En la página Protección, revise el **Estado de detección** para confirmar que la detección esté Activa.
 
 
@@ -382,6 +407,10 @@ image:screen-protection.png["Página de gestión de estrategia"]
 . Ransomware Resilience detecta si existen políticas activas de Backup and Recovery o de SnapCenter .  Para reemplazar las políticas de Backup and Recovery o SnapCenter existentes, seleccione la casilla **Reemplazar políticas existentes**.  Al seleccionar la casilla, Ransomware Resilience reemplaza la lista de políticas de detección con políticas de detección.
 . Elija una política de protección.  Si no existe ninguna política de protección, seleccione **Agregar** para crear una nueva política.  Para obtener información sobre cómo crear una política, consulte<<steps,Crear una política de protección>> .  Seleccione **Siguiente**.
 . Seleccione un destino de copia de seguridad o cree uno nuevo.  Seleccione **Siguiente**.
++
+.. Si su estrategia de protección incluye la detección del comportamiento del usuario, seleccione un agente de actividad del usuario en su entorno para alojar los nuevos recopiladores de datos.  Ransomware Resilience crea automáticamente el recopilador de datos para transmitir eventos de actividad del usuario a Ransomware Resilience para detectar un comportamiento anómalo del usuario.
+
+
 . Revise la nueva estrategia de protección y luego seleccione **Proteger** para aplicarla.
 . En la página Protección, revise el **Estado de detección** para confirmar que la detección esté Activa.
 
@@ -403,11 +432,11 @@ Puede reemplazar la política existente por una diferente.
 
 
 
-== Compartir archivos en grupo para una protección más sencilla
+== Crear un grupo de protección
 
 Agrupar recursos compartidos de archivos en un grupo de protección facilita la protección de su patrimonio de datos.  Ransomware Resilience puede proteger todos los volúmenes de un grupo al mismo tiempo en lugar de proteger cada volumen por separado.
 
-Puede crear grupos independientemente de su estado de protección (es decir, grupos que no están protegidos y grupos que están protegidos).  Cuando agrega una política de protección a un grupo de protección, la nueva política de protección reemplaza cualquier política existente, incluidas las políticas administradas por SnapCenter y NetApp Backup and Recovery.
+Puede crear grupos independientemente de su estado de protección (es decir, grupos no protegidos y grupos que están protegidos).  Cuando agrega una política de protección a un grupo de protección, la nueva política de protección reemplaza cualquier política existente, incluidas las políticas administradas por SnapCenter y NetApp Backup and Recovery.
 
 .Pasos
 . En el menú Resiliencia ante ransomware, seleccione *Protección*.
@@ -432,10 +461,14 @@ TIP: Para ver más detalles sobre las cargas de trabajo, desplácese hacia la de
 +
 image:screen-protection-groups-policy.png["Agregar grupo de protección - Página de políticas"]
 
-. Seleccione la política que regirá la protección para este grupo.
-. Seleccione *Siguiente*.
+. Seleccione la política que regirá la protección para este grupo.  Para confirmar, seleccione *Siguiente*.
++
+.. Si necesita configurar una política de respaldo, elija una y luego seleccione **Siguiente**.
+.. Si su política de detección incluye la detección del comportamiento del usuario, seleccione el recopilador de datos que desea utilizar y luego **Siguiente**.
+
+
 . Revise las selecciones para el grupo de protección.
-. Seleccione *Agregar*.
+. Para finalizar la creación del grupo de protección, seleccione *Agregar*.
 
 
 
@@ -502,7 +535,7 @@ Antes de eliminar una estrategia de protección contra ransomware, es posible qu
 
 Puede ver las cargas de trabajo desde la lista de estrategias o cuando está editando una estrategia específica.
 
-.Pasos para visualizar la lista de estrategias
+.Pasos para visualizar estrategias
 . En el menú Resiliencia ante ransomware, seleccione *Protección*.
 . Desde la página Protección, seleccione *Administrar estrategias de protección*.
 +

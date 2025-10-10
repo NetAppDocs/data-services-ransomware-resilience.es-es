@@ -8,4 +8,4 @@
 
 Con esta versión, ahora puede agrupar recursos compartidos de archivos en grupos para facilitar la protección de su patrimonio de datos.  El servicio puede proteger todos los volúmenes de un grupo al mismo tiempo.  Anteriormente, era necesario proteger cada volumen por separado.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Obtenga más información sobre la agrupación de cargas de trabajo de recursos compartidos de archivos en las estrategias de protección contra ransomware."] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Obtenga más información sobre la agrupación de cargas de trabajo de recursos compartidos de archivos en las estrategias de protección contra ransomware."] .

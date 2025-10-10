@@ -20,7 +20,7 @@ Ransomware Resilience utiliza los siguientes roles que son específicos de Ranso
 * *Visor de resiliencia contra ransomware*: vea datos de carga de trabajo de NetApp , vea datos de alerta, descargue datos de recuperación y descargue informes.
 
 
-Estos roles se suman a los roles de la plataforma de la consola que rigen el acceso al servicio de la consola y otros servicios, como protección de datos, administración de la carga de trabajo, etc.  Para obtener detalles sobre todos los roles de la plataforma de consola, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["la documentación de configuración y administración"^] .
+Estos roles se suman a los roles de la plataforma de la consola que rigen el acceso al servicio de la consola y otros servicios, como protección de datos, administración de la carga de trabajo, etc.  Para obtener detalles sobre todos los roles de la plataforma de consola, consulte https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["la documentación de configuración y administración"^] .
 
 La siguiente tabla indica las acciones que cada rol de Resiliencia contra Ransomware puede realizar.
 

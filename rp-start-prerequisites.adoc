@@ -14,7 +14,7 @@ summary: Comience a utilizar NetApp Ransomware Resilience verificando la compati
 [role="lead"]
 Comience a utilizar NetApp Ransomware Resilience verificando la preparación de su entorno operativo, inicio de sesión, acceso a la red y navegador web.
 
-Para utilizar Ransomware Resilience, necesitará los requisitos previos.
+Para utilizar Ransomware Resilience, deberá cumplir los siguientes requisitos previos.
 
 
 
@@ -32,7 +32,7 @@ NOTE: Las cargas de trabajo SAN solo son compatibles con ONTAP 9.17.1 y versione
 
 ** Si sus clústeres ONTAP locales o Cloud Volumes ONTAP en AWS o en la nube de Azure aún no están incorporados en la consola, necesita un agente de consola.
 +
-Referirse a https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Aprenda a configurar un agente de consola"] y https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Requisitos estándar de la consola"^] .
+Referirse a https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["Aprenda a configurar un agente de consola"] y https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Requisitos estándar de la consola"^] .
 
 +
 
@@ -53,7 +53,7 @@ NOTE: Si tiene varios agentes de consola en una sola organización de consola, R
 NOTE: La versión general de Ransomware Resilience, a diferencia de la versión preliminar, incluye una licencia para la tecnología de protección autónoma contra ransomware de NetApp . Referirse a https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Descripción general de la protección autónoma contra ransomware"^] Para más detalles.
 
 +
-Para obtener más detalles sobre la licencia, consultelink:concept-ransomware-protection.html["Aprenda sobre la resiliencia frente al ransomware"] .
+Para obtener más detalles sobre la licencia, consultelink:concept-ransomware-resilience.html["Aprenda sobre la resiliencia frente al ransomware"] .
 
 * Para aplicar configuraciones de protección (como habilitar Autonomous Ransomware Protection y otras), Ransomware Resilience necesita permisos de administrador en el clúster de ONTAP .  El clúster ONTAP debería haberse incorporado utilizando únicamente las credenciales de usuario administrador del clúster ONTAP .
 * Si el clúster de ONTAP ya está incorporado en la consola con credenciales de usuario que no son administradores, entonces los permisos de usuario que no son administradores deben actualizarse con los permisos necesarios iniciando sesión en el clúster de ONTAP , como se describe en esta página.
@@ -65,7 +65,7 @@ Para obtener más detalles sobre la licencia, consultelink:concept-ransomware-pr
 
 * Una cuenta en NetApp StorageGRID, AWS S3, Azure Blob o Google Cloud Platform para los destinos de respaldo y los permisos de acceso establecidos.
 +
-Consulte la https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Lista de permisos de AWS, Azure o S3"^] Para más detalles.
+Consulte la https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["Lista de permisos de AWS, Azure o S3"^] Para más detalles.
 
 * No es necesario habilitar NetApp Backup and Recovery en el sistema.
 +

@@ -14,7 +14,7 @@ summary: Comience a utilizar NeApp Ransomware Resilience configurando la licenci
 [role="lead"]
 Con NetApp Ransomware Resilience, puede utilizar diferentes planes de licencia.
 
-Para realizar esta tarea, necesita el rol de administrador de organización, carpeta o proyecto. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso a la consola"^] .
+Para realizar esta tarea, necesita el rol de administrador de organización, carpeta o proyecto. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso a la consola"^] .
 
 *Tipos de licencia* Puede utilizar los siguientes tipos de licencia:
 
@@ -40,11 +40,6 @@ La licencia Ransomware Resilience no incluye productos NetApp adicionales.  Rans
 
 
 NOTE: Si tiene Backup and Recovery y Ransomware Resilience, cualquier dato común protegido por ambos productos se facturará únicamente por Ransomware Resilience.
-
-Puede ver el comportamiento anómalo de los usuarios con Data Infrastructure Insights Workload Security.  Esto requiere una licencia para Data Infrastructure Insights Workload Security y que la habilite en Ransomware Resilience.  Para obtener una descripción general de la seguridad de la carga de trabajo de Data Infrastructure Insights, revise https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Acerca de la seguridad de la carga de trabajo"^]
-
-
-TIP: Si no tiene una licencia para Data Infrastructure Insights Workload Security y no la habilita en Ransomware Resilience, no verá la información de comportamiento anómalo del usuario.
 
 
 
@@ -73,7 +68,7 @@ image:screen-landing.png["Captura de pantalla de la página de destino de Ransom
 
 . Si aún no ha agregado un conector para otros servicios, agregue uno.
 +
-Para agregar un agente de consola, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Obtenga más información sobre los agentes de consola"^] .
+Para agregar un agente de consola, consulte https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["Obtenga más información sobre los agentes de consola"^] .
 
 . Después de configurar un agente de consola, en la página de inicio de Ransomware Resilience, el botón para agregar un agente de consola cambia a un botón para descubrir cargas de trabajo.  Seleccione *Comenzar por descubrir cargas de trabajo*.
 . Para revisar la información de la prueba gratuita, seleccione la opción desplegable en la parte superior derecha.
@@ -121,9 +116,6 @@ image:screen-license-dw-add-license.png["Captura de pantalla de la página Agreg
 +
 ** Para ver la información de la suscripción, seleccione *Suscripciones*.
 ** Para ver las licencias BYOL, seleccione *Licencias de servicios de datos*.
-+
-image:screen-dw-data-services-license.png["Captura de pantalla de licencias y suscripciones."]
-
 
 
 . Regresar a Resiliencia frente al ransomware.  Desde la navegación izquierda de la Consola, seleccione *Protección* > *Resiliencia ante ransomware*.
@@ -166,9 +158,6 @@ image:screen-license-dw-add-license.png["Captura de pantalla de la página Agreg
 +
 ** Para ver la información de la suscripción, seleccione *Suscripciones*.
 ** Para ver las licencias BYOL, seleccione *Licencias de servicios de datos*.
-+
-image:screen-dw-data-services-license.png["Página de licencias de servicios de datos"]
-
 
 
 . Regresar a Resiliencia frente al ransomware.  Desde la navegación izquierda de la Consola, seleccione *Protección* > *Resiliencia ante ransomware*.
@@ -195,7 +184,7 @@ image:screen-license-payment-methods3.png["Captura de pantalla de la página de 
 
 . En la página Métodos de pago, seleccione *Suscribirse* a Google Cloud Platform Marketplace*.
 . En Google Cloud Platform Marketplace, seleccione *Suscribirse*.
-. Utilice Google Cloud Platform Marketplace para suscribirse a * NetApp Intelligent Services* y *Ransomware Resilience*.image:screen-license-payments-gcp2.png["Captura de pantalla de la página de suscripción de Google Cloud Marketplace."]
+. Utilice Google Cloud Platform Marketplace para suscribirse a * NetApp Intelligent Services* y * Ransomware Resilience *.
 . Cuando regresa a Ransomware Resilience, un mensaje indica que está suscrito.
 +
 
@@ -211,9 +200,6 @@ image:screen-license-dw-add-license.png["Captura de pantalla de la página Agreg
 +
 ** Para ver la información de la suscripción, seleccione *Suscripciones*.
 ** Para ver las licencias BYOL, seleccione *Licencias de servicios de datos*.
-+
-image:screen-dw-data-services-license.png["Captura de pantalla de la página de licencias y suscripciones."]
-
 
 
 . Regresar a Resiliencia frente al ransomware.  Desde la navegación izquierda de la Consola, seleccione *Protección* > *Resiliencia ante ransomware*.
@@ -246,7 +232,7 @@ image:screen-license-dw-add-license.png["Captura de pantalla de la página Agreg
 +
 ** Si tiene el número de serie de la licencia de la consola y conoce su cuenta NSS, seleccione la opción *Ingresar número de serie* e ingrese esa información.
 +
-Si su cuenta del sitio de soporte de NetApp no ​​está disponible en la lista desplegable, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["Agregue la cuenta NSS a la consola"^] .
+Si su cuenta del sitio de soporte de NetApp no ​​está disponible en la lista desplegable, https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html["Agregue la cuenta NSS a la consola"^] .
 
 ** Si tiene el archivo de licencia de zvondolr (necesario cuando se instala en un sitio oscuro), seleccione la opción *Cargar archivo de licencia* y siga las instrucciones para adjuntar el archivo.
 
@@ -264,7 +250,7 @@ La página Licencias y suscripciones muestra que Ransomware Resilience tiene una
 Si su período de licencia está cerca de la fecha de vencimiento, o si su capacidad de licencia está llegando al límite, se le notificará en la interfaz de usuario de resiliencia ante ransomware.  Puede actualizar su licencia de Ransomware Resilience antes de que expire para que no haya interrupciones en su capacidad de acceder a sus datos escaneados.
 
 
-TIP: Este mensaje también aparece en Licencias y suscripciones y en https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["Configuración de notificaciones"] .
+TIP: Este mensaje también aparece en Licenses and subscriptions y en https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["Configuración de notificaciones"] .
 
 .Pasos
 . Puede enviar un correo electrónico al soporte para solicitar una actualización de su licencia.

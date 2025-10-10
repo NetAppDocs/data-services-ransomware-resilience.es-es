@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-settings.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
-summary: Puede configurar varias opciones, incluido un destino de respaldo, detección de amenazas y conexión a Data Infrastructure Insights Workload Security en Ransomware Resilience. 
+summary: Puede configurar varias opciones, incluido un destino de copia de seguridad y detección de amenazas en la página de configuración. 
 ---
 = Configurar los ajustes de protección en NetApp Ransomware Resilience
 :hardbreaks:
@@ -12,15 +12,15 @@ summary: Puede configurar varias opciones, incluido un destino de respaldo, dete
 
 
 [role="lead"]
-Puede configurar destinos de respaldo, enviar datos a un sistema externo de seguridad y gestión de eventos (SIEM), realizar un simulacro de preparación para ataques, configurar el descubrimiento de carga de trabajo o configurar la conexión a la seguridad de carga de trabajo de Data Infrastructure Insights accediendo a la opción *Configuración*.
+Puede configurar destinos de respaldo, enviar datos a un sistema externo de seguridad y gestión de eventos (SIEM), realizar un simulacro de preparación para ataques, configurar el descubrimiento de carga de trabajo o configurar la detección de actividad sospechosa de usuarios accediendo a la opción *Configuración*.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
 
 *¿Qué puedes hacer en la página de Configuración?*  Desde la página de Configuración, puede hacer lo siguiente:
 
 * Simule un ataque de ransomware realizando un simulacro de preparación y respondiendo a una alerta de ransomware simulada. Para obtener más información, consulte link:rp-start-simulate.html["Realizar un simulacro de preparación para un ataque de ransomware"] .
 * Configurar la detección de carga de trabajo.
-* Configure la conexión a la seguridad de carga de trabajo de Data Infrastructure Insights para ver información de usuarios sospechosos en alertas de ransomware.
+* Configurar el informe de actividad de usuarios sospechosos.
 * Agregar un destino de respaldo.
 * Conecte su sistema de gestión de eventos y seguridad (SIEM) para el análisis y detección de amenazas.  Al habilitar la detección de amenazas, se envían automáticamente datos a su SIEM para el análisis de amenazas.
 
@@ -63,35 +63,11 @@ Esta página muestra agentes de consola con sistemas que no se seleccionaron ant
 
 
 
-== Vea el comportamiento anómalo sospechoso del usuario conectándose a la seguridad de la carga de trabajo de Data Infrastructure Insights
+== Actividad sospechosa del usuario
 
-Antes de poder ver los detalles del comportamiento anómalo sospechoso del usuario en Ransomware Resilience, debe configurar la conexión al sistema de seguridad de carga de trabajo de Data Infrastructure Insights .
+En la tarjeta de actividad del usuario, puede crear y administrar el agente de actividad del usuario necesario para detectar actividad sospechosa del usuario.
 
-
-
-=== Obtenga un token de acceso a la API del sistema de seguridad de carga de trabajo de Data Infrastructure Insights
-
-Obtenga un token de acceso a la API del sistema de seguridad de carga de trabajo de Data Infrastructure Insights .
-
-. Inicie sesión en el sistema de seguridad de carga de trabajo de Data Infrastructure Insights .
-. Desde la navegación izquierda, seleccione *Admin* > *Acceso API*.
-+
-image:../media/screen-alerts-ci-api-access-token.png["Página de acceso a la API en Seguridad de la carga de trabajo de Data Infrastructure Insights"]
-
-. Cree un token de acceso API o utilice uno existente.
-. Copiar el token de acceso a la API.
-
-
-
-
-=== Conéctese a Data Infrastructure Insights Seguridad de la carga de trabajo
-
-. En el menú Configuración de resiliencia ante ransomware, ubique el mosaico *Conexión de seguridad de carga de trabajo*.
-. Seleccione *Conectar*.
-. Introduzca la URL para la interfaz de usuario de seguridad de carga de trabajo de infraestructura de datos.
-. Ingrese el token de acceso a la API que proporciona acceso a la seguridad de la carga de trabajo.
-. Seleccione *Conectar*.
-
+Para obtener más información, consulte link:suspicious-user-activity.html["Actividad sospechosa del usuario"] .
 
 
 
@@ -169,7 +145,7 @@ image:screen-settings-backup-destinations-list2.png["Página de destinos de copi
 
 Para configurar AWS como destino de respaldo, ingrese la siguiente información.
 
-Para obtener detalles sobre cómo administrar su almacenamiento de AWS en la consola, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Administra tus buckets de Amazon S3"^] .
+Para obtener detalles sobre cómo administrar su almacenamiento de AWS en la consola, consulte https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Administra tus buckets de Amazon S3"^] .
 
 .Pasos
 . En la página *Configuración > Destinos de copia de seguridad*, seleccione *Agregar*.
@@ -185,7 +161,7 @@ image:screen-settings-backup-destination.png["Página de destinos de copia de se
 *** Cree un nuevo depósito, seleccione un depósito existente si ya existe uno en la consola o traiga su propio depósito que almacenará las copias de seguridad.
 *** Cuenta de AWS, región, clave de acceso y clave secreta para las credenciales de AWS
 +
-https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Si desea traer su propio depósito, consulte Agregar depósitos S3"^] .
+https://docs.netapp.com/us-en/storage-management-s3-storage/task-add-s3-bucket.html["Si desea traer su propio depósito, consulte Agregar depósitos S3"^] .
 
 
 
@@ -228,7 +204,7 @@ image:screen-settings-backup-destinations-list2.png["Página de destinos de copi
 
 Para configurar Google Cloud Platform (GCP) como destino de respaldo, ingrese la siguiente información.
 
-Para obtener detalles sobre cómo administrar su almacenamiento de GCP en la consola, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html["Opciones de instalación del agente de consola en Google Cloud"^] .
+Para obtener detalles sobre cómo administrar su almacenamiento de GCP en la consola, consulte https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["Opciones de instalación del agente de consola en Google Cloud"^] .
 
 .Pasos
 . En la página *Configuración > Destinos de copia de seguridad*, seleccione *Agregar*.
@@ -269,7 +245,7 @@ El nuevo destino de copia de seguridad se agrega a la lista de destinos de copia
 
 Para configurar Azure como destino de copia de seguridad, ingrese la siguiente información.
 
-Para obtener detalles sobre cómo administrar sus credenciales de Azure y suscripciones de Marketplace en la consola, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Administrar sus credenciales de Azure y suscripciones al Marketplace"^] .
+Para obtener detalles sobre cómo administrar sus credenciales de Azure y suscripciones de Marketplace en la consola, consulte https://docs.netapp.com/us-en/console-setup-admin/task-adding-azure-accounts.html["Administrar sus credenciales de Azure y suscripciones al Marketplace"^] .
 
 .Pasos
 . En la página *Configuración > Destinos de copia de seguridad*, seleccione *Agregar*.
@@ -285,7 +261,7 @@ image:screen-settings-backup-destination.png["Página de destinos de copia de se
 *** Cree una nueva cuenta de almacenamiento, seleccione una existente si ya existe una en la Consola o traiga su propia cuenta de almacenamiento que almacenará las copias de seguridad.
 *** Suscripción, región y grupo de recursos de Azure para credenciales de Azure
 +
-https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Si desea traer su propia cuenta de almacenamiento, consulte Agregar cuentas de almacenamiento de blobs de Azure"^] .
+https://docs.netapp.com/us-en/storage-management-blob-storage/task-add-blob-storage.html["Si desea traer su propia cuenta de almacenamiento, consulte Agregar cuentas de almacenamiento de blobs de Azure"^] .
 
 
 
@@ -468,7 +444,7 @@ TIP: Éste es el rol personalizado que creaste anteriormente.
 . En el campo *Asignar acceso a*, seleccione *Usuario, grupo o entidad de servicio*.
 . Seleccione *Seleccionar miembros*.  Luego, seleccione *Ransomware Resilience Sentinel Configurator*.
 . Seleccione *Siguiente*.
-. En el campo *Qué puede hacer el usuario*, seleccione *Permitir al usuario asignar todos los roles excepto los roles de administrador privilegiado: Propietario, UAA, RBAC (recomendado)*.
+. En el campo *Qué puede hacer el usuario*, seleccione *Permitir al usuario asignar todos los roles excepto los roles de administrador privilegiado Propietario, UAA, RBAC (recomendado)*.
 . Seleccione *Siguiente*.
 . Seleccione *Revisar y asignar* para asignar los permisos.
 
