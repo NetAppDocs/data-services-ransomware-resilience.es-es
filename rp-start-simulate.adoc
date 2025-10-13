@@ -32,7 +32,7 @@ Debe ingresar un nombre de usuario y contraseña para las siguientes situaciones
 * Si ingresa un nombre de carga de trabajo de prueba diferente
 
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
 .Pasos
 . Desde el menú NetApp Ransomware Resilience, seleccione el botón *Ejecutar simulacro de preparación* en la parte superior derecha.
@@ -67,7 +67,7 @@ TIP: Puede editar la configuración del simulacro de preparación más tarde uti
 
 Después de configurar el simulacro de preparación, puede iniciarlo.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
 Cuando se inicia el simulacro de preparación, Ransomware Resilience omite el modo de aprendizaje y comienza el simulacro en modo activo.  El estado de detección de la carga de trabajo es Activo.
 
@@ -96,7 +96,7 @@ NOTE: Una vez iniciado el simulacro, no es posible editar la configuración de p
 
 Pon a prueba tu preparación respondiendo a una alerta de simulacro de preparación.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
 .Pasos
 . En el menú Resiliencia ante ransomware, seleccione *Alertas*.
@@ -141,7 +141,7 @@ Si la gravedad indica que se sospecha que un usuario ha realizado una actividad 
 
 Después de revisar la alerta del simulacro de preparación, restaure la carga de trabajo de prueba si es necesario.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
 .Pasos
 . Regresar a la página de detalles de alerta.
@@ -202,7 +202,7 @@ IMPORTANT: Después de descartar un ataque, no puedes revertirlo.  Si descarta u
 
 Una vez finalizado el simulacro de preparación, es posible que desees revisar y guardar un informe sobre el simulacro.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de la organización, administrador de carpeta o proyecto, administrador de resiliencia ante ransomware o visor de resiliencia ante ransomware. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de la organización, administrador de carpeta o proyecto, administrador de resiliencia ante ransomware o visor de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
 .Pasos
 . En el menú Resiliencia ante ransomware, seleccione *Informes*.

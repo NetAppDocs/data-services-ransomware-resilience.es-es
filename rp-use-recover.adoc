@@ -59,7 +59,7 @@ Al utilizar Ransomware Resilience, el administrador de almacenamiento puede dete
 
 El estado de la aplicación cambiará si es necesario para la restauración.  La aplicación se restaurará a su estado anterior desde los archivos de control, si están incluidos en la copia de seguridad.  Una vez finalizada la restauración, la aplicación se abre en modo LECTURA-ESCRITURA.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
 .Pasos
 . En Resiliencia contra ransomware, seleccione *Recuperación*.
@@ -93,7 +93,7 @@ TIP: Ransomware Resilience identifica el mejor punto de restauración como la ú
 
 Al utilizar Ransomware Resilience, el administrador de almacenamiento puede determinar la mejor manera de restaurar las cargas de trabajo desde el punto de restauración recomendado o el punto de restauración preferido.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
 El administrador de almacenamiento de seguridad puede recuperar datos en diferentes niveles:
 

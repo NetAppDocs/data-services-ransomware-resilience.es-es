@@ -2,4 +2,4 @@
 :allow-uri-read: 
 
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de comportamiento del usuario de Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de comportamiento del usuario de Ransomware Resilience. No puede realizar esta tarea con el rol de administrador de Resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .

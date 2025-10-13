@@ -14,7 +14,7 @@ summary: Puede configurar varias opciones, incluido un destino de copia de segur
 [role="lead"]
 Puede configurar destinos de respaldo, enviar datos a un sistema externo de seguridad y gestión de eventos (SIEM), realizar un simulacro de preparación para ataques, configurar el descubrimiento de carga de trabajo o configurar la detección de actividad sospechosa de usuarios accediendo a la opción *Configuración*.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
 *¿Qué puedes hacer en la página de Configuración?*  Desde la página de Configuración, puede hacer lo siguiente:
 

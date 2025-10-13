@@ -42,6 +42,9 @@ Ransomware Resilience incluye un nuevo mecanismo de detección que se puede acti
 
 A diferencia de la detección de cifrado por ARP en la capa de almacenamiento, la detección de la anomalía en el comportamiento del usuario se realiza en el servicio Ransomware Resilience SaaS mediante la recopilación de eventos FPolicy.
 
+
+IMPORTANT: Debes utilizar el nuevolink:#new-user-roles-for-data-breach-detection["Administrador del comportamiento del usuario de Ransomware Resilience y visor del comportamiento del usuario de Ransomware Resilience"] Roles para acceder a configuraciones de detección de comportamiento sospechoso de usuarios.
+
 Para obtener más información, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Habilitar la detección de actividad sospechosa de usuarios"] ylink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["Ver comportamiento anómalo del usuario"] .
 
 
@@ -57,9 +60,13 @@ Además de la detección de violaciones de datos, Ransomware Resilience también
 
 
 
-==== Nuevo rol de usuario para la detección de violaciones de datos
+==== Nuevos roles de usuario para la detección de violaciones de datos
 
-Para gestionar las alertas de actividad sospechosa de los usuarios, Ransomware Resilience ha introducido dos nuevos roles para proporcionar acceso granular a datos confidenciales, como la actividad de archivos del usuario. Para obtener más información, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Acceso basado en roles de NetApp Ransomware Resilience"] .
+Para administrar las alertas de actividad sospechosa de los usuarios, Ransomware Resilience ha introducido dos nuevos roles para que los administradores de la organización de la consola otorguen acceso a la detección de actividad sospechosa de los usuarios: administrador de comportamiento de usuarios de Ransomware Resilience y visor de comportamiento de usuarios de Ransomware Resilience.
+
+Debe ser un administrador de comportamiento de usuario para configurar las opciones de comportamiento de usuario sospechoso.  El rol de administrador de Ransomware Resilience no es compatible con la configuración de ajustes de comportamiento de usuarios sospechosos.
+
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Acceso basado en roles de NetApp Ransomware Resilience"^] .
 
 
 

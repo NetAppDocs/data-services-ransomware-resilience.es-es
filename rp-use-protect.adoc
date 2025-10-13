@@ -14,7 +14,7 @@ summary: Puede proteger las cargas de trabajo contra ataques de ransomware asign
 [role="lead"]
 Puede proteger las cargas de trabajo contra ataques de ransomware habilitando una protección consistente con la carga de trabajo o creando estrategias de protección contra ransomware en NetApp Ransomware Resilience.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
 
 
