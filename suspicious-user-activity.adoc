@@ -14,15 +14,15 @@ summary: La detección de actividad de usuarios sospechosa en Ransomware Resilie
 [role="lead"]
 Ransomware Resilience admite la detección de comportamiento sospechoso de los usuarios en las políticas de detección, lo que le permite abordar incidentes de ransomware a nivel de usuario.
 
-Ransomware Resilience detecta actividad sospechosa del usuario analizando los eventos de actividad del usuario generados por FPolicy en ONTAP.  Para recopilar datos de actividad del usuario, debe implementar uno o más agentes de actividad del usuario.  El agente es un servidor Linux o una máquina virtual con conectividad a los dispositivos de su inquilino.
+Ransomware Resilience detecta actividad sospechosa del usuario analizando los eventos de actividad del usuario generados por FPolicy en ONTAP. Para recopilar datos de actividad del usuario, debe implementar uno o más agentes de actividad del usuario. El agente es un servidor Linux o una máquina virtual con conectividad a los dispositivos de su inquilino.
 
 
 
 == Agentes y coleccionistas
 
-Se debe instalar al menos un agente de actividad del usuario para activar la detección de actividad de usuario sospechosa en Ransomware Resilience.  Cuando activa la función de actividad de usuario sospechosa desde el panel de Ransomware Resilience, debe proporcionar la información del host del agente para activar la función.
+Se debe instalar al menos un agente de actividad del usuario para activar la detección de actividad de usuario sospechosa en Ransomware Resilience. Cuando activa la función de actividad de usuario sospechosa desde el panel de Ransomware Resilience, debe proporcionar la información del host del agente para activar la función.
 
-Un agente puede alojar varios recopiladores de datos.  Los recopiladores de datos envían datos a una ubicación SaaS para su análisis.  Hay dos tipos de coleccionistas:
+Un agente puede alojar varios recopiladores de datos. Los recopiladores de datos envían datos a una ubicación SaaS para su análisis. Hay dos tipos de coleccionistas:
 
 * El **recopilador de datos** recopila datos de actividad del usuario de ONTAP.
 * El **conector de directorio de usuarios** se conecta a su directorio para asignar ID de usuarios a nombres de usuario.
@@ -40,7 +40,7 @@ Los recopiladores se configuran en la configuración de Resiliencia ante ransomw
 
 === Agregar un agente de actividad del usuario
 
-Los agentes de actividad del usuario son entornos ejecutables para los recopiladores de datos; los recopiladores de datos comparten eventos de actividad del usuario con Ransomware Resilience.  Debe crear al menos un agente de actividad de usuario para habilitar la detección de actividad de usuario sospechosa.
+Los agentes de actividad del usuario son entornos ejecutables para los recopiladores de datos; los recopiladores de datos comparten eventos de actividad del usuario con Ransomware Resilience. Debe crear al menos un agente de actividad de usuario para habilitar la detección de actividad de usuario sospechosa.
 
 
 
@@ -93,11 +93,11 @@ El servidor debe cumplir los siguientes requisitos mínimos:
 
 
 .Pasos
-. Si es la primera vez que crea un agente de actividad de usuario, vaya al **Panel de control**.  En el mosaico **Actividad del usuario**, seleccione **Activar**.
+. Si es la primera vez que crea un agente de actividad de usuario, vaya al **Panel de control**. En el mosaico **Actividad del usuario**, seleccione **Activar**.
 +
-Si está agregando un agente de actividad de usuario adicional, vaya a *Configuración*, ubique el mosaico **Actividad de usuario** y luego seleccione **Administrar**.  En la pantalla Actividad del usuario, seleccione la pestaña **Agentes de actividad del usuario** y luego **Agregar**.
+Si está agregando un agente de actividad de usuario adicional, vaya a *Configuración*, ubique el mosaico **Actividad de usuario** y luego seleccione **Administrar**. En la pantalla Actividad del usuario, seleccione la pestaña **Agentes de actividad del usuario** y luego **Agregar**.
 
-. Seleccione un **Proveedor de nube** y luego una **Región**.  Seleccione **Siguiente**.
+. Seleccione un **Proveedor de nube** y luego una **Región**. Seleccione **Siguiente**.
 . Proporcione los detalles del agente de actividad del usuario:
 +
 ** **Nombre del agente de actividad del usuario**
@@ -110,12 +110,12 @@ image:user-activity-agent.png["Captura de pantalla de la interfaz del agente de 
 
 
 . Seleccione **Siguiente**.
-. Revise su configuración.  Seleccione *Activar* para completar la adición del agente de actividad del usuario.
-. Confirme que el agente de actividad del usuario se creó correctamente.  En el mosaico Actividad del usuario, una implementación exitosa se muestra como En ejecución.
+. Revise su configuración. Seleccione *Activar* para completar la adición del agente de actividad del usuario.
+. Confirme que el agente de actividad del usuario se creó correctamente. En el mosaico Actividad del usuario, una implementación exitosa se muestra como En ejecución.
 
 
 .Resultado
-Una vez creado exitosamente el agente de actividad del usuario, regrese al menú **Configuración** y seleccione **Administrar** en el mosaico Actividad del usuario.  Seleccione la pestaña **Agente de actividad del usuario** y luego seleccione el agente de actividad del usuario para ver detalles al respecto, incluidos los recopiladores de datos y los conectores del directorio de usuarios.
+Una vez creado exitosamente el agente de actividad del usuario, regrese al menú **Configuración** y seleccione **Administrar** en el mosaico Actividad del usuario. Seleccione la pestaña **Agente de actividad del usuario** y luego seleccione el agente de actividad del usuario para ver detalles al respecto, incluidos los recopiladores de datos y los conectores del directorio de usuarios.
 
 
 
@@ -123,7 +123,7 @@ Una vez creado exitosamente el agente de actividad del usuario, regrese al menú
 
 Los recopiladores de datos se crean automáticamente cuando habilita una estrategia de protección contra ransomware con detección de actividad de usuario sospechosa. Para obtener más información, consulte xref:rp-use-protect.adoc#add-a-detection-policy-to workloads-with-existing-backup-or-snapshot-policies [añadir una política de detección] .
 
-Puede ver los detalles del recopilador de datos.  Desde Configuración, seleccione **Administrar** en el mosaico Actividad del usuario.  Seleccione la pestaña **Recopilador de datos** y luego seleccione el recopilador de datos para ver sus detalles o pausarlo.
+Puede ver los detalles del recopilador de datos. Desde Configuración, seleccione **Administrar** en el mosaico Actividad del usuario. Seleccione la pestaña **Recopilador de datos** y luego seleccione el recopilador de datos para ver sus detalles o pausarlo.
 
 image:user-activity-settings.png["Captura de pantalla de la configuración de la actividad del usuario"]
 
@@ -157,14 +157,14 @@ Proporcione los detalles de mapeo de atributos:
 ** *SID* (si estás usando LDAP)
 ** *Nombre de usuario*
 ** *ID de Unix* (si estás usando NFS)
-** Seleccione *Incluir atributos opcionales*.  También puede incluir dirección de correo electrónico, número de teléfono, función, estado, país, departamento, foto, DN de gerente o grupos.
+** Seleccione *Incluir atributos opcionales*. También puede incluir dirección de correo electrónico, número de teléfono, función, estado, país, departamento, foto, DN de gerente o grupos.
 +
 Seleccione *Avanzado* para agregar una consulta de búsqueda opcional.
 
 
 
 . Seleccione **Agregar**.
-. Regrese a la pestaña de conectores del directorio de usuarios para verificar el estado de su conector de directorio de usuarios.  Si se crea correctamente, el estado del conector del directorio de usuario se muestra como *En ejecución*.
+. Regrese a la pestaña de conectores del directorio de usuarios para verificar el estado de su conector de directorio de usuarios. Si se crea correctamente, el estado del conector del directorio de usuario se muestra como *En ejecución*.
 
 
 
@@ -174,7 +174,7 @@ Seleccione *Avanzado* para agregar una consulta de búsqueda opcional.
 . En Ransomware Resilience, vaya a *Configuración*.
 . Localice el mosaico Actividad del usuario y seleccione **Administrar**.
 . Seleccione la pestaña **Conector de directorio de usuarios**.
-. Identifique el conector del directorio de usuario que desea eliminar.  En el menú de acciones al final de la línea, seleccione los tres puntos `...` luego **Eliminar**.
+. Identifique el conector del directorio de usuario que desea eliminar. En el menú de acciones al final de la línea, seleccione los tres puntos `...` luego **Eliminar**.
 . En el cuadro de diálogo emergente, seleccione **Eliminar** para confirmar sus acciones.
 
 

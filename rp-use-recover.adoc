@@ -64,7 +64,7 @@ El estado de la aplicación cambiará si es necesario para la restauración.  La
 .Pasos
 . En Resiliencia contra ransomware, seleccione *Recuperación*.
 . Revise la información de la carga de trabajo en la página *Recuperación*.
-. Seleccione una carga de trabajo que esté en el estado "Se necesita restauración".
+. Seleccione una carga de trabajo que esté en el estado "Se necesita restaurar".
 . Para restaurar, seleccione *Restaurar*.
 . *Ámbito de restauración*: consistente con la aplicación (o, para SnapCenter para máquinas virtuales, el ámbito de restauración es "Por máquina virtual")
 . *Fuente*: Seleccione la flecha hacia abajo junto a Fuente para ver los detalles.  Seleccione el punto de restauración que desea utilizar para restaurar los datos.
@@ -100,7 +100,7 @@ El administrador de almacenamiento de seguridad puede recuperar datos en diferen
 * Recuperar todos los volúmenes
 * Recuperar una aplicación a nivel de volumen o de archivo y carpeta.
 * Recupere un recurso compartido de archivos a nivel de volumen, directorio o archivo/carpeta.
-* Recuperarse de un almacén de datos a nivel de máquina virtual.
+* Recuperarse de un almacén de datos a nivel de VM.
 
 
 El proceso varía según el tipo de carga de trabajo.
@@ -108,9 +108,9 @@ El proceso varía según el tipo de carga de trabajo.
 .Pasos
 . En el menú Resiliencia ante ransomware, seleccione *Recuperación*.
 . Revise la información de la carga de trabajo en la página *Recuperación*.
-. Seleccione una carga de trabajo que esté en el estado "Se necesita restauración".
+. Seleccione una carga de trabajo que esté en el estado "Se necesita restaurar".
 . Para restaurar, seleccione *Restaurar*.
-. *Alcance de la restauración*: seleccione el tipo de restauración que desea completar:
+. *Alcance de restauración*: seleccione el tipo de restauración que desea completar:
 +
 ** Todos los volúmenes
 ** Por volumen
@@ -133,7 +133,7 @@ TIP: Puede seleccionar hasta 100 archivos o una sola carpeta.
 === Restaurar todos los volúmenes
 
 . En el menú Resiliencia ante ransomware, seleccione *Recuperación*.
-. Seleccione una carga de trabajo que esté en el estado "Se necesita restauración".
+. Seleccione una carga de trabajo que esté en el estado "Se necesita restaurar".
 . Para restaurar, seleccione *Restaurar*.
 . En la página Restaurar, en el ámbito de restauración, seleccione *Todos los volúmenes*.
 +
@@ -169,7 +169,7 @@ TIP: El nuevo nombre del volumen aparece como prefijo + nombre del volumen origi
 
 
 
-=== Restaurar una carga de trabajo de aplicación a nivel de volumen
+=== Restaurar una carga de trabajo de la aplicación a nivel de volumen
 
 . En el menú Resiliencia ante ransomware, seleccione *Recuperación*.
 . Seleccione una carga de trabajo de aplicación que esté en el estado "Se necesita restaurar".

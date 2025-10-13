@@ -27,7 +27,7 @@ Ransomware Resilience verifica su protección de respaldo actual, copias instant
 
 ¿Cómo puedes descubrir las cargas de trabajo?  Puedes hacer lo siguiente:
 
-* Dentro de cada agente de consola, seleccione los sistemas en los que desea descubrir cargas de trabajo. Esta función puede resultarle beneficiosa si desea proteger cargas de trabajo específicas en su entorno y no otras.
+* Dentro de cada agente de consola, seleccione los sistemas en los que desea descubrir cargas de trabajo.  Esta función puede resultarle beneficiosa si desea proteger cargas de trabajo específicas en su entorno y no otras.
 * Descubra cargas de trabajo recién creadas para sistemas previamente seleccionados.
 * Descubra nuevos sistemas.
 
@@ -39,7 +39,7 @@ Ransomware Resilience verifica su protección de respaldo actual, copias instant
 Dentro de cada agente de consola, seleccione los sistemas en los que desea descubrir cargas de trabajo.
 
 .Pasos
-. Desde la consola de NetApp , seleccione *Protección* > *Protección contra ransomware*.
+. Desde la NetApp Console, seleccione *Protección* > *Protección contra ransomware*.
 +
 Si este es su primer inicio de sesión, aparecerá la página de destino.
 
@@ -52,7 +52,7 @@ NOTE: Si inició la prueba gratuita, la etiqueta del botón *Iniciar prueba grat
 
 . Desde la página de destino inicial, seleccione *Comenzar por descubrir cargas de trabajo*.
 +
-Ransomware Resilience encuentra sistemas compatibles y no compatibles. Este proceso puede tardar unos minutos.
+Ransomware Resilience encuentra sistemas compatibles y no compatibles.  Este proceso puede tardar unos minutos.
 
 +
 image:screen-discover-workloads.png["Captura de pantalla de Descubrir cargas de trabajo"]
@@ -61,7 +61,7 @@ image:screen-discover-workloads.png["Captura de pantalla de Descubrir cargas de 
 . Seleccione los sistemas en los que desea descubrir cargas de trabajo.
 . Seleccione *Descubrir*.
 +
-Ransomware Resilience descubre datos de carga de trabajo solo para aquellos agentes de consola con sistemas seleccionados. Este proceso puede tardar unos minutos.
+Ransomware Resilience descubre datos de carga de trabajo solo para aquellos agentes de consola con sistemas seleccionados.  Este proceso puede tardar unos minutos.
 
 . Para descargar la lista de cargas de trabajo descubiertas, seleccione *Descargar resultados*.
 . Para mostrar el panel de resiliencia ante ransomware, seleccione *Ir al panel*.

@@ -1,9 +1,9 @@
 ---
 indexpage:
-  title: Documentación de NetApp sobre resiliencia ante ransomware
+  title: Documentación de NetApp Ransomware Resilience
   summary: NetApp Ransomware Resilience protege, detecta y respalda la recuperación
     de cargas de trabajo de aplicaciones y recursos compartidos de archivos contra
-    amenazas de ransomware en el almacenamiento local y en la nube.  Ransomware Resilience
+    amenazas de ransomware en el almacenamiento local y en la nube. Ransomware Resilience
     es compatible con plataformas como Oracle, MySQL, almacenes de datos de máquinas
     virtuales y almacenamiento NAS, y permite realizar copias de seguridad y recuperaciones
     seguras, lo que ayuda a las organizaciones a proteger datos críticos y mantener
@@ -12,8 +12,8 @@ indexpage:
     web services, aws, storagegrid, protection, resilience
   lead: NetApp Ransomware Resilience protege, detecta y respalda la recuperación de
     cargas de trabajo de aplicaciones y recursos compartidos de archivos contra amenazas
-    de ransomware en el almacenamiento local y en la nube.  Ransomware Resilience
-    es compatible con plataformas como Oracle, MySQL, almacenes de datos de máquinas
+    de ransomware en el almacenamiento local y en la nube. Ransomware Resilience es
+    compatible con plataformas como Oracle, MySQL, almacenes de datos de máquinas
     virtuales y almacenamiento NAS, y permite realizar copias de seguridad y recuperaciones
     seguras, lo que ayuda a las organizaciones a proteger datos críticos y mantener
     la continuidad del negocio.
@@ -42,8 +42,7 @@ indexpage:
       url: "/rp-use-dashboard.html"
     - title: Proteger las cargas de trabajo
       url: "/rp-use-protect.html"
-    - title: Busque información de identificación personal con la clasificación de
-        datos de NetApp
+    - title: Busque información de identificación personal con NetApp Data Classification
       url: "/rp-use-protect-classify.html"
     - title: Responder a una alerta detectada
       url: "/rp-use-alert.html"
@@ -51,9 +50,9 @@ indexpage:
       url: "/rp-use-recover.html"
   - title: Blogs y comunidad
     links:
-    - title: Consola de NetApp
+    - title: NetApp Console
       url: https://www.netapp.com/console
-    - title: Servicios de datos de NetApp
+    - title: NetApp Data Services
       url: https://www.netapp.com/data-services/
     - title: Comunidad de NetApp
       url: https://community.netapp.com/

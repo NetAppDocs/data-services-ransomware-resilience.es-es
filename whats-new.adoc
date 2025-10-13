@@ -30,15 +30,15 @@ El servicio de BlueXP ransomware protection ha pasado a llamarse NetApp Ransomwa
 
 === BlueXP ahora es NetApp Console
 
-La consola de NetApp proporciona una gestión centralizada de servicios de almacenamiento y datos en entornos locales y en la nube a nivel empresarial, brindando información en tiempo real, flujos de trabajo más rápidos y una administración simplificada.
+La NetApp Console proporciona una gestión centralizada de servicios de almacenamiento y datos en entornos locales y en la nube a nivel empresarial, brindando información en tiempo real, flujos de trabajo más rápidos y una administración simplificada.
 
-Para obtener más detalles sobre lo que ha cambiado, consulte la https://docs.netapp.com/us-en/console-relnotes/index.html["Notas de la versión de la consola de NetApp"] .
+Para obtener más detalles sobre lo que ha cambiado, consulte la https://docs.netapp.com/us-en/console-relnotes/index.html["Notas de la versión de la NetApp Console"] .
 
 
 
 === Detección de violaciones de datos
 
-Ransomware Resilience incluye un nuevo mecanismo de detección que se puede activar en unos pocos pasos para detectar lecturas anómalas del usuario como un indicador temprano de violación de datos.  La resiliencia ante ransomware recopila y analiza eventos de lectura del usuario mediante la creación de una línea de base histórica, que es un perfil del comportamiento normal esperado a partir de datos pasados.  Cuando la actividad de un nuevo usuario se desvía significativamente de esta norma establecida (por ejemplo, un aumento inesperado de lectura combinado con patrones de lectura sospechosos), se genera una alerta.  Ransomware Resilience incluye un modelo de IA para detectar patrones de lectura sospechosos.
+Ransomware Resilience incluye un nuevo mecanismo de detección que se puede activar en unos pocos pasos para detectar lecturas anómalas del usuario como un indicador temprano de violación de datos. La resiliencia ante ransomware recopila y analiza eventos de lectura del usuario mediante la creación de una línea de base histórica, que es un perfil del comportamiento normal esperado a partir de datos pasados. Cuando la actividad de un nuevo usuario se desvía significativamente de esta norma establecida (por ejemplo, un aumento inesperado de lectura combinado con patrones de lectura sospechosos), se genera una alerta. Ransomware Resilience incluye un modelo de IA para detectar patrones de lectura sospechosos.
 
 A diferencia de la detección de cifrado por ARP en la capa de almacenamiento, la detección de la anomalía en el comportamiento del usuario se realiza en el servicio Ransomware Resilience SaaS mediante la recopilación de eventos FPolicy.
 
@@ -64,7 +64,7 @@ Además de la detección de violaciones de datos, Ransomware Resilience también
 
 Para administrar las alertas de actividad sospechosa de los usuarios, Ransomware Resilience ha introducido dos nuevos roles para que los administradores de la organización de la consola otorguen acceso a la detección de actividad sospechosa de los usuarios: administrador de comportamiento de usuarios de Ransomware Resilience y visor de comportamiento de usuarios de Ransomware Resilience.
 
-Debe ser un administrador de comportamiento de usuario para configurar las opciones de comportamiento de usuario sospechoso.  El rol de administrador de Ransomware Resilience no es compatible con la configuración de ajustes de comportamiento de usuarios sospechosos.
+Debe ser un administrador de comportamiento de usuario para configurar las opciones de comportamiento de usuario sospechoso. El rol de administrador de Ransomware Resilience no es compatible con la configuración de ajustes de comportamiento de usuarios sospechosos.
 
 Para obtener más información, consulte link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Acceso basado en roles de NetApp Ransomware Resilience"^] .
 
@@ -82,7 +82,7 @@ Esta versión incluye mejoras generales.
 
 === Soporte de carga de trabajo SAN
 
-Esta versión incluye soporte para cargas de trabajo SAN en la BlueXP ransomware protection.  Ahora puede proteger cargas de trabajo SAN además de cargas de trabajo NFS y CIFS.
+Esta versión incluye soporte para cargas de trabajo SAN en la BlueXP ransomware protection. Ahora puede proteger cargas de trabajo SAN además de cargas de trabajo NFS y CIFS.
 
 Para obtener más información, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-prerequisites.html["Requisitos previos para la BlueXP ransomware protection"] .
 
@@ -90,7 +90,7 @@ Para obtener más información, consulte link:https://docs.netapp.com/us-en/data
 
 === Protección mejorada de la carga de trabajo
 
-Esta versión mejora el proceso de configuración para cargas de trabajo con políticas de instantáneas y respaldo de otras herramientas de NetApp , como SnapCenter o BlueXP backup and recovery.  En versiones anteriores, la BlueXP ransomware protection descubría las políticas de otras herramientas y solo le permitía cambiar la política de detección.  Con esta versión, ahora puede reemplazar las políticas de instantáneas y copias de seguridad con las políticas de BlueXP ransomware protection o continuar usando las políticas de otras herramientas.
+Esta versión mejora el proceso de configuración para cargas de trabajo con políticas de instantáneas y respaldo de otras herramientas de NetApp , como SnapCenter o BlueXP backup and recovery. En versiones anteriores, la BlueXP ransomware protection descubría las políticas de otras herramientas y solo le permitía cambiar la política de detección. Con esta versión, ahora puede reemplazar las políticas de instantáneas y copias de seguridad con las políticas de BlueXP ransomware protection o continuar usando las políticas de otras herramientas.
 
 Para más detalles, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteger las cargas de trabajo"] .
 
@@ -343,7 +343,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 === Evaluación de riesgos de seguridad de Digital Advisor
 
-La BlueXP ransomware protection ahora recopila información sobre riesgos de seguridad altos y críticos relacionados con un clúster desde NetApp Digital Advisor.  Si se encuentra algún riesgo, la BlueXP ransomware protection proporciona una recomendación en el panel *Acciones recomendadas* del Panel de control: "Solucionar una vulnerabilidad de seguridad conocida en el clúster <nombre>".  De la recomendación en el Panel de Control, al hacer clic en *Revisar y corregir* se sugiere revisar Digital Advisor y un artículo de Vulnerabilidad y Exposición Común (CVE) para resolver el riesgo de seguridad.  Si existen múltiples riesgos de seguridad, revise la información en Digital Advisor.
+La BlueXP ransomware protection ahora recopila información sobre riesgos de seguridad altos y críticos relacionados con un clúster desde NetApp Digital Advisor.  Si se encuentra algún riesgo, la BlueXP ransomware protection proporciona una recomendación en el panel *Acciones recomendadas* del Panel de control: "Solucionar una vulnerabilidad de seguridad conocida en el clúster <nombre>".  Según la recomendación en el Panel de Control, al hacer clic en *Revisar y corregir* se sugiere revisar Digital Advisor y un artículo de Vulnerabilidad y Exposición Común (CVE) para resolver el riesgo de seguridad.  Si existen múltiples riesgos de seguridad, revise la información en Digital Advisor.
 
 Referirse a https://docs.netapp.com/us-en/active-iq/index.html["Documentación de Digital Advisor"^] .
 
@@ -583,7 +583,7 @@ Ahora puede ver más detalles forenses para investigar el posible ataque detecta
 
 === Proceso de recuperación
 
-Se mejoró el proceso de recuperación.  Ahora, puede recuperar volumen por volumen o todos los volúmenes para una carga de trabajo. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Obtenga más información sobre cómo recuperarse de un ataque de ransomware (después de que se hayan neutralizado los incidentes)"] .
+Se mejoró el proceso de recuperación. Ahora, puede recuperar volumen por volumen o todos los volúmenes para una carga de trabajo. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Obtenga más información sobre cómo recuperarse de un ataque de ransomware (después de que se hayan neutralizado los incidentes)"] .
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Obtenga más información sobre la BlueXP ransomware protection"] .
 

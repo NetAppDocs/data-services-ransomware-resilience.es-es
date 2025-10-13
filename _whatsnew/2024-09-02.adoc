@@ -6,7 +6,7 @@
 
 === Evaluación de riesgos de seguridad de Digital Advisor
 
-La BlueXP ransomware protection ahora recopila información sobre riesgos de seguridad altos y críticos relacionados con un clúster desde NetApp Digital Advisor.  Si se encuentra algún riesgo, la BlueXP ransomware protection proporciona una recomendación en el panel *Acciones recomendadas* del Panel de control: "Solucionar una vulnerabilidad de seguridad conocida en el clúster <nombre>".  De la recomendación en el Panel de Control, al hacer clic en *Revisar y corregir* se sugiere revisar Digital Advisor y un artículo de Vulnerabilidad y Exposición Común (CVE) para resolver el riesgo de seguridad.  Si existen múltiples riesgos de seguridad, revise la información en Digital Advisor.
+La BlueXP ransomware protection ahora recopila información sobre riesgos de seguridad altos y críticos relacionados con un clúster desde NetApp Digital Advisor.  Si se encuentra algún riesgo, la BlueXP ransomware protection proporciona una recomendación en el panel *Acciones recomendadas* del Panel de control: "Solucionar una vulnerabilidad de seguridad conocida en el clúster <nombre>".  Según la recomendación en el Panel de Control, al hacer clic en *Revisar y corregir* se sugiere revisar Digital Advisor y un artículo de Vulnerabilidad y Exposición Común (CVE) para resolver el riesgo de seguridad.  Si existen múltiples riesgos de seguridad, revise la información en Digital Advisor.
 
 Referirse a https://docs.netapp.com/us-en/active-iq/index.html["Documentación de Digital Advisor"^] .
 

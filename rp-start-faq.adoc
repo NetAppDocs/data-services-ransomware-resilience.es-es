@@ -4,7 +4,7 @@ permalink: rp-start-faq.html
 keywords: ransomware protection faq, ransomware protection frequently asked questions 
 summary: Encuentre una respuesta a una pregunta frecuente sobre NetApp Ransomware Resilience. 
 ---
-= Preguntas frecuentes sobre la resiliencia frente al ransomware de NetApp
+= Preguntas frecuentes sobre la NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -24,18 +24,18 @@ Puede utilizar los siguientes tipos de licencia:
 
 * Regístrese para una prueba gratuita de 30 días.
 * Compre una suscripción de pago por uso (PAYGO) a NetApp Intelligent Services y Ransomware Resilience con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace y Microsoft Azure Marketplace.
-* Traiga su propia licencia (BYOL), que es un archivo de licencia de NetApp (NLF) que obtiene de su representante de ventas de NetApp . Puedes utilizar el número de serie de la licencia para activar el BYOL en la sección Licencias y suscripciones de la Consola.
+* Traiga su propia licencia (BYOL), que es un archivo de licencia de NetApp (NLF) que obtiene de su representante de ventas de NetApp .  Puedes utilizar el número de serie de la licencia para activar el BYOL en la sección Licencias y suscripciones de la Consola.
 
 
-¿Cómo se habilita la resiliencia frente al ransomware?  La resiliencia frente al ransomware no requiere ninguna habilitación.  Puede acceder a Ransomware Resilience desde la consola de NetApp .
+¿Cómo se habilita la resiliencia frente al ransomware?  La resiliencia frente al ransomware no requiere ninguna habilitación.  Puede acceder a Ransomware Resilience desde la NetApp Console.
 
 Para comenzar, debe registrarse o comunicarse con su representante de ventas de NetApp para probar este servicio.  Luego, cuando utilice el agente de consola, incluirá las capacidades adecuadas para la resiliencia ante ransomware.
 
 Para comenzar a utilizar Ransomware Resilience, seleccione "Comenzar a descubrir cargas de trabajo" en su página de inicio.
 
-¿Ransomware Resilience está disponible en modos estándar, restringido y privado?  En este momento, Ransomware Resilience solo está disponible en modo estándar. Permanezca atento para más información.
+¿Ransomware Resilience está disponible en modos estándar, restringido y privado?  En este momento, Ransomware Resilience solo está disponible en modo estándar.  Permanezca atento para más información.
 
-Para obtener una explicación sobre estos modos en todos los servicios de datos de NetApp , consulte https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Modos de implementación de la consola de NetApp"^] .
+Para obtener una explicación sobre estos modos en todos los servicios de datos de NetApp , consulte https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Modos de implementación de la NetApp Console"^] .
 
 
 
@@ -45,9 +45,9 @@ Para obtener una explicación sobre estos modos en todos los servicios de datos 
 
 ¿Cómo se gestionan los permisos de acceso? https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
 
-¿Qué resolución de dispositivo es la mejor? La resolución de dispositivo recomendada para Ransomware Resilience es 1920x1080 o superior.
+¿Qué resolución de dispositivo es la mejor?  La resolución de dispositivo recomendada para Ransomware Resilience es 1920x1080 o superior.
 
-¿Qué navegador debo utilizar? Cualquier navegador moderno.
+¿Qué navegador debo utilizar?  Cualquier navegador moderno.
 
 
 
@@ -71,13 +71,13 @@ Además, Ransomware Resilience utiliza Backup and Recovery y SnapCenter / SnapCe
 
 == Cargas de trabajo
 
-¿Qué constituye una carga de trabajo? Una carga de trabajo es una aplicación, una máquina virtual o un recurso compartido de archivos. Una carga de trabajo incluye todos los volúmenes que utiliza una única instancia de aplicación.  Por ejemplo, una instancia de Oracle DB implementada en ora3.host.com puede tener vol1 y vol2 para sus datos y registros, respectivamente.  Estos volúmenes juntos constituyen la carga de trabajo para esa instancia específica de la instancia de Oracle DB.
+¿Qué constituye una carga de trabajo?  Una carga de trabajo es una aplicación, una máquina virtual o un recurso compartido de archivos.  Una carga de trabajo incluye todos los volúmenes que utiliza una única instancia de aplicación.  Por ejemplo, una instancia de Oracle DB implementada en ora3.host.com puede tener vol1 y vol2 para sus datos y registros, respectivamente.  Estos volúmenes juntos constituyen la carga de trabajo para esa instancia específica de la instancia de Oracle DB.
 
 ¿Cómo prioriza Ransomware Resilience los datos de la carga de trabajo?  La prioridad de los datos está determinada por las copias de instantáneas realizadas y las copias de seguridad programadas.
 
 La prioridad de la carga de trabajo (crítica, estándar, importante) está determinada por las frecuencias de instantáneas ya aplicadas a cada volumen asociado con la carga de trabajo.
 
-link:rp-use-protect.html["Conozca la prioridad o importancia de la carga de trabajo"] .
+link:rp-use-protect.html["Obtenga información sobre la prioridad o importancia de la carga de trabajo"] .
 
 ¿Qué cargas de trabajo admite Ransomware Resilience?
 
@@ -93,9 +93,9 @@ Ransomware Resilience asocia datos con una carga de trabajo de las siguientes ma
 * Además, si tiene SnapCenter o SnapCenter para VMware y ha configurado cargas de trabajo en Backup and Recovery, Ransomware Resilience descubre las cargas de trabajo administradas por SnapCenter y SnapCenter para VMware y sus volúmenes asociados.
 
 
-¿Qué es una carga de trabajo “protegida”? En Ransomware Resilience, una carga de trabajo muestra un estado "protegido" cuando tiene una política de detección principal habilitada.  Por ahora, esto significa que ARP está habilitado en todos los volúmenes relacionados con la carga de trabajo.
+¿Qué es una carga de trabajo “protegida”?  En Ransomware Resilience, una carga de trabajo muestra un estado "protegido" cuando tiene una política de detección principal habilitada.  Por ahora, esto significa que ARP está habilitado en todos los volúmenes relacionados con la carga de trabajo.
 
-¿Qué es una carga de trabajo “de riesgo”? Si una carga de trabajo no tiene habilitada una política de detección principal, está "en riesgo" incluso si tiene habilitada una política de copia de seguridad e instantáneas.
+¿Qué es una carga de trabajo “de riesgo”?  Si una carga de trabajo no tiene habilitada una política de detección principal, está "en riesgo" incluso si tiene habilitada una política de copia de seguridad e instantáneas.
 
 *Se agregó un nuevo volumen, pero aún no aparece* Si agregó un nuevo volumen a su entorno, inicie la detección nuevamente y aplique políticas de protección para proteger ese nuevo volumen.
 
@@ -119,7 +119,7 @@ No se requiere una política de respaldo en la estrategia de resiliencia frente 
 
 ¿Ransomware Resilience tiene conocimiento de las configuraciones de protección realizadas en NetApp ONTAP?
 
-Sí, Ransomware Resilience descubre las programaciones de instantáneas establecidas en ONTAP y si ARP y FPolicy están habilitados en todos los volúmenes en una carga de trabajo descubierta. La información que ve inicialmente en el Panel de Control se agrega desde otras soluciones y productos de NetApp .
+Sí, Ransomware Resilience descubre las programaciones de instantáneas establecidas en ONTAP y si ARP y FPolicy están habilitados en todos los volúmenes en una carga de trabajo descubierta.  La información que ve inicialmente en el Panel de Control se agrega desde otras soluciones y productos de NetApp .
 
 ¿Ransomware Resilience tiene conocimiento de las políticas ya creadas en Backup and Recovery y SnapCenter?
 

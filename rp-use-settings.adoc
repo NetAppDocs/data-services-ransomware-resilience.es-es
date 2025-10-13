@@ -18,7 +18,7 @@ Puede configurar destinos de respaldo, enviar datos a un sistema externo de segu
 
 *¿Qué puedes hacer en la página de Configuración?*  Desde la página de Configuración, puede hacer lo siguiente:
 
-* Simule un ataque de ransomware realizando un simulacro de preparación y respondiendo a una alerta de ransomware simulada. Para obtener más información, consulte link:rp-start-simulate.html["Realizar un simulacro de preparación para un ataque de ransomware"] .
+* Simule un ataque de ransomware realizando un simulacro de preparación y responda a una alerta de ransomware simulada. Para obtener más información, consulte link:rp-start-simulate.html["Realizar un simulacro de preparación para un ataque de ransomware"] .
 * Configurar la detección de carga de trabajo.
 * Configurar el informe de actividad de usuarios sospechosos.
 * Agregar un destino de respaldo.
@@ -126,7 +126,7 @@ image:screen-settings-backup-destination.png["Página de destinos de copia de se
 
 ** *Redes*: Elija el espacio IP.
 +
-*** El espacio IP es el clúster donde residen los volúmenes que desea respaldar. Los LIF entre clústeres para este espacio IP deben tener acceso a Internet saliente.
+*** El espacio IP es el clúster donde residen los volúmenes que desea respaldar.  Los LIF entre clústeres para este espacio IP deben tener acceso a Internet saliente.
 
 
 
@@ -171,7 +171,7 @@ Los datos en el bucket se cifran con claves administradas por AWS de forma prede
 
 ** *Redes*: elija el espacio IP y si utilizará un punto final privado.
 +
-*** El espacio IP es el clúster donde residen los volúmenes que desea respaldar. Los LIF entre clústeres para este espacio IP deben tener acceso a Internet saliente.
+*** El espacio IP es el clúster donde residen los volúmenes que desea respaldar.  Los LIF entre clústeres para este espacio IP deben tener acceso a Internet saliente.
 *** Opcionalmente, elija si utilizará un punto final privado de AWS (PrivateLink) que configuró previamente.
 +
 Si desea utilizar AWS PrivateLink, consulte https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["AWS PrivateLink para Amazon S3"^] .
@@ -227,7 +227,7 @@ Los datos del depósito se cifran con claves administradas por Google de forma p
 
 ** *Redes*: elija el espacio IP y si utilizará un punto final privado.
 +
-*** El espacio IP es el clúster donde residen los volúmenes que desea respaldar. Los LIF entre clústeres para este espacio IP deben tener acceso a Internet saliente.
+*** El espacio IP es el clúster donde residen los volúmenes que desea respaldar.  Los LIF entre clústeres para este espacio IP deben tener acceso a Internet saliente.
 *** De manera opcional, elija si utilizará un punto final privado de GCP (PrivateLink) que configuró previamente.
 
 
@@ -271,7 +271,7 @@ Los datos de la cuenta están cifrados con claves administradas por Microsoft de
 
 ** *Redes*: elija el espacio IP y si utilizará un punto final privado.
 +
-*** El espacio IP es el clúster donde residen los volúmenes que desea respaldar. Los LIF entre clústeres para este espacio IP deben tener acceso a Internet saliente.
+*** El espacio IP es el clúster donde residen los volúmenes que desea respaldar.  Los LIF entre clústeres para este espacio IP deben tener acceso a Internet saliente.
 *** Opcionalmente, elija si utilizará un punto de conexión privado de Azure que configuró previamente.
 +
 Si desea utilizar Azure PrivateLink, consulte https://azure.microsoft.com/en-us/products/private-link/["Enlace privado de Azure"^] .

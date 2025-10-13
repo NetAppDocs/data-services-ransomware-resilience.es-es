@@ -4,7 +4,7 @@ permalink: rp-start-quick-start.html
 keywords: get started, ransomware protection, quick start, resilience, quickstart 
 summary: Comience a utilizar NetApp Ransomware Resilience en unos pocos pasos. 
 ---
-= Inicio rápido para la resiliencia contra ransomware de NetApp
+= Inicio rápido para la NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: Comience a utilizar NetApp Ransomware Resilience en unos pocos pasos.
 
 
 [role="lead"]
-A continuación se presenta una descripción general de los pasos necesarios para comenzar a utilizar NetApp Ransomware Resilience. Los enlaces dentro de cada paso lo llevarán a una página que proporciona más detalles.
+A continuación se muestra una descripción general de los pasos necesarios para comenzar a utilizar NetApp Ransomware Resilience. Los enlaces dentro de cada paso lo llevarán a una página que proporciona más detalles.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]Revisar los prerrequisitos
 [role="quick-margin-para"]

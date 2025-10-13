@@ -56,7 +56,7 @@ Para obtener detalles sobre cómo administrar su almacenamiento de Azure en la c
 
 
 
-== Configurar la consola de NetApp
+== Configurar la NetApp Console
 
 El siguiente paso es configurar la consola y la resiliencia contra ransomware.
 

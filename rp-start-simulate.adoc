@@ -35,7 +35,7 @@ Debe ingresar un nombre de usuario y contraseña para las siguientes situaciones
 *Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
 .Pasos
-. Desde el menú NetApp Ransomware Resilience, seleccione el botón *Ejecutar simulacro de preparación* en la parte superior derecha.
+. Desde el menú NetApp Ransomware Resilience , seleccione el botón *Ejecutar simulacro de preparación* en la parte superior derecha.
 +
 image:screen-dashboard.png["Página del panel que muestra el botón de simulacro de preparación para la ejecución"]
 
@@ -121,7 +121,7 @@ Aquí hay algunas cosas que debes tener en cuenta:
 
 * Observe la gravedad del ataque potencial.
 +
-Si la gravedad indica que se sospecha que un usuario ha realizado una actividad maliciosa, revise el nombre del usuario.  También puedeslink:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["bloquear al usuario."]
+Si la gravedad indica que se sospecha que un usuario ha realizado una actividad maliciosa, revise el nombre del usuario. También puedeslink:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["bloquear al usuario."]
 
 * Observe la actividad del archivo y los procesos sospechosos:
 +
