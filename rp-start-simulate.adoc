@@ -52,6 +52,7 @@ image:screen-settings-alert-drill-configure.png["Configurar la página de simula
 .. Seleccione un sistema de prueba.
 .. Seleccione un SVM de almacenamiento de prueba.
 .. Si seleccionó una máquina virtual de almacenamiento CIFS (SMB), aparecerán los campos **Nombre de usuario** y **Contraseña**.  Introduzca el nombre de usuario y la contraseña para la máquina virtual de almacenamiento.
+.. Seleccione el tipo de simulacro de preparación. Para una recuperación manual de una violación de datos de cifrado, elija **Recuperación personalizada**. Para recuperarse de una actividad de usuario sospechosa, elija **Violación de datos**.
 .. Introduzca el nombre de una nueva carga de trabajo de prueba que se creará.  No incluya guiones en el nombre.
 
 
@@ -84,11 +85,10 @@ image:screen-dashboard.png["Página del panel que muestra el botón de simulacro
 ** O bien, desde la página Configuración, en la tarjeta de simulacro de preparación, seleccione *Iniciar*.
 
 
-. Si ya ha configurado el simulacro de preparación, después de seleccionar *Iniciar*, comenzará el simulacro de preparación.
 
 
 
-NOTE: Una vez iniciado el simulacro, no es posible editar la configuración de preparación del simulacro.  Puedes restablecerlo para comenzar de nuevo.
+NOTE: No es posible editar la configuración del simulacro de preparación mientras el simulacro se está ejecutando. Puedes reiniciar el taladro para detenerlo y modificar la configuración.
 
 
 
