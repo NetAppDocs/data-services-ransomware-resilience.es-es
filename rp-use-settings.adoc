@@ -209,9 +209,6 @@ Para obtener detalles sobre cómo administrar su almacenamiento de GCP en la con
 .Pasos
 . En la página *Configuración > Destinos de copia de seguridad*, seleccione *Agregar*.
 . Introduzca un nombre para el destino de la copia de seguridad.
-+
-image:screen-settings-backup-destination-gcp.png["Página de destinos de copia de seguridad"]
-
 . Seleccione *Google Cloud Platform*.
 . Seleccione la flecha hacia abajo junto a cada configuración e ingrese o seleccione valores:
 +
@@ -219,6 +216,9 @@ image:screen-settings-backup-destination-gcp.png["Página de destinos de copia d
 +
 *** Crear un nuevo depósito.  Introduzca la clave de acceso y la clave secreta.
 *** Ingrese o seleccione su proyecto y región de Google Cloud Platform.
++
+image:screen-settings-backup-destination-gcp.png["Página de destinos de copia de seguridad"]
+
 
 
 ** *Cifrado*: si está creando un nuevo depósito, ingrese la información de la clave de cifrado que le proporcionó el proveedor.  Si eligió un depósito existente, la información de cifrado ya está disponible.
