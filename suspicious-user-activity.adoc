@@ -34,7 +34,7 @@ Los recopiladores se configuran en la configuración de Resiliencia ante ransomw
 
 == Habilitar la detección de actividad sospechosa de usuarios
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de comportamiento del usuario de Ransomware Resilience. No puede realizar esta tarea con el rol de administrador de Resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
+*Rol de consola requerido* Para activar la detección de actividad de usuarios sospechosos, necesita el rol de administrador de la organización.  Para configuraciones posteriores de actividad de usuarios sospechosa, necesita el rol de administrador de comportamiento de usuario de Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
 
 
 
@@ -46,7 +46,7 @@ Los agentes de actividad del usuario son entornos ejecutables para los recopilad
 
 ==== Requisitos
 
-Para instalar un agente de actividad del usuario, necesita un host o una máquina virtual con cualquiera de los siguientes sistemas operativos y requisitos de servidor compatibles.
+Para instalar un agente de actividad del usuario, necesita un host o una máquina virtual que cumpla con los siguientes requisitos de servidor y sistema operativo compatibles.
 
 **Requisitos del sistema operativo**
 

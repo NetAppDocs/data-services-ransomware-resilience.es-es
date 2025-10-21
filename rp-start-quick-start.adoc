@@ -27,7 +27,7 @@ Estas tareas requieren el rol de _Administrador de consola_.
 * link:rp-start-licenses.html["Configurar licencias"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"]Configurar la resiliencia frente al ransomware
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"]Comience a utilizar Ransomware Resilience
 [role="quick-margin-para"]
 Estas tareas requieren el rol de _administrador de resiliencia ante ransomware_.
 
