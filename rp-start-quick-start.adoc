@@ -64,5 +64,5 @@ Después de configurar la protección en Ransomware Resilience, esto es lo que p
 [role="quick-margin-list"]
 * link:rp-use-protect-classify.html["Habilitar la clasificación de datos para identificar riesgos de gobernanza y seguridad"]
 * link:rp-use-settings.html#connect-to-a-security-and-event-management-system-siem-for-threat-analysis-and-detection["Enviar alertas a SIEM"]
-* link:p-use-reports.html["Descargue informes de alerta, protección, simulacro de preparación, recuperación o resumen"]
+* link:rp-use-reports.html["Descargue informes de alerta, protección, simulacro de preparación, recuperación o resumen"]
 
