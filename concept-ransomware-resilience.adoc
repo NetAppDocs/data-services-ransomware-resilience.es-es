@@ -169,7 +169,9 @@ image:diagram-rp-architecture-preview3.png["Diagrama que muestra la arquitectura
 
 Ransomware Resilience admite los siguientes objetivos de respaldo, sistemas y fuentes de datos:
 
-*Objetivos de respaldo admitidos*
+
+
+=== Destinos de copia de seguridad compatibles
 
 * Servicios web de Amazon (AWS) S3
 * Plataforma de Google Cloud
@@ -177,7 +179,9 @@ Ransomware Resilience admite los siguientes objetivos de respaldo, sistemas y fu
 * StorageGRID en NetApp
 
 
-*Sistemas compatibles*
+
+
+=== Sistemas compatibles
 
 * NAS ONTAP local (que utiliza protocolos NFS y CIFS) con ONTAP versión 9.11.1 y superior
 * SAN ONTAP local (que utiliza protocolos FC, iSCSI y NVMe) con ONTAP versión 9.17.1 y posteriores
@@ -186,16 +190,14 @@ Ransomware Resilience admite los siguientes objetivos de respaldo, sistemas y fu
 * Cloud Volumes ONTAP 9.12.1 o superior para Microsoft Azure (utilizando protocolos NFS y CIFS)
 * Cloud Volumes ONTAP 9.17.1 o superior para AWS, Google Cloud Platform y Microsoft Azure (mediante protocolos FC, iSCSI y NVMe)
 * Amazon FSx for NetApp ONTAP, que utiliza protección autónoma contra ransomware (ARP y no ARP/AI)
-+
-
-NOTE: ARP/AI requiere ONTAP 9.16 o superior.
 
 
 
+NOTE: El uso de ARP/AI en ONTAP requiere ONTAP 9.16 o superior.  + ONTAP no proporciona soporte de protección contra ransomware para volúmenes FlexGroup , volúmenes de punto de montaje, volúmenes de ruta de montaje, volúmenes sin conexión y volúmenes de protección de datos (DP).  Asegúrese de revisarlink:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["Configuraciones admitidas y no admitidas en ONTAP"^] .
 
-NOTE: No se admiten los siguientes: volúmenes FlexGroup , versiones de ONTAP anteriores a 9.11.1, volúmenes de punto de montaje, volúmenes de ruta de montaje, volúmenes sin conexión y volúmenes de protección de datos (DP).
 
-*Fuentes de datos de carga de trabajo compatibles*
+
+=== Fuentes de datos de carga de trabajo compatibles
 
 Ransomware Resilience protege las siguientes cargas de trabajo basadas en aplicaciones en volúmenes de datos primarios:
 
@@ -203,7 +205,6 @@ Ransomware Resilience protege las siguientes cargas de trabajo basadas en aplica
 * Almacenamiento en bloque
 * Almacenes de datos de VMware
 * Bases de datos (MySQL y Oracle)
-* Próximamente habrá más
 
 
 Además, si utiliza SnapCenter o SnapCenter para VMware, todas las cargas de trabajo compatibles con esos productos también se identifican en Ransomware Resilience.  Ransomware Resilience puede protegerlos y recuperarlos de manera consistente con la carga de trabajo.
