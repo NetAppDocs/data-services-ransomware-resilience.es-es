@@ -18,6 +18,12 @@ Descubra las novedades en NetApp Ransomware Resilience.
 
 
 
+== 10 de noviembre de 2025
+
+Esta versión incluye mejoras generales.
+
+
+
 == 6 de octubre de 2025
 
 
