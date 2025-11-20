@@ -183,17 +183,40 @@ Ransomware Resilience admite los siguientes objetivos de respaldo, sistemas y fu
 
 === Sistemas compatibles
 
-* NAS ONTAP local (que utiliza protocolos NFS y CIFS) con ONTAP versión 9.11.1 y superior
-* SAN ONTAP local (que utiliza protocolos FC, iSCSI y NVMe) con ONTAP versión 9.17.1 y posteriores
-* Cloud Volumes ONTAP 9.11.1 o superior para AWS (utilizando protocolos NFS y CIFS)
-* Cloud Volumes ONTAP 9.11.1 o superior para Google Cloud Platform (utilizando protocolos NFS y CIFS)
-* Cloud Volumes ONTAP 9.12.1 o superior para Microsoft Azure (utilizando protocolos NFS y CIFS)
-* Cloud Volumes ONTAP 9.17.1 o superior para AWS, Google Cloud Platform y Microsoft Azure (mediante protocolos FC, iSCSI y NVMe)
-* Amazon FSx for NetApp ONTAP, que utiliza protección autónoma contra ransomware (ARP y no ARP/AI)
+|===
+| Ambiente | Protocolo | Versiones compatibles 
 
 
+| Amazon FSx for NetApp ONTAP* | NFS, CIFS y SAN | N/A 
 
-NOTE: El uso de ARP/AI en ONTAP requiere ONTAP 9.16 o superior.  + ONTAP no proporciona soporte de protección contra ransomware para volúmenes FlexGroup , volúmenes de punto de montaje, volúmenes de ruta de montaje, volúmenes sin conexión y volúmenes de protección de datos (DP).  Asegúrese de revisarlink:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["Configuraciones admitidas y no admitidas en ONTAP"^] .
+
+.2+| Cloud Volumes ONTAP para AWS | CIFS y NFS | 9.11.1 y posteriores 
+
+
+| SAN (FC, iSCSI y NVMe) | 9.17.1 y posteriores 
+
+
+.2+| Cloud Volumes ONTAP para Google Cloud Platform | CIFS y NFS | 9.11.1 y posteriores 
+
+
+| SAN (FC, iSCSI y NVMe) | 9.17.1 y posteriores 
+
+
+.2+| Cloud Volumes ONTAP para Microsoft Azure | CIFS y NFS | 9.12.1 y posteriores 
+
+
+| SAN (FC, iSCSI y NVMe) | 9.17.1 y posteriores 
+
+
+.2+| ONTAP (en las instalaciones) | CIFS y NFS | 9.11.1 y posteriores 
+
+
+| SAN (FC, iSCSI y NVMe) | 9.17.1 y posteriores 
+|===
+{asterisk} Amazon FSx for NetApp ONTAP utiliza la Protección Autónoma contra el Ransomware (ARP) y no ARP/AI.  Para obtener más información sobre la diferencia, consultelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/IA"^] .
+
+
+NOTE: El uso de ARP/AI en ONTAP requiere ONTAP 9.16 o superior. + ONTAP no proporciona soporte de protección contra ransomware para FabricPool FlexCache, volúmenes FlexGroup , volúmenes de punto de montaje de grupos de consistencia, volúmenes de ruta de montaje, volúmenes sin conexión y volúmenes de protección de datos (DP). Asegúrese de revisarlink:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["Configuraciones admitidas y no admitidas en ONTAP"^] .
 
 
 
@@ -201,10 +224,17 @@ NOTE: El uso de ARP/AI en ONTAP requiere ONTAP 9.16 o superior.  + ONTAP no prop
 
 Ransomware Resilience protege las siguientes cargas de trabajo basadas en aplicaciones en volúmenes de datos primarios:
 
-* Recursos compartidos de archivos de NetApp
 * Almacenamiento en bloque
+* Bases de datos:
++
+** Microsoft SQL Server
+** MySQL
+** Oráculo
+** PostgreSQL
+
+
+* Recursos compartidos de archivos de NetApp
 * Almacenes de datos de VMware
-* Bases de datos (MySQL y Oracle)
 
 
 Si utiliza SnapCenter o SnapCenter para VMware, todas las cargas de trabajo compatibles con esos productos también se identifican en Ransomware Resilience. Ransomware Resilience puede protegerlos y recuperarlos de manera consistente con la carga de trabajo.
