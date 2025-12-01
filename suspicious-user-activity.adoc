@@ -108,7 +108,6 @@ Los datos de actividad sospechosa del usuario pueden almacenarse en AWS y Azure 
 
 | Azur | Este de EE. UU. 
 |===
- and
 .Pasos
 . Si es la primera vez que crea un agente de actividad de usuario, vaya al **Panel de control**. En el mosaico **Actividad del usuario**, seleccione **Activar**.
 +
