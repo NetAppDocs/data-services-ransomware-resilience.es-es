@@ -56,7 +56,7 @@ Puedes acceder a la NetApp Console con cualquier navegador web moderno.
 
 == Interoperabilidad
 
-.¿Tiene en cuenta la función de resiliencia ante el ransomware la configuración de protección realizada en NetApp ONTAP?
+.¿Ransomware Resilience conoce las configuraciones de protección en ONTAP?
 Sí, Ransomware Resilience descubre programaciones de instantáneas configuradas en ONTAP.
 
 .¿Cómo interactúa Ransomware Resilience con NetApp Backup and Recovery y SnapCenter?
@@ -65,6 +65,8 @@ La resiliencia ante el ransomware funciona con la función de copia de seguridad
 Ransomware Resilience funciona con SnapCenter o SnapCenter para VMware para descubrir y configurar políticas de instantáneas y copias de seguridad para cargas de trabajo de aplicaciones y máquinas virtuales.
 
 Ransomware Resilience también funciona con Backup and Recovery y SnapCenter (incluido SnapCenter para VMware) para realizar una recuperación coherente con los archivos y la carga de trabajo.
+
+Para licencias y facturación, Ransomware Resilience puede integrarse con Backup and Recovery incluso si no tiene una licencia separada para Backup and Recovery. Si tiene Backup and Recovery y Ransomware Resilience, cualquier dato común protegido por ambos productos se factura únicamente por Ransomware Resilience.
 
 
 
@@ -117,7 +119,7 @@ A link:rp-use-protect.html#add-a-ransomware-protection-strategy["estrategia de p
 
 No se requiere una política de respaldo en la estrategia de resiliencia frente al ransomware.
 
-.¿Tiene en cuenta la función de resiliencia ante el ransomware la configuración de protección realizada en NetApp ONTAP?
+.¿Ransomware Resilience conoce las configuraciones de protección en ONTAP?
 Sí, Ransomware Resilience descubre programaciones de instantáneas configuradas en ONTAP. También descubre si ARP y FPolicy están habilitados en todos los volúmenes de una carga de trabajo detectada. La información que ve en el Panel de Resiliencia contra el Ransomware se recopila de otras soluciones y productos de NetApp .
 
 .¿Tiene en cuenta Ransomware Resilience las políticas ya establecidas en Backup and Recovery y SnapCenter?
