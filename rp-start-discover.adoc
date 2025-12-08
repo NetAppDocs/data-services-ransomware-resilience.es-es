@@ -16,7 +16,7 @@ Antes de poder utilizar NetApp Ransomware Resilience, primero debe descubrir dat
 
 *Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
-¿Qué descubre Ransomware Resilience?  Ransomware Resilience evalúa aplicaciones MySQL, aplicaciones Oracle, almacenes de datos VMware, recursos compartidos de archivos y almacenamiento en bloques.
+¿Qué descubre Ransomware Resilience? Ransomware Resilience evalúa aplicaciones Oracle, almacenes de datos VMware, recursos compartidos de archivos y almacenamiento en bloques.
 
 
 NOTE: Ransomware Resilience no descubre cargas de trabajo con volúmenes que utilizan FlexGroup.

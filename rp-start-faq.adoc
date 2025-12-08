@@ -83,7 +83,7 @@ La prioridad de la carga de trabajo (crítica, estándar, importante) está dete
 link:rp-use-protect.html["Obtenga información sobre la prioridad o importancia de la carga de trabajo"] .
 
 .¿Qué cargas de trabajo admite Ransomware Resilience?
-Ransomware Resilience puede identificar las siguientes cargas de trabajo: Oracle, MySQL, recursos compartidos de archivos, almacenamiento en bloque, máquinas virtuales y almacenes de datos de máquinas virtuales.
+Ransomware Resilience puede identificar las siguientes cargas de trabajo: Oracle, recursos compartidos de archivos, almacenamiento en bloque, máquinas virtuales y almacenes de datos de máquinas virtuales.
 
 Si utiliza SnapCenter o SnapCenter para VMware, todas las cargas de trabajo compatibles con estos productos también se identifican en Ransomware Resilience. Ransomware Resilience puede proteger y recuperar SnapCenter y las cargas de trabajo de SnapCenter de manera coherente con la carga de trabajo.
 
