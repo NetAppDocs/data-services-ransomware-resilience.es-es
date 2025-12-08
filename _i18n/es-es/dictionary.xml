@@ -1610,7 +1610,6 @@
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">Configurar la detección de actividad sospechosa de usuarios en NetApp Ransomware Resilience</block>
   <block id="9ba1db4a2c84400f14de2d58496b9f52" category="paragraph">Ransomware Resilience admite la detección de comportamiento sospechoso de los usuarios en las políticas de detección, lo que le permite abordar incidentes de ransomware a nivel de usuario.</block>
   <block id="90c4c763135bd7a7443ed22e4149185b" category="section-title">Agentes y coleccionistas</block>
-  <block id="03f21183a058745685d1d78fcc7eab3a" category="paragraph">Se debe instalar al menos un agente de actividad del usuario para activar la detección de actividad de usuario sospechosa en Ransomware Resilience. Cuando activa la función de actividad de usuario sospechosa desde el panel de Ransomware Resilience, debe proporcionar la información del host del agente para activar la función.</block>
   <block id="2b294b61543173e7462d37def0724cef" category="paragraph">Un agente puede alojar varios recopiladores de datos. Los recopiladores de datos envían datos a una ubicación SaaS para su análisis. Hay dos tipos de coleccionistas:</block>
   <block id="fa83d0f077ae64e1df0b8a9ed9982815" category="paragraph">Los recopiladores se configuran en la configuración de Resiliencia ante ransomware.</block>
   <block id="4f047e83e52e21d5382adc1b5dbf3119" category="section-title">Agregar un agente de actividad del usuario</block>
@@ -1626,21 +1625,15 @@
   <block id="6fe8b98c53e8d099686936732785d471" category="cell">Debian</block>
   <block id="96076f12b1cb63e4304e6e93bf2bdf1c" category="cell">11 (64 bits), 12 (64 bits), incluido SELinux</block>
   <block id="47aa329f6ec0cd1009231b4b7fca0a6b" category="cell">OpenSUSE Leap</block>
-  <block id="19b160ebc6598b7f22f292d227c45c9d" category="cell">15.3 (64 bits) a 15.6 (64 bits)</block>
   <block id="fdcd362ac5f5f9817e70642dd2a48bfd" category="cell">Oracle Linux</block>
-  <block id="95ccc8f8721ed98f86b3373d9ede2a15" category="cell">8.10 (64 bits) y 9.1 (64 bits) a 9.6 (64 bits), incluido SELinux</block>
-  <block id="a82007c47b25723539a00ff94e8b3d27" category="cell">Sombrero rojo</block>
   <block id="d33305ae6335b0a9106e226ed71ca60f" category="cell">8.10 (64 bits), 9.1 (64 bits) a 9.6 (64 bits) y 10 (64 bits), incluido SELinux</block>
   <block id="d405e3063aac76a254e44386c961b24c" category="cell">Rocoso</block>
-  <block id="562cb7e6b7d585b5ffbe8d9aec64cf10" category="cell">Rocky 9.4 (64 bits) a 9.6 (64 bits), incluido SELinux</block>
   <block id="92ceb02e8fd413288d949e40d8ca4832" category="cell">SUSE Enterprise Linux</block>
   <block id="ce370a856bc8592a8206af596cace9ea" category="cell">15 SP4 (64 bits) a 15 SP6 (64 bits), incluido SELinux</block>
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="cell">Ubuntu</block>
   <block id="6072b01d67af0366830f2fef13cdf0da" category="cell">20.04 LTS (64 bits), 22.04 LTS (64 bits) y 24.04 LTS (64 bits)</block>
   <block id="e5fc81082964adedb5790746c18c9fb7" category="paragraph">**Requisitos del servidor**</block>
   <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">El servidor debe cumplir los siguientes requisitos mínimos:</block>
-  <block id="f0499c7832db4d35decdf83de714841c" category="list-text">**CPU**: 4 NÚCLEOS</block>
-  <block id="4a8a49e18f8860c4232837503bcc2edd" category="list-text">**RAM**: 16 GB de RAM</block>
   <block id="a2ad8789f963859e0c26a6daaec4a76b" category="list-text">Si es la primera vez que crea un agente de actividad de usuario, vaya al **Panel de control**. En el mosaico **Actividad del usuario**, seleccione **Activar**.</block>
   <block id="44e08a5b01e752ac11f59bba4e07dea7" category="paragraph">Si está agregando un agente de actividad de usuario adicional, vaya a *Configuración*, ubique el mosaico **Actividad de usuario** y luego seleccione **Administrar**. En la pantalla Actividad del usuario, seleccione la pestaña **Agentes de actividad del usuario** y luego **Agregar**.</block>
   <block id="75d41b8fe2ef8de56d2fd2046bb0dad3" category="list-text">Seleccione un **Proveedor de nube** y luego una **Región**. Seleccione **Siguiente**.</block>
@@ -1662,24 +1655,14 @@
   <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">En Ransomware Resilience, vaya a *Configuración*.</block>
   <block id="9fcb0a7634f29d96ae98e37bbc76e1cd" category="list-text">En el mosaico Actividad del usuario, seleccione **Administrar**.</block>
   <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">Seleccione la pestaña **Conectores de directorio de usuario** y luego **Agregar**.</block>
-  <block id="6b0d749af4fb3ac0e4e4a1eefc36c454" category="list-text">Proporcione los detalles de la conexión:</block>
   <block id="496ee322ba138fdbc777e5ab2e30145e" category="list-text">*Nombre*</block>
   <block id="e018ce61f2faa0782aac0cf5ceb4e39f" category="list-text">*Tipo de directorio de usuario*</block>
   <block id="817d09446fbab0a167f137ba029b3b2c" category="list-text">*Dirección IP del servidor o nombre de dominio*</block>
   <block id="942f115bf2a4bb90285e9cc5de7fd48b" category="list-text">*Nombre del bosque o nombre de búsqueda*</block>
-  <block id="28781714c6ccf5cfa635f547328898a5" category="list-text">*Nombre de dominio BIND*</block>
   <block id="f379b6d26456916980ea32f662e2088a" category="list-text">*Contraseña BIND*</block>
-  <block id="2bfa02843b15eae74dde462c970a2a00" category="list-text">*Protocolo* (esto es opcional)</block>
   <block id="5ddcf17f54788a5bb9148e8671562c06" category="list-text">*Puerto*</block>
   <block id="4648df055f6134caf491290d363fdd55" category="inline-image-macro">Captura de pantalla de la conexión del directorio de usuarios</block>
   <block id="e41447b39a2a8caf5092a92f230bd291" category="paragraph"><block ref="e41447b39a2a8caf5092a92f230bd291" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="86c3d5aee71dba0d2e67a122a900b46d" category="paragraph">Proporcione los detalles de mapeo de atributos:</block>
-  <block id="67abd0bd8cf8f6b948416d41be7c6f6a" category="list-text">*Nombre para mostrar*</block>
-  <block id="aff175f709dc693d1f9ca4c44728163a" category="list-text">*SID* (si estás usando LDAP)</block>
-  <block id="3b57547caa3754998fa617bd92514f25" category="list-text">*Nombre de usuario*</block>
-  <block id="c8a0546946d4ed57fd88fc4918d3825f" category="list-text">*ID de Unix* (si estás usando NFS)</block>
-  <block id="44c65853ed8da5c496344c1e746b1669" category="list-text">Seleccione *Incluir atributos opcionales*. También puede incluir dirección de correo electrónico, número de teléfono, función, estado, país, departamento, foto, DN de gerente o grupos.</block>
-  <block id="7703674a5321c1f23549682250a732e9" category="paragraph">Seleccione *Avanzado* para agregar una consulta de búsqueda opcional.</block>
   <block id="7174ea6988f438d85266f06a4d178a79" category="list-text">Seleccione **Agregar**.</block>
   <block id="c46a6dfd4cabd150fef75d97e543d6e6" category="list-text">Regrese a la pestaña de conectores del directorio de usuarios para verificar el estado de su conector de directorio de usuarios. Si se crea correctamente, el estado del conector del directorio de usuario se muestra como *En ejecución*.</block>
   <block id="ecdd284164c9ec55e281a5e22e24af67" category="section-title">Eliminar un conector de directorio de usuarios</block>
@@ -1893,7 +1876,6 @@
   <block id="b6173a051353d59a4ee775fcef288441" category="list-text">El **conector de directorio de usuarios** se conecta a su directorio para asignar ID de usuarios a nombres de usuario.</block>
   <block id="508899c1c018f291af4cb6a0423c426c" category="paragraph">*Rol de consola requerido* Para activar la detección de actividad de usuarios sospechosos, necesita el rol de administrador de la organización.  Para configuraciones posteriores de actividad de usuarios sospechosa, necesita el rol de administrador de comportamiento de usuario de Ransomware Resilience. <block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>.</block>
   <block id="53b036bcd07f4ebcfe2ec32a98556822" category="paragraph">Para instalar un agente de actividad del usuario, necesita un host o una máquina virtual que cumpla con los siguientes requisitos de servidor y sistema operativo compatibles.</block>
-  <block id="d4a6e9b0b745b83f49163b25271ce445" category="list-text">**Espacio en disco**: 35 GB de espacio libre en disco</block>
   <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">Una vez creado exitosamente el agente de actividad del usuario, regrese al menú **Configuración** y seleccione **Administrar** en el mosaico Actividad del usuario. Seleccione la pestaña **Agente de actividad del usuario** y luego seleccione el agente de actividad del usuario para ver detalles al respecto, incluidos los recopiladores de datos y los conectores del directorio de usuarios.</block>
   <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">Para asignar ID de usuario a nombres de usuario, debe crear un conector de directorio de usuarios.</block>
   <block id="89bd0177a422e5d81fce2f8f82dac3f6" category="paragraph-title">¿Necesita una licencia para usar Ransomware Resilience?</block>
@@ -2071,4 +2053,26 @@
   <block id="f6967390d49d08c53cc88d3cdf42eb92" category="list-text">SnapCenter para Oracle</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">Para la versión preliminar, el servicio protege cargas de trabajo basadas en aplicaciones de Oracle, almacenes de datos de VM y recursos compartidos de archivos en almacenamiento NAS local, así como Cloud Volumes ONTAP en AWS (usando el protocolo NFS) en organizaciones BlueXP de forma individual y realiza copias de seguridad de los datos en el almacenamiento en la nube de Amazon Web Services.</block>
   <block id="2d2972fc6d16379955701a1cc8c6633f" category="sidebar">NetApp Ransomware Resilience protege, detecta y respalda la recuperación de cargas de trabajo de aplicaciones y recursos compartidos de archivos contra amenazas de ransomware en el almacenamiento local y en la nube. Ransomware Resilience permite realizar copias de seguridad y recuperaciones seguras, lo que ayuda a las organizaciones a proteger datos críticos y mantener la continuidad del negocio para Oracle, almacenes de datos de VM, almacenamiento NAS y más.</block>
+  <block id="05a32e62ff35ead335cfbdaf6b19a9b2" category="paragraph">Se debe instalar al menos un agente de actividad del usuario para activar la detección de actividad de usuario sospechosa en Ransomware Resilience. Cuando activa la función de actividad de usuario sospechosa desde el panel de resiliencia contra ransomware, debe proporcionar la información del host del agente.</block>
+  <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3 (64 bits) a 15.6 (64 bits)</block>
+  <block id="32d094cff0ab508ab383051555e7844b" category="cell">8.10 (64 bits) y 9.1 (64 bits) a 9.6 (64 bits), incluido SELinux</block>
+  <block id="1d9fc183665bd1e195391190be506894" category="cell">Sombrero rojo</block>
+  <block id="40a4866844a145aa0d01d094ea38e0d3" category="cell">Rocky 9.4 (64 bits) a 9.6 (64 bits), incluido SELinux</block>
+  <block id="ec0c7e841d2f0e7a16a6b4b47a57ecd8" category="list-text">**CPU**: 4 núcleos</block>
+  <block id="177d9a4926538bc7d9bcbb8ad6ca3f0f" category="list-text">**RAM**: 16 GB de RAM</block>
+  <block id="f01ab58abd28b55b4954d17a62080293" category="list-text">**Espacio en disco**: 35 GB de espacio libre en disco</block>
+  <block id="191a3f30ab05799955dc06c5f394b591" category="list-text">Configurar la conexión. Introduzca la información requerida para cada campo.</block>
+  <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">Campo</block>
+  <block id="8099786db97f0913cd0cefcd4a7bc6fd" category="cell">Introduzca un nombre único para el conector del directorio de usuarios</block>
+  <block id="4adff96a4a05104e03197234118085e2" category="cell">El tipo de directorio</block>
+  <block id="722fb2ada3f9ea6943e9b3e31070b992" category="cell">La dirección IP o el nombre de dominio completo (FQDN) del servidor que aloja la conexión</block>
+  <block id="de477c1e3721a76952a5b9396ecf6fdd" category="paragraph">Puede especificar el nivel de bosque de la estructura del directorio como el nombre de dominio directo (por ejemplo<block ref="50e97bbcb7daba438b04ca294e70b332" prefix=" " category="inline-code"></block>) o un conjunto de nombres distinguidos relativos (por ejemplo:<block ref="a095aad7202650a49f2e97c9b4301648" prefix=" " category="inline-code"></block>). También puedes introducir un<block ref="e4a59df8b97206109eb4b7f2fe528a4d" prefix=" " category="inline-code"></block> para filtrar por una unidad organizativa o una<block ref="1c2903397d8833382673bab22aa8b937" prefix=" " category="inline-code"></block> para limitar a un usuario específico (por ejemplo:<block ref="bf398740ce4b2f74d8422fcaf8220aa1" prefix=" " category="inline-code"></block>).</block>
+  <block id="e84098015e7ceb92236e398c96a2a10d" category="cell">*VINCULO DN*</block>
+  <block id="bc155f025a2d678a9b7a2ecd0f109bb7" category="cell">El DN BIND es una cuenta de usuario autorizada para buscar en el directorio, como por ejemplo usuario@dominio.com. El usuario requiere el permiso de Sólo lectura del dominio.</block>
+  <block id="c0e32b7e69f6b1f044d23fea6824f4f5" category="cell">La contraseña para el usuario proporcionada en BIND DN</block>
+  <block id="dce365633ffb688b7532470dfaf4e118" category="cell">*Protocolo*</block>
+  <block id="91fa08a58f816e98d83df1ce310eb825" category="cell">El campo de protocolo es opcional. Puede utilizar LDAP, LDAPS o LDAP sobre StartTLS.</block>
+  <block id="f9115354bfb0b47a80e11c68936a7ec8" category="cell">Introduzca el número de puerto elegido</block>
+  <block id="ffcb2d1f993f068c61d2776ab07c354f" category="paragraph">Proporcione los detalles de asignación de atributos: * *Nombre para mostrar* * *SID* (si está usando LDAP) * *Nombre de usuario* * *ID de Unix* (si está usando NFS) * Si selecciona *Incluir atributos opcionales*, también puede agregar una dirección de correo electrónico, número de teléfono, rol, estado, país, departamento, foto, DN de gerente o grupos.</block>
+  <block id="8cab6e56434342fb39a14e12391a5d3e" category="paragraph">+ Seleccione *Avanzado* para agregar una consulta de búsqueda opcional.</block>
 </blocks>

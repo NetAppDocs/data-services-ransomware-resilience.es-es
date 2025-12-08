@@ -20,7 +20,7 @@ Ransomware Resilience detecta actividad sospechosa del usuario analizando los ev
 
 == Agentes y coleccionistas
 
-Se debe instalar al menos un agente de actividad del usuario para activar la detección de actividad de usuario sospechosa en Ransomware Resilience. Cuando activa la función de actividad de usuario sospechosa desde el panel de Ransomware Resilience, debe proporcionar la información del host del agente para activar la función.
+Se debe instalar al menos un agente de actividad del usuario para activar la detección de actividad de usuario sospechosa en Ransomware Resilience. Cuando activa la función de actividad de usuario sospechosa desde el panel de resiliencia contra ransomware, debe proporcionar la información del host del agente.
 
 Un agente puede alojar varios recopiladores de datos. Los recopiladores de datos envían datos a una ubicación SaaS para su análisis. Hay dos tipos de coleccionistas:
 
@@ -85,7 +85,7 @@ Para instalar un agente de actividad del usuario, necesita un host o una máquin
 
 El servidor debe cumplir los siguientes requisitos mínimos:
 
-* **CPU**: 4 NÚCLEOS
+* **CPU**: 4 núcleos
 * **RAM**: 16 GB de RAM
 * **Espacio en disco**: 35 GB de espacio libre en disco
 
@@ -153,31 +153,47 @@ Para asignar ID de usuario a nombres de usuario, debe crear un conector de direc
 . En Ransomware Resilience, vaya a *Configuración*.
 . En el mosaico Actividad del usuario, seleccione **Administrar**.
 . Seleccione la pestaña **Conectores de directorio de usuario** y luego **Agregar**.
-. Proporcione los detalles de la conexión:
+. Configurar la conexión. Introduzca la información requerida para cada campo.
 +
-** *Nombre*
-** *Tipo de directorio de usuario*
-** *Dirección IP del servidor o nombre de dominio*
-** *Nombre del bosque o nombre de búsqueda*
-** *Nombre de dominio BIND*
-** *Contraseña BIND*
-** *Protocolo* (esto es opcional)
-** *Puerto*
+|===
+
+
+| Campo | Descripción 
+
+
+| *Nombre* | Introduzca un nombre único para el conector del directorio de usuarios 
+
+
+| *Tipo de directorio de usuario* | El tipo de directorio 
+
+
+| *Dirección IP del servidor o nombre de dominio* | La dirección IP o el nombre de dominio completo (FQDN) del servidor que aloja la conexión 
+
+
+| *Nombre del bosque o nombre de búsqueda*  a| 
+Puede especificar el nivel de bosque de la estructura del directorio como el nombre de dominio directo (por ejemplo `unit.company.com`) o un conjunto de nombres distinguidos relativos (por ejemplo: `DC=unit,DC=company,DC=com`). También puedes introducir un `OU` para filtrar por una unidad organizativa o una `CN` para limitar a un usuario específico (por ejemplo: `CN=user,OU=engineering,DC=unit,DC=company,DC=com`).
+
+
+
+| *VINCULO DN* | El DN BIND es una cuenta de usuario autorizada para buscar en el directorio, como por ejemplo usuario@dominio.com. El usuario requiere el permiso de Sólo lectura del dominio. 
+
+
+| *Contraseña BIND* | La contraseña para el usuario proporcionada en BIND DN 
+
+
+| *Protocolo* | El campo de protocolo es opcional. Puede utilizar LDAP, LDAPS o LDAP sobre StartTLS. 
+
+
+| *Puerto* | Introduzca el número de puerto elegido 
+|===
 +
 image:screenshot-user-directory-connection.png["Captura de pantalla de la conexión del directorio de usuarios"]
 
 +
-Proporcione los detalles de mapeo de atributos:
+Proporcione los detalles de asignación de atributos: * *Nombre para mostrar* * *SID* (si está usando LDAP) * *Nombre de usuario* * *ID de Unix* (si está usando NFS) * Si selecciona *Incluir atributos opcionales*, también puede agregar una dirección de correo electrónico, número de teléfono, rol, estado, país, departamento, foto, DN de gerente o grupos.
 
-** *Nombre para mostrar*
-** *SID* (si estás usando LDAP)
-** *Nombre de usuario*
-** *ID de Unix* (si estás usando NFS)
-** Seleccione *Incluir atributos opcionales*. También puede incluir dirección de correo electrónico, número de teléfono, función, estado, país, departamento, foto, DN de gerente o grupos.
 +
-Seleccione *Avanzado* para agregar una consulta de búsqueda opcional.
-
-
++ Seleccione *Avanzado* para agregar una consulta de búsqueda opcional.
 
 . Seleccione **Agregar**.
 . Regrese a la pestaña de conectores del directorio de usuarios para verificar el estado de su conector de directorio de usuarios. Si se crea correctamente, el estado del conector del directorio de usuario se muestra como *En ejecución*.
