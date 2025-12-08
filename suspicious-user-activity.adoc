@@ -190,10 +190,18 @@ Puede especificar el nivel de bosque de la estructura del directorio como el nom
 image:screenshot-user-directory-connection.png["Captura de pantalla de la conexión del directorio de usuarios"]
 
 +
-Proporcione los detalles de asignación de atributos: * *Nombre para mostrar* * *SID* (si está usando LDAP) * *Nombre de usuario* * *ID de Unix* (si está usando NFS) * Si selecciona *Incluir atributos opcionales*, también puede agregar una dirección de correo electrónico, número de teléfono, rol, estado, país, departamento, foto, DN de gerente o grupos.
+Proporcione los detalles de mapeo de atributos:
 
 +
-+ Seleccione *Avanzado* para agregar una consulta de búsqueda opcional.
+** *Nombre para mostrar*
+** *SID* (si estás usando LDAP)
+** *Nombre de usuario*
+** *ID de Unix* (si estás usando NFS)
+** Si selecciona *Incluir atributos opcionales*, también puede agregar una dirección de correo electrónico, número de teléfono, rol, estado, país, departamento, foto, DN de gerente o grupos.
++
+Seleccione *Avanzado* para agregar una consulta de búsqueda opcional.
+
+
 
 . Seleccione **Agregar**.
 . Regrese a la pestaña de conectores del directorio de usuarios para verificar el estado de su conector de directorio de usuarios. Si se crea correctamente, el estado del conector del directorio de usuario se muestra como *En ejecución*.
