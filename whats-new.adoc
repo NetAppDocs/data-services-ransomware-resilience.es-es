@@ -30,7 +30,7 @@ Cuando habilita el bloqueo de extensiones, ahora se habilita en el nivel de carg
 
 === Editar el estado de alerta de comportamiento del usuario
 
-Ransomware Resilience ahora le permite editar el estado de las alertas de comportamiento del usuario.  Puede descartar y resolver alertas manualmente.  Ahora también puedes marcar las alertas como "En revisión".
+Ransomware Resilience ahora le permite editar el estado de las alertas de comportamiento del usuario. Puede descartar y resolver alertas manualmente.
 
 Para obtener más información, consulte xref:rp-use-alert.html[Administrar alertas].
 
