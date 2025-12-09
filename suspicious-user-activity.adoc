@@ -155,9 +155,8 @@ Para asignar ID de usuario a nombres de usuario, debe crear un conector de direc
 . Seleccione la pestaña **Conectores de directorio de usuario** y luego **Agregar**.
 . Configurar la conexión. Introduzca la información requerida para cada campo.
 +
+[cols="25,75"]
 |===
-
-
 | Campo | Descripción 
 
 
@@ -197,10 +196,7 @@ Proporcione los detalles de mapeo de atributos:
 ** *SID* (si estás usando LDAP)
 ** *Nombre de usuario*
 ** *ID de Unix* (si estás usando NFS)
-** Si selecciona *Incluir atributos opcionales*, también puede agregar una dirección de correo electrónico, número de teléfono, rol, estado, país, departamento, foto, DN de gerente o grupos.
-+
-Seleccione *Avanzado* para agregar una consulta de búsqueda opcional.
-
+** Si selecciona *Incluir atributos opcionales*, también puede agregar una dirección de correo electrónico, número de teléfono, rol, estado, país, departamento, foto, DN de gerente o grupos. Seleccione *Avanzado* para agregar una consulta de búsqueda opcional.
 
 
 . Seleccione **Agregar**.
