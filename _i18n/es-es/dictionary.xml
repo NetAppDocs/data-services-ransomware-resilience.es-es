@@ -2069,8 +2069,6 @@
   <block id="8a9b2764802b622f9894a669a606f74f" category="doc">El bloqueo de extensiones está habilitado a nivel de carga de trabajo</block>
   <block id="ab47595f128d75b47b3449fcd4dfb523" category="paragraph">Cuando habilita el bloqueo de extensiones, ahora se habilita en el nivel de carga de trabajo en lugar de en el nivel de máquina virtual de almacenamiento.</block>
   <block id="a6493502d5fc22c0b3ccee818dc4a5a5" category="section-title">Editar el estado de alerta de comportamiento del usuario</block>
-  <block id="685b0f2db45e4fc09a06ccb4695806de" category="inline-xref-macro">Administrar alertas</block>
-  <block id="30acfc7aa0f5ff9593d73e769de766c0" category="paragraph">Para obtener más información, consulte <block ref="32161c93f86d45672d8429d13ea78e6b" category="inline-xref-macro-rx"></block>.</block>
   <block id="d5214a8deea026de61af736ebf8697dd" category="section-title">Compatibilidad con múltiples agentes de consola</block>
   <block id="1a6a565def701385358a626d6728afd8" category="paragraph">Ransomware Resilience ahora admite el uso de múltiples agentes de consola para administrar los mismos sistemas.</block>
   <block id="76adc55b5a0beb97a709fbc0c204a3d0" category="paragraph">Para obtener más información sobre los agentes de consola, consulte<block ref="c97584494dd542160395e5c607ae4c2c" category="inline-link-macro-rx"></block> .</block>
@@ -2089,4 +2087,6 @@
   <block id="8e19d605b8be4e3be2157e822268633f" category="list-text">Si selecciona *Incluir atributos opcionales*, también puede agregar una dirección de correo electrónico, número de teléfono, rol, estado, país, departamento, foto, DN de gerente o grupos. Seleccione *Avanzado* para agregar una consulta de búsqueda opcional.</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">08 de diciembre de 2025</block>
   <block id="4256b08931f8c14d28bbf33199e1b022" category="paragraph">Ransomware Resilience ahora le permite editar el estado de las alertas de comportamiento del usuario. Puede descartar y resolver alertas manualmente.</block>
+  <block id="8fe404d4b8af36b9844eb288d2706bbe" category="inline-link-macro">Administrar alertas en Ransomware Resilience</block>
+  <block id="869c8807275d576171cb34b892652da6" category="paragraph">Para obtener más información, consulte <block ref="ca80a6cafecee489657bc722219fb267" category="inline-link-macro-rx"></block>.</block>
 </blocks>
