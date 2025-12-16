@@ -280,3 +280,10 @@ Si desea finalizar su suscripción PAYGO, puede hacerlo en cualquier momento.
 . En los detalles desplegables, desmarque la casilla *Usar después de que expire el método de pago actual*.
 . Seleccione *Guardar*.
 
+
+
+
+== Más información
+
+* link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html["Documentación de licencias y suscripciones de NetApp Console"^]
+

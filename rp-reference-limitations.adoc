@@ -24,8 +24,8 @@ Si selecciona un volumen ONTAP 9.11.1 para el simulacro de preparación para ata
 
 == Limitaciones de Amazon FSx for NetApp ONTAP
 
-El sistema Amazon FSx for NetApp ONTAP es compatible con Ransomware Resilience.  Las siguientes limitaciones se aplican a este sistema:
+El sistema Amazon FSx for NetApp ONTAP es compatible con Ransomware Resilience. Las siguientes limitaciones se aplican a Amazon FSx para ONTAP:
 
-* Las políticas de respaldo no son compatibles con Fsx para ONTAP.  En este entorno, debe realizar operaciones de respaldo utilizando Amazon FSx para respaldos.  Puede restaurar estas cargas de trabajo utilizando Ransomware Resilience.
+* Las políticas de respaldo no son compatibles con Amazon FSx para ONTAP. En este entorno, debe realizar operaciones de respaldo utilizando Amazon FSx para respaldos. Puede restaurar estas cargas de trabajo utilizando Ransomware Resilience.
 * Las operaciones de restauración se realizan únicamente desde instantáneas.
 
