@@ -168,7 +168,6 @@
   <block id="08c9bb2f955e4452b60d6285d467218b" category="paragraph">Ransomware Resilience proporciona el uso completo de varias tecnologías de NetApp para que su administrador de almacenamiento, administrador de seguridad de datos o ingeniero de operaciones de seguridad puedan lograr los siguientes objetivos:</block>
   <block id="ab76e9ddf0b5cc0436537248ef996b33" category="list-text">*Proteja* sus cargas de trabajo habilitando copias de seguridad, copias instantáneas y estrategias de protección contra ransomware en sus datos.</block>
   <block id="2260f3efb7f7ff8d7a4a295911d64e87" category="list-text">*Detectar* anomalías que podrían ser ataques de ransomware. Nota al pie: [Si bien es posible que un ataque pase desapercibido, nuestra investigación indica que la tecnología de NetApp ha dado como resultado un alto grado de detección para ciertos ataques de ransomware basados ​​en cifrado de archivos].</block>
-  <block id="61a5394873cb968131d6938cc55d2316" category="list-text">*Responda* a posibles ataques de ransomware iniciando automáticamente una instantánea de NetApp ONTAP a prueba de manipulaciones que está bloqueada para que la copia no se pueda eliminar de manera accidental o maliciosa.  Sus datos de respaldo permanecerán inmutables y protegidos de extremo a extremo contra ataques de ransomware en el origen y en el destino.</block>
   <block id="2b9059f4bfe46561bd84cd4afc8e39d5" category="list-text">*Recupere* sus cargas de trabajo que ayudan a acelerar el tiempo de actividad de la carga de trabajo mediante la orquestación de varias tecnologías de NetApp .  Puede elegir recuperar volúmenes específicos.  Ransomware Resilience ofrece recomendaciones sobre las mejores opciones.</block>
   <block id="c81ae261ce25e22a1af05caba692e648" category="list-text">*Gobernar*: Implemente su estrategia de protección contra ransomware y monitoree los resultados.</block>
   <block id="2df7b40bf0b6e6b4631432c24ce9a052" category="inline-image-macro">Diagrama que muestra las estrategias de resiliencia ante el ransomware: identificar, proteger, detectar, responder y recuperarse</block>
@@ -184,8 +183,6 @@
   <block id="4a72582f981b12d4f27dceb8b0d7dbb9" category="list-text">Aplica una recuperación curada para cumplir con las políticas de RPO.  Ransomware Resilience orquesta la recuperación de incidentes de ransomware mediante el uso de varios servicios de recuperación de NetApp , incluidos NetApp Backup and Recovery (anteriormente Cloud Backup) y SnapCenter.</block>
   <block id="5af59cc2b4c7693a13f53462b371bb84" category="list-text">Utiliza el control de acceso basado en roles (RBAC) para gobernar el acceso a funciones y operaciones.</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Costo</block>
-  <block id="6562c2bca564e449fe43db01de50095f" category="paragraph">NetApp no ​​le cobra por utilizar la versión de prueba de Ransomware Resilience.</block>
-  <block id="d593a9e1e3308f3f58bd4666acd9e7d2" category="admonition">Con el lanzamiento de octubre de 2024, las nuevas implementaciones de Ransomware Resilience ofrecen una prueba gratuita de 30 días.  Anteriormente, Ransomware Resilience ofrecía una prueba gratuita de 90 días.  Si ya se ha inscrito en la prueba gratuita de 90 días, dicha prueba será válida durante los 90 días.</block>
   <block id="644c6176733b0f8cdca928e0cc985955" category="paragraph">Si tiene Backup and Recovery y Ransomware Resilience, cualquier dato común protegido por ambos productos se factura únicamente por Ransomware Resilience.</block>
   <block id="371ddff75d8ad1c060c49de732c7531f" category="paragraph">Después de comprar una licencia o suscripción PayGo, cualquier carga de trabajo que tenga una política de detección de ransomware (Protección autónoma contra ransomware) habilitada (descubierta o configurada por Ransomware Resilience) y al menos una política de instantánea o respaldo, Ransomware Resilience la clasifica como "Protegida" y cuenta para la capacidad comprada o la suscripción PayGo.  Si se descubre una carga de trabajo sin una política de detección, incluso si tiene políticas de respaldo o instantáneas, se clasifica como “En riesgo” y _no_ cuenta para la capacidad comprada.</block>
   <block id="9a093ed6d29fdd7ce44eca3fd1e3b883" category="paragraph">Las cargas de trabajo protegidas se contabilizan para la capacidad adquirida o la suscripción una vez finalizado el período de prueba de 90 días.  Ransomware Resilience se cobra por GB de datos asociados con cargas de trabajo protegidas antes de aplicar eficiencias.</block>
@@ -769,16 +766,13 @@
   <block id="a0fd18fc337758e79e647649d69f4149" category="paragraph"><block ref="a0fd18fc337758e79e647649d69f4149" category="inline-image-macro-rx" type="image"></block></block>
   <block id="955d1101c1424d23d653984e03cf7099" category="list-text">Para ese incidente, seleccione el ícono de descarga y descargue la lista de archivos afectados en formato CSV.</block>
   <block id="efe8304005b9c8de768eaef14e8d07f2" category="summary">El panel de NetApp Ransomware Resilience proporciona información sobre el estado de protección de sus cargas de trabajo.  Puede determinar rápidamente las cargas de trabajo que están en riesgo o protegidas, las cargas de trabajo afectadas por un incidente o en recuperación, y medir el alcance de la protección observando cuánto almacenamiento está protegido o en riesgo.  También puede utilizar el Panel de control para revisar y actuar según las recomendaciones de protección.</block>
-  <block id="58fb3a7f55ef002a5ceea9d69c7db695" category="doc">Supervise el estado de la carga de trabajo mediante el panel de resiliencia contra ransomware de NetAPp</block>
   <block id="8c036228e726b58da7c61083499276b0" category="paragraph">El panel de NetApp Ransomware Resilience proporciona información general sobre el estado de protección de sus cargas de trabajo.  Puede determinar rápidamente las cargas de trabajo que están en riesgo o protegidas, identificar las cargas de trabajo afectadas por un incidente o en recuperación y medir el alcance de la protección observando cuánto almacenamiento está protegido o en riesgo.</block>
-  <block id="12969eef062c86f82bae05cb86d6089a" category="paragraph">Utilice el Panel de control para revisar sugerencias de protección, cambiar configuraciones, descargar informes y ver documentación.</block>
   <block id="b5695a87e857b3dfe980329900e2d5c8" category="section-title">Revisar el estado de la carga de trabajo mediante el Panel de Control</block>
   <block id="2711b34ed6f854164ab28f6ba7d757fc" category="list-text">Una vez que la consola descubre sus cargas de trabajo, el panel de resiliencia ante ransomware muestra el estado de protección de datos de la carga de trabajo.</block>
   <block id="1de66de0484295c7b0e311cd3746dab8" category="inline-image-macro">Página del panel de control</block>
   <block id="1541b6face8479b500e3accafb066eee" category="paragraph"><block ref="1541b6face8479b500e3accafb066eee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bbb730a044e88545c3476ffea030b9f1" category="list-text">Desde el Dashboard, puedes realizar las siguientes acciones en cada uno de los paneles:</block>
   <block id="5cf652b0493bef09f6f5bcbd5925413f" category="list-text">*Protección de datos de carga de trabajo*: seleccione *Ver todo* para ver todas las cargas de trabajo que están en riesgo o protegidas en la página Protección.  Las cargas de trabajo están en riesgo cuando los niveles de protección no coinciden con una política de protección. Consulte <block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block> .</block>
-  <block id="4159a2cc0463c712e016f2bfb6e3d137" category="admonition">Seleccione la información sobre herramientas "i" para ver sugerencias sobre estos datos.  Para aumentar el límite de carga de trabajo, seleccione *Aumentar el límite de carga de trabajo* dentro de esta nota.  Al seleccionar esta opción se le dirigirá a la página de Soporte de la consola, donde podrá crear un ticket de caso.</block>
   <block id="7946ca9134fecb1e363f88a194b4e259" category="inline-link-macro">Responder a una alerta detectada</block>
   <block id="3e68731452668c74a209b358c132dbaa" category="list-text">*Alertas y recuperación de datos de carga de trabajo*: seleccione *Ver todo* para ver los incidentes activos que han afectado su carga de trabajo, que están listos para recuperarse después de que se neutralicen los incidentes o que están en recuperación. Consulte <block ref="a57b82018dcad508c33f5a5c54351028" category="inline-link-macro-rx"></block> .</block>
   <block id="8cdbaff59230fdce1ca498813a54b0c1" category="list-text">Un incidente se clasifica en uno de los siguientes estados:</block>
@@ -843,7 +837,6 @@
   <block id="afce881d2940c0ad45fd669e83552ce8" category="list-text">Desde el panel Acciones recomendadas en Ransomware Resilience, seleccione una recomendación y luego *Revisar y corregir*.</block>
   <block id="b10e70829881666c441e82656f6ce36d" category="list-text">Para descartar la acción hasta más tarde, seleccione *Descartar*.</block>
   <block id="1ac10a835f53c6060811d5cfb8fbff70" category="paragraph">La recomendación desaparece de la lista de tareas pendientes y aparece en la lista de descartadas.</block>
-  <block id="d546413031876c1e4d267a59f45f1a37" category="admonition">Más tarde puedes cambiar un elemento descartado a un elemento por hacer.  Cuando marcas un elemento como completado o cambias un elemento descartado a una acción por hacer, el Total de acciones aumenta en 1.</block>
   <block id="91ac2d2291b1ce27106b795a77ccc0f3" category="list-text">Para revisar información sobre cómo actuar según las recomendaciones, seleccione el ícono *información*.</block>
   <block id="00a080932e73f4d8ad7b946bbd5191d6" category="section-title">Exportar datos de protección a archivos CSV</block>
   <block id="daed4261480079bedadbb918fa15519d" category="paragraph">Puede exportar datos y descargar archivos CSV que muestran detalles de protección, alertas y recuperación.</block>
@@ -851,10 +844,8 @@
   <block id="6f9c031059ce499b64d237a642150228" category="list-text">*Protección*: Contiene el estado y los detalles de todas las cargas de trabajo, incluida la cantidad total de cargas de trabajo que Ransomware Resilience marca como protegidas o en riesgo.</block>
   <block id="4f303d58ecece08d64f03bf8e77bc7a5" category="list-text">*Alertas*: Incluye el estado y los detalles de todas las alertas, incluido el número total de alertas e instantáneas automatizadas.</block>
   <block id="1973c46d3c0e52cd5edacad3e53db5ac" category="list-text">*Recuperación*: incluye el estado y los detalles de todas las cargas de trabajo que necesitan restaurarse, incluida la cantidad total de cargas de trabajo que Ransomware Resilience marca como "Restauración necesaria", "En progreso", "Restauración fallida" y "Restaurada exitosamente".</block>
-  <block id="c7c231dbb05238c9bf0176f11aa17d87" category="paragraph">Descargar un archivo CSV de una página incluye solo los datos de esa página.</block>
   <block id="7206de626f5f3d32701a60ffd5ca9c45" category="paragraph">Los archivos CSV incluyen datos de todas las cargas de trabajo en todos los sistemas de consola.</block>
   <block id="88720d11d44ed6c674eee114228c0d69" category="inline-image-macro">Opción de actualización</block>
-  <block id="94f33634f7c58d79aeccfd3a5782f0d8" category="list-text">Desde el panel de Resiliencia contra ransomware, seleccione *Actualizar*<block ref="94d384894f036157c348eadc55c40952" category="inline-image-macro-rx" type="image"></block> Opción en la parte superior derecha para actualizar los datos que aparecerán en los archivos.</block>
   <block id="c4b039b69c313acc38209c4b1d1da8ef" category="inline-image-macro">Opción de descarga</block>
   <block id="fdf229b723a77d85d0134f45f3d183ce" category="list-text">Desde la página, seleccione *Descargar*<block ref="c05ed6b7dc469ce447520bacbf36b3ca" category="inline-image-macro-rx" type="image"></block> opción.</block>
   <block id="f34a80cb389a208db15e7ae434fbddf2" category="list-text">Si seleccionó la opción *Informes*, seleccione uno de los archivos nombrados preconfigurados y luego seleccione *Descargar (CSV)* o *Descargar (JSON)*.</block>
@@ -1587,13 +1578,9 @@
   <block id="2a4edc5ec6e55f07dba0609dc2cd6d87" category="summary">La detección de actividad de usuarios sospechosa en Ransomware Resilience le permite detectar actividad de usuarios que podría representar una amenaza potencial.</block>
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">Configurar la detección de actividad sospechosa de usuarios en NetApp Ransomware Resilience</block>
   <block id="9ba1db4a2c84400f14de2d58496b9f52" category="paragraph">Ransomware Resilience admite la detección de comportamiento sospechoso de los usuarios en las políticas de detección, lo que le permite abordar incidentes de ransomware a nivel de usuario.</block>
-  <block id="90c4c763135bd7a7443ed22e4149185b" category="section-title">Agentes y coleccionistas</block>
-  <block id="2b294b61543173e7462d37def0724cef" category="paragraph">Un agente puede alojar varios recopiladores de datos. Los recopiladores de datos envían datos a una ubicación SaaS para su análisis. Hay dos tipos de coleccionistas:</block>
   <block id="fa83d0f077ae64e1df0b8a9ed9982815" category="paragraph">Los recopiladores se configuran en la configuración de Resiliencia ante ransomware.</block>
   <block id="4f047e83e52e21d5382adc1b5dbf3119" category="section-title">Agregar un agente de actividad del usuario</block>
   <block id="4d4379036f7207029fbe126649ccc0a6" category="paragraph">Los agentes de actividad del usuario son entornos ejecutables para los recopiladores de datos; los recopiladores de datos comparten eventos de actividad del usuario con Ransomware Resilience. Debe crear al menos un agente de actividad de usuario para habilitar la detección de actividad de usuario sospechosa.</block>
-  <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">Requisitos</block>
-  <block id="176c18a49aa227401be466a34a903666" category="paragraph">**Requisitos del sistema operativo**</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">Sistema operativo</block>
   <block id="2e5d14f7919ff3c6138e7845aec4f915" category="cell">Versiones compatibles</block>
   <block id="c158e3ead98c5929e4228914a1e6e615" category="cell">AlmaLinux</block>
@@ -1610,7 +1597,6 @@
   <block id="ce370a856bc8592a8206af596cace9ea" category="cell">15 SP4 (64 bits) a 15 SP6 (64 bits), incluido SELinux</block>
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="cell">Ubuntu</block>
   <block id="6072b01d67af0366830f2fef13cdf0da" category="cell">20.04 LTS (64 bits), 22.04 LTS (64 bits) y 24.04 LTS (64 bits)</block>
-  <block id="e5fc81082964adedb5790746c18c9fb7" category="paragraph">**Requisitos del servidor**</block>
   <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">El servidor debe cumplir los siguientes requisitos mínimos:</block>
   <block id="a2ad8789f963859e0c26a6daaec4a76b" category="list-text">Si es la primera vez que crea un agente de actividad de usuario, vaya al **Panel de control**. En el mosaico **Actividad del usuario**, seleccione **Activar**.</block>
   <block id="44e08a5b01e752ac11f59bba4e07dea7" category="paragraph">Si está agregando un agente de actividad de usuario adicional, vaya a *Configuración*, ubique el mosaico **Actividad de usuario** y luego seleccione **Administrar**. En la pantalla Actividad del usuario, seleccione la pestaña **Agentes de actividad del usuario** y luego **Agregar**.</block>
@@ -1787,8 +1773,6 @@
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conocimiento y apoyo</block>
   <block id="69d1e7a74a8d35e4122500df6d2f5042" category="list-text">Ransomware Resilience es compatible con clústeres ONTAP o Cloud Volumes ONTAP con la versión 9.11.1 o superior de ONTAP .</block>
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">Copias de seguridad de datos</block>
-  <block id="9755e4a474d0024a8dcd40393e571716" category="section-title">Comportamiento sospechoso del usuario</block>
-  <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">Para que Ransomware Resilience proporcione alertas sobre el comportamiento sospechoso del usuario, debe configurar un agente de actividad del usuario. Para obtener más información, consulte <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>.</block>
   <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">Seleccione el tipo de simulacro de preparación. Para una recuperación manual de una violación de datos de cifrado, elija **Recuperación personalizada**. Para recuperarse de una actividad de usuario sospechosa, elija **Violación de datos**.</block>
   <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">No es posible editar la configuración del simulacro de preparación mientras el simulacro se está ejecutando. Puedes reiniciar el taladro para detenerlo y modificar la configuración.</block>
   <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">La licencia Ransomware Resilience no incluye productos NetApp adicionales. Sin embargo, Ransomware Resilience puede integrarse con NetApp Backup and Recovery, incluso si no tiene una licencia separada para Backup and Recovery.</block>
@@ -1848,11 +1832,9 @@
   <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">Para bloquear a un usuario sospechoso en su entorno, seleccione *Bloquear* debajo del nombre del usuario.</block>
   <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">Si descarta una alerta, no podrá cambiar su estado ni deshacer este cambio.</block>
   <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">Para ese incidente, seleccione el ícono de descarga para descargar la lista de archivos afectados en formato CSV.</block>
-  <block id="8c7f95ceb912c8aea11de028710caf47" category="paragraph">Ransomware Resilience detecta actividad sospechosa del usuario analizando los eventos de actividad del usuario generados por FPolicy en ONTAP. Para recopilar datos de actividad del usuario, debe implementar uno o más agentes de actividad del usuario. El agente es un servidor Linux o una máquina virtual con conectividad a los dispositivos de su inquilino.</block>
   <block id="fe1bb8cb54f03cf7a69c3e9568118b30" category="list-text">El **recopilador de datos** recopila datos de actividad del usuario de ONTAP.</block>
   <block id="b6173a051353d59a4ee775fcef288441" category="list-text">El **conector de directorio de usuarios** se conecta a su directorio para asignar ID de usuarios a nombres de usuario.</block>
   <block id="508899c1c018f291af4cb6a0423c426c" category="paragraph">*Rol de consola requerido* Para activar la detección de actividad de usuarios sospechosos, necesita el rol de administrador de la organización.  Para configuraciones posteriores de actividad de usuarios sospechosa, necesita el rol de administrador de comportamiento de usuario de Ransomware Resilience. <block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>.</block>
-  <block id="53b036bcd07f4ebcfe2ec32a98556822" category="paragraph">Para instalar un agente de actividad del usuario, necesita un host o una máquina virtual que cumpla con los siguientes requisitos de servidor y sistema operativo compatibles.</block>
   <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">Una vez creado exitosamente el agente de actividad del usuario, regrese al menú **Configuración** y seleccione **Administrar** en el mosaico Actividad del usuario. Seleccione la pestaña **Agente de actividad del usuario** y luego seleccione el agente de actividad del usuario para ver detalles al respecto, incluidos los recopiladores de datos y los conectores del directorio de usuarios.</block>
   <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">Para asignar ID de usuario a nombres de usuario, debe crear un conector de directorio de usuarios.</block>
   <block id="89bd0177a422e5d81fce2f8f82dac3f6" category="paragraph-title">¿Necesita una licencia para usar Ransomware Resilience?</block>
@@ -2029,14 +2011,12 @@
   <block id="f6967390d49d08c53cc88d3cdf42eb92" category="list-text">SnapCenter para Oracle</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">Para la versión preliminar, el servicio protege cargas de trabajo basadas en aplicaciones de Oracle, almacenes de datos de VM y recursos compartidos de archivos en almacenamiento NAS local, así como Cloud Volumes ONTAP en AWS (usando el protocolo NFS) en organizaciones BlueXP de forma individual y realiza copias de seguridad de los datos en el almacenamiento en la nube de Amazon Web Services.</block>
   <block id="2d2972fc6d16379955701a1cc8c6633f" category="sidebar">NetApp Ransomware Resilience protege, detecta y respalda la recuperación de cargas de trabajo de aplicaciones y recursos compartidos de archivos contra amenazas de ransomware en el almacenamiento local y en la nube. Ransomware Resilience permite realizar copias de seguridad y recuperaciones seguras, lo que ayuda a las organizaciones a proteger datos críticos y mantener la continuidad del negocio para Oracle, almacenes de datos de VM, almacenamiento NAS y más.</block>
-  <block id="05a32e62ff35ead335cfbdaf6b19a9b2" category="paragraph">Se debe instalar al menos un agente de actividad del usuario para activar la detección de actividad de usuario sospechosa en Ransomware Resilience. Cuando activa la función de actividad de usuario sospechosa desde el panel de resiliencia contra ransomware, debe proporcionar la información del host del agente.</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3 (64 bits) a 15.6 (64 bits)</block>
   <block id="32d094cff0ab508ab383051555e7844b" category="cell">8.10 (64 bits) y 9.1 (64 bits) a 9.6 (64 bits), incluido SELinux</block>
   <block id="1d9fc183665bd1e195391190be506894" category="cell">Sombrero rojo</block>
   <block id="40a4866844a145aa0d01d094ea38e0d3" category="cell">Rocky 9.4 (64 bits) a 9.6 (64 bits), incluido SELinux</block>
   <block id="ec0c7e841d2f0e7a16a6b4b47a57ecd8" category="list-text">**CPU**: 4 núcleos</block>
   <block id="177d9a4926538bc7d9bcbb8ad6ca3f0f" category="list-text">**RAM**: 16 GB de RAM</block>
-  <block id="f01ab58abd28b55b4954d17a62080293" category="list-text">**Espacio en disco**: 35 GB de espacio libre en disco</block>
   <block id="191a3f30ab05799955dc06c5f394b591" category="list-text">Configurar la conexión. Introduzca la información requerida para cada campo.</block>
   <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">Campo</block>
   <block id="8099786db97f0913cd0cefcd4a7bc6fd" category="cell">Introduzca un nombre único para el conector del directorio de usuarios</block>
@@ -2090,4 +2070,74 @@
   <block id="0c4db502345984347741cd5a9a3da447" category="list-text">Desde el Panel de control, seleccione el ícono *Actualizar* para encontrar nuevas cargas de trabajo.</block>
   <block id="242b6b00ff2f35d933e337704d202041" category="list-text">En la tarjeta Descubrimiento de carga de trabajo, seleccione *Descubrir cargas de trabajo*. El descubrimiento puede tardar unos minutos.  Un icono de carga muestra el progreso.</block>
   <block id="728cc93ad9329b5fca77365b0336ce77" category="list-text">Ransomware Resilience descubre sistemas compatibles y no compatibles. No es compatible con un sistema si su versión de ONTAP es inferior a la versión requerida. Cuando pasa el cursor sobre un sistema no compatible, aparece una información sobre herramientas que muestra el motivo. Seleccione los sistemas en los que desea descubrir cargas de trabajo.</block>
+  <block id="ee23d61365a6507dff70606d3790e1de" category="list-text">*Responder* a posibles ataques de ransomware iniciando automáticamente una instantánea de un punto en el tiempo que se bloquea para que la copia no pueda eliminarse de manera accidental o maliciosa. Sus datos de respaldo permanecerán inmutables y protegidos de extremo a extremo contra ataques de ransomware en el origen y en el destino.</block>
+  <block id="7e56b5e89b8f29e1bd4a5ecf15c201e8" category="paragraph">Puedes probar Ransomware Resilience con una prueba gratuita de 30 días. NetApp no ​​le cobra por utilizar la versión de prueba de Ransomware Resilience.</block>
+  <block id="773dd0f5eb55036249a06d189bd46093" category="section-title">Requisitos de comportamiento sospechoso del usuario</block>
+  <block id="567dcfd6302e5511c1b546a4df21a679" category="inline-link-macro">los requisitos</block>
+  <block id="3fa9bd6939fae83104d5483bb4df09cf" category="paragraph">Para que Ransomware Resilience proporcione alertas sobre el comportamiento sospechoso del usuario, debe configurar un agente de actividad del usuario. Pour installer un agent d’activité utilisateur, assurez-vous que votre système respecte .</block>
+  <block id="7f176789d86d465c8df04184cd91e82b" category="doc">Supervise el estado de la carga de trabajo mediante el panel de NetApp Ransomware Resilience</block>
+  <block id="bb0857f5685be3107534e9cb3600a43f" category="paragraph">Utilice el Panel de control para revisar sugerencias de protección, cambiar configuraciones y descargar informes.</block>
+  <block id="acf2855d96f83cab1f4ac80844c18ed5" category="admonition">Seleccione la información sobre herramientas "i" para ver sugerencias sobre estos datos. Para aumentar el límite de carga de trabajo, seleccione *Aumentar el límite de carga de trabajo* dentro de esta nota. Al seleccionar esta opción se le dirigirá a la página de Soporte de la consola, donde podrá crear un ticket de caso.</block>
+  <block id="c0bf6edc60bad775ee4a7ad24f670742" category="admonition">Más tarde puedes cambiar un elemento descartado a un elemento por hacer. Cuando marcas un elemento como completado o cambias un elemento descartado a una acción por hacer, el Total de acciones aumenta en 1.</block>
+  <block id="e820fe024db1b211ec2a532b3515e062" category="paragraph">La descarga de un archivo CSV de una página incluye solo los datos de esa página.</block>
+  <block id="eab868da8e2666bb93a6c4508ffd3e80" category="list-text">Desde el panel de Resiliencia contra Ransomware, seleccione *Actualizar* <block ref="94d384894f036157c348eadc55c40952" category="inline-image-macro-rx" type="image"></block> Opción en la parte superior derecha para actualizar los datos que aparecerán en los archivos.</block>
+  <block id="83740edb7e1cce01ad9abd22c965f833" category="inline-image-macro">Imagen del icono de la opción de descarga</block>
+  <block id="003de596593787da81cd02bc78808f9d" category="list-text">Desde la página, seleccione *Descargar* <block ref="10920434d8a4b3cb6afdcf0337f83d24" category="inline-image-macro-rx" type="image"></block> opción.</block>
+  <block id="d51c0020ded66c680ed4bf4dab57a782" category="paragraph">Ransomware Resilience detecta actividad sospechosa del usuario analizando los eventos de actividad del usuario generados por FPolicy en ONTAP. Para recopilar datos de actividad del usuario, debe implementar uno o más agentes de actividad del usuario. El agente es un servidor Linux o una máquina virtual con conectividad a los dispositivos de su inquilino.</block>
+  <block id="951fa3938f2418e5c7bdceb36d525b4e" category="section-title">Agentes y recopiladores de actividad del usuario</block>
+  <block id="012fdb750d9f768ed33b4236dd982ae4" category="paragraph">Se debe instalar al menos un agente de actividad del usuario para activar la detección de actividad de usuario sospechosa en Ransomware Resilience. Cuando activa la función de actividad de usuario sospechosa desde el panel de resiliencia contra ransomware, debe proporcionar la información del host del agente.</block>
+  <block id="da7bfaf398235069a409197330d59b53" category="paragraph">Un agente puede alojar varios recopiladores de datos. Los recopiladores de datos envían datos a una ubicación SaaS para su análisis. Hay dos tipos de coleccionistas:</block>
+  <block id="1e496ca2f7a66d863132588473f14de2" category="section-title">Requisitos del sistema</block>
+  <block id="b7cc904e79a175038a121ea330565832" category="paragraph">Para instalar un agente de actividad de usuario, necesita un host o una máquina virtual que cumpla con los siguientes requisitos.</block>
+  <block id="b9300e15e3fa20c1dc3ecfabbbb96a7b" category="section-title">Requisitos del sistema operativo</block>
+  <block id="afea8c44acd019a3a489f7a3ddeb5c8e" category="admonition">La máquina que utilice para el agente de actividad del usuario no debe estar ejecutando otro software de nivel de aplicación. Se recomienda un servidor dedicado.</block>
+  <block id="19edca9ea70315410039bf08b3ffecda" category="paragraph">El<block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block> Se requiere comando para la instalación. El<block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block> El comando es necesario para la instalación, la ejecución de scripts y la desinstalación.</block>
+  <block id="a54c13ad42512dbfec4e8a44d793a52e" category="section-title">Requisitos del servidor</block>
+  <block id="34af15b56c0def7a2806fd4b03537e12" category="list-text">**Espacio en disco**: 36 GB de espacio libre en disco</block>
+  <block id="68eda0e29d8e074409c51f53581f3a64" category="admonition">Asigne espacio de disco adicional para permitir la creación del sistema de archivos. Asegúrese de que haya al menos 35 GB de espacio libre en el sistema de archivos. + Si<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> es una carpeta montada desde un almacenamiento NAS, los usuarios locales deben tener acceso a esta carpeta. La creación del agente de actividad del usuario puede fallar si los usuarios locales no tienen los permisos necesarios.</block>
+  <block id="4efd7fc25783a87a8f0795f4de1a8af7" category="admonition">Se recomienda que instale el agente de actividad del usuario en un sistema diferente a su entorno de Ransomware Resilience. Si los instala en la misma máquina, deberá dejar entre 50 y 55 GB de espacio en disco. Para Linux, asigne entre 25 y 30 GB de espacio a<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block> y 25 GB a<block ref="ea5f88360fb7c06d3270b165b4dad226" prefix=" " category="inline-code"></block>.</block>
+  <block id="52554f7429cd5c72cd3c3e9561412160" category="admonition">Se recomienda sincronizar la hora tanto en el sistema ONTAP como en la máquina del agente de actividad del usuario mediante el Protocolo de tiempo de red (NTP) o el Protocolo simple de tiempo de red (SNTP).</block>
+  <block id="77469c598ab2b5984e8dafd3d15a2315" category="section-title">Reglas de acceso a la red en la nube</block>
+  <block id="c793f078b8fd1dcce9dfd5ae57f2a51c" category="paragraph">Revise las reglas de acceso a la red en la nube para su geografía relevante (Asia Pacífico, Europa o Estados Unidos).</block>
+  <block id="b59e5489bdc375550b52afe395f08180" category="section-title">Implementaciones de agentes de actividad del usuario basados en APAC</block>
+  <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">Puerto</block>
+  <block id="f31bbdd1b3e85bccd652680e16935819" category="cell">Fuente</block>
+  <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">Destino</block>
+  <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
+  <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
+  <block id="f2ca52b87225d79d40f899aebabeec45" category="cell">Agente de actividad del usuario</block>
+  <block id="e7d932b2a7bf9471a38ac8c68fbf83ad" category="list-text">&lt;nombre_del_sitio&gt;.cs01-ap-1.cloudinsights.netapp.com</block>
+  <block id="8f31785e58dfdc396495a127fdd7d7dd" category="list-text">&lt;nombre_del_sitio&gt;.c01-ap-1.cloudinsights.netapp.com</block>
+  <block id="edc2894193def90c2ccbb8f855d6f564" category="list-text">&lt;nombre_del_sitio&gt;.c02-ap-1.cloudinsights.netapp.com</block>
+  <block id="b7169d36c5259a3a051359ca51dbd682" category="cell">Acceso a la resiliencia frente al ransomware</block>
+  <block id="012f0abca78822d24d27455403c3d089" category="cell">agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
+  <block id="d4fedc7f035f96436f1598f9626876e2" category="cell">Acceso a servicios de autenticación</block>
+  <block id="0e07fec3da393adf659f6e786a442b5d" category="section-title">Implementaciones de agentes de actividad del usuario con sede en Europa</block>
+  <block id="00c7e633a09840b7e60ee5de5aec797b" category="list-text">&lt;nombre_del_sitio&gt;.cs01-eu-1.cloudinsights.netapp.com</block>
+  <block id="54d1f56395e5ec9d39e9a416c61b311a" category="list-text">&lt;nombre_del_sitio&gt;.c01-eu-1.cloudinsights.netapp.com</block>
+  <block id="0ba615943513b9683a0e9b145f96e5b2" category="list-text">&lt;nombre_del_sitio&gt;.c02-eu-1.cloudinsights.netapp.com</block>
+  <block id="29acd3d3cfc5f8e3cb650abeb2622a68" category="cell">agentlogin.cs01-eu-1.cloudinsights.netapp.com</block>
+  <block id="e0a04d596459d34d5495089a5a992421" category="section-title">Implementaciones de agentes de actividad del usuario con sede en EE. UU.</block>
+  <block id="686fe123d13d19cbe67fa0429375b0e1" category="list-text">&lt;nombre_del_sitio&gt;.cs01.cloudinsights.netapp.com</block>
+  <block id="ce47b0513e6a5635f603be8cc52f392d" category="list-text">&lt;nombre_del_sitio&gt;.c01.cloudinsights.netapp.com</block>
+  <block id="906a7644c76f341f29012680a39f7225" category="list-text">&lt;nombre_del_sitio&gt;.c02.cloudinsights.netapp.com</block>
+  <block id="142b47c359d647af9faff9ef084152c7" category="cell">agentlogin.cs01.cloudinsights.netapp.com</block>
+  <block id="0cd58d8585970b5311e84ca2c34ba5ef" category="section-title">Reglas dentro de la red</block>
+  <block id="1b09a58921479be87f9dae639915150f" category="cell">389(LDAP) 636 (LDAP/start-tls)</block>
+  <block id="84caee864977bc98db0b0df24853f63c" category="cell">URL del servidor LDAP</block>
+  <block id="b272c206ad7d80ebc1e17385c8d4450c" category="cell">Conectarse a LDAP</block>
+  <block id="3e1d4f7104327b6aa02e8d988c873b86" category="cell">Dirección IP de administración del clúster o SVM (según la configuración del recopilador SVM)</block>
+  <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">Comunicación API con ONTAP</block>
+  <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
+  <block id="4f1eb19420b75b94e053a805cd0feb1d" category="paragraph">Direcciones IP de LIF de datos SVM</block>
+  <block id="3b04fff3171347ca78c0c2fb925106dd" category="cell">Comunicación de ONTAP al agente de actividad del usuario para eventos de Fpolicy. Estos puertos deben estar abiertos hacia el agente de actividad del usuario para que ONTAP pueda enviarle eventos, incluido cualquier firewall en el propio agente de actividad del usuario (si está presente). + **NOTA:** No es necesario reservar *todos* estos puertos, pero los puertos que reserve para esto deben estar dentro de este rango. Se recomienda comenzar reservando 100 puertos y aumentarlos si es necesario.</block>
+  <block id="3756ac460c094adc890ad7f26460010b" category="cell">35000-55000</block>
+  <block id="0e948943e8277507eeeec08bbb91d3b4" category="cell">IP de gestión de clúster</block>
+  <block id="f41a23af01b3d7e16d16141a3f6003df" category="cell">Comunicación desde la IP de administración del clúster ONTAP al agente de actividad del usuario para *eventos EMS*. Estos puertos deben estar abiertos hacia el agente de actividad del usuario para que ONTAP pueda enviarle eventos EMS, incluido cualquier firewall en el propio agente de actividad del usuario. + **NOTA:** No es necesario reservar *todos* estos puertos, pero los puertos que reserve para esto deben estar dentro de este rango. Se recomienda comenzar reservando 100 puertos y aumentarlos si es necesario.</block>
+  <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH</block>
+  <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22</block>
+  <block id="1eb5ae63609e68a11106494d272615bf" category="cell">Gestión de clústeres</block>
+  <block id="269ab41459ba8b3de391eb30b649d222" category="cell">Necesario para el bloqueo de usuarios CIFS/SMB.</block>
+  <block id="c3c0e3736c092f9f194505694468ca8b" category="inline-link-macro">Requisitos del sistema</block>
+  <block id="3711ac0a85bd797cffe6d1b55a460f16" category="paragraph">Asegúrese de haber cumplido con los <block ref="24745d2c3c6c1ff64bcdf410b4214e6b" category="inline-link-macro-rx"></block> para el agente de actividad del usuario. Asegúrese de que su configuración cumpla con los proveedores de nube y las regiones compatibles.</block>
 </blocks>
