@@ -23,13 +23,6 @@ Ransomware Resilience verifica su protección de respaldo actual, copias instant
 
 *Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
-¿Cómo puedes descubrir las cargas de trabajo?  Puedes hacer lo siguiente:
-
-* Dentro de cada agente de consola, seleccione los sistemas en los que desea descubrir cargas de trabajo.  Esta función puede resultarle beneficiosa si desea proteger cargas de trabajo específicas en su entorno y no otras.
-* Descubra cargas de trabajo recién creadas para sistemas previamente seleccionados.
-* Descubra nuevos sistemas.
-
-
 
 
 == Seleccione cargas de trabajo para descubrir y proteger
@@ -59,7 +52,7 @@ image:screen-discover-workloads.png["Captura de pantalla de Descubrir cargas de 
 . Seleccione los sistemas en los que desea descubrir cargas de trabajo.
 . Seleccione *Descubrir*.
 +
-Ransomware Resilience descubre datos de carga de trabajo solo para agentes de consola con sistemas seleccionados. Este proceso puede tardar unos minutos.
+Ransomware Resilience solo descubre datos de carga de trabajo cuando selecciona el sistema. El proceso de descubrimiento puede tardar varios minutos.
 
 . Para descargar la lista de cargas de trabajo descubiertas, seleccione *Descargar resultados*.
 . Para mostrar el panel de resiliencia ante ransomware, seleccione *Ir al panel*.
@@ -78,10 +71,10 @@ link:rp-use-dashboard.html["Descubra lo que le muestra el Dashboard."]
 
 == Descubra cargas de trabajo recién creadas para sistemas previamente seleccionados
 
-Si ya ha seleccionado sistemas para el descubrimiento, puede descubrir cargas de trabajo recién creadas para esos entornos desde el Panel de control.
+Si agregó cargas de trabajo a un sistema descubierto previamente, deberá reiniciar la detección para proteger las nuevas cargas de trabajo.
 
 .Pasos
-. Para identificar la fecha del último descubrimiento, observe la fecha y la hora junto al ícono *Actualizar* en la parte superior derecha del panel de resiliencia ante ransomware.
+. Para identificar la hora del último descubrimiento, observe la fecha y la hora junto al ícono *Actualizar* en la parte superior derecha del panel de resiliencia ante ransomware.
 . Desde el Panel de control, seleccione el ícono *Actualizar* para encontrar nuevas cargas de trabajo.
 
 
@@ -92,8 +85,41 @@ Si ya ha seleccionado sistemas para el descubrimiento, puede descubrir cargas de
 Si ya has descubierto sistemas, podrás encontrar otros nuevos o no seleccionados anteriormente.
 
 .Pasos
-. En el menú Resiliencia contra ransomware, seleccione la verticalimage:button-actions-vertical.png["Acciones verticales"] ...opción en la parte superior derecha.  En el menú desplegable, seleccione *Configuración*.
+. En el menú Resiliencia contra ransomware, seleccione la vertical " opción category='inline-code'/> en la parte superior derecha. En el menú desplegable, seleccione *Configuración*.
 . En la tarjeta Descubrimiento de carga de trabajo, seleccione *Descubrir cargas de trabajo*. El descubrimiento puede tardar unos minutos.  Un icono de carga muestra el progreso.
 . Ransomware Resilience descubre sistemas compatibles y no compatibles. No es compatible con un sistema si su versión de ONTAP es inferior a la versión requerida. Cuando pasa el cursor sobre un sistema no compatible, aparece una información sobre herramientas que muestra el motivo. Seleccione los sistemas en los que desea descubrir cargas de trabajo.
 . Seleccione *Descubrir*.
+
+
+
+
+== Excluir cargas de trabajo
+
+Ransomware Resilience le permite excluir cargas de trabajo específicas en un sistema de la protección y detección de ransomware.
+
+Solo puede excluir cargas de trabajo que sean compatibles y que se hayan detectado correctamente. Puede modificar la lista de cargas de trabajo excluidas en cualquier momento. No se le facturarán las cargas de trabajo excluidas de Ransomware Resilience.
+
+.Agregar cargas de trabajo a la lista de cargas de trabajo excluidas
+. En Ransomware Resilience, seleccione **Configuración**.
+. En el panel de Configuración, busque el panel de Descubrimiento de carga de trabajo. La tarjeta identifica el número de cargas de trabajo excluidas. Para agregar cargas de trabajo, junto a las cargas de trabajo excluidas, seleccione **Administrar**.
++
+image:settings-excluded-workload.png["Panel de configuración de resiliencia frente al ransomware"]
+
+. En la página Cargas de trabajo excluidas, seleccione **Agregar**.
+. Seleccione las cargas de trabajo que desea excluir y luego **Agregar**.
+. Revise las cargas de trabajo excluidas en la página Cargas de trabajo excluidas. Mientras se agrega la carga de trabajo, se muestra un indicador de progreso junto a su nombre. Si una carga de trabajo no se excluyó correctamente, no se muestra en la página.
+
+
+.Eliminar cargas de trabajo de la lista de cargas de trabajo excluidas
+. En Ransomware Resilience, seleccione **Configuración**.
+. En el panel de Configuración, busque el panel de Descubrimiento de carga de trabajo. La tarjeta identifica el número de cargas de trabajo excluidas. Junto a las cargas de trabajo excluidas, seleccione **Administrar**.
++
+image:settings-excluded-workload.png["Captura de pantalla del panel de configuración de Ransomware Resilience."]
+
+. Para eliminar una carga de trabajo individual, seleccione el menú de acciones de la carga de trabajo que desea eliminar de la lista de excluidos.
++
+Para eliminar varias cargas de trabajo, seleccione la casilla de verificación junto a las cargas de trabajo que desea eliminar y luego **Eliminar de excluidos**.
+
+. En el cuadro de diálogo, seleccione **Eliminar** para confirmar que desea eliminar las cargas de trabajo de la lista de exclusión.
+. Si la carga de trabajo se elimina de la lista de cargas de trabajo excluidas con éxito, aparece un mensaje de éxito en la página Carga de trabajo excluida y la carga de trabajo ya no aparece en la lista de cargas de trabajo excluidas. Si la acción falla, aparece un mensaje de error; intente la operación nuevamente. image:exclude-workload-remove-successful.png["Captura de pantalla de la eliminación exitosa de una carga de trabajo excluida."]
 

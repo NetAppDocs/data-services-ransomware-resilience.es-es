@@ -18,6 +18,34 @@ Descubra las novedades en NetApp Ransomware Resilience.
 
 
 
+== 12 de enero de 2026
+
+
+
+=== Replicar instantáneas en ONTAP
+
+Ransomware Resilience ahora admite agregar la replicación de instantáneas a un sitio ONTAP secundario. Puede crear una estrategia de protección contra ransomware que incluya replicación o utilizar la estrategia predefinida. Con grupos de protección que utilizan una política de replicación, puede replicar en el mismo destino o en diferentes destinos para cada carga de trabajo.
+
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteja las cargas de trabajo en Ransomware Resilience"^].
+
+
+
+=== Excluir cargas de trabajo de Ransomware Resilience
+
+Ransomware Resilience ahora permite excluir cargas de trabajo específicas de un sistema de la protección y del panel de Ransomware Resilience. Puede excluir cargas de trabajo después del descubrimiento y volver a incluirlas si desea agregar protección contra ransomware. No se le facturarán las cargas de trabajo excluidas.
+
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html#exclude-workloads["Excluir cargas de trabajo"^].
+
+
+
+=== Marcar alertas como en revisión
+
+Ransomware Resilience ahora le permite marcar alertas como "En revisión". Utilice la etiqueta "En revisión" para mejorar la claridad en todo su equipo al clasificar y gestionar amenazas de ransomware activas.
+
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Administrar alertas en Ransomware Resilience"^].
+
+
+
 == 08 de diciembre de 2025
 
 

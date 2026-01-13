@@ -337,10 +337,6 @@
   <block id="76722f595147e9e40ab79fef549441a4" category="admonition">Le recomendamos que no deshabilite las políticas de instantáneas.</block>
   <block id="ef54d92c7cc927ca7eb5e489c30b0e9b" category="summary">Durante el descubrimiento, Ransomware Resilience analiza todos los volúmenes y archivos de los sistemas en todos los agentes y cuentas de la consola.</block>
   <block id="e9be3c13b1ed73a120f1b23e2cefb058" category="doc">Descubra las cargas de trabajo en NetApp Ransomware Resilience</block>
-  <block id="66fde4240a0e74342b069b682c733504" category="paragraph">¿Cómo puedes descubrir las cargas de trabajo?  Puedes hacer lo siguiente:</block>
-  <block id="e532d8f244f0ea9cd5619802d3cb8f03" category="list-text">Dentro de cada agente de consola, seleccione los sistemas en los que desea descubrir cargas de trabajo.  Esta función puede resultarle beneficiosa si desea proteger cargas de trabajo específicas en su entorno y no otras.</block>
-  <block id="6785cfec3a12064afa1fdb005b389154" category="list-text">Descubra cargas de trabajo recién creadas para sistemas previamente seleccionados.</block>
-  <block id="35cf13d9dca3a78ecf913cca5a7af14a" category="list-text">Descubra nuevos sistemas.</block>
   <block id="790472d97707885ad0bca12c5442db2a" category="paragraph">Dentro de cada agente de consola, seleccione los sistemas en los que desea descubrir cargas de trabajo.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Pasos</block>
   <block id="7b8dc42ed597eb23a119869a1195c334" category="list-text">Desde la NetApp Console, seleccione *Protección* &gt; *Protección contra ransomware*.</block>
@@ -363,12 +359,9 @@
   <block id="7aa859cab6bf5bccbd16604f19eefa93" category="inline-link-macro">Descubra lo que le muestra el Dashboard.</block>
   <block id="6363fabfdf63bcf12dfba9fd9de06ba3" category="paragraph"><block ref="6363fabfdf63bcf12dfba9fd9de06ba3" category="inline-link-macro-rx"></block></block>
   <block id="0e8bd87ff5fa544ac4a41711a3b607ee" category="section-title">Descubra cargas de trabajo recién creadas para sistemas previamente seleccionados</block>
-  <block id="50cb53872ff54665f11a232b976038d3" category="paragraph">Si ya ha seleccionado sistemas para el descubrimiento, puede descubrir cargas de trabajo recién creadas para esos entornos desde el Panel de control.</block>
-  <block id="349f26e9c45e28e1bbdcacd539035898" category="list-text">Para identificar la fecha del último descubrimiento, observe la fecha y la hora junto al ícono *Actualizar* en la parte superior derecha del panel de resiliencia ante ransomware.</block>
   <block id="cee654483027bd7fe0b0908f5113b46f" category="section-title">Descubra nuevos sistemas</block>
   <block id="3a268026d4270688c4ec208104cc118c" category="paragraph">Si ya has descubierto sistemas, podrás encontrar otros nuevos o no seleccionados anteriormente.</block>
   <block id="12138171b6ceeb4bdc45d66e55bebe1c" category="inline-image-macro">Acciones verticales</block>
-  <block id="981597877eeda1ab60f9f862028665bf" category="list-text">En el menú Resiliencia contra ransomware, seleccione la vertical<block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block> ...opción en la parte superior derecha.  En el menú desplegable, seleccione *Configuración*.</block>
   <block id="405f846fd5caab9c6bb41e637ac55c97" category="summary">Encuentre una respuesta a una pregunta frecuente sobre NetApp Ransomware Resilience.</block>
   <block id="815a60d80ffbc32f6db251b3410900b2" category="doc">Preguntas frecuentes sobre la NetApp Ransomware Resilience</block>
   <block id="0257967210bdc685c6f54c2fd5c5300f" category="paragraph">Estas preguntas frecuentes pueden ser útiles si simplemente busca una respuesta rápida a una pregunta sobre NetApp Ransomware Resilience.</block>
@@ -924,8 +917,6 @@
   <block id="54a418aa76c7e9afaa77a58a34a3d3ed" category="doc">Proteja las cargas de trabajo con las estrategias de protección NetApp Ransomware Resilience</block>
   <block id="7bf3a8af65d2a153b44dafcf248f1df7" category="paragraph">Puede proteger las cargas de trabajo contra ataques de ransomware habilitando una protección consistente con la carga de trabajo o creando estrategias de protección contra ransomware en NetApp Ransomware Resilience.</block>
   <block id="9d76fd8cddbcb128567856bd698d409e" category="section-title">Comprender las estrategias de protección contra ransomware</block>
-  <block id="88a4ad08ed31669f06a098dea0a14a38" category="paragraph">Las estrategias de protección contra ransomware abarcan políticas tanto de _detección_ como de _protección_.</block>
-  <block id="dd90d4cdb71a18320f3becc35cd530d5" category="list-text">**Políticas de detección** detectan amenazas de ransomware</block>
   <block id="b5728c1f0d5859e4bf3e89712b5ddbdf" category="list-text">**Las políticas de protección** incluyen políticas de instantáneas y de copia de seguridad.  Se requieren políticas de detección y captura de instantáneas en una estrategia de protección.  Las políticas de respaldo son opcionales.</block>
   <block id="7646c296ea1b221cbb826893afaa224e" category="paragraph">Si utiliza otros productos de NetApp para proteger su carga de trabajo, Ransomware Resilience los detecta y ofrece la opción de:</block>
   <block id="0e468f869572effeac4af4bbea21ed06" category="list-text">utilizar una política de detección de ransomware y continuar utilizando las políticas de instantáneas y copias de seguridad creadas por otras herramientas de NetApp , o</block>
@@ -975,18 +966,11 @@
   <block id="6041f003f0f1bda39024283f18c8591b" category="list-text">Nombre de la política de protección contra ransomware que rige las instantáneas y las copias de seguridad</block>
   <block id="0b780e70f563e19cd1a3f1e2bce2f198" category="paragraph">*Importancia de la carga de trabajo*</block>
   <block id="0882532dc9eb74e24a8b137f1e6a0b39" category="paragraph">Ransomware Resilience asigna una importancia o prioridad a cada carga de trabajo durante el descubrimiento basándose en un análisis de cada carga de trabajo.  La importancia de la carga de trabajo está determinada por las siguientes frecuencias de instantáneas:</block>
-  <block id="1ad5d2b1df5750779a9e10432b0d7a7b" category="list-text">*Crítico*: Se toman más de 1 copia instantánea por hora (programa de protección altamente agresivo)</block>
-  <block id="1adc4b459e7f50d96280424fb7e06709" category="list-text">*Importante*: Se toman copias instantáneas menos de 1 por hora pero más de 1 por día</block>
-  <block id="e12f58d91eed1a4a160b184cc1b10ebf" category="list-text">*Estándar*: Se toman más de 1 copia instantánea por día</block>
-  <block id="48102e7d0a568223836c2d653abd58e5" category="paragraph">*Políticas de detección predefinidas* [[predefinidas]]</block>
   <block id="58adba48bf0678c3abb71d1fdf829602" category="paragraph">Puede elegir una de las siguientes políticas predefinidas de resiliencia ante ransomware, que están alineadas con la importancia de la carga de trabajo.</block>
   <block id="4d293abd3f96b37c9afdf90f01855f8b" category="admonition">La política **Extensión de usuario de cifrado** es la única política predefinida que admite la detección de comportamiento sospechoso de usuarios.</block>
   <block id="a2c5d5541ff19f8df63922963356ec16" category="cell">Nivel de política</block>
   <block id="d4e2713d1b1725a1592f9268589f990d" category="cell">Snapshot</block>
   <block id="7cf395303ce3665a9834721d4b748e4b" category="cell">Frecuencia</block>
-  <block id="c2097ddf718c7c0477555ad9dde31c5e" category="cell">Retención (días)</block>
-  <block id="39531fdceaea662abd6669cba8f989fc" category="cell"># de copias de instantáneas</block>
-  <block id="c6b8cedaee837159aadd999ac609755e" category="cell">Número máximo total de copias de instantáneas</block>
   <block id="e8ce96c640213db710ed76440fe41391" category="cell">*Política de carga de trabajo crítica*</block>
   <block id="ef47e7cb2656929b4b5701de51c43f5f" category="paragraph">Cada cuarto de hora</block>
   <block id="efec1cf9b9eee75e20f0e689c7d19618" category="cell">Cada 15 minutos</block>
@@ -1054,9 +1038,7 @@
   <block id="e4574be2aa1d855d0a159fa734c028b7" category="list-text">Para cada elemento, seleccione la *flecha hacia abajo*.</block>
   <block id="b77a56354e9e39a76b1a118e9bfa09d3" category="list-text">*Política de detección*:</block>
   <block id="949db64066489b0349a4ff1451832808" category="list-text">*Política*: Elija una de las políticas de detección prediseñadas.</block>
-  <block id="0bea212ea55cc876a45f2009621526fb" category="list-text">*Detección primaria*: habilite la detección de ransomware para que Ransomware Resilience detecte posibles ataques de ransomware.</block>
   <block id="66ecff8104cfb8cf22c05ebdad07a66a" category="list-text">*Detección de comportamiento sospechoso del usuario*: habilite la detección del comportamiento del usuario para transmitir eventos de actividad del usuario a Ransomware Resilience y detectar eventos sospechosos, como violaciones de datos.</block>
-  <block id="25c38cb370fc00bc6fd644a75102eeb2" category="list-text">*Bloquear extensiones de archivo*: habilite esta opción para que Ransomware Resilience bloquee las extensiones de archivos sospechosas conocidas.  Ransomware Resilience toma copias instantáneas automáticas cuando la detección primaria está habilitada.</block>
   <block id="7c06fadd4f73e4b63eb519df7d9880fc" category="paragraph">Si desea cambiar las extensiones de archivos bloqueadas, edítelas en el Administrador del sistema.</block>
   <block id="c8499d03897189696e5af26fc5ab9f45" category="list-text">*Política de instantáneas*:</block>
   <block id="007ac2633329ecdb55692304050d9260" category="list-text">*Nombre base de la política de instantánea*: seleccione una política o seleccione *Crear* e ingrese un nombre para la política de instantánea.</block>
@@ -1079,7 +1061,6 @@
   <block id="5bf833f3ee3985c83ff4a2c137c2cdb9" category="list-text">Ransomware Resilience detecta si existen políticas activas de SnapCenter o de Backup and Recovery.</block>
   <block id="0d7426ba5ec4042ac3383e7c8f81d565" category="list-text">Para dejar sus políticas de Backup and Recovery o SnapCenter existentes en su lugar y solo aplicar una política de _detección_, deje la casilla **Reemplazar políticas existentes** sin marcar.</block>
   <block id="346ced422939f5220048eed80e512829" category="list-text">Para ver detalles de las políticas de SnapCenter , seleccione la *flecha hacia abajo*.</block>
-  <block id="0004fcb1621d03d3051ca5a93121a0c9" category="list-text">Seleccione la configuración de detección que desee: *Detección de cifrado* *Detección de comportamiento sospechoso del usuario* *Bloquear extensiones de archivos sospechosas*</block>
   <block id="c716b644cde6bcf010e93cdafcb078a0" category="list-text">Seleccione **Siguiente**.</block>
   <block id="a3de809b15b92430b0a649973defb161" category="inline-link-macro">o crea uno</block>
   <block id="4ba6fce8781481d7a10ccdf42ed8690d" category="list-text">Si seleccionó *Detección de comportamiento sospechoso del usuario* como configuración de detección, seleccione el agente de actividad del usuario o<block ref="739a3400f03009256dff1eb7cc8f7f4a" category="inline-link-macro-rx"></block> .</block>
@@ -1259,9 +1240,7 @@
   <block id="b2ff9d90b8575c5030e4183e92ccf938" category="summary">Con NetApp Ransomware Resilience, puede descargar informes que muestran detalles de protección, alertas y recuperación y guardarlos como archivos CSV.</block>
   <block id="2963ad4383209a31ba7b5a890b302bc2" category="doc">Descargar informes de NetApp Ransomware Resilience</block>
   <block id="6fb301adfaa83e3f2590a0454361757e" category="paragraph">Puede exportar datos de protección y descargar archivos CSV o JSON que muestran detalles de simulacros de preparación para ataques, protección, alertas y recuperación.</block>
-  <block id="d788bcb0d6bc2e0d54ec3c042333bf41" category="admonition">Antes de descargar los archivos, debes actualizar los datos, lo que también actualiza los datos que aparecerán en los archivos.</block>
   <block id="229560de4c61096e275f68d7eda37c00" category="paragraph">¿Qué datos puedes descargar?  Puedes descargar archivos desde cualquiera de las opciones del menú principal:</block>
-  <block id="9e3cf45f94aa890af53ce59cfb5a0bac" category="list-text">*Protección*: Contiene el estado y los detalles de todas las cargas de trabajo, incluido el número total de cargas protegidas y en riesgo.</block>
   <block id="a7e404e1296fea04d0cd654b84867b5a" category="list-text">*Recuperación*: incluye el estado y los detalles de todas las cargas de trabajo que necesitan restaurarse, incluido el número total de cargas de trabajo marcadas como "Restauración necesaria", "En progreso", "Restauración fallida" y "Restaurada exitosamente".</block>
   <block id="a36d9f25fe7ecafe45db2fd45823c6e7" category="list-text">*Informes*: Puedes exportar datos de cualquiera de las páginas y descargar los archivos.</block>
   <block id="cba5c013826db3e7efce5d0c19aee9c1" category="admonition">Puede descargar informes de simulacros de preparación únicamente desde la página *Informes*.</block>
@@ -1542,9 +1521,7 @@
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">Completamente nuevo en NetApp</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">Si es nuevo en NetApp y no tiene una cuenta NSS, siga cada paso a continuación.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Una captura de pantalla del menú Ayuda donde Soporte es la primera opción que aparece</block>
-  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">Localice el número de serie de su ID de cuenta en la página de Registro de soporte.</block>
-  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">Sitio de registro de soporte de NetApp</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">Navegar a<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> y seleccione *No soy un cliente registrado de NetApp *.</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">Llene los campos obligatorios (aquellos con asteriscos rojos).</block>
@@ -1572,8 +1549,6 @@
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">Lo mismo ocurre si tiene cuentas NSS de nivel de cliente preexistentes e intenta agregar una cuenta de nivel de socio.</block>
   <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">Tras iniciar sesión correctamente, NetApp almacenará el nombre de usuario NSS.</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">Un icono de tres puntos horizontales</block>
-  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">Esta es una identificación generada por el sistema que se asigna a su correo electrónico. En la página *Administración de NSS*, puede mostrar su correo electrónico desde el<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menú.</block>
-  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">Si alguna vez necesita actualizar sus tokens de credenciales de inicio de sesión, también hay una opción *Actualizar credenciales* en el<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menú.</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">Al utilizar esta opción se le solicitará que inicie sesión nuevamente. Tenga en cuenta que el token de estas cuentas caduca después de 90 días. Se publicará una notificación para avisarle de esto.</block>
   <block id="2a4edc5ec6e55f07dba0609dc2cd6d87" category="summary">La detección de actividad de usuarios sospechosa en Ransomware Resilience le permite detectar actividad de usuarios que podría representar una amenaza potencial.</block>
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">Configurar la detección de actividad sospechosa de usuarios en NetApp Ransomware Resilience</block>
@@ -2044,7 +2019,6 @@
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">Administrar alertas en NetApp Ransomware Resilience</block>
   <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">Cuando NetApp Ransomware Resilience detecta un posible ataque, muestra una alerta en el Panel de control y en el área de Notificaciones. Ransomware Resilience toma una instantánea inmediatamente. Revise el riesgo potencial en la pestaña *Alertas* de resiliencia ante ransomware.</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">Un incidente de alerta puede tener los siguientes estados:</block>
-  <block id="93771318f0ad483bcb651c0ded2c6033" category="admonition">Después de descartar un ataque, no puedes revertir su estado. Si descarta una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente.</block>
   <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">Después de revisar los incidentes, debe determinar si son ataques potenciales. Si no son amenazas reales, pueden descartarse.</block>
   <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">Puede descartar los falsos positivos o decidir recuperar sus datos inmediatamente. Si descarta la alerta, Ransomware Resilience aprende este comportamiento y lo asocia con operaciones normales y no vuelve a iniciar una alerta sobre dicho comportamiento.</block>
   <block id="ea3cf0f8eb2106f78fd9e62d674bd7c0" category="list-text">Seleccione uno o más incidentes. Alternativamente, seleccione todos los incidentes seleccionando el cuadro ID de incidente en la parte superior izquierda de la tabla.</block>
@@ -2066,7 +2040,6 @@
   <block id="55971de7d1268c37251f60641b742b76" category="paragraph">En el panel de Discovery, Ransomware Resilience muestra las configuraciones del sistema compatibles y no compatibles. Ransomware Resilience evalúa aplicaciones Oracle, almacenes de datos VMware, recursos compartidos de archivos y almacenamiento en bloques.</block>
   <block id="1e55889dc96c3aa2614c39626c9cecdd" category="admonition">Ransomware Resilience no descubre cargas de trabajo con volúmenes que utilizan FlexGroup.</block>
   <block id="c0605366a345249c74664f31f92636c4" category="paragraph">Ransomware Resilience verifica su protección de respaldo actual, copias instantáneas y opciones de protección autónoma contra ransomware de NetApp . Ransomware Resilience también detecta información de protección de SnapCenter para VMware para almacenes de datos de máquinas virtuales, SnapCenter para Oracle y NetApp Backup and Recovery para recursos compartidos de archivos y recursos compartidos de archivos de máquinas virtuales. Luego recomienda formas de mejorar su protección contra ransomware.</block>
-  <block id="20571d4d9a9f67814984ceaa9897d90b" category="paragraph">Ransomware Resilience descubre datos de carga de trabajo solo para agentes de consola con sistemas seleccionados. Este proceso puede tardar unos minutos.</block>
   <block id="0c4db502345984347741cd5a9a3da447" category="list-text">Desde el Panel de control, seleccione el ícono *Actualizar* para encontrar nuevas cargas de trabajo.</block>
   <block id="242b6b00ff2f35d933e337704d202041" category="list-text">En la tarjeta Descubrimiento de carga de trabajo, seleccione *Descubrir cargas de trabajo*. El descubrimiento puede tardar unos minutos.  Un icono de carga muestra el progreso.</block>
   <block id="728cc93ad9329b5fca77365b0336ce77" category="list-text">Ransomware Resilience descubre sistemas compatibles y no compatibles. No es compatible con un sistema si su versión de ONTAP es inferior a la versión requerida. Cuando pasa el cursor sobre un sistema no compatible, aparece una información sobre herramientas que muestra el motivo. Seleccione los sistemas en los que desea descubrir cargas de trabajo.</block>
@@ -2129,4 +2102,74 @@
   <block id="c3c0e3736c092f9f194505694468ca8b" category="inline-link-macro">Requisitos del sistema</block>
   <block id="3711ac0a85bd797cffe6d1b55a460f16" category="paragraph">Asegúrese de haber cumplido con los <block ref="24745d2c3c6c1ff64bcdf410b4214e6b" category="inline-link-macro-rx"></block> para el agente de actividad del usuario. Asegúrese de que su configuración cumpla con los proveedores de nube y las regiones compatibles.</block>
   <block id="bbeae0eeffca7072631fe62be382e481" category="cell">Servicio de resiliencia contra ransomware</block>
+  <block id="28f949c139c27e6b09df3640a4d3aea0" category="doc">Replicar instantáneas en ONTAP</block>
+  <block id="f67d671d0eb9b2810d472b2c73fb65d6" category="paragraph">Ransomware Resilience ahora admite agregar la replicación de instantáneas a un sitio ONTAP secundario. Puede crear una estrategia de protección contra ransomware que incluya replicación o utilizar la estrategia predefinida. Con grupos de protección que utilizan una política de replicación, puede replicar en el mismo destino o en diferentes destinos para cada carga de trabajo.</block>
+  <block id="6ca5a36112bece1031ef1a3e82518ffb" category="inline-link-macro">Proteja las cargas de trabajo en Ransomware Resilience</block>
+  <block id="0b603f5148dda4ce1b974e4b20493476" category="paragraph">Para obtener más información, consulte <block ref="1b59dbcecddb451034333205ceb2d85d" category="inline-link-macro-rx"></block>.</block>
+  <block id="f7bb3fba9e87909a7d99018a8feebef5" category="section-title">Excluir cargas de trabajo de Ransomware Resilience</block>
+  <block id="36d62eb8fbffb07f574185bd90036cd1" category="paragraph">Ransomware Resilience ahora permite excluir cargas de trabajo específicas de un sistema de la protección y del panel de Ransomware Resilience. Puede excluir cargas de trabajo después del descubrimiento y volver a incluirlas si desea agregar protección contra ransomware. No se le facturarán las cargas de trabajo excluidas.</block>
+  <block id="427dab7765b34a516acce2d3545db33d" category="inline-link-macro">Excluir cargas de trabajo</block>
+  <block id="cce6483b933a36b9eebb2ecf0d8f32a6" category="paragraph">Para obtener más información, consulte <block ref="40a5b14292f3b3c1d42c8b093a2843e2" category="inline-link-macro-rx"></block>.</block>
+  <block id="35308ce14b9ba8b4f632405b876f0cc3" category="section-title">Marcar alertas como en revisión</block>
+  <block id="ff4c9cd383a7fe5ae887d1ac68d7ba52" category="paragraph">Ransomware Resilience ahora le permite marcar alertas como "En revisión". Utilice la etiqueta "En revisión" para mejorar la claridad en todo su equipo al clasificar y gestionar amenazas de ransomware activas.</block>
+  <block id="89f2d4e28daee04bf630a66530a30349" category="paragraph">Ransomware Resilience solo descubre datos de carga de trabajo cuando selecciona el sistema. El proceso de descubrimiento puede tardar varios minutos.</block>
+  <block id="67cfc97e3b12b9504bf641388c095506" category="paragraph">Si agregó cargas de trabajo a un sistema descubierto previamente, deberá reiniciar la detección para proteger las nuevas cargas de trabajo.</block>
+  <block id="a766aa8ad09c7fe20050753d75beca3f" category="list-text">Para identificar la hora del último descubrimiento, observe la fecha y la hora junto al ícono *Actualizar* en la parte superior derecha del panel de resiliencia ante ransomware.</block>
+  <block id="b449485bf7d14cf53070de7818e6bb15" category="inline-image-macro">Acciones verticales&lt;block ref="2f43b42fd833d1e77420a8dae7419000" prefix="</block>
+  <block id="5b000e587ccbc59d84db84375ebb8da8" category="list-text">En el menú Resiliencia contra ransomware, seleccione la vertical <block ref="fc01824fafc69aa9b95ac35277bbc402" category="inline-image-macro-rx" type="image"></block>" opción category='inline-code'/&gt; en la parte superior derecha. En el menú desplegable, seleccione *Configuración*.</block>
+  <block id="a73cb044815fd2c4fc6f7f4be69aea1b" category="paragraph">Ransomware Resilience le permite excluir cargas de trabajo específicas en un sistema de la protección y detección de ransomware.</block>
+  <block id="195a678c9c8d484143eb63eed10f0646" category="paragraph">Solo puede excluir cargas de trabajo que sean compatibles y que se hayan detectado correctamente. Puede modificar la lista de cargas de trabajo excluidas en cualquier momento. No se le facturarán las cargas de trabajo excluidas de Ransomware Resilience.</block>
+  <block id="8177747908126fef8483f6d1d6004f44" category="list-title">Agregar cargas de trabajo a la lista de cargas de trabajo excluidas</block>
+  <block id="37eb321d29db5dca11557bda9adc6eb7" category="list-text">En Ransomware Resilience, seleccione **Configuración**.</block>
+  <block id="c015f4b89fe0df1b17fc4657c586df8c" category="list-text">En el panel de Configuración, busque el panel de Descubrimiento de carga de trabajo. La tarjeta identifica el número de cargas de trabajo excluidas. Para agregar cargas de trabajo, junto a las cargas de trabajo excluidas, seleccione **Administrar**.</block>
+  <block id="7722f090277db2c47e7aecd7f6ee7e81" category="inline-image-macro">Panel de configuración de resiliencia frente al ransomware</block>
+  <block id="fed7f3c8409ae810bb45ed3af428f167" category="paragraph"><block ref="fed7f3c8409ae810bb45ed3af428f167" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2aa032eed68682b8806374264ab61a71" category="list-text">En la página Cargas de trabajo excluidas, seleccione **Agregar**.</block>
+  <block id="37cf02ce6bbea058426687b673a078ad" category="list-text">Seleccione las cargas de trabajo que desea excluir y luego **Agregar**.</block>
+  <block id="5b9260ea2b4c6018fc2bd598ec422b08" category="list-text">Revise las cargas de trabajo excluidas en la página Cargas de trabajo excluidas. Mientras se agrega la carga de trabajo, se muestra un indicador de progreso junto a su nombre. Si una carga de trabajo no se excluyó correctamente, no se muestra en la página.</block>
+  <block id="423527e51d69b12e13d1380a3cd19d9f" category="list-title">Eliminar cargas de trabajo de la lista de cargas de trabajo excluidas</block>
+  <block id="8e0c5d2e3270df01d0de694ff5c7c445" category="list-text">En el panel de Configuración, busque el panel de Descubrimiento de carga de trabajo. La tarjeta identifica el número de cargas de trabajo excluidas. Junto a las cargas de trabajo excluidas, seleccione **Administrar**.</block>
+  <block id="d3ce09b8cd5f44a1b0f3a2d83e6ac0f2" category="inline-image-macro">Captura de pantalla del panel de configuración de Ransomware Resilience.</block>
+  <block id="ca700be141532b3ddfdcc178e0b5cd32" category="paragraph"><block ref="ca700be141532b3ddfdcc178e0b5cd32" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9ec9c37808e2bdf2c275e0fc67f873fc" category="list-text">Para eliminar una carga de trabajo individual, seleccione el menú de acciones de la carga de trabajo que desea eliminar de la lista de excluidos.</block>
+  <block id="d1e463c8fe8d734bd3327fb633998456" category="paragraph">Para eliminar varias cargas de trabajo, seleccione la casilla de verificación junto a las cargas de trabajo que desea eliminar y luego **Eliminar de excluidos**.</block>
+  <block id="9f1822f26663cadd0ea726defa3cca17" category="list-text">En el cuadro de diálogo, seleccione **Eliminar** para confirmar que desea eliminar las cargas de trabajo de la lista de exclusión.</block>
+  <block id="01e74a47d7af3692bf72faf95ffcd1a3" category="inline-image-macro">Captura de pantalla de la eliminación exitosa de una carga de trabajo excluida.</block>
+  <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">Si la carga de trabajo se elimina de la lista de cargas de trabajo excluidas con éxito, aparece un mensaje de éxito en la página Carga de trabajo excluida y la carga de trabajo ya no aparece en la lista de cargas de trabajo excluidas. Si la acción falla, aparece un mensaje de error; intente la operación nuevamente. <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*En revisión*: Puedes marcar un incidente como en revisión mientras lo evalúas.</block>
+  <block id="a6e3974f4227562b42dd3774682f3f56" category="admonition">Después de descartar un ataque, no puedes revertir su estado. Si descarta una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente.</block>
+  <block id="95f7e6287ef0ab80de109e7baee476ad" category="paragraph">Las estrategias de protección contra ransomware abarcan políticas de _detección_, _protección_ y _replicación_.</block>
+  <block id="b8b45f3c53a227dc5aa1d806ef340f06" category="list-text">**Políticas de detección** identifican amenazas de ransomware</block>
+  <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**Las políticas de replicación** le permiten replicar instantáneas de Ransomware Resilience a un sitio secundario. Los programas de replicación se pueden configurar con frecuencias horarias, diarias, semanales o mensuales.</block>
+  <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">Actualmente, solo puedes replicar instantáneas en el almacenamiento ONTAP local.</block>
+  <block id="6474bbda8f7c072686c6e020cf107ead" category="list-text">Desde la navegación izquierda de la consola, seleccione *Protección* &gt; *Resiliencia ante ransomware*.</block>
+  <block id="ace8eeed056a04351826cffef5f4da33" category="admonition">La actividad de comportamiento sospechoso del usuario y la actividad de FPolicy (extensión de archivo sospechosa) se enumeran por separado del estado de detección.</block>
+  <block id="8e671825df2521c62d586d393df3398d" category="paragraph">*Destino de replicación*: si ha configurado la replicación de instantáneas, se enumeran los nombres de los sistemas y las máquinas virtuales de almacenamiento de destino. Si no hay replicación, este campo muestra "Ninguna".</block>
+  <block id="705d8898c1c055eb3bff9939a87b6812" category="list-text">*Crítico*: Se toma más de una copia de instantánea por hora (programa de protección altamente agresivo)</block>
+  <block id="0bec43abfdb99f043ac56e20931d1899" category="list-text">*Importante*: Las copias instantáneas se crean con una frecuencia menor a cada hora, pero mayor a la de cada día.</block>
+  <block id="890ca6db61a7d84b3c2f7e8b21560ff7" category="list-text">*Estándar*: Se toman copias instantáneas más de una vez al día</block>
+  <block id="da4aa80a5402fe8991327699e5421e28" category="section-title">Políticas de detección predefinidas</block>
+  <block id="b267816a1724e79c894aa7e4509e18b2" category="paragraph">+ La **política de replicación crítica** es la única política predefinida que admite la replicación de instantáneas en ONTAP.</block>
+  <block id="0d6a90889ade51e4252ba8bbf1ad155e" category="cell">Retención (días)</block>
+  <block id="b5b7fab63026325a379913c2a05751c2" category="cell">Número de copias de instantáneas</block>
+  <block id="aa9adfa847815670c9bd986dafc8c79c" category="cell">Número máximo de copias de instantáneas</block>
+  <block id="cf9344351eb239ccd95661876c4d97ee" category="cell">*Política de replicación crítica*</block>
+  <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">Replicación secundaria a ONTAP</block>
+  <block id="8f6c5d8baaf38cda61b5392a06e30e68" category="list-text">*Detección primaria*: habilite Ransomware Resilience para detectar posibles ataques de ransomware.</block>
+  <block id="21fd87cf8a3d6f008657537a5cec6e82" category="list-text">*Bloquear extensiones de archivos*: habilite Ransomware Resilience para bloquear extensiones de archivos sospechosas conocidas. Ransomware Resilience toma copias instantáneas automáticas cuando la detección primaria está habilitada.</block>
+  <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*Política de replicación*:</block>
+  <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*Nombre base de la política de replicación*: ingrese un nombre nuevo o elija uno existente. El nombre base es el prefijo que se añade a todas las instantáneas.</block>
+  <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*Programaciones de replicación*: alterne las frecuencias que desea habilitar (por hora, por día, por semana o por mes) y configure el valor de retención (la cantidad de instantáneas replicadas que se conservarán) para cada programación que habilite.</block>
+  <block id="228ec8f5cf8241b99a71e0c11689b0e6" category="list-text">Seleccione la configuración de detección que desee: *Detección de cifrado* *Detección de comportamiento sospechoso del usuario* *Bloquear extensiones de archivos sospechosas*</block>
+  <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">Si su estrategia incluye replicación, seleccione el **Sistema de destino** y la **VM de almacenamiento de destino**. Seleccione **Siguiente**.</block>
+  <block id="0c82c0ade162cfe42b72c98aa569451d" category="list-text">Si la estrategia de protección incluye replicación, revise la configuración de replicación.</block>
+  <block id="22af614d3b0e3b88037f6f632819e41f" category="list-text">Para replicar todas las instantáneas en el mismo destino, marque **Usar el mismo destino para cada carga de trabajo**. Seleccione un *Sistema de destino* y una *VM de almacenamiento de destino* para las cargas de trabajo en la sección Agente de consola.</block>
+  <block id="5cddb60bd30a2b5abfa065435ff46fad" category="paragraph">Para utilizar destinos diferentes, desmarque esa casilla. Revise cada carga de trabajo bajo cada agente de consola y asigne un *Sistema de destino* y una *VM de almacenamiento de destino* para cada carga de trabajo. Seleccione **Siguiente**.</block>
+  <block id="05f102695dcd78d82f88a52818f4c682" category="admonition">Antes de descargar los archivos, debe actualizar el panel para capturar los datos más recientes en sus informes.</block>
+  <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*Protección*: Incluye el estado y los detalles de todas las cargas de trabajo, incluido el número total de cargas protegidas y en riesgo.</block>
+  <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">Esta es una identificación generada por el sistema que se asigna a su correo electrónico. En la página *Administración de NSS*, puede mostrar su correo electrónico desde el<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> menú.</block>
+  <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">Si alguna vez necesita actualizar sus tokens de credenciales de inicio de sesión, también hay una opción *Actualizar credenciales* en el<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> menú.</block>
+  <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">12 de enero de 2026</block>
 </blocks>

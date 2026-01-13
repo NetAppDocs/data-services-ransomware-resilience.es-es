@@ -59,6 +59,7 @@ Una alerta puede tener uno de los siguientes estados:
 Un incidente de alerta puede tener los siguientes estados:
 
 * *Nuevo*: Todos los incidentes se marcan como "nuevos" cuando se identifican por primera vez.
+* *En revisión*: Puedes marcar un incidente como en revisión mientras lo evalúas.
 * *Descartado*: si sospecha que la actividad no es un ataque de ransomware, puede cambiar el estado a "Descartado".
 +
 
