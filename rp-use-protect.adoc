@@ -523,15 +523,7 @@ TIP: Para ver más detalles sobre las cargas de trabajo, desplácese hacia la de
 image:screen-protection-groups-policy.png["Agregar grupo de protección - Página de políticas"]
 
 . Seleccione la política que regirá la protección para este grupo. Para confirmar, seleccione *Siguiente*.
-. Si la estrategia de protección incluye replicación, revise la configuración de replicación.
-+
-.. Para replicar todas las instantáneas en el mismo destino, marque **Usar el mismo destino para cada carga de trabajo**. Seleccione un *Sistema de destino* y una *VM de almacenamiento de destino* para las cargas de trabajo en la sección Agente de consola.
-+
-Para utilizar destinos diferentes, desmarque esa casilla. Revise cada carga de trabajo bajo cada agente de consola y asigne un *Sistema de destino* y una *VM de almacenamiento de destino* para cada carga de trabajo. Seleccione **Siguiente**.
-
-
-
-. Si necesita configurar una política de respaldo, elija una y luego seleccione **Siguiente**.
+. Para configurar una política de respaldo, elija una y luego seleccione **Siguiente**.
 . Si su política de detección incluye la detección del comportamiento del usuario, seleccione el recopilador de datos que desea utilizar y luego **Siguiente**.
 . Revise las selecciones para el grupo de protección.
 . Para finalizar la creación del grupo de protección, seleccione *Agregar*.

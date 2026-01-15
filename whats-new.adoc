@@ -24,7 +24,7 @@ Descubra las novedades en NetApp Ransomware Resilience.
 
 === Replicar instantáneas en ONTAP
 
-Ransomware Resilience ahora admite agregar la replicación de instantáneas a un sitio ONTAP secundario. Puede crear una estrategia de protección contra ransomware que incluya replicación o utilizar la estrategia predefinida. Con grupos de protección que utilizan una política de replicación, puede replicar en el mismo destino o en diferentes destinos para cada carga de trabajo.
+Ransomware Resilience ahora admite agregar la replicación de instantáneas a un sitio ONTAP secundario. Puede crear una estrategia de protección contra ransomware que incluya replicación o utilizar la estrategia predefinida.
 
 Para obtener más información, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteja las cargas de trabajo en Ransomware Resilience"^].
 
