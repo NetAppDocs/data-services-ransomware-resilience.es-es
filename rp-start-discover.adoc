@@ -79,6 +79,9 @@ Si agregó cargas de trabajo a un sistema descubierto previamente, deberá reini
 
 
 
+TIP: Si encuentra que hay volúmenes que no se muestran para el sistema que descubrió, es posible que dichos volúmenes no sean compatibles. Para encontrar una lista de volúmenes no compatibles, vaya al menú **Configuración** y luego seleccione el menú de acciones en la tarjeta de descubrimiento de carga de trabajo para descargar un informe JSON de volúmenes compatibles y no compatibles.
+
+
 
 == Descubra nuevos sistemas
 

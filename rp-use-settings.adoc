@@ -62,6 +62,9 @@ Esta página muestra agentes de consola con sistemas que no se seleccionaron ant
 
 
 
+TIP: Desde la tarjeta de descubrimiento de carga de trabajo en Configuración, seleccione el menú de acciones `...` Luego, **Descargue el informe (JSON)** para revisar una lista de cargas de trabajo admitidas y no admitidas en sus sistemas.
+
+
 
 == Actividad sospechosa del usuario
 

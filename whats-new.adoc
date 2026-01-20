@@ -18,13 +18,25 @@ Descubra las novedades en NetApp Ransomware Resilience.
 
 
 
+== 19 de enero de 2026
+
+
+
+=== Volúmenes no compatibles
+
+Los informes de resiliencia ante ransomware ahora capturan información sobre volúmenes admitidos y no admitidos en el informe **Resumen**. Utilice esta información para diagnosticar por qué los volúmenes de un sistema podrían no ser elegibles para la protección contra ransomware.
+
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["Descargar informes de Ransomware Resilience"^].
+
+
+
 == 12 de enero de 2026
 
 
 
 === Replicar instantáneas en ONTAP
 
-Ransomware Resilience ahora admite agregar la replicación de instantáneas a un sitio ONTAP secundario. Puede crear una estrategia de protección contra ransomware que incluya replicación o utilizar la estrategia predefinida.
+Ransomware Resilience ahora admite agregar la replicación de instantáneas a un sitio ONTAP secundario. Con grupos de protección que utilizan una política de replicación, puede replicar en el mismo destino o en diferentes destinos para cada carga de trabajo. Puede crear una estrategia de protección contra ransomware que incluya replicación o utilizar la estrategia predefinida.
 
 Para obtener más información, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteja las cargas de trabajo en Ransomware Resilience"^].
 
