@@ -30,7 +30,9 @@ Un agente puede alojar varios recopiladores de datos. Los recopiladores de datos
 
 Los recopiladores se configuran en la configuración de Resiliencia ante ransomware.
 
-*Rol de consola requerido* Para activar la detección de actividad de usuarios sospechosos, necesita el rol de administrador de la organización.  Para configuraciones posteriores de actividad de usuarios sospechosa, necesita el rol de administrador de comportamiento de usuario de Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
+*Rol requerido de la consola* Para activar la detección de actividad sospechosa de usuarios, necesitas el rol **Organization admin role**. Para las configuraciones posteriores de actividad sospechosa de usuarios, necesitas el rol **Ransomware Resilience user behavior admin role**. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
+
+Asegúrate de que cada función se aplique a nivel de la organización.
 
 
 
