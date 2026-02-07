@@ -118,7 +118,7 @@ IMPORTANT: Durante la instalación inicial, reemplaza el  `<site_name>` con un p
 | Protocolo | Puerto | Fuente | Destino | Descripción 
 
 
-| TCP | 443 | Agente de actividad del usuario  a| 
+| HTTPS (TCP) | 443 | Agente de actividad del usuario  a| 
 * <site_name>.cs01-ap-1.cloudinsights.netapp.com
 * <site_name>.c01-ap-1.cloudinsights.netapp.com
 * <site_name>.c02-ap-1.cloudinsights.netapp.com
@@ -135,7 +135,7 @@ IMPORTANT: Durante la instalación inicial, reemplaza el  `<site_name>` con un p
 | Protocolo | Puerto | Fuente | Destino | Descripción 
 
 
-| TCP | 443 | Agente de actividad del usuario  a| 
+| HTTPS (TCP) | 443 | Agente de actividad del usuario  a| 
 * <site_name>.cs01-eu-1.cloudinsights.netapp.com
 * <site_name>.c01-eu-1.cloudinsights.netapp.com
 * <site_name>.c02-eu-1.cloudinsights.netapp.com
@@ -152,7 +152,7 @@ IMPORTANT: Durante la instalación inicial, reemplaza el  `<site_name>` con un p
 | Protocolo | Puerto | Fuente | Destino | Descripción 
 
 
-| TCP | 443 | Agente de actividad del usuario  a| 
+| HTTPS (TCP) | 443 | Agente de actividad del usuario  a| 
 * <site_name>.cs01.cloudinsights.netapp.com
 * <site_name>.c01.cloudinsights.netapp.com
 * <site_name>.c02.cloudinsights.netapp.com
@@ -172,7 +172,7 @@ IMPORTANT: Durante la instalación inicial, reemplaza el  `<site_name>` con un p
 | TCP | 389(LDAP) 636 (LDAP/start-tls) | Agente de actividad del usuario | URL del servidor LDAP | Conectarse a LDAP 
 
 
-| TCP | 443 | Agente de actividad del usuario | Dirección IP de administración del clúster o SVM (según la configuración del recopilador SVM) | Comunicación API con ONTAP 
+| HTTPS (TCP) | 443 | Agente de actividad del usuario | Dirección IP de administración del clúster o SVM (según la configuración del recopilador SVM) | Comunicación API con ONTAP 
 
 
 | TCP | 35000 - 55000  a| 
