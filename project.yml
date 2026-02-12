@@ -41,8 +41,14 @@ sidebar:
     - title: Configurar copias de seguridad, detección de amenazas y simulaciones
         de ataques en Configuración
       url: "/rp-use-settings.html"
-    - title: Configurar la detección de actividad sospechosa de usuarios
-      url: "/suspicious-user-activity.html"
+    - title: Configura la detección de la actividad de los usuarios
+      entries:
+      - title: Conoce la detección de la actividad de los usuarios
+        url: "/concept-user-behavior.html"
+      - title: Requisitos de la actividad del usuario
+        url: "/reference-user-activity-requirements.html"
+      - title: Configura agentes y colectores
+        url: "/suspicious-user-activity.html"
   - title: Utilice la resiliencia frente al ransomware
     entries:
     - title: Visualizar el estado de la carga de trabajo mediante el Panel de control

@@ -111,19 +111,19 @@ Ransomware Resilience ayuda a configurar un destino de respaldo a través de la 
 
 == Requisitos de comportamiento sospechoso del usuario
 
-Para que Ransomware Resilience proporcione alertas sobre el comportamiento sospechoso del usuario, debe configurar un agente de actividad del usuario. Pour installer un agent d’activité utilisateur, assurez-vous que votre système respecte .
+Para que Ransomware Resilience te dé alertas sobre comportamientos sospechosos de usuarios, debes configurar un agente de actividad de usuario. Para instalar un agente de actividad de usuario, asegúrate de que tu sistema cumple link:reference-user-activity-requirements.html["los requisitos"].
 
 
 
 == Actualizar los permisos de usuarios no administradores en un sistema ONTAP
 
-Si necesita actualizar los permisos de usuarios que no son administradores para un sistema en particular, complete estos pasos.
+Si necesitas actualizar los permisos de usuarios que no son administradores para un sistema en particular, usa estos pasos.
 
-. Inicie sesión en la consola y busque el sistema que necesita actualizar sus permisos de usuario de ONTAP .
-. Seleccione el sistema para ver los detalles.
+. Inicia sesión en la Console. En el dashboard, identifica el sistema que necesita que se actualicen sus permisos de usuario de ONTAP.
+. Selecciona el sistema para ver sus detalles.
 . Seleccione *Ver información adicional* para mostrar el nombre de usuario.
 . Inicie sesión en la CLI del clúster ONTAP como usuario administrador.
-. Mostrar los roles existentes para ese usuario. Ingresar:
+. Muestra los roles existentes para ese usuario:
 +
 [listing]
 ----

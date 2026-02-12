@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+Si ya estás usando NetApp Data Infrastructure Insights (DII) Workload Security, se recomienda que uses los mismos agentes de Workload Security para Ransomware Resilience. No necesitas implementar agentes de Workload Security independientes para Ransomware Resilience, pero usar los mismos agentes de Workload Security requiere una relación de emparejamiento entre la organización de la consola de Ransomware Resilience y el tenant de DII Storage Workload Security. Contacta a tu representante de cuenta para habilitar este emparejamiento.

@@ -4,7 +4,7 @@ permalink: suspicious-user-activity.html
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, 
 summary: La detección de actividad de usuarios sospechosa en Ransomware Resilience le permite detectar actividad de usuarios que podría representar una amenaza potencial. 
 ---
-= Configurar la detección de actividad sospechosa de usuarios en NetApp Ransomware Resilience
+= Configura agentes y recopiladores para la detección de actividad de usuarios en NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,15 +12,7 @@ summary: La detección de actividad de usuarios sospechosa en Ransomware Resilie
 
 
 [role="lead"]
-Ransomware Resilience admite la detección de comportamiento sospechoso de los usuarios en las políticas de detección, lo que le permite abordar incidentes de ransomware a nivel de usuario.
-
-Ransomware Resilience detecta actividad sospechosa del usuario analizando los eventos de actividad del usuario generados por FPolicy en ONTAP. Para recopilar datos de actividad del usuario, debe implementar uno o más agentes de actividad del usuario. El agente es un servidor Linux o una máquina virtual con conectividad a los dispositivos de su inquilino.
-
-
-
-== Agentes y recopiladores de actividad del usuario
-
-Se debe instalar al menos un agente de actividad del usuario para activar la detección de actividad de usuario sospechosa en Ransomware Resilience. Cuando activa la función de actividad de usuario sospechosa desde el panel de resiliencia contra ransomware, debe proporcionar la información del host del agente.
+Para activar la detección de comportamiento sospechoso de usuarios en NetApp Ransomware Resilience, tienes que instalar al menos un agente de actividad de usuario. Cuando actives la función de actividad sospechosa de usuario desde el panel de Ransomware Resilience, necesitas proporcionar la información del host del agente de actividad de usuario.
 
 Un agente puede alojar varios recopiladores de datos. Los recopiladores de datos envían datos a una ubicación SaaS para su análisis. Hay dos tipos de coleccionistas:
 
@@ -30,190 +22,27 @@ Un agente puede alojar varios recopiladores de datos. Los recopiladores de datos
 
 Los recopiladores se configuran en la configuración de Resiliencia ante ransomware.
 
+
+NOTE: Si ya estás usando NetApp Data Infrastructure Insights (DII) Workload Security, se recomienda que uses los mismos agentes de Workload Security para Ransomware Resilience. No necesitas implementar agentes de Workload Security independientes para Ransomware Resilience, pero usar los mismos agentes de Workload Security requiere una relación de emparejamiento entre la organización de la consola de Ransomware Resilience y el tenant de DII Storage Workload Security. Contacta a tu representante de cuenta para habilitar este emparejamiento.
+
++ Si aún no estás usando DII, sigue las instrucciones de configuración aquí.
+
+
+
+== Antes de empezar
+
+* Asegúrate de cumplir los link:reference-user-activity-requirements.html["requisitos del sistema operativo, servidor y red"].
+
+
 *Rol requerido de la consola* Para activar la detección de actividad sospechosa de usuarios, necesitas el rol **Organization admin role**. Para las configuraciones posteriores de actividad sospechosa de usuarios, necesitas el rol **Ransomware Resilience user behavior admin role**. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
 
 Asegúrate de que cada función se aplique a nivel de la organización.
 
 
 
-== Requisitos del sistema
+== Crear un agente de actividad de usuario
 
-Para instalar un agente de actividad de usuario, necesita un host o una máquina virtual que cumpla con los siguientes requisitos.
-
-
-
-=== Requisitos del sistema operativo
-
-[cols="2"]
-|===
-| Sistema operativo | Versiones compatibles 
-
-
-| AlmaLinux | 9.4 (64 bits) a 9.5 (64 bits) y 10 (64 bits), incluido SELinux 
-
-
-| CentOS | CentOS Stream 9 (64 bits) 
-
-
-| Debian | 11 (64 bits), 12 (64 bits), incluido SELinux 
-
-
-| OpenSUSE Leap | 15.3 (64 bits) a 15.6 (64 bits) 
-
-
-| Oracle Linux | 8.10 (64 bits) y 9.1 (64 bits) a 9.6 (64 bits), incluido SELinux 
-
-
-| Sombrero rojo | 8.10 (64 bits), 9.1 (64 bits) a 9.6 (64 bits) y 10 (64 bits), incluido SELinux 
-
-
-| Rocoso | Rocky 9.4 (64 bits) a 9.6 (64 bits), incluido SELinux 
-
-
-| SUSE Enterprise Linux | 15 SP4 (64 bits) a 15 SP6 (64 bits), incluido SELinux 
-
-
-| Ubuntu | 20.04 LTS (64 bits), 22.04 LTS (64 bits) y 24.04 LTS (64 bits) 
-|===
-
-NOTE: La máquina que utilice para el agente de actividad del usuario no debe estar ejecutando otro software de nivel de aplicación. Se recomienda un servidor dedicado.
-
-El `unzip` Se requiere comando para la instalación. El `sudo su -` El comando es necesario para la instalación, la ejecución de scripts y la desinstalación.
-
-
-
-=== Requisitos del servidor
-
-El servidor debe cumplir los siguientes requisitos mínimos:
-
-* **CPU**: 4 núcleos
-* **RAM**: 16 GB de RAM
-* **Espacio en disco**: 36 GB de espacio libre en disco
-
-
-
-NOTE: Asigne espacio de disco adicional para permitir la creación del sistema de archivos. Asegúrese de que haya al menos 35 GB de espacio libre en el sistema de archivos. + Si `/opt` es una carpeta montada desde un almacenamiento NAS, los usuarios locales deben tener acceso a esta carpeta. La creación del agente de actividad del usuario puede fallar si los usuarios locales no tienen los permisos necesarios.
-
-
-NOTE: Se recomienda que instale el agente de actividad del usuario en un sistema diferente a su entorno de Ransomware Resilience. Si los instala en la misma máquina, deberá dejar entre 50 y 55 GB de espacio en disco. Para Linux, asigne entre 25 y 30 GB de espacio a `/opt/netapp` y 25 GB a `var/log/netapp`.
-
-
-TIP: Se recomienda sincronizar la hora tanto en el sistema ONTAP como en la máquina del agente de actividad del usuario mediante el Protocolo de tiempo de red (NTP) o el Protocolo simple de tiempo de red (SNTP).
-
-
-
-=== Reglas de acceso a la red en la nube
-
-Revise las reglas de acceso a la red en la nube para su geografía relevante (Asia Pacífico, Europa o Estados Unidos).
-
-
-IMPORTANT: Durante la instalación inicial, reemplaza el  `<site_name>` con un permiso comodín (`*`). Después de que el agente esté activado y completamente operativo, puedes reemplazar el permiso por el nombre del sitio. Contacta a tu representante de NetApp para el nombre del sitio.
-
-
-
-==== Implementaciones de agentes de actividad del usuario basados en APAC
-
-[cols="1,1,1,3,1"]
-|===
-| Protocolo | Puerto | Fuente | Destino | Descripción 
-
-
-| HTTPS (TCP) | 443 | Agente de actividad del usuario  a| 
-* <site_name>.cs01-ap-1.cloudinsights.netapp.com
-* <site_name>.c01-ap-1.cloudinsights.netapp.com
-* <site_name>.c02-ap-1.cloudinsights.netapp.com
-* gentlogin.cs01-ap-1.cloudinsights.netapp.com
-
-| Acceso a la resiliencia frente al ransomware 
-|===
-
-
-==== Implementaciones de agentes de actividad del usuario con sede en Europa
-
-[cols="1,1,1,3,1"]
-|===
-| Protocolo | Puerto | Fuente | Destino | Descripción 
-
-
-| HTTPS (TCP) | 443 | Agente de actividad del usuario  a| 
-* <site_name>.cs01-eu-1.cloudinsights.netapp.com
-* <site_name>.c01-eu-1.cloudinsights.netapp.com
-* <site_name>.c02-eu-1.cloudinsights.netapp.com
-* agentlogin.cs01-eu-1.cloudinsights.netapp.com
-
-| Acceso a la resiliencia frente al ransomware 
-|===
-
-
-==== Implementaciones de agentes de actividad del usuario con sede en EE. UU.
-
-[cols="1,1,1,3,1"]
-|===
-| Protocolo | Puerto | Fuente | Destino | Descripción 
-
-
-| HTTPS (TCP) | 443 | Agente de actividad del usuario  a| 
-* <site_name>.cs01.cloudinsights.netapp.com
-* <site_name>.c01.cloudinsights.netapp.com
-* <site_name>.c02.cloudinsights.netapp.com
-* agentlogin.cs01.cloudinsights.netapp.com
-
-| Acceso a la resiliencia frente al ransomware 
-|===
-
-
-=== Reglas dentro de la red
-
-[cols="5*"]
-|===
-| Protocolo | Puerto | Fuente | Destino | Descripción 
-
-
-| TCP | 389(LDAP) 636 (LDAP/start-tls) | Agente de actividad del usuario | URL del servidor LDAP | Conectarse a LDAP 
-
-
-| HTTPS (TCP) | 443 | Agente de actividad del usuario | Dirección IP de administración del clúster o SVM (según la configuración del recopilador SVM) | Comunicación API con ONTAP 
-
-
-| TCP | 35000 - 55000  a| 
-Direcciones IP de LIF de datos SVM
-| Agente de actividad del usuario | Comunicación de ONTAP al agente de actividad del usuario para eventos de Fpolicy. Estos puertos deben estar abiertos hacia el agente de actividad del usuario para que ONTAP pueda enviarle eventos, incluido cualquier firewall en el propio agente de actividad del usuario (si está presente). + **NOTA:** No es necesario reservar *todos* estos puertos, pero los puertos que reserve para esto deben estar dentro de este rango. Se recomienda comenzar reservando 100 puertos y aumentarlos si es necesario. 
-
-
-| TCP | 35000-55000 | IP de gestión de clúster | Agente de actividad del usuario | Comunicación desde la IP de administración del clúster ONTAP al agente de actividad del usuario para *eventos EMS*. Estos puertos deben estar abiertos hacia el agente de actividad del usuario para que ONTAP pueda enviarle eventos EMS, incluido cualquier firewall en el propio agente de actividad del usuario. + **NOTA:** No es necesario reservar *todos* estos puertos, pero los puertos que reserve para esto deben estar dentro de este rango. Se recomienda comenzar reservando 100 puertos y aumentarlos si es necesario. 
-
-
-| SSH | 22 | Agente de actividad del usuario | Gestión de clústeres | Necesario para el bloqueo de usuarios CIFS/SMB. 
-|===
-
-
-== Habilitar la detección de actividad sospechosa de usuarios
-
-Asegúrese de haber cumplido con los link:#system-requirements["Requisitos del sistema"] para el agente de actividad del usuario. Asegúrese de que su configuración cumpla con los proveedores de nube y las regiones compatibles.
-
-**Soporte del proveedor de la nube**
-
-Los datos de actividad sospechosa del usuario pueden almacenarse en AWS y Azure en las siguientes regiones:
-
-|===
-| Proveedor de nube | Región 
-
-
-| AWS  a| 
-* Asia Pacífico (Sídney) (ap-southeast-2)
-* Europa (Frankfurt) (eu-central-1)
-* Este de EE. UU. (Norte de Virginia) (us-east-1)
-
-
-
-
-| Azur | Este de EE. UU. 
-|===
-
-
-=== Agregar un agente de actividad del usuario
-
-Los agentes de actividad del usuario son entornos ejecutables para los recopiladores de datos; los recopiladores de datos comparten eventos de actividad del usuario con Ransomware Resilience. Debe crear al menos un agente de actividad de usuario para habilitar la detección de actividad de usuario sospechosa.
+Los agentes de actividad de usuario son entornos ejecutables para link:#add-a-data-collector["recopiladores de datos"]; los recopiladores de datos comparten eventos de actividad de usuario con Ransomware Resilience. Debes crear al menos un agente de actividad de usuario para habilitar la detección de actividad de usuario sospechosa.
 
 .Pasos
 . Si es la primera vez que crea un agente de actividad de usuario, vaya al **Panel de control**. En el mosaico **Actividad del usuario**, seleccione **Activar**.
@@ -234,11 +63,11 @@ image:user-activity-agent.png["Captura de pantalla de la interfaz del agente de 
 
 . Seleccione **Siguiente**.
 . Revise su configuración. Seleccione *Activar* para completar la adición del agente de actividad del usuario.
-. Confirme que el agente de actividad del usuario se creó correctamente. En el mosaico Actividad del usuario, una implementación exitosa se muestra como En ejecución.
+. Confirma que el agente de actividad de usuario se creó correctamente. En el mosaico de actividad de usuario, una implementación exitosa se muestra como **Running**.
 
 
 .Resultado
-Una vez creado exitosamente el agente de actividad del usuario, regrese al menú **Configuración** y seleccione **Administrar** en el mosaico Actividad del usuario. Seleccione la pestaña **Agente de actividad del usuario** y luego seleccione el agente de actividad del usuario para ver detalles al respecto, incluidos los recopiladores de datos y los conectores del directorio de usuarios.
+Después de que el agente de actividad de usuario se cree correctamente, vuelve al menú **Settings** y luego selecciona **Manage** en el mosaico de User activity. Selecciona la pestaña **User activity agents** y luego selecciona el agente de actividad de usuario para ver detalles sobre él, incluidos los recopiladores de datos y los conectores del directorio de usuarios.
 
 
 
@@ -252,7 +81,7 @@ image:user-activity-settings.png["Captura de pantalla de la configuración de la
 
 
 
-=== Agregar un conector de directorio de usuarios
+== Crear un conector de directorio de usuarios
 
 Para asignar ID de usuario a nombres de usuario, debe crear un conector de directorio de usuarios.
 
@@ -318,11 +147,11 @@ Proporcione los detalles de mapeo de atributos:
 . Localice el mosaico Actividad del usuario y seleccione **Administrar**.
 . Seleccione la pestaña **Conector de directorio de usuarios**.
 . Identifique el conector del directorio de usuario que desea eliminar. En el menú de acciones al final de la línea, seleccione los tres puntos `...` luego **Eliminar**.
-. En el cuadro de diálogo emergente, seleccione **Eliminar** para confirmar sus acciones.
+. En el cuadro de diálogo emergente, selecciona **Borrar** para confirmar.
 
 
 
 
 == Responder a alertas de actividad sospechosa del usuario
 
-Después de configurar la detección de actividad de usuarios sospechosas, puede monitorear eventos en la página de alertas. Para obtener más información, consulte link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["Detectar actividad maliciosa y comportamiento anómalo del usuario"] .
+Después de configurar la detección de actividad sospechosa de usuarios, puedes monitorear los eventos en la página de alertas. Para más información, consulta link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["Detecta actividad maliciosa y comportamiento sospechoso de los usuarios"].

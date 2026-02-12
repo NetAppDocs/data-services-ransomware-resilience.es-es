@@ -1,0 +1,194 @@
+---
+sidebar: sidebar 
+permalink: reference-user-activity-requirements.html 
+keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, end points, operating systems, networking 
+summary: Antes de crear un agente de actividad de usuario y otros recopiladores, debes asegurarte de cumplir con los requisitos de sistema operativo, servidor y red indicados. 
+---
+= Requisitos para la detección del comportamiento del usuario en NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Antes de crear un agente de actividad de usuario y otros recopiladores, debes asegurarte de cumplir con los requisitos de sistema operativo, servidor y red indicados.
+
+
+
+== Soporte del proveedor de la nube
+
+**Soporte del proveedor de la nube**
+
+Los datos de actividad sospechosa del usuario pueden almacenarse en AWS y Azure en las siguientes regiones:
+
+|===
+| Proveedor de nube | Región 
+
+
+| AWS  a| 
+* Asia Pacífico (Sídney) (ap-southeast-2)
+* Europa (Frankfurt) (eu-central-1)
+* Este de EE. UU. (Norte de Virginia) (us-east-1)
+
+
+
+
+| Azur | Este de EE. UU. 
+|===
+
+
+== Requisitos del sistema operativo
+
+La detección de comportamiento sospechoso del usuario es compatible con los siguientes sistemas operativos:
+
+[cols="2"]
+|===
+| Sistema operativo | Versiones compatibles 
+
+
+| AlmaLinux | 9.4 (64 bits) a 9.5 (64 bits) y 10 (64 bits), incluido SELinux 
+
+
+| CentOS | CentOS Stream 9 (64 bits) 
+
+
+| Debian | 11 (64 bits), 12 (64 bits), incluido SELinux 
+
+
+| OpenSUSE Leap | 15.3 (64 bits) a 15.6 (64 bits) 
+
+
+| Oracle Linux | 8.10 (64 bits) y 9.1 (64 bits) a 9.6 (64 bits), incluido SELinux 
+
+
+| Sombrero rojo | 8.10 (64 bits), 9.1 (64 bits) a 9.6 (64 bits) y 10 (64 bits), incluido SELinux 
+
+
+| Rocoso | Rocky 9.4 (64 bits) a 9.6 (64 bits), incluido SELinux 
+
+
+| SUSE Enterprise Linux | 15 SP4 (64 bits) a 15 SP6 (64 bits), incluido SELinux 
+
+
+| Ubuntu | 20.04 LTS (64 bits), 22.04 LTS (64 bits) y 24.04 LTS (64 bits) 
+|===
+
+NOTE: La máquina que utilice para el agente de actividad del usuario no debe estar ejecutando otro software de nivel de aplicación. Se recomienda un servidor dedicado.
+
+El `unzip` Se requiere comando para la instalación. El `sudo su -` El comando es necesario para la instalación, la ejecución de scripts y la desinstalación.
+
+
+
+== Requisitos del servidor
+
+El servidor debe cumplir los siguientes requisitos mínimos:
+
+* **CPU**: 4 núcleos
+* **RAM**: 16 GB de RAM
+* **Espacio en disco**: 36 GB de espacio libre en disco
+
+
+
+
+=== Recomendaciones del servidor
+
+* Asigne espacio de disco adicional para permitir la creación del sistema de archivos. Asegúrese de que haya al menos 35 GB de espacio libre en el sistema de archivos. + Si `/opt` es una carpeta montada desde un almacenamiento NAS, los usuarios locales deben tener acceso a esta carpeta. La creación del agente de actividad del usuario puede fallar si los usuarios locales no tienen los permisos necesarios.
+* Se recomienda que instales el agente de actividad del usuario en un sistema independiente de tu entorno de Ransomware Resilience. Si los instalas en la misma máquina, deberías dejar entre 50 y 55 GB de espacio en disco. Para Linux, asigna entre 25 y 30 GB de espacio a `/opt/netapp` y 25 GB a `var/log/netapp`.
+* Se recomienda sincronizar la hora tanto en el sistema ONTAP como en la máquina del agente de actividad del usuario mediante el Protocolo de tiempo de red (NTP) o el Protocolo simple de tiempo de red (SNTP).
+
+
+
+
+== Reglas de acceso a la red en la nube
+
+Revise las reglas de acceso a la red en la nube para su geografía relevante (Asia Pacífico, Europa o Estados Unidos).
+
+
+IMPORTANT: Durante la instalación inicial, reemplaza el  `<site_name>` con un permiso comodín (`*`). Después de que el agente esté activado y completamente operativo, puedes reemplazar el permiso por el nombre del sitio. Contacta a tu representante de NetApp para el nombre del sitio.
+
+
+NOTE: El agente de actividad del usuario utiliza la tecnología NetApp Data Infrastructure Insights, por eso se usan los endpoints de `cloudinsights`. Para más información, consulta
+
+
+
+=== Implementaciones de agentes de actividad de usuario basadas en APAC
+
+[cols="1,1,1,3,1"]
+|===
+| Protocolo | Puerto | Fuente | Destino | Descripción 
+
+
+| HTTPS (TCP) | 443 | Agente de actividad del usuario  a| 
+* <site_name>.cs01-ap-1.cloudinsights.netapp.com
+* <site_name>.c01-ap-1.cloudinsights.netapp.com
+* <site_name>.c02-ap-1.cloudinsights.netapp.com
+* gentlogin.cs01-ap-1.cloudinsights.netapp.com
+
+| Acceso a la resiliencia frente al ransomware 
+|===
+
+
+=== Implementaciones de agentes de actividad de usuarios con sede en Europa
+
+[cols="1,1,1,3,1"]
+|===
+| Protocolo | Puerto | Fuente | Destino | Descripción 
+
+
+| HTTPS (TCP) | 443 | Agente de actividad del usuario  a| 
+* <site_name>.cs01-eu-1.cloudinsights.netapp.com
+* <site_name>.c01-eu-1.cloudinsights.netapp.com
+* <site_name>.c02-eu-1.cloudinsights.netapp.com
+* agentlogin.cs01-eu-1.cloudinsights.netapp.com
+
+| Acceso a la resiliencia frente al ransomware 
+|===
+
+
+=== Despliegues de agentes de actividad de usuarios en EE. UU.
+
+[cols="1,1,1,3,1"]
+|===
+| Protocolo | Puerto | Fuente | Destino | Descripción 
+
+
+| HTTPS (TCP) | 443 | Agente de actividad del usuario  a| 
+* <site_name>.cs01.cloudinsights.netapp.com
+* <site_name>.c01.cloudinsights.netapp.com
+* <site_name>.c02.cloudinsights.netapp.com
+* agentlogin.cs01.cloudinsights.netapp.com
+
+| Acceso a la resiliencia frente al ransomware 
+|===
+
+
+== Reglas dentro de la red
+
+[cols="5*"]
+|===
+| Protocolo | Puerto | Fuente | Destino | Descripción 
+
+
+| TCP | 389(LDAP) 636 (LDAP/start-tls) | Agente de actividad del usuario | URL del servidor LDAP | Conectarse a LDAP 
+
+
+| HTTPS (TCP) | 443 | Agente de actividad del usuario | Dirección IP de administración del clúster o SVM (según la configuración del recopilador SVM) | Comunicación API con ONTAP 
+
+
+| TCP | 35000 - 55000  a| 
+Direcciones IP de LIF de datos SVM
+| Agente de actividad del usuario | Comunicación de ONTAP al agente de actividad del usuario para eventos de Fpolicy. Estos puertos deben estar abiertos hacia el agente de actividad del usuario para que ONTAP pueda enviarle eventos, incluido cualquier firewall en el propio agente de actividad del usuario (si está presente). + **NOTA:** No es necesario reservar *todos* estos puertos, pero los puertos que reserve para esto deben estar dentro de este rango. Se recomienda comenzar reservando 100 puertos y aumentarlos si es necesario. 
+
+
+| TCP | 35000-55000 | IP de gestión de clúster | Agente de actividad del usuario | Comunicación desde la IP de administración del clúster ONTAP al agente de actividad del usuario para *eventos EMS*. Estos puertos deben estar abiertos hacia el agente de actividad del usuario para que ONTAP pueda enviarle eventos EMS, incluido cualquier firewall en el propio agente de actividad del usuario. + **NOTA:** No es necesario reservar *todos* estos puertos, pero los puertos que reserve para esto deben estar dentro de este rango. Se recomienda comenzar reservando 100 puertos y aumentarlos si es necesario. 
+
+
+| SSH | 22 | Agente de actividad del usuario | Gestión de clústeres | Necesario para el bloqueo de usuarios CIFS/SMB. 
+|===
+
+
+== Siguiente paso
+
+* link:suspicious-user-activity.html["Configura los agentes y colectores de actividad de los usuarios"]
+
