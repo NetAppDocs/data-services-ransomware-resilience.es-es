@@ -184,7 +184,10 @@ Ransomware Resilience admite los siguientes objetivos de respaldo, sistemas y fu
 | Ambiente | Protocolo | Versiones compatibles 
 
 
-| Amazon FSx for NetApp ONTAP* | NFS, CIFS y SAN | N/A 
+| Amazon FSx for NetApp ONTAP* | CIFS, NFS y SAN | N/A 
+
+
+| Azure NetApp Files | CIFS y NFS | N/A 
 
 
 .2+| Cloud Volumes ONTAP para AWS | CIFS y NFS | 9.11.1 y posteriores 

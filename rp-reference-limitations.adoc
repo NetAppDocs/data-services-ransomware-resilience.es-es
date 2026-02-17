@@ -26,6 +26,17 @@ Si selecciona un volumen ONTAP 9.11.1 para el simulacro de preparación para ata
 
 El sistema Amazon FSx for NetApp ONTAP es compatible con Ransomware Resilience. Las siguientes limitaciones se aplican a Amazon FSx para ONTAP:
 
-* Las políticas de respaldo no son compatibles con Amazon FSx para ONTAP. En este entorno, debe realizar operaciones de respaldo utilizando Amazon FSx para respaldos. Puede restaurar estas cargas de trabajo utilizando Ransomware Resilience.
+* Las políticas de backup no son compatibles con Amazon FSx for ONTAP. En este entorno, deberías realizar las operaciones de backup usando Amazon FSx for backups. Puedes restaurar estas cargas de trabajo usando Ransomware Resilience.
 * Las operaciones de restauración se realizan únicamente desde instantáneas.
+
+
+
+
+== Limitaciones de Azure NetApp Files
+
+Azure NetApp Files es compatible con Ransomware Resilience. Las siguientes limitaciones aplican a Azure NetApp Files:
+
+* Las estrategias de protección contra ransomware con políticas de backup no son compatibles con Azure NetApp Files. En su lugar, puedes usar el backup de Azure NetApp Files.
+* Las estrategias de protección contra ransomware con replicación no son compatibles para Azure NetApp Files.
+* Al seleccionar una estrategia de protección, asegúrate de que su planificación de instantáneas sea compatible con Azure NetApp Files. La planificación de instantáneas más frecuente disponible en Azure NetApp Files es horaria.
 

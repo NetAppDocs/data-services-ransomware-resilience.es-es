@@ -18,6 +18,34 @@ Descubra las novedades en NetApp Ransomware Resilience.
 
 
 
+== 16 febrero 2026
+
+
+
+=== Soporte de Azure NetApp Files
+
+Ransomware Resilience ahora es compatible con los sistemas Azure NetApp Files, lo que te permite detectar y responder eficazmente a las amenazas de ransomware en Azure NetApp Files. Cuando descubres cargas de trabajo, Ransomware Resilience ahora presenta Azure NetApp Files y las muestra en el panel de protección. El soporte de Ransomware Resilience para Azure NetApp Files incluye estrategias de detección y protección solo con instantáneas. El soporte para Azure NetApp Files está actualmente en vista previa.
+
+Para más información, consulta el enlace: para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Aprenda sobre la resiliencia frente al ransomware"^].
+
+
+
+=== Excluir usuarios de las alertas de comportamiento del usuario
+
+Ransomware Resilience ahora te permite excluir a usuarios específicos de las alertas de comportamiento del usuario. Excluir a usuarios de confianza puede evitar falsos positivos y alertas innecesarias.
+
+Para más información, consulta el enlace: para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#exclude-users-from-alerts["Excluir usuarios de alertas"^].
+
+
+
+=== Soporte de grupo de protección para la actividad de comportamiento del usuario
+
+Los grupos de protección de Ransomware Resilience ahora admiten políticas de detección para detectar comportamientos sospechosos de los usuarios. Cuando aplicas una estrategia de protección contra ransomware a un grupo de protección, se aplica una política en todas las cargas de trabajo, lo que agiliza la gestión de tu postura de ciberseguridad.
+
+Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html#create-a-protection-group["Crear un grupo de protección"^].
+
+
+
 == 19 de enero de 2026
 
 
@@ -36,7 +64,7 @@ Para obtener más información, consulte link:https://docs.netapp.com/us-en/data
 
 === Replicar instantáneas en ONTAP
 
-Ransomware Resilience ahora admite agregar la replicación de instantáneas a un sitio ONTAP secundario. Con grupos de protección que utilizan una política de replicación, puede replicar en el mismo destino o en diferentes destinos para cada carga de trabajo. Puede crear una estrategia de protección contra ransomware que incluya replicación o utilizar la estrategia predefinida.
+Ransomware Resilience ahora admite agregar la replicación de instantáneas a un sitio ONTAP secundario. Con los grupos de protección que usan una política de replicación, puedes replicar en el mismo destino o en destinos diferentes para cada carga de trabajo. Puedes crear una estrategia de protección contra ransomware que incluya replicación o usar la estrategia predefinida.
 
 Para obtener más información, consulte link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteja las cargas de trabajo en Ransomware Resilience"^].
 

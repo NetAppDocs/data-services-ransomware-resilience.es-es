@@ -1,0 +1,259 @@
+---
+sidebar: sidebar 
+permalink: task-siem.html 
+keywords: ransomware protection, SIEM, security event management system, soar, playbook, orchestration, event management 
+summary: 'Puedes enviar automáticamente datos de NetApp Ransomware Resilience a tu sistema de gestión de seguridad y eventos (SIEM) para análisis y detección de amenazas.' 
+---
+= Conecta NetApp Ransomware Resilience al sistema de gestión de seguridad y eventos (SIEM) para análisis y detección de amenazas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puedes enviar automáticamente datos de NetApp Ransomware Resilience a tu sistema de gestión de seguridad y eventos (SIEM) para análisis y detección de amenazas.
+
+Ransomware Resilience es compatible con los siguientes SIEMs:
+
+* AWS Security Hub
+* Microsoft Sentinel
+* Splunk Cloud
+
+
+Antes de habilitar SIEM en Ransomware Resilience, debe configurar su sistema SIEM.
+
+
+
+== Datos de eventos enviados a un SIEM
+
+Ransomware Resilience puede enviar los siguientes datos de eventos a su sistema SIEM:
+
+* *contexto*:
++
+** *os*: Esta es una constante con el valor de ONTAP.
+** *os_version*: La versión de ONTAP que se ejecuta en el sistema.
+** *connector_id*: El ID del agente de consola que administra el sistema.
+** *cluster_id*: El ID de clúster informado por ONTAP para el sistema.
+** *svm_name*: El nombre de la SVM donde se encontró la alerta.
+** *volume_name*: el nombre del volumen en el que se encuentra la alerta.
+** *volume_id*: El ID del volumen informado por ONTAP para el sistema.
+
+
+* *incidente*:
++
+** *incident_id*: El ID del incidente generado por Ransomware Resilience para el volumen atacado en Ransomware Resilience.
+** *alert_id*: El ID generado por Ransomware Resilience para la carga de trabajo.
+** *gravedad*: Uno de los siguientes niveles de alerta: "CRÍTICO", "ALTO", "MEDIO", "BAJO".
+** *descripción*: Detalles sobre la alerta detectada, por ejemplo, "Se detectó un posible ataque de ransomware en la carga de trabajo arp_learning_mode_test_2630".
+
+
+
+
+
+
+== Configurar AWS Security Hub para la detección de amenazas
+
+Antes de habilitar AWS Security Hub en Ransomware Resilience, tienes que hacer los siguientes pasos de alto nivel en AWS Security Hub:
+
+* Configurar permisos en AWS Security Hub.
+* Configure la clave de acceso de autenticación y la clave secreta en AWS Security Hub.  (Estos pasos no se proporcionan aquí.)
+
+
+.Pasos para configurar permisos en AWS Security Hub
+. Vaya a la *consola AWS IAM*.
+. Seleccione *Políticas*.
+. Cree una política utilizando el siguiente código en formato JSON:
++
+[listing]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "NetAppSecurityHubFindings",
+      "Effect": "Allow",
+      "Action": [
+        "securityhub:BatchImportFindings",
+        "securityhub:BatchUpdateFindings"
+      ],
+      "Resource": [
+        "arn:aws:securityhub:*:*:product/*/default",
+        "arn:aws:securityhub:*:*:hub/default"
+      ]
+    }
+  ]
+}
+----
+
+
+
+
+== Configurar Microsoft Sentinel para la detección de amenazas
+
+Antes de activar Microsoft Sentinel en Ransomware Resilience, tienes que hacer los siguientes pasos a grandes rasgos en Microsoft Sentinel:
+
+* *Prerrequisitos*
++
+** Habilitar Microsoft Sentinel.
+** Crear un rol personalizado en Microsoft Sentinel.
+
+
+* *Registro*
++
+** Registre Ransomware Resilience para recibir eventos de Microsoft Sentinel.
+** Crear un secreto para el registro.
+
+
+* *Permisos*: Asigna permisos a la aplicación.
+* *Autenticación*: Ingrese las credenciales de autenticación para la aplicación.
+
+
+.Pasos para habilitar Microsoft Sentinel
+. Vaya a Microsoft Sentinel.
+. Cree un *espacio de trabajo de Log Analytics*.
+. Habilite Microsoft Sentinel para utilizar el espacio de trabajo de Log Analytics que acaba de crear.
+
+
+.Pasos para crear un rol personalizado en Microsoft Sentinel
+. Vaya a Microsoft Sentinel.
+. Seleccione *Suscripción* > *Control de acceso (IAM)*.
+. Introduzca un nombre de rol personalizado.  Utilice el nombre *Ransomware Resilience Sentinel Configurator*.
+. Copie el siguiente JSON y péguelo en la pestaña *JSON*.
++
+[listing]
+----
+{
+  "roleName": "Ransomware Resilience Sentinel Configurator",
+  "description": "",
+  "assignableScopes":["/subscriptions/{subscription_id}"],
+  "permissions": [
+
+  ]
+}
+----
+. Revise y guarde su configuración.
+
+
+.Pasos para registrar Ransomware Resilience para recibir eventos de Microsoft Sentinel
+. Vaya a Microsoft Sentinel.
+. Seleccione *ID de entrada* > *Aplicaciones* > *Registros de aplicaciones*.
+. Para el *Nombre para mostrar* de la aplicación, ingrese "*Ransomware Resilience*".
+. En el campo *Tipo de cuenta compatible*, seleccione *Solo cuentas en este directorio organizacional*.
+. Seleccione un *Índice predeterminado* donde se enviarán los eventos.
+. Seleccione *Revisar*.
+. Seleccione *Registrarse* para guardar su configuración.
++
+Después del registro, el centro de administración de Microsoft Entra muestra el panel Descripción general de la aplicación.
+
+
+
+.Pasos para crear un secreto para el registro
+. Vaya a Microsoft Sentinel.
+. Seleccione *Certificados y secretos* > *Secretos de cliente* > *Nuevo secreto de cliente*.
+. Agregue una descripción para el secreto de su aplicación.
+. Seleccione una *Expiración* para el secreto o especifique un período de vida personalizado.
++
+
+TIP: La vida útil del secreto de un cliente está limitada a dos años (24 meses) o menos.  Microsoft recomienda que establezca un valor de expiración inferior a 12 meses.
+
+. Seleccione *Agregar* para crear su secreto.
+. Registre el secreto que se utilizará en el paso de Autenticación.  El secreto nunca volverá a mostrarse después de salir de esta página.
+
+
+.Pasos para asignar permisos a la aplicación
+. Vaya a Microsoft Sentinel.
+. Seleccione *Suscripción* > *Control de acceso (IAM)*.
+. Seleccione *Agregar* > *Agregar asignación de rol*.
+. Para el campo *Roles de administrador privilegiado*, seleccione *Configurador de Ransomware Resilience Sentinel*.
++
+
+TIP: Éste es el rol personalizado que creaste anteriormente.
+
+. Seleccione *Siguiente*.
+. En el campo *Asignar acceso a*, seleccione *Usuario, grupo o entidad de servicio*.
+. Seleccione *Seleccionar miembros*.  Luego, seleccione *Ransomware Resilience Sentinel Configurator*.
+. Seleccione *Siguiente*.
+. En el campo *Qué puede hacer el usuario*, seleccione *Permitir al usuario asignar todos los roles excepto los roles de administrador privilegiado Propietario, UAA, RBAC (recomendado)*.
+. Seleccione *Siguiente*.
+. Seleccione *Revisar y asignar* para asignar los permisos.
+
+
+.Pasos para ingresar credenciales de autenticación para la aplicación
+. Vaya a Microsoft Sentinel.
+. Introduzca las credenciales:
++
+.. Ingrese el ID del inquilino, el ID de la aplicación del cliente y el secreto de la aplicación del cliente.
+.. Haga clic en *Autenticar*.
++
+
+NOTE: Una vez que la autenticación es exitosa, aparece un mensaje de "Autenticado".
+
+
+
+. Ingrese los detalles del espacio de trabajo de Log Analytics para la aplicación.
++
+.. Seleccione el ID de suscripción, el grupo de recursos y el espacio de trabajo de Log Analytics.
+
+
+
+
+
+
+== Configurar Splunk Cloud para la detección de amenazas
+
+Antes de habilitar Splunk Cloud en Ransomware Resilience, deberá realizar los siguientes pasos de alto nivel en Splunk Cloud:
+
+* Habilite un recopilador de eventos HTTP en Splunk Cloud para recibir datos de eventos a través de HTTP o HTTPS desde la consola.
+* Cree un token de recopilador de eventos en Splunk Cloud.
+
+
+.Pasos para habilitar un recopilador de eventos HTTP en Splunk
+. Vaya a Splunk Cloud.
+. Seleccione *Configuración* > *Entradas de datos*.
+. Seleccione *Recopilador de eventos HTTP* > *Configuración global*.
+. En el interruptor Todos los tokens, seleccione *Habilitado*.
+. Para que el Recopilador de eventos escuche y se comunique a través de HTTPS en lugar de HTTP, seleccione *Habilitar SSL*.
+. Introduzca un puerto en *Número de puerto HTTP* para el recopilador de eventos HTTP.
+
+
+.Pasos para crear un token de recopilador de eventos en Splunk
+. Vaya a Splunk Cloud.
+. Seleccione *Configuración* > *Agregar datos*.
+. Seleccione *Monitor* > *Recopilador de eventos HTTP*.
+. Ingrese un nombre para el token y seleccione *Siguiente*.
+. Seleccione un *Índice predeterminado* donde se enviarán los eventos y luego seleccione *Revisar*.
+. Confirme que todas las configuraciones del punto final sean correctas y luego seleccione *Enviar*.
+. Copie el token y péguelo en otro documento para tenerlo listo para el paso de autenticación.
+
+
+
+
+== Conecte SIEM en la resiliencia contra el ransomware
+
+Al habilitar SIEM se envían datos de Ransomware Resilience a su servidor SIEM para análisis e informes de amenazas.
+
+.Pasos
+. Desde el menú Consola, seleccione *Protección* > *Resiliencia ante ransomware*.
+. En el menú Resiliencia contra ransomware, seleccione la verticalimage:button-actions-vertical.png["Acciones verticales"] ...opción en la parte superior derecha.
+. Seleccione *Configuración*.
++
+Aparece la página de Configuración.
+
++
+image:screen-settings2.png["Página de configuración"]
+
+. En la página Configuración, seleccione *Conectar* en el mosaico de conexión SIEM.
++
+image:screen-settings-threat-detection-3options.png["Habilitar la página de detalles de detección de amenazas"]
+
+. Elija uno de los sistemas SIEM.
+. Ingrese el token y los detalles de autenticación que configuró en AWS Security Hub o Splunk Cloud.
++
+
+NOTE: La información que ingrese dependerá del SIEM que haya seleccionado.
+
+. Seleccione *Habilitar*.
++
+La página de Configuración muestra "Conectado".
+
+

@@ -39,6 +39,9 @@ Actualmente, solo puedes replicar instantáneas en el almacenamiento ONTAP local
 
 
 
+NOTE: Si estás configurando estrategias de protección para Amazon FSxN para ONTAP y Azure NetApp Files, consulta link:rp-reference-limitations.html["las limitaciones de cada servicio"].
+
+
 TIP: Para una mejor gestión y protección de su patrimonio de datos, puede crearlink:#create-a-protection-group["recursos compartidos de archivos grupales"] proteger colectivamente los volúmenes bajo una sola estrategia.
 
 
@@ -57,7 +60,7 @@ La información de protección de estos servicios aparece en Ransomware Resilien
 Si una política de detección de ransomware está siendo administrada por Autonomous Ransomware Protection (ARP o ARP/AI, según la versión de ONTAP ) y FPolicy en ONTAP, esas cargas de trabajo están protegidas y continuarán siendo administradas por ARP y FPolicy.
 
 
-NOTE: Los destinos de respaldo no están disponibles para cargas de trabajo en Amazon FSx for NetApp ONTAP.  Realice operaciones de respaldo utilizando el servicio de respaldo FSx para ONTAP .  Las políticas de respaldo se establecen para cargas de trabajo en FSx para ONTAP en AWS, no en Ransomware Resilience.  Las políticas de respaldo aparecen en Ransomware Resilience y permanecen sin cambios desde AWS.
+NOTE: Los destinos de backup no están disponibles para cargas de trabajo en Amazon FSx for NetApp ONTAP o Azure NetApp Files. Realiza operaciones de backup usando el servicio de backup de FSx for ONTAP. Configuras las políticas de backup para cargas de trabajo en FSx for ONTAP en AWS, no en Ransomware Resilience. Las políticas de backup aparecen en Ransomware Resilience y permanecen sin cambios desde AWS.
 
 
 
@@ -441,7 +444,13 @@ image:screen-protection.png["Página de gestión de estrategia"]
 . Ransomware Resilience detecta si existen políticas activas de SnapCenter o de Backup and Recovery.
 . Para dejar sus políticas de Backup and Recovery o SnapCenter existentes en su lugar y solo aplicar una política de _detección_, deje la casilla **Reemplazar políticas existentes** sin marcar.
 . Para ver detalles de las políticas de SnapCenter , seleccione la *flecha hacia abajo*.
-. Seleccione la configuración de detección que desee: *Detección de cifrado* *Detección de comportamiento sospechoso del usuario* *Bloquear extensiones de archivos sospechosas*
+. Selecciona la configuración de detección que quieras:
++
+....
+*Encryption detection*
+*Suspicious user behavior detection*
+*Block suspicious file extensions*
+....
 . Seleccione **Siguiente**.
 . Si seleccionaste *Detección de comportamiento sospechoso del usuario* como configuración de detección, selecciona el User activity agent o link:suspicious-user-activity.html#create-a-user-activity-agent["o crea uno"].
 +
@@ -522,7 +531,7 @@ TIP: Para ver más detalles sobre las cargas de trabajo, desplácese hacia la de
 +
 image:screen-protection-groups-policy.png["Agregar grupo de protección - Página de políticas"]
 
-. Seleccione la política que regirá la protección para este grupo. Para confirmar, seleccione *Siguiente*.
+. Selecciona la política que va a gobernar la protección de este grupo.
 . Si la estrategia de protección incluye replicación, revise la configuración de replicación.
 +
 .. Para replicar todas las instantáneas en el mismo destino, marque **Usar el mismo destino para cada carga de trabajo**. Seleccione un *Sistema de destino* y una *VM de almacenamiento de destino* para las cargas de trabajo en la sección Agente de consola. + Para utilizar destinos diferentes, desmarque esa casilla. Revise cada carga de trabajo bajo cada agente de consola y asigne un *Sistema de destino* y una *VM de almacenamiento de destino* para cada carga de trabajo. Seleccione **Siguiente**.
