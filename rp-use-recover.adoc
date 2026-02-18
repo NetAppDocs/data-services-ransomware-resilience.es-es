@@ -14,8 +14,7 @@ summary: 'Después de un ataque, NetApp Ransomware Resilience verifica que los d
 [role="lead"]
 Una vez que las cargas de trabajo se marcan como "Se necesita restauración", NetApp Ransomware Resilience recomienda un punto de recuperación real (RPA) y organiza el flujo de trabajo para una recuperación resistente a fallas.
 
-* Si la aplicación o la máquina virtual está administrada por SnapCenter, Ransomware Resilience restaura la aplicación o la máquina virtual a su estado anterior y a su última transacción mediante el proceso consistente con la aplicación o la máquina virtual.  La restauración consistente con la aplicación o la máquina virtual agrega cualquier dato que no haya llegado al almacenamiento (por ejemplo, datos en caché o en una operación de E/S) a los datos en el volumen.
-* Si la aplicación o la máquina virtual _no_ está administrada por SnapCenter y está administrada por NetApp Backup and Recovery o Ransomware Resilience, Ransomware Resilience realiza una restauración consistente ante fallas, donde se restauran todos los datos que estaban en el volumen en el mismo punto en el tiempo, por ejemplo, si el sistema falla.
+* Si la aplicación o la máquina virtual está gestionada por NetApp Backup and Recovery o Ransomware Resilience, Ransomware Resilience realiza una restauración coherente con fallos, donde se restaura toda la información que estaba en el volumen en el mismo punto en el tiempo, por ejemplo, si el sistema se bloquea.
 +
 Puede restaurar la carga de trabajo seleccionando todos los volúmenes, volúmenes específicos o archivos específicos.
 
@@ -53,43 +52,7 @@ image:screen-recovery2.png["Página de recuperación"]
 
 
 
-== Restaurar una carga de trabajo administrada por SnapCenter
-
-Al utilizar Ransomware Resilience, el administrador de almacenamiento puede determinar la mejor manera de restaurar las cargas de trabajo desde el punto de restauración recomendado o el punto de restauración preferido.
-
-El estado de la aplicación cambiará si es necesario para la restauración.  La aplicación se restaurará a su estado anterior desde los archivos de control, si están incluidos en la copia de seguridad.  Una vez finalizada la restauración, la aplicación se abre en modo LECTURA-ESCRITURA.
-
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
-
-.Pasos
-. En Resiliencia contra ransomware, seleccione *Recuperación*.
-. Revise la información de la carga de trabajo en la página *Recuperación*.
-. Seleccione una carga de trabajo que esté en el estado "Se necesita restaurar".
-. Para restaurar, seleccione *Restaurar*.
-. *Ámbito de restauración*: consistente con la aplicación (o, para SnapCenter para máquinas virtuales, el ámbito de restauración es "Por máquina virtual")
-. *Fuente*: Seleccione la flecha hacia abajo junto a Fuente para ver los detalles.  Seleccione el punto de restauración que desea utilizar para restaurar los datos.
-+
-
-TIP: Ransomware Resilience identifica el mejor punto de restauración como la última copia de seguridad justo antes del incidente y muestra una indicación de "Recomendado".
-
-. *Destino*: Seleccione la flecha hacia abajo junto a Destino para ver los detalles.
-+
-.. Seleccione la ubicación original o alternativa.
-.. Seleccione el sistema.
-.. Seleccione la máquina virtual de almacenamiento.
-
-
-. Si el destino original no tiene suficiente espacio para restaurar la carga de trabajo, aparece una fila de "Almacenamiento temporal".  Puede seleccionar el almacenamiento temporal para restaurar los datos de la carga de trabajo.  Los datos restaurados se copiarán del almacenamiento temporal a la ubicación original.  Haga clic en la *flecha hacia abajo* en la fila de almacenamiento temporal y configure el clúster de destino, la máquina virtual de almacenamiento y el nivel local.
-. Seleccione *Guardar*.
-. Seleccione *Siguiente*.
-. Revise sus selecciones.
-. Seleccione *Restaurar*.
-. Desde el menú superior, seleccione *Recuperación* para revisar la carga de trabajo en la página Recuperación, donde el estado de la operación se mueve a través de los estados.
-
-
-
-
-== Restaurar una carga de trabajo no administrada por SnapCenter
+== Restaurar una carga de trabajo
 
 Al utilizar Ransomware Resilience, el administrador de almacenamiento puede determinar la mejor manera de restaurar las cargas de trabajo desde el punto de restauración recomendado o el punto de restauración preferido.
 
