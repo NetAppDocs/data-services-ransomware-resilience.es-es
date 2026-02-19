@@ -80,11 +80,11 @@ Después de que el agente de actividad de usuario se cree correctamente, vuelve 
 
 === Agregar un recopilador de datos
 
-Los recopiladores de datos se crean automáticamente cuando habilita una estrategia de protección contra ransomware con detección de actividad de usuario sospechosa. Para obtener más información, consulte xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[añadir una política de detección].
+Los recopiladores de datos se crean automáticamente cuando habilitas una estrategia de protección contra ransomware con detección de actividad sospechosa de usuarios. Para más información, consulta link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["añadir una política de detección"].
 
 Puede ver los detalles del recopilador de datos. Desde Configuración, seleccione **Administrar** en el mosaico Actividad del usuario. Seleccione la pestaña **Recopilador de datos** y luego seleccione el recopilador de datos para ver sus detalles o pausarlo.
 
-image:user-activity-settings.png["Captura de pantalla de la configuración de la actividad del usuario"]
+image:user-activity-settings.png["Captura de pantalla de la configuración de actividad del usuario."]
 
 
 

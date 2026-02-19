@@ -30,9 +30,6 @@
   <block id="3406306d1e826f71d49547332136491d" category="paragraph">El escaneo de datos PII en la BlueXP ransomware protection generalmente está disponible para los clientes que implementaron la BlueXP classification.  La BlueXP classification está disponible como parte de la plataforma BlueXP sin costo adicional y puede implementarse localmente o en la nube del cliente.</block>
   <block id="006f40c12cb6b543cd40a6cd5a750b98" category="inline-link">Configurar los ajustes de BlueXP ransomware protection</block>
   <block id="365282835fe2185be49e22eccc151d34" category="paragraph">Referirse a<block ref="85c64411e31b00f7bee1a78a00529706" category="inline-link-rx"></block> .</block>
-  <block id="dc2ee5afb67051a37353df40cc16729a" category="paragraph">Para iniciar el escaneo, en la página Protección, haga clic en *Identificar exposición* en la columna Exposición de privacidad.</block>
-  <block id="e7d05f872780d58e08011a44ce4be77b" category="inline-link">Escanee en busca de datos confidenciales de identificación personal con la BlueXP classification</block>
-  <block id="e25cb74a977c264db490ebb07eba7a44" category="paragraph"><block ref="8bcdeaa38a69cce5cfa3ac7429e480b6" category="inline-link-rx"></block> .</block>
   <block id="a2c442ceb4053f2fbfe23023529b9acb" category="section-title">Integración de SIEM con Microsoft Sentinel</block>
   <block id="5148a0988dead45b54188f22121bb178" category="paragraph">Ahora puede enviar datos a su sistema de gestión de eventos y seguridad (SIEM) para el análisis y detección de amenazas mediante Microsoft Sentinel.  Anteriormente, podía seleccionar AWS Security Hub o Splunk Cloud como su SIEM.</block>
   <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">Prueba gratuita ahora 30 días</block>
@@ -112,7 +109,6 @@
   <block id="960c237c5456a08952ee4a0c6bc67ab9" category="paragraph">Puede implementar la BlueXP classification en una carga de trabajo de uso compartido de archivos desde la BlueXP ransomware protection.  En la columna *Exposición de privacidad*, seleccione la opción *Identificar exposición*.  Si ha habilitado el servicio de clasificación, esta acción identifica la exposición.  De lo contrario, con esta versión, un cuadro de diálogo presenta la opción de implementar la BlueXP classification.  Seleccione *Implementar* para ir a la página de inicio del servicio de BlueXP classification , donde puede implementar ese servicio.  O</block>
   <block id="55d5a81a565b7cb4265c8c73ecd4aa37" category="inline-link">Implementar la BlueXP classification en la nube</block>
   <block id="6b0e91bb98e8a9394dda94307f3217d0" category="inline-link">Escanee en busca de información de identificación personal con la BlueXP classification</block>
-  <block id="7e42707703b4d067b548f10acbf4df99" category="paragraph">Para más detalles, consulte<block ref="c12ecfc72dc196e054946f32c2360b19" category="inline-link-rx"></block> y para utilizar el servicio dentro de la BlueXP ransomware protection, consulte<block ref="546f381a7c557bb1741d0a7b3184b38d" category="inline-link-rx"></block> .</block>
   <block id="90b6690e6ff7c4f6c224ce1794630ced" category="doc">Soporte de carga de trabajo SAN</block>
   <block id="bbc67024ab73d889ccf53c2243f12ec0" category="paragraph">Esta versión incluye soporte para cargas de trabajo SAN en la BlueXP ransomware protection. Ahora puede proteger cargas de trabajo SAN además de cargas de trabajo NFS y CIFS.</block>
   <block id="1e4e512c953bb68c6492ac3e8c1ea138" category="inline-link-macro">Requisitos previos para la BlueXP ransomware protection</block>
@@ -1424,8 +1420,6 @@
   <block id="87890c9758b28588c6845cfcf6d19b17" category="section-title">Agregar un recopilador de datos</block>
   <block id="cebc35dcf9d04a393d86d35a4e3cf6be" category="inline-xref-macro">añadir una política de detección</block>
   <block id="723cff7a2b53371ffdffcdc65a370014" category="paragraph">Puede ver los detalles del recopilador de datos. Desde Configuración, seleccione **Administrar** en el mosaico Actividad del usuario. Seleccione la pestaña **Recopilador de datos** y luego seleccione el recopilador de datos para ver sus detalles o pausarlo.</block>
-  <block id="79994c0d6b62d6854ba2d69416af2030" category="inline-image-macro">Captura de pantalla de la configuración de la actividad del usuario</block>
-  <block id="eb9abd0b9e77424befbbd0596585482d" category="paragraph"><block ref="eb9abd0b9e77424befbbd0596585482d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">En Ransomware Resilience, vaya a *Configuración*.</block>
   <block id="9fcb0a7634f29d96ae98e37bbc76e1cd" category="list-text">En el mosaico Actividad del usuario, seleccione **Administrar**.</block>
   <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">Seleccione la pestaña **Conectores de directorio de usuario** y luego **Agregar**.</block>
@@ -1611,7 +1605,6 @@
   <block id="84b770f92be71ec30166cecd58fe295f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>¿Que sigue?</block>
   <block id="6bed92a99cdfd0c4fededd25f3e7cc23" category="paragraph">Después de configurar la protección en Ransomware Resilience, esto es lo que puede hacer a continuación.</block>
   <block id="7257a2c29f00e84365c5a48447d9c803" category="inline-link-macro">Habilitar la clasificación de datos para identificar riesgos de gobernanza y seguridad</block>
-  <block id="746bceb6a53af383ec0aa4495f694a94" category="list-text"><block ref="746bceb6a53af383ec0aa4495f694a94" category="inline-link-macro-rx"></block></block>
   <block id="1d1758803ee1f7559973be04f120a0f7" category="inline-link-macro">Enviar alertas a SIEM</block>
   <block id="660ecf2355e5ff3c5a22d2e4a48594e8" category="inline-link-macro">Descargue informes de alerta, protección, simulacro de preparación, recuperación o resumen</block>
   <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">Dentro de NetApp Ransomware Resilience, puede utilizar NetApp Data Classification para escanear y clasificar los datos en una carga de trabajo de uso compartido de archivos. La clasificación de datos le ayuda a determinar si el conjunto de datos incluye información de identificación personal (PII), lo que puede aumentar los riesgos de seguridad. La clasificación de datos es un componente central de la NetApp Console y está disponible sin costo adicional.</block>
@@ -1697,7 +1690,6 @@
   <block id="8eb907afc706971993c8bde086302ff0" category="paragraph-title">¿Se pueden deshabilitar las políticas en ONTAP?</block>
   <block id="7986143a8e8e26aa1cd4fe5e42208a2b" category="paragraph">Puede deshabilitar ARP en las políticas de detección utilizando la interfaz de usuario, las API o la CLI del administrador del sistema en ONTAP.</block>
   <block id="6d1a51f08d9ca2d81528c19a5e4f2463" category="list-text"><block ref="6d1a51f08d9ca2d81528c19a5e4f2463" category="inline-link-macro-rx"></block></block>
-  <block id="4db76a2031d1695a2f0a985a14a43ffa" category="paragraph">Los recopiladores de datos se crean automáticamente cuando habilita una estrategia de protección contra ransomware con detección de actividad de usuario sospechosa. Para obtener más información, consulte <block ref="eadf066433fbca34180c794e1f4838ae" category="inline-xref-macro-rx"></block>.</block>
   <block id="649b83fee66314cb36bc122912f59725" category="inline-link-macro">Configuraciones admitidas y no admitidas en ONTAP</block>
   <block id="0b115ac5b217f989a1fc7dd422161b82" category="section-title">Destinos de copia de seguridad compatibles</block>
   <block id="933247e0be7796a309cfa4c95bd34938" category="section-title">Sistemas compatibles</block>
@@ -2024,7 +2016,6 @@
   <block id="b4fb5162d4e2b2c8cd91b15fdb14da68" category="paragraph">Hay tres componentes clave en la detección de actividad de comportamiento sospechoso del usuario en Ransomware Resilience.</block>
   <block id="33f62223b33e38496534300dcae35620" category="list-text">El **agente de actividad del usuario** es un entorno ejecutable para los recopiladores de datos. Debes configurar el agente de actividad del usuario.</block>
   <block id="deecb3eddf0c0100fbbd14529b41b460" category="inline-xref-macro">activa una estrategia de protección contra ransomware con detección de actividad sospechosa de usuarios</block>
-  <block id="c4609467d00df3610ff2f210aafff8b2" category="list-text">El **recolector de datos** comparte los eventos de actividad del usuario con Ransomware Resilience. El recolector de datos se crea automáticamente cuando tú <block ref="c19104d57074dd1c9a267e1c5da6c193" category="inline-xref-macro-rx"></block>.</block>
   <block id="36a3ad726c8c5be9317408ba7fc9fbbb" category="list-text">El **conector de directorio de usuarios** permite el mapeo entre nombres de usuario e identificaciones de usuario, creando mayor claridad al responder a comportamientos sospechosos de los usuarios. Debes configurar el conector de directorio de usuarios.</block>
   <block id="bf79cae4914e3581b2da41344f5d22a3" category="section-title">Ransomware Resilience y Data Infrastructure Insights</block>
   <block id="58fad0abcf1e493b911b1fec13e0ad03" category="inline-link-macro">Puntos finales DII</block>
@@ -2173,4 +2164,13 @@
   <block id="82cec7652bb841468c070420458d39c0" category="section-title">Eliminar un grupo de protección</block>
   <block id="fbd3e733007100e47d8c59bbffb4a650" category="paragraph">Cuando eliminas un grupo de protección, Ransomware Resilience elimina el grupo y la estrategia de protección de las cargas de trabajo. No elimina las cargas de trabajo individuales.</block>
   <block id="3f3b36ab9f107f9d308521e786376b81" category="sidebar">Gestiona grupos de protección</block>
+  <block id="6fa24cb1199d7551567ae5147baa8ae1" category="inline-link">busca datos sensibles de identificación personal con BlueXP classification</block>
+  <block id="61254452b9c7b52c4825719fb7163cab" category="paragraph">Para iniciar el escaneo, en la página Protección, selecciona *Identificar exposición* en la columna Exposición de privacidad del panel Protección. Para más información, consulta<block ref="86de5be1d85537ee0a7c80fb5506e13c" category="inline-link-rx"></block>.</block>
+  <block id="2ff2f80605b00791346304d899194c4d" category="paragraph"><block ref="8bdf12f188822bfc44a34815ce7a153b" category="inline-link-rx"></block>.</block>
+  <block id="dfe76ab4454115af338fd440f071a89e" category="paragraph">Para más detalles, consulta<block ref="c12ecfc72dc196e054946f32c2360b19" category="inline-link-rx"></block> y para usar el servicio dentro de BlueXP ransomware protection, consulta<block ref="6ed3445f138ef3ab9a3e98b1a5f5a95a" category="inline-link-rx"></block>.</block>
+  <block id="291f492c93a47859f497681329695348" category="list-text">El **recolector de datos** comparte los eventos de actividad del usuario con Ransomware Resilience. El recolector de datos se crea automáticamente cuando tú <block ref="35f6199cfc3b91fb0a22f240b5ced34d" category="inline-link-macro-rx"></block>.</block>
+  <block id="30a0e6457237bf72d78f12eb705334af" category="list-text"><block ref="30a0e6457237bf72d78f12eb705334af" category="inline-link-macro-rx"></block></block>
+  <block id="8e36a47d283ab631611b9d4e43f749d0" category="paragraph">Los recopiladores de datos se crean automáticamente cuando habilitas una estrategia de protección contra ransomware con detección de actividad sospechosa de usuarios. Para más información, consulta <block ref="197232a118beafa8882aae5625527a41" category="inline-link-macro-rx"></block>.</block>
+  <block id="c83e802b0c338d35c6b87847e7c32f3b" category="inline-image-macro">Captura de pantalla de la configuración de actividad del usuario.</block>
+  <block id="d30589c83707b077a1cb3dec5d118521" category="paragraph"><block ref="d30589c83707b077a1cb3dec5d118521" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

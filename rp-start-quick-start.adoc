@@ -62,7 +62,7 @@ Estas tareas requieren el rol de _administrador de resiliencia ante ransomware_.
 Después de configurar la protección en Ransomware Resilience, esto es lo que puede hacer a continuación.
 
 [role="quick-margin-list"]
-* link:rp-use-protect-classify.html["Habilitar la clasificación de datos para identificar riesgos de gobernanza y seguridad"]
+* link:task-classify.html["Habilitar la clasificación de datos para identificar riesgos de gobernanza y seguridad"]
 * link:task-siem.html["Enviar alertas a SIEM"]
 * link:rp-use-reports.html["Descargue informes de alerta, protección, simulacro de preparación, recuperación o resumen"]
 

@@ -244,26 +244,6 @@ Cada 30 días
 | 60 | 2 | 93 
 
 
-.4+| *Extensión de usuario de cifrado*  a| 
-Cada cuarto de hora
-| Cada 30 min | 3 | 72 | 93 
-
-
-| Diario  a| 
-Cada 1 día
-| 14 | 14 | 93 
-
-
-| Semanalmente  a| 
-Cada 1 semana
-| 35 | 5 | 93 
-
-
-| Mensual  a| 
-Cada 30 días
-| 60 | 2 | 93 
-
-
 .4+| *Política de replicación crítica*  a| 
 Cada cuarto de hora
 | Cada 15 minutos | 3 | 288 | 309 
