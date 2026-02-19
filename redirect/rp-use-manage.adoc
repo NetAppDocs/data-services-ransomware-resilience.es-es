@@ -1,15 +1,13 @@
 ---
-sidebar: sidebar 
 permalink: rp-use-manage.html 
-keywords: ransomware protection workload name, ransomware protection 
-summary: Puede administrar las cargas de trabajo cambiando el nombre de la carga de trabajo en lugar de utilizar un nombre predeterminado, lo cual es más riesgoso. 
+redirect: data-services-ransomware-resilience/rp-use-protect.html 
 ---
-= Gestionar cargas de trabajo en NetApp Ransomware Resilience
-:hardbreaks:
+= 
 :allow-uri-read: 
-:icons: font
-:imagesdir: ./media/
 
+
+'''
+sidebar: sidebar permalink: rp-use-manage.html keywords: ransomware protection workload name, ransomware protection summary: Puedes gestionar las cargas de trabajo cambiando el nombre de la carga de trabajo en vez de usar un nombre predeterminado, que es más arriesgado. --- = Cambia el nombre de las cargas de trabajo en NetApp Ransomware Resilience :hardbreaks: :icons: font :imagesdir: ./media/
 
 [role="lead"]
 Puede administrar cargas de trabajo en NetApp Ransomware Resilience cambiando el nombre de la carga de trabajo.  Usar un nombre predeterminado supone un riesgo de ataques de ransomware.

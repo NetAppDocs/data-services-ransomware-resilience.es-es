@@ -12,7 +12,7 @@ summary: Usa la detección de comportamientos sospechosos de usuarios y alertas 
 
 
 [role="lead"]
-NetApp Ransomware Resilience admite la detección de comportamientos sospechosos de los usuarios, lo que te permite abordar los incidentes de ransomware a nivel de usuario.
+Con la detección de la actividad de los usuarios, NetApp Ransomware Resilience te permite abordar eventos de ransomware a nivel de usuario, deteniendo eventos como filtraciones de datos y eliminaciones a gran escala.
 
 NetApp Ransomware Resilience ofrece una detección de violación de datos impulsada por IA al monitorear la actividad sospechosa de los usuarios. Los aumentos bruscos en la actividad de lectura y los patrones de acceso a la actividad de lectura se usan para determinar la intención maliciosa. Una vez detectado, Ransomware Resilience genera automáticamente alertas en la NetApp Console, por correo electrónico y en cualquier ecosistema de seguridad configurado (por ejemplo, SIEM).
 

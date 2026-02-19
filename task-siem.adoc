@@ -11,7 +11,7 @@ summary: 'Puedes enviar automáticamente datos de NetApp Ransomware Resilience a
 
 
 [role="lead"]
-Puedes enviar automáticamente datos de NetApp Ransomware Resilience a tu sistema de gestión de seguridad y eventos (SIEM) para análisis y detección de amenazas.
+Un sistema de gestión de eventos y seguridad (SIEM) centraliza los datos de registros y eventos para proporcionar información sobre eventos de seguridad y cumplimiento. NetApp Ransomware Resilience admite enviar automáticamente datos a tu SIEM para agilizar el análisis y la detección de amenazas.
 
 Ransomware Resilience es compatible con los siguientes SIEMs:
 
@@ -183,7 +183,7 @@ TIP: Éste es el rol personalizado que creaste anteriormente.
 . Introduzca las credenciales:
 +
 .. Ingrese el ID del inquilino, el ID de la aplicación del cliente y el secreto de la aplicación del cliente.
-.. Haga clic en *Autenticar*.
+.. Selecciona *Autenticar*.
 +
 
 NOTE: Una vez que la autenticación es exitosa, aparece un mensaje de "Autenticado".

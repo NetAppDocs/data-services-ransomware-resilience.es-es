@@ -12,7 +12,7 @@ summary: Comience a utilizar NetApp Ransomware Resilience a través de la NetApp
 
 
 [role="lead"]
-Inicie sesión en NetApp Ransomware Resilience a través de la NetApp Console.
+Para acceder a NetApp Ransomware Resilience, tienes que iniciar sesión a través de la NetApp Console.
 
 Para iniciar sesión en la consola, puede usar sus credenciales del sitio de soporte de NetApp o puede registrarse para iniciar sesión en la nube de NetApp usando su correo electrónico y una contraseña. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Obtenga más información sobre cómo iniciar sesión"^] .
 

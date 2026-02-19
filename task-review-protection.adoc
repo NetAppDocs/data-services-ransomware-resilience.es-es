@@ -1,0 +1,95 @@
+---
+sidebar: sidebar 
+permalink: task-review-protection.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
+summary: Puede proteger las cargas de trabajo contra ataques de ransomware asignando políticas a una carga de trabajo en NetApp Ransomware Resilience. 
+---
+= Revisa el estado de la protección en NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+El panel de protección de NetApp Ransomware Resilience te da una visión general del estado de protección y la preparación de tus cargas de trabajo. Usa el panel de protección para ver qué está protegido, qué necesita protección y cuál es el alcance de la protección.
+
+Una vez que entiendas el alcance de tu protección actual, link:rp-use-protect.html["puedes crear y aplicar estrategias de protección contra ransomware a tus cargas de trabajo"].
+
+
+
+== Ver la protección en una carga de trabajo
+
+Uno de los primeros pasos para proteger las cargas de trabajo es ver las cargas de trabajo actuales y su estado de protección.  Puedes ver los siguientes tipos de cargas de trabajo:
+
+* Cargas de trabajo de aplicaciones
+* Bloquear cargas de trabajo
+* Cargas de trabajo de uso compartido de archivos
+* Cargas de trabajo de máquinas virtuales
+
+
+.Pasos
+. Desde la navegación izquierda de la consola, seleccione *Protección* > *Resiliencia ante ransomware*.
+. Debe realizar una de las siguientes acciones:
++
+** Desde el panel de Protección de datos en el Tablero, seleccione *Ver todo*.
+** Desde el menú, seleccione *Protección*.
++
+image:screen-protection.png["Página de protección"]
+
+
+
+. Desde esta página, puede ver y cambiar los detalles de protección para la carga de trabajo.
+
+
+
+NOTE: Consulta link:rp-use-protect.html#add-a-ransomware-protection-strategy["Agregar una estrategia de protección contra ransomware"] para aprender sobre el uso de Ransomware Resilience cuando ya hay una política de protección con Backup and Recovery.
+
+
+
+== Entiende el panel de control de protección
+
+El panel de protección en Ransomware Resilience muestra información detallada sobre las cargas de trabajo (por ejemplo, nombre y tipo de carga de trabajo, agente de Console, sistema y máquina virtual de almacenamiento), además de información sobre el estado de la protección. Usa el panel de protección para revisar y gestionar la preparación frente al ransomware de las cargas de trabajo. Las siguientes columnas son especialmente útiles para entender tu postura de protección:
+
+*Estado de protección*: Una carga de trabajo puede mostrar uno de los siguientes estados de protección para indicar si una política se aplica o no:
+
+* *Protegido*: Se aplica una política.  ARP (o ARP/AI según la versión de ONTAP ) está habilitado en todos los volúmenes relacionados con la carga de trabajo.
+* *En riesgo*: No se aplica ninguna política.  Si una carga de trabajo no tiene habilitada una política de detección primaria, está "en riesgo" incluso si tiene habilitadas una política de instantáneas y de respaldo.
+* *En progreso*: Se está aplicando una política pero aún no está completa.
+* *Error*: Se aplica una política pero no funciona.
+
+
+*Estado de detección*:
+
++ Ransomware Resilience proporciona información sobre el alcance de las políticas de detección de ransomware que has configurado en tus cargas de trabajo. Revisa el alcance de la detección con los siguientes campos.
+
+* *Estado de detección de cifrado*
+* *Estado de detección de comportamiento sospechoso de usuario*
+* *Bloquea extensiones de archivo sospechosas*
+
+
+*Snapshot, replicación y backup policies*: Esta columna muestra el producto o servicio que está gestionando la política. Si no hay política, el campo muestra N/A.
+
+*Importancia*
+
+Ransomware Resilience asigna una importancia o prioridad a cada carga de trabajo durante el descubrimiento basándose en un análisis de cada carga de trabajo.  La importancia de la carga de trabajo está determinada por las siguientes frecuencias de instantáneas:
+
+* *Crítico*: Se toma más de una copia de instantánea por hora (programa de protección altamente agresivo)
+* *Importante*: Las copias instantáneas se crean con una frecuencia menor a cada hora, pero mayor a la de cada día.
+* *Estándar*: Se toman copias instantáneas más de una vez al día
+
+
+*Exposición de privacidad*: selecciona esta opción para link:task-classify.html["escanea información de identificación personal con NetApp Data Classification"].
+
+*Destino de replicación*: si has configurado la replicación de instantáneas, se muestran los nombres de las máquinas virtuales de almacenamiento y sistemas de destino. Si no hay replicación, este campo muestra "N/A".
+
+*Destino de la copia de seguridad*: si has configurado una estrategia de protección contra ransomware con copias de seguridad, el nombre del sistema de destino de la copia de seguridad aparece aquí.
+
+
+
+== Próximos pasos
+
+* link:rp-use-protect.html["Proteja las cargas de trabajo con estrategias de protección contra ransomware"]
+* link:task-protection-group.html["Gestiona grupos de protección"]
+* link:task-classify.html["Escanear en busca de datos de identificación personal"]
+
