@@ -21,6 +21,9 @@ Con la detección y alerta de comportamientos sospechosos de los usuarios, Ranso
 Ransomware Resilience detecta actividad sospechosa del usuario analizando los eventos de actividad del usuario generados por FPolicy en ONTAP. Para recopilar datos de actividad del usuario, debe implementar uno o más agentes de actividad del usuario. El agente es un servidor Linux o una máquina virtual con conectividad a los dispositivos de su inquilino.
 
 
+IMPORTANT: La detección de actividad del usuario no está soportada actualmente para cargas de trabajo SAN. Puedes usar la detección de actividad del usuario con cargas de trabajo NAS en Amazon FSxN para ONTAP, Cloud Volumes ONTAP y ONTAP.
+
+
 
 == Análisis forense de actividad sospechosa de usuarios
 

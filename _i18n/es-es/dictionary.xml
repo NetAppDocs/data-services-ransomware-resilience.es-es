@@ -590,13 +590,10 @@
   <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">Si descarta la alerta, Ransomware Resilience aprende este comportamiento, lo asocia con operaciones normales y no vuelve a iniciar una alerta al respecto.</block>
   <block id="a8fd9e3988acb841854762788963d815" category="paragraph">Para comenzar a recuperar sus datos, marque la alerta como lista para recuperación para que su administrador de almacenamiento pueda comenzar el proceso de recuperación.</block>
   <block id="304b86572af1a03e438d6a3b86bfad43" category="paragraph">Cada alerta puede incluir múltiples incidentes en diferentes volúmenes y estados.  Revisar todos los incidentes.</block>
-  <block id="214db9c71f4c0ba37c3d72c3460341e5" category="paragraph">Ransomware Resilience proporciona información llamada _evidencia_ sobre lo que causó que se emitiera la alerta, como la siguiente:</block>
   <block id="271b5be554c7641bb10d05402276d05a" category="list-text">Se crearon o cambiaron extensiones de archivo</block>
   <block id="ae12e4a2881496a3d2a890f09a21dbb7" category="list-text">Creación de archivos con comparación de tasas detectadas y esperadas</block>
   <block id="00567bc010bd0fe366d33796dbc20cc4" category="list-text">Eliminación de archivos con una comparación de las tasas detectadas y esperadas</block>
   <block id="7491606097f73ec9ee4cd8649e24e37b" category="list-text">Cuando el cifrado es alto, sin cambios en la extensión del archivo</block>
-  <block id="c8922ede2258e352de90fce4498e586f" category="paragraph">Una alerta se clasifica como una de las siguientes:</block>
-  <block id="c8e4786dc8495216a70ff4c4a2f04274" category="list-text">*Ataque potencial*: se produce una alerta cuando Autonomous Ransomware Protection detecta una nueva extensión y la ocurrencia se repite más de 20 veces en las últimas 24 horas (comportamiento predeterminado).</block>
   <block id="e881515eb95ff022b5c6fd323fe5a57a" category="list-text">*Advertencia*: Se produce una advertencia basada en los siguientes comportamientos:</block>
   <block id="dfc56481bc0d4c0e37c0cc1e55fec278" category="list-text">No se ha identificado antes la detección de una nueva extensión y el mismo comportamiento no se repite suficientes veces como para declararlo como un ataque.</block>
   <block id="2c8035709ee020723e6bf59e526fe816" category="list-text">Se observa alta entropía.</block>
@@ -604,15 +601,7 @@
   <block id="e96b2ea99a3be7415866a5df8f69cf6e" category="paragraph">La evidencia se basa en información de Autonomous Ransomware Protection en ONTAP. Para más detalles, consulte<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block> .</block>
   <block id="64c00e9ea78abe412d8db56dd1df0462" category="paragraph">Una alerta puede tener uno de los siguientes estados:</block>
   <block id="adf79604cd73ac69e1173c85b1070d09" category="list-text">*Nuevo*</block>
-  <block id="001af4b9160bf93cb0c3215a7180e3b7" category="list-text">*Inactivo*</block>
-  <block id="be48871d3fcb22d62d5de71b2de11ab9" category="list-text">*Nuevo*: Todos los incidentes se marcan como "nuevos" cuando se identifican por primera vez.</block>
-  <block id="d2b7a3286df55d9570e26ad7450dfeb9" category="list-text">*Descartado*: si sospecha que la actividad no es un ataque de ransomware, puede cambiar el estado a "Descartado".</block>
-  <block id="abcc01ccddba81d6df2f14e786d4b375" category="list-text">*Desestimando*: El incidente está en proceso de ser desestimado.</block>
-  <block id="135963592c039774ee41872c4fec1009" category="list-text">*Resuelto*: El incidente ha sido solucionado.</block>
-  <block id="afd9740574ba951a58c825da5cfeddb3" category="list-text">*Resuelto automáticamente*: para alertas de baja prioridad, el incidente se resuelve automáticamente si no se han tomado medidas al respecto dentro de cinco días.</block>
-  <block id="0ab493fb9f14e4a6d1e67c75639156f3" category="admonition">Si configuró un sistema de gestión de eventos y seguridad (SIEM) en Ransomware Resilience en la página Configuración, Ransomware Resilience envía detalles de alerta a su sistema SIEM.</block>
   <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">Ver alertas</block>
-  <block id="12cc8340b05947bc26160f562979c312" category="paragraph">Puede acceder a las alertas desde el Panel de resiliencia ante ransomware o desde la pestaña *Alertas*.</block>
   <block id="d676f14418a66ee1ac07a8bb1f61d02f" category="list-text">En el Panel de resiliencia ante ransomware, revise el panel Alertas.</block>
   <block id="6f619b1b7d17720e868f27a6a00e82c3" category="list-text">Seleccione *Ver todo* en uno de los estados.</block>
   <block id="63afcf111af36e926f8c3a19c547e9ae" category="list-text">Seleccione una alerta para revisar todos los incidentes en cada volumen para cada alerta.</block>
@@ -627,19 +616,16 @@
   <block id="9b317c5e8c93afadbc7755c407538945" category="section-title">Responder a un correo electrónico de alerta</block>
   <block id="def7f3eac7eed1dada5cdcd2951ede36" category="inline-link">Establecer la configuración de notificaciones por correo electrónico</block>
   <block id="e66d9f5613065312cf1d46114b193ed7" category="list-text">Ver el correo electrónico.</block>
-  <block id="f40ae80cf7396576022afae759080cf1" category="list-text">En el correo electrónico, seleccione *Ver alerta* e inicie sesión en Ransomware Resilience.</block>
   <block id="9d425c6001c325d2240cf2219c5c8111" category="paragraph">Aparece la página de Alertas.</block>
   <block id="ebce9876dfa9cc6dfd0e7d91d6a4ff2e" category="list-text">Revise todos los incidentes en cada volumen para cada alerta.</block>
   <block id="be962bd392a7a1672125ea27465c8bd8" category="section-title">Detectar actividad maliciosa y comportamiento anómalo del usuario</block>
   <block id="9d06719f2534c2ebd6c7bed1fd263123" category="paragraph">Al mirar la pestaña Alertas, puede identificar si hay actividad maliciosa o un comportamiento anómalo del usuario.</block>
   <block id="30cd6d23e33e657384daad5db666d56c" category="inline-link-macro">Actividad sospechosa del usuario</block>
   <block id="2654c9fc1ffd83d2d016920464872d91" category="section-title">Ver actividad maliciosa</block>
-  <block id="c0339a08bfb0fb26aa3ecea9980349b3" category="paragraph">Cuando Autonomous Ransomware Protection activa una alerta en Ransomware Resilience, puedes ver los siguientes detalles:</block>
   <block id="da00dfcf2d3126754537ccdf32df23fa" category="list-text">Entropía de los datos entrantes</block>
   <block id="acbf3e1d9f15facfe81c7ba30574b98f" category="list-text">Tasa esperada de creación de nuevos archivos en comparación con la tasa detectada</block>
   <block id="244cbe016f3894f8fdbc6c552b25b627" category="list-text">Tasa de eliminación de archivos esperada en comparación con la tasa detectada</block>
   <block id="b53ebc948bfc1f79f472eb77a501f56d" category="list-text">Tasa de cambio de nombre de archivos esperada en comparación con la tasa detectada</block>
-  <block id="627c9caf27de22ab63a8c85f8e162aeb" category="list-text">Archivos y directorios afectados</block>
   <block id="f9a5e70d083b4b276ca27983e0da35c8" category="admonition">Estos detalles son visibles para las cargas de trabajo NAS.  Para entornos SAN, solo están disponibles los datos de entropía.</block>
   <block id="8910b12ac8590ba4767a30b2ddc0d161" category="list-text">En el menú Resiliencia ante ransomware, seleccione *Alertas*.</block>
   <block id="76449079e275babe381772ebc5fecd7e" category="list-text">Seleccione una alerta.</block>
@@ -1799,7 +1785,6 @@
   <block id="76adc55b5a0beb97a709fbc0c204a3d0" category="paragraph">Para obtener más información sobre los agentes de consola, consulte<block ref="c97584494dd542160395e5c607ae4c2c" category="inline-link-macro-rx"></block> .</block>
   <block id="be8cc003074f86f2bc2b3ef0d2f3a334" category="list-text">Descubre el nivel de protección actual de cada volumen de las copias de instantáneas de NetApp y las políticas de respaldo, así como también cualquier capacidad de detección integrada. Luego, Ransomware Resilience asocia esta postura de protección con las cargas de trabajo mediante el uso de Backup and Recovery, servicios ONTAP y tecnologías de NetApp como Autonomous Ransomware Protection (ARP o ARP/AI según su versión de ONTAP ), FPolicy, políticas de backup y políticas de snapshots.  Obtenga más información sobre<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block> ,<block ref="2b1b7f994c6938347657a18d8edc7db7" category="inline-link-rx"></block> , y<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block> .</block>
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">Administrar alertas en NetApp Ransomware Resilience</block>
-  <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">Cuando NetApp Ransomware Resilience detecta un posible ataque, muestra una alerta en el Panel de control y en el área de Notificaciones. Ransomware Resilience toma una instantánea inmediatamente. Revise el riesgo potencial en la pestaña *Alertas* de resiliencia ante ransomware.</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">Un incidente de alerta puede tener los siguientes estados:</block>
   <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">Después de revisar los incidentes, debe determinar si son ataques potenciales. Si no son amenazas reales, pueden descartarse.</block>
   <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">Puede descartar los falsos positivos o decidir recuperar sus datos inmediatamente. Si descarta la alerta, Ransomware Resilience aprende este comportamiento y lo asocia con operaciones normales y no vuelve a iniciar una alerta sobre dicho comportamiento.</block>
@@ -1901,8 +1886,6 @@
   <block id="9f1822f26663cadd0ea726defa3cca17" category="list-text">En el cuadro de diálogo, seleccione **Eliminar** para confirmar que desea eliminar las cargas de trabajo de la lista de exclusión.</block>
   <block id="01e74a47d7af3692bf72faf95ffcd1a3" category="inline-image-macro">Captura de pantalla de la eliminación exitosa de una carga de trabajo excluida.</block>
   <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">Si la carga de trabajo se elimina de la lista de cargas de trabajo excluidas con éxito, aparece un mensaje de éxito en la página Carga de trabajo excluida y la carga de trabajo ya no aparece en la lista de cargas de trabajo excluidas. Si la acción falla, aparece un mensaje de error; intente la operación nuevamente. <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*En revisión*: Puedes marcar un incidente como en revisión mientras lo evalúas.</block>
-  <block id="a6e3974f4227562b42dd3774682f3f56" category="admonition">Después de descartar un ataque, no puedes revertir su estado. Si descarta una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente.</block>
   <block id="b8b45f3c53a227dc5aa1d806ef340f06" category="list-text">**Políticas de detección** identifican amenazas de ransomware</block>
   <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**Las políticas de replicación** le permiten replicar instantáneas de Ransomware Resilience a un sitio secundario. Los programas de replicación se pueden configurar con frecuencias horarias, diarias, semanales o mensuales.</block>
   <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">Actualmente, solo puedes replicar instantáneas en el almacenamiento ONTAP local.</block>
@@ -2046,7 +2029,6 @@
   <block id="af5eb4e584c938e9f8b3531d944e3a59" category="list-text">Las estrategias de protección contra ransomware con replicación no son compatibles para Azure NetApp Files.</block>
   <block id="1c312af1f49befaddd00883a617fa8ba" category="list-text">Al seleccionar una estrategia de protección, asegúrate de que su planificación de instantáneas sea compatible con Azure NetApp Files. La planificación de instantáneas más frecuente disponible en Azure NetApp Files es horaria.</block>
   <block id="e02189957b252d42e679aa66d35030cd" category="list-text"><block ref="e02189957b252d42e679aa66d35030cd" category="inline-link-macro-rx"></block></block>
-  <block id="bf1ffe0e445fb2a07fc3757d6ae841ec" category="list-text">Para bloquear a un usuario sospechoso en tu entorno, selecciona *Block* junto al nombre del usuario.</block>
   <block id="0f20f1de24e002ee03e9a0d693faaf59" category="list-text">Para desactivar las alertas sobre un usuario determinado que es objeto de una alerta que sabes que es falsa, selecciona los tres puntos <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>) y luego **Excluir a este usuario de la supervisión**. Revisa el cuadro de diálogo y luego selecciona **Excluir** para confirmar.</block>
   <block id="c65a69d50600a3f76ccdd1109d15b6e3" category="inline-link-macro">Excluir usuarios</block>
   <block id="d632bf28d8164d0436ca05f069b989e9" category="admonition">Para volver a activar las alertas para un usuario, devuelve la alerta. Selecciona los tres puntos y luego **Incluir a este usuario en la supervisión**. También puedes <block ref="e33a84d4132808c30f0e6b091e9f7e88" category="inline-link-macro-rx"></block> de la supervisión.</block>
@@ -2178,4 +2160,38 @@
   <block id="d3a17ab1969b7e28ae5324bee6d4cd54" category="paragraph">Un sistema de gestión de eventos y seguridad (SIEM) centraliza los datos de registros y eventos para proporcionar información sobre eventos de seguridad y cumplimiento. NetApp Ransomware Resilience admite enviar automáticamente datos a tu SIEM para agilizar el análisis y la detección de amenazas.</block>
   <block id="1054e7cee5045661c2dae3afe8f146e4" category="list-text">Selecciona *Autenticar*.</block>
   <block id="3538785960373ea81ad23e72866e9266" category="sidebar">Revisa la protección</block>
+  <block id="9b792a24170d5651c572c72e1a0fcfc2" category="admonition">La detección de actividad del usuario no está soportada actualmente para cargas de trabajo SAN. Puedes usar la detección de actividad del usuario con cargas de trabajo NAS en Amazon FSxN para ONTAP, Cloud Volumes ONTAP y ONTAP.</block>
+  <block id="6aef124ac144e3ae69ac50e0f114e548" category="paragraph">Cuando NetApp Ransomware Resilience detecta un posible ataque, muestra una alerta en el Dashboard y en el área de Notificaciones. Ransomware Resilience toma inmediatamente una instantánea. Cuando recibas una alerta, revisa el riesgo potencial en la pestaña *Alerts* de Ransomware Resilience para evaluar el impacto en tus datos y prevenir un posible ataque de ransomware.</block>
+  <block id="51f69bf6a11f3daca8752b8344ebc420" category="section-title">Cómo se generan las alertas</block>
+  <block id="9e7bcb464844b7db89d979e9085bac76" category="paragraph">Ransomware Resilience se basa en pruebas sobre patrones de entropía de datos, tipos de extensión de archivos y cifrado para producir alertas. Las alertas se basan en los siguientes eventos:</block>
+  <block id="fb7cc6e16ef254f2ff2f03b0ba6cadee" category="list-text">Violación de datos</block>
+  <block id="147fa6a15cbb387b90cd75ccc34d8cfe" category="list-text">Destrucción de datos</block>
+  <block id="9755e4a474d0024a8dcd40393e571716" category="list-text">Comportamiento sospechoso de usuario</block>
+  <block id="f94e6cd450a12c55223329be07d15575" category="inline-link-macro">detección de actividad del usuario</block>
+  <block id="09e9060a723336e7b5657759fccb4bbf" category="admonition">Para las alertas de violación de datos, destrucción de datos y comportamiento sospechoso de los usuarios, debes configurar <block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>.</block>
+  <block id="b413c7d063ce740207cbb531b68c46dc" category="section-title">Tipos y estados de alerta</block>
+  <block id="1405a7e68c0a63e640869ddcfd6a3c37" category="paragraph">Las alertas tienen uno de dos estados: *Nueva* o *Inactiva*.</block>
+  <block id="75a90d27a357c4859ab2e4e41a012d82" category="paragraph">Una alerta se clasifica como uno de los siguientes tipos:</block>
+  <block id="bdb8ca0360b2fe066d05c9a1a048c735" category="list-text">*Ataque potencial*: Una alerta se clasifica como ataque potencial cuando:</block>
+  <block id="f56291051fc1ed98942260fa2ee0eee0" category="list-text">Autonomous Ransomware Protection detecta una nueva extensión y la ocurrencia se repite más de 20 veces en las últimas 24 horas (comportamiento por defecto).</block>
+  <block id="b235238ab28a3bf3f4659ca61246b1ba" category="list-text">Se detectan las brechas de datos.</block>
+  <block id="e97aedde568ba1309d7dee88757cc7a6" category="list-text">Se detecta la destrucción de datos.</block>
+  <block id="30f96ff3a86b53c9339e0fcb0a5d4f56" category="section-title">Estados de alerta</block>
+  <block id="46a2a41cc6e552044816a2d04634545d" category="cell">Estado</block>
+  <block id="4ba105e3c097cf6f2953389b3edb7afe" category="cell">Todos los incidentes se marcan como "new" cuando se identifican por primera vez.</block>
+  <block id="583663d39289a91bdb2fc8a311ff5d43" category="cell">*En revisión*</block>
+  <block id="2997572eb0d7e3b29462cc68181bc484" category="cell">Puedes marcar manualmente un incidente de alerta como "en revisión" mientras lo evalúas.</block>
+  <block id="acb47975adbffbb55594bbed73e4b27d" category="cell">*Descartado*</block>
+  <block id="37d6f73d98a805a6d1c377464250b2f8" category="paragraph">Si sospechas que la actividad no es un ataque de ransomware, puedes cambiar el estado a "descartado". + PRECAUCIÓN: Después de descartar un ataque, no puedes revertir su estado. Si descartas una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta al posible ataque de ransomware se eliminarán permanentemente.</block>
+  <block id="233759d6fff761018a2a5438302273e3" category="cell">*Resuelto*</block>
+  <block id="5f7604fd39c6c6a677a542c60aafd5b4" category="cell">El incidente ha sido solucionado.</block>
+  <block id="ec573101219f640c28052674265d7465" category="cell">*Auto Resuelto*</block>
+  <block id="06dc51fc99ed3c0d2a4c44ba607b2290" category="cell">Para las alertas de baja prioridad, el incidente se resuelve automáticamente si no se ha tomado ninguna acción sobre él en cinco días.</block>
+  <block id="f6cf985a5665cb78843065d12f8d1651" category="paragraph">Puedes acceder a las alertas desde el panel de Ransomware Resilience o desde la pestaña *Alertas*.</block>
+  <block id="4cd7c3f63e9693e91004f9e55b4eb0ce" category="list-text">En el correo electrónico, selecciona *Ver alerta* e inicia sesión en Ransomware Resilience.</block>
+  <block id="f8e5b2d689322950f1d346b22381d36c" category="paragraph">Cuando Autonomous Ransomware Protection activa una alerta en Ransomware Resilience, puedes ver los siguientes detalles:</block>
+  <block id="7f41a371ba4e549119e44e211d1b4d72" category="list-text">Cuándo se activó la alerta</block>
+  <block id="378c9aa27d38e9ec5b0fbf34bcb8febc" category="list-text">Cuando se modificó o se denegó el acceso</block>
+  <block id="49408f5917e16f5795da1781a7748aa5" category="list-text">Cargas de trabajo, volúmenes, archivos y directorios afectados</block>
+  <block id="a6bd7f80fc17cbb8e58e8dca754bf710" category="list-text">Para bloquear a un usuario sospechoso en tu entorno, selecciona *Block* junto al nombre del usuario.</block>
 </blocks>
