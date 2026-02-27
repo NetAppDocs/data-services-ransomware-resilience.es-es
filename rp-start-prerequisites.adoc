@@ -35,19 +35,19 @@ Asegúrese de estar utilizando un sistema compatible:
 .2+| Cloud Volumes ONTAP para AWS | CIFS y NFS | 9.11.1 y posteriores 
 
 
-| SAN (FC, iSCSI y NVMe) | 9.17.1 y posteriores 
+| SAN (iSCSI y NVMe) | 9.17.1 y posteriores 
 
 
 .2+| Cloud Volumes ONTAP para Google Cloud Platform | CIFS y NFS | 9.11.1 y posteriores 
 
 
-| SAN (FC, iSCSI y NVMe) | 9.17.1 y posteriores 
+| SAN (iSCSI y NVMe) | 9.17.1 y posteriores 
 
 
 .2+| Cloud Volumes ONTAP para Microsoft Azure | CIFS y NFS | 9.12.1 y posteriores 
 
 
-| SAN (FC, iSCSI y NVMe) | 9.17.1 y posteriores 
+| SAN (iSCSI y NVMe) | 9.17.1 y posteriores 
 
 
 .2+| ONTAP (en las instalaciones) | CIFS y NFS | 9.11.1 y posteriores 
@@ -66,7 +66,7 @@ La configuración de su NetApp Console requiere:
 * Una cuenta de usuario de la NetApp Console con privilegios de administrador de la organización para descubrir recursos.
 * Una organización y sistema de consola con al menos un agente de consola activo conectado a unalink:concept-ransomware-resilience.html#supported-backup-targets-systems-and-workload-data-sources["sistema compatible"] .
 +
-** Si sus clústeres ONTAP locales o Cloud Volumes ONTAP en AWS o en la nube de Azure no están configurados en la consola, consultelink:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["Aprenda a configurar un agente de consola"^] ylink:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Requisitos estándar de la consola"^] .
+** Si tus clústeres ONTAP locales o sistemas Cloud Volumes ONTAP no están configurados en la NetApp Console, consulta link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["Aprenda a configurar un agente de consola"^] y link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Requisitos estándar de la consola"^].
 +
 
 NOTE: Si tiene varios agentes de consola en una sola organización de consola, Ransomware Resilience escaneará los recursos de ONTAP en todos los agentes de consola más allá del que esté seleccionado actualmente en la interfaz de usuario de la consola.
@@ -74,14 +74,10 @@ NOTE: Si tiene varios agentes de consola en una sola organización de consola, R
 
 
 * El agente de consola debe tener la `cloudmanager-ransomware-protection` contenedor en estado activo.
-* Al menos un sistema de consola con un clúster ONTAP local de NetApp o Cloud Volumes ONTAP en AWS o Azure.  Ransomware Resilience admite protocolos NAS (NFS y SMB) y SAN (iSCSI, FC y NVMe).
-+
-** Ransomware Resilience es compatible con clústeres ONTAP o Cloud Volumes ONTAP con la versión 9.11.1 o superior de ONTAP .
+* Para clústeres ONTAP o Cloud Volumes ONTAP, Ransomware Resilience requiere que la versión de ONTAP sea 9.11.1 o mayor.
 +
 
 NOTE: Para utilizar la resiliencia contra el ransomware en cargas de trabajo SAN, debe estar ejecutando ONTAP 9.17.1 o posterior.
-
-
 
 
 

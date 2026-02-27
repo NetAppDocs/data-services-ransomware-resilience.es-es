@@ -16,7 +16,7 @@ summary: Ransomware Resilience le permite ver información relevante sobre ciber
 [role="lead"]
 Los ataques de ransomware pueden bloquear el acceso a sus datos y los atacantes pueden pedir un rescate a cambio de la liberación de datos o el descifrado.  Según IDC, no es raro que las víctimas de ransomware experimenten múltiples ataques de ransomware.  El ataque puede interrumpir el acceso a sus datos durante un período que puede durar desde un día hasta varias semanas.
 
-NetApp Ransomware Resilience protege sus datos de los ataques de ransomware. En Ransomware Resilience, la protección está disponible para cargas de trabajo basadas en aplicaciones de Oracle, almacenes de datos de VM y recursos compartidos de archivos en almacenamiento NAS local (usando los protocolos NFS y CIFS) y almacenamiento SAN (FC, iSCSI y NVMe), así como Cloud Volumes ONTAP para Amazon Web Services, Cloud Volumes ONTAP para Google Cloud, Cloud Volumes ONTAP para Microsoft Azure y Amazon FSx for NetApp ONTAP en la NetApp Console. Puede realizar copias de seguridad de datos en Amazon Web Services, Google Cloud, almacenamiento en la nube de Microsoft Azure y NetApp StorageGRID.
+NetApp Ransomware Resilience protege tus datos de los ataques de ransomware. En Ransomware Resilience, la protección está disponible para cargas de trabajo basadas en aplicaciones de Oracle, almacenes de datos de VM y archivos compartidos para almacenamiento NAS (protocolos NFS y CIFS) y almacenamiento SAN (protocolos FC, iSCSI y NVMe). Ransomware Resilience es compatible con el almacenamiento local, así como con Cloud Volumes ONTAP para Amazon Web Services, Cloud Volumes ONTAP para Google Cloud, Cloud Volumes ONTAP para Microsoft Azure, Azure NetApp Files y Amazon FSx for NetApp ONTAP a través de la NetApp Console. Puedes hacer backup de datos en Amazon Web Services, Google Cloud, Microsoft Azure y NetApp StorageGRID.
 
 
 
@@ -39,7 +39,7 @@ image:concept-security-layer-diagram.png["Diagrama de la capa de seguridad"]
 
 Ransomware Resilience proporciona el uso completo de varias tecnologías de NetApp para que su administrador de almacenamiento, administrador de seguridad de datos o ingeniero de operaciones de seguridad puedan lograr los siguientes objetivos:
 
-* *Identifique* todas las cargas de trabajo basadas en aplicaciones, recursos compartidos de archivos o administradas por VMware en los sistemas NAS locales de NetApp (NFS o CIFS) y SAN (FC, iSCSI y NVMe) en la NetApp Console, los proyectos y los agentes de la consola. Ransomware Resilience clasifica la prioridad de los datos y le brinda recomendaciones para mejorar la resiliencia contra el ransomware.
+* *Identifica* cargas de trabajo basadas en aplicaciones, archivos compartidos o gestionadas por VMware en sistemas NAS y SAN locales de NetApp a través de la NetApp Console, proyectos y agentes de Console. Después de descubrir las cargas de trabajo, Ransomware Resilience identifica oportunidades para mejorar la resiliencia frente al ransomware.
 * *Proteja* sus cargas de trabajo habilitando copias de seguridad, copias instantáneas y estrategias de protección contra ransomware en sus datos.
 * *Detectar* anomalías que podrían ser ataques de ransomware. Nota al pie: [Si bien es posible que un ataque pase desapercibido, nuestra investigación indica que la tecnología de NetApp ha dado como resultado un alto grado de detección para ciertos ataques de ransomware basados ​​en cifrado de archivos].
 * *Responder* a posibles ataques de ransomware iniciando automáticamente una instantánea de un punto en el tiempo que se bloquea para que la copia no pueda eliminarse de manera accidental o maliciosa. Sus datos de respaldo permanecerán inmutables y protegidos de extremo a extremo contra ataques de ransomware en el origen y en el destino.
@@ -56,8 +56,7 @@ image:diagram-rp-features-phases3.png["Diagrama que muestra las estrategias de r
 La resiliencia frente al ransomware ofrece los siguientes beneficios:
 
 * Descubre cargas de trabajo y sus programaciones de instantáneas y copias de seguridad existentes, y clasifica su importancia relativa.
-* Evalúa su postura de protección contra ransomware y la muestra en un panel fácil de entender.
-* Proporciona recomendaciones sobre los próximos pasos basados en el descubrimiento y el análisis de la postura de protección.
+* Evalúa tu postura de protección frente al ransomware y la muestra en un panel de control fácil de entender mientras te da recomendaciones para mejorar la protección.
 * Aplica recomendaciones de protección de datos impulsadas por IA/ML con acceso con un solo clic.
 * Protege datos en cargas de trabajo basadas en aplicaciones, como Oracle, almacenes de datos de VMware y recursos compartidos de archivos.
 * Detecta ataques de ransomware a datos en tiempo real en el almacenamiento primario utilizando tecnología de IA.
@@ -74,9 +73,9 @@ Puedes probar Ransomware Resilience con una prueba gratuita de 30 días. NetApp 
 
 Si tiene Backup and Recovery y Ransomware Resilience, cualquier dato común protegido por ambos productos se factura únicamente por Ransomware Resilience.
 
-Después de comprar una licencia o suscripción PayGo, cualquier carga de trabajo que tenga una política de detección de ransomware (Protección autónoma contra ransomware) habilitada (descubierta o configurada por Ransomware Resilience) y al menos una política de instantánea o respaldo, Ransomware Resilience la clasifica como "Protegida" y cuenta para la capacidad comprada o la suscripción PayGo.  Si se descubre una carga de trabajo sin una política de detección, incluso si tiene políticas de respaldo o instantáneas, se clasifica como “En riesgo” y _no_ cuenta para la capacidad comprada.
+Cuando una carga de trabajo se clasifica como protegida, cuenta contra la capacidad adquirida o la suscripción de PayGo. Ransomware Resilience clasifica una carga de trabajo como protegida cuando una política de detección está habilitada con al menos una política de snapshot o política de backup. Las cargas de trabajo descubiertas con una política de detección pero _sin_ políticas de backup o de snapshot se clasifican como en riesgo. Las cargas de trabajo en riesgo no cuentan contra la capacidad adquirida.
 
-Las cargas de trabajo protegidas se contabilizan para la capacidad adquirida o la suscripción una vez finalizado el período de prueba de 90 días.  Ransomware Resilience se cobra por GB de datos asociados con cargas de trabajo protegidas antes de aplicar eficiencias.
+Las cargas de trabajo protegidas cuentan contra la capacidad adquirida o la suscripción después de que termine el periodo de prueba gratuito. Ransomware Resilience se cobra por GB para los datos asociados con las cargas de trabajo protegidas antes de las eficiencias.
 
 
 
@@ -193,19 +192,19 @@ Ransomware Resilience admite los siguientes objetivos de respaldo, sistemas y fu
 .2+| Cloud Volumes ONTAP para AWS | CIFS y NFS | 9.11.1 y posteriores 
 
 
-| SAN (FC, iSCSI y NVMe) | 9.17.1 y posteriores 
+| SAN (iSCSI y NVMe) | 9.17.1 y posteriores 
 
 
 .2+| Cloud Volumes ONTAP para Google Cloud Platform | CIFS y NFS | 9.11.1 y posteriores 
 
 
-| SAN (FC, iSCSI y NVMe) | 9.17.1 y posteriores 
+| SAN (iSCSI y NVMe) | 9.17.1 y posteriores 
 
 
 .2+| Cloud Volumes ONTAP para Microsoft Azure | CIFS y NFS | 9.12.1 y posteriores 
 
 
-| SAN (FC, iSCSI y NVMe) | 9.17.1 y posteriores 
+| SAN (iSCSI y NVMe) | 9.17.1 y posteriores 
 
 
 .2+| ONTAP (en las instalaciones) | CIFS y NFS | 9.11.1 y posteriores 
