@@ -16,7 +16,7 @@ Referirse a https://docs.netapp.com/us-en/active-iq/index.html["Documentación d
 
 Con esta versión, puedes establecer un destino de respaldo en un depósito de Google Cloud Platform.  Anteriormente, solo podía agregar destinos de respaldo a NetApp StorageGRID, Amazon Web Services y Microsoft Azure.
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Obtenga más información sobre cómo configurar los ajustes de BlueXP ransomware protection"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["Obtenga más información sobre cómo configurar los ajustes de BlueXP ransomware protection"].
 
 
 

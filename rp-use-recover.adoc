@@ -40,7 +40,7 @@ Revise las cargas de trabajo que están en el estado de recuperación "Se necesi
 .Pasos
 . Debe realizar una de las siguientes acciones:
 +
-** Desde el Panel de Control, revise los totales de "Restauración necesaria" en el panel de Alertas y seleccione *Ver todo*.
+** Desde el panel de control, revisa los totales de "Restauración necesaria" en el panel de Alertas y selecciona *Ver todo*.
 ** Desde el menú, seleccione *Recuperación*.
 
 

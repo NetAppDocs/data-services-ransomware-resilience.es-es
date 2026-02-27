@@ -102,7 +102,7 @@ Consulte la https://docs.netapp.com/us-en/console-setup-admin/reference-permissi
 
 * No es necesario habilitar NetApp Backup and Recovery en el sistema.
 +
-Ransomware Resilience ayuda a configurar un destino de respaldo a través de la opción Configuración. Ver link:rp-use-settings.html["Configurar ajustes"] .
+Ransomware Resilience te ayuda a configurar un destino de backup usando la opción de configuración. Mira link:task-backup-destination.html["Agregar un destino de respaldo"].
 
 
 

@@ -26,7 +26,7 @@ Prepare uno de los siguientes destinos de respaldo:
 * Microsoft Azure
 
 
-Después de configurar las opciones en el destino de la copia de seguridad, más tarde lo configurará como destino de copia de seguridad en Ransomware Resilience.  Para obtener detalles sobre cómo configurar el destino de la copia de seguridad en Ransomware Resilience, consultelink:rp-use-settings.html["Configurar destinos de respaldo"] .
+Después de configurar las opciones en el propio destino de backup, luego lo vas a configurar como destino de backup en Ransomware Resilience. Para detalles sobre cómo configurar el destino de backup en Ransomware Resilience, consulta link:task-backup-destination.html["Configurar destinos de respaldo"].
 
 
 

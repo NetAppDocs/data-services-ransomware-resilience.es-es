@@ -280,7 +280,7 @@ El bloqueo de copias instantáneas está disponible con ONTAP 9.12.1 y versiones
 *** *Programaciones de respaldo*: elija las opciones de programación para el almacenamiento secundario y habilite la programación.
 +
 
-TIP: Para habilitar el bloqueo de copias de seguridad en el almacenamiento secundario, configure los destinos de copia de seguridad utilizando la opción *Configuración*. Para obtener más información, consulte link:rp-use-settings.html["Configurar ajustes"] .
+TIP: Para activar el bloqueo de backup en el almacenamiento secundario, configura tus destinos de backup usando la opción *Settings*. Para más detalles, consulta link:task-backup-destination.html["Configurar ajustes"].
 
 
 
