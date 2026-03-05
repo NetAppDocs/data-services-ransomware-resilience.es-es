@@ -59,12 +59,8 @@ Puedes acceder a la NetApp Console con cualquier navegador web moderno.
 .¿Ransomware Resilience conoce las configuraciones de protección en ONTAP?
 Sí, Ransomware Resilience descubre programaciones de instantáneas configuradas en ONTAP.
 
-.¿Cómo interactúa Ransomware Resilience con NetApp Backup and Recovery y SnapCenter?
-La resiliencia ante el ransomware funciona con la función de copia de seguridad y recuperación para descubrir y establecer políticas de instantáneas y copias de seguridad para cargas de trabajo de archivos compartidos.
-
-Ransomware Resilience funciona con SnapCenter o SnapCenter for VMware para descubrir y establecer políticas de instantáneas y copias de seguridad para cargas de trabajo de aplicaciones y máquinas virtuales. Por ahora, no puedes usar Ransomware Resilience para la recuperación con SnapCenter.
-
-Ransomware Resilience también funciona con Backup and Recovery para realizar una recuperación coherente de archivos y cargas de trabajo.
+.¿Cómo interactúa Ransomware Resilience con NetApp Backup and Recovery?
+Ransomware Resilience trabaja con Backup and Recovery para descubrir y establecer políticas de instantáneas y copias de seguridad para cargas de trabajo de archivos compartidos. Ransomware Resilience también trabaja con Backup and Recovery para realizar la recuperación coherente de archivos y cargas de trabajo.
 
 Para licencias y facturación, Ransomware Resilience puede integrarse con Backup and Recovery incluso si no tiene una licencia separada para Backup and Recovery. Si tiene Backup and Recovery y Ransomware Resilience, cualquier dato común protegido por ambos productos se factura únicamente por Ransomware Resilience.
 
@@ -85,12 +81,8 @@ link:rp-use-protect.html["Obtenga información sobre la prioridad o importancia 
 .¿Qué cargas de trabajo admite Ransomware Resilience?
 Ransomware Resilience puede identificar las siguientes cargas de trabajo: Oracle, recursos compartidos de archivos, almacenamiento en bloque, máquinas virtuales y almacenes de datos de máquinas virtuales.
 
-Si estás usando SnapCenter o SnapCenter para VMware, todas las cargas de trabajo compatibles con estos productos también se identifican en Ransomware Resilience.
-
 .¿Cómo se asocian los datos a una carga de trabajo?
 Ransomware Resilience descubre los volúmenes y las extensiones de archivo y los asocia con la carga de trabajo apropiada.
-
-Si tiene SnapCenter o SnapCenter para VMware y ha configurado cargas de trabajo en Copia de seguridad y recuperación, entonces Ransomware Resilience descubre las cargas de trabajo administradas por SnapCenter y SnapCenter para VMware y sus volúmenes asociados.
 
 .¿Qué es una carga de trabajo protegida?
 En Ransomware Resilience, una carga de trabajo muestra el estado *protegida* cuando tiene habilitada una política de _detección_ primaria, lo que significa link:concept-ransomware-resilience.html["Protección autónoma contra el ransomware (ARP)"] está habilitado en todos los volúmenes relacionados con la carga de trabajo.
@@ -122,17 +114,17 @@ No se requiere una política de respaldo en la estrategia de resiliencia frente 
 .¿Ransomware Resilience conoce las configuraciones de protección en ONTAP?
 Sí, Ransomware Resilience descubre las programaciones de instantáneas establecidas en ONTAP. También descubre si ARP y FPolicy están activados en todos los volúmenes de una carga de trabajo descubierta. La información que ves en el panel de Ransomware Resilience se agrega a partir de otras soluciones y productos de NetApp.
 
-.¿Tiene en cuenta Ransomware Resilience las políticas ya establecidas en Backup and Recovery y SnapCenter?
-Sí, si tiene cargas de trabajo administradas en Backup and Recovery o SnapCenter, las políticas administradas por esos productos se incorporan a Ransomware Resilience.
+.¿Ransomware Resilience reconoce las políticas que ya se han creado en NetApp Backup and Recovery?
+Sí, si tienes cargas de trabajo gestionadas en Backup and Recovery, las políticas gestionadas por esos productos se incorporan a Ransomware Resilience.
 
-.¿Es posible modificar las políticas heredadas de NetApp Backup and Recovery y/o SnapCenter?
-No, no puede modificar las políticas administradas por Backup and Recovery o SnapCenter desde Ransomware Resilience.  Usted administra cualquier cambio en esas políticas en Backup and Recovery o SnapCenter.
+.¿Puedes modificar las políticas transferidas de NetApp Backup and Recovery?
+No, no puedes modificar las políticas gestionadas por Backup and Recovery desde Ransomware Resilience. Tú gestionas cualquier cambio en esas políticas en Backup and Recovery.
 
 .Si existen políticas de ONTAP (como ARP, FPolicy y snapshots), ¿se modifican en Ransomware Resilience?
 No. Ransomware Resilience no modifica ninguna política de detección existente (configuración ARP, FPolicy) de ONTAP.
 
-.¿Qué sucede si agrega nuevas políticas en Backup and Recovery o SnapCenter después de registrarse en Ransomware Resilience?
-La función de Resiliencia ante Ransomware reconoce las políticas recién creadas y los cambios de políticas en Copia de seguridad y recuperación o SnapCenter.
+.¿Qué pasa si añades nuevas políticas en Backup and Recovery después de registrarte en Ransomware Resilience?
+Ransomware Resilience reconoce las políticas de nueva creación y los cambios de política en Backup and Recovery.
 
 .¿Se pueden cambiar las políticas desde ONTAP?
 Sí, puede cambiar las políticas de ONTAP en Ransomware Resilience.  También puede crear nuevas políticas en Ransomware Resilience y aplicarlas a las cargas de trabajo.  Esta acción reemplaza las políticas ONTAP existentes con las políticas creadas en Ransomware Resilience.

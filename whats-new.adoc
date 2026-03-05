@@ -190,7 +190,7 @@ Para obtener más información, consulte link:https://docs.netapp.com/us-en/data
 
 === Protección mejorada de la carga de trabajo
 
-Esta versión mejora el proceso de configuración para cargas de trabajo con políticas de instantáneas y respaldo de otras herramientas de NetApp , como SnapCenter o BlueXP backup and recovery. En versiones anteriores, la BlueXP ransomware protection descubría las políticas de otras herramientas y solo le permitía cambiar la política de detección. Con esta versión, ahora puede reemplazar las políticas de instantáneas y copias de seguridad con las políticas de BlueXP ransomware protection o continuar usando las políticas de otras herramientas.
+Esta versión mejora el proceso de configuración para cargas de trabajo con políticas de instantáneas y copias de seguridad de otras herramientas de NetApp como BlueXP backup and recovery. En versiones anteriores, BlueXP ransomware protection descubría las políticas de otras herramientas y solo te permitía cambiar la política de detección. Con esta versión, ahora puedes reemplazar las políticas de instantáneas y copias de seguridad por políticas de BlueXP ransomware protection o seguir usando las políticas de otras herramientas.
 
 Para más detalles, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteger las cargas de trabajo"] .
 
@@ -208,7 +208,7 @@ Para más detalles, consultelink:https://docs.netapp.com/us-en/data-services-ran
 
 
 
-== 9 de junio de 2025
+== 09 de junio de 2025
 
 
 
@@ -385,7 +385,7 @@ Referirse a https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp
 
 
 
-== 7 de noviembre de 2024
+== 07 noviembre 2024
 
 
 
@@ -433,7 +433,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
-== 2 de septiembre de 2024
+== 02 de septiembre de 2024
 
 
 
@@ -469,7 +469,7 @@ Para obtener detalles sobre las acciones que puede realizar cada rol, consulte h
 
 
 
-== 5 de agosto de 2024
+== 05 de agosto de 2024
 
 
 
@@ -481,7 +481,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 
 
 
-== 1 de julio de 2024
+== 01 de julio de 2024
 
 
 
@@ -576,14 +576,6 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
-=== Protección y recuperación consistentes con las aplicaciones y las máquinas virtuales
-
-Ahora puede realizar una protección consistente con las aplicaciones con el software NetApp SnapCenter y una protección consistente con las máquinas virtuales con el SnapCenter Plug-in for VMware vSphere, logrando un estado inactivo y consistente para evitar una posible pérdida de datos más adelante si se necesita recuperación.  Si se requiere recuperación, puede restaurar la aplicación o la máquina virtual a cualquiera de los estados disponibles anteriormente.
-
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Obtenga más información sobre la protección de las cargas de trabajo"] .
-
-
-
 === Estrategias de protección contra ransomware
 
 Si no existen políticas de instantáneas o de respaldo en la carga de trabajo, puede crear una estrategia de protección contra ransomware, que puede incluir las siguientes políticas que cree en este servicio:
@@ -649,7 +641,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-de
 
 
 
-== 5 de marzo de 2024
+== 05 de marzo de 2024
 
 
 
@@ -685,7 +677,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 
 
-== 6 de octubre de 2023
+== 06 de octubre de 2023
 
 El servicio de BlueXP ransomware protection es una solución SaaS para proteger datos, detectar posibles ataques y recuperar datos de un ataque de ransomware.
 

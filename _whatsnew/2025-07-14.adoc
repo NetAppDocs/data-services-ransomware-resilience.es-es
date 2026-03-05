@@ -14,7 +14,7 @@ Para obtener más información, consulte link:https://docs.netapp.com/us-en/data
 
 === Protección mejorada de la carga de trabajo
 
-Esta versión mejora el proceso de configuración para cargas de trabajo con políticas de instantáneas y respaldo de otras herramientas de NetApp , como SnapCenter o BlueXP backup and recovery. En versiones anteriores, la BlueXP ransomware protection descubría las políticas de otras herramientas y solo le permitía cambiar la política de detección. Con esta versión, ahora puede reemplazar las políticas de instantáneas y copias de seguridad con las políticas de BlueXP ransomware protection o continuar usando las políticas de otras herramientas.
+Esta versión mejora el proceso de configuración para cargas de trabajo con políticas de instantáneas y copias de seguridad de otras herramientas de NetApp como BlueXP backup and recovery. En versiones anteriores, BlueXP ransomware protection descubría las políticas de otras herramientas y solo te permitía cambiar la política de detección. Con esta versión, ahora puedes reemplazar las políticas de instantáneas y copias de seguridad por políticas de BlueXP ransomware protection o seguir usando las políticas de otras herramientas.
 
 Para más detalles, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteger las cargas de trabajo"] .
 
