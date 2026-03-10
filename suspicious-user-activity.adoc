@@ -171,9 +171,12 @@ Si hay ciertos usuarios de confianza cuyo comportamiento podría activar alertas
 . Para revisar usuarios individuales en la interfaz de usuario, elige **Seleccionar manualmente**. Para cargar una lista de usuarios excluidos, selecciona **Cargar**.
 +
 .. Si seleccionaste **Seleccionar manualmente**, marca la casilla junto a los nombres de los usuarios específicos que quieres excluir.
-.. Si seleccionas **Upload**, primero debes descargar un archivo CSV que incluye la lista de todos los usuarios. Selecciona **Download** para acceder a la lista.
+.. Si seleccionas **Upload**, descarga el archivo CSV o JSON que incluye la lista de todos los usuarios. Selecciona **Download** para acceder a la lista.
 +
-Revisa el archivo CSV. Elimina los nombres de todos los usuarios para los que quieres mantener la detección. Cuando la lista incluya solo los nombres de los usuarios que quieres excluir de la detección, guárdala. Selecciona **Upload** para localizar el archivo y luego elígelo.
+En tu equipo local, revisa el archivo. Elimina los nombres de todos los usuarios para los que quieres mantener la detección. Cuando la lista incluya solo los nombres de los usuarios que quieres excluir de la detección, guárdala.
+
++
+En Ransomware Resilience, selecciona **Subir**. Localiza y sube el archivo.
 
 
 
@@ -193,6 +196,8 @@ Puedes agregar un usuario de nuevo a la detección después.
 .Pasos
 . En el panel de control de Configuración, localiza la tarjeta de actividad de usuario y selecciona **Manage**.
 . Selecciona la pestaña **Usuarios excluidos**.
+. Seleccione **Agregar**.
+. Para excluir usuarios individuales de la interfaz de usuario, elige **Seleccionar manualmente**.
 . Localiza el nombre del usuario que quieres eliminar de la selección de usuarios excluidos. Selecciona el menú de acciones (`...`) en la fila con el nombre del usuario y luego **Remove**.
 . En el cuadro de diálogo, selecciona **Eliminar** para confirmar que quieres eliminar a los usuarios seleccionados.
 

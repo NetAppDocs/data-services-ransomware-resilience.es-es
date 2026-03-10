@@ -1,0 +1,19 @@
+= Excluir usuarios de forma masiva de las alertas de comportamiento del usuario
+:allow-uri-read: 
+
+
+
+
+=== Excluir usuarios de forma masiva de las alertas de comportamiento del usuario
+
+Ransomware Resilience ahora admite subir una lista JSON de usuarios para excluir de las alertas de actividad de comportamiento del usuario, además de las opciones existentes en la interfaz de usuario y basadas en CSV.
+
+Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#exclude-users-from-alerts["Excluir usuarios de alertas"^].
+
+
+
+=== Mejoras en la actividad del usuario
+
+Ransomware Resilience ha mejorado la información sobre el comportamiento de los usuarios al añadir alertas por correo electrónico e incluir eventos de comportamiento de usuario en los datos de eventos SIEM compatibles (AWS Security Hub, Microsoft Sentinel y Splunk Cloud). Estas mejoras ofrecen información más precisa sobre tu supervisión de seguridad y cumplimiento.
+
+Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Conecta NetApp Ransomware Resilience a un SIEM"^].
