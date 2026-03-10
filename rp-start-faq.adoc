@@ -36,6 +36,15 @@ Actualmente, la función de Resiliencia ante Ransomware solo está disponible en
 
 Para obtener una explicación sobre estos modos en todos los servicios de datos de NetApp , consulte https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Modos de implementación de la NetApp Console"^] .
 
+.¿Cómo funciona la facturación de Ransomware Resilience?
+Puedes probar Ransomware Resilience con una prueba gratuita de 30 días. NetApp no ​​le cobra por utilizar la versión de prueba de Ransomware Resilience.
+
+Si tiene Backup and Recovery y Ransomware Resilience, cualquier dato común protegido por ambos productos se factura únicamente por Ransomware Resilience.
+
+Cuando una carga de trabajo se clasifica como protegida, cuenta contra la capacidad adquirida o la suscripción PAYGO. Ransomware Resilience clasifica una carga de trabajo como protegida cuando se habilita una política de detección con al menos una política de instantáneas o de backup. Las cargas de trabajo descubiertas con una política de detección pero _sin_ políticas de backup o instantáneas se clasifican como en riesgo. Las cargas de trabajo en riesgo no cuentan contra la capacidad adquirida.
+
+Las cargas de trabajo protegidas cuentan contra la capacidad adquirida o la suscripción después de que termine el periodo de prueba gratuito. Ransomware Resilience se cobra por GB para los datos asociados con las cargas de trabajo protegidas (según lo reporta ONTAP) antes de las eficiencias.
+
 
 
 == Acceso
