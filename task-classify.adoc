@@ -4,14 +4,16 @@ permalink: task-classify.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
 summary: Mejore la seguridad y el cumplimiento de la privacidad de sus datos con NetApp Data Classification para identificar si sus datos incluyen información personal identificable o privada. 
 ---
-= Busque información de identificación personal con la NetApp Data Classification en Ransomware Resilience
+= Buscar información personal identificable en NetApp Ransomware Resilience
 :allow-uri-read: 
 
 
 [role="lead"]
-Dentro de NetApp Ransomware Resilience, puede utilizar NetApp Data Classification para escanear y clasificar los datos en una carga de trabajo de uso compartido de archivos. La clasificación de datos le ayuda a determinar si el conjunto de datos incluye información de identificación personal (PII), lo que puede aumentar los riesgos de seguridad. La clasificación de datos es un componente central de la NetApp Console y está disponible sin costo adicional.
+Dentro de NetApp Ransomware Resilience, puedes usar NetApp Data Classification para escanear y clasificar los datos en una carga de trabajo de archivos compartidos. Clasificar los datos te ayuda a determinar si el conjunto de datos incluye información de identificación personal (PII), lo que puede aumentar los riesgos de seguridad.
 
 link:https://docs.netapp.com/us-en/data-services-data-classification/["Clasificación de datos"^]Utiliza el procesamiento del lenguaje natural impulsado por IA para el análisis y la categorización de datos contextuales, proporcionando información útil sobre sus datos para abordar los requisitos de cumplimiento, detectar vulnerabilidades de seguridad, optimizar costos y acelerar la migración.
+
+La clasificación de datos es un componente central de la NetApp Console. No necesitas una licencia para usar Data Classification. Dependiendo de tu configuración, configurar Data Classification puede generar costes, que no son cobrados por Ransomware Resilience. Para más información, consulta link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html#cost["Aprenda sobre la clasificación de datos"^].
 
 
 TIP: Este proceso puede afectar la importancia de la carga de trabajo para ayudar a garantizar que tenga la protección adecuada.

@@ -4,7 +4,7 @@ permalink: rp-start-discover.html
 keywords: bluexp, ransomware protection, protection, risk, cyber attack, security,data security, data protection, data recovery, data discovery 
 summary: Durante el descubrimiento, Ransomware Resilience analiza todos los volúmenes y archivos de los sistemas en todos los agentes y cuentas de la consola. 
 ---
-= Descubre y gestiona las cargas de trabajo en NetApp Ransomware Resilience
+= Descubre las cargas de trabajo en NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
