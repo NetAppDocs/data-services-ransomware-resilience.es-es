@@ -1,0 +1,11 @@
+= Playbooks SOAR para Microsoft Sentinel y Splunk
+:allow-uri-read: 
+
+
+
+
+=== Playbooks SOAR para Microsoft Sentinel y Splunk
+
+Ransomware Resilience ahora ofrece libros de jugadas de orquestación, automatización y respuesta de seguridad (SOAR) para link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooksp["Microsoft Sentinel"^] y link:https://github.com/splunk-soar-connectors/netappransomwareresilience["Splunk"^]. Los libros de jugadas permiten una gestión más sencilla de la respuesta a amenazas, automatizando tareas de prueba y esfuerzos esenciales de respuesta al ransomware, incluyendo la creación de instantáneas y poner un volumen fuera de línea.
+
+Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html["Integra los playbooks SOAR"^].

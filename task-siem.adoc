@@ -23,6 +23,9 @@ Ransomware Resilience es compatible con los siguientes SIEMs:
 Antes de habilitar SIEM en Ransomware Resilience, debe configurar su sistema SIEM.
 
 
+TIP: NetApp Ransomware Resilience también es compatible con link:reference-soar.html["libros de jugadas de orquestación, automatización y respuesta (SOAR) de seguridad"^].
+
+
 
 == Datos de eventos enviados a un SIEM
 
@@ -256,4 +259,11 @@ NOTE: La información que ingrese dependerá del SIEM que haya seleccionado.
 +
 La página de Configuración muestra "Conectado".
 
+
+
+
+
+== Próximos pasos
+
+* link:reference-soar.html["Integra un playbook SOAR"]
 
