@@ -498,7 +498,6 @@
   <block id="6c66a8a541d348bc3f3a48dc2e58492c" category="list-text">Seleccione un sistema de prueba.</block>
   <block id="9d5c8a6e3597683b4559e2c596a2ead9" category="list-text">Seleccione un SVM de almacenamiento de prueba.</block>
   <block id="09cb5a7830e25d2457463ef0f909f5a0" category="list-text">Si seleccionó una máquina virtual de almacenamiento CIFS (SMB), aparecerán los campos **Nombre de usuario** y **Contraseña**.  Introduzca el nombre de usuario y la contraseña para la máquina virtual de almacenamiento.</block>
-  <block id="6773f809e3f238c4a8a25adcd8e46f13" category="list-text">Introduzca el nombre de una nueva carga de trabajo de prueba que se creará.  No incluya guiones en el nombre.</block>
   <block id="b5ffafbc91e02195737c6716b418141e" category="admonition">Puede editar la configuración del simulacro de preparación más tarde utilizando la página Configuración.</block>
   <block id="187666a138e7f6f15224af7bcef93040" category="section-title">Iniciar un simulacro de preparación</block>
   <block id="b30d5003eb8b470d6df77c1edbb96724" category="paragraph">Después de configurar el simulacro de preparación, puede iniciarlo.</block>
@@ -538,7 +537,6 @@
   <block id="402892b652810818eb61e703ca333d06" category="list-text">Seleccione *Marcar como necesario restaurar*.</block>
   <block id="f1a43a1191cd8e11a5db942f4175b31f" category="list-text">Revise la confirmación y seleccione *Marcar como necesaria la restauración* en el cuadro de confirmación.</block>
   <block id="63d4b8d17265522f12b229a2016b08c9" category="list-text">En el menú Resiliencia ante ransomware, seleccione *Recuperación*.</block>
-  <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">Seleccione la carga de trabajo de prueba marcada con "Simulacro de preparación" que desea restaurar.</block>
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">Seleccione *Restaurar*.</block>
   <block id="98576e747c7efb09ca0d1e50a58ae308" category="list-text">En la página Restaurar, proporcione información para la restauración:</block>
   <block id="05e2304cb46b92601ea1e826aa3fec0b" category="list-text">Seleccione la copia de la instantánea de origen.</block>
@@ -555,7 +553,6 @@
   <block id="b707d985234424bd425b96580911950e" category="list-text">Seleccione la alerta nuevamente.</block>
   <block id="2da9a9f4e6a92f5857d147337ae308f7" category="list-text">Indique el estado seleccionando *Editar estado* y cambie el estado a uno de los siguientes:</block>
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">Descartado: si sospecha que la actividad no es un ataque de ransomware, cambie el estado a Descartado.</block>
-  <block id="ff8d215b189dca41bf900d6545392594" category="admonition">Después de descartar un ataque, no puedes revertirlo.  Si descarta una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente.  Si descarta la alerta, el simulacro de preparación se considerará completado.</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">Resuelto: El incidente ha sido mitigado.</block>
   <block id="1be5568d0c3f299b7d0fa2b810d4b90d" category="section-title">Revisar los informes sobre el simulacro de preparación</block>
   <block id="1618fcb06831249fd4142102d83577f5" category="paragraph">Una vez finalizado el simulacro de preparación, es posible que desees revisar y guardar un informe sobre el simulacro.</block>
@@ -2209,4 +2206,7 @@
   <block id="d0c1ba6e120f697911d5bd92a51f0322" category="paragraph">Ransomware Resilience ahora ofrece un manual de orquestación, automatización y respuesta de seguridad (SOAR) para <block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block>. El manual permite una gestión más sencilla de la respuesta ante amenazas, automatizando tareas y pruebas y apoyando los esfuerzos esenciales de respuesta ante ransomware, incluyendo la creación de instantáneas y poner un volumen fuera de línea.</block>
   <block id="dce0959f50faa93a47d141f615365404" category="paragraph">Ransomware Resilience ofrece guías para Google SecOps, Microsoft Sentinel y Splunk. Revisa las páginas respectivas de GitHub para detalles sobre la configuración.</block>
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">Se recomienda no utilizar <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> con Azure NetApp Files debido a que las API de Azure NetApp Files bloquean las acciones automatizadas.</block>
+  <block id="4fcce21aba16e6a89d3c15cbcce7db5a" category="list-text">Introduce el nombre de la carga de trabajo de prueba. No incluyas guiones en el nombre.</block>
+  <block id="922e09477f5763a3965ac29db0b9139d" category="list-text">Selecciona la carga de trabajo de prueba marcada con "Simulacro de preparación" que quieres restaurar.</block>
+  <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">Después de descartar un ataque, no puedes volver a cambiarlo. Si descartas una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente. Si descartas la alerta, el simulacro de preparación se considera completo.</block>
 </blocks>

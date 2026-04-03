@@ -53,7 +53,7 @@ image:screen-settings-alert-drill-configure.png["Configurar la página de simula
 .. Seleccione un SVM de almacenamiento de prueba.
 .. Si seleccionó una máquina virtual de almacenamiento CIFS (SMB), aparecerán los campos **Nombre de usuario** y **Contraseña**.  Introduzca el nombre de usuario y la contraseña para la máquina virtual de almacenamiento.
 .. Seleccione el tipo de simulacro de preparación. Para una recuperación manual de una violación de datos de cifrado, elija **Recuperación personalizada**. Para recuperarse de una actividad de usuario sospechosa, elija **Violación de datos**.
-.. Introduzca el nombre de una nueva carga de trabajo de prueba que se creará.  No incluya guiones en el nombre.
+.. Introduce el nombre de la carga de trabajo de prueba. No incluyas guiones en el nombre.
 
 
 . Seleccione *Guardar*.
@@ -151,7 +151,7 @@ Después de revisar la alerta del simulacro de preparación, restaure la carga d
 ** Revise la confirmación y seleccione *Marcar como necesaria la restauración* en el cuadro de confirmación.
 +
 *** En el menú Resiliencia ante ransomware, seleccione *Recuperación*.
-*** Seleccione la carga de trabajo de prueba marcada con "Simulacro de preparación" que desea restaurar.
+*** Selecciona la carga de trabajo de prueba marcada con "Simulacro de preparación" que quieres restaurar.
 *** Seleccione *Restaurar*.
 *** En la página Restaurar, proporcione información para la restauración:
 
@@ -189,7 +189,7 @@ Después de revisar la alerta del simulacro de preparación y restaurar la carga
 ** Descartado: si sospecha que la actividad no es un ataque de ransomware, cambie el estado a Descartado.
 +
 
-IMPORTANT: Después de descartar un ataque, no puedes revertirlo.  Si descarta una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente.  Si descarta la alerta, el simulacro de preparación se considerará completado.
+IMPORTANT: Después de descartar un ataque, no puedes volver a cambiarlo. Si descartas una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente. Si descartas la alerta, el simulacro de preparación se considera completo.
 
 ** Resuelto: El incidente ha sido mitigado.
 
