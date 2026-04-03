@@ -27,7 +27,7 @@ Los playbooks de Ransomware Resilience ofrecen las siguientes capacidades:
 
 == Playbooks
 
-Ransomware Resilience ofrece guías para Microsoft Sentinel y Splunk. Revisa las páginas respectivas de GitHub para detalles sobre la configuración.
+Ransomware Resilience ofrece guías para Google SecOps, Microsoft Sentinel y Splunk. Revisa las páginas respectivas de GitHub para detalles sobre la configuración.
 
 * link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresilience["Google SecOps"^]
 * link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["Microsoft Sentinel"^]
