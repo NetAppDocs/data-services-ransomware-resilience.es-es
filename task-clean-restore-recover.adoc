@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: task-clean-restore-recover.html 
+keywords: clean room, clean restore, secure recovery, recover, isolated recovery environment, ire 
+summary: Ransomware Resilience te permite controlar y sanear tus cargas de trabajo con una restauración limpia. 
+---
+= Recupera cargas de trabajo con restauración limpia en NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Con NetApp Ransomware Resilience, puedes realizar una recuperación guiada tras un ataque de ransomware basado en cifrado usando una restauración limpia. La restauración limpia identifica rutas de recuperación optimizadas para minimizar la pérdida de datos y devolver tus cargas de trabajo en línea en el menor tiempo posible.
+
+La opción de restauración limpia es una alternativa a xref:task-custom-restore.html[opción de restauración personalizada].
+
+
+
+== Antes de empezar
+
+Debes haber configurado un link:task-clean-restore.html["entorno de recuperación aislado"^] antes de poder realizar una restauración limpia.
+
+*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
+
+
+
+== Consideraciones
+
+* Sólo puedes realizar una restauración limpia para un ataque de ransomware basado en cifrado.
+* Si el entorno de recuperación aislado no tiene capacidad para una nueva operación, se pone en cola hasta que haya disponibilidad.
++
+** Puedes supervisar el estado de las operaciones de restauración limpia activas y en cola en cualquier momento en el panel de Ransomware Resilience Recovery.
+
+
+* Cuando inicias una restauración limpia, el volumen original se desmonta, lo que puede interrumpir el acceso IO.
+
+
+
+
+== Realizar una restauración limpia
+
+. En la sección **Recuperación**, selecciona la carga de trabajo que quieres restaurar. Selecciona **Restaurar**.
+. En las opciones de Tipo de restauración, selecciona **Restauración limpia** y luego **Siguiente**.
+. Selecciona el entorno de recuperación aislado que quieres usar y luego **Siguiente**.
+. Revisa el entorno de recuperación aislado, confirmando que es la ubicación correcta. Selecciona **Restaurar**.
+. Ransomware Resilience realiza la configuración necesaria. Una vez que la configuración finaliza correctamente, Ransomware Resilience indica **Setup complete**. Para proceder al análisis, selecciona **Siguiente**.
+. Una vez finalizada la instalación, selecciona **Ejecutar análisis**. NetApp Ransomware Resilience analiza todos los puntos de restauración disponibles en los siete días anteriores al evento de ransomware, mostrando la fecha y el tipo de punto de restauración.
++
+image:screenshot-clean-room-analysis.png["Captura de pantalla del paso de análisis de restauración limpia."]
+
+. Una vez finalizado el análisis, selecciona **Siguiente** para planificar tu recuperación. NetApp Ransomware Resilience presenta dos opciones: **Mínima pérdida de datos** y **Último punto de restauración no afectado**. Selecciona cualquiera de las opciones y, si quieres, revisa los datos de archivos individuales para cualquiera de los puntos de restauración.
++
+Para ver datos granulares de eventos de archivos, selecciona un archivo para analizar su estado de cifrado; cuándo se creó, modificó o eliminó y qué punto de restauración corresponde a qué acción.
+
++
+image:clean-restore-plan.png["Captura de pantalla del paso del plan de restauración limpio."]
+
+. Después de elegir el punto de restauración, selecciona **Siguiente** para empezar a limpiar tus archivos.
+. Ransomware Resilience comienza limpiando la carga de trabajo.
++
+Cuando finalice la limpieza, selecciona **Iniciar recuperación** para iniciar la recuperación.
+
+. Elige si quieres guardar la carga de trabajo original. Para no guardar la carga de trabajo original, selecciona **No, reemplazar la carga de trabajo original**. Para guardarla, selecciona **Sí, guardar la carga de trabajo original** y luego introduce un nuevo nombre para la carga de trabajo.
+. Selecciona **Iniciar recuperación** para iniciar la recuperación.
+. Cuando finalice la recuperación, selecciona **Siguiente** para pasar a la fase final.
+. Selecciona **Liberar recursos y finalizar** para liberar los recursos y cerrar la sala blanca. Para confirmar que quieres liberar el recurso, selecciona **Finalizar**.
+

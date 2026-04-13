@@ -4,7 +4,7 @@ permalink: task-classify.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
 summary: Mejore la seguridad y el cumplimiento de la privacidad de sus datos con NetApp Data Classification para identificar si sus datos incluyen información personal identificable o privada. 
 ---
-= Buscar información personal identificable en NetApp Ransomware Resilience
+= Identifica los riesgos para la privacidad con NetApp Ransomware Resilience
 :allow-uri-read: 
 
 

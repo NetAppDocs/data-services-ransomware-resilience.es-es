@@ -64,8 +64,16 @@ sidebar:
       entries:
       - title: Responder a una alerta detectada
         url: "/rp-use-alert.html"
-      - title: Recuperarse de un ataque de ransomware
+      - title: Revisar el estado de la recuperación
         url: "/rp-use-recover.html"
+      - title: Recupera con una restauración personalizada
+        url: "/rp-use-recover.html"
+      - title: Realizar una restauración limpia
+        entries:
+        - title: Crear un entorno de recuperación aislado
+          url: "/task-clean-restore.html"
+        - title: Recuperar con restauración limpia
+          url: "/task-clean-restore-recover.html"
     - title: Realiza un simulacro de preparación
       url: "/rp-start-simulate.html"
     - title: Configura SIEM

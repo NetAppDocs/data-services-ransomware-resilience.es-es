@@ -18,6 +18,34 @@ Descubra las novedades en NetApp Ransomware Resilience.
 
 
 
+== 13 abril 2026
+
+
+
+=== Restauración limpia
+
+Ransomware Resilience ahora es compatible con las restauraciones limpias, una nueva opción de recuperación que te ayuda a recuperarte rápida y fácilmente de los ataques de ransomware. Las restauraciones limpias ofrecen flujos de trabajo guiados que identifican los puntos de restauración óptimos para que tus cargas de trabajo vuelvan a funcionar mientras se minimiza el tiempo de inactividad. Los flujos de trabajo de la restauración limpia también proporcionan información a nivel de archivos sobre tus datos, asegurando que puedas restaurar cargas de trabajo libres de malware que evitan la reinfección y minimizan la pérdida de datos.
+
+Para obtener información sobre las configuraciones compatibles y cómo configurar tu sistema para una restauración limpia, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Crear un entorno de recuperación aislado"^]. Para saber cómo recuperar con una restauración limpia, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover["Recupera cargas de trabajo con una restauración limpia"^].
+
+
+
+=== Soporte SIEM para Splunk Enterprise
+
+Ransomware Resilience ahora proporciona soporte de gestión de eventos de información de seguridad (SIEM) para Splunk Enterprise, lo que te permite centralizar los datos de registro y eventos y agilizar el análisis y la detección de amenazas.
+
+Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Conecta NetApp Ransomware Resilience a un SIEM"^].
+
+
+
+=== Mejora de la actividad del usuario
+
+La información sobre los eventos de violación de datos ahora se conserva durante 13 meses después de un incidente, lo que permite un registro más prolongado para tus necesidades de informes.
+
+Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-user-behavior.html["Conoce la detección de la actividad de los usuarios"^].
+
+
+
 == 31 de marzo de 2026
 
 

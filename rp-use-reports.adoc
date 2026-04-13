@@ -12,29 +12,25 @@ summary: Con NetApp Ransomware Resilience, puede descargar informes que muestran
 
 
 [role="lead"]
-NetApp Ransomware Resilience proporciona informes en formatos CSV y JSON que muestran detalles de volúmenes admitidos y no admitidos, simulacros de preparación para ataques, protección, alertas y recuperación. Con los informes, puedes guardar y revisar informes sin conexión sobre simulacros, postura de protección, alertas y eventos de recuperación.
+NetApp Ransomware Resilience proporciona informes en formatos JSON que muestran detalles de volúmenes admitidos y no admitidos, simulacros de preparación para ataques, protección, alertas y recuperación, lo que te permite evaluar y revisar los eventos de ransomware y la preparación sin conexión.
 
 
 TIP: Antes de descargar los archivos, actualice el panel para capturar los datos más recientes en sus informes.
 
 *Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de la organización, administrador de carpeta o proyecto, administrador de resiliencia ante ransomware o visor de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
-¿Qué datos puedes descargar?  Puedes descargar archivos desde cualquiera de las opciones del menú principal:
+*¿Qué informes puedo descargar?*
 
 * **Resumen**: Incluye listas de cargas de trabajo admitidas y no admitidas, acciones recomendadas para mejorar su postura de resiliencia cibernética e información capturada en el panel de resiliencia ante ransomware.
 * *Protección*: Incluye el estado y los detalles de todas las cargas de trabajo, incluido el número total de cargas protegidas y en riesgo.
 * *Alertas*: Incluye el estado y los detalles de todas las alertas, incluido el número total de alertas e instantáneas automatizadas.
 * *Recuperación*: incluye el estado y los detalles de todas las cargas de trabajo que necesitan restaurarse, incluido el número total de cargas de trabajo marcadas como "Restauración necesaria", "En progreso", "Restauración fallida" y "Restaurada exitosamente".
-* *Informes*: Puedes exportar datos de cualquiera de las páginas y descargar los archivos.
+* *Simulacros de preparación*: Incluye resultados de ataques simulados para resaltar áreas de mejora.
+* *Restauración limpia*: Incluye detalles sobre las cargas de trabajo restauradas con restauración limpia.
 +
-
-NOTE: Puede descargar informes de simulacros de preparación únicamente desde la página *Informes*.
-
+Debes tener un entorno de recuperación aislado (IRE) activo para generar informes de restauración limpia. Los informes de restauración limpia no están disponibles después de que se haya eliminado el IRE.
 
 
-Si descarga archivos CSV o JSON desde la página Protección, Alertas o Recuperación, los datos muestran solo los datos de esa página.
-
-Los archivos CSV o JSON incluyen datos de todas las cargas de trabajo en todos los sistemas de consola.
 
 .Pasos
 . Desde la navegación izquierda de la Consola, seleccione *Protección* > *Resiliencia ante ransomware*.

@@ -82,7 +82,7 @@ Si es la primera vez que inicia sesión en este servicio, aparecerá la página 
 +
 image:screen-landing.png["Captura de pantalla de la página de destino de Ransomware Resilience"]
 
-. Si aún no ha agregado un agente de consola para otros servicios,link:ps://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["añadir uno"^] .
+. Si aún no has añadido un agente de Consola para otros servicios, link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["añadir uno"^].
 . En la página de inicio de Resiliencia contra ransomware, seleccione *Comenzar por descubrir cargas de trabajo* para descubrir sus cargas de trabajo.
 +
 
@@ -240,7 +240,7 @@ Necesita el número de serie de Ransomware Resilience.  Localice este número en
 
 .Pasos
 . Después de obtener la licencia, regrese a Ransomware Resilience.  Seleccione la opción *Ver métodos de pago* en la parte superior derecha.  O bien, en el mensaje que indica que la prueba gratuita está por vencer, seleccione *Suscribirse o comprar una licencia*.
-. Seleccione *Agregar licencia* para ir a la página de Licencias y suscripciones de la consola.
+. Selecciona *Añadir licencia* para ir a la página Licenses and subscriptions de la consola.
 . Desde la pestaña *Licencias de servicios de datos*, seleccione *Agregar licencia*.
 +
 image:screen-license-dw-add-license.png["Captura de pantalla de la página Agregar licencia."]

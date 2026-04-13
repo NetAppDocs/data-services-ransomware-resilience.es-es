@@ -1,0 +1,12 @@
+= 
+:allow-uri-read: 
+
+
+* Sólo puedes realizar una restauración limpia para un ataque de ransomware basado en cifrado.
+* Si el entorno de recuperación aislado no tiene capacidad para una nueva operación, se pone en cola hasta que haya disponibilidad.
++
+** Puedes supervisar el estado de las operaciones de restauración limpia activas y en cola en cualquier momento en el panel de Ransomware Resilience Recovery.
+
+
+* Cuando inicias una restauración limpia, el volumen original se desmonta, lo que puede interrumpir el acceso IO.
+
