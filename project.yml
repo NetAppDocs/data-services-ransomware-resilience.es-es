@@ -68,7 +68,7 @@ sidebar:
         url: "/rp-use-recover.html"
       - title: Recupera con una restauración personalizada
         url: "/rp-use-recover.html"
-      - title: Realizar una restauración limpia
+      - title: Realiza una restauración limpia
         entries:
         - title: Crear un entorno de recuperación aislado
           url: "/task-clean-restore.html"

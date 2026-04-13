@@ -2,23 +2,21 @@
 :allow-uri-read: 
 
 
-[NOTE]
 .Datos SVM de sala limpia LIF IP (crr-data-LIF-IP)
-====
-Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omite este requisito de dirección IP LIF de datos SVM de sala limpia.
-
-====
-* Proporciona la dirección IP para la sala limpia SVM data LIF. Toma nota de la dirección IP: necesitas esta dirección IP durante el proceso de configuración IRE.
+* Proporciona la dirección IP para la clean room SVM data LIF. Toma nota de la dirección IP: necesitas esta dirección IP durante el proceso de configuración de IRE.
 +
 ** Para Cloud Volumes ONTAP con AWS utilizando una restauración limpia de nube a nube, asegúrate de que la dirección IP está asignada a la Elastic Network Interface.
 
 
-* Permite el enrutamiento desde la dirección IP LIF de datos SVM a la IRE.
+* Permitir el enrutamiento desde la dirección IP LIF de datos SVM a la IRE.
 
+
+
+NOTE: Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omite este requisito de dirección IP LIF de datos SVM de sala limpia.
 
 .Tabla de rutas del entorno de producción
 * La tabla de rutas de producción debe permitir el tráfico desde la subred IRE a la dirección IP LIF de restauración de datos limpia. Debes agregar esta ruta a la tabla de rutas de producción.
-* Los grupos de seguridad y cortafuegos del clúster ONTAP de producción deben permitir el tráfico entrante NFSv4 y NFSv3 a la dirección IP LIF de restauración de datos limpia. El cortafuegos debe estar abierto para la entrada desde el rango CIDR de IRE:
+* Los grupos de seguridad y cortafuegos del clúster ONTAP de producción deben permitir el tráfico entrante NFSv4 y NFSv3 a la dirección IP LIF de restauración de datos limpia. El cortafuegos debe estar abierto para ingreso desde el rango CIDR de IRE:
 +
 [cols="1,1,1,1"]
 |===
@@ -61,7 +59,8 @@ Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omite est
 
 .Permisos en la nube
 * Ransomware Resilience necesita la clave de acceso y el secreto de AWS con los permisos de IAM correctos para llevar a cabo la restauración limpia en un entorno de AWS. link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["Crear una política IAM en AWS"^] con los siguientes permisos, luego adjunta la política a un usuario recién creado. Después de crear el usuario, genera las credenciales de IAM y proporciónalas a la restauración limpia.
-+
+
+
 [source, json]
 ----
 {
@@ -132,4 +131,3 @@ Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omite est
     ]
 }
 ----
-

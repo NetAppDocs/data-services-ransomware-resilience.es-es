@@ -82,7 +82,7 @@ Si es la primera vez que inicia sesión en este servicio, aparecerá la página 
 +
 image:screen-landing.png["Captura de pantalla de la página de destino de Ransomware Resilience"]
 
-. Si aún no has añadido un agente de Consola para otros servicios, link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["añadir uno"^].
+. Si aún no has añadido un agente de Console para otros servicios, link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["añadir uno"^].
 . En la página de inicio de Resiliencia contra ransomware, seleccione *Comenzar por descubrir cargas de trabajo* para descubrir sus cargas de trabajo.
 +
 

@@ -14,7 +14,7 @@ summary: Ransomware Resilience te permite controlar y sanear tus cargas de traba
 
 
 [role="lead"]
-NetApp Ransomware Resilience ofrece restauraciones limpias, que proporcionan una recuperación guiada después de ataques de ransomware. Para realizar una restauración limpia, primero tienes que crear un entorno de recuperación aislado (IRE), ya sea en las instalaciones o en un entorno de nube compatible. En el IRE, creas una sala limpia donde Ransomware Resilience aísla la carga de trabajo para identificar qué archivos están limpios y cuáles están afectados por ransomware.
+NetApp Ransomware Resilience ofrece restauraciones limpias, que proporcionan una recuperación guiada después de ataques de ransomware. Para realizar una restauración limpia, primero debes crear un entorno de recuperación aislado (IRE), ya sea en las instalaciones o en un entorno de nube compatible. En el IRE, creas una sala limpia donde Ransomware Resilience aísla la carga de trabajo para identificar qué archivos están limpios y cuáles están afectados por ransomware.
 
 *Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
 
@@ -25,12 +25,12 @@ NetApp Ransomware Resilience ofrece restauraciones limpias, que proporcionan una
 Cuando realizas una restauración limpia, Ransomware Resilience te guía a través de un proceso de varios pasos que optimiza la recuperación.
 
 * **SETUP**: Para realizar una restauración limpia, primero tienes que crear una IRE y luego seleccionar la carga de trabajo que quieres restaurar. Ransomware Resilience crea una sala limpia donde se realizan todas las acciones para la carga de trabajo.
-* **ANÁLISIS**: En la sala blanca, NetApp Ransomware Resilience analiza todas las instantáneas para ver si hay cifrado. Clean restore determina un mapa de recuperación para determinar el plan de recuperación óptimo.
+* **ANÁLISIS**: En la sala blanca, Ransomware Resilience analiza todas las instantáneas para ver si hay cifrado. Clean restore determina un mapa de recuperación para determinar el plan de recuperación óptimo.
 +
-Una vez que se descubre un punto de restauración sin archivos afectados, se omiten todos los puntos de restauración anteriores. Por ejemplo, si el evento de ransomware ocurrió el 10 de octubre y se descubrió un punto de restauración el 7 de octubre a las 10:21 AM sin archivos afectados, se omiten todos los puntos de restauración anteriores al 7 de octubre a las 10:21 AM.
+Una vez que se descubre un punto de restauración sin archivos afectados, se omiten todos los puntos de restauración anteriores. Por ejemplo, si el evento de ransomware ocurrió el 10 de octubre, y se descubrió un punto de restauración el 7 de octubre a las 10:21 AM sin archivos afectados, se omiten todos los puntos de restauración anteriores al 7 de octubre a las 10:21 AM.
 
 +
-El paso de análisis también muestra el número de archivos revisados, indicando cuáles están afectados y cuáles no.
+El paso de análisis también muestra el número de ficheros revisados, indicando cuáles están afectados y cuáles no.
 
 * **PLAN**: Elige las opciones previstas para la recuperación:
 +
@@ -42,7 +42,7 @@ También puedes ver los historiales de los archivos en el paso de planificación
 
 
 * **LIMPIEZA**: NetApp Ransomware Resilience elimina el malware del punto de recuperación. Si algún archivo no se puede limpiar, se excluye de la recuperación y se pone en cuarentena en una ubicación separada.
-* **RESTAURAR**: Ransomware Resilience restaura los datos limpios en el entorno de origen.
+* **RESTAURAR**: NetApp Ransomware Resilience restaura los datos limpios en el entorno de origen.
 * **END**: Ransomware Resilience proporciona un resumen detallado del proceso y cierra la sala blanca, liberando los recursos aprovisionados durante la configuración para eliminar futuros costes medidos.
 
 
@@ -50,7 +50,7 @@ También puedes ver los historiales de los archivos en el paso de planificación
 
 == Configuraciones compatibles
 
-* Sólo puedes crear una IRE por cuenta de NetApp Ransomware Resilience. Cada IRE puede tener tres salas limpias.
+* Sólo puedes crear una IRE por cuenta de Ransomware Resilience. Cada IRE puede tener tres salas limpias.
 * Actualmente, la restauración limpia solo es compatible con archivos compartidos NAS (NFS/CIFS).
 * Debes realizar una restauración limpia en el entorno de origen.
 * Puedes crear una IRE en la nube o en las instalaciones. Actualmente, se admiten las siguientes configuraciones:
@@ -62,21 +62,21 @@ También puedes ver los historiales de los archivos en el paso de planificación
 | En las instalaciones (solo sistemas AFF o FAS)* | En las instalaciones (VMware vCenter) | N/A 
 
 
-| En las instalaciones (solo sistemas AFF o FAS)* | Cloud: AWS  a| 
+| En las instalaciones (solo sistemas AFF o FAS)* | Nube: AWS  a| 
 ** EE.UU. Este 1
 ** EU Central 1
 
 
 
 
-| Nube: Cloud Volumes ONTAP con AWS* | Cloud: AWS  a| 
+| Nube: Cloud Volumes ONTAP con AWS* | Nube: AWS  a| 
 ** EE.UU. Este 1
 ** EU Central 1
 
 
 
 
-| Nube: Amazon FSxN para ONTAP | Cloud: AWS  a| 
+| Nube: Amazon FSxN para ONTAP | Nube: AWS  a| 
 ** EE.UU. Este 1
 ** EU Central 1
 
@@ -100,21 +100,21 @@ NOTE: Realizar una restauración limpia en un entorno basado en cloud puede incu
 ** Puedes supervisar el estado de las operaciones de restauración limpia activas y en cola en cualquier momento en el panel de Ransomware Resilience Recovery.
 
 
-* Cuando inicias una restauración limpia, el volumen original se desmonta, lo que puede interrumpir el acceso IO.
+* Cuando inicias una restauración limpia, se desmonta el volumen original, lo que puede interrumpir el acceso IO.
 
 
 
 
 === Consideraciones adicionales para entornos locales
 
-Si estás desplegando un IRE local, cuando se clona una VM Windows para el análisis de recuperación en la restauración limpia, la VM clonada conserva la misma configuración que la fuente. Esto puede causar conflictos:
+Si estás desplegando un IRE local, cuando se clona una VM Windows para el análisis de recuperación en la restauración limpia, la VM clonada conserva la misma configuración que la original. Esto puede causar conflictos:
 
 * Utilizar el mismo identificador de seguridad (SID) provoca conflictos de autenticación y seguridad.
 * Utilizar el mismo nombre de ordenador (CN) provoca conflictos en la red.
 * Utilizar la misma identidad de máquina provoca problemas de licencia y activación.
 
 
-Para evitar estos conflictos, Ransomware Resilience realiza sysprep en la VM clonada, que restablece el SID, el CN y la identidad de la máquina. Restablecer estos valores garantiza que la VM clonada funcione como una instancia única e independiente sin interferir con la VM de origen.
+Para evitar estos conflictos, Ransomware Resilience realiza sysprep en la máquina virtual clonada, que restablece el SID, el CN y la identidad de la máquina. El restablecimiento de estos valores garantiza que la máquina virtual clonada funcione como una instancia única e independiente sin interferir con la máquina virtual de origen.
 
 
 
@@ -132,11 +132,11 @@ Por defecto, el proceso de restauración limpia analiza instantáneas del entorn
 
 La restauración limpia se ofrece como parte de Ransomware Resilience. No se requiere ninguna licencia adicional para realizar una restauración limpia o crear un IRE.
 
-Activar la restauración limpia puede incurrir en cargos de terceros proveedores de la nube. Dependiendo de cómo uses el servicio, estos cargos pueden repetirse mientras existan los entornos de restauración limpia.
+Activar la restauración limpia puede incurrir en cargos de terceros proveedores de cloud. Dependiendo de cómo uses el servicio, estos cargos pueden repetirse mientras existan los entornos de restauración limpia.
 
 Los cargos a terceros pueden incluir la creación y despliegue de instancias de computación y capacidad adicional de almacenamiento de producción para limpieza y recuperación. Considera los siguientes ejemplos:
 
-* Cuando se implementa una IRE en AWS y se inicia la restauración limpia, se implementan dos instancias AWS EC2 t3.medium en la sala limpia dentro de la IRE para limpiar el cifrado y el malware.
+* Cuando se implementa una IRE en AWS y inicias la restauración limpia, se implementan dos instancias AWS EC2 t3.medium en la sala limpia dentro de la IRE para limpiar el cifrado y el malware.
 * En Cloud Volumes ONTAP, la restauración limpia crea una VM de almacenamiento de sala limpia para volúmenes de metadatos y clones de instantáneas para análisis.
 
 
@@ -147,7 +147,7 @@ Los cargos a terceros pueden incluir la creación y despliegue de instancias de 
 Asegúrate de haber completado los requisitos previos para el tipo de despliegue de restauración limpia que elegiste. Selecciona la pestaña para la configuración de IRE que elegiste.
 
 
-NOTE: Cuando creas la IRE, debes agregar cada sistema (primario o secundario) que quieras usar para el análisis durante el paso de selección del sistema al crear la IRE.
+NOTE: Cuando crees la IRE, debes agregar cada sistema (primario o secundario) que quieras usar para el análisis durante el paso de selección de sistemas al crear la IRE.
 
 [role="tabbed-block"]
 ====
@@ -157,23 +157,21 @@ Este diagrama ilustra un ejemplo de configuración de restauración limpia de nu
 
 image::diagram-clean-recovery-cloud-cloud.png[Diagrama de restauración limpia de nube a nube]
 
---
-====
-Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omite este requisito de dirección IP LIF de datos SVM de sala limpia.
-
-[]
-====
-* Proporciona la dirección IP para la sala limpia SVM data LIF. Toma nota de la dirección IP: necesitas esta dirección IP durante el proceso de configuración IRE.
+.Datos SVM de sala limpia LIF IP (crr-data-LIF-IP)
+* Proporciona la dirección IP para la clean room SVM data LIF. Toma nota de la dirección IP: necesitas esta dirección IP durante el proceso de configuración de IRE.
 +
 ** Para Cloud Volumes ONTAP con AWS utilizando una restauración limpia de nube a nube, asegúrate de que la dirección IP está asignada a la Elastic Network Interface.
 
 
-* Permite el enrutamiento desde la dirección IP LIF de datos SVM a la IRE.
+* Permitir el enrutamiento desde la dirección IP LIF de datos SVM a la IRE.
 
+
+
+NOTE: Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omite este requisito de dirección IP LIF de datos SVM de sala limpia.
 
 .Tabla de rutas del entorno de producción
 * La tabla de rutas de producción debe permitir el tráfico desde la subred IRE a la dirección IP LIF de restauración de datos limpia. Debes agregar esta ruta a la tabla de rutas de producción.
-* Los grupos de seguridad y cortafuegos del clúster ONTAP de producción deben permitir el tráfico entrante NFSv4 y NFSv3 a la dirección IP LIF de restauración de datos limpia. El cortafuegos debe estar abierto para la entrada desde el rango CIDR de IRE:
+* Los grupos de seguridad y cortafuegos del clúster ONTAP de producción deben permitir el tráfico entrante NFSv4 y NFSv3 a la dirección IP LIF de restauración de datos limpia. El cortafuegos debe estar abierto para ingreso desde el rango CIDR de IRE:
 +
 [cols="1,1,1,1"]
 |===
@@ -216,7 +214,8 @@ Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omite est
 
 .Permisos en la nube
 * Ransomware Resilience necesita la clave de acceso y el secreto de AWS con los permisos de IAM correctos para llevar a cabo la restauración limpia en un entorno de AWS. link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["Crear una política IAM en AWS"^] con los siguientes permisos, luego adjunta la política a un usuario recién creado. Después de crear el usuario, genera las credenciales de IAM y proporciónalas a la restauración limpia.
-+
+
+
 [source, json]
 ----
 {
@@ -287,31 +286,28 @@ Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omite est
     ]
 }
 ----
-
-
 --
-
+.De las instalaciones a la nube
 --
-Este diagrama ilustra un ejemplo de configuración de restauración limpia de local a cloud. Revisa el diagrama y los recursos que necesitas configurar antes de poder crear la IRE.
+Este diagrama ilustra un ejemplo de configuración de restauración limpia de local a nube. Revisa el diagrama y los recursos que necesitas configurar antes de poder crear la IRE.
 
-image:diagram-clean-recovery-cloud-on-prem.png["Diagrama de restauración limpia de cloud a local"]
+image:diagram-clean-recovery-cloud-on-prem.png["Diagrama de restauración limpia de cloud a on-prem"]
 
-====
-Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omite este requisito de dirección IP LIF de datos SVM de sala limpia.
-
-[]
-====
-* Proporciona la dirección IP para la sala limpia SVM data LIF. Toma nota de la dirección IP: necesitas esta dirección IP durante el proceso de configuración IRE.
+.Datos SVM de sala limpia LIF IP (crr-data-LIF-IP)
+* Proporciona la dirección IP para la clean room SVM data LIF. Toma nota de la dirección IP: necesitas esta dirección IP durante el proceso de configuración de IRE.
 +
 ** Para Cloud Volumes ONTAP con AWS utilizando una restauración limpia de nube a nube, asegúrate de que la dirección IP está asignada a la Elastic Network Interface.
 
 
-* Permite el enrutamiento desde la dirección IP LIF de datos SVM a la IRE.
+* Permitir el enrutamiento desde la dirección IP LIF de datos SVM a la IRE.
 
+
+
+NOTE: Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omite este requisito de dirección IP LIF de datos SVM de sala limpia.
 
 .Tabla de rutas del entorno de producción
 * La tabla de rutas de producción debe permitir el tráfico desde la subred IRE a la dirección IP LIF de restauración de datos limpia. Debes agregar esta ruta a la tabla de rutas de producción.
-* Los grupos de seguridad y cortafuegos del clúster ONTAP de producción deben permitir el tráfico entrante NFSv4 y NFSv3 a la dirección IP LIF de restauración de datos limpia. El cortafuegos debe estar abierto para la entrada desde el rango CIDR de IRE:
+* Los grupos de seguridad y cortafuegos del clúster ONTAP de producción deben permitir el tráfico entrante NFSv4 y NFSv3 a la dirección IP LIF de restauración de datos limpia. El cortafuegos debe estar abierto para ingreso desde el rango CIDR de IRE:
 +
 [cols="1,1,1,1"]
 |===
@@ -354,7 +350,8 @@ Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omite est
 
 .Permisos en la nube
 * Ransomware Resilience necesita la clave de acceso y el secreto de AWS con los permisos de IAM correctos para llevar a cabo la restauración limpia en un entorno de AWS. link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["Crear una política IAM en AWS"^] con los siguientes permisos, luego adjunta la política a un usuario recién creado. Después de crear el usuario, genera las credenciales de IAM y proporciónalas a la restauración limpia.
-+
+
+
 [source, json]
 ----
 {
@@ -425,29 +422,27 @@ Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omite est
     ]
 }
 ----
-
-
 --
-
+.De local a local
 --
 Este diagrama ilustra un ejemplo de configuración de restauración limpia de local a local. Revisa el diagrama y los recursos que necesitas configurar antes de poder crear la IRE.
 
-image:diagram-clean-recovery-on-prem.png["Diagrama de restauración limpia de cloud a local"]
+image:diagram-clean-recovery-on-prem.png["Diagrama de restauración limpia de cloud a on-prem"]
 
 .Datos SVM de sala limpia LIF IP (crr-data-LIF-IP)
-* Se crea una máquina virtual de almacenamiento (SVM) en cada uno de los sistemas que selecciones para conectarte a la IRE para restaurar cargas de trabajo. Debes proporcionar una dirección IP dedicada para cada sistema que se utilice como LIF de datos de la SVM de la sala blanca.
+* Se crea una máquina virtual de almacenamiento (SVM) en cada uno de los sistemas que selecciones para conectarte a la IRE para restaurar cargas de trabajo. Debes proporcionar una dirección IP dedicada para cada sistema que se use como LIF de datos de la SVM de la sala blanca.
 
 
-.Anfitriones y vCenter
+.Hosts y vCenter
 * El vCenter debe ser la versión 7.0 o posterior con al menos un centro de datos.
 * El host ESXi debe ser ESXi versión 7.0 o posterior con al menos un host que tenga suficientes recursos de CPU y memoria disponibles para clonar las máquinas virtuales.
 * Las credenciales proporcionadas en vCenter deben tener permisos para descubrir recursos y clonar máquinas virtuales.
 
 
 .Máquinas virtuales base (Windows o Linux)
-* Durante la recuperación en la restauración limpia, las máquinas virtuales base se clonan en un centro de datos seleccionado, se colocan en el equipo ESXi elegido, se asignan al datastore especificado y se conectan a la red designada. Cuando se clonan las máquinas virtuales, se configuran para que tengan 2 vCPU y 4 GB de RAM (para Linux o Windows VM) y la misma cantidad de espacio en disco que las máquinas virtuales base. Cada sesión de restauración limpia utiliza dos direcciones IP del rango CIDR dado.
-* Debes proporcionar un rango de direcciones IP suficiente para acomodar múltiples sesiones paralelas de sala blanca. Las direcciones IP se liberan después de que se haya completado la recuperación.
-* El almacén de datos debe tener suficiente capacidad libre para alojar la clonación de VMs.
+* Durante la recuperación en la restauración limpia, las máquinas virtuales base se clonan en un centro de datos seleccionado, se colocan en el equipo ESXi elegido, se asignan al datastore especificado y se conectan a la red designada. Cuando se clonan las máquinas virtuales, se configuran para que tengan 2 vCPUs y 4 GB de RAM (para máquinas virtuales Linux o Windows) y la misma cantidad de espacio en disco que las máquinas virtuales base. Cada sesión de restauración limpia utiliza dos direcciones IP del rango CIDR dado.
+* Debes proporcionar un rango de direcciones IP suficiente para acomodar múltiples sesiones paralelas de sala blanca. Las direcciones IP se liberan una vez finalizada la recuperación.
+* El almacén de datos debe tener suficiente capacidad libre para alojar la clonación de máquinas virtuales.
 * El intervalo de direcciones IP debe especificarse en formato CIDR (por ejemplo, 100.100.0.0/24)
 * Para máquinas virtuales Linux:
 +
@@ -482,7 +477,7 @@ image:diagram-clean-recovery-on-prem.png["Diagrama de restauración limpia de cl
 
 
 | Sala blanca SVM VLAN  a| 
-Acceso NFS a la: * Agente de la NetApp Console de producción * VLAN del agente de la NetApp Console * VLAN de la sala blanca
+Acceso NFS a la: * Agente de la Production Console * VLAN del Console agent * VLAN del Clean room
 
 
 
@@ -502,8 +497,6 @@ Acceso NFS a la: * Agente de la NetApp Console de producción * VLAN del agente 
 
 
 --
-
---
 ====
 
 
@@ -519,13 +512,13 @@ El proceso para crear una sala de recuperación aislada difiere si el entorno es
 --
 . En Ransomware Resilience, seleccione **Configuración**.
 . En la tarjeta Limpiar restauraciones, selecciona **Configurar** si es tu primer entorno o **Gestionar** si ya has creado uno.
-. Si es la primera vez que creas una IRE, pasa al siguiente paso.
+. Si es la primera vez que creas un IRE, sigue con el siguiente paso.
 +
 Si ya creaste una IRE, selecciona **Add** para crear otra.
 
 . Para una IRE basada en cloud, selecciona **Amazon Web Services**.
 . Despliega la sección **Nombre**. Crea un **Nombre** para el entorno.
-. Expande la sección *Systems*. Elige los sistemas que quieres conectar a la IRE. Para cada sistema que selecciones, debes proporcionar la dirección IP, máscara de subred y puerta de enlace de la VM de almacenamiento.
+. Expande la sección *Systems*. Elige los sistemas que quieres conectar a la IRE. Para cada sistema que selecciones, debes proporcionar la dirección IP, la máscara de subred y la puerta de enlace de la VM de almacenamiento.
 +
 
 NOTE: En el caso de las IRE desplegadas en Amazon FSxN para ONTAP, no necesitas proporcionar esta información.
@@ -536,12 +529,12 @@ image:clean-restore-systems.png["Captura de pantalla de la interfaz de selecció
 . Expande la sección **Autenticación**.
 +
 ** Introduce el **ID de la cuenta** en la nube y selecciona la **región** de la cuenta.
-** Introduce la **clave de acceso** y la **clave secreta** de la cuenta**.
-** Expande la sección *Nube privada virtual (VPC)*. Introduce el ID de la VPC donde se va a desplegar la IRE.
+** Introduce la **clave de acceso** y la **clave secreta** de la cuenta.
+
+
+. Expande la sección *Nube privada virtual (VPC)*. Introduce el ID de la VPC donde se va a desplegar la IRE.
 +
 image:screenshot-set-up-recovery-environment.png["Captura de pantalla de la configuración de autenticación IRE."]
-
-
 
 . Selecciona **Add** para crear el IRE.
 +
@@ -554,10 +547,10 @@ Ransomware Resilience prueba la conexión después de que selecciones agregar, l
 --
 . En Ransomware Resilience, seleccione **Configuración**.
 . En la tarjeta Limpiar restauraciones, selecciona **Añadir** si es tu primer entorno o **Administrar** si ya has creado uno.
-. Si es la primera vez que creas una IRE, ve al siguiente paso. Si ya has creado una IRE, selecciona **Add** para crear otra.
+. Si es la primera vez que creas una IRE, ve al paso siguiente. Si ya has creado una IRE, selecciona **Add** para crear otra.
 . Para la ubicación, selecciona **On-premises**.
 . Despliega la sección *Nombre*. Asigna un **Nombre** para la IRE.
-. Expande la sección *Systems*. Elige los sistemas que quieres conectar a la IRE. Asigna una dirección IP de VM de almacenamiento, máscara de subred y puerta de enlace para cada sistema que tenga cargas de trabajo que se vayan a recuperar en la IRE.
+. Expande la sección *Systems*. Elige los sistemas que quieres conectar a la IRE. Asigna una dirección IP de VM de almacenamiento, máscara de subred y gateway para cada sistema que tenga cargas de trabajo que se vayan a recuperar en la IRE.
 +
 Cada sistema que selecciones debe tener una dirección IP asignada. Puedes seleccionar sistemas primarios o secundarios. Los sistemas secundarios se pueden usar para análisis y recuperación si el sistema primario no tiene instantáneas sin cifrar o si no está disponible.
 
@@ -577,13 +570,13 @@ image:clean-restore-compute.png["Captura de pantalla de la interfaz de selecció
 
 
 
-. Expande la sección *VMs*, que se rellena en función de tus datos en la sección *Compute*. Selecciona las VMs ubicadas en el host ESXi que vas a usar para analizar malware durante la restauración limpia. Proporciona el *User name* y la *Password* para cada VM que selecciones.
+. Expande la sección *VMs*, que se rellena según tus entradas en la sección *Compute*. Selecciona las VMs ubicadas en el host ESXi que vas a usar para analizar malware durante la restauración limpia. Proporciona el *User name* y la *Password* para cada VM que selecciones.
 . Selecciona **Add** para crear la IRE. NetApp Ransomware Resilience prueba la conexión después de que selecciones add; este proceso puede tardar un rato.
 
 
 --
 ====
-Puedes realizar un seguimiento del progreso. En la pestaña de configuración, selecciona **Isolated recovery environments**. La página de Isolated recovery environments muestra todos los IRE y su estado. Selecciona **View jobs** para ver un desglose de todos los trabajos relacionados con ese entorno.
+Puedes realizar un seguimiento del progreso. En la pestaña de configuración, selecciona **Entornos de recuperación aislados**. La página de entornos de recuperación aislados muestra todos los IRE y su estado. Selecciona **Ver trabajos** para ver un desglose de todos los trabajos relacionados con ese entorno.
 
 Puedes modificar los sistemas de un IRE después de crearlo. En la pestaña de configuración, selecciona **Entornos de recuperación aislados**. Ubica el IRE que quieres editar, selecciona el menú de acciones `...` y luego **Editar**. Procede a modificar los sistemas. Selecciona **Guardar** cuando termines.
 
@@ -594,10 +587,10 @@ Puedes modificar los sistemas de un IRE después de crearlo. En la pestaña de c
 No puedes eliminar un IRE con una operación de restauración activa; puedes cancelar la operación de restauración o esperar hasta que la restauración finalice y luego eliminar el IRE.
 
 
-IMPORTANT: Si borras el IRE, también se borra el SVM de la sala limpia y el volumen de metadatos. Una vez que estos activos han sido eliminados, ya no puedes generar informes para la restauración limpia.
+IMPORTANT: Si borras el IRE, también se borra el SVM de la sala limpia y el volumen de metadatos. Una vez que estos activos han sido borrados, ya no puedes generar informes para la restauración limpia.
 
 . Ve a **Configuración**.
-. En la ficha Clean restore, selecciona **Manage**.
+. En la ficha Limpiar restauración, selecciona **Gestionar**.
 . Identifica la sala limpia que quieres eliminar. En la columna del menú de acciones de esa sala, selecciona los tres puntos `...` y luego **Eliminar**.
 . En el cuadro de diálogo, selecciona **Borrar** para confirmar la operación.
 

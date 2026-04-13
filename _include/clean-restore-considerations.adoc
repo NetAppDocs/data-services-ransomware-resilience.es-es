@@ -8,5 +8,5 @@
 ** Puedes supervisar el estado de las operaciones de restauración limpia activas y en cola en cualquier momento en el panel de Ransomware Resilience Recovery.
 
 
-* Cuando inicias una restauración limpia, el volumen original se desmonta, lo que puede interrumpir el acceso IO.
+* Cuando inicias una restauración limpia, se desmonta el volumen original, lo que puede interrumpir el acceso IO.
 

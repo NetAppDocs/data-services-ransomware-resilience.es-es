@@ -21,7 +21,7 @@ TIP: Ransomware Resilience también es compatible con xref:task-clean-restore.ht
 
 == Restaurar una carga de trabajo
 
-*Función requerida de la consola* Administrador de organización, administrador de carpeta o proyecto, o administrador de protección contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^].
+*Función requerida de la consola* administrador de organización, administrador de carpeta o proyecto, o administrador de protección contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^].
 
 El administrador de almacenamiento de seguridad puede recuperar datos en diferentes niveles:
 
