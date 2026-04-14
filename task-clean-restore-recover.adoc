@@ -16,15 +16,13 @@ summary: Ransomware Resilience te permite controlar y sanear tus cargas de traba
 [role="lead"]
 Con NetApp Ransomware Resilience, puedes realizar una recuperación guiada tras un ataque de ransomware basado en cifrado usando una restauración limpia. La restauración limpia identifica rutas de recuperación optimizadas para minimizar la pérdida de datos y devolver tus cargas de trabajo en línea en el menor tiempo posible.
 
-La opción de restauración limpia es una alternativa a xref:task-custom-restore.html[opción de restauración personalizada].
-
 
 
 == Antes de empezar
 
-Debes haber configurado un link:task-clean-restore.html["entorno de recuperación aislado"^] antes de poder realizar una restauración limpia.
-
 *Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
+
+Debes haber configurado un link:task-clean-restore.html["entorno de recuperación aislado"^] antes de poder realizar una restauración limpia.
 
 
 
