@@ -41,4 +41,5 @@ Azure NetApp Files es compatible con Ransomware Resilience. Las siguientes limit
 * Azure NetApp Files no es compatible con FPolicy ni con la actividad de comportamiento del usuario.
 * Al seleccionar una estrategia de protección, asegúrate de que su planificación de instantáneas sea compatible con Azure NetApp Files. La planificación de instantáneas más frecuente disponible en Azure NetApp Files es horaria.
 * Se recomienda no utilizar link:reference-soar.html["Playbooks SOAR"] con Azure NetApp Files debido a que las API de Azure NetApp Files bloquean las acciones automatizadas.
+* Algunos datos de eventos no se incluyen en link:task-siem.html["Informes SIEM"] para configuraciones de Azure NetApp Files.
 
