@@ -41,8 +41,5 @@ De lo contrario, aparecerá el panel de resiliencia ante ransomware.
 +
 image:screen-dashboard.png["Captura de pantalla del panel de resiliencia ante ransomware"]
 
-. Si aún no lo ha hecho, seleccione la opción *Descubrir cargas de trabajo*.
-+
-Consulte link:rp-start-discover.html["Descubrir cargas de trabajo"] .
-
+. Si es la primera vez que usas Ransomware Resilience, link:rp-start-discover.html["descubrir cargas de trabajo"].
 

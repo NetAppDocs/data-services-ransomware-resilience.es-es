@@ -26,7 +26,7 @@ Para obtener detalles sobre las acciones que aún puede realizar después de que
 
 == Deshabilitar políticas de protección
 
-Si desea dejar de usar las políticas de protección que se aplican a las cargas de trabajo, puede deshabilitarlas mediante el Administrador del sistema, llamadas API o CLI.
+Si quieres dejar de usar las políticas de protección que se aplican a las cargas de trabajo, puedes desactivarlas usando System Manager, llamadas a la API o la CLI.
 
 Puede deshabilitar FPolicy y las políticas de respaldo en Ransomware Resilience aplicando una política diferente que no las incluya.  Para obtener instrucciones sobre cómo configurar políticas de protección, consultelink:rp-use-protect.html["Proteja las cargas de trabajo contra ataques de ransomware"] .
 
