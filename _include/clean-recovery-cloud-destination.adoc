@@ -16,7 +16,6 @@ NOTE: Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omi
 
 .Tabla de rutas del entorno de producción
 * La tabla de rutas de producción debe permitir el tráfico desde la subred IRE a la dirección IP LIF de restauración de datos limpia. Debes agregar esta ruta a la tabla de rutas de producción.
-* Los grupos de seguridad y cortafuegos del clúster ONTAP de producción deben permitir el tráfico entrante NFSv4 y NFSv3 a la dirección IP LIF de restauración de datos limpia. El cortafuegos debe estar abierto para ingreso desde el rango CIDR de IRE:
 +
 [cols="1,1,1,1"]
 |===
@@ -40,6 +39,10 @@ NOTE: Si estás configurando un IRE con el origen en Amazon FSxN para ONTAP, omi
 
 | TCP y UDP | 4049 | Rango CIDR de IRE VPC | Acceso NFSv3 desde IRE 
 |===
+
+
+.Cortafuegos IRE
+* Deberías crear un cortafuegos separado para gestionar la entrada para el crr-data-LIF-IP. Este cortafuegos debería permitir montajes NFSv3 y NFSv4 desde el rango CIDR de la IRE VPC.
 
 
 .Tabla de rutas IRE
