@@ -14,7 +14,7 @@ summary: Durante el descubrimiento, Ransomware Resilience analiza todos los vol�
 [role="lead"]
 Antes de poder utilizar NetApp Ransomware Resilience, primero debe descubrir los datos de la carga de trabajo. Durante el descubrimiento, Ransomware Resilience analiza todos los volúmenes y archivos de los sistemas en todos los agentes de la consola y proyectos dentro de una organización.
 
-En el panel de Discovery, Ransomware Resilience muestra las configuraciones del sistema compatibles y no compatibles. Ransomware Resilience evalúa aplicaciones Oracle, almacenes de datos VMware, recursos compartidos de archivos y almacenamiento en bloques.
+En el panel Discovery, Ransomware Resilience muestra las configuraciones de sistema compatibles y no compatibles. Ransomware Resilience evalúa los archivos compartidos y el almacenamiento en bloque.
 
 
 NOTE: Ransomware Resilience no descubre sistemas con volúmenes que utilicen FlexGroup.

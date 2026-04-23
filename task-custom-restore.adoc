@@ -26,8 +26,7 @@ TIP: Ransomware Resilience también es compatible con xref:task-clean-restore.ht
 El administrador de almacenamiento de seguridad puede recuperar datos en diferentes niveles:
 
 * Recuperar todos los volúmenes
-* Recuperar una aplicación a nivel de volumen o de archivo y carpeta.
-* Recupere un recurso compartido de archivos a nivel de volumen, directorio o archivo/carpeta.
+* Recupera un recurso compartido de archivos a nivel de volumen, directorio o archivo.
 * Recuperarse de un almacén de datos a nivel de VM.
 
 
@@ -54,7 +53,7 @@ TIP: Puede seleccionar hasta 100 archivos o una sola carpeta.
 
 
 
-. Continúe con uno de los siguientes procedimientos dependiendo de si eligió aplicación, volumen o archivo.
+. Continúa con uno de los siguientes procedimientos dependiendo de si elegiste volumen o archivo.
 
 
 
@@ -62,7 +61,7 @@ TIP: Puede seleccionar hasta 100 archivos o una sola carpeta.
 === Restaurar todos los volúmenes
 
 . En el menú Resiliencia ante ransomware, seleccione *Recuperación*.
-. Seleccione una carga de trabajo que esté en el estado "Se necesita restaurar".
+. Selecciona una carga de trabajo en estado "Restauración necesaria".
 . Para restaurar, seleccione *Restaurar*.
 . En la página Restaurar, en el ámbito de restauración, seleccione *Todos los volúmenes*.
 +
@@ -98,10 +97,10 @@ TIP: El nuevo nombre del volumen aparece como prefijo + nombre del volumen origi
 
 
 
-=== Restaurar una carga de trabajo de la aplicación a nivel de volumen
+=== Restaurar una carga de trabajo a nivel de volumen
 
 . En el menú Resiliencia ante ransomware, seleccione *Recuperación*.
-. Seleccione una carga de trabajo de aplicación que esté en el estado "Se necesita restaurar".
+. Selecciona una carga de trabajo en estado "Restauración necesaria".
 . Para restaurar, seleccione *Restaurar*.
 . En la página Restaurar, en el ámbito de restauración, seleccione *Por volumen*.
 +
@@ -138,11 +137,11 @@ TIP: El nuevo nombre del volumen aparece como el nombre del volumen original + e
 
 
 
-=== Restaurar una carga de trabajo de la aplicación a nivel de archivo
+=== Restaurar una carga de trabajo a nivel de archivo
 
-Antes de restaurar una carga de trabajo de la aplicación a nivel de archivo, puede ver una lista de los archivos afectados.  Puede acceder a la página de Alertas para descargar una lista de archivos afectados.  Luego utilice la página Recuperación para cargar la lista y elegir qué archivos restaurar.
+Antes de restaurar una carga de trabajo a nivel de archivo, puedes ver una lista de los archivos afectados. Puedes acceder a la página Alertas para descargar una lista de los archivos afectados. Luego usa la página Recuperación para cargar la lista y elegir qué archivos restaurar.
 
-Puede restaurar una carga de trabajo de la aplicación a nivel de archivo en el mismo sistema o en uno diferente.
+Puedes restaurar una carga de trabajo a nivel de archivo en el mismo sistema o en uno diferente.
 
 
 
@@ -155,7 +154,7 @@ TIP: Si un volumen tiene varias alertas, necesitas descargar la lista CSV de arc
 
 .Pasos
 . En el menú Resiliencia ante ransomware, seleccione *Alertas*.
-. En la página Alertas, ordene los resultados por carga de trabajo para mostrar las alertas de la carga de trabajo de la aplicación que desea restaurar.
+. En la página Alertas, ordena los resultados por carga de trabajo para mostrar las alertas de la carga de trabajo que quieres restaurar.
 . De la lista de alertas para esa carga de trabajo, seleccione una alerta.
 . Para esa alerta, seleccione un solo incidente.
 +
@@ -173,7 +172,7 @@ Después de evaluar los archivos afectados, puedes restaurarlos.
 
 .Pasos
 . En el menú Resiliencia ante ransomware, seleccione *Recuperación*.
-. Seleccione una carga de trabajo de aplicación que esté en el estado "Se necesita restaurar".
+. Selecciona una carga de trabajo en estado "Restauración necesaria".
 . Seleccione *Restaurar*.
 . En la página Restaurar, en el ámbito de restauración, seleccione *Por archivo*.
 . En la lista de volúmenes, seleccione el volumen que contiene los archivos que desea restaurar.

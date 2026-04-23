@@ -125,13 +125,13 @@ Antes de activar Microsoft Sentinel en Ransomware Resilience, tienes que hacer l
 * *Autenticación*: Ingrese las credenciales de autenticación para la aplicación.
 
 
-.Pasos para habilitar Microsoft Sentinel
+.Activar Microsoft Sentinel
 . Vaya a Microsoft Sentinel.
 . Cree un *espacio de trabajo de Log Analytics*.
 . Habilite Microsoft Sentinel para utilizar el espacio de trabajo de Log Analytics que acaba de crear.
 
 
-.Pasos para crear un rol personalizado en Microsoft Sentinel
+.Crear una función personalizada en Microsoft Sentinel
 . Vaya a Microsoft Sentinel.
 . Seleccione *Suscripción* > *Control de acceso (IAM)*.
 . Introduzca un nombre de rol personalizado.  Utilice el nombre *Ransomware Resilience Sentinel Configurator*.
@@ -151,7 +151,7 @@ Antes de activar Microsoft Sentinel en Ransomware Resilience, tienes que hacer l
 . Revise y guarde su configuración.
 
 
-.Pasos para registrar Ransomware Resilience para recibir eventos de Microsoft Sentinel
+.Registra Ransomware Resilience para recibir eventos de Microsoft Sentinel
 . Vaya a Microsoft Sentinel.
 . Seleccione *ID de entrada* > *Aplicaciones* > *Registros de aplicaciones*.
 . Para el *Nombre para mostrar* de la aplicación, ingrese "*Ransomware Resilience*".
@@ -164,7 +164,7 @@ Después del registro, el centro de administración de Microsoft Entra muestra e
 
 
 
-.Pasos para crear un secreto para el registro
+.Crear un secreto para el registro
 . Vaya a Microsoft Sentinel.
 . Seleccione *Certificados y secretos* > *Secretos de cliente* > *Nuevo secreto de cliente*.
 . Agregue una descripción para el secreto de su aplicación.
@@ -177,7 +177,7 @@ TIP: La vida útil del secreto de un cliente está limitada a dos años (24 mese
 . Registre el secreto que se utilizará en el paso de Autenticación.  El secreto nunca volverá a mostrarse después de salir de esta página.
 
 
-.Pasos para asignar permisos a la aplicación
+.Asignar permisos
 . Vaya a Microsoft Sentinel.
 . Seleccione *Suscripción* > *Control de acceso (IAM)*.
 . Seleccione *Agregar* > *Agregar asignación de rol*.
@@ -195,7 +195,7 @@ TIP: Éste es el rol personalizado que creaste anteriormente.
 . Seleccione *Revisar y asignar* para asignar los permisos.
 
 
-.Pasos para ingresar credenciales de autenticación para la aplicación
+.Introduce credenciales de autenticación
 . Vaya a Microsoft Sentinel.
 . Introduzca las credenciales:
 +
@@ -227,7 +227,7 @@ Ransomware Resilience es compatible con la detección de amenazas con Splunk Clo
 
 NOTE: Para Splunk Enterprise, debes permitir el tráfico entrante de Internet público para que Ransomware Resilience pueda enviar eventos utilizando los detalles del recopilador de eventos HTTP que se le suministran.
 
-.Pasos para habilitar un recopilador de eventos HTTP en Splunk
+.Habilita un recolector de eventos HTTP en Splunk
 . Ve a tu entorno Splunk elegido: Cloud o Enterprise.
 . Seleccione *Configuración* > *Entradas de datos*.
 . Seleccione *Recopilador de eventos HTTP* > *Configuración global*.
@@ -236,7 +236,7 @@ NOTE: Para Splunk Enterprise, debes permitir el tráfico entrante de Internet p�
 . Introduzca un puerto en *Número de puerto HTTP* para el recopilador de eventos HTTP.
 
 
-.Pasos para crear un token de recopilador de eventos en Splunk
+.Crear un token de Event Collector en Splunk
 . Ve a Splunk Cloud o Enterprise.
 . Seleccione *Configuración* > *Agregar datos*.
 . Seleccione *Monitor* > *Recopilador de eventos HTTP*.
