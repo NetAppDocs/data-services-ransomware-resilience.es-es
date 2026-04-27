@@ -682,15 +682,7 @@
   <block id="0c494aaba0bbfa24f1d3a7438930b616" category="list-text">Seleccione una carga de trabajo, seleccione el ícono *Acciones*... a la derecha y seleccione *Editar nombre de la carga de trabajo*.</block>
   <block id="b7ac3f69f0c0ac25814be4d03ba11c24" category="list-text">Ingrese el nombre de la nueva carga de trabajo y seleccione *Guardar*.</block>
   <block id="565c83689e020f29cdb2b1a2a0116b1a" category="inline-link-macro">Recuperarse de un ataque</block>
-  <block id="bc1b76060f49fe8ad404d389d8431371" category="summary">Mejore la seguridad y el cumplimiento de la privacidad de sus datos con NetApp Data Classification para identificar si sus datos incluyen información personal identificable o privada.</block>
-  <block id="604880f6f585767eee17ec85b3c76533" category="inline-link-macro">Clasificación de datos</block>
-  <block id="00735a048dd8a101a0cf04ff8cf7c168" category="paragraph"><block ref="2324d2fecbef2eccb7e03b987d67689b" category="inline-link-macro-rx"></block>Utiliza el procesamiento del lenguaje natural impulsado por IA para el análisis y la categorización de datos contextuales, proporcionando información útil sobre sus datos para abordar los requisitos de cumplimiento, detectar vulnerabilidades de seguridad, optimizar costos y acelerar la migración.</block>
-  <block id="d3b14d365ca3277402fce2839d562f60" category="admonition">Este proceso puede afectar la importancia de la carga de trabajo para ayudar a garantizar que tenga la protección adecuada.</block>
-  <block id="aeb066b15e66f67bbfa9db1332465422" category="section-title">Identificar la exposición a la privacidad con la clasificación de datos</block>
   <block id="ba2c5a24730716f70a2b315220375de6" category="inline-link-macro">para permitir que la clasificación de datos escanee sus datos</block>
-  <block id="c4f1661d1e0ca939d13156f9f3d34d48" category="paragraph">Antes de utilizar la clasificación de datos dentro de Ransomware Resilience, necesita<block ref="c872c876324415ce189a729b6026b061" category="inline-link-macro-rx"></block> .</block>
-  <block id="ee34749052b0d62bf351eb75d25107b1" category="paragraph">Puede implementar la clasificación de datos dentro de la página de Protección de Resiliencia contra ransomware.  Siga el procedimiento para identificar la exposición a la privacidad.  Cuando selecciona **Identificar exposición**, si aún no ha implementado la Clasificación de datos, un cuadro de diálogo le permitirá habilitarla.</block>
-  <block id="9ed086de7334074ba1b8a57d92fad8c8" category="paragraph">Para obtener más información sobre la clasificación de datos, consulte:</block>
   <block id="06e283ee316863d38f0fea16ba5785cc" category="inline-link">Aprenda sobre la clasificación de datos</block>
   <block id="8b3703ff6ebaa8b98d723211fb1dfc77" category="list-text"><block ref="8b3703ff6ebaa8b98d723211fb1dfc77" category="inline-link-rx"></block></block>
   <block id="93f515959ce6187b986c42fa6959168b" category="inline-link">Categorías de datos privados</block>
@@ -698,30 +690,15 @@
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link">Investigue los datos almacenados en su organización</block>
   <block id="23ca466c11f4192b1b942a142ef1083f" category="list-text"><block ref="23ca466c11f4192b1b942a142ef1083f" category="inline-link-rx"></block></block>
   <block id="b4b23bfb09d955d9adbd34e9b10730b7" category="inline-link-macro">Clasificación de datos implementada</block>
-  <block id="6f70238b9dd1b1b13dcaa8388f9eb830" category="paragraph">El escaneo de datos PII en Ransomware Resilience está disponible si tiene<block ref="76ec7a4f27737b4abf63f3c2ea7bce9c" category="inline-link-macro-rx"></block> . La clasificación de datos está disponible como parte de la consola sin costo adicional y se puede implementar en las instalaciones o en la nube del cliente.</block>
-  <block id="22da148f02a4f9df3c95fa55ebe1f0e4" category="list-text">En la página Protección, busque una carga de trabajo de uso compartido de archivos en la columna Carga de trabajo.</block>
   <block id="ae026bf5e2ca5066c55b7b1740de800e" category="inline-image-macro">Página de protección que muestra la columna de exposición de privacidad</block>
   <block id="9dedf1958376570fec810d3b47c2d3ec" category="paragraph"><block ref="9dedf1958376570fec810d3b47c2d3ec" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6167c82beb8173b9fd8c04acf7729651" category="list-text">Para habilitar la Clasificación de datos para escanear sus datos en busca de información personal identificable, en la columna *Exposición de privacidad*, seleccione *Identificar exposición*.</block>
-  <block id="7058bb0083130a5c71fe119ba40e514f" category="admonition">Si no ha implementado la Clasificación de datos, al seleccionar *Identificar exposición* se abre un cuadro de diálogo para implementar la Clasificación de datos.  Seleccione *Implementar*.  Después de haber implementado la Clasificación de datos, puede regresar a la página Protección y luego seleccionar *Identificar exposición*.</block>
-  <block id="a5795ac9b0de866cf01ea8939331c119" category="paragraph">El escaneo puede tardar varios minutos dependiendo del tamaño y la cantidad de archivos.  Durante el escaneo, la página de Protección indica que está identificando archivos y proporciona un recuento de archivos.  Una vez finalizado el escaneo, la columna Exposición a la privacidad clasifica el nivel de exposición como Bajo, Medio o Alto.</block>
-  <block id="70f91b9311063ebb918671e1632eea94" category="section-title">Revisar la exposición a la privacidad</block>
-  <block id="0537b0ecb09c0d9c0d03fe90ad780697" category="paragraph">Después de los análisis de clasificación de datos en busca de información personal identificable, evalúe el riesgo.</block>
-  <block id="8a35aa96c6cd6c5a2441282d0cba7849" category="paragraph">Los datos PII se clasifican en una de tres designaciones:</block>
   <block id="d2d08f06bc04a605f3fcfb8f214d6693" category="list-text">*Alto*: Más del 70% de los archivos contienen información personal identificable</block>
   <block id="28f2318706a91f0a8540b36afa47aa64" category="list-text">*Medio*: Más del 30% y menos del 70% de los archivos contienen información de identificación personal (PII)</block>
   <block id="ea1385f5976d3bde8b3b9d5653072157" category="list-text">*Bajo*: Más del 0% y menos del 30% de los archivos contienen información personal identificable</block>
-  <block id="743c833ae848226cd938cbcdec4813e8" category="list-text">En la página Protección, ubique la carga de trabajo del recurso compartido de archivos en la columna Carga de trabajo que muestra un estado en la columna Exposición de privacidad.</block>
-  <block id="648eb89d24fbd412ac4e5191ba6b3cfc" category="list-text">Seleccione el enlace de carga de trabajo en la columna Carga de trabajo para ver los detalles de la carga de trabajo.</block>
   <block id="0bb4a1497d3056f8b2f0423eff14e160" category="inline-image-macro">Pantalla de detalles de la carga de trabajo que muestra el mosaico de exposición de privacidad</block>
   <block id="7b0824f1068863bca201f38cc7763786" category="paragraph"><block ref="7b0824f1068863bca201f38cc7763786" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0d24b9f644f661e7276d0d4f3fdfaa2e" category="list-text">En la página de detalles de la carga de trabajo, observe los detalles en el mosaico de exposición de privacidad.</block>
   <block id="dffb203aa27226e3750f92c5c60829df" category="section-title">El impacto de la exposición a la privacidad en la importancia de la carga de trabajo</block>
   <block id="61915adac4ce0b36ecdb70a5e446a80b" category="paragraph">Los cambios en la exposición a la privacidad pueden afectar la importancia de la carga de trabajo.</block>
-  <block id="a201dfb7539c6083e641a0bc8121201b" category="cell">Cuando se expone la privacidad:</block>
-  <block id="65dc756d3347a26af4774cab05b6f1a6" category="cell">De esta exposición de privacidad:</block>
-  <block id="8dc6cf962cd8b6b9d4c2ec1c25942b36" category="cell">A esta exposición de privacidad:</block>
-  <block id="9a70ecaf65d678d97afe7382a0197469" category="cell">Entonces, la importancia de la carga de trabajo hace esto: .</block>
   <block id="e999cd086de455a56c2f7d169210876b" category="cell">*Disminuye*</block>
   <block id="a479d5f7790c7e99c1c56e63d46a8d05" category="paragraph">Alto, Medio o Bajo</block>
   <block id="bd05a001892856f4f5d6aa48b0879798" category="cell">Medio, bajo o ninguno</block>
@@ -735,8 +712,6 @@
   <block id="f8307a8be7170a599a441165be60a2d7" category="cell">Bajo o medio</block>
   <block id="655d20c1ca69519ca647684edbb2db35" category="paragraph">Alto</block>
   <block id="f5bfc54a73042ca571add47438fea77e" category="cell">Cambios de Estándar o Importante a Crítico</block>
-  <block id="d13de4a83d7b44c2e65495def8ef1c7b" category="section-title">Para más información</block>
-  <block id="420b39017799ccdb233cdc7c2b2d4d58" category="paragraph">Para obtener detalles sobre la clasificación de datos, consulte la documentación de clasificación de datos:</block>
   <block id="903c9d0250ec5956f3a9e1f0a3469c20" category="summary">Puede proteger las cargas de trabajo contra ataques de ransomware asignando políticas a una carga de trabajo en NetApp Ransomware Resilience.</block>
   <block id="54a418aa76c7e9afaa77a58a34a3d3ed" category="doc">Proteja las cargas de trabajo con las estrategias de protección NetApp Ransomware Resilience</block>
   <block id="9d76fd8cddbcb128567856bd698d409e" category="section-title">Comprender las estrategias de protección contra ransomware</block>
@@ -2075,8 +2050,6 @@
   <block id="7df30d939fa4f3d1575169ec6d1894d8" category="doc">Limitaciones conocidas en NetApp Ransomware Resilience</block>
   <block id="e9be3c13b1ed73a120f1b23e2cefb058" category="doc">Descubre las cargas de trabajo en NetApp Ransomware Resilience</block>
   <block id="871215526a8732732fd40b6335388e98" category="doc">Preguntas frecuentes sobre NetApp Ransomware Resilience</block>
-  <block id="1ca81bce832a538b6144470d9a25c786" category="paragraph">Dentro de NetApp Ransomware Resilience, puedes usar NetApp Data Classification para escanear y clasificar los datos en una carga de trabajo de archivos compartidos. Clasificar los datos te ayuda a determinar si el conjunto de datos incluye información de identificación personal (PII), lo que puede aumentar los riesgos de seguridad.</block>
-  <block id="1954c0eede9cec276e44236c76142770" category="paragraph">La clasificación de datos es un componente central de la NetApp Console. No necesitas una licencia para usar Data Classification. Dependiendo de tu configuración, configurar Data Classification puede generar costes, que no son cobrados por Ransomware Resilience. Para más información, consulta <block ref="c5cce5d1091349460847f69d486fd688" category="inline-link-macro-rx"></block>.</block>
   <block id="70c542a285cfdf5cc22587e58fc3fcbb" category="doc">Playbooks SOAR para Microsoft Sentinel y Splunk</block>
   <block id="2f9304fe9b427489507405bef9a0bb9f" category="inline-link-macro">Splunk</block>
   <block id="c75f115758f26a9b54a9d51601b66cf9" category="inline-link-macro">Integra los playbooks SOAR</block>
@@ -2355,7 +2328,6 @@
   <block id="138cbd11459ece46267adb92ab34ee1f" category="paragraph">Después de evaluar los archivos afectados, puedes restaurarlos.</block>
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">13 abril 2026</block>
   <block id="794c08acf0fdad83a95c363b8c9662f4" category="sidebar">Revisar el estado de la recuperación</block>
-  <block id="d14be6fd318be2bc44adb6224cd0309b" category="sidebar">Recuperar con restauración limpia</block>
   <block id="6ff288c704ac97afbc67708bc23dbc09" category="paragraph">Para obtener información sobre las configuraciones compatibles y cómo configurar tu sistema para una restauración limpia, consulta <block ref="bce58762a021948ccde0fba2f5f7a845" category="inline-link-macro-rx"></block>. Para aprender cómo recuperar con una restauración limpia, consulta <block ref="c39fc221f9e8d680274efcf9f5170bf4" category="inline-link-macro-rx"></block>.</block>
   <block id="482b73c713ea8cffc3070c798b03badc" category="open-title">De las instalaciones a la nube</block>
   <block id="8880534a0e139c017e28bbf6bc44e84b" category="open-title">De local a local</block>
@@ -2447,4 +2419,22 @@
   <block id="b61174a96feeed9315df09125dbf021e" category="inline-link-macro">Más información sobre la descarga de archivos afectados antes de restaurar una carga de trabajo</block>
   <block id="f9ab80c55fbab58c37aab4891dabffae" category="paragraph"><block ref="f9ab80c55fbab58c37aab4891dabffae" category="inline-link-macro-rx"></block></block>
   <block id="23bb3b926c6da9edf1342c50a0cbf22e" category="list-text">La versión 20.x o superior de Docker debe estar instalada y en ejecución.</block>
+  <block id="337f89149c6ad76d149c111687549e82" category="summary">Ransomware Resilience puede identificar exposiciones de privacidad en tus datos que te ayudan a mejorar la seguridad de tus cargas de trabajo.</block>
+  <block id="2f43f805784f8d4ccf5eecb446bb36af" category="paragraph">Dentro de NetApp Ransomware Resilience, puedes usar NetApp Data Classification para identificar exposiciones de privacidad y proteger tus datos de forma proactiva. Identificar exposiciones de privacidad revela si un conjunto de datos incluye información de identificación personal (PII). Las exposiciones de privacidad pueden aumentar los riesgos de seguridad y cambiar la designación de importancia de la carga de trabajo.</block>
+  <block id="fa8dac95fc1c211dbfe88b9f20fc8136" category="section-title">Identifica los riesgos para la privacidad</block>
+  <block id="8c5e5072ac9e7825c5c9f373d2f1937a" category="paragraph">Antes de poder identificar los riesgos para la privacidad en Ransomware Resilience, necesitas <block ref="c872c876324415ce189a729b6026b061" category="inline-link-macro-rx"></block>.</block>
+  <block id="43e618d6407986d787a8d0e2c9b466e7" category="inline-link-macro">pueden generar costes</block>
+  <block id="d12546195d910bd6bdcd0c2558c63365" category="paragraph">La clasificación de datos es un componente central de la NetApp Console y un producto independiente de Ransomware Resilience. Usarla no requiere licencia. Dependiendo de tu configuración, la implementación <block ref="7e7dc9a1a76801355616ea493c3dce9e" category="inline-link-macro-rx"></block>, no tiene cargos por parte de Ransomware Resilience.</block>
+  <block id="ce9cc130bc25a69c11fdf2053c205381" category="paragraph">Puedes implementar Data Classification desde la página de Protection de Ransomware Resilience. Sigue el procedimiento para identificar la exposición de privacidad. Cuando selecciones **Identify exposure**, aparecerá un cuadro de diálogo; selecciona *Deploy Classification for free*. Después de una implementación exitosa, puedes volver a Ransomware Resilience para identificar la exposición en la carga de trabajo.</block>
+  <block id="52e9471e9883639fa069802b2af375d6" category="paragraph">La exploración de datos PII en Ransomware Resilience está disponible si has <block ref="76ec7a4f27737b4abf63f3c2ea7bce9c" category="inline-link-macro-rx"></block>.</block>
+  <block id="5afb28d9607fc0dfe3e7066a9a67cb87" category="list-text">En la página Protección, localiza una carga de trabajo de archivos compartidos en la columna Carga de trabajo.</block>
+  <block id="1c124aeff3f31fd0eb4b2a910d95eecd" category="list-text">En la columna *Exposición a la privacidad*, selecciona *Identificar exposición*. El escaneo puede tardar varios minutos.</block>
+  <block id="885d53eecb4dbc5294b615795243a7c8" category="list-text">Cuando finalice la exploración, revisa tu exposición. La exposición se clasifica en una de tres designaciones:</block>
+  <block id="8343a5d017382b35f03dd3e6e3a97a4d" category="inline-xref">impacto de la exposición de la privacidad en la importancia de la carga de trabajo</block>
+  <block id="24bb1248c7c9f44b075b9c7dbccc782a" category="list-text">Para ver más detalles sobre la exposición a la privacidad, selecciona el nombre de la carga de trabajo y evalúa la <block ref="61dd50589a2fef3583fd959f8d71ff50" category="inline-xref-macro-rx"></block>.</block>
+  <block id="532a317daa1b8ba820044c5ab5f734c1" category="cell">Cambio en la exposición a la privacidad</block>
+  <block id="f5eb9155d3b6975ee55efb74e561e33d" category="cell">Exposición anterior</block>
+  <block id="79297b17dc9f8b6a6e468bfe48b8e0e4" category="cell">Exposición actual</block>
+  <block id="cbe03757132fcab02b71ae82dd1e0884" category="cell">Cambio en la importancia de la carga de trabajo</block>
+  <block id="2f976de5f743c1cf88b6945568efbc4d" category="paragraph">Para obtener información sobre cómo remediar la exposición a la privacidad, consulta la documentación de Data Classification:</block>
 </blocks>
