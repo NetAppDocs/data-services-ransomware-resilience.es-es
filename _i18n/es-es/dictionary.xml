@@ -2481,5 +2481,5 @@
   <block id="3709262a3984a4066d844e26650ffbfd" category="list-text">Selecciona el **Protocolo** para el HTTP Event Collector. Se recomienda que uses HTTPS, pero si SSL no está habilitado para el HTTP Event Collector, selecciona *HTTP*.</block>
   <block id="0bffbc11a95d5a4be5584ad87467b460" category="list-text">Introduce el *Host* y el *Port* de la instancia de Splunk Cloud que ejecuta el HTTP Event Collector. El puerto debe coincidir con el que introdujiste en el proceso del HTTP Event Collector.</block>
   <block id="00b8afb4b439e4d80895bdc0b67f43e4" category="list-text">Ingresa el token del recopilador de eventos que creaste en Splunk.</block>
-  <block id="448172d3af38cf3c8143e719c364e53d" category="section-title">11 de marzo de 2026</block>
+  <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">11 de mayo de 2026</block>
 </blocks>
