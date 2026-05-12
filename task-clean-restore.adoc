@@ -122,7 +122,7 @@ Para evitar estos conflictos, Ransomware Resilience realiza sysprep en la máqui
 
 Cuando creas la IRE para fuentes locales, tienes la opción de añadir una fuente secundaria.
 
-Si la fuente primaria está disponible, la restauración limpia se restaurará en la fuente primaria. Si la fuente primaria no está disponible y has configurado una fuente secundaria, la restauración limpia se restaurará en la fuente secundaria.
+Si la fuente primaria no está disponible y has configurado una fuente secundaria, la restauración limpia se restaurará en la fuente secundaria.
 
 Por defecto, el proceso de restauración limpia analiza instantáneas del entorno de origen. Si el entorno de origen no está disponible o no se dispone de una instantánea sin cifrar en el origen, la restauración limpia analiza instantáneas en un sistema secundario si has configurado uno.
 

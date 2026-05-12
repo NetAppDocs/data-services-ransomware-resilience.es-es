@@ -39,33 +39,52 @@ Debes haber configurado un link:task-clean-restore.html["entorno de recuperació
 
 
 
+=== Consideraciones para la restauración en una ubicación alternativa
+
+Cuando restauras un volumen utilizando la restauración limpia, tienes la opción de restaurar en una ubicación alternativa gestionada por el mismo agente de la consola. La nueva ubicación puede estar en el mismo sistema, VM de almacenamiento o agregado, o en uno diferente. Cuando restauras en una ubicación alternativa:
+
+* ARP se activa automáticamente en el nuevo volumen.
+* La ruta de unión se establece en función del nombre que proporciones. Por ejemplo: `<Data LIF IP address of destination storage VM>:<new volume name>`.
+* La política de exportación del volumen restaurado es la misma que la del volumen de origen.
+* Los recursos compartidos SMB del volumen restaurado son los mismos que los del volumen de origen.
+
+
+
+
 == Realiza una restauración limpia
 
-. En la sección **Recuperación**, selecciona la carga de trabajo que quieres restaurar. Selecciona **Restaurar**.
+. En la sección **Recuperación**, identifica la carga de trabajo que quieres restaurar. Selecciona **Restaurar**.
 . En las opciones de Tipo de restauración, selecciona **Restauración limpia** y luego **Siguiente**.
 . Selecciona el entorno de recuperación aislado que quieres usar y luego **Siguiente**.
 . Revisa el entorno de recuperación aislado, confirmando que es la ubicación correcta. Selecciona **Restaurar**.
-. Ransomware Resilience realiza la configuración necesaria. Una vez que la configuración finaliza correctamente, Ransomware Resilience indica **Setup complete**. Para proceder al análisis, selecciona **Next**.
-. Una vez finalizada la instalación, selecciona **Ejecutar análisis**. Ransomware Resilience busca puntos de restauración disponibles antes del evento de ransomware, mostrando la fecha y el tipo de punto de restauración. Ransomware Resilience busca puntos de restauración en intervalos de siete días. Si no hay un punto de restauración disponible en los primeros siete días, Ransomware Resilience empieza a buscar en el tramo de siete días anterior y repite el proceso hasta que encuentra una vía de recuperación viable.
+. Ransomware Resilience realiza la configuración necesaria. Una vez que la configuración finaliza correctamente, Ransomware Resilience actualiza el estado. Para continuar, selecciona **Siguiente**.
+. Una vez finalizada la instalación, selecciona **Ejecutar análisis**. Ransomware Resilience busca la instantánea no afectada más reciente.
 +
 image:screenshot-clean-room-analysis.png["Captura de pantalla del paso de análisis de restauración limpia."]
 
 . Una vez completado el análisis, selecciona **Siguiente** para planificar tu recuperación. NetApp Ransomware Resilience presenta dos opciones: **Mínima pérdida de datos** y **Último punto de restauración no afectado**. Selecciona cualquiera de las opciones y, si quieres, revisa los datos de archivos individuales para cualquiera de los puntos de restauración.
 +
-Para ver datos granulares de eventos de archivos, selecciona un archivo para analizar su estado de cifrado; cuándo se creó, modificó o eliminó y qué punto de restauración corresponde a qué acción.
+Para ver datos granulares de eventos de archivos, selecciona un archivo para analizar su estado de cifrado y sus metadatos: cuándo se creó, modificó o eliminó, y qué punto de recuperación corresponde a qué acción.
 
 +
 image:clean-restore-plan.png["Captura de pantalla del paso del plan de restauración limpio."]
 
-. Después de elegir el punto de restauración, selecciona **Siguiente** para empezar a limpiar tus archivos. Ransomware Resilience comienza limpiando la carga de trabajo.
-. Elige el destino de la recuperación.
+. Después de elegir tu punto de recuperación, selecciona **Crear punto de recuperación**. Ransomware Resilience inicia una serie de tareas para crear el punto de recuperación. Cuando termine este proceso, selecciona **Siguiente**.
+. Selecciona **Iniciar limpieza** para empezar a limpiar el malware de los archivos.
+. Una vez finalizada la limpieza, selecciona **Siguiente**.
+. Elige el destino de la recuperación:
 +
-.. Si elegiste *Alternate*, elige el *System*, *Storage VM* y *Aggregate* a los que quieres recuperar. Ingresa un nombre para el *New volume*.
+** Selecciona **Primario (original)** para restaurar al destino original.
++
+Si la ubicación primaria no está disponible y link:task-clean-restore.html#secondary-sources["has configurado una fuente secundaria"], puedes restaurar en la fuente **Secundaria**.
+
+** Selecciona **Alternativo** para restaurar en un nuevo volumen. Elige el **Sistema**, **Storage VM** y **Aggregate** para el nuevo volumen y luego proporciona un **nuevo nombre de volumen**.
++
+image:alternate-recovery-destination.png["Captura de pantalla del destino alternativo de recuperación"]
 
 
-. Cuando finalice la limpieza, selecciona **Iniciar recuperación** para iniciar la recuperación.
-. Elige si quieres guardar la carga de trabajo original. Para no guardar la carga de trabajo original, selecciona **No, reemplazar la carga de trabajo original**. Para guardarla, selecciona **Sí, guardar la carga de trabajo original** y luego ingresa un nuevo nombre para la carga de trabajo.
+
 . Selecciona **Iniciar recuperación** para iniciar la recuperación.
 . Cuando finalice la recuperación, selecciona **Siguiente** para pasar a la fase final.
-. Selecciona **Liberar recursos y finalizar** para liberar los recursos y cerrar la sala blanca. Para confirmar que quieres liberar el recurso, selecciona **Finalizar**.
+. Selecciona **Liberar recursos y salir** para liberar los recursos y cerrar la sala blanca. Para confirmar, selecciona **Finalizar**.
 

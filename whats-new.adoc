@@ -24,9 +24,9 @@ Descubra las novedades en NetApp Ransomware Resilience.
 
 === Mejoras en la restauración limpia
 
-La restauración limpia admite ahora la recuperación en clústeres alternativos y el análisis más allá de siete días.
+La restauración limpia ahora admite la recuperación en una ubicación alternativa, lo que te permite restaurar volúmenes en diferentes sistemas, máquinas virtuales de almacenamiento y agregados gestionados por el mismo agente de Console. Además, la restauración limpia ha eliminado la limitación de siete días en la búsqueda de instantáneas viables para la recuperación. La restauración limpia ahora continúa buscando en las instantáneas disponibles un punto de recuperación viable independientemente de la distancia desde el evento de ransomware.
 
-link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Recupera cargas de trabajo con una restauración limpia"^].
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["Recupera cargas de trabajo con una restauración limpia"^].
 
 
 
