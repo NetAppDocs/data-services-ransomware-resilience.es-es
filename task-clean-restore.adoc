@@ -120,7 +120,7 @@ Para evitar estos conflictos, Ransomware Resilience realiza sysprep en la máqui
 
 === Fuentes secundarias
 
-Cuando creas la IRE para fuentes locales, tienes la opción de añadir una fuente secundaria.
+Cuando creas la IRE, tienes la opción de añadir una fuente secundaria.
 
 Si la fuente primaria no está disponible y has configurado una fuente secundaria, la restauración limpia se restaurará en la fuente secundaria.
 
