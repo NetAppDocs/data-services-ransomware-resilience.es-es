@@ -398,7 +398,6 @@
   <block id="ffc25a5f8d1276ee801a950e7f83a233" category="list-text">El agente de consola debe tener la<block ref="d5aabb6133fba5c7ef5a4e8db21d18ae" prefix=" " category="inline-code"></block> contenedor en estado activo.</block>
   <block id="04f679e072129c7e87e077dc95e5e73e" category="inline-link">Aprenda a configurar un agente de consola</block>
   <block id="b1fb1d531493b1af3ab2980b2c579a5f" category="inline-link">Requisitos estándar de la consola</block>
-  <block id="f9a3157f34101a0d560e518291db02ba" category="admonition">Si tiene varios agentes de consola en una sola organización de consola, Ransomware Resilience escaneará los recursos de ONTAP en todos los agentes de consola más allá del que esté seleccionado actualmente en la interfaz de usuario de la consola.</block>
   <block id="13572bbe68fe6ecbb17fb5a38d1313bb" category="inline-link">Descripción general de la protección autónoma contra ransomware</block>
   <block id="d5d09e7741370854c28c983cfbae51eb" category="inline-link-macro">Aprenda sobre la resiliencia frente al ransomware</block>
   <block id="d2e3e802d3f25894bd170688859d6cef" category="inline-link">Lista de permisos de AWS, Azure o S3</block>
@@ -1439,7 +1438,6 @@
   <block id="1b6bc3125f482fcbcf029c833aea1290" category="section-title">Requisitos de ONTAP</block>
   <block id="69e575df737b34413e9ac5e132f6db01" category="list-text">Debe estar ejecutando ONTAP 9.11.1 o posterior con una licencia ONTAP One habilitada en la instancia ONTAP local.  Para obtener más información sobre la compatibilidad con ONTAP , consulte<block ref="a17b9b304c2ac7f4ba576e11b099c691" category="inline-link-macro-rx"></block> .</block>
   <block id="287d5057af26ee58d3ebb3f5ab1c418c" category="list-text">Para aplicar configuraciones de protección (como habilitar la protección autónoma contra ransomware), Ransomware Resilience necesita permisos de administrador en el clúster ONTAP . El clúster ONTAP debería haberse incorporado utilizando únicamente las credenciales de usuario administrador del clúster ONTAP .</block>
-  <block id="afabe9e17313d371201713a96a9674ac" category="admonition">Si ha conectado un clúster ONTAP a la consola con credenciales que no son de administrador, [debe actualizar las credenciales en el clúster ONTAP ](#update-non-admin-user-permissions-in-an-ontap-system).</block>
   <block id="2256fdd13b41cd806db98cd42c5b498c" category="list-text">Una cuenta en NetApp StorageGRID, AWS S3, Azure Blob o Google Cloud Platform para destinos de copia de seguridad con los permisos de acceso adecuados configurados.</block>
   <block id="27bfb5502a8db50d09f593ce1b77b181" category="list-text">Inicie sesión en la CLI del clúster ONTAP como usuario administrador.</block>
   <block id="14e79e90c6d487ebb867aa7b0f88bf25" category="list-text">Vuelva a la NetApp Console para usar la función de resiliencia ante ransomware.</block>
@@ -1742,8 +1740,6 @@
   <block id="e85295e320f98fda3869b6fd777fcb74" category="inline-link-macro">Configura los agentes y colectores de actividad de los usuarios</block>
   <block id="1cb54935f05151077e45294fd0acda40" category="list-text"><block ref="1cb54935f05151077e45294fd0acda40" category="inline-link-macro-rx"></block></block>
   <block id="a7f617894520c70eda06105083582777" category="paragraph">Para que Ransomware Resilience te dé alertas sobre comportamientos sospechosos de usuarios, debes configurar un agente de actividad de usuario. Para instalar un agente de actividad de usuario, asegúrate de que tu sistema cumple <block ref="423b5fb22336ee99727442d2bf2268c5" category="inline-link-macro-rx"></block>.</block>
-  <block id="f5d77d7a39be1811d47f1310b0b80a61" category="paragraph">Si necesitas actualizar los permisos de usuarios que no son administradores para un sistema en particular, usa estos pasos.</block>
-  <block id="ecafefb609794a493ed83be961865b30" category="list-text">Inicia sesión en la Console. En el dashboard, identifica el sistema que necesita que se actualicen sus permisos de usuario de ONTAP.</block>
   <block id="6a3ad50557786ed110b2cefa2a2be7bd" category="list-text">Selecciona el sistema para ver sus detalles.</block>
   <block id="6872a6ef5ae2db047b6effa74304d0af" category="list-text">Muestra los roles existentes para ese usuario:</block>
   <block id="67c903793b6bf8b730fee76339b93672" category="list-text">Si seleccionaste *Detección de comportamiento sospechoso del usuario* como configuración de detección, selecciona el User activity agent o <block ref="0fcb9e48262f104799fbf49d6c09d7d5" category="inline-link-macro-rx"></block>.</block>
@@ -1927,7 +1923,6 @@
   <block id="e2907e7cb7d68b36821cd11cda209bc3" category="cell">SAN (iSCSI y NVMe)</block>
   <block id="3b9c98c430c62cb3627db641468d7e64" category="list-text">Evalúa tu postura de protección frente al ransomware y la muestra en un panel de control fácil de entender mientras te da recomendaciones para mejorar la protección.</block>
   <block id="9bd1fe262c57584526c5184d4de31827" category="list-text">Si tus clústeres ONTAP locales o sistemas Cloud Volumes ONTAP no están configurados en la NetApp Console, consulta <block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block> y <block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>.</block>
-  <block id="3eb45f3714606347a6ff182b822b69cc" category="list-text">Para clústeres ONTAP o Cloud Volumes ONTAP, Ransomware Resilience requiere que la versión de ONTAP sea 9.11.1 o mayor.</block>
   <block id="4b2c42068bb1431d3a8d94e9ca135659" category="paragraph"><block ref="187dbd743d444b65478d146e1c2c85f6" category="inline-link-rx"></block>.</block>
   <block id="e300a441bfe88a3cd9729e46cfd3c605" category="paragraph">El panel muestra la salud de la protección de datos. El número de cargas de trabajo en riesgo o protegidas se actualiza a medida que se descubren nuevas cargas de trabajo.</block>
   <block id="3d7e9fe4b06f7b72aa18a4870bc065e4" category="inline-image-macro">Panel de Ransomware Resilience</block>
@@ -2493,4 +2488,15 @@
   <block id="f5cfed6a695ca584c4de91e043cec8df" category="list-text">Selecciona **Liberar recursos y salir** para liberar los recursos y cerrar la sala blanca. Para confirmar, selecciona **Finalizar**.</block>
   <block id="ee9eb963788511d80fc2e4d572229dfc" category="paragraph">Si la fuente primaria no está disponible y has configurado una fuente secundaria, la restauración limpia se restaurará en la fuente secundaria.</block>
   <block id="1ed548d363a0d2a6ce0c5db113b94db8" category="paragraph">Cuando creas la IRE, tienes la opción de añadir una fuente secundaria.</block>
+  <block id="61fcfe4267994f7a09ac2c0eac28d82e" category="admonition">Si tienes varios agentes de Console en una única organización de Console, Ransomware Resilience analizará los recursos de ONTAP en todos los agentes de Console además del que esté seleccionado actualmente en la interfaz de usuario de Console.</block>
+  <block id="8c2c19111935f9243c0b70cc9147c7f6" category="list-text">Para clústeres ONTAP o Cloud Volumes ONTAP, Ransomware Resilience requiere ONTAP versión 9.11.1 o superior.</block>
+  <block id="fdd0606f2daa519f710ae175b71f67f1" category="admonition">Si has conectado un clúster ONTAP a la consola con credenciales que no son de administrador, debes <block ref="065743cc2c7ea5dd36eed7ab4585f3ce" category="inline-xref-macro-rx"></block>.</block>
+  <block id="6677749fe8a4ba0666e6645ce9e88655" category="section-title">Requisitos previos para la restauración limpia</block>
+  <block id="9f7a1ec0fd7d8ed497c98ea393a4f199" category="inline-link-macro">asegúrate de cumplir los requisitos previos</block>
+  <block id="fa846f105dbfe513971f8343a3907be6" category="paragraph">Ransomware Resilience proporciona restauraciones limpias, que ofrecen un proceso de recuperación guiado que descubre las vías de recuperación óptimas. Para utilizar la restauración limpia, <block ref="b5c2c0cc1a78442b8e29bd0cb44004f7" category="inline-link-macro-rx"></block>.</block>
+  <block id="c36975af9ca6baf7b5a05658605b577d" category="paragraph">Si necesitas actualizar los permisos de usuarios no administradores para un sistema en particular, usa este procedimiento:</block>
+  <block id="3e24330471da607e91da657f3cdf7a39" category="list-text">Inicia sesión en la consola. En el panel de control, identifica el sistema que necesita que se actualicen sus permisos de usuario de ONTAP.</block>
+  <block id="7f3418b9bbded932a1a1585ec05f42c3" category="inline-link-macro">detección de actividad sospechosa de los usuarios</block>
+  <block id="df790109011414a6034217652cd48d7c" category="inline-link-macro">restauraciones limpias</block>
+  <block id="c40aa9438834745dead5ab833fb4ad95" category="list-text">Revisa también los requisitos de <block ref="8195b6c486e4af94bbefa0d6c4fe0d9d" category="inline-link-macro-rx"></block> y <block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block>.</block>
 </blocks>
