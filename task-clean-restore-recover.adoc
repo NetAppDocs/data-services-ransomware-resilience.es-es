@@ -62,6 +62,9 @@ Cuando restauras un volumen utilizando la restauración limpia, tienes la opció
 +
 image:screenshot-clean-room-analysis.png["Captura de pantalla del paso de análisis de restauración limpia."]
 
++
+Mientras se ejecuta el análisis, puedes seleccionar **Detener**. Detener el análisis requiere que se inicie de nuevo el proceso de restauración limpia.
+
 . Una vez completado el análisis, selecciona **Siguiente** para planificar tu recuperación. NetApp Ransomware Resilience presenta dos opciones: **Mínima pérdida de datos** y **Último punto de restauración no afectado**. Selecciona cualquiera de las opciones y, si quieres, revisa los datos de archivos individuales para cualquiera de los puntos de restauración.
 +
 Para ver datos granulares de eventos de archivos, selecciona un archivo para analizar su estado de cifrado y sus metadatos: cuándo se creó, modificó o eliminó, y qué punto de recuperación corresponde a qué acción.

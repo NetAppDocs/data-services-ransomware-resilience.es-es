@@ -33,6 +33,12 @@
 .2+| ONTAP (en las instalaciones) | CIFS y NFS | 9.11.1 y posteriores 
 
 
-| SAN (FC, iSCSI y NVMe) | 9.17.1 y posteriores 
+| SAN (iSCSI y NVMe) | 9.17.1 y posteriores 
+
+
+| Google Cloud NetApp Volumes | CIFS, NFS, SAN (iSCSI y NVMe) | N/A 
 |===
 {asterisk} Amazon FSx for NetApp ONTAP utiliza la Protección Autónoma contra el Ransomware (ARP) y no ARP/AI.  Para obtener más información sobre la diferencia, consultelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/IA"^] .
+
+
+NOTE: La detección de actividad sospechosa de usuarios no es compatible con Azure NetApp Files ni con Google Cloud NetApp Volumes. Para obtener más información sobre la compatibilidad con la detección de actividad sospechosa de usuarios, consulta link:reference-user-activity-requirements.html["Requisitos para la detección de la actividad de usuario"].

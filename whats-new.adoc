@@ -18,6 +18,28 @@ Descubra las novedades en NetApp Ransomware Resilience.
 
 
 
+== 18 de mayo de 2026
+
+
+
+=== Compatibilidad con Google Cloud NetApp Volumes (vista previa)
+
+Ransomware Resilience ahora es compatible con los sistemas de Google Cloud NetApp Volumes, lo que te permite detectar y responder eficazmente a las amenazas de ransomware en Google Cloud NetApp Volumes. Cuando realizas la detección, Ransomware Resilience muestra automáticamente las cargas de trabajo de los sistemas de Google Cloud NetApp Volumes. Cuando descubres los sistemas, aparecen en el panel de Ransomware Resilience. El soporte para Google Cloud NetApp Volumes en Ransomware Resilience está actualmente en vista previa.
+
+Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Aprenda sobre la resiliencia frente al ransomware"^]. Para obtener información sobre el alcance de la asistencia de Google Cloud NetApp Volumes, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["Limitaciones de la resistencia al ransomware"^].
+
+
+
+=== Mejoras en la restauración limpia
+
+La restauración limpia ahora admite informes. Con los informes, puedes revisar y evaluar las restauraciones limpias, guardando esta información sin conexión como un archivo CSV.
+
+La restauración limpia también permite ahora detener el análisis. Si detienes el análisis, debes iniciar de nuevo la restauración limpia.
+
+Para saber más sobre informes, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["Descargar informes de Ransomware Resilience"^]. Para saber más sobre recuperación, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["Recupera cargas de trabajo con una restauración limpia"^].
+
+
+
 == 11 de mayo de 2026
 
 
