@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-user-behavior.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, user activity, graph view, workload security 
-summary: Usa la detección de comportamientos sospechosos de usuarios y alertas para evitar la violación y destrucción de datos en tus cargas de trabajo. 
+summary: Detecta la actividad anómala de los usuarios en Ransomware Resilience para que puedas identificar eventos como filtraciones de datos y bloquear usuarios. 
 ---
 = Conoce la detección de la actividad de los usuarios en NetApp Ransomware Resilience
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: Usa la detección de comportamientos sospechosos de usuarios y alertas 
 [role="lead"]
 Con la detección de la actividad de los usuarios, NetApp Ransomware Resilience te permite abordar eventos de ransomware a nivel de usuario, deteniendo eventos como filtraciones de datos y eliminaciones a gran escala.
 
-NetApp Ransomware Resilience ofrece una detección de violación de datos impulsada por IA al monitorear la actividad sospechosa de los usuarios. Los aumentos bruscos en la actividad de lectura y los patrones de acceso a la actividad de lectura se usan para determinar la intención maliciosa. Una vez detectado, Ransomware Resilience genera automáticamente alertas en la NetApp Console, por correo electrónico y en cualquier ecosistema de seguridad configurado (por ejemplo, SIEM).
+NetApp Ransomware Resilience proporciona detección impulsada por IA y monitorización del comportamiento sospechoso de los usuarios. Los aumentos bruscos en la actividad de lectura o los patrones de acceso inusuales se utilizan para determinar la intención maliciosa. Una vez detectado, Ransomware Resilience genera automáticamente alertas en la NetApp Console, por correo electrónico y en cualquier ecosistema de seguridad configurado (por ejemplo, SIEM).
 
-Con la detección y alerta de comportamientos sospechosos de los usuarios, Ransomware Resilience te avisa de los intentos de violación y destrucción de datos y de los patrones que parecen sospechosos. En cada alerta, Ransomware Resilience identifica a un usuario que puedes bloquear.
+Con la detección y alerta del comportamiento de los usuarios, Ransomware Resilience te avisa sobre intentos de violación y destrucción de datos, así como de patrones que parecen sospechosos. En cada alerta, Ransomware Resilience identifica a un usuario que puedes bloquear.
 
 Ransomware Resilience detecta actividad sospechosa del usuario analizando los eventos de actividad del usuario generados por FPolicy en ONTAP. Para recopilar datos de actividad del usuario, debe implementar uno o más agentes de actividad del usuario. El agente es un servidor Linux o una máquina virtual con conectividad a los dispositivos de su inquilino.
 
@@ -25,7 +25,7 @@ IMPORTANT: La detección de actividad del usuario no está soportada actualmente
 
 
 
-== Análisis forense de actividad sospechosa de usuarios
+== Análisis forense de la actividad de los usuarios
 
 Ransomware Resilience ofrece análisis forenses de los comportamientos de los usuarios: listas y gráficos que muestran cuándo ocurrió actividad sospechosa y cuándo se enviaron notificaciones. Estos detallan la frecuencia de la actividad sospechosa en archivos, directorios, volúmenes y cargas de trabajo a lo largo del tiempo para ayudar a trazar los eventos. También puedes observar la aparición de nuevas extensiones de archivo.
 
@@ -39,10 +39,10 @@ image:all-file-activity.png["Captura de pantalla de la vista de toda la activida
 
 == Componentes
 
-Hay tres componentes clave en la detección de actividad de comportamiento sospechoso del usuario en Ransomware Resilience.
+Hay tres componentes clave en la detección del comportamiento del usuario de Ransomware Resilience.
 
 * El **agente de actividad del usuario** es un entorno ejecutable para los recopiladores de datos. Debes configurar el agente de actividad del usuario.
-* El **recolector de datos** comparte los eventos de actividad del usuario con Ransomware Resilience. El recolector de datos se crea automáticamente cuando tú link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["activa una estrategia de protección contra ransomware con detección de actividad sospechosa de usuarios"].
+* El **recolector de datos** comparte los eventos de actividad del usuario con Ransomware Resilience. El recolector de datos se crea automáticamente cuando tú link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["activar una estrategia de protección contra ransomware con detección del comportamiento del usuario"].
 * El **conector de directorio de usuarios** permite el mapeo entre nombres de usuario e identificaciones de usuario, creando mayor claridad al responder a comportamientos sospechosos de los usuarios. Debes configurar el conector de directorio de usuarios.
 
 
@@ -50,7 +50,7 @@ Hay tres componentes clave en la detección de actividad de comportamiento sospe
 
 == Ransomware Resilience y Data Infrastructure Insights
 
-La detección de comportamientos sospechosos de usuarios de Ransomware Resilience es una integración con Data Infrastructure Insights (DII) Workload Security y utiliza link:reference-user-activity-requirements.html["Puntos finales DII"]. No necesitas ninguna configuración de DII para activar la detección de comportamientos de usuarios en Ransomware Resilience. Para activar la detección de comportamientos de usuarios, link:suspicious-user-activity.html["crea el agente y los recopiladores necesarios y activa la estrategia de protección contra ransomware adecuada"].
+La detección del comportamiento del usuario de Ransomware Resilience es una integración con Data Infrastructure Insights (DII) Workload Security y utiliza link:reference-user-activity-requirements.html["Puntos finales DII"]. No necesitas ninguna configuración de DII para activar la detección del comportamiento del usuario en Ransomware Resilience. Para activar la detección del comportamiento del usuario, link:suspicious-user-activity.html["crea el agente y los recopiladores necesarios y activa la estrategia de protección contra ransomware adecuada"].
 
 Si ya estás usando NetApp Data Infrastructure Insights (DII) Workload Security, se recomienda que uses los mismos agentes de Workload Security para Ransomware Resilience. No necesitas implementar agentes de Workload Security independientes para Ransomware Resilience, pero usar los mismos agentes de Workload Security requiere una relación de emparejamiento entre la organización de la consola de Ransomware Resilience y el tenant de DII Storage Workload Security. Contacta a tu representante de cuenta para habilitar este emparejamiento.
 
@@ -58,6 +58,6 @@ Si ya estás usando NetApp Data Infrastructure Insights (DII) Workload Security,
 
 == Próximos pasos
 
-* link:reference-user-activity-requirements.html["Requisitos para la detección de la actividad de comportamiento del usuario"]
-* link:suspicious-user-activity.html["Configura los agentes y detectores de actividad del comportamiento del usuario"]
+* link:reference-user-activity-requirements.html["Requisitos para la detección del comportamiento de los usuarios"]
+* link:suspicious-user-activity.html["Configura agentes y detectores del comportamiento de los usuarios"]
 

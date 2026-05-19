@@ -52,7 +52,7 @@ image:screen-settings-alert-drill-configure.png["Configurar la página de simula
 .. Seleccione un sistema de prueba.
 .. Seleccione un SVM de almacenamiento de prueba.
 .. Si seleccionó una máquina virtual de almacenamiento CIFS (SMB), aparecerán los campos **Nombre de usuario** y **Contraseña**.  Introduzca el nombre de usuario y la contraseña para la máquina virtual de almacenamiento.
-.. Seleccione el tipo de simulacro de preparación. Para una recuperación manual de una violación de datos de cifrado, elija **Recuperación personalizada**. Para recuperarse de una actividad de usuario sospechosa, elija **Violación de datos**.
+.. Selecciona el tipo de ejercicio de preparación. Para una recuperación manual de una violación de datos cifrados, elige **Recuperación personalizada**. Para la recuperación de un comportamiento sospechoso de usuario, elige **Violación de datos**.
 .. Introduce el nombre de la carga de trabajo de prueba. No incluyas guiones en el nombre.
 
 

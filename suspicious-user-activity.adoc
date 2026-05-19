@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: suspicious-user-activity.html 
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, 
-summary: La detección de actividad de usuarios sospechosa en Ransomware Resilience le permite detectar actividad de usuarios que podría representar una amenaza potencial. 
+summary: La detección de la actividad del usuario en Ransomware Resilience te permite detectar la actividad del usuario que podría representar una amenaza potencial. 
 ---
 = Configura la detección de la actividad del usuario en NetApp Ransomware Resilience
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: La detección de actividad de usuarios sospechosa en Ransomware Resilie
 
 
 [role="lead"]
-La detección de actividad del usuario de NetApp Ransomware Resilience te ayuda a prevenir eventos de ransomware a nivel de usuario. Para habilitar la detección de comportamiento sospechoso del usuario en Ransomware Resilience, debes instalar al menos un agente de actividad del usuario, que crea un entorno de recopilación de datos para monitorear el comportamiento del usuario en busca de patrones aberrantes que se parezcan a eventos de ransomware.
+La detección del comportamiento del usuario de NetApp Ransomware Resilience te ayuda a prevenir eventos de ransomware a nivel de usuario. Para habilitar la detección del comportamiento del usuario en Ransomware Resilience, debes instalar al menos un agente de actividad del usuario, que crea un entorno de recopilación de datos para monitorear el comportamiento del usuario en busca de patrones aberrantes que se parezcan a eventos de ransomware.
 
 Un agente de actividad de usuario aloja un recopilador de datos y un conector de directorio de usuario, que ambos envían datos a una ubicación SaaS para análisis.
 
@@ -34,7 +34,7 @@ Si _no_ usas DII, sigue las instrucciones de configuración aquí.
 * Asegúrate de cumplir los link:reference-user-activity-requirements.html["requisitos del sistema operativo, servidor y red"].
 
 
-*Rol requerido de la consola* Para activar la detección de actividad sospechosa de usuarios, necesitas el rol **Organization admin role**. Para las configuraciones posteriores de actividad sospechosa de usuarios, necesitas el rol **Ransomware Resilience user behavior admin role**. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
+*Función requerida de la consola* Para activar la detección del comportamiento del usuario, necesitas el rol de **Organization admin**. Para las configuraciones posteriores de detección del comportamiento del usuario, necesitas el rol de **Ransomware Resilience user behavior admin**. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
 
 Asegúrate de que cada función se aplique a nivel de la organización.
 
@@ -42,7 +42,7 @@ Asegúrate de que cada función se aplique a nivel de la organización.
 
 == Crear un agente de actividad de usuario
 
-Los agentes de actividad de usuario son entornos ejecutables para link:#add-a-data-collector["recopiladores de datos"]; los recopiladores de datos comparten eventos de actividad de usuario con Ransomware Resilience. Debes crear al menos un agente de actividad de usuario para habilitar la detección de actividad de usuario sospechosa.
+Los agentes de actividad de usuario son entornos ejecutables para link:#add-a-data-collector["recopiladores de datos"]; los recopiladores de datos comparten eventos de actividad de usuario con Ransomware Resilience. Debes crear al menos un agente de actividad de usuario para habilitar la detección de actividad de usuario.
 
 .Pasos
 . Si es la primera vez que crea un agente de actividad de usuario, vaya al **Panel de control**. En el mosaico **Actividad del usuario**, seleccione **Activar**.
@@ -80,7 +80,7 @@ Después de que el agente de actividad de usuario se cree correctamente, vuelve 
 
 === Agregar un recopilador de datos
 
-Los recopiladores de datos se crean automáticamente cuando habilitas una estrategia de protección contra ransomware con detección de actividad sospechosa de usuarios. Para más información, consulta link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["añadir una política de detección"].
+Los recopiladores de datos se crean automáticamente cuando activas una estrategia de protección contra ransomware con detección de actividad de usuario. Para más información, consulta link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["añadir una política de detección"].
 
 Puede ver los detalles del recopilador de datos. Desde Configuración, seleccione **Administrar** en el mosaico Actividad del usuario. Seleccione la pestaña **Recopilador de datos** y luego seleccione el recopilador de datos para ver sus detalles o pausarlo.
 
@@ -204,6 +204,6 @@ Puedes agregar un usuario de nuevo a la detección después.
 
 
 
-== Responder a alertas de actividad sospechosa del usuario
+== Responde a las alertas de actividad de los usuarios
 
-Después de configurar la detección de actividad sospechosa de usuarios, puedes monitorear los eventos en la página de alertas. Para más información, consulta link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["Detecta actividad maliciosa y comportamiento sospechoso de los usuarios"].
+Después de configurar la detección de actividad del usuario, puedes supervisar los eventos en la página de alertas. Para más información, consulta link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["Detecta actividad maliciosa y comportamiento sospechoso de los usuarios"].

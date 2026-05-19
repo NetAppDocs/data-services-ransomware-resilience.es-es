@@ -120,6 +120,18 @@ A link:rp-use-protect.html#add-a-ransomware-protection-strategy["estrategia de p
 
 No se requiere una política de respaldo en la estrategia de resiliencia frente al ransomware.
 
+.¿Qué tipos de ataques reconoce Ransomware Resilience?
+Ransomware Resilience reconoce cinco tipos de ataque:
+
+* Cifrado (entropía)
+* Cifrado (comportamiento del usuario)
+* Violación de datos
+* Destrucción de datos
+* Actividad sospechosa del usuario
+
+
+Más información sobre link:concept-ransomware-resilience.html#attack-types["tipos de ataque"].
+
 .¿Ransomware Resilience conoce las configuraciones de protección en ONTAP?
 Sí, Ransomware Resilience descubre las programaciones de instantáneas establecidas en ONTAP. También descubre si ARP y FPolicy están activados en todos los volúmenes de una carga de trabajo descubierta. La información que ves en el panel de Ransomware Resilience se agrega a partir de otras soluciones y productos de NetApp.
 

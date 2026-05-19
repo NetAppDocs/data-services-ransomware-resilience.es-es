@@ -27,13 +27,13 @@ A diferencia de la detección de cifrado por ARP en la capa de almacenamiento, l
 
 IMPORTANT: Debes utilizar el nuevolink:#new-user-roles-for-data-breach-detection["Administrador del comportamiento del usuario de Ransomware Resilience y visor del comportamiento del usuario de Ransomware Resilience"] Roles para acceder a configuraciones de detección de comportamiento sospechoso de usuarios.
 
-Para obtener más información, consultelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Habilitar la detección de actividad sospechosa de usuarios"] ylink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["Ver comportamiento anómalo del usuario"] .
+Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Activar la detección de la actividad del usuario"] y link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["Ver comportamiento anómalo del usuario"].
 
 
 
 ==== Detecciones adicionales de actividad sospechosa del usuario
 
-Además de la detección de violaciones de datos, Ransomware Resilience también detecta los siguientes tipos de alertas según la actividad sospechosa del usuario observada:
+Además de la detección de violaciones de datos, Ransomware Resilience también detecta los siguientes tipos de alertas basados en la actividad observada del usuario:
 
 * **Destrucción de datos - ataque potencial** - Se crea una alerta con la gravedad del ataque potencial cuando la cantidad de eliminaciones de archivos excede la norma histórica.
 * **Comportamiento sospechoso del usuario - posible ataque**: se crea una alerta con la gravedad del posible ataque cuando se observan operaciones de lectura, cambio de nombre y eliminación en una secuencia similar a un ataque de ransomware.
@@ -44,7 +44,7 @@ Además de la detección de violaciones de datos, Ransomware Resilience también
 
 ==== Nuevos roles de usuario para la detección de violaciones de datos
 
-Para administrar las alertas de actividad sospechosa de los usuarios, Ransomware Resilience ha introducido dos nuevos roles para que los administradores de la organización de la consola otorguen acceso a la detección de actividad sospechosa de los usuarios: administrador de comportamiento de usuarios de Ransomware Resilience y visor de comportamiento de usuarios de Ransomware Resilience.
+Para gestionar las alertas de actividad de usuario, Ransomware Resilience ha introducido dos nuevos roles para que los administradores de la organización de NetApp Console concedan acceso a la detección de actividad de usuario sospechosa: Ransomware Resilience user behavior admin y Ransomware Resilience user behavior viewer.
 
 Debe ser un administrador de comportamiento de usuario para configurar las opciones de comportamiento de usuario sospechoso. El rol de administrador de Ransomware Resilience no es compatible con la configuración de ajustes de comportamiento de usuarios sospechosos.
 

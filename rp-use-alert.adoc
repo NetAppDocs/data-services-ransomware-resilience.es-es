@@ -161,7 +161,7 @@ Aparece la página de Alertas.
 
 Al mirar la pestaña Alertas, puede identificar si hay actividad maliciosa o un comportamiento anómalo del usuario.
 
-Debes haber configurado un agente de actividad del usuario y habilitado una política de protección con detección del comportamiento del usuario para ver las alertas a nivel de usuario. La columna *Usuario sospechoso* aparece en el panel de alertas solo cuando la detección del comportamiento del usuario está habilitada. Para habilitar la detección de usuarios sospechosos, consulta link:suspicious-user-activity.html["Actividad sospechosa del usuario"].
+Debes haber configurado un agente de actividad del usuario y activado una política de protección con detección de comportamiento del usuario para ver las alertas de nivel de usuario. La columna *Usuario sospechoso* aparece en el panel de alertas solo cuando está activada la detección de comportamiento del usuario. Para obtener más información, link:suspicious-user-activity.html["conoce la detección de la actividad de los usuarios"].
 
 
 
@@ -195,7 +195,7 @@ image:screen-alerts-incidents3.png["Página de incidentes de alerta"]
 
 === Ver comportamiento anómalo del usuario
 
-Si has configurado la detección de usuarios sospechosos para ver el comportamiento anómalo de los usuarios, puedes ver los datos a nivel de usuario y bloquear usuarios específicos. Para activar la configuración de usuarios sospechosos, consulta link:suspicious-user-activity.html["Configura agentes y colectores para la detección de actividad de usuarios"].
+Si has configurado la detección del comportamiento del usuario, puedes ver los datos a nivel de usuario y bloquear usuarios específicos. Para activar la detección de la actividad del usuario, consulta link:suspicious-user-activity.html["Configura agentes y colectores"].
 
 .Pasos
 . En el menú Resiliencia ante ransomware, seleccione *Alertas*.

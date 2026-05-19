@@ -41,4 +41,4 @@
 {asterisk} Amazon FSx for NetApp ONTAP utiliza la Protección Autónoma contra el Ransomware (ARP) y no ARP/AI.  Para obtener más información sobre la diferencia, consultelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/IA"^] .
 
 
-NOTE: La detección de actividad sospechosa de usuarios no es compatible con Azure NetApp Files ni con Google Cloud NetApp Volumes. Para obtener más información sobre la compatibilidad con la detección de actividad sospechosa de usuarios, consulta link:reference-user-activity-requirements.html["Requisitos para la detección de la actividad de usuario"].
+NOTE: La detección de actividad del usuario no es compatible con Azure NetApp Files o Google Cloud NetApp Volumes. Para obtener más información sobre la compatibilidad con la detección de actividad del usuario, consulta link:reference-user-activity-requirements.html["Requisitos para la detección de la actividad de usuario"].

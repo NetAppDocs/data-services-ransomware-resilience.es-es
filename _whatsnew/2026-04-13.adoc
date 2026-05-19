@@ -20,7 +20,7 @@ Para más información, consulta link:https://docs.netapp.com/us-en/data-service
 
 
 
-=== Mejora de la actividad del usuario
+=== Mejora de la detección del comportamiento del usuario
 
 La información sobre las violaciones de datos se conserva ahora durante 13 meses después de un incidente, lo que permite un registro más prolongado para tus necesidades de información.
 

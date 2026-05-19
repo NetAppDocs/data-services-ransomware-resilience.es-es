@@ -20,7 +20,7 @@ Para más información, consulta el enlace: para más información, consulta lin
 
 
 
-=== Soporte de grupo de protección para la actividad de comportamiento del usuario
+=== Compatibilidad de grupos de protección para la detección del comportamiento de los usuarios
 
 Los grupos de protección de Ransomware Resilience ahora admiten políticas de detección para detectar comportamientos sospechosos de los usuarios. Cuando aplicas una estrategia de protección contra ransomware a un grupo de protección, se aplica una política en todas las cargas de trabajo, lo que agiliza la gestión de tu postura de ciberseguridad.
 
