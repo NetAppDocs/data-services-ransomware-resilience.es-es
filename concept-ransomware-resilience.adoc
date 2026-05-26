@@ -108,7 +108,7 @@ Obtenga más información sobre ellink:https://docs.netapp.com/us-en/console-set
 
 == Cómo funciona la resiliencia frente al ransomware
 
-Ransomware Resilience utiliza NetApp Backup and Recovery para descubrir y establecer políticas de instantáneas y copias de seguridad para cargas de trabajo de archivos compartidos.
+Ransomware Resilience funciona con tu consola y configuración de ONTAP existentes para identificar amenazas de ransomware, proteger tus cargas de trabajo y permitir una recuperación rápida.
 
 image:diagram-rp-architecture-preview3.png["Diagrama que muestra la arquitectura de resiliencia frente al ransomware"]
 

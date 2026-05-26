@@ -387,7 +387,6 @@
   <block id="d5d09e7741370854c28c983cfbae51eb" category="inline-link-macro">Aprenda sobre la resiliencia frente al ransomware</block>
   <block id="d2e3e802d3f25894bd170688859d6cef" category="inline-link">Lista de permisos de AWS, Azure o S3</block>
   <block id="90061bb176f3e723f6f2161eafc1901c" category="paragraph">Consulte la<block ref="31e1fb669a04af441205b80b4846232f" category="inline-link-rx"></block> Para más detalles.</block>
-  <block id="583833d6f0468c713c410ea158e1b6f6" category="list-text">No es necesario habilitar NetApp Backup and Recovery en el sistema.</block>
   <block id="fb197ee87a0f850dc3b7bb98fe408518" category="inline-link-macro">Configurar ajustes</block>
   <block id="1afe90b99262d688f040631ea9d6dcce" category="section-title">Actualizar los permisos de usuarios no administradores en un sistema ONTAP</block>
   <block id="ddf0d8cb7fa932ccfbf9231d4f27f992" category="list-text">Seleccione *Ver información adicional* para mostrar el nombre de usuario.</block>
@@ -1756,7 +1755,6 @@
   <block id="46fa98b3b308dc6f48d40cf8b1712bfe" category="section-title">Datos de eventos enviados a un SIEM</block>
   <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">16 febrero 2026</block>
   <block id="51f5590fac3af82049df229fcb91793c" category="sidebar">Configura SIEM</block>
-  <block id="8944abed4a7795983ff8cde0c660dfda" category="paragraph">Ransomware Resilience utiliza NetApp Backup and Recovery para descubrir y establecer políticas de instantáneas y copias de seguridad para cargas de trabajo de archivos compartidos.</block>
   <block id="c7508e265b893e4d518594502d79c380" category="list-text">Supervisa activamente las cargas de trabajo y orquesta el uso de las API de Backup and Recovery y ONTAP aplicando políticas a cada una de las cargas de trabajo identificadas.</block>
   <block id="e47b008a3c9b07db3a7f7c525eeccc5a" category="cell">Asigna una política a cada una de las cargas de trabajo. Consulta <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>. Consulta <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>. Consulta <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>.</block>
   <block id="402b250b6b0cd33bf0396353ed30be82" category="inline-link-macro">cargas de trabajo de grupo</block>
@@ -1879,7 +1877,6 @@
   <block id="7ca04b3ca0d38a36dbb53ddae48a80fa" category="paragraph"><block ref="7ca04b3ca0d38a36dbb53ddae48a80fa" category="inline-link-macro-rx"></block></block>
   <block id="86f1d97261d36debcad3b0a69e10f3f4" category="list-text">En Ransomware Resilience, selecciona *Configuración*.</block>
   <block id="91437eaac9ac7d1f1da9a4e4751cbaa6" category="paragraph">Sí, Ransomware Resilience descubre las programaciones de instantáneas establecidas en ONTAP. También descubre si ARP y FPolicy están activados en todos los volúmenes de una carga de trabajo descubierta. La información que ves en el panel de Ransomware Resilience se agrega a partir de otras soluciones y productos de NetApp.</block>
-  <block id="30d645e3c3e5cd0e502a92a067fc1be8" category="paragraph">Ransomware Resilience te ayuda a configurar un destino de backup usando la opción de configuración. Mira <block ref="e25a1b60993d45f33b0deea2ae726330" category="inline-link-macro-rx"></block>.</block>
   <block id="c4550c3db972a64a4938aff3fdcc3f3d" category="paragraph">Después de configurar las opciones en el propio destino de backup, luego lo vas a configurar como destino de backup en Ransomware Resilience. Para detalles sobre cómo configurar el destino de backup en Ransomware Resilience, consulta <block ref="e0972ac2b24cae233c2035120c295c6d" category="inline-link-macro-rx"></block>.</block>
   <block id="bc46a0ba0f385a3e46fe17c4f792de15" category="summary">Si Ransomware Resilience detecta un posible ataque, aparece una alerta en el panel de Ransomware Resilience indicando un posible ataque. En este punto, debes consultar el riesgo potencial en la pestaña Alertas de Ransomware Resilience.</block>
   <block id="3c333ed4b45464bb8628169fb460f0b4" category="paragraph">Cuando NetApp Ransomware Resilience detecta un posible ataque, muestra una alerta en el panel de control y en el menú de notificaciones. Ransomware Resilience toma inmediatamente una instantánea. Cuando recibas una alerta, revisa el riesgo potencial en la pestaña *Alerts* de Ransomware Resilience para evaluar el impacto en tus datos y prevenir un posible ataque de ransomware.</block>
@@ -2545,6 +2542,10 @@
   <block id="d4f53dbb2dd23ad3f2c3d3656c20777b" category="section-title">Responde a las alertas de actividad de los usuarios</block>
   <block id="d0073f8a1f393dd14a8d4168ebf29ac2" category="paragraph">Después de configurar la detección de actividad del usuario, puedes supervisar los eventos en la página de alertas. Para más información, consulta <block ref="8143bbb79caf2751151f26d9d0abf580" category="inline-link-macro-rx"></block>.</block>
   <block id="3f8fbfed6e13f7cb7fb11b080bdb9718" category="inline-link-macro">Crear un grupo de protección en Ransomware Resilience</block>
-  <block id="afe30c0d6b10a23db7ce0d1907082557" category="paragraph">Ransomware Resilience ahora admite la creación de grupos de protección para cargas de trabajo en sistemas Google Cloud NetApp Volumes, lo que te permite organizar varias cargas de trabajo bajo una política para agilizar la gestión. Para más información, consulta <block ref="002b0319872c1627d4b50bdcb04f2ca6" category="inline-link-macro-rx"></block>.</block>
   <block id="54ab5224cb7ab20d9d094be05a20cb88" category="section-title">26 de mayo de 2026</block>
+  <block id="bf294be5c1e56f5593f503af52286773" category="paragraph">Ransomware Resilience ahora admite la creación de grupos de protección para cargas de trabajo en sistemas Google Cloud NetApp Volumes, lo que te permite organizar varias cargas de trabajo bajo una política para agilizar la gestión.</block>
+  <block id="8d317d4f29fef19dda568fc8ae7b0751" category="paragraph">Para más información, consulta <block ref="002b0319872c1627d4b50bdcb04f2ca6" category="inline-link-macro-rx"></block>.</block>
+  <block id="9d72a156b56c5cfe0d0bcd54c96cf39a" category="paragraph">Ransomware Resilience funciona con tu consola y configuración de ONTAP existentes para identificar amenazas de ransomware, proteger tus cargas de trabajo y permitir una recuperación rápida.</block>
+  <block id="40ad71d352fd267903b0c9896408ca5f" category="inline-link-macro">configurar un destino de backup en Ransomware Resilience</block>
+  <block id="a7594ef03dc90d06c5e3a823eab6aae4" category="admonition">Puedes <block ref="0e8a0563855377563403f0031aef555d" category="inline-link-macro-rx"></block>. Si tus cargas de trabajo están protegidas por NetApp Backup and Recovery, Ransomware Resilience reconoce automáticamente los detalles de protección, incluidas las instantáneas y los destinos de backup. Backup and Recovery _no_ es necesario para usar Ransomware Resilience.</block>
 </blocks>
