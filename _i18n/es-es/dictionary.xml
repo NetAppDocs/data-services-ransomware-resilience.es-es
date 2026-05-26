@@ -2544,4 +2544,7 @@
   <block id="1003fdbfa95a1ad8e273ca1560375f69" category="paragraph">Los recopiladores de datos se crean automáticamente cuando activas una estrategia de protección contra ransomware con detección de actividad de usuario. Para más información, consulta <block ref="197232a118beafa8882aae5625527a41" category="inline-link-macro-rx"></block>.</block>
   <block id="d4f53dbb2dd23ad3f2c3d3656c20777b" category="section-title">Responde a las alertas de actividad de los usuarios</block>
   <block id="d0073f8a1f393dd14a8d4168ebf29ac2" category="paragraph">Después de configurar la detección de actividad del usuario, puedes supervisar los eventos en la página de alertas. Para más información, consulta <block ref="8143bbb79caf2751151f26d9d0abf580" category="inline-link-macro-rx"></block>.</block>
+  <block id="3f8fbfed6e13f7cb7fb11b080bdb9718" category="inline-link-macro">Crear un grupo de protección en Ransomware Resilience</block>
+  <block id="afe30c0d6b10a23db7ce0d1907082557" category="paragraph">Ransomware Resilience ahora admite la creación de grupos de protección para cargas de trabajo en sistemas Google Cloud NetApp Volumes, lo que te permite organizar varias cargas de trabajo bajo una política para agilizar la gestión. Para más información, consulta <block ref="002b0319872c1627d4b50bdcb04f2ca6" category="inline-link-macro-rx"></block>.</block>
+  <block id="54ab5224cb7ab20d9d094be05a20cb88" category="section-title">26 de mayo de 2026</block>
 </blocks>
