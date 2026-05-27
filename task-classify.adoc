@@ -11,7 +11,7 @@ summary: Ransomware Resilience puede identificar exposiciones de privacidad en t
 [role="lead"]
 Dentro de NetApp Ransomware Resilience, puedes usar NetApp Data Classification para identificar exposiciones de privacidad y proteger tus datos de forma proactiva. Identificar exposiciones de privacidad revela si un conjunto de datos incluye información de identificación personal (PII). Las exposiciones de privacidad pueden aumentar los riesgos de seguridad y cambiar la designación de importancia de la carga de trabajo.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesitas el rol de link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Súper administrador"^] o Ransomware Resilience admin. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
 
 
 

@@ -14,7 +14,7 @@ summary: Puede proteger las cargas de trabajo contra ataques de ransomware asign
 [role="lead"]
 NetApp Ransomware Resilience ofrece grupos de protección para facilitar la gestión de tu patrimonio de datos. Los grupos de protección son agrupaciones lógicas de cargas de trabajo. Ransomware Resilience puede proteger todos los volúmenes de un grupo de protección al mismo tiempo con una sola estrategia de protección, así no tienes que aplicar una estrategia a cada carga de trabajo.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesitas el rol de link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Súper administrador"^] o Ransomware Resilience admin. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
 
 
 

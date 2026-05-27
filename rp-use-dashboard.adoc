@@ -16,7 +16,7 @@ El panel NetApp Ransomware Resilience te da información de un vistazo sobre la 
 
 Usa el panel de control para revisar las sugerencias de protección, cambiar la configuración y descargar informes.
 
-*Rol de consola requerido* Para realizar esta tarea, necesita el rol de administrador de la organización, administrador de carpeta o proyecto, administrador de resiliencia ante ransomware o visor de resiliencia ante ransomware. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^] .
+*Rol de consola requerido* Para realizar esta tarea, necesitas el rol link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Súper administrador"^], Ransomware Resilience admin o Ransomware Resilience viewer. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
 
 
 
