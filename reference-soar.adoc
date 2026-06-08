@@ -15,16 +15,16 @@ NetApp Ransomware Resilience ofrece playbooks de orquestación, automatización 
 
 Los playbooks de Ransomware Resilience ofrecen las siguientes capacidades:
 
-* Bloquear a un usuario*
+* Bloquear/desbloquear a un usuario*
 * Crear una instantánea de un volumen
 * Enriquece una dirección IP con información sobre amenazas
 * Enriquecer la información de almacenamiento para un agente y un sistema determinados
-* Desconecta un volumen para responder a incidentes
+* Tomar un volumen fuera de línea para la respuesta a incidentes o poner un volumen en línea después de un incidente
 * Probar conectividad
 * Revisa el estado de un trabajo de enriquecimiento
 
 
-{asterisk} Bloquear a un usuario solo se admite para Splunk y Google SecOps SOAR playbooks. Debes haber configurado link:concept-user-behavior["detección del comportamiento del usuario"] en un sistema compatible para bloquear a un usuario.
+{asterisk} El bloqueo/desbloqueo de un usuario solo es compatible con los playbooks de Splunk y Google SecOps SOAR. Debes haber configurado link:concept-user-behavior["detección del comportamiento del usuario"] en un sistema compatible para bloquear a un usuario.
 
 
 

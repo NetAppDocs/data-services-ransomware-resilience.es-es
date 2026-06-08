@@ -22,7 +22,16 @@ Las estrategias de protección contra el ransomware son una característica clav
 
 Las estrategias de protección contra ransomware abarcan _detección_, _protección_ y _replicación_.
 
-* **Políticas de detección** identifican amenazas de ransomware
+* **Las políticas de detección** identifican las amenazas de ransomware. Tienes tres opciones para la detección:
++
+** Detección de cifrado
+** Actividad sospechosa del usuario
+** Bloquear extensiones de archivo sospechosas
++
+Tu política de detección puede incluir las tres opciones o una combinación de ellas. Debe incluir la detección de cifrado o link:suspicious-user-activity.html["actividad sospechosa de usuario (que requiere configuraciones adicionales)"].
+
+
+
 * **Las políticas de protección** incluyen políticas de instantáneas y de copia de seguridad.  Se requieren políticas de detección y captura de instantáneas en una estrategia de protección.  Las políticas de respaldo son opcionales.
 +
 Si utiliza otros productos de NetApp para proteger su carga de trabajo, Ransomware Resilience los detecta y ofrece la opción de:

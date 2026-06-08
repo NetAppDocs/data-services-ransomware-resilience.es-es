@@ -26,6 +26,7 @@ TIP: Antes de descargar los archivos, actualice el panel para capturar los datos
 * *Alertas*: Incluye el estado y los detalles de todas las alertas, incluido el número total de alertas e instantáneas automatizadas.
 * *Recuperación*: incluye el estado y los detalles de todas las cargas de trabajo que necesitan restaurarse, incluido el número total de cargas de trabajo marcadas como "Restauración necesaria", "En progreso", "Restauración fallida" y "Restaurada exitosamente".
 * *Simulacros de preparación*: Incluye resultados de ataques simulados para resaltar áreas de mejora.
+* *Cambios en la protección*: Incluye una revisión de los cambios en las estrategias de protección de las cargas de trabajo durante un periodo de tiempo determinado: 30 días, 60 días, 90 días o 1 año.
 * *Restauración limpia*: Incluye detalles sobre las cargas de trabajo restauradas con restauración limpia.
 +
 Debes tener un entorno de recuperación aislado (IRE) activo para generar informes de restauración limpia. Los informes de restauración limpia no están disponibles después de que se haya eliminado el IRE.
