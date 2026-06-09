@@ -69,13 +69,13 @@ NOTE: Los campos *user_name* y *user_id* solo son pertinentes si has configurado
 
 == Configurar AWS Security Hub para la detección de amenazas
 
-Antes de habilitar AWS Security Hub en Ransomware Resilience, tienes que realizar los siguientes pasos a grandes rasgos en AWS Security Hub:
+Antes de habilitar AWS Security Hub en Ransomware Resilience, tienes que realizar configuraciones de seguridad en AWS Security Hub:
 
 * Configurar permisos en AWS Security Hub.
 * Configure la clave de acceso de autenticación y la clave secreta en AWS Security Hub.  (Estos pasos no se proporcionan aquí.)
 
 
-.Pasos para configurar permisos en AWS Security Hub
+.Configurar permisos en AWS Security Hub
 . Vaya a la *consola AWS IAM*.
 . Seleccione *Políticas*.
 . Cree una política utilizando el siguiente código en formato JSON:

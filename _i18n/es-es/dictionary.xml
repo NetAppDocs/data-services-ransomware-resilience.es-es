@@ -521,7 +521,6 @@
   <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">Seleccione *Simulacros de preparación* y *Descargar* para descargar el informe del simulacro de preparación.</block>
   <block id="4c8cd66676ad1c434108e699d9777408" category="paragraph">Puede descartar los falsos positivos o decidir recuperar sus datos inmediatamente.</block>
-  <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">Si descarta la alerta, Ransomware Resilience aprende este comportamiento, lo asocia con operaciones normales y no vuelve a iniciar una alerta al respecto.</block>
   <block id="a8fd9e3988acb841854762788963d815" category="paragraph">Para comenzar a recuperar sus datos, marque la alerta como lista para recuperación para que su administrador de almacenamiento pueda comenzar el proceso de recuperación.</block>
   <block id="304b86572af1a03e438d6a3b86bfad43" category="paragraph">Cada alerta puede incluir múltiples incidentes en diferentes volúmenes y estados.  Revisar todos los incidentes.</block>
   <block id="271b5be554c7641bb10d05402276d05a" category="list-text">Se crearon o cambiaron extensiones de archivo</block>
@@ -709,10 +708,6 @@
   <block id="4dc51b8615944f599801153cc7777840" category="list-text">Desde esta página, puede ver y cambiar los detalles de protección para la carga de trabajo.</block>
   <block id="cf077fd7afe54e3a0c2d1f4f171b9592" category="inline-link-macro">Agregar una estrategia de protección contra ransomware</block>
   <block id="ce4ef271bc40fcdcc146584fcac5d544" category="paragraph">*Estado de protección*: Una carga de trabajo puede mostrar uno de los siguientes estados de protección para indicar si una política se aplica o no:</block>
-  <block id="463f5e1b668b83efc12cf4dbc90300ff" category="list-text">*Protegido*: Se aplica una política.  ARP (o ARP/AI según la versión de ONTAP ) está habilitado en todos los volúmenes relacionados con la carga de trabajo.</block>
-  <block id="2849b9294b844719ab6e63ff0e8d64a0" category="list-text">*En riesgo*: No se aplica ninguna política.  Si una carga de trabajo no tiene habilitada una política de detección primaria, está "en riesgo" incluso si tiene habilitadas una política de instantáneas y de respaldo.</block>
-  <block id="d8b2d86957c187231adaeb328cc57adb" category="list-text">*En progreso*: Se está aplicando una política pero aún no está completa.</block>
-  <block id="a6539f11a6b87c60fecf3f4d34dfb4d1" category="list-text">*Error*: Se aplica una política pero no funciona.</block>
   <block id="0882532dc9eb74e24a8b137f1e6a0b39" category="paragraph">Ransomware Resilience asigna una importancia o prioridad a cada carga de trabajo durante el descubrimiento basándose en un análisis de cada carga de trabajo.  La importancia de la carga de trabajo está determinada por las siguientes frecuencias de instantáneas:</block>
   <block id="58adba48bf0678c3abb71d1fdf829602" category="paragraph">Puede elegir una de las siguientes políticas predefinidas de resiliencia ante ransomware, que están alineadas con la importancia de la carga de trabajo.</block>
   <block id="4d293abd3f96b37c9afdf90f01855f8b" category="admonition">La política **Extensión de usuario de cifrado** es la única política predefinida que admite la detección de comportamiento sospechoso de usuarios.</block>
@@ -767,7 +762,6 @@
   <block id="e4574be2aa1d855d0a159fa734c028b7" category="list-text">Para cada elemento, seleccione la *flecha hacia abajo*.</block>
   <block id="b77a56354e9e39a76b1a118e9bfa09d3" category="list-text">*Política de detección*:</block>
   <block id="949db64066489b0349a4ff1451832808" category="list-text">*Política*: Elija una de las políticas de detección prediseñadas.</block>
-  <block id="66ecff8104cfb8cf22c05ebdad07a66a" category="list-text">*Detección de comportamiento sospechoso del usuario*: habilite la detección del comportamiento del usuario para transmitir eventos de actividad del usuario a Ransomware Resilience y detectar eventos sospechosos, como violaciones de datos.</block>
   <block id="7c06fadd4f73e4b63eb519df7d9880fc" category="paragraph">Si desea cambiar las extensiones de archivos bloqueadas, edítelas en el Administrador del sistema.</block>
   <block id="c8499d03897189696e5af26fc5ab9f45" category="list-text">*Política de instantáneas*:</block>
   <block id="007ac2633329ecdb55692304050d9260" category="list-text">*Nombre base de la política de instantánea*: seleccione una política o seleccione *Crear* e ingrese un nombre para la política de instantánea.</block>
@@ -988,7 +982,6 @@
   <block id="0df177143ce12a3516098cd3329e85c2" category="section-title">Configurar AWS Security Hub para la detección de amenazas</block>
   <block id="de9b4f41a945df92e6c5b62f443f03f1" category="list-text">Configurar permisos en AWS Security Hub.</block>
   <block id="5fd0d2c5fd8b96b7b7b69f69b942c559" category="list-text">Configure la clave de acceso de autenticación y la clave secreta en AWS Security Hub.  (Estos pasos no se proporcionan aquí.)</block>
-  <block id="12eef9b6a125a82d69978241dca88c07" category="list-title">Pasos para configurar permisos en AWS Security Hub</block>
   <block id="66d20ba773065dfc079ca6feb04ef773" category="list-text">Vaya a la *consola AWS IAM*.</block>
   <block id="bf6953a41efa897b0862fca0fe547641" category="list-text">Seleccione *Políticas*.</block>
   <block id="2228b7980f61d80481608141744ecee0" category="list-text">Cree una política utilizando el siguiente código en formato JSON:</block>
@@ -1375,11 +1368,8 @@
   <block id="65a602dc25a2da85e0a1dfb15824b10b" category="paragraph-title">¿Cómo se asocian los datos a una carga de trabajo?</block>
   <block id="e2201c0935bcdfd14ed840897f30bcdc" category="paragraph">Ransomware Resilience descubre los volúmenes y las extensiones de archivo y los asocia con la carga de trabajo apropiada.</block>
   <block id="f7d49d845f0e8fd37a070e797785ddd2" category="paragraph-title">¿Qué es una carga de trabajo protegida?</block>
-  <block id="7259cd6e0f46eebf9079f25f465a8c63" category="inline-link-macro">Protección autónoma contra el ransomware (ARP)</block>
-  <block id="7fd0dced59717f1ce225e83c1eba7879" category="paragraph">En Ransomware Resilience, una carga de trabajo muestra el estado *protegida* cuando tiene habilitada una política de _detección_ primaria, lo que significa <block ref="f47b2a56bf7e72f952a180e4f688a755" category="inline-link-macro-rx"></block> está habilitado en todos los volúmenes relacionados con la carga de trabajo.</block>
   <block id="a7728d009ece45c9ca2552ef1b9e83b5" category="paragraph-title">¿Qué es una carga de trabajo "en riesgo"?</block>
   <block id="feb245a8019757951a6c89440c58dbd0" category="inline-link-macro">política de detección</block>
-  <block id="073899b4550e086de0057b494471a8d5" category="paragraph">Si una carga de trabajo no tiene habilitada una política de detección primaria, se la etiqueta como "en riesgo" incluso si tiene habilitada una política de copia de seguridad y de instantáneas. Para protegerte del ransomware, debes habilitar una <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>.</block>
   <block id="77f988a37bbdd1881b090c55f9b830f1" category="paragraph-title">He añadido un nuevo volumen, pero aún no aparece. ¿Qué tengo que hacer?</block>
   <block id="2173d44554906f5f04303f8e155b7e0d" category="inline-link-macro">Aplicar políticas de protección para proteger el nuevo volumen</block>
   <block id="b79a0001646a8a21be92374c30d89073" category="paragraph">Si ha añadido un nuevo volumen a su entorno, vuelva a iniciar la detección de la carga de trabajo. Una vez descubierto el volumen, <block ref="11d93ee27365ded5cd7b6061cdb7f916" category="inline-link-macro-rx"></block>.</block>
@@ -1622,8 +1612,6 @@
   <block id="aa9adfa847815670c9bd986dafc8c79c" category="cell">Número máximo de copias de instantáneas</block>
   <block id="cf9344351eb239ccd95661876c4d97ee" category="cell">*Política de replicación crítica*</block>
   <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">Replicación secundaria a ONTAP</block>
-  <block id="8f6c5d8baaf38cda61b5392a06e30e68" category="list-text">*Detección primaria*: habilite Ransomware Resilience para detectar posibles ataques de ransomware.</block>
-  <block id="21fd87cf8a3d6f008657537a5cec6e82" category="list-text">*Bloquear extensiones de archivos*: habilite Ransomware Resilience para bloquear extensiones de archivos sospechosas conocidas. Ransomware Resilience toma copias instantáneas automáticas cuando la detección primaria está habilitada.</block>
   <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*Política de replicación*:</block>
   <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*Nombre base de la política de replicación*: ingrese un nombre nuevo o elija uno existente. El nombre base es el prefijo que se añade a todas las instantáneas.</block>
   <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*Programaciones de replicación*: alterne las frecuencias que desea habilitar (por hora, por día, por semana o por mes) y configure el valor de retención (la cantidad de instantáneas replicadas que se conservarán) para cada programación que habilite.</block>
@@ -2346,7 +2334,6 @@
   <block id="f6f2f1de81eb4c260d55918d831d8b4e" category="paragraph">Ransomware Resilience es compatible con los siguientes sistemas SIEM:</block>
   <block id="963e2ddcdebcdd0f6fcbd1dad696e580" category="admonition">Ransomware Resilience también proporciona <block ref="de8332ed81162473af5cb8a1551a7e36" category="inline-link-macro-rx"></block>.</block>
   <block id="1d128c6086cbb73d30a6cbf3e127963d" category="list-text">*título*: El nombre para mostrar de la alerta detectada.</block>
-  <block id="bf49f7b724de055a76d11fee549a6a9c" category="paragraph">Antes de habilitar AWS Security Hub en Ransomware Resilience, tienes que realizar los siguientes pasos a grandes rasgos en AWS Security Hub:</block>
   <block id="41b1238763de1c7569a52c2f6f418f26" category="list-title">Autentica AWS Security Hub en NetApp Ransomware Resilience</block>
   <block id="a9e57cc6ddc3d658ec2f623d0d9bc8a4" category="list-text">En Ransomware Resilience, selecciona *Configuración* en la barra lateral.</block>
   <block id="d28cdccd0f4e99a6f4e0f91d5197063e" category="list-text">Elige *AWS Security Hub* como proveedor SIEM.</block>
@@ -2562,4 +2549,18 @@
   <block id="262d414194517bdfa67b048201f2b424" category="paragraph">Tu política de detección puede incluir las tres opciones o una combinación de ellas. Debe incluir la detección de cifrado o <block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>.</block>
   <block id="38cfc49361136d6f7410fbe2c3b7430a" category="list-text">*Cambios en la protección*: Incluye una revisión de los cambios en las estrategias de protección de las cargas de trabajo durante un periodo de tiempo determinado: 30 días, 60 días, 90 días o 1 año.</block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">08 de junio de 2026</block>
+  <block id="8301d3df17a7d3b229e97daa256bc551" category="paragraph">En Ransomware Resilience, una carga de trabajo muestra un estado de *protegida* cuando tiene una política de _detección_ activada. La política de detección debe consistir en detección de cifrado o detección de comportamiento sospechoso del usuario (o ambas). También puede incluir detección de extensión de archivo sospechosa. Para obtener más información, consulta <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>.</block>
+  <block id="6c6097f9e44fb30ef0bc0a6e210dce9b" category="paragraph">Si una carga de trabajo no tiene activada una política de detección, se etiqueta como "en riesgo" aunque tenga activada una política de backup e instantáneas. Para la protección contra ransomware, deberías activar una <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>.</block>
+  <block id="fec111d809c49ffc75c21732e808fe2d" category="admonition">Si descartas la alerta, Ransomware Resilience aprende este comportamiento, lo asocia con las operaciones normales y deja de enviar alertas sobre eventos similares.</block>
+  <block id="7f2998da36c9b089182a98b4c6ff6c5d" category="admonition">Si tienes una estrategia de protección existente y luego desactivas una forma de detección en ella, cualquier alerta creada bajo la iteración anterior de la política solo puede marcarse como "Resuelta" no "Descartada." Por ejemplo, si tenías una alerta activa para una estrategia de protección que incluía detección de cifrado y comportamiento sospechoso del usuario pero luego desactivaste la detección de cifrado, solo puedes marcar esa alerta como "Resuelta."</block>
+  <block id="5e37428a91a220042e4764361ae6e656" category="list-text">*Detección de cifrado*: activa Ransomware Resilience para detectar ataques basados en cifrado.</block>
+  <block id="83b90da4f4a4213417bbdd607b6813c9" category="list-text">*Detección de comportamiento sospechoso del usuario*: Activa la detección del comportamiento del usuario para transmitir los eventos de actividad del usuario a Ransomware Resilience y detectar eventos sospechosos como filtraciones de datos o destrucción de datos.</block>
+  <block id="8d9e80b9523ae8e43c09fee979fbfe13" category="list-text">*Bloquear extensiones de archivo*: Activa Ransomware Resilience para bloquear extensiones de archivo sospechosas conocidas.</block>
+  <block id="87c5b70bcda4f0448400bb7245e5d975" category="admonition">Puedes elegir cualquier combinación de las políticas de detección. La política de detección debe incluir la detección de cifrado o la detección de comportamiento sospechoso del usuario.</block>
+  <block id="18282a82722e35ec83f6634f6933e908" category="list-text">*Protegido*: se aplica una política de detección.</block>
+  <block id="689a050b69b980dbe9c67ea9fdaeb981" category="list-text">*En riesgo*: No se aplica ninguna política. Si una carga de trabajo no tiene una política de detección habilitada, está "en riesgo" aunque tenga una política de instantáneas y política de backup habilitadas.</block>
+  <block id="1c2f725024e8db3f57c9ffb6c1869a4f" category="list-text">*En curso*: Se está aplicando una política, pero la operación no ha finalizado.</block>
+  <block id="7f2fe4ecc84891950d87f953f70363aa" category="list-text">*Error*: Se ha configurado una política pero hay un error.</block>
+  <block id="ed3c60417302240ba271d87f011c0f32" category="paragraph">Antes de habilitar AWS Security Hub en Ransomware Resilience, tienes que realizar configuraciones de seguridad en AWS Security Hub:</block>
+  <block id="6209d7a62e35781f2a36ba4149e80d90" category="list-title">Configurar permisos en AWS Security Hub</block>
 </blocks>

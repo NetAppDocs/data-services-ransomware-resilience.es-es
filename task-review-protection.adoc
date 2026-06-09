@@ -52,10 +52,10 @@ El panel de protección en Ransomware Resilience muestra información detallada 
 
 *Estado de protección*: Una carga de trabajo puede mostrar uno de los siguientes estados de protección para indicar si una política se aplica o no:
 
-* *Protegido*: Se aplica una política.  ARP (o ARP/AI según la versión de ONTAP ) está habilitado en todos los volúmenes relacionados con la carga de trabajo.
-* *En riesgo*: No se aplica ninguna política.  Si una carga de trabajo no tiene habilitada una política de detección primaria, está "en riesgo" incluso si tiene habilitadas una política de instantáneas y de respaldo.
-* *En progreso*: Se está aplicando una política pero aún no está completa.
-* *Error*: Se aplica una política pero no funciona.
+* *Protegido*: se aplica una política de detección.
+* *En riesgo*: No se aplica ninguna política. Si una carga de trabajo no tiene una política de detección habilitada, está "en riesgo" aunque tenga una política de instantáneas y política de backup habilitadas.
+* *En curso*: Se está aplicando una política, pero la operación no ha finalizado.
+* *Error*: Se ha configurado una política pero hay un error.
 
 
 *Estado de detección*:

@@ -254,11 +254,15 @@ NOTE: Si elige copiar y modificar una estrategia existente, Ransomware Resilienc
 ** *Política de detección*:
 +
 *** *Política*: Elija una de las políticas de detección prediseñadas.
-*** *Detección primaria*: habilite Ransomware Resilience para detectar posibles ataques de ransomware.
-*** *Detección de comportamiento sospechoso del usuario*: habilite la detección del comportamiento del usuario para transmitir eventos de actividad del usuario a Ransomware Resilience y detectar eventos sospechosos, como violaciones de datos.
-*** *Bloquear extensiones de archivos*: habilite Ransomware Resilience para bloquear extensiones de archivos sospechosas conocidas. Ransomware Resilience toma copias instantáneas automáticas cuando la detección primaria está habilitada.
+*** *Detección de cifrado*: activa Ransomware Resilience para detectar ataques basados en cifrado.
+*** *Detección de comportamiento sospechoso del usuario*: Activa la detección del comportamiento del usuario para transmitir los eventos de actividad del usuario a Ransomware Resilience y detectar eventos sospechosos como filtraciones de datos o destrucción de datos.
+*** *Bloquear extensiones de archivo*: Activa Ransomware Resilience para bloquear extensiones de archivo sospechosas conocidas.
 +
 Si desea cambiar las extensiones de archivos bloqueadas, edítelas en el Administrador del sistema.
+
++
+
+NOTE: Puedes elegir cualquier combinación de las políticas de detección. La política de detección debe incluir la detección de cifrado o la detección de comportamiento sospechoso del usuario.
 
 
 

@@ -19,7 +19,7 @@ Si Ransomware Resilience detecta un posible ataque, aparece una notificación en
 Puede descartar los falsos positivos o decidir recuperar sus datos inmediatamente.
 
 
-TIP: Si descarta la alerta, Ransomware Resilience aprende este comportamiento, lo asocia con operaciones normales y no vuelve a iniciar una alerta al respecto.
+TIP: Si descartas la alerta, Ransomware Resilience aprende este comportamiento, lo asocia con las operaciones normales y deja de enviar alertas sobre eventos similares.
 
 Para comenzar a recuperar sus datos, marque la alerta como lista para recuperación para que su administrador de almacenamiento pueda comenzar el proceso de recuperación.
 
@@ -101,6 +101,9 @@ Si sospechas que la actividad no es un ataque de ransomware, puedes cambiar el e
 
 | *Auto Resuelto* | Para las alertas de baja prioridad, el incidente se resuelve automáticamente si no se ha tomado ninguna acción sobre él en cinco días. 
 |===
+
+NOTE: Si tienes una estrategia de protección existente y luego desactivas una forma de detección en ella, cualquier alerta creada bajo la iteración anterior de la política solo puede marcarse como "Resuelta" no "Descartada." Por ejemplo, si tenías una alerta activa para una estrategia de protección que incluía detección de cifrado y comportamiento sospechoso del usuario pero luego desactivaste la detección de cifrado, solo puedes marcar esa alerta como "Resuelta."
+
 
 
 == Ver alertas

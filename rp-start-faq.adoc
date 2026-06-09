@@ -94,10 +94,10 @@ Ransomware Resilience puede identificar las siguientes cargas de trabajo: Oracle
 Ransomware Resilience descubre los volúmenes y las extensiones de archivo y los asocia con la carga de trabajo apropiada.
 
 .¿Qué es una carga de trabajo protegida?
-En Ransomware Resilience, una carga de trabajo muestra el estado *protegida* cuando tiene habilitada una política de _detección_ primaria, lo que significa link:concept-ransomware-resilience.html["Protección autónoma contra el ransomware (ARP)"] está habilitado en todos los volúmenes relacionados con la carga de trabajo.
+En Ransomware Resilience, una carga de trabajo muestra un estado de *protegida* cuando tiene una política de _detección_ activada. La política de detección debe consistir en detección de cifrado o detección de comportamiento sospechoso del usuario (o ambas). También puede incluir detección de extensión de archivo sospechosa. Para obtener más información, consulta link:rp-use-protect.html#add-a-ransomware-protection-strategy["política de detección"].
 
 .¿Qué es una carga de trabajo "en riesgo"?
-Si una carga de trabajo no tiene habilitada una política de detección primaria, se la etiqueta como "en riesgo" incluso si tiene habilitada una política de copia de seguridad y de instantáneas. Para protegerte del ransomware, debes habilitar una link:rp-use-protect.html#add-a-ransomware-protection-strategy["política de detección"].
+Si una carga de trabajo no tiene activada una política de detección, se etiqueta como "en riesgo" aunque tenga activada una política de backup e instantáneas. Para la protección contra ransomware, deberías activar una link:rp-use-protect.html#add-a-ransomware-protection-strategy["política de detección"].
 
 .He añadido un nuevo volumen, pero aún no aparece. ¿Qué tengo que hacer?
 Si ha añadido un nuevo volumen a su entorno, vuelva a iniciar la detección de la carga de trabajo. Una vez descubierto el volumen, link:rp-use-protect.html#add-a-ransomware-protection-strategy["Aplicar políticas de protección para proteger el nuevo volumen"].
