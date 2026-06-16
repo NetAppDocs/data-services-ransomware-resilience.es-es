@@ -48,7 +48,7 @@ Actualmente, solo puedes replicar instantáneas en el almacenamiento ONTAP local
 
 
 
-NOTE: Si estás configurando estrategias de protección para Amazon FSxN para ONTAP y Azure NetApp Files, consulta link:rp-reference-limitations.html["las limitaciones de cada servicio"].
+NOTE: Si estás configurando estrategias de protección para Amazon FSx for NetApp ONTAP y Azure NetApp Files, consulta link:rp-reference-limitations.html["las limitaciones de cada servicio"].
 
 
 TIP: Para mejorar la gestión y la protección de tu parque de datos, puedes crear link:task-protection-group.html["cargas de trabajo de grupo"] para proteger colectivamente los volúmenes bajo una misma estrategia.

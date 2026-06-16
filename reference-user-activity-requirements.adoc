@@ -14,7 +14,7 @@ summary: Antes de crear un agente de actividad de usuario y otros recopiladores,
 [role="lead"]
 NetApp Ransomware Resilience user behavior detection te permite responder a eventos de ransomware a nivel de usuario. Debes crear un conjunto de agentes para habilitar la detección de comportamiento del usuario. Antes de habilitar la detección, debes asegurarte de cumplir con los requisitos de sistema operativo, servidor y red descritos para que Ransomware Resilience pueda detectar e informar eventos correctamente.
 
-La detección del comportamiento del usuario es compatible con Ransomware Resilience para cargas de trabajo en sistemas ONTAP locales, así como con Amazon FsxN para NetApp ONTAP y Cloud Volumes ONTAP systems que se alinean con <<Soporte del proveedor de la nube>>.
+La detección del comportamiento de los usuarios está disponible en Ransomware Resilience para cargas de trabajo en sistemas ONTAP locales, así como en Amazon FSx for NetApp ONTAP y sistemas Cloud Volumes ONTAP que cumplen con <<Soporte del proveedor de la nube>>.
 
 
 
