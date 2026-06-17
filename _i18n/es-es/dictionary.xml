@@ -2561,4 +2561,6 @@
   <block id="0270ec13158ac8d81c5022ad41a38235" category="admonition">Si estás configurando estrategias de protección para Amazon FSx for NetApp ONTAP y Azure NetApp Files, consulta <block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>.</block>
   <block id="b70244907e8a4cb4fbb47d6e9fdda53a" category="cell">Nube: Amazon FSx for NetApp ONTAP</block>
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">Para los IRE implementados en Amazon FSx for NetApp ONTAP, no necesitas proporcionar esta información.</block>
+  <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">Ransomware Resilience solo puede detectar hasta 3,000 cargas de trabajo por agente de Console.</block>
+  <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">Hay un límite de 3,000 cargas de trabajo por agente de Console.</block>
 </blocks>
