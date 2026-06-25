@@ -50,6 +50,7 @@ Las siguientes limitaciones aplican a Azure NetApp Files:
 
 Las siguientes limitaciones se aplican a Google Cloud NetApp Volumes:
 
+* Actualmente, las cargas de trabajo SAN de Google Cloud NetApp Volumes no son compatibles con Ransomware Resilience.
 * Actualmente, solo puedes aplicar estrategias de protección basadas en cifrado y FPolicy a las cargas de trabajo de Google Cloud NetApp Volumes. No puedes aplicar estrategias de protección del comportamiento del usuario.
 * Las estrategias de protección con replicación no son compatibles actualmente con Google Cloud NetApp Volumes
 

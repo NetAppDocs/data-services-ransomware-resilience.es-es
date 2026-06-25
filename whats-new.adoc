@@ -738,9 +738,10 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 Si no existen políticas de instantáneas o de respaldo en la carga de trabajo, puede crear una estrategia de protección contra ransomware, que puede incluir las siguientes políticas que cree en este servicio:
 
-* Política de instantáneas
-* Política de respaldo
 * Política de detección
+* Política de respaldo
+* Política de instantáneas
+* Política de replicación
 
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Obtenga más información sobre la protección de las cargas de trabajo"] .
