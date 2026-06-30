@@ -1163,9 +1163,7 @@
   <block id="f2d7e7792f60fc56fc833ac06d43ff03" category="list-text">Revise su configuración. Seleccione *Activar* para completar la adición del agente de actividad del usuario.</block>
   <block id="87890c9758b28588c6845cfcf6d19b17" category="section-title">Agregar un recopilador de datos</block>
   <block id="cebc35dcf9d04a393d86d35a4e3cf6be" category="inline-xref-macro">añadir una política de detección</block>
-  <block id="723cff7a2b53371ffdffcdc65a370014" category="paragraph">Puede ver los detalles del recopilador de datos. Desde Configuración, seleccione **Administrar** en el mosaico Actividad del usuario. Seleccione la pestaña **Recopilador de datos** y luego seleccione el recopilador de datos para ver sus detalles o pausarlo.</block>
   <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">En Ransomware Resilience, vaya a *Configuración*.</block>
-  <block id="9fcb0a7634f29d96ae98e37bbc76e1cd" category="list-text">En el mosaico Actividad del usuario, seleccione **Administrar**.</block>
   <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">Seleccione la pestaña **Conectores de directorio de usuario** y luego **Agregar**.</block>
   <block id="496ee322ba138fdbc777e5ab2e30145e" category="list-text">*Nombre*</block>
   <block id="e018ce61f2faa0782aac0cf5ceb4e39f" category="list-text">*Tipo de directorio de usuario*</block>
@@ -1178,7 +1176,6 @@
   <block id="7174ea6988f438d85266f06a4d178a79" category="list-text">Seleccione **Agregar**.</block>
   <block id="c46a6dfd4cabd150fef75d97e543d6e6" category="list-text">Regrese a la pestaña de conectores del directorio de usuarios para verificar el estado de su conector de directorio de usuarios. Si se crea correctamente, el estado del conector del directorio de usuario se muestra como *En ejecución*.</block>
   <block id="ecdd284164c9ec55e281a5e22e24af67" category="section-title">Eliminar un conector de directorio de usuarios</block>
-  <block id="064c929bca3d74ce57c593b98179d9b6" category="list-text">Localice el mosaico Actividad del usuario y seleccione **Administrar**.</block>
   <block id="7a4d95b4bd97e134c18ec0bc73dfdc26" category="list-text">Seleccione la pestaña **Conector de directorio de usuarios**.</block>
   <block id="78b1b242bace6a18a2fc89d34f35271a" category="list-text">Identifique el conector del directorio de usuario que desea eliminar. En el menú de acciones al final de la línea, seleccione los tres puntos<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block> luego **Eliminar**.</block>
   <block id="e5b5e43b801607d44c3fb5101a5e5b57" category="summary">Descubra las novedades en NetApp Ransomware Resilience.</block>
@@ -1685,8 +1682,6 @@
   <block id="72ae3905ad051e75d558266df8b1e63a" category="list-text">Asegúrate de cumplir los <block ref="4535d4c19297d046165dc98674d914e8" category="inline-link-macro-rx"></block>.</block>
   <block id="59ad45573dbf4296a202cefa7894c118" category="section-title">Crear un agente de actividad de usuario</block>
   <block id="a757b06cbcf40569f4970cd41ee13a89" category="inline-link-macro">recopiladores de datos</block>
-  <block id="3e5b5a49d2a1ae0f82a222ba8e4ffa7c" category="list-text">Confirma que el agente de actividad de usuario se creó correctamente. En el mosaico de actividad de usuario, una implementación exitosa se muestra como **Running**.</block>
-  <block id="01aa0dea5e13315b3322ab5d449cbb8e" category="paragraph">Después de que el agente de actividad de usuario se cree correctamente, vuelve al menú **Settings** y luego selecciona **Manage** en el mosaico de User activity. Selecciona la pestaña **User activity agents** y luego selecciona el agente de actividad de usuario para ver detalles sobre él, incluidos los recopiladores de datos y los conectores del directorio de usuarios.</block>
   <block id="1c3618a77bb3c98ee22e85ebb2ff2cb5" category="section-title">Crear un conector de directorio de usuarios</block>
   <block id="450a540c6661e25e017db4862aec2e38" category="list-text">En el cuadro de diálogo emergente, selecciona **Borrar** para confirmar.</block>
   <block id="236c87046e76c7fbe637db256ad65c54" category="inline-link-macro">Detecta actividad maliciosa y comportamiento sospechoso de los usuarios</block>
@@ -1712,22 +1707,15 @@
   <block id="e02189957b252d42e679aa66d35030cd" category="list-text"><block ref="e02189957b252d42e679aa66d35030cd" category="inline-link-macro-rx"></block></block>
   <block id="0f20f1de24e002ee03e9a0d693faaf59" category="list-text">Para desactivar las alertas sobre un usuario determinado que es objeto de una alerta que sabes que es falsa, selecciona los tres puntos <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>) y luego **Excluir a este usuario de la supervisión**. Revisa el cuadro de diálogo y luego selecciona **Excluir** para confirmar.</block>
   <block id="c65a69d50600a3f76ccdd1109d15b6e3" category="inline-link-macro">Excluir usuarios</block>
-  <block id="d632bf28d8164d0436ca05f069b989e9" category="admonition">Para volver a activar las alertas para un usuario, devuelve la alerta. Selecciona los tres puntos y luego **Incluir a este usuario en la supervisión**. También puedes <block ref="e33a84d4132808c30f0e6b091e9f7e88" category="inline-link-macro-rx"></block> de la supervisión.</block>
   <block id="fb7f1789c81ab5377f72e16f6b9384ad" category="inline-link-macro">las limitaciones de cada servicio</block>
   <block id="3adbdb581af927d3972b2f1c8cfb96a6" category="admonition">Los destinos de backup no están disponibles para cargas de trabajo en Amazon FSx for NetApp ONTAP o Azure NetApp Files. Realiza operaciones de backup usando el servicio de backup de FSx for ONTAP. Configuras las políticas de backup para cargas de trabajo en FSx for ONTAP en AWS, no en Ransomware Resilience. Las políticas de backup aparecen en Ransomware Resilience y permanecen sin cambios desde AWS.</block>
   <block id="3bc2d94b3185bcb1259a8b3cf7da880b" category="list-text">Selecciona la configuración de detección que quieras:</block>
   <block id="eb7705f4441056c554dc7aea52de0b17" category="paragraph">Si hay ciertos usuarios de confianza cuyo comportamiento podría activar alertas de comportamiento del usuario, puedes excluirlos de las alertas.</block>
-  <block id="0189c7f085ff5d22843080df2225281b" category="list-text">En el panel de control de Configuración, localiza la tarjeta de actividad de usuario y selecciona **Manage**.</block>
-  <block id="82694a5fa079406313056daf01f9118b" category="list-text">Selecciona la pestaña **Usuarios excluidos**.</block>
   <block id="de13c27fd58614b060a46c2092ed0545" category="list-text">Para revisar usuarios individuales en la interfaz de usuario, elige **Seleccionar manualmente**. Para cargar una lista de usuarios excluidos, selecciona **Cargar**.</block>
   <block id="9dd5e919daf597022ca9ace5ebd739e9" category="list-text">Si seleccionaste **Seleccionar manualmente**, marca la casilla junto a los nombres de los usuarios específicos que quieres excluir.</block>
-  <block id="8641c2055d546da7c2e15e6d18bc9016" category="list-text">Selecciona **Add** para terminar de añadir los usuarios a la lista de exclusión.</block>
-  <block id="98e062a77fcb05260f463a017f171f72" category="list-text">En la pestaña **Usuarios excluidos**, los nombres de los usuarios eliminados de las alertas de detección de comportamiento de usuario ahora se muestran en el panel.</block>
   <block id="bf7da00a56585a6a89ff8f8184dfd6fd" category="inline-link-macro">Responde a las alertas de ransomware</block>
   <block id="face5a9388d96715a2df2a403febcfad" category="admonition">También puedes excluir a un usuario directamente de una alerta. Para más información, consulta <block ref="56429daef20ebac0c2b98002f6d61934" category="inline-link-macro-rx"></block>.</block>
   <block id="0b09185e7ecba92cf7f8f0712501db0b" category="section-title">Eliminar usuarios de la lista de usuarios excluidos</block>
-  <block id="3ba04eb11eb815c62355b0a9cb7b05e5" category="paragraph">Puedes agregar un usuario de nuevo a la detección después.</block>
-  <block id="144c603fbbde0985023a4ea73e22e35b" category="list-text">Localiza el nombre del usuario que quieres eliminar de la selección de usuarios excluidos. Selecciona el menú de acciones <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>) en la fila con el nombre del usuario y luego **Remove**.</block>
   <block id="581c5c550f20f231f6c9e881e699829b" category="list-text">En el cuadro de diálogo, selecciona **Eliminar** para confirmar que quieres eliminar a los usuarios seleccionados.</block>
   <block id="90c78a95b0a3dffc0aa664d3139d1369" category="summary">Puedes enviar automáticamente datos de NetApp Ransomware Resilience a tu sistema de gestión de seguridad y eventos (SIEM) para análisis y detección de amenazas.</block>
   <block id="03883d80013dc0b2b972eccd5b93b56f" category="list-text">AWS Security Hub</block>
@@ -1936,7 +1924,6 @@
   <block id="2aeee41e03e1ec5e48f7c1deb934b617" category="list-text">Si seleccionas **Upload**, descarga el archivo CSV o JSON que incluye la lista de todos los usuarios. Selecciona **Download** para acceder a la lista.</block>
   <block id="e2616004bc9cf87f18910a512e2c2379" category="paragraph">En tu equipo local, revisa el archivo. Elimina los nombres de todos los usuarios para los que quieres mantener la detección. Cuando la lista incluya solo los nombres de los usuarios que quieres excluir de la detección, guárdala.</block>
   <block id="3e56f67eb69a3fdb139a993bc1606e4f" category="paragraph">En Ransomware Resilience, selecciona **Subir**. Localiza y sube el archivo.</block>
-  <block id="2a26cf4062a1ee4ec346c86574259847" category="list-text">Para excluir usuarios individuales de la interfaz de usuario, elige **Seleccionar manualmente**.</block>
   <block id="fd117b89b92e15d359324da93300356b" category="doc">Conecta NetApp Ransomware Resilience a un SIEM para el análisis y detección de amenazas</block>
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">09 de marzo de 2026</block>
   <block id="9b0a81f6fc494248483a10631a72dabe" category="paragraph">Las cargas de trabajo protegidas cuentan contra la capacidad adquirida o la suscripción después de que termine el periodo de prueba gratuito. Ransomware Resilience se cobra por GB para los datos asociados con las cargas de trabajo protegidas (según lo reporta ONTAP) antes de las eficiencias.</block>
@@ -2564,4 +2551,79 @@
   <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">Hay un límite de 3,000 cargas de trabajo por agente de Console.</block>
   <block id="8df5e57d843114bbbb53a4c85f76cb68" category="list-text">Actualmente, las cargas de trabajo SAN de Google Cloud NetApp Volumes no son compatibles con Ransomware Resilience.</block>
   <block id="afce532bad172bcef50d75935d2ed43b" category="list-text">Política de replicación</block>
+  <block id="fb9721f24a420ba827ac36665b13797e" category="doc">Respuestas automáticas a las alertas de actividad de los usuarios</block>
+  <block id="5b29c2b1307b96a1557ab05a56715041" category="paragraph">Ransomware Resilience ahora permite automatizar la creación de instantáneas y el bloqueo de usuarios cuando se genera una alerta de actividad de usuario. Con las respuestas automatizadas, puedes bloquear a un usuario en cuanto se genere una advertencia y crear una instantánea para la recuperación, lo que permite una respuesta más rápida sin intervención manual.</block>
+  <block id="709c9c15efe20baf89cd9c0bc4da8ba3" category="inline-link-macro">Automatiza las respuestas a las alertas sobre la actividad de los usuarios</block>
+  <block id="1683df33985dedfe87b3e10a6e28374e" category="paragraph">Para más información, consulta <block ref="af4a7ce82e0454100b9537cefe9d85c8" category="inline-link-macro-rx"></block>.</block>
+  <block id="f3948d55e3032152ce189836caaf0b14" category="list-text">En el mosaico *Respuestas*, selecciona **Hacer una instantánea ahora** para crear una instantánea.</block>
+  <block id="c6adf86dd8ab3fa173149ecb95e0444f" category="list-text">Si has activado una respuesta automática en el SVM, selecciona **Editar bloqueo de usuario** para bloquear al usuario. Para bloquear al usuario, selecciona **Periodo de tiempo para el usuario bloqueado** y luego establece la duración del bloqueo (desde una hora hasta permanente). También puedes desbloquear al usuario si crees que la alerta no es un evento de ransomware. Selecciona **Guardar**.</block>
+  <block id="a6a7e26bcffa88b63e76d3f0a0f08eda" category="admonition">Para volver a activar las alertas para un usuario, devuelve la alerta. Selecciona los tres puntos y luego **Incluir a este usuario en la supervisión**. También puedes <block ref="1a21a4e753ba6e9b70e02139a1cf7da7" category="inline-link-macro-rx"></block> de la supervisión.</block>
+  <block id="670130480e76ce2b912da3ad5daf63f4" category="inline-link-macro">Automatiza las respuestas a los eventos de actividad de los usuarios</block>
+  <block id="8cd568562744ebd2ad72f4d26b638c5b" category="list-text"><block ref="8cd568562744ebd2ad72f4d26b638c5b" category="inline-link-macro-rx"></block></block>
+  <block id="cb69a3dbb2ce54452da8242f5d593a7d" category="list-text">Comprueba que el agente de actividad de usuario se haya creado correctamente. En el mosaico de supervisión de la actividad de usuario, una implementación correcta se muestra como **En ejecución**.</block>
+  <block id="f8154656f491b6010fd0659081a5e592" category="paragraph">Una vez creado correctamente el agente de actividad de usuario, vuelve al menú **Configuración** y selecciona **Gestionar** en el mosaico de supervisión de la actividad de usuario. Selecciona la pestaña **Agentes de actividad de usuario** y luego selecciona el agente de actividad de usuario para ver detalles sobre él, incluidos los recopiladores de datos y los conectores de directorio de usuarios.</block>
+  <block id="6e2ca6477a8595f1e41d451cdd9ebd00" category="paragraph">Puedes consultar los detalles del recopilador de datos. En Configuración, selecciona **Manage** en el mosaico User activity monitoring. Selecciona la pestaña **Data collector** y luego selecciona el recopilador de datos para ver sus detalles o pausarlo.</block>
+  <block id="8e01f2104a7304e76047e58936807cf1" category="list-text">En el mosaico «Supervisión de la actividad de los usuarios», selecciona **Manage**.</block>
+  <block id="7e6d3cb777f931902eef28d721b391ad" category="list-text">En NetApp Ransomware Resilience, selecciona *Configuración*.</block>
+  <block id="8e80013d454d77fa5da380a02985bf08" category="list-text">Busca el mosaico de supervisión de la actividad de los usuarios y selecciona **Manage**.</block>
+  <block id="ca9b34b1ac8edb836cc31adfeb86da35" category="paragraph">También puedes <block ref="8cd568562744ebd2ad72f4d26b638c5b" category="inline-link-macro-rx"></block>.</block>
+  <block id="83019ea39039a789f3a1ef050322b3c6" category="inline-link-macro">Gestiona el bloqueo de usuarios y las alertas en NetApp Ransomware Resilience</block>
+  <block id="ab86c889344f48e6cc9a644f588de541" category="list-text"><block ref="ab86c889344f48e6cc9a644f588de541" category="inline-link-macro-rx"></block></block>
+  <block id="0e5314dd9df9fd8758e118ce1e7ba897" category="summary">NetApp Ransomware Resilience admite crear respuestas automáticas a eventos de actividad de usuario, lo que te permite crear automáticamente una instantánea o bloquear a un usuario.</block>
+  <block id="da6a5c0ffdbef8b4ec186025eff8e43b" category="doc">Automatiza las respuestas a las alertas de actividad de usuario en NetApp Ransomware Resilience</block>
+  <block id="11b56910cc00c324c49386ed5582988f" category="inline-link-macro">eventos de actividad de usuario</block>
+  <block id="0a8871a3299a107751c7b0db71e644f4" category="paragraph">NetApp Ransomware Resilience permite crear respuestas automatizadas a <block ref="8b86ab47aa824ef9943240ff5124bbba" category="inline-link-macro-rx"></block>. Con las respuestas automatizadas, Ransomware Resilience puede crear una instantánea o bloquear a un usuario cuando se detecta un ataque o una advertencia, lo que permite responder más rápido a eventos de ransomware.</block>
+  <block id="24bb73d1c33f357d17024d9c2c631ff2" category="inline-link-macro">configuraste un agente de actividad de usuario, activaste una política con detección de actividad de usuario y creaste un conector de directorio de usuarios</block>
+  <block id="5a1cf133e86dfea0d4fd6beddf99419d" category="paragraph">Se admiten respuestas automáticas para eventos relacionados con el cifrado (comportamiento del usuario), la filtración de datos y la destrucción de datos. Debes disponer de <block ref="c512b877bbe8303215878962f3edb05e" category="inline-link-macro-rx"></block> antes de crear una respuesta automática.</block>
+  <block id="5a9dbc95cd10e68b8aa5b25769a12f66" category="section-title">Crear una respuesta automática</block>
+  <block id="525947b7bc9136d3c68f8d5e68e67c65" category="paragraph">Solo puedes proteger una máquina virtual de almacenamiento con al menos una carga de trabajo que esté protegida con una política de detección de comportamientos sospechosos de usuario.</block>
+  <block id="0ba604d3520d7d31a74f42a24b136cf6" category="list-text">Selecciona la pestaña **Respuestas automáticas**.</block>
+  <block id="ba6bbd2f6aa7a13738511856f29ba569" category="list-text">Selecciona **Add** para crear el comportamiento.</block>
+  <block id="ca08d0e59990fdffbb6467bdd7f00b5f" category="list-text">Introduce un **nombre** para la respuesta automática.</block>
+  <block id="92e6ea9e52b7a81fdf0b4994719a42c1" category="inline-link-macro">tipos de alertas</block>
+  <block id="5abb35f1388941d8bf8186c476c69efb" category="list-text">Elige el tipo de evento que activará la respuesta: **Ataque** o **Advertencia**. Obtén más información sobre los diferentes <block ref="ef3f4c22db9f55b59ebc4da2b7df602e" category="inline-link-macro-rx"></block>.</block>
+  <block id="aa7a11a604c21a1423b1261241c7d78c" category="list-text">Elige la respuesta:</block>
+  <block id="9646518b7752370de53f195201268e7d" category="list-text">**Bloquear el acceso del usuario**: el usuario queda bloqueado de todas las máquinas virtuales de almacenamiento protegidas por Ransomware Resilience cuando se activa la alerta.</block>
+  <block id="5fe611c6876641199f70e49558f48be4" category="paragraph">Si eliges esta opción, también debes seleccionar la duración del bloqueo. Puede ser un intervalo de entre 1 y 24 horas o permanente.</block>
+  <block id="a2f16c29a43535c7c6aa7898c58ae9f8" category="list-text">**Realiza instantáneas**: Crea una instantánea de las cargas de trabajo afectadas para poder usarla en una posible recuperación. Las instantáneas se conservan durante siete días.</block>
+  <block id="972f6ae068eb9ed1c0b103c19d4c1136" category="list-text">Selecciona los tipos de alertas que activan la respuesta automática:</block>
+  <block id="2bc4fcf9346e74ca05878a7e5dd6e2d4" category="cell">Tipo de alerta</block>
+  <block id="677329539728cfa937ee007c1bf7e778" category="list-text">Selecciona las máquinas virtuales de almacenamiento a las que deseas aplicar la respuesta automatizada.</block>
+  <block id="7838a605d6ae3901553635e8d43bc210" category="list-text">Selecciona **Add** para crear la respuesta automática.</block>
+  <block id="ecc70cc5b710cb19c30985347907a33f" category="section-title">Modificar una respuesta automática</block>
+  <block id="70df577ad04e86da4cfcd49d12f42c34" category="paragraph">Una vez creada una respuesta automatizada, puedes pausarla, reiniciarla o modificarla. Puedes modificar el nombre de la respuesta, los tipos de alertas que activan la respuesta, las storage VMs y la acción que se toma.</block>
+  <block id="6957bab7b5de8b995af86b7615cf8877" category="list-text">Selecciona la respuesta automática que quieras modificar.</block>
+  <block id="bc06f86137f36e1395909963dc24a7e9" category="list-text">Para pausar o eliminar la respuesta, selecciona el menú de acciones y luego **Pausar** (o **Iniciar**) o **Eliminar**.</block>
+  <block id="ffaa50c6810616dffe4f2fa3b11dd9d5" category="paragraph">Para modificar la respuesta, selecciona **Editar**.</block>
+  <block id="9190ef848f1a62966c143f87f9a3b16e" category="list-text">Puedes modificar cualquiera de los ajustes excepto la gravedad de la alerta.</block>
+  <block id="60fb8ad171246036e201929bc65c1158" category="list-text">Selecciona **Guardar** para capturar los cambios.</block>
+  <block id="b1e9096bc5102d69a78befc70d41fe69" category="summary">Después de crear el conector del directorio de usuarios en NetApp Ransomware Resilience, puedes bloquear y desbloquear usuarios y excluir usuarios de las alertas.</block>
+  <block id="728a9373b496fb3b49cccf8e1eb055c0" category="paragraph">Después de crear el conector del directorio de usuarios en NetApp Ransomware Resilience, puedes bloquear y desbloquear usuarios cuando experimentes eventos de ransomware y evaluarlos. También puedes excluir selectivamente a usuarios de las alertas de ransomware si estás seguro de que sus acciones no son ataques.</block>
+  <block id="9594e6c0471983974b6adc193bd57d4e" category="paragraph">Debes tener <block ref="c512b877bbe8303215878962f3edb05e" category="inline-link-macro-rx"></block> para bloquear a usuarios.</block>
+  <block id="37bcec617eba318667a247a58bd99097" category="inline-link-macro">automatizar respuestas</block>
+  <block id="88450b9601513114d92202ed82d65469" category="admonition">Puedes <block ref="5b864d1f7cea25f12e7a99e07202259f" category="inline-link-macro-rx"></block> a los eventos de detección de actividad de usuario.</block>
+  <block id="25fce885a9bc8a8f1284152fe15304d0" category="section-title">Gestiona usuarios bloqueados</block>
+  <block id="f633d2cf36d2d43dc232424839fa15de" category="paragraph">Puedes bloquear a los usuarios cuando creas que son responsables de actividad maliciosa.</block>
+  <block id="5fbbcc09a7f5316f17aaf20a9f942557" category="list-title">Bloquear usuarios</block>
+  <block id="93e35e2f3f7138fcbfc327d758e1ec96" category="list-text">En el panel de control de Configuración, busca el mosaico «Supervisión de la actividad de los usuarios» y selecciona **Manage**.</block>
+  <block id="2361358ff14122114e736beff61c48a2" category="list-text">Selecciona la pestaña **Usuarios**.</block>
+  <block id="766067e25ac4a8f22dad6344937ca56d" category="list-text">Selecciona **Block users**.</block>
+  <block id="b00b5ebe4a8164319e36e4bbef8f727f" category="list-text">Selecciona la duración del bloqueo: puede ser de una hora hasta 24 horas o permanente.</block>
+  <block id="50d68502e7fbfa82f99e1abb688a948f" category="list-text">Marca la casilla situada junto a los nombres de los usuarios que quieras bloquear.</block>
+  <block id="126b3c7582135a76321582de4bcad51d" category="list-text">Selecciona **Block**.</block>
+  <block id="23e9aa0fec2a06ec7f4b6f9076d62992" category="list-title">Modificar la lista de usuarios bloqueados</block>
+  <block id="3d06dabf3eaa23797059f7fffa998cfd" category="list-text">Selecciona **Editar bloqueo de usuario**.</block>
+  <block id="e2d552c6afc3cd9e9e5367d429f832c4" category="list-text">Selecciona la modificación. Para modificar la duración del bloqueo, selecciona **Periodo de tiempo para usuarios bloqueados** y luego modifica la duración. Para eliminar usuarios de la lista de usuarios bloqueados, selecciona **Desbloquear usuarios**.</block>
+  <block id="4ecd815bab325d10795007a2e86d0a31" category="list-text">Marca la casilla situada junto al nombre del usuario bloqueado cuyo estado quieras cambiar.</block>
+  <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">Selecciona **Guardar**.</block>
+  <block id="d90cde04b4a8cbf5c0f2097687b77bc8" category="section-title">Gestiona las alertas de los usuarios</block>
+  <block id="bf21122a37b943f2b70a86b30f0af377" category="list-text">Selecciona la pestaña **Excluidos de la supervisión**.</block>
+  <block id="a5e15107d3aab04bc0c5f9ef6e7eafe8" category="list-text">Selecciona **Add** para completar la incorporación de los usuarios a la lista de exclusión.</block>
+  <block id="999d037bde1c176486633543cd03a250" category="list-text">En la pestaña **Excluidos de la supervisión**, los nombres de los usuarios eliminados de las alertas de detección de comportamiento de los usuarios ahora se muestran en el panel de control.</block>
+  <block id="0e1a585fedc96851082d7b2be641fb77" category="list-text">Para excluir a usuarios concretos de la UI, elige **Seleccionar manualmente**.</block>
+  <block id="2e1bb6ba10017caa1a34a9693a9495b0" category="list-text">Busca el nombre del usuario que deseas eliminar de la lista de usuarios excluidos. Selecciona el menú de acciones <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block> en la fila con el nombre del usuario y luego **Eliminar**.</block>
+  <block id="f1d60a07f24fee746248e3b38e0d0891" category="inline-link-macro">Automatiza las respuestas a los eventos de detección de actividad de los usuarios</block>
+  <block id="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="list-text"><block ref="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="inline-link-macro-rx"></block></block>
+  <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">29 de junio de 2026</block>
+  <block id="97d60b3e7c986739c534cb2a3c8f2b99" category="sidebar">Gestiona las alertas y los bloqueos de usuarios</block>
 </blocks>

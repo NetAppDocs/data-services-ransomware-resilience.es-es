@@ -1,0 +1,11 @@
+= Respuestas automáticas a las alertas de actividad de los usuarios
+:allow-uri-read: 
+
+
+
+
+=== Respuestas automáticas a las alertas de actividad de los usuarios
+
+Ransomware Resilience ahora permite automatizar la creación de instantáneas y el bloqueo de usuarios cuando se genera una alerta de actividad de usuario. Con las respuestas automatizadas, puedes bloquear a un usuario en cuanto se genere una advertencia y crear una instantánea para la recuperación, lo que permite una respuesta más rápida sin intervención manual.
+
+Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-automate-user-activity.html["Automatiza las respuestas a las alertas sobre la actividad de los usuarios"^].

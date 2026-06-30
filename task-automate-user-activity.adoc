@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-automate-user-activity.html 
+keywords: data breach detection, data breach, user activity, automated response 
+summary: NetApp Ransomware Resilience admite crear respuestas automáticas a eventos de actividad de usuario, lo que te permite crear automáticamente una instantánea o bloquear a un usuario. 
+---
+= Automatiza las respuestas a las alertas de actividad de usuario en NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience permite crear respuestas automatizadas a link:concept-user-behavior.html["eventos de actividad de usuario"]. Con las respuestas automatizadas, Ransomware Resilience puede crear una instantánea o bloquear a un usuario cuando se detecta un ataque o una advertencia, lo que permite responder más rápido a eventos de ransomware.
+
+Se admiten respuestas automáticas para eventos relacionados con el cifrado (comportamiento del usuario), la filtración de datos y la destrucción de datos. Debes disponer de link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["configuraste un agente de actividad de usuario, activaste una política con detección de actividad de usuario y creaste un conector de directorio de usuarios"] antes de crear una respuesta automática.
+
+
+
+== Crear una respuesta automática
+
+Solo puedes proteger una máquina virtual de almacenamiento con al menos una carga de trabajo que esté protegida con una política de detección de comportamientos sospechosos de usuario.
+
+.Pasos
+. En Ransomware Resilience, seleccione **Configuración**.
+. En el mosaico «Supervisión de la actividad de los usuarios», selecciona **Manage**.
+. Selecciona la pestaña **Respuestas automáticas**.
+. Selecciona **Add** para crear el comportamiento.
+. Introduce un **nombre** para la respuesta automática.
+. Elige el tipo de evento que activará la respuesta: **Ataque** o **Advertencia**. Obtén más información sobre los diferentes link:rp-use-alert.html#alert-types-and-statuses["tipos de alertas"].
+. Elige la respuesta:
++
+** **Bloquear el acceso del usuario**: el usuario queda bloqueado de todas las máquinas virtuales de almacenamiento protegidas por Ransomware Resilience cuando se activa la alerta.
++
+Si eliges esta opción, también debes seleccionar la duración del bloqueo. Puede ser un intervalo de entre 1 y 24 horas o permanente.
+
+** **Realiza instantáneas**: Crea una instantánea de las cargas de trabajo afectadas para poder usarla en una posible recuperación. Las instantáneas se conservan durante siete días.
+
+
+. Selecciona los tipos de alertas que activan la respuesta automática:
++
+|===
+
+
+| Tipo de alerta | Descripción 
+
+
+| Cifrado (comportamiento del usuario) | Ransomware Resilience identifica la actividad anómala de lectura, escritura y cambio de nombre de archivos realizada por un usuario específico. 
+
+
+| Violación de datos | Ransomware Resilience detecta patrones anómalos de acceso a archivos de lectura realizados por un usuario específico. 
+
+
+| Destrucción de datos | Ransomware Resilience descubre el borrado masivo de archivos por parte de un usuario específico. 
+|===
+. Selecciona las máquinas virtuales de almacenamiento a las que deseas aplicar la respuesta automatizada.
+. Selecciona **Add** para crear la respuesta automática.
+
+
+
+
+== Modificar una respuesta automática
+
+Una vez creada una respuesta automatizada, puedes pausarla, reiniciarla o modificarla. Puedes modificar el nombre de la respuesta, los tipos de alertas que activan la respuesta, las storage VMs y la acción que se toma.
+
+.Pasos
+. En Ransomware Resilience, seleccione **Configuración**.
+. En el mosaico «Supervisión de la actividad de los usuarios», selecciona **Manage**.
+. Selecciona la pestaña **Respuestas automáticas**.
+. Selecciona la respuesta automática que quieras modificar.
+. Para pausar o eliminar la respuesta, selecciona el menú de acciones y luego **Pausar** (o **Iniciar**) o **Eliminar**.
++
+Para modificar la respuesta, selecciona **Editar**.
+
+. Puedes modificar cualquiera de los ajustes excepto la gravedad de la alerta.
+. Selecciona **Guardar** para capturar los cambios.
+

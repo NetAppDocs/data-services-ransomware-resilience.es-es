@@ -50,3 +50,10 @@ image:screen-dashboard.png["Página del panel de control"]
 image:screen-reports.png["Página de informes que muestra el informe del simulacro de preparación"]
 
 
+
+
+
+== Más información
+
+* link:task-automate-user-activity.html["Automatiza las respuestas a los eventos de actividad de los usuarios"]
+

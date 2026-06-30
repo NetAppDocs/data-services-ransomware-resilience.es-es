@@ -1,0 +1,90 @@
+---
+sidebar: sidebar 
+permalink: task-users-manage.html 
+keywords: user activity detection, 
+summary: Después de crear el conector del directorio de usuarios en NetApp Ransomware Resilience, puedes bloquear y desbloquear usuarios y excluir usuarios de las alertas. 
+---
+= Gestiona el bloqueo de usuarios y las alertas en NetApp Ransomware Resilience
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Después de crear el conector del directorio de usuarios en NetApp Ransomware Resilience, puedes bloquear y desbloquear usuarios cuando experimentes eventos de ransomware y evaluarlos. También puedes excluir selectivamente a usuarios de las alertas de ransomware si estás seguro de que sus acciones no son ataques.
+
+Debes tener link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["configuraste un agente de actividad de usuario, activaste una política con detección de actividad de usuario y creaste un conector de directorio de usuarios"] para bloquear a usuarios.
+
+
+TIP: Puedes link:task-automate-user-activity.html["automatizar respuestas"] a los eventos de detección de actividad de usuario.
+
+
+
+== Gestiona usuarios bloqueados
+
+Puedes bloquear a los usuarios cuando creas que son responsables de actividad maliciosa.
+
+.Bloquear usuarios
+. En Ransomware Resilience, seleccione **Configuración**.
+. En el panel de control de Configuración, busca el mosaico «Supervisión de la actividad de los usuarios» y selecciona **Manage**.
+. Selecciona la pestaña **Usuarios**.
+. Selecciona **Block users**.
+. Selecciona la duración del bloqueo: puede ser de una hora hasta 24 horas o permanente.
+. Marca la casilla situada junto a los nombres de los usuarios que quieras bloquear.
+. Selecciona **Block**.
+
+
+.Modificar la lista de usuarios bloqueados
+. En Ransomware Resilience, seleccione **Configuración**.
+. En el panel de control de Configuración, busca el mosaico «Supervisión de la actividad de los usuarios» y selecciona **Manage**.
+. Selecciona la pestaña **Usuarios**.
+. Selecciona **Editar bloqueo de usuario**.
+. Selecciona la modificación. Para modificar la duración del bloqueo, selecciona **Periodo de tiempo para usuarios bloqueados** y luego modifica la duración. Para eliminar usuarios de la lista de usuarios bloqueados, selecciona **Desbloquear usuarios**.
+. Marca la casilla situada junto al nombre del usuario bloqueado cuyo estado quieras cambiar.
+. Selecciona **Guardar**.
+
+
+
+
+== Gestiona las alertas de los usuarios
+
+Si hay ciertos usuarios de confianza cuyo comportamiento podría activar alertas de comportamiento del usuario, puedes excluirlos de las alertas.
+
+.Excluir usuarios de alertas
+. En Ransomware Resilience, seleccione **Configuración**.
+. En el panel de control de Configuración, busca el mosaico «Supervisión de la actividad de los usuarios» y selecciona **Manage**.
+. Selecciona la pestaña **Excluidos de la supervisión**.
+. Para revisar usuarios individuales en la interfaz de usuario, elige **Seleccionar manualmente**. Para cargar una lista de usuarios excluidos, selecciona **Cargar**.
++
+.. Si seleccionaste **Seleccionar manualmente**, marca la casilla junto a los nombres de los usuarios específicos que quieres excluir.
+.. Si seleccionas **Upload**, descarga el archivo CSV o JSON que incluye la lista de todos los usuarios. Selecciona **Download** para acceder a la lista.
++
+En tu equipo local, revisa el archivo. Elimina los nombres de todos los usuarios para los que quieres mantener la detección. Cuando la lista incluya solo los nombres de los usuarios que quieres excluir de la detección, guárdala.
+
++
+En Ransomware Resilience, selecciona **Subir**. Localiza y sube el archivo.
+
+
+
+. Selecciona **Add** para completar la incorporación de los usuarios a la lista de exclusión.
+. En la pestaña **Excluidos de la supervisión**, los nombres de los usuarios eliminados de las alertas de detección de comportamiento de los usuarios ahora se muestran en el panel de control.
+
+
+
+TIP: También puedes excluir a un usuario directamente de una alerta. Para más información, consulta link:rp-use-alert.html["Responde a las alertas de ransomware"].
+
+.Eliminar usuarios de la lista de usuarios excluidos
+. En el panel de control de Configuración, busca el mosaico «Supervisión de la actividad de los usuarios» y selecciona **Manage**.
+. Selecciona la pestaña **Excluidos de la supervisión**.
+. Seleccione **Agregar**.
+. Para excluir a usuarios concretos de la UI, elige **Seleccionar manualmente**.
+. Busca el nombre del usuario que deseas eliminar de la lista de usuarios excluidos. Selecciona el menú de acciones (`...` en la fila con el nombre del usuario y luego **Eliminar**.
+. En el cuadro de diálogo, selecciona **Eliminar** para confirmar que quieres eliminar a los usuarios seleccionados.
+
+
+
+
+== Próximos pasos
+
+* link:task-automate-user-activity.html["Automatiza las respuestas a los eventos de detección de actividad de los usuarios"]
+

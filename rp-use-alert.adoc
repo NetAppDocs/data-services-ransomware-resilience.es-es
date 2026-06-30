@@ -207,12 +207,14 @@ Si has configurado la detección del comportamiento del usuario, puedes ver los 
 +
 .. Para bloquear a un usuario sospechoso en tu entorno, selecciona *Block* junto al nombre del usuario.
 .. Para desactivar las alertas sobre un usuario determinado que es objeto de una alerta que sabes que es falsa, selecciona los tres puntos (`...`) y luego **Excluir a este usuario de la supervisión**. Revisa el cuadro de diálogo y luego selecciona **Excluir** para confirmar.
+.. En el mosaico *Respuestas*, selecciona **Hacer una instantánea ahora** para crear una instantánea.
+.. Si has activado una respuesta automática en el SVM, selecciona **Editar bloqueo de usuario** para bloquear al usuario. Para bloquear al usuario, selecciona **Periodo de tiempo para el usuario bloqueado** y luego establece la duración del bloqueo (desde una hora hasta permanente). También puedes desbloquear al usuario si crees que la alerta no es un evento de ransomware. Selecciona **Guardar**.
 
 
 
 
 
-TIP: Para volver a activar las alertas para un usuario, devuelve la alerta. Selecciona los tres puntos y luego **Incluir a este usuario en la supervisión**. También puedes link:suspicious-user-activity.html#exclude-users-from-alerts["Excluir usuarios"] de la supervisión.
+TIP: Para volver a activar las alertas para un usuario, devuelve la alerta. Selecciona los tres puntos y luego **Incluir a este usuario en la supervisión**. También puedes link:task-users-manage.html["Excluir usuarios"] de la supervisión.
 
 
 
