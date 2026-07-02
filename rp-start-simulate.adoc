@@ -12,7 +12,7 @@ summary: Realice un simulacro de preparación ante ransomware simulando un ataqu
 
 
 [role="lead"]
-Ejecute un simulacro de preparación para un ataque de ransomware simulando un ataque en una nueva carga de trabajo de muestra.  Investigar el ataque simulado y recuperar la carga de trabajo.  Utilice esta función para probar las notificaciones de alerta, la respuesta y la recuperación.  Ejecute el ejercicio con tanta frecuencia como sea necesario.
+Realiza un simulacro de preparación ante un ataque de ransomware en NetApp Ransomware Resilience para poner a prueba tu preparación ante un ataque real de ransomware. Con el simulacro de preparación, Ransomware Resilience simula un ataque sobre una nueva carga de trabajo de prueba, lo que te permite investigar el ataque simulado y realizar una recuperación sin afectar tus datos de producción. El simulacro de preparación te ayuda a familiarizarte con las notificaciones de alerta y a prepararte para la respuesta y la recuperación. Puedes ejecutar el simulacro con la frecuencia que necesites.
 
 
 TIP: Sus datos de carga de trabajo reales no se verán afectados.
@@ -23,37 +23,27 @@ Puede ejecutar simulacros de preparación en cargas de trabajo NFS y CIFS (SMB).
 
 == Configurar un simulacro de preparación para un ataque de ransomware
 
-Antes de ejecutar una simulación, configure un ejercicio en la página Configuración.  Acceda a la página de Configuración desde la opción Acciones en el menú superior.
-
-Debe ingresar un nombre de usuario y contraseña para las siguientes situaciones:
-
-* Si se produjeron cambios en el nombre de usuario o la contraseña para la máquina virtual de almacenamiento seleccionada anteriormente
-* Si selecciona una máquina virtual de almacenamiento CIFS (SMB) diferente
-* Si ingresa un nombre de carga de trabajo de prueba diferente
-
-
 *Rol de consola requerido* Para realizar esta tarea, necesitas el rol de link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Súper administrador"^] o Ransomware Resilience admin. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
 
 .Pasos
-. Desde el menú NetApp Ransomware Resilience , seleccione el botón *Ejecutar simulacro de preparación* en la parte superior derecha.
+. En Ransomware Resilience, seleccione **Configuración**.
+. En la pestaña «Simulacro de preparación», selecciona **Configure**.
+. Selecciona el **tipo de simulacro de preparación**.
 +
-image:screen-dashboard.png["Página del panel que muestra el botón de simulacro de preparación para la ejecución"]
+** **Recuperación personalizada**: Este ejercicio genera una alerta y luego te permite realizar link:rp-use-recover.html["restaurar personalizada"] donde configuras el punto de recuperación.
+** **Restauración limpia**: Este procedimiento genera una alerta y luego te lleva al proceso de recuperación link:task-clean-restore-recover.html["restauración limpia"], que te guía hacia puntos de recuperación optimizados.
+** **Recuperación tras una fuga de datos**: Este simulacro genera una alerta ante un incidente de fuga de datos provocado por un usuario. Debes haber configurado link:suspicious-user-activity.html["un agente de actividad del usuario"] antes de poder habilitar este tipo de simulacro.
 
-. En la tarjeta de simulacro de preparación de la página Configuración, seleccione *Configurar*.
-+
-La consola muestra la página Configurar simulacro de preparación.
 
+. Selecciona el entorno en el que se creará el simulacro de preparación.
 +
-image:screen-settings-alert-drill-configure.png["Configurar la página de simulacro de preparación"]
+.. Selecciona el **agente de consola** y **System**.
+.. Después de elegir el **Sistema**, elige la **Storage VM** de la lista que aparece por defecto.
+.. Introduce un nombre para la **nueva carga de trabajo de prueba**. La carga de trabajo de prueba tendrá el prefijo "rps_test_".
+.. Si el simulacro de preparación es para la recuperación tras una filtración de datos, selecciona el **User activity agent** para el entorno del simulacro.
++
+image:screen-settings-alert-drill-configure.png["Captura de pantalla de las opciones de configuración del simulacro de preparación."]
 
-. Haga lo siguiente:
-+
-.. Seleccione el agente de consola que desea utilizar para el simulacro de preparación.
-.. Seleccione un sistema de prueba.
-.. Seleccione un SVM de almacenamiento de prueba.
-.. Si seleccionó una máquina virtual de almacenamiento CIFS (SMB), aparecerán los campos **Nombre de usuario** y **Contraseña**.  Introduzca el nombre de usuario y la contraseña para la máquina virtual de almacenamiento.
-.. Selecciona el tipo de ejercicio de preparación. Para una recuperación manual de una violación de datos cifrados, elige **Recuperación personalizada**. Para la recuperación de un comportamiento sospechoso de usuario, elige **Violación de datos**.
-.. Introduce el nombre de la carga de trabajo de prueba. No incluyas guiones en el nombre.
 
 
 . Seleccione *Guardar*.
@@ -70,25 +60,20 @@ Después de configurar el simulacro de preparación, puede iniciarlo.
 
 *Rol de consola requerido* Para realizar esta tarea, necesitas el rol de link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Súper administrador"^] o Ransomware Resilience admin. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
 
-Cuando se inicia el simulacro de preparación, Ransomware Resilience omite el modo de aprendizaje y comienza el simulacro en modo activo.  El estado de detección de la carga de trabajo es Activo.
-
-
-TIP: Una carga de trabajo puede tener un estado de *Modo de aprendizaje* de detección de ransomware cuando se asigna recientemente una política de detección y Ransomware Resilience escanea las cargas de trabajo.
-
 .Pasos
-. Debe realizar una de las siguientes acciones:
+. Para iniciar el ejercicio:
 +
-** Desde el menú Resiliencia ante ransomware, seleccione el botón *Ejecutar simulacro de preparación* en la parte superior derecha.
+** Desde el panel de control de NetApp Ransomware Resilience, selecciona el botón *Run readiness drill* en la esquina superior derecha.
 +
 image:screen-dashboard.png["Página del panel que muestra el botón de simulacro de preparación para la ejecución"]
 
-** O bien, desde la página Configuración, en la tarjeta de simulacro de preparación, seleccione *Iniciar*.
+** O bien, ve a **Configuración**. En el mosaico Readiness drill, selecciona *Iniciar*.
 
 
 
 
 
-NOTE: No es posible editar la configuración del simulacro de preparación mientras el simulacro se está ejecutando. Puedes reiniciar el taladro para detenerlo y modificar la configuración.
+NOTE: No puedes editar la configuración del simulacro de preparación mientras el simulacro está en ejecución. Para modificar el simulacro de preparación, selecciona **Restablecer** y luego edita el simulacro.
 
 
 
@@ -106,7 +91,7 @@ La consola muestra la página Alertas.  En la columna ID de alerta, verá "Simul
 +
 image:screen-alerts-readiness.png["Página de alertas que muestra la alerta de simulacro de preparación"]
 
-. Seleccione la alerta con la indicación "Simulacro de preparación".  En la página de detalles de Alertas aparece una lista de alertas de incidentes.
+. Selecciona la alerta con la indicación «Simulacro de preparación».
 +
 image:screen-alerts-readiness-details.png["Página de detalles de alertas que muestra la alerta del simulacro de preparación"]
 
@@ -117,21 +102,14 @@ image:screen-alerts-readiness-incidents2.png["Página de incidentes que muestra 
 
 
 
-Aquí hay algunas cosas que debes tener en cuenta:
+Al analizar el incidente, ten en cuenta lo siguiente:
 
-* Observe la gravedad del ataque potencial.
+* La gravedad potencial del ataque.
 +
 Si la gravedad indica que se sospecha que un usuario ha realizado una actividad maliciosa, revise el nombre del usuario. También puedeslink:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["bloquear al usuario."]
 
-* Observe la actividad del archivo y los procesos sospechosos:
-+
-** Observe los datos detectados entrantes en comparación con los datos esperados.
-** Observe la tasa de creación de archivos que se detecta en comparación con la tasa esperada.
-** Observe la tasa de cambio de nombre de archivo que se detecta en comparación con la tasa esperada.
-** Observe la tasa de eliminación en comparación con la tasa esperada.
-
-
-* Mire la lista de archivos afectados.  Mira las extensiones que podrían estar causando el ataque.
+* Actividad de los archivos frente a las tasas previstas. Esto incluye la velocidad de lectura/escritura, la creación de archivos, el cambio de nombre de archivos y la eliminación.
+* La lista de archivos afectados. Fíjate en las extensiones que podrían estar provocando el ataque.
 * Determine el impacto y la amplitud del ataque revisando la cantidad de archivos y directorios afectados.
 
 
@@ -145,46 +123,30 @@ Después de revisar la alerta del simulacro de preparación, restaure la carga d
 
 .Pasos
 . Regresar a la página de detalles de alerta.
-. Si se debe restaurar la carga de trabajo de prueba, haga lo siguiente:
+. Si la carga de trabajo de prueba debe restaurarse, selecciona **Marcar restauración necesaria** y luego vuelve a seleccionar ese botón en el cuadro de diálogo de confirmación.
+. En el menú Resiliencia ante ransomware, seleccione *Recuperación*.
+. Selecciona la carga de trabajo de prueba marcada con la etiqueta "Readiness drill" que quieras restaurar.
+. Seleccione *Restaurar*.
+. Sigue las instrucciones para el estilo de recuperación que hayas configurado:
 +
-** Seleccione *Marcar como necesario restaurar*.
-** Revise la confirmación y seleccione *Marcar como necesaria la restauración* en el cuadro de confirmación.
-+
-*** En el menú Resiliencia ante ransomware, seleccione *Recuperación*.
-*** Selecciona la carga de trabajo de prueba marcada con "Simulacro de preparación" que quieres restaurar.
-*** Seleccione *Restaurar*.
-*** En la página Restaurar, proporcione información para la restauración:
-
-
-** Seleccione la copia de la instantánea de origen.
-** Seleccione el volumen de destino.
-
-
-. En la página de revisión de restauración, seleccione *Restaurar*.
-+
-La consola muestra el estado de la restauración del simulacro de preparación como "En progreso" en la página Recuperación.
-
-+
-Una vez completada la restauración, la consola cambia el estado de la carga de trabajo a *Restaurada*.
-
-. Revise la carga de trabajo restaurada.
+** link:task-clean-restore-recover.html["Recupera con una restauración limpia"]
+** link:task-custom-restore.html["Recupera con una restauración personalizada"]
 
 
 
-TIP: Para obtener detalles sobre el proceso de restauración, consultelink:rp-use-recover.html["Recuperarse de un ataque de ransomware (después de neutralizar los incidentes)"] .
 
 
 
-== Cambiar el estado de las alertas después del simulacro de preparación
+== Cambia el estado de alerta después del simulacro de preparación
 
 Después de revisar la alerta del simulacro de preparación y restaurar la carga de trabajo, cambie el estado de la alerta si es necesario.
 
-*Se requiere el rol de consola* Administrador de organización, administrador de carpeta o proyecto, o administrador de resiliencia ante ransomware. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^] .
+*Rol de consola obligatorio* Administrador de la organización, administrador de carpetas o proyectos, o administrador de NetApp Ransomware Resilience. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^].
 
 .Pasos
 . Regresar a la página de detalles de alerta.
 . Seleccione la alerta nuevamente.
-. Indique el estado seleccionando *Editar estado* y cambie el estado a uno de los siguientes:
+. Indica el estado seleccionando *Editar* junto al estado. Cambia el estado a uno de los siguientes:
 +
 ** Descartado: si sospecha que la actividad no es un ataque de ransomware, cambie el estado a Descartado.
 +
@@ -200,7 +162,7 @@ IMPORTANT: Después de descartar un ataque, no puedes volver a cambiarlo. Si des
 
 == Revisar los informes sobre el simulacro de preparación
 
-Una vez finalizado el simulacro de preparación, es posible que desees revisar y guardar un informe sobre el simulacro.
+Una vez finalizado el simulacro de preparación, puedes generar y guardar un informe sobre el simulacro. El informe del simulacro es un archivo JSON que recoge información como la política de detección, el tipo de alerta y la marca de tiempo, los detalles del ataque y el estado de recuperación.
 
 *Rol de consola requerido* Para realizar esta tarea, necesitas el rol link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Súper administrador"^], Ransomware Resilience admin o Ransomware Resilience viewer. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
 
