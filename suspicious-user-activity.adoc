@@ -170,5 +170,5 @@ También puedes link:task-automate-user-activity.html["Automatiza las respuestas
 
 == Próximos pasos
 
-* link:task-users-manage.html["Gestiona el bloqueo de usuarios y las alertas en NetApp Ransomware Resilience"]
+* link:task-users-manage.html["Gestiona la configuración de alertas y usuarios bloqueados"]
 

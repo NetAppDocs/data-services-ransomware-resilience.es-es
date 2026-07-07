@@ -41,7 +41,7 @@ Ransomware Resilience se basa en pruebas sobre patrones de entropía de datos, t
 
 
 
-NOTE: Para las alertas de violación de datos, destrucción de datos y comportamiento sospechoso de los usuarios, debes configurar link:concept-user-behavior.html["detección de actividad del usuario"].
+NOTE: Para alertas sobre filtraciones de datos, destrucción de datos y comportamientos sospechosos de usuarios, debes configurar link:concept-user-behavior.html["detección de actividad del usuario"]. También puedes evitar que link:task-users-manage.html["rutas de archivo y usuarios concretos"] genere alertas.
 
 
 

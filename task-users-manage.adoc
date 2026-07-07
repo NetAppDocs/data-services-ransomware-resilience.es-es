@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: task-users-manage.html 
 keywords: user activity detection, 
-summary: Después de crear el conector del directorio de usuarios en NetApp Ransomware Resilience, puedes bloquear y desbloquear usuarios y excluir usuarios de las alertas. 
+summary: Después de crear el conector del directorio de usuarios en NetApp Ransomware Resilience, puedes bloquear y desbloquear usuarios y excluir usuarios de las alertas. También puedes excluir rutas de archivos para que no generen alertas. 
 ---
-= Gestiona el bloqueo de usuarios y las alertas en NetApp Ransomware Resilience
+= Administra alertas y usuarios bloqueados en NetApp Ransomware Resilience
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Después de crear el conector del directorio de usuarios en NetApp Ransomware Resilience, puedes bloquear y desbloquear usuarios cuando experimentes eventos de ransomware y evaluarlos. También puedes excluir selectivamente a usuarios de las alertas de ransomware si estás seguro de que sus acciones no son ataques.
+Después de configurar la supervisión del comportamiento de los usuarios en NetApp Ransomware Resilience, puedes personalizar las alertas y gestionar los usuarios bloqueados. Personalizar las alertas te permite excluir a usuarios específicos o rutas de archivos para que no se genere una alerta. Bloquear usuarios sirve para responder a eventos de ransomware y evitar actividades maliciosas de los usuarios.
 
 Debes tener link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["configuraste un agente de actividad de usuario, activaste una política con detección de actividad de usuario y creaste un conector de directorio de usuarios"] para bloquear a usuarios.
 
@@ -46,7 +46,7 @@ Puedes bloquear a los usuarios cuando creas que son responsables de actividad ma
 
 
 
-== Gestiona las alertas de los usuarios
+== Excluir usuarios de alertas
 
 Si hay ciertos usuarios de confianza cuyo comportamiento podría activar alertas de comportamiento del usuario, puedes excluirlos de las alertas.
 
@@ -74,13 +74,32 @@ En Ransomware Resilience, selecciona **Subir**. Localiza y sube el archivo.
 TIP: También puedes excluir a un usuario directamente de una alerta. Para más información, consulta link:rp-use-alert.html["Responde a las alertas de ransomware"].
 
 .Eliminar usuarios de la lista de usuarios excluidos
-. En el panel de control de Configuración, busca el mosaico «Supervisión de la actividad de los usuarios» y selecciona **Manage**.
+. En el panel de control de Configuración, localiza la tarjeta de actividad de usuario y selecciona **Manage**.
 . Selecciona la pestaña **Excluidos de la supervisión**.
 . Seleccione **Agregar**.
-. Para excluir a usuarios concretos de la UI, elige **Seleccionar manualmente**.
-. Busca el nombre del usuario que deseas eliminar de la lista de usuarios excluidos. Selecciona el menú de acciones (`...` en la fila con el nombre del usuario y luego **Eliminar**.
+. Para excluir usuarios individuales de la interfaz de usuario, elige **Seleccionar manualmente**.
+. Localiza el nombre del usuario que quieres eliminar de la selección de usuarios excluidos. Selecciona el menú de acciones (`...` en la fila con el nombre del usuario y luego **Eliminar**.
 . En el cuadro de diálogo, selecciona **Eliminar** para confirmar que quieres eliminar a los usuarios seleccionados.
 
+
+
+
+== Excluir rutas de archivos de la supervisión
+
+Cada ruta de archivo debe comenzar con un nombre de volumen. Puede incluir hasta tres subdirectorios para ese volumen, por ejemplo "volumen/directorio/subdirectorio/subdirectorio2". Puedes excluir rutas de archivo introduciéndolas manualmente o cargando un archivo CSV que liste las rutas.
+
+.Pasos
+. En Ransomware Resilience, seleccione **Configuración**.
+. En el mosaico «Supervisión de la actividad de los usuarios», selecciona **Manage**.
+. Selecciona la pestaña *Excluidos de la supervisión*.
+. Selecciona **Add** para introducir las rutas de los archivos que deseas excluir.
+. Para introducir las rutas de los archivos en la interfaz de usuario, selecciona el botón de opción *Introducir manualmente* y luego introduce la ruta del archivo, por ejemplo, "volume/directory/subdirectory/". Para introducir rutas de archivos adicionales, selecciona **Seleccionar ruta de archivo**.
+. Para cargar una lista de rutas de archivos, selecciona el botón de opción **Cargar**. Selecciona el botón de carga para elegir el archivo CSV.
+. Seleccione **Agregar**.
+
+
+.Resultado
+Cuando la operación se complete con éxito, Ransomware Resilience comienza a excluir los archivos en las rutas seleccionadas de la supervisión de comportamientos sospechosos de los usuarios. Puedes revisar la lista de rutas en cualquier momento desde el menú de Configuración. Si necesitas volver a habilitar la supervisión para las rutas de archivos, puedes eliminarlas de la lista.
 
 
 

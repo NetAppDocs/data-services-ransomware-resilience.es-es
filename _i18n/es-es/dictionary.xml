@@ -1666,7 +1666,6 @@
   <block id="9dd5e919daf597022ca9ace5ebd739e9" category="list-text">Si seleccionaste **Seleccionar manualmente**, marca la casilla junto a los nombres de los usuarios específicos que quieres excluir.</block>
   <block id="bf7da00a56585a6a89ff8f8184dfd6fd" category="inline-link-macro">Responde a las alertas de ransomware</block>
   <block id="face5a9388d96715a2df2a403febcfad" category="admonition">También puedes excluir a un usuario directamente de una alerta. Para más información, consulta <block ref="56429daef20ebac0c2b98002f6d61934" category="inline-link-macro-rx"></block>.</block>
-  <block id="0b09185e7ecba92cf7f8f0712501db0b" category="section-title">Eliminar usuarios de la lista de usuarios excluidos</block>
   <block id="581c5c550f20f231f6c9e881e699829b" category="list-text">En el cuadro de diálogo, selecciona **Eliminar** para confirmar que quieres eliminar a los usuarios seleccionados.</block>
   <block id="90c78a95b0a3dffc0aa664d3139d1369" category="summary">Puedes enviar automáticamente datos de NetApp Ransomware Resilience a tu sistema de gestión de seguridad y eventos (SIEM) para análisis y detección de amenazas.</block>
   <block id="03883d80013dc0b2b972eccd5b93b56f" category="list-text">AWS Security Hub</block>
@@ -1759,7 +1758,6 @@
   <block id="147fa6a15cbb387b90cd75ccc34d8cfe" category="list-text">Destrucción de datos</block>
   <block id="9755e4a474d0024a8dcd40393e571716" category="list-text">Comportamiento sospechoso de usuario</block>
   <block id="f94e6cd450a12c55223329be07d15575" category="inline-link-macro">detección de actividad del usuario</block>
-  <block id="09e9060a723336e7b5657759fccb4bbf" category="admonition">Para las alertas de violación de datos, destrucción de datos y comportamiento sospechoso de los usuarios, debes configurar <block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>.</block>
   <block id="b413c7d063ce740207cbb531b68c46dc" category="section-title">Tipos y estados de alerta</block>
   <block id="1405a7e68c0a63e640869ddcfd6a3c37" category="paragraph">Las alertas tienen uno de dos estados: *Nueva* o *Inactiva*.</block>
   <block id="75a90d27a357c4859ab2e4e41a012d82" category="paragraph">Una alerta se clasifica como uno de los siguientes tipos:</block>
@@ -2515,8 +2513,6 @@
   <block id="7e6d3cb777f931902eef28d721b391ad" category="list-text">En NetApp Ransomware Resilience, selecciona *Configuración*.</block>
   <block id="8e80013d454d77fa5da380a02985bf08" category="list-text">Busca el mosaico de supervisión de la actividad de los usuarios y selecciona **Manage**.</block>
   <block id="ca9b34b1ac8edb836cc31adfeb86da35" category="paragraph">También puedes <block ref="8cd568562744ebd2ad72f4d26b638c5b" category="inline-link-macro-rx"></block>.</block>
-  <block id="83019ea39039a789f3a1ef050322b3c6" category="inline-link-macro">Gestiona el bloqueo de usuarios y las alertas en NetApp Ransomware Resilience</block>
-  <block id="ab86c889344f48e6cc9a644f588de541" category="list-text"><block ref="ab86c889344f48e6cc9a644f588de541" category="inline-link-macro-rx"></block></block>
   <block id="0e5314dd9df9fd8758e118ce1e7ba897" category="summary">NetApp Ransomware Resilience admite crear respuestas automáticas a eventos de actividad de usuario, lo que te permite crear automáticamente una instantánea o bloquear a un usuario.</block>
   <block id="da6a5c0ffdbef8b4ec186025eff8e43b" category="doc">Automatiza las respuestas a las alertas de actividad de usuario en NetApp Ransomware Resilience</block>
   <block id="11b56910cc00c324c49386ed5582988f" category="inline-link-macro">eventos de actividad de usuario</block>
@@ -2545,8 +2541,6 @@
   <block id="ffaa50c6810616dffe4f2fa3b11dd9d5" category="paragraph">Para modificar la respuesta, selecciona **Editar**.</block>
   <block id="9190ef848f1a62966c143f87f9a3b16e" category="list-text">Puedes modificar cualquiera de los ajustes excepto la gravedad de la alerta.</block>
   <block id="60fb8ad171246036e201929bc65c1158" category="list-text">Selecciona **Guardar** para capturar los cambios.</block>
-  <block id="b1e9096bc5102d69a78befc70d41fe69" category="summary">Después de crear el conector del directorio de usuarios en NetApp Ransomware Resilience, puedes bloquear y desbloquear usuarios y excluir usuarios de las alertas.</block>
-  <block id="728a9373b496fb3b49cccf8e1eb055c0" category="paragraph">Después de crear el conector del directorio de usuarios en NetApp Ransomware Resilience, puedes bloquear y desbloquear usuarios cuando experimentes eventos de ransomware y evaluarlos. También puedes excluir selectivamente a usuarios de las alertas de ransomware si estás seguro de que sus acciones no son ataques.</block>
   <block id="9594e6c0471983974b6adc193bd57d4e" category="paragraph">Debes tener <block ref="c512b877bbe8303215878962f3edb05e" category="inline-link-macro-rx"></block> para bloquear a usuarios.</block>
   <block id="37bcec617eba318667a247a58bd99097" category="inline-link-macro">automatizar respuestas</block>
   <block id="88450b9601513114d92202ed82d65469" category="admonition">Puedes <block ref="5b864d1f7cea25f12e7a99e07202259f" category="inline-link-macro-rx"></block> a los eventos de detección de actividad de usuario.</block>
@@ -2564,16 +2558,12 @@
   <block id="e2d552c6afc3cd9e9e5367d429f832c4" category="list-text">Selecciona la modificación. Para modificar la duración del bloqueo, selecciona **Periodo de tiempo para usuarios bloqueados** y luego modifica la duración. Para eliminar usuarios de la lista de usuarios bloqueados, selecciona **Desbloquear usuarios**.</block>
   <block id="4ecd815bab325d10795007a2e86d0a31" category="list-text">Marca la casilla situada junto al nombre del usuario bloqueado cuyo estado quieras cambiar.</block>
   <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">Selecciona **Guardar**.</block>
-  <block id="d90cde04b4a8cbf5c0f2097687b77bc8" category="section-title">Gestiona las alertas de los usuarios</block>
   <block id="bf21122a37b943f2b70a86b30f0af377" category="list-text">Selecciona la pestaña **Excluidos de la supervisión**.</block>
   <block id="a5e15107d3aab04bc0c5f9ef6e7eafe8" category="list-text">Selecciona **Add** para completar la incorporación de los usuarios a la lista de exclusión.</block>
   <block id="999d037bde1c176486633543cd03a250" category="list-text">En la pestaña **Excluidos de la supervisión**, los nombres de los usuarios eliminados de las alertas de detección de comportamiento de los usuarios ahora se muestran en el panel de control.</block>
-  <block id="0e1a585fedc96851082d7b2be641fb77" category="list-text">Para excluir a usuarios concretos de la UI, elige **Seleccionar manualmente**.</block>
-  <block id="2e1bb6ba10017caa1a34a9693a9495b0" category="list-text">Busca el nombre del usuario que deseas eliminar de la lista de usuarios excluidos. Selecciona el menú de acciones <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block> en la fila con el nombre del usuario y luego **Eliminar**.</block>
   <block id="f1d60a07f24fee746248e3b38e0d0891" category="inline-link-macro">Automatiza las respuestas a los eventos de detección de actividad de los usuarios</block>
   <block id="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="list-text"><block ref="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="inline-link-macro-rx"></block></block>
   <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">29 de junio de 2026</block>
-  <block id="97d60b3e7c986739c534cb2a3c8f2b99" category="sidebar">Gestiona las alertas y los bloqueos de usuarios</block>
   <block id="acd27fc46144e7ce943b73180eb0d3a8" category="paragraph">Realiza un simulacro de preparación ante un ataque de ransomware en NetApp Ransomware Resilience para poner a prueba tu preparación ante un ataque real de ransomware. Con el simulacro de preparación, Ransomware Resilience simula un ataque sobre una nueva carga de trabajo de prueba, lo que te permite investigar el ataque simulado y realizar una recuperación sin afectar tus datos de producción. El simulacro de preparación te ayuda a familiarizarte con las notificaciones de alerta y a prepararte para la respuesta y la recuperación. Puedes ejecutar el simulacro con la frecuencia que necesites.</block>
   <block id="537f8bf1cb00339aa74d0eb9f514b0df" category="list-text">En la pestaña «Simulacro de preparación», selecciona **Configure**.</block>
   <block id="58217f0a1f8bf12ba3006ea914fc528d" category="list-text">Selecciona el **tipo de simulacro de preparación**.</block>
@@ -2618,4 +2608,28 @@
   <block id="e3b01c4848ac6d1626374e4dee0f0685" category="list-text">**Recuperación tras una filtración de datos**: Debes haber configurado <block ref="ea7722fd5c2c373bdaffcbde2ca3bbf6" category="inline-link-macro-rx"></block> antes de poder habilitar este tipo de simulacro.</block>
   <block id="05d14520f5a3fd970bfca710b43ae17a" category="admonition">No puedes editar la configuración del simulacro de preparación mientras el simulacro está en ejecución. Para modificar el simulacro de preparación, selecciona **Restablecer** y luego edita el simulacro.</block>
   <block id="7820d7f245e7637e7833faccb183f36d" category="admonition">Para las respuestas automáticas ante comportamientos sospechosos de los usuarios, solo puedes tomar un snapshot. Bloquear a un usuario no está permitido como respuesta automática ante comportamientos sospechosos de los usuarios.</block>
+  <block id="ddebb8e31f83ddb3bde0b3a0292845dc" category="doc">Excluir rutas de archivos de las alertas de comportamiento de los usuarios</block>
+  <block id="33239db9e04a3b1473f3468fd2d9d99b" category="paragraph">NetApp Ransomware Resilience permite excluir rutas de archivos específicas de las alertas de supervisión del comportamiento de los usuarios. Puedes excluir rutas de archivos si sabes que no corren riesgo o si estás trabajando con archivos en un volumen que podría activar alertas.</block>
+  <block id="f1780a3dd9362a514caa277752b942f2" category="inline-link-macro">Excluir rutas de archivos de las alertas</block>
+  <block id="4cbd1bb5d6b8178b77b88be565a35c9b" category="paragraph">Para obtener más información, consulta <block ref="8c33118b4350e89c06a1a557095207c2" category="inline-link-macro-rx"></block>.</block>
+  <block id="1d20fa647694e6811cd363111cf77538" category="inline-link-macro">rutas de archivo y usuarios concretos</block>
+  <block id="2e9d0337668c42840413047306ef5b57" category="admonition">Para alertas sobre filtraciones de datos, destrucción de datos y comportamientos sospechosos de usuarios, debes configurar <block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>. También puedes evitar que <block ref="bd37368d247ac8892eb2f81e8ff6fc76" category="inline-link-macro-rx"></block> genere alertas.</block>
+  <block id="75cd3815cc2e90d9679458215fb968dd" category="inline-link-macro">Gestiona la configuración de alertas y usuarios bloqueados</block>
+  <block id="84bc023659fbaeb1e92bb1563d94a709" category="list-text"><block ref="84bc023659fbaeb1e92bb1563d94a709" category="inline-link-macro-rx"></block></block>
+  <block id="0050dfe8b12d7f41e074b38a1584c2e0" category="summary">Después de crear el conector del directorio de usuarios en NetApp Ransomware Resilience, puedes bloquear y desbloquear usuarios y excluir usuarios de las alertas. También puedes excluir rutas de archivos para que no generen alertas.</block>
+  <block id="19355628ba4f308abb52b989d195cbf2" category="doc">Administra alertas y usuarios bloqueados en NetApp Ransomware Resilience</block>
+  <block id="ec80e76fb9a96ba31394caae7738733c" category="paragraph">Después de configurar la supervisión del comportamiento de los usuarios en NetApp Ransomware Resilience, puedes personalizar las alertas y gestionar los usuarios bloqueados. Personalizar las alertas te permite excluir a usuarios específicos o rutas de archivos para que no se genere una alerta. Bloquear usuarios sirve para responder a eventos de ransomware y evitar actividades maliciosas de los usuarios.</block>
+  <block id="978942e6f751f778d0fea794ac36a5ed" category="list-title">Eliminar usuarios de la lista de usuarios excluidos</block>
+  <block id="0189c7f085ff5d22843080df2225281b" category="list-text">En el panel de control de Configuración, localiza la tarjeta de actividad de usuario y selecciona **Manage**.</block>
+  <block id="2a26cf4062a1ee4ec346c86574259847" category="list-text">Para excluir usuarios individuales de la interfaz de usuario, elige **Seleccionar manualmente**.</block>
+  <block id="144c603fbbde0985023a4ea73e22e35b" category="list-text">Localiza el nombre del usuario que quieres eliminar de la selección de usuarios excluidos. Selecciona el menú de acciones <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block> en la fila con el nombre del usuario y luego **Eliminar**.</block>
+  <block id="d6a20124c5d6d93a842f0081d06dac75" category="section-title">Excluir rutas de archivos de la supervisión</block>
+  <block id="34b2f1838e031e0797b877cf1d2da3f4" category="paragraph">Cada ruta de archivo debe comenzar con un nombre de volumen. Puede incluir hasta tres subdirectorios para ese volumen, por ejemplo "volumen/directorio/subdirectorio/subdirectorio2". Puedes excluir rutas de archivo introduciéndolas manualmente o cargando un archivo CSV que liste las rutas.</block>
+  <block id="ba84271ee1ea783891cb6e404dfb3d53" category="list-text">Selecciona la pestaña *Excluidos de la supervisión*.</block>
+  <block id="b4a2bf9e81e72a625f2411631cceee8c" category="list-text">Selecciona **Add** para introducir las rutas de los archivos que deseas excluir.</block>
+  <block id="2de7a68b6ff6ef34aae577dd6bfe5c03" category="list-text">Para introducir las rutas de los archivos en la interfaz de usuario, selecciona el botón de opción *Introducir manualmente* y luego introduce la ruta del archivo, por ejemplo, "volume/directory/subdirectory/". Para introducir rutas de archivos adicionales, selecciona **Seleccionar ruta de archivo**.</block>
+  <block id="3dac93d0e83abe331915c1ec220e04ac" category="list-text">Para cargar una lista de rutas de archivos, selecciona el botón de opción **Cargar**. Selecciona el botón de carga para elegir el archivo CSV.</block>
+  <block id="67510fe1e2eaace9d146396c21a7a119" category="paragraph">Cuando la operación se complete con éxito, Ransomware Resilience comienza a excluir los archivos en las rutas seleccionadas de la supervisión de comportamientos sospechosos de los usuarios. Puedes revisar la lista de rutas en cualquier momento desde el menú de Configuración. Si necesitas volver a habilitar la supervisión para las rutas de archivos, puedes eliminarlas de la lista.</block>
+  <block id="ea1fca7315926f55d77bcab3ed051982" category="section-title">07 de julio de 2026</block>
+  <block id="4c0600f62cb13917f7a785731376b1cb" category="sidebar">Gestiona alertas y usuarios bloqueados</block>
 </blocks>

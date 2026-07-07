@@ -1,0 +1,11 @@
+= Excluir rutas de archivos de las alertas de comportamiento de los usuarios
+:allow-uri-read: 
+
+
+
+
+=== Excluir rutas de archivos de las alertas de comportamiento de los usuarios
+
+NetApp Ransomware Resilience permite excluir rutas de archivos específicas de las alertas de supervisión del comportamiento de los usuarios. Puedes excluir rutas de archivos si sabes que no corren riesgo o si estás trabajando con archivos en un volumen que podría activar alertas.
+
+Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html["Excluir rutas de archivos de las alertas"^].
