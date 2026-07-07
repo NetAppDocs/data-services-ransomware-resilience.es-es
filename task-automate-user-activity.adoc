@@ -22,6 +22,9 @@ Se admiten respuestas automáticas para eventos relacionados con el cifrado (com
 
 Solo puedes proteger una máquina virtual de almacenamiento con al menos una carga de trabajo que esté protegida con una política de detección de comportamientos sospechosos de usuario.
 
+
+NOTE: Para las respuestas automáticas ante comportamientos sospechosos de los usuarios, solo puedes tomar un snapshot. Bloquear a un usuario no está permitido como respuesta automática ante comportamientos sospechosos de los usuarios.
+
 .Pasos
 . En Ransomware Resilience, seleccione **Configuración**.
 . En el mosaico «Supervisión de la actividad de los usuarios», selecciona **Manage**.
@@ -53,6 +56,9 @@ Si eliges esta opción, también debes seleccionar la duración del bloqueo. Pue
 
 
 | Destrucción de datos | Ransomware Resilience descubre el borrado masivo de archivos por parte de un usuario específico. 
+
+
+| Comportamiento sospechoso de usuario | Ransomware Resilience identifica comportamientos anómalos más allá del ámbito de la violación de datos, la destrucción de datos o el cifrado. 
 |===
 . Selecciona las máquinas virtuales de almacenamiento a las que deseas aplicar la respuesta automatizada.
 . Selecciona **Add** para crear la respuesta automática.

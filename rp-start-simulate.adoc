@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-simulate.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
-summary: Realice un simulacro de preparación ante ransomware simulando un ataque de ransomware en una carga de trabajo de muestra recién creada.  Luego, investigue el ataque simulado y recupere la carga de trabajo de muestra.  Puede ejecutar un simulacro de preparación ante ransomware varias veces. 
+summary: Realiza un simulacro de preparación ante ransomware simulando un ataque de ransomware en una carga de trabajo de ejemplo. Luego, investiga el ataque simulado y recupera la carga de trabajo de ejemplo. Puedes ejecutar un simulacro de preparación ante ransomware varias veces. 
 ---
 = Realice un simulacro de preparación para ataques de ransomware en NetApp Ransomware Resilience
 :hardbreaks:
@@ -14,10 +14,19 @@ summary: Realice un simulacro de preparación ante ransomware simulando un ataqu
 [role="lead"]
 Realiza un simulacro de preparación ante un ataque de ransomware en NetApp Ransomware Resilience para poner a prueba tu preparación ante un ataque real de ransomware. Con el simulacro de preparación, Ransomware Resilience simula un ataque sobre una nueva carga de trabajo de prueba, lo que te permite investigar el ataque simulado y realizar una recuperación sin afectar tus datos de producción. El simulacro de preparación te ayuda a familiarizarte con las notificaciones de alerta y a prepararte para la respuesta y la recuperación. Puedes ejecutar el simulacro con la frecuencia que necesites.
 
-
-TIP: Sus datos de carga de trabajo reales no se verán afectados.
-
 Puede ejecutar simulacros de preparación en cargas de trabajo NFS y CIFS (SMB).
+
+
+
+== Cómo funcionan los simulacros de preparación
+
+Ransomware Resilience admite tres tipos de simulacros: link:task-clean-restore-recover.html["restauración limpia"], link:rp-use-recover.html["recuperación personalizada"] y link:suspicious-user-activity.html["recuperación tras una filtración de datos"]. Los simulacros de restauración limpia y recuperación personalizada simulan ataques basados en cifrado (entropía) y se diferencian en el método de recuperación que ofrecen. Los simulacros de recuperación tras una filtración de datos simulan la exfiltración con patrones de lectura inusuales en tus datos.
+
+Al configurar un simulacro de preparación, Ransomware Resilience crea un volumen de prueba, aplica la protección contra ransomware con una política de instantáneas al volumen, valida la conectividad, monta el volumen, copia los datos de referencia, desmonta el volumen y crea una instantánea de referencia.
+
+Cuando inicias el simulacro, Ransomware Resilience monta el volumen y luego simula un ataque de ransomware. Si el simulacro de preparación es para una recuperación personalizada o una restauración limpia, los datos de referencia del volumen de prueba se reemplazan por extensiones de archivo conocidas por ser ransomware y archivos cifrados o modificados por entropía. Para un simulacro de recuperación tras una filtración de datos, los archivos no se reemplazan; en su lugar, Ransomware Resilience imita a un atacante que lee y exfiltra datos de manera sistemática. Sin importar el tipo de simulacro, Ransomware Resilience luego activa una alerta y verifica que la alerta se haya generado correctamente.
+
+Al ejecutar el simulacro, puedes poner a prueba tu respuesta ante las alertas y, si lo deseas, seguir paso a paso el proceso de recuperación sin afectar los datos reales.
 
 
 
@@ -30,9 +39,9 @@ Puede ejecutar simulacros de preparación en cargas de trabajo NFS y CIFS (SMB).
 . En la pestaña «Simulacro de preparación», selecciona **Configure**.
 . Selecciona el **tipo de simulacro de preparación**.
 +
-** **Recuperación personalizada**: Este ejercicio genera una alerta y luego te permite realizar link:rp-use-recover.html["restaurar personalizada"] donde configuras el punto de recuperación.
-** **Restauración limpia**: Este procedimiento genera una alerta y luego te lleva al proceso de recuperación link:task-clean-restore-recover.html["restauración limpia"], que te guía hacia puntos de recuperación optimizados.
-** **Recuperación tras una fuga de datos**: Este simulacro genera una alerta ante un incidente de fuga de datos provocado por un usuario. Debes haber configurado link:suspicious-user-activity.html["un agente de actividad del usuario"] antes de poder habilitar este tipo de simulacro.
+** **Recuperación personalizada**: Responde a un ataque de cifrado (entropía) con un link:rp-use-recover.html["restauración personalizada"] donde configuras el punto de recuperación.
+** **Restauración limpia**: Responde a un ataque de cifrado (entropía) con un proceso de link:task-clean-restore-recover.html["restauración limpia"] recuperación, que te guía hacia puntos de recuperación optimizados.
+** **Recuperación tras una filtración de datos**: Debes haber configurado link:suspicious-user-activity.html["un agente de actividad del usuario"] antes de poder habilitar este tipo de simulacro.
 
 
 . Selecciona el entorno en el que se creará el simulacro de preparación.
