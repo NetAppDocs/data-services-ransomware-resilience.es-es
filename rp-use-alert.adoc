@@ -27,6 +27,7 @@ Cada alerta puede incluir múltiples incidentes en diferentes volúmenes y estad
 
 
 
+[[how-alerts-are-generated]]
 == Cómo se generan las alertas
 
 Ransomware Resilience se basa en pruebas sobre patrones de entropía de datos, tipos de extensión de archivos y cifrado para producir alertas. Las alertas se basan en los siguientes eventos:
@@ -45,6 +46,7 @@ NOTE: Para alertas sobre filtraciones de datos, destrucción de datos y comporta
 
 
 
+[[alert-types-and-statuses]]
 === Tipos y estados de alerta
 
 Las alertas tienen uno de dos estados: *Nueva* o *Inactiva*.
@@ -74,6 +76,7 @@ La evidencia se basa en información de Autonomous Ransomware Protection en ONTA
 
 
 
+[[alert-states]]
 === Estados de alerta
 
 Un incidente de alerta puede tener los siguientes estados:
@@ -106,6 +109,7 @@ NOTE: Si tienes una estrategia de protección existente y luego desactivas una f
 
 
 
+[[view-alerts]]
 == Ver alertas
 
 Puedes acceder a las alertas desde el panel de Ransomware Resilience o desde la pestaña *Alertas*.
@@ -132,6 +136,7 @@ image:screen-alerts.png["Página de alertas"]
 
 
 
+[[respond-to-an-alert-email]]
 == Responder a un correo electrónico de alerta
 
 Cuando Ransomware Resilience detecta un posible ataque, envía una notificación por correo electrónico a los usuarios suscritos según sus preferencias de notificación de suscripción configuradas en la configuración de NetApp Console. El correo electrónico contiene información sobre la alerta, incluyendo la gravedad y los recursos afectados.
@@ -160,6 +165,7 @@ Aparece la página de Alertas.
 
 
 
+[[detect-malicious-activity-and-anomalous-user-behavior]]
 == Detectar actividad maliciosa y comportamiento anómalo del usuario
 
 Al mirar la pestaña Alertas, puede identificar si hay actividad maliciosa o un comportamiento anómalo del usuario.
@@ -168,6 +174,7 @@ Debes haber configurado un agente de actividad del usuario y activado una polít
 
 
 
+[[view-malicious-activity]]
 === Ver actividad maliciosa
 
 Cuando Autonomous Ransomware Protection activa una alerta en Ransomware Resilience, puedes ver los siguientes detalles:
@@ -196,6 +203,7 @@ image:screen-alerts-incidents3.png["Página de incidentes de alerta"]
 
 
 
+[[view-anomalous-user-behavior]]
 === Ver comportamiento anómalo del usuario
 
 Si has configurado la detección del comportamiento del usuario, puedes ver los datos a nivel de usuario y bloquear usuarios específicos. Para activar la detección de la actividad del usuario, consulta link:suspicious-user-activity.html["Configura agentes y colectores"].
@@ -218,6 +226,7 @@ TIP: Para volver a activar las alertas para un usuario, devuelve la alerta. Sele
 
 
 
+[[mark-ransomware-incidents-as-ready-for-recovery-after-incidents-are-neutralized]]
 == Marcar los incidentes de ransomware como listos para recuperación (después de que se neutralizan los incidentes)
 
 Después de detener el ataque, avisa al administrador de almacenamiento que los datos están listos para que pueda iniciar el proceso de recuperación.
@@ -244,6 +253,7 @@ Una vez que la alerta se marca para restaurar, se mueve de la pestaña Alertas a
 
 
 
+[[dismiss-incidents-that-are-not-potential-attacks]]
 == Descartar incidentes que no sean ataques potenciales
 
 Después de revisar los incidentes, debe determinar si son ataques potenciales. Si no son amenazas reales, pueden descartarse.
@@ -288,6 +298,7 @@ El estado del incidente o incidentes cambia a "Descartado".
 
 
 
+[[view-a-list-of-impacted-files]]
 == Ver una lista de archivos afectados
 
 Antes de restaurar una carga de trabajo a nivel de archivo, puedes ver una lista de los archivos afectados. Puedes acceder a la página Alertas para descargar una lista de los archivos afectados. Luego usa la página Recuperación para cargar la lista y elegir qué archivos restaurar.

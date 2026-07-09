@@ -29,6 +29,7 @@ NOTE: Los destinos de backup no están disponibles para cargas de trabajo en Ama
 
 
 
+[[add-storagegrid-as-a-backup-destination]]
 == Agregue StorageGRID como destino de respaldo
 
 Para configurar NetApp StorageGRID como destino de respaldo, ingrese la siguiente información.
@@ -72,6 +73,7 @@ image:screen-settings-backup-destinations-list2.png["Captura de pantalla de los 
 
 
 
+[[add-amazon-web-services-as-a-backup-destination]]
 == Agregue Amazon Web Services como destino de respaldo
 
 Para configurar AWS como destino de respaldo, ingrese la siguiente información.
@@ -129,6 +131,7 @@ image:screen-settings-backup-destinations-list2.png["Página de destinos de copi
 
 
 
+[[add-google-cloud-platform-as-a-backup-destination]]
 == Agregar Google Cloud Platform como destino de respaldo
 
 Para configurar Google Cloud Platform (GCP) como destino de respaldo, ingrese la siguiente información.
@@ -167,6 +170,7 @@ El nuevo destino de copia de seguridad se agrega a la lista de destinos de copia
 
 
 
+[[add-microsoft-azure-as-a-backup-destination]]
 == Agregar Microsoft Azure como destino de respaldo
 
 Para configurar Azure como destino de copia de seguridad, ingrese la siguiente información.

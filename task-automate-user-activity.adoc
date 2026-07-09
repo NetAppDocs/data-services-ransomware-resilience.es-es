@@ -18,6 +18,7 @@ Se admiten respuestas automáticas para eventos relacionados con el cifrado (com
 
 
 
+[[create-an-automated-response]]
 == Crear una respuesta automática
 
 Solo puedes proteger una máquina virtual de almacenamiento con al menos una carga de trabajo que esté protegida con una política de detección de comportamientos sospechosos de usuario.
@@ -66,6 +67,7 @@ Si eliges esta opción, también debes seleccionar la duración del bloqueo. Pue
 
 
 
+[[modify-an-automated-response]]
 == Modificar una respuesta automática
 
 Una vez creada una respuesta automatizada, puedes pausarla, reiniciarla o modificarla. Puedes modificar el nombre de la respuesta, los tipos de alertas que activan la respuesta, las storage VMs y la acción que se toma.

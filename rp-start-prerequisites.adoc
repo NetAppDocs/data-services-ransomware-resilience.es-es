@@ -18,6 +18,7 @@ Revisa y asegúrate de cumplir con los siguientes requisitos.
 
 
 
+[[supported-systems]]
 == Sistemas compatibles
 
 Asegúrese de estar utilizando un sistema compatible:
@@ -63,6 +64,7 @@ NOTE: La detección de actividad del usuario no es compatible con Azure NetApp F
 
 
 
+[[netapp-console-requirements]]
 == Requisitos de la NetApp Console
 
 La configuración de su NetApp Console requiere:
@@ -88,6 +90,7 @@ NOTE: Para utilizar la resiliencia contra el ransomware en cargas de trabajo SAN
 
 
 
+[[ontap-requirements]]
 == Requisitos de ONTAP
 
 * Debe estar ejecutando ONTAP 9.11.1 o posterior con una licencia ONTAP One habilitada en la instancia ONTAP local.  Para obtener más información sobre la compatibilidad con ONTAP , consultelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Descripción general de la protección autónoma contra ransomware"^] .
@@ -99,6 +102,7 @@ NOTE: Si has conectado un clúster ONTAP a la consola con credenciales que no so
 
 
 
+[[data-backups]]
 == Copias de seguridad de datos
 
 * Una cuenta en NetApp StorageGRID, AWS S3, Azure Blob o Google Cloud Platform para destinos de copia de seguridad con los permisos de acceso adecuados configurados.
@@ -112,18 +116,21 @@ NOTE: Puedes link:task-backup-destination.html["configurar un destino de backup 
 
 
 
+[[user-behavior-detection-requirements]]
 == Requisitos para la detección del comportamiento de los usuarios
 
 Para que Ransomware Resilience proporcione alertas sobre el comportamiento del usuario, debes configurar un agente de actividad del usuario. Para instalar un agente de actividad del usuario, asegúrate de que tu sistema cumple link:reference-user-activity-requirements.html["los requisitos"].
 
 
 
+[[clean-restore-prerequisites]]
 == Requisitos previos para la restauración limpia
 
 Ransomware Resilience proporciona restauraciones limpias, que ofrecen un proceso de recuperación guiado que descubre las vías de recuperación óptimas. Para utilizar la restauración limpia, link:task-clean-restore.html["asegúrate de cumplir los requisitos previos"].
 
 
 
+[[update-non-admin-user-permissions-in-an-ontap-system]]
 == Actualizar los permisos de usuarios no administradores en un sistema ONTAP
 
 Si necesitas actualizar los permisos de usuarios no administradores para un sistema en particular, usa este procedimiento:

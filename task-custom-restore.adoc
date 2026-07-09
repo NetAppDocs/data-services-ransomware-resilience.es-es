@@ -19,6 +19,7 @@ TIP: Ransomware Resilience también es compatible con xref:task-clean-restore.ht
 
 
 
+[[restore-a-workload]]
 == Restaurar una carga de trabajo
 
 *Función requerida de la consola* administrador de organización, administrador de carpeta o proyecto, o administrador de protección contra ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola para todos los servicios"^].
@@ -58,6 +59,7 @@ TIP: Puede seleccionar hasta 100 archivos o una sola carpeta.
 
 
 
+[[restore-all-volumes]]
 === Restaurar todos los volúmenes
 
 . En el menú Resiliencia ante ransomware, seleccione *Recuperación*.
@@ -97,6 +99,7 @@ TIP: El nuevo nombre del volumen aparece como prefijo + nombre del volumen origi
 
 
 
+[[restore-a-workload-at-the-volume-level]]
 === Restaurar una carga de trabajo a nivel de volumen
 
 . En el menú Resiliencia ante ransomware, seleccione *Recuperación*.
@@ -137,6 +140,7 @@ TIP: El nuevo nombre del volumen aparece como el nombre del volumen original + e
 
 
 
+[[restore-a-workload-at-the-file-level]]
 === Restaurar una carga de trabajo a nivel de archivo
 
 Antes de restaurar una carga de trabajo a nivel de archivo, puedes ver una lista de los archivos afectados. Puedes acceder a la página Alertas para descargar una lista de los archivos afectados. Luego usa la página Recuperación para cargar la lista y elegir qué archivos restaurar.
@@ -223,6 +227,7 @@ TIP: Si no especifica una ruta para la restauración, los archivos se restaurar�
 
 
 
+[[restore-a-file-share-or-datastore]]
 === Restaurar un recurso compartido de archivos o un almacén de datos
 
 . Después de seleccionar un recurso compartido de archivos o un almacén de datos para restaurar, en la página Restaurar, en el ámbito de restauración, seleccione *Por volumen*.
@@ -263,6 +268,7 @@ TIP: Si no especifica una ruta para la restauración, los archivos se restaurar�
 
 
 
+[[restore-a-vm-file-share-at-the-vm-level]]
 === Restaurar un recurso compartido de archivos de VM en el nivel de VM
 
 En la página Recuperación, después de seleccionar una máquina virtual para restaurar, continúe con estos pasos.

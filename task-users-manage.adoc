@@ -20,6 +20,7 @@ TIP: Puedes link:task-automate-user-activity.html["automatizar respuestas"] a lo
 
 
 
+[[manage-blocked-users]]
 == Gestiona usuarios bloqueados
 
 Puedes bloquear a los usuarios cuando creas que son responsables de actividad maliciosa.
@@ -46,6 +47,7 @@ Puedes bloquear a los usuarios cuando creas que son responsables de actividad ma
 
 
 
+[[exclude-users-from-alerts]]
 == Excluir usuarios de alertas
 
 Si hay ciertos usuarios de confianza cuyo comportamiento podría activar alertas de comportamiento del usuario, puedes excluirlos de las alertas.
@@ -84,6 +86,7 @@ TIP: También puedes excluir a un usuario directamente de una alerta. Para más 
 
 
 
+[[exclude-file-paths-from-monitoring]]
 == Excluir rutas de archivos de la supervisión
 
 Cada ruta de archivo debe comenzar con un nombre de volumen. Puede incluir hasta tres subdirectorios para ese volumen, por ejemplo "volumen/directorio/subdirectorio/subdirectorio2". Puedes excluir rutas de archivo introduciéndolas manualmente o cargando un archivo CSV que liste las rutas.
@@ -103,6 +106,7 @@ Cuando la operación se complete con éxito, Ransomware Resilience comienza a ex
 
 
 
+[[next-steps]]
 == Próximos pasos
 
 * link:task-automate-user-activity.html["Automatiza las respuestas a los eventos de detección de actividad de los usuarios"]

@@ -53,6 +53,7 @@ image:screen-reports.png["Página de informes que muestra el informe del simulac
 
 
 
+[[more-information]]
 == Más información
 
 * link:task-automate-user-activity.html["Automatiza las respuestas a los eventos de actividad de los usuarios"]

@@ -18,6 +18,7 @@ Con NetApp Ransomware Resilience, puedes realizar una recuperación guiada tras 
 
 
 
+[[before-you-begin]]
 == Antes de empezar
 
 *Rol de consola requerido* Para realizar esta tarea, necesitas el rol de link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Súper administrador"^] o Ransomware Resilience admin. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
@@ -26,6 +27,7 @@ Debes haber configurado un link:task-clean-restore.html["entorno de recuperació
 
 
 
+[[considerations]]
 == Consideraciones
 
 * Sólo puedes realizar una restauración limpia para un ataque de ransomware basado en cifrado.
@@ -39,6 +41,7 @@ Debes haber configurado un link:task-clean-restore.html["entorno de recuperació
 
 
 
+[[considerations-for-restoring-to-an-alternate-location]]
 === Consideraciones para la restauración en una ubicación alternativa
 
 Cuando restauras un volumen utilizando la restauración limpia, tienes la opción de restaurar en una ubicación alternativa gestionada por el mismo agente de la consola. La nueva ubicación puede estar en el mismo sistema, VM de almacenamiento o agregado, o en uno diferente. Cuando restauras en una ubicación alternativa:
@@ -51,6 +54,7 @@ Cuando restauras un volumen utilizando la restauración limpia, tienes la opció
 
 
 
+[[perform-a-clean-restore]]
 == Realiza una restauración limpia
 
 . En la sección **Recuperación**, identifica la carga de trabajo que quieres restaurar. Selecciona **Restaurar**.

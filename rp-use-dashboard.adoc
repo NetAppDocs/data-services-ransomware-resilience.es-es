@@ -20,6 +20,7 @@ Usa el panel de control para revisar las sugerencias de protección, cambiar la 
 
 
 
+[[review-workload-health-using-the-dashboard]]
 == Revisa la salud de la carga de trabajo usando el panel de control
 
 .Pasos
@@ -78,6 +79,7 @@ El número total de acciones no incluye las acciones que usted desestimó.
 
 
 
+[[review-protection-recommendations-on-the-dashboard]]
 == Revisa las recomendaciones de protección en el panel de control
 
 Ransomware Resilience evalúa la protección de sus cargas de trabajo y recomienda acciones para mejorar esa protección.
@@ -129,6 +131,7 @@ TIP: Más tarde puedes cambiar un elemento descartado a un elemento por hacer. C
 
 
 
+[[export-protection-data-to-csv-files]]
 == Exportar datos de protección a archivos CSV
 
 Puede exportar datos y descargar archivos CSV que muestran detalles de protección, alertas y recuperación.
@@ -157,6 +160,7 @@ Los archivos CSV incluyen datos de todas las cargas de trabajo en todos los sist
 
 
 
+[[access-technical-documentation]]
 == Acceder a la documentación técnica
 
 Puede acceder a la documentación técnica de Ransomware Resilience desdelink:https://docs.netapp.com["docs.netapp.com"^] o desde dentro de Ransomware Resilience.

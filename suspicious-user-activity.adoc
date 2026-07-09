@@ -29,6 +29,7 @@ Si _no_ usas DII, sigue las instrucciones de configuración aquí.
 
 
 
+[[before-you-begin]]
 == Antes de empezar
 
 * Asegúrate de cumplir los link:reference-user-activity-requirements.html["requisitos del sistema operativo, servidor y red"].
@@ -40,6 +41,7 @@ Asegúrate de que cada función se aplique a nivel de la organización.
 
 
 
+[[create-a-user-activity-agent]]
 == Crear un agente de actividad de usuario
 
 Los agentes de actividad de usuario son entornos ejecutables para link:#add-a-data-collector["recopiladores de datos"]; los recopiladores de datos comparten eventos de actividad de usuario con Ransomware Resilience. Debes crear al menos un agente de actividad de usuario para habilitar la detección de actividad de usuario.
@@ -78,6 +80,7 @@ Una vez creado correctamente el agente de actividad de usuario, vuelve al menú 
 
 
 
+[[add-a-data-collector]]
 === Agregar un recopilador de datos
 
 Los recopiladores de datos se crean automáticamente cuando activas una estrategia de protección contra ransomware con detección de actividad de usuario. Para más información, consulta link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["añadir una política de detección"].
@@ -88,6 +91,7 @@ image:user-activity-settings.png["Captura de pantalla de la configuración de ac
 
 
 
+[[create-a-user-directory-connector]]
 == Crear un conector de directorio de usuarios
 
 Para asignar ID de usuario a nombres de usuario, debe crear un conector de directorio de usuarios.
@@ -148,6 +152,7 @@ Proporcione los detalles de mapeo de atributos:
 
 
 
+[[delete-a-user-directory-connector]]
 === Eliminar un conector de directorio de usuarios
 
 .Pasos
@@ -160,6 +165,7 @@ Proporcione los detalles de mapeo de atributos:
 
 
 
+[[respond-to-user-activity-alerts]]
 == Responde a las alertas de actividad de los usuarios
 
 Después de configurar la detección de actividad del usuario, puedes supervisar los eventos en la página de alertas. Para más información, consulta link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["Detecta actividad maliciosa y comportamiento sospechoso de los usuarios"].
@@ -168,6 +174,7 @@ También puedes link:task-automate-user-activity.html["Automatiza las respuestas
 
 
 
+[[next-steps]]
 == Próximos pasos
 
 * link:task-users-manage.html["Gestiona la configuración de alertas y usuarios bloqueados"]

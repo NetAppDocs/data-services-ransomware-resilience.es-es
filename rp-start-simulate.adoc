@@ -18,6 +18,7 @@ Puede ejecutar simulacros de preparación en cargas de trabajo NFS y CIFS (SMB).
 
 
 
+[[how-readiness-drills-work]]
 == Cómo funcionan los simulacros de preparación
 
 Ransomware Resilience admite tres tipos de simulacros: link:task-clean-restore-recover.html["restauración limpia"], link:rp-use-recover.html["recuperación personalizada"] y link:suspicious-user-activity.html["recuperación tras una filtración de datos"]. Los simulacros de restauración limpia y recuperación personalizada simulan ataques basados en cifrado (entropía) y se diferencian en el método de recuperación que ofrecen. Los simulacros de recuperación tras una filtración de datos simulan la exfiltración con patrones de lectura inusuales en tus datos.
@@ -30,6 +31,7 @@ Al ejecutar el simulacro, puedes poner a prueba tu respuesta ante las alertas y,
 
 
 
+[[configure-a-ransomware-attack-readiness-drill]]
 == Configurar un simulacro de preparación para un ataque de ransomware
 
 *Rol de consola requerido* Para realizar esta tarea, necesitas el rol de link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Súper administrador"^] o Ransomware Resilience admin. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
@@ -63,6 +65,7 @@ TIP: Puede editar la configuración del simulacro de preparación más tarde uti
 
 
 
+[[start-a-readiness-drill]]
 == Iniciar un simulacro de preparación
 
 Después de configurar el simulacro de preparación, puede iniciarlo.
@@ -86,6 +89,7 @@ NOTE: No puedes editar la configuración del simulacro de preparación mientras 
 
 
 
+[[respond-to-a-readiness-drill-alert]]
 == Responder a una alerta de simulacro de preparación
 
 Pon a prueba tu preparación respondiendo a una alerta de simulacro de preparación.
@@ -124,6 +128,7 @@ Si la gravedad indica que se sospecha que un usuario ha realizado una actividad 
 
 
 
+[[restore-the-test-workload]]
 == Restaurar la carga de trabajo de prueba
 
 Después de revisar la alerta del simulacro de preparación, restaure la carga de trabajo de prueba si es necesario.
@@ -146,6 +151,7 @@ Después de revisar la alerta del simulacro de preparación, restaure la carga d
 
 
 
+[[change-the-alert-status-after-the-readiness-drill]]
 == Cambia el estado de alerta después del simulacro de preparación
 
 Después de revisar la alerta del simulacro de preparación y restaurar la carga de trabajo, cambie el estado de la alerta si es necesario.
@@ -169,6 +175,7 @@ IMPORTANT: Después de descartar un ataque, no puedes volver a cambiarlo. Si des
 
 
 
+[[review-reports-on-the-readiness-drill]]
 == Revisar los informes sobre el simulacro de preparación
 
 Una vez finalizado el simulacro de preparación, puedes generar y guardar un informe sobre el simulacro. El informe del simulacro es un archivo JSON que recoge información como la política de detección, el tipo de alerta y la marca de tiempo, los detalles del ataque y el estado de recuperación.

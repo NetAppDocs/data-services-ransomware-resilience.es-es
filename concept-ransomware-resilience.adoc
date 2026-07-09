@@ -20,6 +20,7 @@ NetApp Ransomware Resilience protege tus datos de los ataques de ransomware. En 
 
 
 
+[[ransomware-resilience-at-the-data-layer]]
 == Resiliencia frente al ransomware en la capa de datos
 
 Su postura de seguridad generalmente abarca múltiples capas de defensa para protegerse contra una variedad de amenazas cibernéticas.
@@ -34,6 +35,7 @@ image:concept-security-layer-diagram.png["Diagrama de la capa de seguridad"]
 
 
 
+[[what-you-can-do-with-ransomware-resilience]]
 == Qué puedes hacer con Ransomware Resilience
 
 Ransomware Resilience proporciona el uso completo de varias tecnologías de NetApp para que su administrador de almacenamiento, administrador de seguridad de datos o ingeniero de operaciones de seguridad puedan lograr los siguientes objetivos:
@@ -50,6 +52,7 @@ image:diagram-rp-features-phases3.png["Diagrama que muestra las estrategias de r
 
 
 
+[[benefits-of-using-ransomware-resilience]]
 == Beneficios de utilizar Ransomware Resilience
 
 La resiliencia frente al ransomware ofrece los siguientes beneficios:
@@ -66,6 +69,7 @@ La resiliencia frente al ransomware ofrece los siguientes beneficios:
 
 
 
+[[cost]]
 == Costo
 
 Puedes probar Ransomware Resilience con una prueba gratuita de 30 días. NetApp no ​​le cobra por utilizar la versión de prueba de Ransomware Resilience.
@@ -80,6 +84,7 @@ Al considerar el dimensionamiento, los costes de las licencias se basan en la ca
 
 
 
+[[licensing]]
 == Licencias
 
 Con Ransomware Resilience, puede utilizar diferentes planes de licencia, incluida una prueba gratuita, una suscripción de pago por uso o traer su propia licencia.
@@ -94,6 +99,7 @@ Para obtener más información, consulte link:rp-start-licenses.html["Configurar
 
 
 
+[[netapp-console]]
 == NetApp Console
 
 Se puede acceder a Ransomware Resilience a través de la NetApp Console.
@@ -106,6 +112,7 @@ Obtenga más información sobre ellink:https://docs.netapp.com/us-en/console-set
 
 
 
+[[how-ransomware-resilience-works]]
 == Cómo funciona la resiliencia frente al ransomware
 
 Ransomware Resilience funciona con tu consola y configuración de ONTAP existentes para identificar amenazas de ransomware, proteger tus cargas de trabajo y permitir una recuperación rápida.
@@ -162,6 +169,7 @@ image:diagram-rp-architecture-preview3.png["Diagrama que muestra la arquitectura
 |===
 
 
+[[attack-types]]
 === Tipos de ataque
 
 Ransomware Resilience reconoce cinco tipos de ataques:
@@ -190,12 +198,14 @@ NOTE: Para identificar a un usuario específico responsable de un ataque, debes 
 
 
 
+[[supported-backup-targets-systems-and-workload-data-sources]]
 == Destinos de copia de seguridad, sistemas y fuentes de datos de carga de trabajo compatibles
 
 Ransomware Resilience admite los siguientes objetivos de respaldo, sistemas y fuentes de datos:
 
 
 
+[[supported-backup-targets]]
 === Destinos de copia de seguridad compatibles
 
 * Servicios web de Amazon (AWS) S3
@@ -206,6 +216,7 @@ Ransomware Resilience admite los siguientes objetivos de respaldo, sistemas y fu
 
 
 
+[[supported-systems]]
 === Sistemas compatibles
 
 |===
@@ -252,6 +263,7 @@ NOTE: El uso de ARP/AI en ONTAP requiere ONTAP 9.16 o superior. + ONTAP no propo
 
 
 
+[[supported-workload-data-sources]]
 === Fuentes de datos de carga de trabajo compatibles
 
 Ransomware Resilience protege las siguientes cargas de trabajo en volúmenes de datos primarios:
@@ -269,6 +281,7 @@ Ransomware Resilience protege las siguientes cargas de trabajo en volúmenes de 
 
 
 
+[[key-terms]]
 == Términos clave
 
 Podría resultarle beneficioso comprender cierta terminología relacionada con la protección contra ransomware.

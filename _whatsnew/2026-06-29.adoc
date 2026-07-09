@@ -4,6 +4,7 @@
 
 
 
+[[automated-responses-to-user-activity-alerts]]
 === Respuestas automáticas a las alertas de actividad de los usuarios
 
 Ransomware Resilience ahora permite automatizar la creación de instantáneas y el bloqueo de usuarios cuando se genera una alerta de actividad de usuario. Con las respuestas automatizadas, puedes bloquear a un usuario en cuanto se genere una advertencia y crear una instantánea para la recuperación, lo que permite una respuesta más rápida sin intervención manual.

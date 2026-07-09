@@ -4,6 +4,7 @@
 
 
 
+[[clean-restore]]
 === Restauración limpia
 
 Ransomware Resilience ahora es compatible con las restauraciones limpias, una nueva opción de recuperación que te ayuda a recuperarte rápida y fácilmente de los ataques de ransomware. Las restauraciones limpias ofrecen flujos de trabajo guiados que identifican los puntos de restauración óptimos para que tus cargas de trabajo vuelvan a funcionar mientras se minimiza el tiempo de inactividad. Los flujos de trabajo de la restauración limpia también proporcionan información a nivel de archivos sobre tus datos, asegurando que puedas restaurar cargas de trabajo libres de malware que evitan la reinfección y minimizan la pérdida de datos.
@@ -12,6 +13,7 @@ Para obtener información sobre las configuraciones compatibles y cómo configur
 
 
 
+[[siem-support-for-splunk-enterprise]]
 === Soporte SIEM para Splunk Enterprise
 
 Ransomware Resilience ahora proporciona soporte de gestión de eventos de información de seguridad (SIEM) para Splunk Enterprise, lo que te permite centralizar los datos de registros y eventos y agilizar el análisis y la detección de amenazas.
@@ -20,6 +22,7 @@ Para más información, consulta link:https://docs.netapp.com/us-en/data-service
 
 
 
+[[user-behavior-detection-enhancement]]
 === Mejora de la detección del comportamiento del usuario
 
 La información sobre las violaciones de datos se conserva ahora durante 13 meses después de un incidente, lo que permite un registro más prolongado para tus necesidades de información.
