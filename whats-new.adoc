@@ -32,6 +32,15 @@ Para más información, consulta link:https://docs.netapp.com/us-en/data-service
 
 
 
+[[arm-template-for-microsoft-sentinel]]
+=== Plantilla ARM para Microsoft Sentinel
+
+Ransomware Resilience ofrece ahora una plantilla de Azure Resource Manager (ARM) para conectarte a Microsoft Sentinel como SIEM, ofreciendo un método secundario para facilitar la implementación.
+
+Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Conéctate a un SIEM para la detección y el análisis de amenazas"^].
+
+
+
 [[29-june-2026]]
 == 29 de junio de 2026
 

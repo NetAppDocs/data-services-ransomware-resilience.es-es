@@ -10,3 +10,12 @@
 NetApp Ransomware Resilience permite excluir rutas de archivos específicas de las alertas de supervisión del comportamiento de los usuarios. Puedes excluir rutas de archivos si sabes que no corren riesgo o si estás trabajando con archivos en un volumen que podría activar alertas.
 
 Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html["Excluir rutas de archivos de las alertas"^].
+
+
+
+[[arm-template-for-microsoft-sentinel]]
+=== Plantilla ARM para Microsoft Sentinel
+
+Ransomware Resilience ofrece ahora una plantilla de Azure Resource Manager (ARM) para conectarte a Microsoft Sentinel como SIEM, ofreciendo un método secundario para facilitar la implementación.
+
+Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Conéctate a un SIEM para la detección y el análisis de amenazas"^].
