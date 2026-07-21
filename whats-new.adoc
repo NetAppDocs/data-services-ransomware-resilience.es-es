@@ -18,6 +18,29 @@ Descubra las novedades en NetApp Ransomware Resilience.
 
 
 
+[[20-july-2026]]
+== 20 de julio de 2026
+
+
+
+[[configure-siem-through-webhooks]]
+=== Configura SIEM mediante webhooks
+
+Ransomware Resilience ya permite configurar un sistema de gestión de información y eventos de seguridad (SIEM) mediante webhooks en la interfaz de usuario de Ransomware Resilience. Con webhooks, puedes usar tu sistema SIEM preferido para organizar tu monitoreo de ransomware.
+
+Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Configura un sistema SIEM"^].
+
+
+
+[[email-alerts-for-automated-responses-to-user-activity-events]]
+=== Alertas por correo electrónico para respuestas automáticas a eventos de actividad de usuarios
+
+Ransomware Resilience ahora envía notificaciones por correo electrónico cuando se activan respuestas automáticas por eventos de actividad de usuario, mejorando la claridad y la visibilidad de Ransomware Resilience y de las actividades de ransomware.
+
+Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-automate-user-activity.html["Automatiza las respuestas a las alertas sobre la actividad de los usuarios"^].
+
+
+
 [[07-july-2026]]
 == 07 de julio de 2026
 
