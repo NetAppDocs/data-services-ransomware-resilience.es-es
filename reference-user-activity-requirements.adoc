@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-user-activity-requirements.html 
-keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, end points, operating systems, networking 
+keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, endpoints, operating systems, networking 
 summary: Antes de crear un agente de actividad de usuario y otros recopiladores, debes asegurarte de cumplir con los requisitos de sistema operativo, servidor y red indicados. 
 ---
 = Requisitos de detección de actividad de usuario para NetApp Ransomware Resilience
@@ -14,14 +14,14 @@ summary: Antes de crear un agente de actividad de usuario y otros recopiladores,
 [role="lead"]
 NetApp Ransomware Resilience user behavior detection te permite responder a eventos de ransomware a nivel de usuario. Debes crear un conjunto de agentes para habilitar la detección de comportamiento del usuario. Antes de habilitar la detección, debes asegurarte de cumplir con los requisitos de sistema operativo, servidor y red descritos para que Ransomware Resilience pueda detectar e informar eventos correctamente.
 
-La detección del comportamiento de los usuarios está disponible en Ransomware Resilience para cargas de trabajo en sistemas ONTAP locales, así como en Amazon FSx for NetApp ONTAP y sistemas Cloud Volumes ONTAP que cumplen con <<Soporte del proveedor de la nube>>.
 
 
+[[user-activity-agent-cloud-provider-support]]
+== Soporte para proveedores de nube del agente de actividad de usuario
 
-[[cloud-provider-support]]
-== Soporte del proveedor de la nube
+Para habilitar la detección del comportamiento de los usuarios, debes crear un agente de actividad de usuario. El agente de actividad de usuario es un entorno ejecutable para los recopiladores de datos, que comparten los eventos de actividad de usuario con Ransomware Resilience.
 
-Los datos de comportamiento de los usuarios se pueden almacenar en AWS y Azure en las siguientes regiones:
+El agente de actividad de usuario se puede implementar en AWS y Azure en las siguientes regiones:
 
 |===
 | Proveedor de nube | Región 
@@ -37,6 +37,9 @@ Los datos de comportamiento de los usuarios se pueden almacenar en AWS y Azure e
 
 | Azur | Este de EE. UU. 
 |===
+
+NOTE: La implementación regional del agente de actividad del usuario no afecta al agente de la consola. La implementación del agente de la consola es independiente de estas regiones.
+
 
 
 [[operating-system-requirements]]
@@ -78,7 +81,7 @@ La detección de comportamiento sospechoso del usuario es compatible con los sig
 
 NOTE: La máquina que utilice para el agente de actividad del usuario no debe estar ejecutando otro software de nivel de aplicación. Se recomienda un servidor dedicado.
 
-El `unzip` Se requiere comando para la instalación. El `sudo su -` El comando es necesario para la instalación, la ejecución de scripts y la desinstalación.
+El comando  `unzip` es necesario para la instalación. El comando  `sudo su -` es necesario para la instalación, la ejecución de scripts y la desinstalación.
 
 
 
@@ -97,8 +100,8 @@ El servidor debe cumplir los siguientes requisitos mínimos:
 [[server-recommendations]]
 === Recomendaciones del servidor
 
-* Asigne espacio de disco adicional para permitir la creación del sistema de archivos. Asegúrese de que haya al menos 35 GB de espacio libre en el sistema de archivos. + Si `/opt` es una carpeta montada desde un almacenamiento NAS, los usuarios locales deben tener acceso a esta carpeta. La creación del agente de actividad del usuario puede fallar si los usuarios locales no tienen los permisos necesarios.
-* Se recomienda que instales el agente de actividad del usuario en un sistema independiente de tu entorno de Ransomware Resilience. Si los instalas en la misma máquina, deberías dejar entre 50 y 55 GB de espacio en disco. Para Linux, asigna entre 25 y 30 GB de espacio a `/opt/netapp` y 25 GB a `var/log/netapp`.
+* Asigna espacio adicional en disco para permitir la creación del sistema de archivos. Asegúrate de que haya al menos 35 GB de espacio libre en el sistema de archivos. + Si `/opt` es una carpeta montada desde un almacenamiento NAS, los usuarios locales deben tener acceso a esta carpeta. La creación del agente de actividad de usuario puede fallar si los usuarios locales no tienen los permisos necesarios.
+* Se recomienda instalar el agente de actividad del usuario en un sistema independiente de tu entorno de Ransomware Resilience. Si instalas el agente y Ransomware Resilience en el mismo equipo, debes disponer de entre 50 y 55 GB de espacio en disco. Para Linux, asigna entre 25 y 30 GB de espacio a `/opt/netapp` y 25 GB a `var/log/netapp`.
 * Se recomienda sincronizar la hora tanto en el sistema ONTAP como en la máquina del agente de actividad del usuario mediante el Protocolo de tiempo de red (NTP) o el Protocolo simple de tiempo de red (SNTP).
 
 
@@ -141,7 +144,7 @@ Ransomware Resilience proporciona un script que puedes ejecutar en tu sistema pa
 
 .Pasos
 . Desde el clúster que aloja el agente de actividad del usuario, ejecuta la secuencia de comandos como admin: `/opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh`
-. Cuando se te solicite, proporciona la dirección IP del clúster, el nombre de usuario de admin y la contraseña de admin.
+. Cuando se te solicite, introduce la dirección IP del clúster, el nombre de usuario admin y la contraseña admin.
 . El script tarda aproximadamente cinco minutos en ejecutarse. Cuando finaliza, la línea de comandos muestra la tasa de eventos, por ejemplo "Svm svm_rate está generando 100 eventos/seg."
 +
 Utiliza el índice de eventos para calcular tu tamaño.
@@ -160,7 +163,7 @@ Revise las reglas de acceso a la red en la nube para su geografía relevante (As
 IMPORTANT: Durante la instalación inicial, reemplaza el  `<site_name>` con un permiso comodín (`*`). Después de que el agente esté activado y completamente operativo, puedes reemplazar el permiso por el nombre del sitio. Contacta a tu representante de NetApp para el nombre del sitio.
 
 
-NOTE: El agente de actividad del usuario utiliza la tecnología NetApp Data Infrastructure Insights, por eso se usan los endpoints de `cloudinsights`. Para más información, consulta
+NOTE: El agente de actividad del usuario utiliza la tecnología NetApp Data Infrastructure Insights, por eso se usan los endpoints de `cloudinsights`. Para obtener más información, consulta link:concept-user-behavior.html#user-activity-forensics["Ransomware Resilience y Data Infrastructure Insights"].
 
 
 
@@ -176,7 +179,7 @@ NOTE: El agente de actividad del usuario utiliza la tecnología NetApp Data Infr
 * <site_name>.cs01-ap-1.cloudinsights.netapp.com
 * <site_name>.c01-ap-1.cloudinsights.netapp.com
 * <site_name>.c02-ap-1.cloudinsights.netapp.com
-* gentlogin.cs01-ap-1.cloudinsights.netapp.com
+* agentlogin.cs01-ap-1.cloudinsights.netapp.com
 
 | Acceso a la resiliencia frente al ransomware 
 |===
@@ -226,7 +229,7 @@ NOTE: El agente de actividad del usuario utiliza la tecnología NetApp Data Infr
 | Protocolo | Puerto | Fuente | Destino | Descripción 
 
 
-| TCP | 389(LDAP) 636 (LDAP/start-tls) | Agente de actividad del usuario | URL del servidor LDAP | Conectarse a LDAP 
+| TCP | 389 (LDAP) 636 (LDAPS / start-tls) | Agente de actividad del usuario | URL del servidor LDAP | Conectarse a LDAP 
 
 
 | HTTPS (TCP) | 443 | Agente de actividad del usuario | Dirección IP de administración del clúster o SVM (según la configuración del recopilador SVM) | Comunicación API con ONTAP 
@@ -234,7 +237,7 @@ NOTE: El agente de actividad del usuario utiliza la tecnología NetApp Data Infr
 
 | TCP | 35000 - 55000  a| 
 Direcciones IP de LIF de datos SVM
-| Agente de actividad del usuario | Comunicación de ONTAP al agente de actividad del usuario para eventos de Fpolicy. Estos puertos deben estar abiertos hacia el agente de actividad del usuario para que ONTAP pueda enviarle eventos, incluido cualquier firewall en el propio agente de actividad del usuario (si está presente). + **NOTA:** No es necesario reservar *todos* estos puertos, pero los puertos que reserve para esto deben estar dentro de este rango. Se recomienda comenzar reservando 100 puertos y aumentarlos si es necesario. 
+| Agente de actividad del usuario | Comunicación de ONTAP al agente de actividad del usuario para eventos de Fpolicy. Estos puertos deben estar abiertos hacia el agente de actividad del usuario para que ONTAP pueda enviarle eventos, incluido cualquier cortafuegos del propio agente de actividad del usuario (si lo hay). + **NOTA:** No necesitas reservar *todos* estos puertos, pero los puertos que reserves para esto deben estar dentro de este rango. Se recomienda que empieces reservando 100 puertos y aumentes si es necesario. 
 
 
 | TCP | 35000-55000 | IP de gestión de clúster | Agente de actividad del usuario | Comunicación desde la IP de administración del clúster ONTAP al agente de actividad del usuario para *eventos EMS*. Estos puertos deben estar abiertos hacia el agente de actividad del usuario para que ONTAP pueda enviarle eventos EMS, incluido cualquier firewall en el propio agente de actividad del usuario. + **NOTA:** No es necesario reservar *todos* estos puertos, pero los puertos que reserve para esto deben estar dentro de este rango. Se recomienda comenzar reservando 100 puertos y aumentarlos si es necesario. 
