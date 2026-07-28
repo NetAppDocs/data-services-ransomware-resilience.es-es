@@ -1,0 +1,23 @@
+= 
+:allow-uri-read: 
+
+
+[cols="25,75"]
+|===
+| Tipo de ataque | Descripción 
+
+
+| Cifrado (entropía) | Ransomware Resilience reconoce patrones anormales de IOPS, entropía de datos y sufijos de archivos no estándar. 
+
+
+| Cifrado (comportamiento del usuario) | Ransomware Resilience identifica la actividad anómala de lectura, escritura y cambio de nombre de archivos realizada por un usuario específico. 
+
+
+| Violación de datos | Ransomware Resilience detecta patrones anómalos de acceso a archivos de lectura realizados por un usuario específico. 
+
+
+| Destrucción de datos | Ransomware Resilience descubre el borrado masivo de archivos por parte de un usuario específico. 
+
+
+| Comportamiento sospechoso de usuario | Ransomware Resilience identifica comportamientos anómalos más allá del ámbito de la violación de datos, la destrucción de datos o el cifrado. 
+|===
