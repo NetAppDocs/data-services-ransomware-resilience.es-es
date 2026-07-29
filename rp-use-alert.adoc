@@ -256,11 +256,9 @@ Una vez que la alerta se marca para restaurar, se mueve de la pestaña Alertas a
 [[dismiss-incidents-that-are-not-potential-attacks]]
 == Descartar incidentes que no sean ataques potenciales
 
-Después de revisar los incidentes, debe determinar si son ataques potenciales. Si no son amenazas reales, pueden descartarse.
+Después de revisar los incidentes, necesitas determinar si los incidentes son posibles ataques. Si no son amenazas reales, puedes descartarlos. Si descartas una alerta, todas las copias snapshot tomadas automáticamente en respuesta a un posible ataque de ransomware se eliminan de forma permanente.
 
-Puede descartar los falsos positivos o decidir recuperar sus datos inmediatamente. Si descarta la alerta, Ransomware Resilience aprende este comportamiento y lo asocia con operaciones normales y no vuelve a iniciar una alerta sobre dicho comportamiento.
-
-Si descarta una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta a un posible ataque de ransomware se eliminan de forma permanente.
+En el caso de las alertas provocadas por eventos de cifrado (entropía), Ransomware Resilience aprende de tu decisión de descartar la alerta para asociar dicha actividad con el funcionamiento normal; en el futuro, no recibirás alertas basadas en este tipo de actividad. Esto se debe a que los eventos de cifrado (entropía) son gestionados por ARP/AI. En el caso de las alertas generadas por link:concept-ransomware-resilience.html#attack-types["otros eventos"], Ransomware Resilience _no_ aprende del hecho de que las hayas descartado, ya que estas alertas se basan en los patrones de actividad de los usuarios.
 
 
 CAUTION: Si descarta una alerta, no podrá cambiar su estado ni deshacer este cambio.

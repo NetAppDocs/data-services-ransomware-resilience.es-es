@@ -197,7 +197,6 @@
   <block id="5fefe6c4ada89d95390ae77eba79e7db" category="cell">*RECUPERAR*</block>
   <block id="059d032d5bb8125e3e1681f7d9ce6023" category="list-text">Determina la mejor instantánea o copia de seguridad y recomienda el mejor punto de recuperación real (RPA) mediante el uso de Backup and Recovery, ONTAP, Autonomous Ransomware Protection (ARP o ARP/AI según su versión de ONTAP ) y tecnologías y servicios de FPolicy.</block>
   <block id="4ddd3abee434eb92eb13e6cac3e1ad1d" category="cell">*GOBERNAR*</block>
-  <block id="cc4378b1dc9af2e69cb13a88397e2aa7" category="list-text">Asigna las estrategias de protección contra ransomware</block>
   <block id="4f743c093ec077920561596aa32a74f6" category="section-title">Destinos de copia de seguridad, sistemas y fuentes de datos de carga de trabajo compatibles</block>
   <block id="b45c27598e81de132cbcf41c4f6124d9" category="paragraph">Ransomware Resilience admite los siguientes objetivos de respaldo, sistemas y fuentes de datos:</block>
   <block id="736ca911d7d143d01bd8cbfe0d4afbca" category="list-text">Servicios web de Amazon (AWS) S3</block>
@@ -521,7 +520,6 @@
   <block id="6faff9d182a89c619b1ad36913af4fa5" category="list-text">Para iniciar la recuperación de la carga de trabajo, seleccione *Recuperar* carga de trabajo en el mensaje o seleccione la pestaña *Recuperación*.</block>
   <block id="dbb2ae89216b8dfda3662d01ab32469f" category="paragraph">Una vez que la alerta se marca para restaurar, se mueve de la pestaña Alertas a la pestaña Recuperación.</block>
   <block id="d3870301348c9947a819b7a9ed0c25df" category="section-title">Descartar incidentes que no sean ataques potenciales</block>
-  <block id="5a5533258cfacee641d19f7f201b727f" category="paragraph">Si descarta una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta a un posible ataque de ransomware se eliminan de forma permanente.</block>
   <block id="c4229f2836db3c8f0198619d853bad27" category="list-text">Si determina que el incidente no es una amenaza, deséchelo como un falso positivo:</block>
   <block id="a20ff2150b7b9f34f30c94111d0f2672" category="list-text">Seleccione el incidente.</block>
   <block id="4c8220d9b08f6a99b99ca2a31e910796" category="list-text">Seleccione el botón *Editar estado* encima de la tabla.</block>
@@ -1446,8 +1444,6 @@
   <block id="be8cc003074f86f2bc2b3ef0d2f3a334" category="list-text">Descubre el nivel de protección actual de cada volumen de las copias de instantáneas de NetApp y las políticas de respaldo, así como también cualquier capacidad de detección integrada. Luego, Ransomware Resilience asocia esta postura de protección con las cargas de trabajo mediante el uso de Backup and Recovery, servicios ONTAP y tecnologías de NetApp como Autonomous Ransomware Protection (ARP o ARP/AI según su versión de ONTAP ), FPolicy, políticas de backup y políticas de snapshots.  Obtenga más información sobre<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block> ,<block ref="2b1b7f994c6938347657a18d8edc7db7" category="inline-link-rx"></block> , y<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block> .</block>
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">Administrar alertas en NetApp Ransomware Resilience</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">Un incidente de alerta puede tener los siguientes estados:</block>
-  <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">Después de revisar los incidentes, debe determinar si son ataques potenciales. Si no son amenazas reales, pueden descartarse.</block>
-  <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">Puede descartar los falsos positivos o decidir recuperar sus datos inmediatamente. Si descarta la alerta, Ransomware Resilience aprende este comportamiento y lo asocia con operaciones normales y no vuelve a iniciar una alerta sobre dicho comportamiento.</block>
   <block id="ea3cf0f8eb2106f78fd9e62d674bd7c0" category="list-text">Seleccione uno o más incidentes. Alternativamente, seleccione todos los incidentes seleccionando el cuadro ID de incidente en la parte superior izquierda de la tabla.</block>
   <block id="845279243191f55592e2d4438456de67" category="list-text">Desde el cuadro Editar estado, elija el estado *Descartado*.</block>
   <block id="c66f0ec622b69a240be9821f2dbbb082" category="paragraph">Aparece información adicional sobre la carga de trabajo y las copias de instantáneas eliminadas.</block>
@@ -1881,7 +1877,6 @@
   <block id="dbc85b383817f560c0d1b083f4449627" category="list-text">Probar conectividad</block>
   <block id="870d0fb8b0bf7879e6ada101131c6864" category="list-text">Revisa el estado de un trabajo de enriquecimiento</block>
   <block id="5156f3fe3404db2816f53b4f01711a75" category="section-title">Playbooks</block>
-  <block id="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="list-text"><block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block></block>
   <block id="4655146bfbabab7fd679c2d1ca7a8d15" category="list-text"><block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block></block>
   <block id="fcd13f38c6a87165a33577bfdd3654b4" category="inline-link-macro">Splunkbase</block>
   <block id="2a89449caab8a2ca7d825a1c6a44640c" category="admonition">Para Splunk Cloud, debes estar usando la versión 7.0, 7.1, 7.2, 8.0 o 8.4 de la plataforma. Para más información, mira <block ref="258077ff9a23292548ab7c25d009028a" category="inline-link-macro-rx"></block>.</block>
@@ -1901,7 +1896,6 @@
   <block id="895dff905f51ff367d108afbf6e634a7" category="inline-link-macro">Playbooks SOAR</block>
   <block id="d8fdc2681cdec613a02ac551c44a6e8c" category="section-title">31 de marzo de 2026</block>
   <block id="d0c1ba6e120f697911d5bd92a51f0322" category="paragraph">Ransomware Resilience ahora ofrece un manual de orquestación, automatización y respuesta de seguridad (SOAR) para <block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block>. El manual permite una gestión más sencilla de la respuesta ante amenazas, automatizando tareas y pruebas y apoyando los esfuerzos esenciales de respuesta ante ransomware, incluyendo la creación de instantáneas y poner un volumen fuera de línea.</block>
-  <block id="dce0959f50faa93a47d141f615365404" category="paragraph">Ransomware Resilience ofrece guías para Google SecOps, Microsoft Sentinel y Splunk. Revisa las páginas respectivas de GitHub para detalles sobre la configuración.</block>
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">Se recomienda no utilizar <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> con Azure NetApp Files debido a que las API de Azure NetApp Files bloquean las acciones automatizadas.</block>
   <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">Después de descartar un ataque, no puedes volver a cambiarlo. Si descartas una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente. Si descartas la alerta, el simulacro de preparación se considera completo.</block>
   <block id="5dba46907e72d7502229329d2aafd8a2" category="list-text">Splunk Enterprise</block>
@@ -2752,4 +2746,12 @@
   <block id="4f453d8498e817d93a2c0554465ba5c9" category="list-text">Selecciona el menú de acciones <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block> para el sistema SIEM que quieras detener, luego selecciona *Pausar* o *Eliminar*.</block>
   <block id="38ddf84a5ab8383176b784d60f3f4942" category="paragraph">Si vas a eliminar, selecciona *Eliminar* en el cuadro de diálogo de confirmación para completar la acción.</block>
   <block id="24cebcb9541a6a3a7ee2888a734c6961" category="section-title">27 de julio de 2026</block>
+  <block id="3ac6600c6085e72cacdcb1dd48274907" category="list-text">Reconoce los patrones de comportamiento de los usuarios para identificar actividades maliciosas de los usuarios.</block>
+  <block id="cea7288c4707622a327049f1efc1f09a" category="list-text">Asigna estrategias de protección contra el ransomware.</block>
+  <block id="9853f1beb4647abf8719e30889039648" category="paragraph">Ransomware Resilience ofrece guías de configuración para Google SecOps, Microsoft Sentinel y Splunk. Consulta la página correspondiente para obtener detalles sobre la configuración.</block>
+  <block id="3eea574b43f2f6412368381aa7e9dc8a" category="inline-link-macro">Enlace de GitHub</block>
+  <block id="29b5adbc7a04c877456d237755b1e5e1" category="list-text"><block ref="f35f69abcb839f30e64f7800ed807b52" category="inline-link-macro-rx"></block> | <block ref="c3163b3c34297c2188fd1502baa6be3c" category="inline-link-macro-rx"></block></block>
+  <block id="843273e8b4d640d7a2b23ee18e37263a" category="paragraph">Después de revisar los incidentes, necesitas determinar si los incidentes son posibles ataques. Si no son amenazas reales, puedes descartarlos. Si descartas una alerta, todas las copias snapshot tomadas automáticamente en respuesta a un posible ataque de ransomware se eliminan de forma permanente.</block>
+  <block id="16f166ba2ceaca92e52aea587fb0114f" category="inline-link-macro">otros eventos</block>
+  <block id="b7c7e492cc2a239de36bc7e713a56532" category="paragraph">En el caso de las alertas provocadas por eventos de cifrado (entropía), Ransomware Resilience aprende de tu decisión de descartar la alerta para asociar dicha actividad con el funcionamiento normal; en el futuro, no recibirás alertas basadas en este tipo de actividad. Esto se debe a que los eventos de cifrado (entropía) son gestionados por ARP/AI. En el caso de las alertas generadas por <block ref="69f4bf74babfcd1e97eceb84702fb4ae" category="inline-link-macro-rx"></block>, Ransomware Resilience _no_ aprende del hecho de que las hayas descartado, ya que estas alertas se basan en los patrones de actividad de los usuarios.</block>
 </blocks>
