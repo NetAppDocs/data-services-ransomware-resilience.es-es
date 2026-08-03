@@ -195,6 +195,9 @@ Ransomware Resilience reconoce cinco tipos de ataques de ransomware:
 | Comportamiento sospechoso de usuario | Ransomware Resilience identifica comportamientos anómalos más allá del ámbito de la violación de datos, la destrucción de datos o el cifrado. 
 |===
 
+NOTE: Debes configurar link:concept-user-behavior.html["detección de actividad del usuario"] para detectar el cifrado (comportamiento de usuario), la filtración de datos, la destrucción de datos y los ataques de comportamiento sospechoso de usuario.
+
+
 NOTE: Para identificar a un usuario específico responsable de un ataque, debes configurar link:concept-user-behavior.html["detección del comportamiento del usuario."]. Revisa link:rp-reference-limitations.html["limitaciones"] para ver si tu sistema admite la detección de actividad de usuarios.
 
 

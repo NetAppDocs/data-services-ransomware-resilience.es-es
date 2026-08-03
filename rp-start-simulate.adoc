@@ -55,30 +55,30 @@ Antes de ejecutar una simulación, debes configurar el simulacro de preparación
 
 | Comportamiento sospechoso de usuario | Ransomware Resilience identifica comportamientos anómalos más allá del ámbito de la violación de datos, la destrucción de datos o el cifrado. 
 |===
+
+NOTE: Debes configurar link:concept-user-behavior.html["detección de actividad del usuario"] para detectar el cifrado (comportamiento de usuario), la filtración de datos, la destrucción de datos y los ataques de comportamiento sospechoso de usuario.
+
 *Rol de consola requerido* Para realizar esta tarea, necesitas el rol de link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Súper administrador"^] o Ransomware Resilience admin. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
+
+.Antes de empezar
+* Para configurar un simulacro de preparación para cualquier tipo de ataque de ransomware que no sea de cifrado (entropía), debes haber configurado link:concept-user-behavior.html["detección de actividad del usuario"].
+* Al crear un simulacro de preparación para una carga de trabajo CIFS, debes introducir las credenciales de usuario. Deberías crear un usuario de prueba dedicado, que no sea de producción, para los simulacros de preparación, especialmente cuando pruebes tipos de ataque relacionados con la actividad de los usuarios (es decir, fuga de datos). Si usas un usuario real de producción, Ransomware Resilience marca al usuario, lo que puede resultar en que se bloquee el acceso del usuario a los datos de producción. Si usas un usuario de prueba, todos los usuarios mantienen el acceso normal a los datos.
+
 
 .Pasos
 . En Ransomware Resilience, seleccione **Configuración**.
 . En la ficha «Simulacro de preparación» de la página «Configuración», selecciona *Configurar*.
 +
-La consola muestra la página «Simulacro de preparación para la configuración».
-
-+
 image:screen-settings-alert-drill-configure.png["Configura la página de simulacros de preparación"]
 
 . Selecciona el *tipo de ataque de ransomware*.
-+
-** **Recuperación personalizada**: Responde a un ataque de cifrado (entropía) con un link:rp-use-recover.html["restauración personalizada"] donde configuras el punto de recuperación.
-** **Restauración limpia**: Responde a un ataque de cifrado (entropía) con un proceso de link:task-clean-restore-recover.html["restauración limpia"] recuperación, que te guía hacia puntos de recuperación optimizados.
-** **Recuperación tras una filtración de datos**: Debes haber configurado link:suspicious-user-activity.html["un agente de actividad del usuario"] antes de poder habilitar este tipo de simulacro.
-
-
 . Selecciona el entorno en el que se creará el simulacro de preparación.
 +
-.. Selecciona el **agente de consola** y **System**.
-.. Después de elegir el **Sistema**, elige la **Storage VM** de la lista que aparece por defecto.
-.. Introduce un nombre para la **nueva carga de trabajo de prueba**. La carga de trabajo de prueba tendrá el prefijo "rps_test_".
-.. Si el simulacro de preparación es para la recuperación tras una filtración de datos, selecciona el **User activity agent** para el entorno del simulacro.
+.. Selecciona el **Console agent** y el **Primary system**.
+.. Después de elegir el sistema principal, elige la **Storage VM** de la lista que aparece por defecto.
+.. Si la máquina virtual de almacenamiento utiliza el protocolo CIFS, introduce las credenciales de Active Directory. Si lo deseas, puedes introducir el **dominio de Active Directory**; debes introducir el **nombre de usuario** y la **contraseña**. Te recomendamos que introduzcas las credenciales de un usuario dedicado a pruebas.
+.. Introduce un nombre para la **nueva carga de trabajo de prueba**. La carga de trabajo de prueba llevará al principio  `rps_test_`.
+.. Si el simulacro de preparación es para un tipo de ataque de actividad del usuario, selecciona el **User activity agent** para el entorno del simulacro.
 
 
 . Seleccione *Guardar*.
