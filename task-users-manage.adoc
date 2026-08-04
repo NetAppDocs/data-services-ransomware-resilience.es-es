@@ -30,7 +30,7 @@ Puedes bloquear a los usuarios cuando creas que son responsables de actividad ma
 . En el panel de control de Configuración, busca el mosaico «Supervisión de la actividad de los usuarios» y selecciona **Manage**.
 . Selecciona la pestaña **Usuarios**.
 . Selecciona **Block users**.
-. Selecciona la duración del bloqueo: puede ser de una hora hasta 24 horas o permanente.
+. Selecciona la duración del bloqueo. Puedes bloquear a los usuarios de forma permanente o designar un bloqueo que dure entre 1 y 24 horas.
 . Marca la casilla situada junto a los nombres de los usuarios que quieras bloquear.
 . Selecciona **Block**.
 
@@ -40,7 +40,7 @@ Puedes bloquear a los usuarios cuando creas que son responsables de actividad ma
 . En el panel de control de Configuración, busca el mosaico «Supervisión de la actividad de los usuarios» y selecciona **Manage**.
 . Selecciona la pestaña **Usuarios**.
 . Selecciona **Editar bloqueo de usuario**.
-. Selecciona la modificación. Para modificar la duración del bloqueo, selecciona **Periodo de tiempo para usuarios bloqueados** y luego modifica la duración. Para eliminar usuarios de la lista de usuarios bloqueados, selecciona **Desbloquear usuarios**.
+. Elige qué tipo de bloqueo de usuarios quieres cambiar. Para modificar la duración del bloqueo, selecciona **Periodo de tiempo para usuarios bloqueados** y luego modifica el **Periodo de tiempo**. Para quitar usuarios de la lista de usuarios bloqueados, selecciona **Desbloquear usuarios**.
 . Marca la casilla situada junto al nombre del usuario bloqueado cuyo estado quieras cambiar.
 . Selecciona **Guardar**.
 

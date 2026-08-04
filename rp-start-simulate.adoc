@@ -62,7 +62,7 @@ NOTE: Debes configurar link:concept-user-behavior.html["detección de actividad 
 
 .Antes de empezar
 * Para configurar un simulacro de preparación para cualquier tipo de ataque de ransomware que no sea de cifrado (entropía), debes haber configurado link:concept-user-behavior.html["detección de actividad del usuario"].
-* Al crear un simulacro de preparación para una carga de trabajo CIFS, debes introducir las credenciales de usuario. Deberías crear un usuario de prueba dedicado, que no sea de producción, para los simulacros de preparación, especialmente cuando pruebes tipos de ataque relacionados con la actividad de los usuarios (es decir, fuga de datos). Si usas un usuario real de producción, Ransomware Resilience marca al usuario, lo que puede resultar en que se bloquee el acceso del usuario a los datos de producción. Si usas un usuario de prueba, todos los usuarios mantienen el acceso normal a los datos.
+* Al crear un simulacro de preparación para una carga de trabajo CIFS, debes introducir las credenciales de usuario. Deberías crear un usuario de prueba dedicado, que no sea de producción, para los simulacros de preparación, especialmente cuando pruebes tipos de ataque relacionados con la actividad de los usuarios (es decir, fuga de datos). Si usas un usuario real de producción y ese usuario tiene un comportamiento sospechoso en otros volúmenes de producción, esas alertas podrían aparecer en el simulacro de preparación en vez de generar una alerta real.
 
 
 .Pasos
