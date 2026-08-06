@@ -178,4 +178,5 @@ También puedes link:task-automate-user-activity.html["Automatiza las respuestas
 == Próximos pasos
 
 * link:task-users-manage.html["Gestiona la configuración de alertas y usuarios bloqueados"]
+* link:troubleshoot-user-activity.html["Soluciona problemas del agente de actividad del usuario"]
 
