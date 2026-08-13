@@ -1,0 +1,12 @@
+= Eliminar un recopilador de datos
+:allow-uri-read: 
+
+
+
+
+[[delete-a-data-collector]]
+=== Eliminar un recopilador de datos
+
+Ransomware Resilience ya permite eliminar un recopilador de datos. El recopilador de datos se crea automáticamente al habilitar la detección de actividad de usuario en las cargas de trabajo; si el recopilador de datos queda obsoleto, ahora puedes eliminarlo manualmente.
+
+Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#delete-a-data-collector["Eliminar un recopilador de datos"^].

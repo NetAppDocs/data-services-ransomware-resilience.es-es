@@ -91,6 +91,21 @@ image:user-activity-settings.png["Captura de pantalla de la configuración de ac
 
 
 
+[[delete-a-data-collector]]
+=== Eliminar un recopilador de datos
+
+Si un recopilador de datos ha quedado obsoleto o ya no funciona, puedes eliminarlo. Cualquier carga de trabajo supervisada por el recopilador de datos dejará de ser supervisada en busca de comportamientos sospechosos de los usuarios después de que lo elimines.
+
+.Pasos
+. En Ransomware Resilience, vaya a *Configuración*.
+. En el mosaico «Supervisión de la actividad de los usuarios», selecciona **Manage**.
+. Selecciona la *pestaña Agentes y recopiladores* y luego *Recopiladores de datos*.
+. Identifica el recopilador de datos que quieres eliminar. Selecciona el menú de acciones y luego **Eliminar**.
+. En el cuadro de diálogo, selecciona *Eliminar* para confirmar.
+
+
+
+
 [[create-a-user-directory-connector]]
 == Crear un conector de directorio de usuarios
 
@@ -99,7 +114,7 @@ Para asignar ID de usuario a nombres de usuario, debe crear un conector de direc
 .Pasos
 . En Ransomware Resilience, vaya a *Configuración*.
 . En el mosaico «Supervisión de la actividad de los usuarios», selecciona **Manage**.
-. Seleccione la pestaña **Conectores de directorio de usuario** y luego **Agregar**.
+. Selecciona la *pestaña Agentes y recopiladores*, luego la pestaña **User directory connectors** y después **Add**.
 . Configurar la conexión. Introduzca la información requerida para cada campo.
 +
 [cols="25,75"]

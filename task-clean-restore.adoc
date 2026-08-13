@@ -525,8 +525,8 @@ El proceso para crear una sala de recuperación aislada difiere si el entorno es
 .Nube
 --
 . En Ransomware Resilience, seleccione **Configuración**.
-. En la tarjeta de restauración limpia, selecciona **Add** para crear el entorno de recuperación aislado.
-. En la sección Tipo, elige *Solo limpieza*.
+. En la tarjeta de limpieza y recuperación de aislamiento, selecciona **Add** para crear el entorno de recuperación aislado.
+. En la sección «Tipo», selecciona *Limpieza bajo demanda*.
 . Despliega la sección **Nombre**. Introduce un **Nombre** para el entorno.
 . Para una IRE basada en cloud, selecciona **Amazon Web Services**.
 . Expande la sección *Systems*. Elige los sistemas que quieres conectar a la IRE. Para cada sistema que selecciones, debes proporcionar la dirección IP, la máscara de subred y la puerta de enlace de la VM de almacenamiento.
@@ -535,18 +535,18 @@ El proceso para crear una sala de recuperación aislada difiere si el entorno es
 NOTE: Para los IRE implementados en Amazon FSx for NetApp ONTAP, no necesitas proporcionar esta información.
 
 +
-image:clean-restore-systems.png["Captura de pantalla de la interfaz de selección de sistemas."]
+image::clean-restore-systems.png[Captura de pantalla de la interfaz de selección de sistemas.]
 
 . Expande la sección **Autenticación**.
 +
 ** Introduce el ID de la **cuenta** en la nube y selecciona la **región** de la cuenta en el menú desplegable. Solo puedes desplegar una IRE en una región admitida.
 ** Introduce la **clave de acceso** y la **clave secreta** de la cuenta.
++
+image::screenshot-set-up-recovery-environment.png[Captura de pantalla de la configuración de autenticación IRE.]
+
 
 
 . Expande la sección *Nube privada virtual (VPC)*. Introduce el ID de la VPC donde se va a desplegar la IRE.
-+
-image:screenshot-set-up-recovery-environment.png["Captura de pantalla de la configuración de autenticación IRE."]
-
 . Selecciona **Add** para crear el IRE.
 +
 Ransomware Resilience prueba la conexión después de seleccionar add, lo que puede tardar unos minutos. La IRE se ha desplegado correctamente cuando su estado se muestra como "deployed".
@@ -558,18 +558,15 @@ Ransomware Resilience prueba la conexión después de seleccionar add, lo que pu
 --
 . En Ransomware Resilience, seleccione **Configuración**.
 . En la tarjeta Limpiar restauraciones, selecciona **Añadir** si es tu primer entorno o **Administrar** si ya has creado uno.
-. En la sección Tipo, elige *Solo limpieza*.
+. En la sección «Tipo», selecciona *Limpieza bajo demanda*.
 . Despliega la sección *Nombre*. Asigna un **Nombre** para la IRE.
 . Para la ubicación, selecciona **On-premises**.
 . Expande la sección *Systems*. Elige los sistemas que quieres conectar a la IRE. Asigna una dirección IP de VM de almacenamiento, máscara de subred y gateway para cada sistema que tenga cargas de trabajo que se vayan a recuperar en la IRE.
 +
 Cada sistema que selecciones debe tener una dirección IP asignada. Puedes seleccionar sistemas primarios o secundarios. Los sistemas secundarios se pueden usar para análisis y recuperación si el sistema primario no tiene instantáneas sin cifrar o si no está disponible.
 
-+
-image:clean-restore-systems.png["Captura de pantalla de la interfaz de selección de sistemas."]
-
 . Expande la sección **Agente de consola**. Selecciona el agente de consola del menú desplegable que está desplegado en el IRE.
-. Despliega la sección *Compute*.
+. Despliega la sección *Clean room compute*.
 +
 .. Proporciona las credenciales para autenticar el servidor vCenter: *dirección IP* o nombre de dominio completo (FQDN), *puerto*, *nombre de usuario* y *contraseña*.
 .. Selecciona **Autenticar** para confirmar las credenciales. Espera hasta que la interfaz de usuario confirme tus credenciales antes de continuar.
@@ -581,7 +578,7 @@ image:clean-restore-compute.png["Captura de pantalla de la interfaz de selecció
 
 
 
-. Expande la sección *VMs*, que se rellena según tus entradas en la sección *Compute*.
+. Despliega la sección *Clean room VMs*, que se rellena en función de los datos que hayas introducido en la sección *Compute*.
 +
 .. Para la máquina virtual Linux que NetApp Ransomware Resilience utiliza para buscar ransomware, selecciona la máquina virtual en el menú desplegable y luego introduce el *nombre de usuario* y la *contraseña* de la máquina virtual.
 .. Para la máquina virtual de Windows que se utiliza para la exploración, selecciona la máquina virtual en el menú desplegable y luego introduce el *nombre de usuario* y la *contraseña* de la máquina virtual.
@@ -597,7 +594,7 @@ Puedes realizar un seguimiento del progreso. En la pestaña de configuración, s
 Puedes modificar los sistemas de un IRE después de crearlo. En la pestaña de configuración, selecciona **Entornos de recuperación aislados**. Ubica el IRE que quieres editar, selecciona el menú de acciones `...` y luego **Editar**. Procede a modificar los sistemas. Selecciona **Guardar** cuando termines.
 
 
-TIP: Si necesitas cambiar algún detalle del IRE, selecciona *Configuración* en la barra lateral de Ransomware Resilience y luego, en la tarjeta de restauración Clean restore, selecciona **Manage**. Selecciona el menú de acciones para el IRE y luego **Edit** para cambiar la configuración.
+TIP: Si necesitas modificar algún dato del IRE, selecciona *Configuración* en la barra lateral de Ransomware Resilience y, a continuación, en la tarjeta Isolation cleaning and recovery, selecciona **Manage**. Selecciona el menú de acciones del IRE y luego **Edit** para cambiar la configuración.
 
 
 
@@ -610,7 +607,7 @@ No puedes eliminar un IRE con una operación de restauración activa; puedes can
 IMPORTANT: Si borras el IRE, también se borra el SVM de la sala limpia y el volumen de metadatos. Una vez que estos activos han sido borrados, ya no puedes generar informes para la restauración limpia.
 
 . Ve a **Configuración**.
-. En la ficha Limpiar restauración, selecciona **Gestionar**.
+. En la ficha «Limpieza y recuperación tras el aislamiento», selecciona **Manage**.
 . Identifica la sala limpia que quieres borrar. Selecciona el menú de acciones (`...`) para la IRE y luego **Eliminar**.
 . En el cuadro de diálogo, selecciona **Borrar** para confirmar la operación.
 
