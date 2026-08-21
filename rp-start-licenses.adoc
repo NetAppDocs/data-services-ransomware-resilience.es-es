@@ -12,9 +12,9 @@ summary: Asegúrate de cumplir los requisitos de licencia de Ransomware Resilien
 
 
 [role="lead"]
-NetApp Ransomware Resilience ofrece diferentes planes de licencia, lo que te permite suscribirte al servicio donde tenga sentido para tu organización.
+Elige entre las opciones de licencia de prueba, PAYGO y BYOL para NetApp Ransomware Resilience que mejor se adapten a tu organización.
 
-Para configurar las licencias, necesitas el rol de administrador de organización, carpeta o proyecto. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso a la consola"^].
+Para configurar las licencias, necesitas tener el rol de administrador de la organización o el de administrador de carpeta o proyecto. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso a la consola"^].
 
 
 
@@ -176,7 +176,7 @@ NOTE: Se le envía un correo electrónico que incluye el número de serie de Ran
 +
 image:screen-license-dw-add-license.png["Captura de pantalla de la página Agregar licencia."]
 
-. En la página Agregar licencia, seleccione *Ingresar número de serie* y luego ingrese el número de serie en el correo electrónico que le enviamos.  Seleccione *Agregar licencia*.
+. En la página «Añadir licencia», selecciona *Introducir número de serie* y luego introduce el número de serie que aparece en el correo electrónico que se te envió. Selecciona *Añadir licencia*.
 . Para ver los detalles de la licencia en Licenses and subscriptions, desde la navegación izquierda de la Consola, seleccione *Gobernanza* > * Licenses and subscriptions*.
 +
 ** Para ver la información de la suscripción, seleccione *Suscripciones*.
@@ -259,7 +259,7 @@ image:screen-license-dw-add-license.png["Captura de pantalla de la página Agreg
 +
 Si su cuenta del sitio de soporte de NetApp no ​​está disponible en la lista desplegable, https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html["Agregue la cuenta NSS a la consola"^] .
 
-** Si tiene el archivo de licencia de zvondolr (necesario cuando se instala en un sitio oscuro), seleccione la opción *Cargar archivo de licencia* y siga las instrucciones para adjuntar el archivo.
+** Si dispones del archivo de licencia (necesario cuando se instala en un dark site), selecciona la opción *Subir archivo de licencia* y sigue las instrucciones para adjuntar el archivo.
 
 
 . Seleccione *Agregar licencia*.

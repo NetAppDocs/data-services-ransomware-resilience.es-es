@@ -12,9 +12,9 @@ summary: Comience a utilizar NetApp Ransomware Resilience verificando la compati
 
 
 [role="lead"]
-Para garantizar el éxito de la implantación de NetApp Ransomware Resilience, verifica que tu entorno operativo, el acceso a la red y el navegador web estén listos.
+Antes de implementar NetApp Ransomware Resilience, verifica que tu entorno, el acceso a la red y el navegador cumplan los requisitos.
 
-Revisa y asegúrate de cumplir con los siguientes requisitos.
+Revisa los siguientes requisitos.
 
 
 
@@ -93,7 +93,7 @@ NOTE: Para utilizar la resiliencia contra el ransomware en cargas de trabajo SAN
 [[ontap-requirements]]
 == Requisitos de ONTAP
 
-* Debe estar ejecutando ONTAP 9.11.1 o posterior con una licencia ONTAP One habilitada en la instancia ONTAP local.  Para obtener más información sobre la compatibilidad con ONTAP , consultelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Descripción general de la protección autónoma contra ransomware"^] .
+* Debes tener instalado ONTAP 9.11.1 o una versión posterior, con una licencia ONTAP One activada en el clúster ONTAP local. Para obtener más información sobre la compatibilidad con ONTAP, consulta link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Descripción general de la protección autónoma contra ransomware"^].
 * Para aplicar configuraciones de protección (como habilitar la protección autónoma contra ransomware), Ransomware Resilience necesita permisos de administrador en el clúster ONTAP . El clúster ONTAP debería haberse incorporado utilizando únicamente las credenciales de usuario administrador del clúster ONTAP .
 
 

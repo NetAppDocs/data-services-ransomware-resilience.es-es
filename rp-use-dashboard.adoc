@@ -12,9 +12,9 @@ summary: Usa la Ransomware Resilience para determinar qué cargas de trabajo nec
 
 
 [role="lead"]
-El panel NetApp Ransomware Resilience te da información de un vistazo sobre la salud de la protección de tus cargas de trabajo. Puedes determinar rápidamente qué cargas de trabajo están en riesgo o protegidas, identificar las cargas de trabajo afectadas por un incidente o en recuperación, y medir el alcance de la protección viendo cuánto almacenamiento está protegido o en riesgo.
+Utiliza el panel de control de NetApp Ransomware Resilience para ver rápidamente el estado de la protección de las cargas de trabajo, identificar las cargas de trabajo que están en riesgo o en recuperación, y evaluar cuántos datos de almacenamiento están protegidos.
 
-Usa el panel de control para revisar las sugerencias de protección, cambiar la configuración y descargar informes.
+Utiliza el panel de control para consultar las recomendaciones de protección, cambiar la configuración y descargar informes.
 
 *Rol de consola requerido* Para realizar esta tarea, necesitas el rol link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Súper administrador"^], Ransomware Resilience admin o Ransomware Resilience viewer. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
 
@@ -28,7 +28,7 @@ Usa el panel de control para revisar las sugerencias de protección, cambiar la 
 +
 image:screen-dashboard.png["Página del panel de control"]
 
-. Desde el panel de control, puedes hacer las siguientes acciones en cada uno de los paneles:
+. Desde el panel de control, puedes realizar las siguientes acciones en cada panel:
 +
 ** *Protección de datos de carga de trabajo*: seleccione *Ver todo* para ver todas las cargas de trabajo que están en riesgo o protegidas en la página Protección.  Las cargas de trabajo están en riesgo cuando los niveles de protección no coinciden con una política de protección. Consulte link:rp-use-protect.html["Proteger las cargas de trabajo"] .
 +
@@ -61,7 +61,7 @@ TIP: Seleccione la información sobre herramientas "i" para ver sugerencias sobr
 
 
 
-** *Acciones recomendadas*: Para aumentar la protección, revise cada recomendación y luego seleccione *Revisar y corregir*.
+** *Acciones recomendadas*: Para aumentar la protección, revisa cada recomendación y selecciona *Revisar y corregir*.
 +
 Consulta link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Revisa las sugerencias de protección en el dashboard"] o link:rp-use-protect.html["Proteger las cargas de trabajo"].
 

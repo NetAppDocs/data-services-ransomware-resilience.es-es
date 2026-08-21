@@ -12,7 +12,7 @@ summary: Durante el descubrimiento, Ransomware Resilience analiza todos los vol�
 
 
 [role="lead"]
-Antes de poder utilizar NetApp Ransomware Resilience, primero debe descubrir los datos de la carga de trabajo. Durante el descubrimiento, Ransomware Resilience analiza todos los volúmenes y archivos de los sistemas en todos los agentes de la consola y proyectos dentro de una organización.
+Antes de que puedas proteger las cargas de trabajo, NetApp Ransomware Resilience debe descubrirlas analizando los volúmenes y archivos en los sistemas a través de los agentes de Console y los proyectos de tu organización.
 
 En el panel Discovery, Ransomware Resilience muestra las configuraciones de sistema compatibles y no compatibles. Ransomware Resilience evalúa los archivos compartidos y el almacenamiento en bloque.
 
@@ -28,7 +28,7 @@ Ransomware Resilience comprueba tu protección actual de copias de seguridad, co
 [[select-workloads-to-discover]]
 == Selecciona las cargas de trabajo para descubrir
 
-Dentro de cada agente de la Consola, selecciona los sistemas donde quieres identificar cargas de trabajo.
+Dentro de cada agente de la Console, selecciona los sistemas donde quieres descubrir cargas de trabajo.
 
 Descubrir cargas de trabajo no las protege automáticamente. Ransomware Resilience reconoce las políticas de protección existentes de NetApp Backup and Recovery u ONTAP en el proceso de descubrimiento. Cualquier carga de trabajo que no tenga protección requiere que link:rp-use-protect.html["configurar la protección"].
 
@@ -53,7 +53,7 @@ image:screen-discover-workloads.png["Captura de pantalla de Descubrir cargas de 
 . Selecciona los sistemas en los que quieres realizar el descubrimiento.
 . Seleccione *Descubrir*.
 +
-Ransomware Resilience solo descubre datos de carga de trabajo cuando selecciona el sistema. El proceso de descubrimiento puede tardar varios minutos.
+Ransomware Resilience detecta los datos de las cargas de trabajo únicamente de los sistemas que selecciones. El proceso de detección puede tardar varios minutos.
 
 . Para descargar la lista de cargas de trabajo descubiertas, seleccione *Descargar resultados*.
 . Para mostrar el panel de resiliencia ante ransomware, seleccione *Ir al panel*.
@@ -73,7 +73,7 @@ link:rp-use-dashboard.html["Aprende lo que te muestra el dashboard."]
 [[discover-newly-created-workloads-for-previously-selected-systems]]
 == Descubra cargas de trabajo recién creadas para sistemas previamente seleccionados
 
-Si agregó cargas de trabajo a un sistema descubierto previamente, deberá reiniciar la detección para proteger las nuevas cargas de trabajo.
+Si has añadido cargas de trabajo a un sistema detectado anteriormente, vuelve a ejecutar la detección para identificar y proteger las nuevas cargas de trabajo.
 
 .Pasos
 . Para identificar la hora del último descubrimiento, observe la fecha y la hora junto al ícono *Actualizar* en la parte superior derecha del panel de resiliencia ante ransomware.
@@ -88,7 +88,7 @@ TIP: Si encuentra que hay volúmenes que no se muestran para el sistema que desc
 [[discover-new-systems]]
 == Descubra nuevos sistemas
 
-Si ya has realizado la detección en un sistema y desde entonces le has añadido una carga de trabajo, vuelve a realizar la detección para identificar las cargas de trabajo.
+Si ya has realizado un análisis de un sistema y luego has añadido una carga de trabajo, vuelve a realizar el análisis para identificarla.
 
 .Pasos
 . En Ransomware Resilience, selecciona *Configuración*.
@@ -102,7 +102,7 @@ Si ya has realizado la detección en un sistema y desde entonces le has añadido
 [[exclude-workloads]]
 == Excluir cargas de trabajo
 
-Ransomware Resilience le permite excluir cargas de trabajo específicas en un sistema de la protección y detección de ransomware.
+Ransomware Resilience te permite excluir cargas de trabajo específicas en un sistema de la protección y detección contra el ransomware.
 
 Solo puede excluir cargas de trabajo que sean compatibles y que se hayan detectado correctamente. Puede modificar la lista de cargas de trabajo excluidas en cualquier momento. No se le facturarán las cargas de trabajo excluidas de Ransomware Resilience.
 
@@ -128,5 +128,5 @@ image:settings-excluded-workload.png["Captura de pantalla del panel de configura
 Para eliminar varias cargas de trabajo, seleccione la casilla de verificación junto a las cargas de trabajo que desea eliminar y luego **Eliminar de excluidos**.
 
 . En el cuadro de diálogo, seleccione **Eliminar** para confirmar que desea eliminar las cargas de trabajo de la lista de exclusión.
-. Si la carga de trabajo se elimina de la lista de cargas de trabajo excluidas con éxito, aparece un mensaje de éxito en la página Carga de trabajo excluida y la carga de trabajo ya no aparece en la lista de cargas de trabajo excluidas. Si la acción falla, aparece un mensaje de error; intente la operación nuevamente. image:exclude-workload-remove-successful.png["Captura de pantalla de la eliminación exitosa de una carga de trabajo excluida."]
+. Si la carga de trabajo se elimina correctamente de la lista de cargas de trabajo excluidas, aparece un mensaje de éxito en la página de cargas de trabajo excluidas y la carga de trabajo ya no aparece en la lista de cargas de trabajo excluidas. Si la acción falla, aparece un mensaje de error; intenta la operación de nuevo. image:exclude-workload-remove-successful.png["Captura de pantalla de la eliminación exitosa de una carga de trabajo excluida."]
 

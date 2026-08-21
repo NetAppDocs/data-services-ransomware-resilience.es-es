@@ -11,7 +11,7 @@ summary: 'Puedes enviar automáticamente datos de NetApp Ransomware Resilience a
 
 
 [role="lead"]
-Un sistema de gestión de eventos e información de seguridad (SIEM) centraliza los datos de registros y eventos para proporcionar información sobre los eventos de seguridad y el cumplimiento. NetApp Ransomware Resilience admite el envío automático de datos a tu SIEM para agilizar el análisis y la detección de amenazas.
+Conecta NetApp Ransomware Resilience a un sistema de gestión de información y eventos de seguridad (SIEM) para enviar automáticamente los datos de eventos para el análisis y la detección de amenazas.
 
 Ransomware Resilience permite configurar cualquier sistema SIEM con <<webhooks,webhooks>>. Además, Ransomware Resilience ofrece compatibilidad nativa con los siguientes sistemas SIEM:
 

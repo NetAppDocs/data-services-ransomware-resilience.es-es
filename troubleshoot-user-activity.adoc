@@ -11,7 +11,7 @@ summary: Si tienes algún problema al instalar el agente de actividad del usuari
 
 
 [role="lead"]
-Si tienes algún problema al instalar o ejecutar el agente de actividad del usuario en NetApp Ransomware Resilience, revisa los siguientes escenarios comunes y sus soluciones.
+Si tienes problemas para instalar o ejecutar el agente de actividad de usuario en NetApp Ransomware Resilience, revisa estos escenarios comunes y sus soluciones.
 
 
 

@@ -23,7 +23,7 @@ NetApp Ransomware Resilience ofrece restauraciones limpias, que proporcionan una
 [[learn-about-clean-restores]]
 == Conoce las restauraciones limpias
 
-Cuando realizas una restauración limpia, Ransomware Resilience te guía a través de un proceso de varios pasos que optimiza la recuperación.
+Cuando realizas una restauración limpia, Ransomware Resilience te guía a lo largo de un proceso de varios pasos que optimiza la recuperación.
 
 * **SETUP**: Para realizar una restauración limpia, primero tienes que crear una IRE y luego seleccionar la carga de trabajo que quieres restaurar. Ransomware Resilience crea una sala limpia donde se realizan todas las acciones para la carga de trabajo.
 * **ANÁLISIS**: En la sala blanca, Ransomware Resilience analiza todas las instantáneas para ver si hay cifrado. Clean restore determina un mapa de recuperación para determinar el plan de recuperación óptimo.
@@ -35,8 +35,8 @@ El paso de análisis también muestra el número de ficheros revisados, indicand
 
 * **PLAN**: Elige las opciones previstas para la recuperación:
 +
-** _Último punto de restauración no afectado_: el punto de restauración más rápido a partir de la instantánea no cifrada más reciente de antes del ataque
-** _Mínima pérdida de datos_: la versión más reciente de cada archivo sin cifrar de diferentes instantáneas
+** _Punto de restauración más reciente no afectado_: el punto de restauración más rápido de la instantánea sin cifrar más reciente anterior al ataque
+** _Mínima pérdida de datos_: la versión más reciente de cada archivo sin cifrar de las distintas instantáneas
 +
 También puedes ver los historiales de los archivos en el paso de planificación, para ver cuándo los eventos de ransomware afectaron a los archivos y cómo el punto de recuperación se relaciona en el tiempo con ese evento.
 
@@ -44,7 +44,7 @@ También puedes ver los historiales de los archivos en el paso de planificación
 
 * **LIMPIEZA**: NetApp Ransomware Resilience elimina el malware del punto de recuperación. Si algún archivo no se puede limpiar, se excluye de la recuperación y se pone en cuarentena en una ubicación separada.
 * **RESTAURAR**: NetApp Ransomware Resilience restaura los datos limpios en el entorno de origen.
-* **END**: Ransomware Resilience proporciona un resumen detallado del proceso y cierra la sala blanca, liberando los recursos aprovisionados durante la configuración para eliminar futuros costes medidos.
+* **FIN**: Ransomware Resilience ofrece un resumen detallado del proceso y cierra el entorno aislado, liberando los recursos asignados durante la configuración para evitar futuros costes por consumo.
 
 
 
@@ -604,7 +604,7 @@ TIP: Si necesitas modificar algún dato del IRE, selecciona *Configuración* en 
 No puedes eliminar un IRE con una operación de restauración activa; puedes cancelar la operación de restauración o esperar hasta que la restauración finalice y luego eliminar el IRE.
 
 
-IMPORTANT: Si borras el IRE, también se borra el SVM de la sala limpia y el volumen de metadatos. Una vez que estos activos han sido borrados, ya no puedes generar informes para la restauración limpia.
+IMPORTANT: Si eliminas el IRE, también se eliminan el SVM de la sala limpia y el volumen de metadatos. Una vez eliminados estos activos, ya no puedes generar informes para la restauración limpia.
 
 . Ve a **Configuración**.
 . En la ficha «Limpieza y recuperación tras el aislamiento», selecciona **Manage**.

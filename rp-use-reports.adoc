@@ -12,7 +12,7 @@ summary: Con NetApp Ransomware Resilience, puede descargar informes que muestran
 
 
 [role="lead"]
-NetApp Ransomware Resilience proporciona informes en formatos JSON que muestran detalles de volúmenes admitidos y no admitidos, simulacros de preparación para ataques, protección, alertas y recuperación, lo que te permite evaluar y revisar los eventos de ransomware y la preparación sin conexión.
+Descarga los informes de NetApp Ransomware Resilience para revisar los volúmenes compatibles e incompatibles, los simulacros de preparación, la protección, las alertas y los datos de recuperación sin conexión.
 
 
 TIP: Antes de descargar los archivos, actualice el panel para capturar los datos más recientes en sus informes.

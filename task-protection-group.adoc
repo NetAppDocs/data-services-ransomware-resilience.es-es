@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-protection-group.html 
-keywords: ransomware protection, protection group, modify, create, 
+keywords: ransomware protection, protection group, modify, create 
 summary: Puede proteger las cargas de trabajo contra ataques de ransomware asignando políticas a una carga de trabajo en NetApp Ransomware Resilience. 
 ---
 = Administra los grupos de protección en NetApp Ransomware Resilience
@@ -12,7 +12,7 @@ summary: Puede proteger las cargas de trabajo contra ataques de ransomware asign
 
 
 [role="lead"]
-NetApp Ransomware Resilience ofrece grupos de protección para facilitar la gestión de tu patrimonio de datos. Los grupos de protección son agrupaciones lógicas de cargas de trabajo. Ransomware Resilience puede proteger todos los volúmenes de un grupo de protección al mismo tiempo con una sola estrategia de protección, así no tienes que aplicar una estrategia a cada carga de trabajo.
+Utiliza los grupos de protección en NetApp Ransomware Resilience para gestionar conjuntamente las cargas de trabajo relacionadas y aplicar una única estrategia de protección a todas las cargas de trabajo del grupo.
 
 *Rol de consola requerido* Para realizar esta tarea, necesitas el rol de link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Súper administrador"^] o Ransomware Resilience admin. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
 
@@ -21,7 +21,7 @@ NetApp Ransomware Resilience ofrece grupos de protección para facilitar la gest
 [[create-a-protection-group]]
 == Crear un grupo de protección
 
-Puedes crear grupos independientemente de su estado de protección (es decir, grupos no protegidos y grupos protegidos). Cuando añades una política de protección a un grupo de protección, la nueva política de protección reemplaza cualquier política existente, incluidas las políticas gestionadas por NetApp Backup and Recovery.
+Puedes crear grupos independientemente del estado de protección de las cargas de trabajo que añadas a ellos. Cuando añades una política de protección a un grupo de protección, la nueva política sustituye a cualquier política existente, incluidas las gestionadas por NetApp Backup and Recovery.
 
 Las cargas de trabajo en un grupo de protección deben ser del mismo tipo de carga de trabajo; es decir, no puedes mezclar cargas de trabajo de bloques y de sistema de archivos. Las cargas de trabajo también deben pertenecer al mismo tipo de sistema. Por ejemplo, un grupo de protección puede incluir todas las cargas de trabajo de sistema de archivos ONTAP locales; no puedes añadir cargas de trabajo de Amazon FSx for NetApp ONTAP al mismo grupo de protección.
 

@@ -12,9 +12,9 @@ summary: La detección de la actividad del usuario en Ransomware Resilience te p
 
 
 [role="lead"]
-La detección del comportamiento del usuario de NetApp Ransomware Resilience te ayuda a prevenir eventos de ransomware a nivel de usuario. Para habilitar la detección del comportamiento del usuario en Ransomware Resilience, debes instalar al menos un agente de actividad del usuario, que crea un entorno de recopilación de datos para monitorear el comportamiento del usuario en busca de patrones aberrantes que se parezcan a eventos de ransomware.
+Utiliza la detección de comportamiento de usuario de NetApp Ransomware Resilience para identificar actividades sospechosas de usuario que puedan indicar ransomware, filtración de datos o eventos de destrucción de datos. Para habilitarlo, instala al menos un agente de actividad de usuario para crear el entorno de recopilación de datos.
 
-Un agente de actividad de usuario aloja un recopilador de datos y un conector de directorio de usuario, que ambos envían datos a una ubicación SaaS para análisis.
+Un agente de actividad de usuario aloja un recopilador de datos y un conector de directorio de usuarios, que envían datos a una ubicación en la nube para su análisis.
 
 * El **recolector de datos** recopila datos de actividad de usuario de ONTAP. El recolector de datos se crea automáticamente cuando creas una estrategia de protección con detección de comportamiento de usuario.
 * El **conector de directorio de usuarios** se conecta a tu directorio para asignar ID de usuario a nombres de usuario. Debes configurar el conector de directorio de usuarios.
@@ -23,9 +23,9 @@ Un agente de actividad de usuario aloja un recopilador de datos y un conector de
 El agente de actividad del usuario, el recopilador de datos y el conector del directorio de usuarios se pueden gestionar desde el panel de configuración de Ransomware Resilience.
 
 
-NOTE: Si ya estás usando NetApp Data Infrastructure Insights (DII) Workload Security, se recomienda que uses los mismos agentes de Workload Security para Ransomware Resilience. No necesitas implementar agentes de Workload Security independientes para Ransomware Resilience, pero usar los mismos agentes de Workload Security requiere una relación de emparejamiento entre la organización de la consola de Ransomware Resilience y el tenant de DII Storage Workload Security. Contacta a tu representante de cuenta para habilitar este emparejamiento.
+NOTE: Si ya utilizas NetApp Data Infrastructure Insights (DII) Workload Security, usa los mismos agentes de Workload Security para Ransomware Resilience. No necesitas implementar agentes de Workload Security independientes para Ransomware Resilience. Sin embargo, usar los mismos agentes de Workload Security requiere una relación de emparejamiento entre la organización de la consola de Ransomware Resilience y el inquilino de DII Storage Workload Security. Ponte en contacto con tu representante de cuenta para habilitar este emparejamiento.
 
-Si _no_ usas DII, sigue las instrucciones de configuración aquí.
+Si no utilizas DII, sigue las instrucciones de configuración que se indican aquí.
 
 
 
@@ -44,7 +44,7 @@ Asegúrate de que cada función se aplique a nivel de la organización.
 [[create-a-user-activity-agent]]
 == Crear un agente de actividad de usuario
 
-Los agentes de actividad de usuario son entornos ejecutables para link:#add-a-data-collector["recopiladores de datos"]; los recopiladores de datos comparten eventos de actividad de usuario con Ransomware Resilience. Debes crear al menos un agente de actividad de usuario para habilitar la detección de actividad de usuario.
+Los agentes de actividad de usuario son entornos ejecutables de link:#add-a-data-collector["recopiladores de datos"] que comparten eventos de actividad de usuario con Ransomware Resilience. Debes crear al menos un agente de actividad de usuario para habilitar la detección de actividad de usuario.
 
 .Pasos
 . Si es la primera vez que crea un agente de actividad de usuario, vaya al **Panel de control**. En el mosaico **Actividad del usuario**, seleccione **Activar**.
