@@ -68,3 +68,10 @@ Las siguientes limitaciones se aplican a las cargas de trabajo de SAN (almacenam
 * Cuando Ransomware Resilience genera alertas para cargas de trabajo SAN, estas se basan únicamente en una entropía elevada.
 * Las cargas de trabajo SAN solo se pueden restaurar usando un link:task-custom-restore.html["restauración personalizada"]. La restauración limpia no está disponible actualmente para las cargas de trabajo SAN.
 
+
+
+
+[[multi-admin-verification]]
+== Verificación multiadministrador
+
+La verificación de múltiples administradores no es compatible con Ransomware Resilience ni con la NetApp Console. Si has configurado link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["Verificación multi-admin en ONTAP"^], es posible que algunos flujos de trabajo no funcionen como se espera en Ransomware Resilience.
