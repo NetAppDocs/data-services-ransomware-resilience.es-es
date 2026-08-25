@@ -265,44 +265,48 @@ NOTE: Si elige copiar y modificar una estrategia existente, Ransomware Resilienc
 +
 Si desea cambiar las extensiones de archivos bloqueadas, edítelas en el Administrador del sistema.
 
-+
+
+
+
+
+
+
 
 NOTE: Puedes elegir cualquier combinación de las políticas de detección. La política de detección debe incluir la detección de cifrado o la detección de comportamiento sospechoso del usuario.
 
-
-
-** *Política de instantáneas*:
+* *Política de instantáneas*:
 +
-*** *Nombre base de la política de instantánea*: seleccione una política o seleccione *Crear* e ingrese un nombre para la política de instantánea.
-*** *Bloqueo de instantáneas*: habilite esta opción para bloquear las copias de instantáneas en el almacenamiento principal de modo que no se puedan modificar ni eliminar durante un período de tiempo determinado, incluso si un ataque de ransomware logra llegar al destino de almacenamiento de respaldo.  Esto también se llama _almacenamiento inmutable_.  Esto permite un tiempo de restauración más rápido.
+** *Nombre base de la política de instantánea*: seleccione una política o seleccione *Crear* e ingrese un nombre para la política de instantánea.
+** *Bloqueo de instantáneas*: habilite esta opción para bloquear las copias de instantáneas en el almacenamiento principal de modo que no se puedan modificar ni eliminar durante un período de tiempo determinado, incluso si un ataque de ransomware logra llegar al destino de almacenamiento de respaldo.  Esto también se llama _almacenamiento inmutable_.  Esto permite un tiempo de restauración más rápido.
 +
 Cuando se bloquea una instantánea, el tiempo de expiración del volumen se establece en el tiempo de expiración de la copia de la instantánea.
 
 +
 El bloqueo de copias instantáneas está disponible con ONTAP 9.12.1 y versiones posteriores.  Para obtener más información sobre SnapLock, consulte https://docs.netapp.com/us-en/ontap/snaplock/index.html["SnapLock en ONTAP"^] .
 
-*** *Programaciones de instantáneas*: elija las opciones de programación, la cantidad de copias de instantáneas que desea conservar y seleccione para habilitar la programación.
+** *Programaciones de instantáneas*: elija las opciones de programación, la cantidad de copias de instantáneas que desea conservar y seleccione para habilitar la programación.
 
 
-** *Política de replicación*:
+* *Política de replicación*:
 +
-*** *Nombre base de la política de replicación*: ingrese un nombre nuevo o elija uno existente. El nombre base es el prefijo que se añade a todas las instantáneas.
-*** *Programaciones de replicación*: alterne las frecuencias que desea habilitar (por hora, por día, por semana o por mes) y configure el valor de retención (la cantidad de instantáneas replicadas que se conservarán) para cada programación que habilite.
+** *Nombre base de la política de replicación*: ingrese un nombre nuevo o elija uno existente. El nombre base es el prefijo que se añade a todas las instantáneas.
+** *Programaciones de replicación*: alterne las frecuencias que desea habilitar (por hora, por día, por semana o por mes) y configure el valor de retención (la cantidad de instantáneas replicadas que se conservarán) para cada programación que habilite.
 
 
-** *Política de respaldo*:
+* *Política de respaldo*:
 +
-*** *Nombre base de la política de respaldo*: ingrese un nombre nuevo o elija uno existente.
-*** *Programaciones de respaldo*: elija las opciones de programación para el almacenamiento secundario y habilite la programación.
+** *Nombre base de la política de respaldo*: ingrese un nombre nuevo o elija uno existente.
+** *Programaciones de respaldo*: elija las opciones de programación para el almacenamiento secundario y habilite la programación.
 +
 
 TIP: Para activar el bloqueo de backup en el almacenamiento secundario, configura tus destinos de backup usando la opción *Settings*. Para más detalles, consulta link:task-backup-destination.html["Configurar ajustes"].
 
++
+... Seleccione *Agregar*.
 
 
 
 
-. Seleccione *Agregar*.
 
 
 
@@ -334,7 +338,7 @@ image:screen-protection.png["Página de gestión de estrategia"]
 
 
 . Seleccione **Siguiente**.
-. Si seleccionaste *Detección de comportamiento sospechoso del usuario* como configuración de detección, selecciona el User activity agent o link:suspicious-user-activity.html#create-a-user-activity-agent["o crea uno"].
+. Si has seleccionado *Detección de comportamientos sospechosos de los usuarios* como configuración de detección, selecciona el agente de actividad de los usuarios o link:suspicious-user-activity.html#create-a-user-activity-agent["o crea uno"].
 +
 El agente de actividad del usuario aloja los nuevos recopiladores de datos. Ransomware Resilience crea automáticamente el recopilador de datos para transmitir eventos de actividad del usuario a Ransomware Resilience para detectar un comportamiento anómalo del usuario.
 
