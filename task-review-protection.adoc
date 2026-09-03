@@ -54,8 +54,8 @@ El panel de protección en Ransomware Resilience muestra información detallada 
 
 *Estado de protección*: Una carga de trabajo puede mostrar uno de los siguientes estados de protección para indicar si una política se aplica o no:
 
-* *Protegido*: se aplica una política de detección.
-* *En riesgo*: No se aplica ninguna política. Si una carga de trabajo no tiene una política de detección habilitada, está "en riesgo" aunque tenga una política de instantáneas y política de backup habilitadas.
+* *Protegido*: Hay activada una política de cifrado o de detección de actividad del usuario.
+* *En riesgo*: Si una carga de trabajo no cuenta con una política de protección en la que esté activada la detección de cifrado o la detección de actividad del usuario, se clasifica como en riesgo. Aunque la carga de trabajo cuente con protección mediante instantáneas y copias de seguridad, así como con el bloqueo de extensiones de archivo, se sigue considerando en riesgo si no se ha activado la detección de cifrado ni la detección de comportamiento del usuario.
 * *En curso*: Se está aplicando una política, pero la operación no ha finalizado.
 * *Error*: Se ha configurado una política pero hay un error.
 

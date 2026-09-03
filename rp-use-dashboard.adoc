@@ -30,7 +30,7 @@ image:screen-dashboard.png["Página del panel de control"]
 
 . Desde el panel de control, puedes realizar las siguientes acciones en cada panel:
 +
-** *Protección de datos de carga de trabajo*: seleccione *Ver todo* para ver todas las cargas de trabajo que están en riesgo o protegidas en la página Protección.  Las cargas de trabajo están en riesgo cuando los niveles de protección no coinciden con una política de protección. Consulte link:rp-use-protect.html["Proteger las cargas de trabajo"] .
+** *Protección de datos de cargas de trabajo*: selecciona *Ver todo* para ver todas las cargas de trabajo que están en riesgo o protegidas en la página Protección. Sin detección de cifrado ni detección de actividad del usuario, la carga de trabajo se considera en riesgo. Consulta link:rp-use-protect.html["Proteger las cargas de trabajo"].
 +
 
 TIP: Seleccione la información sobre herramientas "i" para ver sugerencias sobre estos datos. Para aumentar el límite de carga de trabajo, seleccione *Aumentar el límite de carga de trabajo* dentro de esta nota. Al seleccionar esta opción se le dirigirá a la página de Soporte de la consola, donde podrá crear un ticket de caso.
