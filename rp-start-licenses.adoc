@@ -58,7 +58,7 @@ Cuando una carga de trabajo se clasifica como protegida, cuenta contra la capaci
 
 Las cargas de trabajo protegidas cuentan contra la capacidad adquirida o la suscripción después de que termine el periodo de prueba gratuito. Ransomware Resilience se cobra por GB para los datos asociados con las cargas de trabajo protegidas (según lo reporta ONTAP) antes de las eficiencias.
 
-Al considerar el dimensionamiento, los costes de las licencias se basan en la capacidad lógica del sistema de archivos activo (lo que significa que no se incluye el espacio consumido por las snapshots).
+A la hora de determinar el tamaño, los costes de licencia se basan en la capacidad lógica del sistema de archivos activo, independientemente de si esos datos residen en niveles de almacenamiento hot o cold. El espacio ocupado por las instantáneas no se incluye en este cálculo, aunque dichas instantáneas se almacenen en un nivel cold.
 
 
 TIP: Supervisa el tamaño de los datos protegidos en el panel de protección de Ransomware Resilience. Para añadir capacidad, consulta link:https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html#update-a-license["Actualizar una licencia"^].
