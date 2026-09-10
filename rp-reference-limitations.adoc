@@ -17,7 +17,7 @@ Las limitaciones conocidas identifican plataformas, dispositivos o funciones que
 
 
 [[readiness-drill-reset-option-issue]]
-== Problema con la opción de reinicio del ejercicio de preparación
+== Problema con la opción de reinicio del simulacro de preparación
 
 Si selecciona un volumen ONTAP 9.11.1 para el simulacro de preparación para ataques de ransomware, Ransomware Resilience envía una alerta.  Si recupera los datos utilizando la opción "clonar a volumen" y reinicia el taladro, la operación de reinicio falla.
 
@@ -28,7 +28,7 @@ Si selecciona un volumen ONTAP 9.11.1 para el simulacro de preparación para ata
 
 Las siguientes limitaciones se aplican a Amazon FSx para ONTAP:
 
-* Las políticas de backup no son compatibles con Amazon FSx for ONTAP. En este entorno, deberías realizar las operaciones de backup usando Amazon FSx for backups. Puedes restaurar estas cargas de trabajo usando Ransomware Resilience.
+* Las políticas de backup no son compatibles con Amazon FSx for ONTAP. En este entorno, debes realizar las operaciones de backup usando las copias de seguridad de Amazon FSx. Puedes restaurar estas cargas de trabajo usando Ransomware Resilience.
 * Las operaciones de restauración se realizan únicamente desde instantáneas.
 
 
@@ -55,7 +55,7 @@ Las siguientes limitaciones aplican a Azure NetApp Files:
 Las siguientes limitaciones se aplican a Google Cloud NetApp Volumes:
 
 * Actualmente, solo puedes aplicar estrategias de protección basadas en cifrado y FPolicy a las cargas de trabajo de Google Cloud NetApp Volumes. No puedes aplicar estrategias de protección del comportamiento del usuario.
-* Actualmente, las estrategias de protección con replicación no son compatibles para Google Cloud NetApp Volumes
+* Actualmente, las estrategias de protección con replicación no son compatibles con Google Cloud NetApp Volumes.
 
 
 
@@ -65,7 +65,7 @@ Las siguientes limitaciones se aplican a Google Cloud NetApp Volumes:
 
 Las siguientes limitaciones se aplican a las cargas de trabajo de SAN (almacenamiento en bloques):
 
-* Cuando Ransomware Resilience genera alertas para cargas de trabajo SAN, estas se basan únicamente en una entropía elevada.
+* Cuando Ransomware Resilience genera alertas para cargas de trabajo SAN, dichas alertas se basan únicamente en una entropía elevada.
 * Las cargas de trabajo SAN solo se pueden restaurar usando un link:task-custom-restore.html["restauración personalizada"]. La restauración limpia no está disponible actualmente para las cargas de trabajo SAN.
 
 
@@ -74,4 +74,4 @@ Las siguientes limitaciones se aplican a las cargas de trabajo de SAN (almacenam
 [[multi-admin-verification]]
 == Verificación multiadministrador
 
-La verificación de múltiples administradores no es compatible con Ransomware Resilience ni con la NetApp Console. Si has configurado link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["Verificación multi-admin en ONTAP"^], es posible que algunos flujos de trabajo no funcionen como se espera en Ransomware Resilience.
+La verificación de múltiples administradores no es compatible con Ransomware Resilience ni con la NetApp Console. Si has configurado link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["Verificación multi-admin en ONTAP"^], no podrás habilitar la protección, realizar un simulacro de preparación ni llevar a cabo ninguna operación de restauración. Debes desactivar la verificación de múltiples administradores antes de intentar cualquiera de estas operaciones.
