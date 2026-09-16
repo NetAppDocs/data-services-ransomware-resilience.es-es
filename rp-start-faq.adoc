@@ -48,6 +48,16 @@ Las cargas de trabajo protegidas cuentan contra la capacidad adquirida o la susc
 
 A la hora de determinar el tamaño, los costes de licencia se basan en la capacidad lógica del sistema de archivos activo, independientemente de si esos datos residen en niveles de almacenamiento hot o cold. El espacio ocupado por las instantáneas no se incluye en este cálculo, aunque dichas instantáneas se almacenen en un nivel cold.
 
+.¿Qué ocurre cuando finaliza mi periodo de prueba o caduca mi licencia?
+Después de que termine el periodo de prueba gratuito o expire la licencia o suscripción, las cargas de trabajo siguen siendo visibles en Ransomware Resilience a menos que las excluyas. Con una licencia o prueba caducada, puedes:
+
+* Ver cargas de trabajo y el estado de las cargas de trabajo
+* Eliminar recursos como políticas
+* Ejecute todas las operaciones programadas creadas durante el período de prueba o bajo la licencia
+
+
+Para decomisionar NetApp Ransomware Resilience, envía una solicitud de asistencia. La solicitud debe incluir el ID de tu organización e indicar que deseas decomisionar el servicio.
+
 
 
 [[access]]

@@ -1,0 +1,21 @@
+= Compatibilidad mejorada con las restauraciones limpias
+:allow-uri-read: 
+
+
+
+
+[[enhanced-support-for-clean-restores]]
+=== Compatibilidad mejorada con las restauraciones limpias
+
+Ya están disponibles las restauraciones limpias para la recuperación tras comportamientos sospechosos de los usuarios y ataques basados en el cifrado de usuario. Esta mejora se suma a la compatibilidad ya existente con los ataques basados en el cifrado (entropía). Esta capacidad mejorada te permite aprovechar el enfoque guiado de la restauración limpia, identificando los puntos de recuperación óptimos para minimizar la pérdida de datos y acelerar la recuperación.
+
+Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Crea un entorno de recuperación aislado para hacer una restauración limpia"^].
+
+
+
+[[san-support-for-google-cloud-netapp-volumes]]
+=== Compatibilidad de SAN con Google Cloud NetApp Volumes
+
+Ransomware Resilience ofrece ahora compatibilidad con cargas de trabajo SAN de Google Cloud NetApp Volumes, lo que te permite detectar ataques de ransomware basados en el cifrado en cargas de trabajo SAN. La compatibilidad con SAN en Google Cloud NetApp Volumes ya está disponible de forma generalizada.
+
+Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["sistemas compatibles"^] y link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["Almacenamiento SAN en Ransomware Resilience"^].

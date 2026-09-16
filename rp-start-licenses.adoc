@@ -30,7 +30,12 @@ La resiliencia ante el ransomware está disponible con los siguientes tipos de l
 
 Después de configurar su BYOL o comprar una suscripción PAYGO, podrá ver la licencia en la sección Licenses and subscriptions de la Consola.
 
-Una vez finalizada la prueba gratuita o vencida la licencia o suscripción, aún puedes:
+
+
+[[expired-licenses]]
+=== Licencias caducadas
+
+Después de que termine el periodo de prueba gratuito o expire la licencia o suscripción, las cargas de trabajo siguen siendo visibles en Ransomware Resilience a menos que las excluyas. Con una licencia o prueba caducada, puedes:
 
 * Ver cargas de trabajo y el estado de las cargas de trabajo
 * Eliminar recursos como políticas

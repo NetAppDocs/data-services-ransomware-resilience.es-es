@@ -1,11 +1,11 @@
-= Compatibilidad con Google Cloud NetApp Volumes (vista previa)
+= Grupos de protección en Google Cloud NetApp Volumes compatibles (versión preliminar)
 :allow-uri-read: 
 
 
 
 
-[[google-cloud-netapp-volumes-support-preview]]
-=== Compatibilidad con Google Cloud NetApp Volumes (vista previa)
+[[protection-groups-in-google-cloud-netapp-volumes-support-preview]]
+=== Grupos de protección en Google Cloud NetApp Volumes compatibles (versión preliminar)
 
 Ransomware Resilience ahora admite la creación de grupos de protección para cargas de trabajo en sistemas Google Cloud NetApp Volumes, lo que te permite organizar varias cargas de trabajo bajo una política para agilizar la gestión.
 
