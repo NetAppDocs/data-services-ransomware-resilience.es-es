@@ -82,9 +82,7 @@ Si tu carga de trabajo no está gestionada por Backup and Recovery o Ransomware 
 Puede elegir una de las siguientes políticas predefinidas de resiliencia ante ransomware, que están alineadas con la importancia de la carga de trabajo.
 
 
-NOTE: La política **Extensión de usuario de cifrado** es la única política predefinida que admite la detección de comportamiento sospechoso de usuarios.
-
-+ La **política de replicación crítica** es la única política predefinida que admite la replicación de instantáneas en ONTAP.
+NOTE: La política **Encryption user extension** es la única política predefinida que admite la detección de comportamientos sospechosos de los usuarios. + La **Critical replication policy** es la única política predefinida que admite la replicación de instantáneas a ONTAP.
 
 [cols="10,15a,20,15,15,15"]
 |===
