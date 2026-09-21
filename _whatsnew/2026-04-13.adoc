@@ -18,7 +18,7 @@ Para obtener información sobre las configuraciones compatibles y cómo configur
 
 Ransomware Resilience ahora proporciona soporte de gestión de eventos de información de seguridad (SIEM) para Splunk Enterprise, lo que te permite centralizar los datos de registros y eventos y agilizar el análisis y la detección de amenazas.
 
-Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Conecta NetApp Ransomware Resilience a un SIEM"^].
+Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-splunk.html["Configura un SIEM de Splunk"^].
 
 
 

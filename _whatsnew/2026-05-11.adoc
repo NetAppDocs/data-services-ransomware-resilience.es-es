@@ -18,7 +18,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clea
 
 Ransomware Resilience ahora es compatible con la gestión de información y eventos de seguridad (SIEM) con Google SecOps, lo que te permite enviar datos automáticamente a Google SecOps para agilizar el análisis y la detección de amenazas.
 
-Para obtener información sobre la configuración, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Conecta NetApp Ransomware Resilience a un SIEM"^].
+Para obtener información sobre la configuración, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-secops.html["Configura Google SecOps SIEM en Ransomware Resilience"^].
 
 
 

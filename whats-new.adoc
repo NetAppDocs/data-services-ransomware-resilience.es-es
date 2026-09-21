@@ -129,7 +129,7 @@ Para obtener más información, consulta link:https://docs.netapp.com/us-en/data
 
 Ransomware Resilience ya permite configurar un sistema de gestión de información y eventos de seguridad (SIEM) mediante webhooks en la interfaz de usuario de Ransomware Resilience. Con webhooks, puedes usar tu sistema SIEM preferido para organizar tu monitoreo de ransomware.
 
-Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Configura un sistema SIEM"^].
+Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-webhook.html["Configura un sistema SIEM con webhooks"^].
 
 
 
@@ -161,7 +161,7 @@ Para más información, consulta link:https://docs.netapp.com/us-en/data-service
 
 Ransomware Resilience ofrece ahora una plantilla de Azure Resource Manager (ARM) para conectarte a Microsoft Sentinel como SIEM, ofreciendo un método secundario para facilitar la implementación.
 
-Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Conéctate a un SIEM para la detección y el análisis de amenazas"^].
+Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-sentinel.html["Configura Microsoft Sentinel SIEM en Ransomware Resilience"^].
 
 
 
@@ -264,7 +264,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clea
 
 Ransomware Resilience ahora es compatible con la gestión de información y eventos de seguridad (SIEM) con Google SecOps, lo que te permite enviar datos automáticamente a Google SecOps para agilizar el análisis y la detección de amenazas.
 
-Para obtener información sobre la configuración, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Conecta NetApp Ransomware Resilience a un SIEM"^].
+Para obtener información sobre la configuración, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-secops.html["Configura Google SecOps SIEM en Ransomware Resilience"^].
 
 
 
@@ -305,7 +305,7 @@ Para obtener información sobre las configuraciones compatibles y cómo configur
 
 Ransomware Resilience ahora proporciona soporte de gestión de eventos de información de seguridad (SIEM) para Splunk Enterprise, lo que te permite centralizar los datos de registros y eventos y agilizar el análisis y la detección de amenazas.
 
-Para más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Conecta NetApp Ransomware Resilience a un SIEM"^].
+Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-splunk.html["Configura un SIEM de Splunk"^].
 
 
 
@@ -801,7 +801,7 @@ Para iniciar el escaneo, en la página Protección, selecciona *Identificar expo
 
 Ahora puede enviar datos a su sistema de gestión de eventos y seguridad (SIEM) para el análisis y detección de amenazas mediante Microsoft Sentinel.  Anteriormente, podía seleccionar AWS Security Hub o Splunk Cloud como su SIEM.
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Obtenga más información sobre cómo configurar los ajustes de BlueXP ransomware protection"].
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-sentinel.html["Obtenga más información sobre cómo configurar los ajustes de BlueXP ransomware protection"].
 
 
 

@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: task-siem-webhook.html 
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, webhook, third-party siem, other siem, palo alto, crowdstrike, ibm 
+summary: Optimiza el análisis de amenazas y la gestión de eventos en NetApp Ransomware Resilience configurando cualquier sistema SIEM de tu elección mediante webhooks. 
+---
+= Configura un SIEM en NetApp Ransomware Resilience usando webhooks
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience ofrece compatibilidad nativa con múltiples sistemas de gestión de información y eventos de seguridad (SIEM). Si el sistema SIEM que has elegido no está disponible, puedes configurar cualquier otro sistema SIEM para la gestión de eventos mediante webhooks.
+
+
+
+[[before-you-begin]]
+== Antes de empezar
+
+Antes de crear la conexión SIEM con Ransomware Resilience, debes haber configurado el SIEM en su propia plataforma. Después de configurar el SIEM, puedes autenticarlo en Ransomware Resilience.
+
+
+
+[[authenticate-a-siem-in-ransomware-resilience-via-webhook]]
+== Autentica un SIEM en Ransomware Resilience mediante un webhook
+
+. En NetApp Ransomware Resilience, selecciona *Configuración*.
+. En el mosaico *SIEM*, selecciona *Conectar* y luego *Webhooks* si es la primera vez que configuras un SIEM. De lo contrario, selecciona *Manage*. En la página de resumen, selecciona *+ Conectar* y luego *Webhook*.
+. Indica el *nombre* del producto SIEM y la *URL* para la conexión. No puedes utilizar una URL codificada.
+. Introduce los *encabezados personalizados* utilizando el formato «Clave: Valor». Cada par clave-valor debe introducirse en una línea separada.
+. Revisa la plantilla *Message* en formato JSON.
++
+Para añadir parámetros adicionales, cópialos de la lista que aparece junto a los campos de entrada y pégalos en la parte correspondiente del mensaje. También puedes añadir parámetros personalizados: en los parámetros personalizados, selecciona *Add* y luego introduce el *Name*, el *Value* y la *Description*. Copia y pega el parámetro en el campo del mensaje.
+
++
+image:siem-webhook.png["Captura de pantalla de la configuración del webhook de SIEM."]
+
+. Elige la link:task-siem.html#event-delivery-route["ruta de entrega de eventos"]. Para entregar eventos SIEM a tu endpoint SIEM, selecciona *Deliver via NetApp Console*. Para enrutar eventos a través del agente de Console que ya está en tu red, selecciona *Deliver via Console agent*.
++
+Si has seleccionado *Entregar a través del agente de la consola*, selecciona el agente de la consola que quieres usar en el menú desplegable.
+
+. Si lo deseas, selecciona *Enviar mensaje de prueba* para probar la conectividad.
+. Selecciona *Conectar* para iniciar la conexión a Ransomware Resilience.
+
+
+
+NOTE: Puedes modificar la configuración del SIEM después de crearla. Puedes modificar todos los campos excepto el nombre.
+
+
+
+[[next-steps]]
+== Próximos pasos
+
+* link:reference-soar.html["Integra un playbook SOAR"]
+
