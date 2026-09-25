@@ -150,8 +150,8 @@ TIP: La vigencia de un secreto de cliente está limitada a dos años (24 meses) 
 
 
 
-[[authenticate-microsoft-sentinel-in-ransomware-resilience]]
-== Autentica Microsoft Sentinel en NetApp Ransomware Resilience
+[[add-roles-in-azure-and-authenticate-microsoft-sentinel-in-ransomware-resilience]]
+== Añade roles en Azure y autentica Microsoft Sentinel en Ransomware Resilience
 
 En el caso del SIEM de Microsoft Sentinel, puedes optar por una implementación automática en la que Ransomware Resilience implemente los recursos en función de los permisos que tú le proporciones. Como alternativa, puedes realizar una implementación manual en la que implementas los recursos basándote en una plantilla ARM proporcionada. Ambas opciones requieren que configures los permisos en el portal de Azure y luego autentiques la conexión en Ransomware Resilience, aunque los pasos son diferentes. Elige el flujo de trabajo que mejor se adapte a tus necesidades.
 

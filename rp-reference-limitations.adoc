@@ -45,6 +45,7 @@ Las siguientes limitaciones aplican a Azure NetApp Files:
 * Al seleccionar una estrategia de protección, asegúrate de que su planificación de instantáneas sea compatible con Azure NetApp Files. La planificación de instantáneas más frecuente disponible en Azure NetApp Files es horaria.
 * Se recomienda no utilizar link:reference-soar.html["Playbooks SOAR"] con Azure NetApp Files debido a que las API de Azure NetApp Files bloquean las acciones automatizadas.
 * Algunos datos de eventos no se incluyen en link:task-siem.html["Informes SIEM"] para configuraciones de Azure NetApp Files.
+* La restauración a nivel de archivo no está disponible cuando utilizas link:task-custom-restore.html["restaurar una carga de trabajo"] para Azure NetApp Files.
 
 
 
