@@ -24,10 +24,10 @@ Estas tareas requieren el rol de _Administrador de consola_.
 * link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation["Asegúrese de haber instalado un agente de consola"^]
 * link:rp-start-prerequisites.html["Asegúrese de que su sistema cumpla con los requisitos"]
 +
-** Revisa también los requisitos de link:reference-user-activity-requirements.html["detección de comportamientos sospechosos de los usuarios"] y link:task-clean-restore.html["restauraciones limpias"].
+** Consulta los requisitos de link:reference-user-activity-requirements.html["detección de comportamientos sospechosos de los usuarios"] y link:task-clean-restore.html["restauraciones limpias"].
 
 
-* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Revisa los roles de usuario de Ransomware Resilience y asigna permisos a los usuarios que acceden al servicio"]
+* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Revisa los roles de usuario de Ransomware Resilience y asigna permisos a los usuarios que acceden al servicio"^]
 * link:rp-start-licenses.html["Configurar licencias"]
 
 
