@@ -260,7 +260,6 @@
   <block id="43963265d27ac7360fe50e98bde4f748" category="list-text">Política de detección de ransomware</block>
   <block id="4c0abf2d4c54820b8d33061abaf30759" category="list-text">Política de instantáneas</block>
   <block id="f85025bdaaee4c51a3c8a6a750214305" category="paragraph">No se requiere una política de respaldo en la estrategia de resiliencia frente al ransomware.</block>
-  <block id="830a27164c48c0901dff35b6935793d3" category="paragraph">No. Ransomware Resilience no modifica ninguna política de detección existente (configuración ARP, FPolicy) de ONTAP.</block>
   <block id="e2ec1056e393e1702e9916034506b224" category="paragraph">Sí, puede cambiar las políticas de ONTAP en Ransomware Resilience.  También puede crear nuevas políticas en Ransomware Resilience y aplicarlas a las cargas de trabajo.  Esta acción reemplaza las políticas ONTAP existentes con las políticas creadas en Ransomware Resilience.</block>
   <block id="389b413db649d1d5d2854fd3e4faf2e6" category="paragraph">Puede deshabilitar FPolicy y las políticas de respaldo aplicando una política diferente que no las incluya.</block>
   <block id="8c4e51cf0af97fc084c32c7697ac400c" category="doc">Configurar licencias para NetApp Ransomware Resilience</block>
@@ -1173,7 +1172,6 @@
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">Copias de seguridad de datos</block>
   <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">La licencia Ransomware Resilience no incluye productos NetApp adicionales. Sin embargo, Ransomware Resilience puede integrarse con NetApp Backup and Recovery, incluso si no tiene una licencia separada para Backup and Recovery.</block>
   <block id="6ff0e20f052119502398978ae7712412" category="paragraph">Siga los enlaces en cada paso para obtener información detallada.</block>
-  <block id="be796710aeb85a06716eb7e39256193d" category="paragraph">Estas tareas requieren el rol de _Administrador de consola_.</block>
   <block id="220434cdb736458843fe145fbd4b9ca9" category="inline-link-macro">Asegúrese de haber instalado un agente de consola</block>
   <block id="ff6929fd02a6e7a1c0faa4152fe13ffe" category="list-text"><block ref="ff6929fd02a6e7a1c0faa4152fe13ffe" category="inline-link-macro-rx"></block></block>
   <block id="9fde088755a092fd7205d2e697984007" category="inline-link-macro">Asegúrese de que su sistema cumpla con los requisitos</block>
@@ -1252,7 +1250,6 @@
   <block id="eb736865032ae478d0b6e5b412448020" category="paragraph">A <block ref="5f4e714854e79a1737929ec78e18ea2b" category="inline-link-macro-rx"></block> Requisitos:</block>
   <block id="03e55fcba3b01c6e3fb1919d269654c0" category="list-text">una política de detección de ransomware, y</block>
   <block id="3f6fda029d0c02be255dfd8176381b0b" category="list-text">una política de instantáneas</block>
-  <block id="1b574bfc0313243d6641e2a840917179" category="paragraph-title">Si existen políticas de ONTAP (como ARP, FPolicy y snapshots), ¿se modifican en Ransomware Resilience?</block>
   <block id="9e4bf76e69b44d54bda6324e7a451d29" category="paragraph-title">¿Se pueden cambiar las políticas desde ONTAP?</block>
   <block id="8eb907afc706971993c8bde086302ff0" category="paragraph-title">¿Se pueden deshabilitar las políticas en ONTAP?</block>
   <block id="7986143a8e8e26aa1cd4fe5e42208a2b" category="paragraph">Puede deshabilitar ARP en las políticas de detección utilizando la interfaz de usuario, las API o la CLI del administrador del sistema en ONTAP.</block>
@@ -1733,7 +1730,6 @@
   <block id="c048f8419f5606e294e716a232b223a2" category="paragraph-title">¿Cómo interactúa Ransomware Resilience con NetApp Backup and Recovery?</block>
   <block id="eadde9be35eb975c3bbd5558937ea6ce" category="paragraph">Ransomware Resilience trabaja con Backup and Recovery para descubrir y establecer políticas de instantáneas y copias de seguridad para cargas de trabajo de archivos compartidos. Ransomware Resilience también trabaja con Backup and Recovery para realizar la recuperación coherente de archivos y cargas de trabajo.</block>
   <block id="79b8a65e3601fc128a20382435361146" category="paragraph-title">¿Ransomware Resilience reconoce las políticas que ya se han creado en NetApp Backup and Recovery?</block>
-  <block id="94a13b2631414c7aa1bd5efb554c98aa" category="paragraph">Sí, si tienes cargas de trabajo gestionadas en Backup and Recovery, las políticas gestionadas por esos productos se incorporan a Ransomware Resilience.</block>
   <block id="f88bf8ade397c623545ba47ce5394409" category="paragraph-title">¿Puedes modificar las políticas transferidas de NetApp Backup and Recovery?</block>
   <block id="dd9161665fa6e8f8df843bd9c2b959be" category="paragraph">No, no puedes modificar las políticas gestionadas por Backup and Recovery desde Ransomware Resilience. Tú gestionas cualquier cambio en esas políticas en Backup and Recovery.</block>
   <block id="12d4775c2501ee99b589ba7851a2ec0d" category="paragraph-title">¿Qué pasa si añades nuevas políticas en Backup and Recovery después de registrarte en Ransomware Resilience?</block>
@@ -2303,7 +2299,6 @@
   <block id="b70244907e8a4cb4fbb47d6e9fdda53a" category="cell">Nube: Amazon FSx for NetApp ONTAP</block>
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">Para los IRE implementados en Amazon FSx for NetApp ONTAP, no necesitas proporcionar esta información.</block>
   <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">Ransomware Resilience solo puede detectar hasta 3,000 cargas de trabajo por agente de Console.</block>
-  <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">Hay un límite de 3,000 cargas de trabajo por agente de Console.</block>
   <block id="afce532bad172bcef50d75935d2ed43b" category="list-text">Política de replicación</block>
   <block id="fb9721f24a420ba827ac36665b13797e" category="doc">Respuestas automáticas a las alertas de actividad de los usuarios</block>
   <block id="709c9c15efe20baf89cd9c0bc4da8ba3" category="inline-link-macro">Automatiza las respuestas a las alertas sobre la actividad de los usuarios</block>
@@ -2738,7 +2733,6 @@
   <block id="bb23df37e6fe74c9adce400b2dce40db" category="list-text">Vuelve a «Resiliencia frente al ransomware». Copia el JSON de la plantilla de ARM para crear la tabla personalizada de Log Analytics, el punto final de recopilación de datos (DCE), la regla de recopilación de datos (DCR) y las reglas de análisis de Sentinel en tu entorno de Azure.</block>
   <block id="625e7b50d0584bc4bde48651c8cfc7ee" category="paragraph">Cuando una carga de trabajo se clasifica como protegida, cuenta contra la capacidad adquirida o la suscripción PAYGO. Ransomware Resilience clasifica una carga de trabajo como protegida cuando hay habilitada una política de cifrado o de detección de actividad de usuario. Sin al menos una de estas políticas de detección, una carga de trabajo se clasifica como en riesgo. Las cargas de trabajo en riesgo no cuentan contra la capacidad adquirida.</block>
   <block id="f6a2fb2a5374a593874b657ed729f82b" category="paragraph">En Ransomware Resilience, una carga de trabajo muestra un estado de *protegida* cuando tiene una política de _detección_ activada. La política de detección debe consistir en detección de cifrado o detección de comportamiento sospechoso del usuario (o ambas). Para obtener más información, consulta <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>.</block>
-  <block id="2850e23cea54ee88036b5a17e51dc5dd" category="paragraph">Para que una carga de trabajo se considere protegida, debe contar con una política de protección contra el ransomware en la que esté habilitada la detección de cifrado o la detección del comportamiento de los usuarios. Si no cuenta con al menos una de estas estrategias de detección, la carga de trabajo se considerará en riesgo. Si una carga de trabajo cuenta con una política de backup o snapshot pero no incluye la detección de cifrado ni la detección del comportamiento de los usuarios habilitadas, se considerará en riesgo.</block>
   <block id="6320d906c420ff6393e8f0fd47eaf876" category="paragraph">Ransomware Resilience también ofrece detección de extensiones de archivo sospechosas. Si la detección de extensiones de archivo sospechosas es la única política de detección activada, la carga de trabajo se marcará como en riesgo.</block>
   <block id="eca582e2a6a980264db3e5c92d632da6" category="paragraph">Para la protección contra ransomware, deberías activar una <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>.</block>
   <block id="15970e7cc58cf4e7b2b7962f63826587" category="list-text">*Protección de datos de cargas de trabajo*: selecciona *Ver todo* para ver todas las cargas de trabajo que están en riesgo o protegidas en la página Protección. Sin detección de cifrado ni detección de actividad del usuario, la carga de trabajo se considera en riesgo. Consulta <block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block>.</block>
@@ -2761,7 +2755,6 @@
   <block id="d179fc0ce9fb1caf78f7eeef324bb4cc" category="list-text"><block ref="2bb10879340c875c0eb9174b288f2b45" category="inline-link-macro-rx"></block> | <block ref="c3163b3c34297c2188fd1502baa6be3c" category="inline-link-macro-rx"></block></block>
   <block id="5d5e5e55cd10a71c63c6b45dc8dba08c" category="paragraph-title">¿Qué ocurre cuando finaliza mi periodo de prueba o caduca mi licencia?</block>
   <block id="79335d9964ddd76c469e8c3e25806b99" category="paragraph">Después de que termine el periodo de prueba gratuito o expire la licencia o suscripción, las cargas de trabajo siguen siendo visibles en Ransomware Resilience a menos que las excluyas. Con una licencia o prueba caducada, puedes:</block>
-  <block id="e4afb1971795d58242b3d2928284082d" category="paragraph">Para decomisionar NetApp Ransomware Resilience, envía una solicitud de asistencia. La solicitud debe incluir el ID de tu organización e indicar que deseas decomisionar el servicio.</block>
   <block id="6a7195fecc3718afe9825234cb1a3cb0" category="section-title">Licencias caducadas</block>
   <block id="20eb08718dfdc0275c8f8c9b37d1fa4d" category="paragraph">Con NetApp Ransomware Resilience, puedes automatizar las respuestas a <block ref="8b86ab47aa824ef9943240ff5124bbba" category="inline-link-macro-rx"></block>. Cuando se activa una alerta de actividad de usuario, Ransomware Resilience puede:</block>
   <block id="86ba33b27b8ac83f8c8aad8f0ecd7c6e" category="list-text">Bloquear a un usuario</block>
@@ -2873,4 +2866,15 @@
   <block id="be477216a2a05782605c951939d5638a" category="section-title">Añade roles en Azure y autentica Microsoft Sentinel en Ransomware Resilience</block>
   <block id="dedb015aaf7f105f1187fe35f028dd0f" category="list-text">Consulta los requisitos de <block ref="019fa8a22de443e4055edc5a56d223fe" category="inline-link-macro-rx"></block> y <block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block>.</block>
   <block id="823ff360f4694fe5d6e7799f5cab531b" category="list-text"><block ref="823ff360f4694fe5d6e7799f5cab531b" category="inline-link-macro-rx"></block></block>
+  <block id="a33058f6d7e9b78787b9ce2046845a68" category="paragraph-title">¿Cuáles son los requisitos del agente de Console para Ransomware Resilience?</block>
+  <block id="e6a2a9b3090bbbbbc5cb7d0bee74d0a5" category="inline-link-macro">Revisa y configura los permisos adecuados para los usuarios.</block>
+  <block id="d4141215d78a04bf39c8a546ff7a3219" category="paragraph"><block ref="5874c7231dd7836acd6caf7bb64d3385" category="inline-link-macro-rx"></block> Asegúrate de que al menos un agente de Console activo de tu organización de Console esté conectado a un sistema compatible. El agente de Console debe tener el contenedor <block ref="d5aabb6133fba5c7ef5a4e8db21d18ae" prefix=" " category="inline-code"></block> en estado activo.</block>
+  <block id="166101f067ff4da4929321b7b4436a87" category="paragraph">Además, hay un límite de 3,000 cargas de trabajo por agente de Console. Puedes presentar una solicitud para ampliar este límite.</block>
+  <block id="61ce25f32040f390ae948a25a322f4a4" category="paragraph">Para decomisionar Ransomware Resilience, envía una solicitud de asistencia. La solicitud debe incluir el ID de tu organización e indicar que deseas decomisionar el servicio.</block>
+  <block id="c5571d2bd805b9ff90a236b8f97f4b2a" category="paragraph">Para que una carga de trabajo se considere protegida, debe contar con una política de protección contra el ransomware con la detección de cifrado o la detección del comportamiento de los usuarios activadas. Si no cuenta con al menos una de estas estrategias de detección, la carga de trabajo se considera en riesgo. Si una carga de trabajo tiene una política de backup o snapshot, pero no tiene activada la detección de cifrado ni la detección del comportamiento de los usuarios, se considera en riesgo.</block>
+  <block id="25ef6c177ba76101d5903dc7639808a9" category="paragraph">Sí, si tienes cargas de trabajo gestionadas en Backup and Recovery, esas políticas se incorporan a Ransomware Resilience.</block>
+  <block id="ad454ecef2b040909651d7af492e42ff" category="paragraph-title">Si existen políticas de ONTAP (como ARP, FPolicy e instantáneas), ¿Ransomware Resilience las modifica?</block>
+  <block id="33770507195ff31d97a8192589460055" category="paragraph">Ransomware Resilience no modifica ninguna política de detección existente (configuración de ARP y FPolicy) de ONTAP. Si modificas algún parámetro en Ransomware Resilience, puedes sobrescribir la configuración de ONTAP.</block>
+  <block id="73f9341af639bb7291bbf568f90c32a7" category="list-text">Hay un límite de 3.000 cargas de trabajo por agente de Console. Puedes enviar una solicitud para ampliar este límite.</block>
+  <block id="450c303d7338ae99abb9140e57f1802f" category="paragraph">Necesitas el rol de _Super admin_ o _Organization admin_ para implementar un agente de Console y asignar permisos.</block>
 </blocks>
