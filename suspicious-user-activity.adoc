@@ -22,9 +22,6 @@ Un agente de actividad de usuario aloja un recopilador de datos y un conector de
 
 El agente de actividad del usuario, el recopilador de datos y el conector del directorio de usuarios se pueden gestionar desde el panel de configuración de Ransomware Resilience.
 
-
-NOTE: Si ya utilizas NetApp Data Infrastructure Insights (DII) Workload Security, usa los mismos agentes de Workload Security para Ransomware Resilience. No necesitas implementar agentes de Workload Security independientes para Ransomware Resilience. Sin embargo, usar los mismos agentes de Workload Security requiere una relación de emparejamiento entre la organización de la consola de Ransomware Resilience y el inquilino de DII Storage Workload Security. Ponte en contacto con tu representante de cuenta para habilitar este emparejamiento.
-
 Si no utilizas DII, sigue las instrucciones de configuración que se indican aquí.
 
 
@@ -38,6 +35,13 @@ Si no utilizas DII, sigue las instrucciones de configuración que se indican aqu
 *Función requerida de la consola* Para activar la detección del comportamiento del usuario, necesitas el rol de **Organization admin**. Para las configuraciones posteriores de detección del comportamiento del usuario, necesitas el rol de **Ransomware Resilience user behavior admin**. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Obtenga información sobre las funciones de resiliencia ante ransomware para la NetApp Console"^].
 
 Asegúrate de que cada función se aplique a nivel de la organización.
+
+
+
+[[considerations-for-data-infrastructure-insights-dii-workload-security-users]]
+=== Consideraciones para los usuarios de Workload Security de Data Infrastructure Insights (DII)
+
+Si ya utilizas NetApp Data Infrastructure Insights (DII) Workload Security, usa los mismos agentes de Workload Security para Ransomware Resilience. No necesitas implementar agentes de Workload Security independientes para Ransomware Resilience. Sin embargo, usar los mismos agentes de Workload Security requiere una relación de emparejamiento entre la organización de la consola de Ransomware Resilience y el inquilino de DII Storage Workload Security. Ponte en contacto con tu representante de cuenta para habilitar este emparejamiento.
 
 
 
