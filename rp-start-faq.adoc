@@ -101,6 +101,8 @@ Si tiene Backup and Recovery y Ransomware Resilience, cualquier dato común prot
 .¿Qué necesitas saber si ya has habilitado la detección de actividad de los usuarios a través de Data Infrastructure Insights Workload Security?
 Si ya utilizas NetApp Data Infrastructure Insights (DII) Workload Security, usa los mismos agentes de Workload Security para Ransomware Resilience. No necesitas implementar agentes de Workload Security independientes para Ransomware Resilience. Sin embargo, usar los mismos agentes de Workload Security requiere una relación de emparejamiento entre la organización de la consola de Ransomware Resilience y el inquilino de DII Storage Workload Security. Ponte en contacto con tu representante de cuenta para habilitar este emparejamiento.
 
+Al activar la detección de actividad de usuario en Ransomware Resilience, esta función utiliza las credenciales guardadas actualmente en Console para gestionar los recopiladores de datos. Si anteriormente habías habilitado la detección de actividad de usuario a través de Data Infrastructure Insights (DII) Workload Security, las credenciales de Console sustituirán a las que utilizabas anteriormente en DII para gestionar los recopiladores de datos.
+
 
 
 [[workloads]]
