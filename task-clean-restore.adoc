@@ -527,27 +527,31 @@ El proceso para crear una sala de recuperación aislada difiere si el entorno es
 . En Ransomware Resilience, seleccione **Configuración**.
 . En la tarjeta de limpieza y recuperación de aislamiento, selecciona **Add** para crear el entorno de recuperación aislado.
 . En la sección «Tipo», selecciona *Limpieza bajo demanda*.
-. Despliega la sección **Nombre**. Introduce un **Nombre** para el entorno.
-. Para una IRE basada en cloud, selecciona **Amazon Web Services**.
-. Expande la sección *Systems*. Elige los sistemas que quieres conectar a la IRE. Para cada sistema que selecciones, debes proporcionar la dirección IP, la máscara de subred y la puerta de enlace de la VM de almacenamiento.
+. Para un IRE basado en cloud, elige **Amazon Web Services** como ubicación.
+. Introduce un **Nombre** para el entorno.
+. Seleccione *Siguiente*.
+. Despliega la sección *Sistemas*. Selecciona los sistemas que quieres conectar al IRE. Para cada sistema que selecciones. Cada sistema debe tener conectividad de red con el IRE. Puede que tengas que proporcionar una dirección IP de LIF de datos para cada sistema a fin de establecer el punto de recuperación de clean restore.
 +
 
 NOTE: Para los IRE implementados en Amazon FSx for NetApp ONTAP, no necesitas proporcionar esta información.
 
+. Para cada sistema que hayas añadido que no sea Amazon FSx for NetApp ONTAP, selecciona *Edit storage VM*. En la ventana emergente, introduce *Storage VM IP address* y *Storage VM subnet mask*. Para *Broadcast domain*, elige default o management. Si quieres, puedes introducir *Storage VM gateway*.
 +
 image::clean-restore-systems.png[Captura de pantalla de la interfaz de selección de sistemas.]
 
-. Expande la sección **Autenticación**.
+. Seleccione *Siguiente*.
+. En la sección *Autenticación*, introduce el ID de **Account** de cloud y selecciona la **Region** de la cuenta en el menú desplegable. Solo puedes implementar un IRE en una región compatible.
+. Introduce la **clave de acceso** y la **clave secreta** de la cuenta.
 +
-** Introduce el ID de la **cuenta** en la nube y selecciona la **región** de la cuenta en el menú desplegable. Solo puedes desplegar una IRE en una región admitida.
-** Introduce la **clave de acceso** y la **clave secreta** de la cuenta.
+
+NOTE: La cuenta debe tener los permisos necesarios para que Ransomware Resilience pueda implementar el agente de Console y crear la clean room bajo demanda.
+
 +
 image::screenshot-set-up-recovery-environment.png[Captura de pantalla de la configuración de autenticación IRE.]
 
-
-
-. Expande la sección *Nube privada virtual (VPC)*. Introduce el ID de la VPC donde se va a desplegar la IRE.
-. Selecciona **Add** para crear el IRE.
+. Despliega la sección *Amazon VPC*. Introduce el ID de la virtual private cloud donde vas a implementar el IRE. (Esta es la VPC que configuraste en los requisitos previos.)
+. Selecciona *Siguiente* para revisar la configuración.
+. Revisa la configuración. Selecciona *Add* para crear el IRE.
 +
 Ransomware Resilience prueba la conexión después de seleccionar add, lo que puede tardar unos minutos. La IRE se ha desplegado correctamente cuando su estado se muestra como "deployed".
 
@@ -559,31 +563,30 @@ Ransomware Resilience prueba la conexión después de seleccionar add, lo que pu
 . En Ransomware Resilience, seleccione **Configuración**.
 . En la tarjeta Limpiar restauraciones, selecciona **Añadir** si es tu primer entorno o **Administrar** si ya has creado uno.
 . En la sección «Tipo», selecciona *Limpieza bajo demanda*.
-. Despliega la sección *Nombre*. Asigna un **Nombre** para la IRE.
 . Para la ubicación, selecciona **On-premises**.
-. Expande la sección *Systems*. Elige los sistemas que quieres conectar a la IRE. Asigna una dirección IP de VM de almacenamiento, máscara de subred y gateway para cada sistema que tenga cargas de trabajo que se vayan a recuperar en la IRE.
+. Introduce un *nombre del entorno de recuperación aislado*.
+. Seleccione *Siguiente*.
+. Expande la sección *Systems*. Elige los sistemas que quieres conectar a la IRE.
 +
 Cada sistema que selecciones debe tener una dirección IP asignada. Puedes seleccionar sistemas primarios o secundarios. Los sistemas secundarios se pueden usar para análisis y recuperación si el sistema primario no tiene instantáneas sin cifrar o si no está disponible.
 
-. Expande la sección **Agente de consola**. Selecciona el agente de consola del menú desplegable que está desplegado en el IRE.
-. Despliega la sección *Clean room compute*.
+. Para cada sistema que hayas añadido, selecciona *Edit storage VM*. En la ventana emergente, introduce la *dirección IP de Storage VM* y la *máscara de subred de Storage VM*. Para el *Broadcast domain*, elige default o management. Si lo deseas, puedes introducir una *puerta de enlace de Storage VM*.
+. Seleccione *Siguiente*.
+. Selecciona el agente de consola del menú desplegable que está desplegado en el IRE.
+. Introduce las credenciales para autenticar el servidor vCenter: *dirección IP o nombre de dominio completo (FQDN)*, *puerto*, *nombre de usuario* y *contraseña*.
+. Selecciona **Autenticar** para confirmar las credenciales. Espera hasta que la interfaz de usuario confirme tus credenciales antes de continuar.
+. Despliega la *sección «Informática en sala limpia»*.
+. Selecciona el *Datacenter* y el *Cluster* donde se desplegarán las VMs.
+. Selecciona el *Datastore* y la *Network* para el host ESXi.
+. Introduce el *intervalo de direcciones IP* en formato CIDR (por ejemplo, 10.0.0.1/24), la *máscara de subred* y el *Gateway* para las máquinas virtuales.
+. Selecciona las máquinas virtuales ubicadas en el host ESXi que se usarán como máquina virtual base para la clonación durante el proceso de recuperación.
 +
-.. Proporciona las credenciales para autenticar el servidor vCenter: *dirección IP* o nombre de dominio completo (FQDN), *puerto*, *nombre de usuario* y *contraseña*.
-.. Selecciona **Autenticar** para confirmar las credenciales. Espera hasta que la interfaz de usuario confirme tus credenciales antes de continuar.
-.. Selecciona el *Datacenter* y el *Cluster* donde se desplegarán las VMs.
-.. Selecciona el *Datastore* y la *Network* para el host ESXi.
-.. Introduce el *intervalo de direcciones IP* en formato CIDR (por ejemplo, 10.0.0.1/24), la *máscara de subred* y el *Gateway* para las máquinas virtuales.
+Para la máquina virtual Linux que NetApp Ransomware Resilience utiliza para buscar ransomware, selecciona la máquina virtual en el menú desplegable y luego introduce el *nombre de usuario* y la *contraseña* de la máquina virtual.
+
 +
-image:clean-restore-compute.png["Captura de pantalla de la interfaz de selección de compute."]
+Para la máquina virtual de Windows que se utiliza para la exploración, selecciona la máquina virtual en el menú desplegable y luego introduce el *nombre de usuario* y la *contraseña* de la máquina virtual.
 
-
-
-. Despliega la sección *Clean room VMs*, que se rellena en función de los datos que hayas introducido en la sección *Compute*.
-+
-.. Para la máquina virtual Linux que NetApp Ransomware Resilience utiliza para buscar ransomware, selecciona la máquina virtual en el menú desplegable y luego introduce el *nombre de usuario* y la *contraseña* de la máquina virtual.
-.. Para la máquina virtual de Windows que se utiliza para la exploración, selecciona la máquina virtual en el menú desplegable y luego introduce el *nombre de usuario* y la *contraseña* de la máquina virtual.
-
-
+. Selecciona *Siguiente* para revisar la configuración.
 . Selecciona **Add** para crear la IRE. NetApp Ransomware Resilience prueba la conexión después de que selecciones add; este proceso puede tardar unos minutos. La IRE se ha desplegado correctamente cuando su estado se muestra como "deployed".
 
 

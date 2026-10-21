@@ -57,7 +57,6 @@ Las siguientes limitaciones se aplican a Google Cloud NetApp Volumes:
 
 * Actualmente, solo puedes aplicar estrategias de protección basadas en cifrado y FPolicy a las cargas de trabajo de Google Cloud NetApp Volumes. No puedes aplicar estrategias de protección del comportamiento del usuario.
 * Actualmente, las estrategias de protección con replicación no son compatibles con Google Cloud NetApp Volumes.
-* La compatibilidad con los niveles de servicio Flex de Google Cloud NetApp Volumes está actualmente en vista previa.
 
 
 

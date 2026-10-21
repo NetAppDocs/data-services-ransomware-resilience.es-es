@@ -18,6 +18,27 @@ Descubra las novedades en NetApp Ransomware Resilience.
 
 
 
+[[20-october-2026]]
+== 20 de octubre de 2026
+
+
+
+[[enhanced-isolated-recovery-environment-configuration]]
+=== Configuración mejorada del entorno de recuperación aislado
+
+Ransomware Resilience ahora proporciona un flujo de trabajo mejorado para la configuración de entornos de recuperación aislados. El nuevo flujo de trabajo aclara y simplifica el proceso para configurar un entorno de recuperación aislado para entornos de cloud o on-premises.
+
+Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Crea un entorno de recuperación aislado para hacer una restauración limpia"^].
+
+
+
+[[google-cloud-netapp-volumes-flex-service-level-generally-available]]
+=== El nivel de servicio Flex de Google Cloud NetApp Volumes ya está disponible de forma general
+
+Ya está disponible de forma general (GA) la compatibilidad con el nivel de servicio Flex de Google Cloud NetApp Volumes en Ransomware Resilience.
+
+
+
 [[16-september-2026]]
 == 16 de septiembre de 2026
 
