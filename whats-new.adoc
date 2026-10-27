@@ -37,7 +37,7 @@ Para obtener más información, consulta link:https://docs.netapp.com/us-en/data
 
 Ransomware Resilience ha mejorado el flujo de trabajo para habilitar la supervisión de la actividad de los usuarios. Antes, Ransomware Resilience comprobaba la conexión del recopilador de datos cada vez que habilitabas una estrategia de protección contra ransomware con supervisión de la actividad de los usuarios en una carga de trabajo. Con esta actualización, esa comprobación ahora se omite si existe un recopilador de datos para la VM de almacenamiento y está en estado "running", lo que agiliza el flujo de trabajo de protección.
 
-Para obtener más información, consulta link:link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["proteger las cargas de trabajo"^].
+Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["proteger las cargas de trabajo"^].
 
 
 
