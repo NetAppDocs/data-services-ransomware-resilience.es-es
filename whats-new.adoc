@@ -905,7 +905,7 @@ Para obtener detalles sobre las acciones que puede realizar cada rol, consulte h
 [[threat-detection-with-splunk-cloud]]
 === Detección de amenazas con Splunk Cloud
 
-Puede enviar datos automáticamente a su sistema de gestión de eventos y seguridad (SIEM) para analizar y detectar amenazas.  Con versiones anteriores, solo podía seleccionar AWS Security Hub como su SIEM.  Con esta versión, puede seleccionar AWS Security Hub o Splunk Cloud como su SIEM.
+Puedes enviar datos automáticamente a tu sistema de gestión de seguridad y eventos (SIEM) para el análisis y la detección de amenazas. En versiones anteriores, solo podías seleccionar AWS Security Hub como tu SIEM. Con esta versión, puedes seleccionar AWS Security Hub o Splunk Cloud como tu SIEM.
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Obtenga más información sobre cómo configurar los ajustes de BlueXP ransomware protection"].
 
@@ -985,7 +985,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 Ahora puede agregar Microsoft Azure como destino de respaldo junto con AWS y NetApp StorageGRID.
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["Obtenga más información sobre cómo configurar los ajustes de protección"].
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["Aprende a configurar los ajustes de protección"].
 
 
 
@@ -1037,7 +1037,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 [[threat-detection]]
 === Detección de amenazas
 
-Ahora es posible habilitar la detección de amenazas mediante un sistema de gestión de eventos y seguridad (SIEM) de terceros.  El Panel de Control ahora muestra una nueva recomendación para "Habilitar detección de amenazas", que se puede configurar en la página de Configuración.
+Ya está disponible la detección de amenazas mediante un sistema de seguridad y gestión de eventos (SIEM) de terceros. Dashboard ahora muestra una nueva recomendación para "Habilitar la detección de amenazas", que puedes configurar en la página Settings.
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Obtenga más información sobre cómo configurar las opciones de Configuración"].
 
@@ -1064,16 +1064,16 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 [[download-csv-files]]
 === Descargar archivos CSV
 
-Puede descargar archivos CSV* desde las páginas Protección, Alertas y Recuperación.
+Puedes descargar archivos CSV desde las páginas Protección, Alertas y Recuperación.
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["Obtenga más información sobre cómo descargar archivos CSV desde el Panel de control y otras páginas"] .
 
 
 
-[[documentation-link]]
-=== Enlace de documentación
+[[documentation-links]]
+=== Enlaces a la documentación
 
-El enlace Ver documentación ahora está incluido en la interfaz de usuario.  Puede acceder a esta documentación desde el Panel de control vertical *Acciones*image:button-actions-vertical.png["Opción Acciones verticales"] opción.  Seleccione *Novedades* para ver los detalles en las Notas de la versión o *Documentación* para ver la página de inicio de la documentación de BlueXP ransomware protection .
+Ya hay enlaces directos a la documentación disponibles en la interfaz de usuario. Puedes acceder a esta documentación desde la opción vertical *Actions* image:button-actions-vertical.png["Opción Acciones verticales"] del Dashboard. Selecciona *What's new* para ver los detalles en Release Notes o *Documentation* para ver la página de inicio de la documentación de protección contra ransomware de BlueXP.
 
 
 
@@ -1129,7 +1129,7 @@ Ahora puede ver más detalles forenses para investigar el posible ataque detecta
 [[recovery-process]]
 === Proceso de recuperación
 
-Se mejoró el proceso de recuperación. Ahora, puede recuperar volumen por volumen o todos los volúmenes para una carga de trabajo. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Obtenga más información sobre cómo recuperarse de un ataque de ransomware (después de que se hayan neutralizado los incidentes)"] .
+Hemos mejorado el proceso de recuperación. Ahora puedes recuperar un volumen cada vez o todos los volúmenes a la vez. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Obtenga más información sobre cómo recuperarse de un ataque de ransomware (después de que se hayan neutralizado los incidentes)"].
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Obtenga más información sobre la BlueXP ransomware protection"] .
 
