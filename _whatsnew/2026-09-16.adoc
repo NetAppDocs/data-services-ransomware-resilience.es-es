@@ -1,11 +1,11 @@
-= Compatibilidad mejorada con las restauraciones limpias
+= Compatibilidad con la restauración limpia ante comportamientos sospechosos de usuarios y ataques de cifrado dirigidos a usuarios concretos
 :allow-uri-read: 
 
 
 
 
-[[enhanced-support-for-clean-restores]]
-=== Compatibilidad mejorada con las restauraciones limpias
+[[clean-restore-support-for-suspicious-user-behavior-and-user-based-encryption-attacks]]
+=== Compatibilidad con la restauración limpia ante comportamientos sospechosos de usuarios y ataques de cifrado dirigidos a usuarios concretos
 
 Ya están disponibles las restauraciones limpias para la recuperación tras comportamientos sospechosos de los usuarios y ataques basados en el cifrado de usuario. Esta mejora se suma a la compatibilidad ya existente con los ataques basados en el cifrado (entropía). Esta capacidad mejorada te permite aprovechar el enfoque guiado de la restauración limpia, identificando los puntos de recuperación óptimos para minimizar la pérdida de datos y acelerar la recuperación.
 
