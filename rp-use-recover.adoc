@@ -21,7 +21,7 @@ Puede restaurar la carga de trabajo seleccionando todos los volúmenes, volúmen
 
 
 
-TIP: La recuperación de la carga de trabajo puede afectar las cargas de trabajo en ejecución.  Debe coordinar los procesos de recuperación con las partes interesadas adecuadas.
+TIP: La recuperación de cargas de trabajo puede afectar a las cargas de trabajo en ejecución. Coordina los procesos de recuperación con las partes interesadas pertinentes.
 
 Una carga de trabajo puede tener uno de los siguientes estados de restauración:
 

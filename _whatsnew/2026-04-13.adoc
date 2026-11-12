@@ -7,7 +7,7 @@
 [[clean-restore]]
 === Restauración limpia
 
-Ransomware Resilience ahora es compatible con las restauraciones limpias, una nueva opción de recuperación que te ayuda a recuperarte rápida y fácilmente de los ataques de ransomware. Las restauraciones limpias ofrecen flujos de trabajo guiados que identifican los puntos de restauración óptimos para que tus cargas de trabajo vuelvan a funcionar mientras se minimiza el tiempo de inactividad. Los flujos de trabajo de la restauración limpia también proporcionan información a nivel de archivos sobre tus datos, asegurando que puedas restaurar cargas de trabajo libres de malware que evitan la reinfección y minimizan la pérdida de datos.
+Ransomware Resilience ahora admite las restauraciones limpias, una nueva opción de recuperación que te ayuda a recuperarte rápida y fácilmente de ataques de ransomware. Las restauraciones limpias ofrecen flujos de trabajo guiados que identifican los puntos de restauración óptimos para que tus cargas de trabajo vuelvan a estar en funcionamiento y minimizan el tiempo de inactividad. Los flujos de trabajo de la restauración limpia también te proporcionan información a nivel de archivo sobre tus datos, lo que garantiza que puedas restaurar cargas de trabajo sin malware para evitar una reinfección y minimizar la pérdida de datos.
 
 Para obtener información sobre las configuraciones compatibles y cómo configurar tu sistema para una restauración limpia, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Crear un entorno de recuperación aislado"^]. Para aprender cómo recuperar con una restauración limpia, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["Recupera cargas de trabajo con una restauración limpia"^].
 
@@ -16,7 +16,7 @@ Para obtener información sobre las configuraciones compatibles y cómo configur
 [[siem-support-for-splunk-enterprise]]
 === Soporte SIEM para Splunk Enterprise
 
-Ransomware Resilience ahora proporciona soporte de gestión de eventos de información de seguridad (SIEM) para Splunk Enterprise, lo que te permite centralizar los datos de registros y eventos y agilizar el análisis y la detección de amenazas.
+Ransomware Resilience ofrece ahora compatibilidad con la gestión de información y eventos de seguridad (SIEM) para Splunk Enterprise, lo que te permite centralizar los datos de registro y eventos y optimizar el análisis y la detección de amenazas.
 
 Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-splunk.html["Configura un SIEM de Splunk"^].
 

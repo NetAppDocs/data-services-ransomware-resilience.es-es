@@ -40,7 +40,7 @@ Para obtener más información, consulta link:https://docs.netapp.com/us-en/data
 [[enhanced-isolated-recovery-environment-configuration]]
 === Configuración mejorada del entorno de recuperación aislado
 
-Ransomware Resilience ahora proporciona un flujo de trabajo mejorado para la configuración de entornos de recuperación aislados. El nuevo flujo de trabajo aclara y simplifica el proceso para configurar un entorno de recuperación aislado para entornos de cloud o on-premises.
+Ransomware Resilience ofrece ahora un flujo de trabajo mejorado para la configuración de entornos de recuperación aislados. El nuevo flujo de trabajo aclara y simplifica el proceso de configuración de un entorno de recuperación aislado para entornos en la nube o locales.
 
 Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Crea un entorno de recuperación aislado para hacer una restauración limpia"^].
 
@@ -49,7 +49,7 @@ Para obtener más información, consulta link:https://docs.netapp.com/us-en/data
 [[improved-workflow-for-enabling-user-activity-monitoring]]
 === Flujo de trabajo mejorado para habilitar la supervisión de la actividad de los usuarios
 
-Ransomware Resilience ha mejorado el flujo de trabajo para habilitar la supervisión de la actividad de los usuarios. Antes, Ransomware Resilience comprobaba la conexión del recopilador de datos cada vez que habilitabas una estrategia de protección contra ransomware con supervisión de la actividad de los usuarios en una carga de trabajo. Con esta actualización, esa comprobación ahora se omite si existe un recopilador de datos para la VM de almacenamiento y está en estado "running", lo que agiliza el flujo de trabajo de protección.
+Ransomware Resilience ha mejorado el flujo de trabajo para habilitar la supervisión de la actividad de los usuarios. Anteriormente, Ransomware Resilience comprobaba la conexión del recopilador de datos cada vez que habilitabas una estrategia de protección contra el ransomware con supervisión de la actividad de los usuarios en una carga de trabajo. Con esta actualización, Ransomware Resilience ahora omite esa comprobación si existe un recopilador de datos para la máquina virtual de almacenamiento y está en estado "running", lo que acelera el flujo de trabajo de protección.
 
 Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["proteger las cargas de trabajo"^].
 
@@ -283,7 +283,7 @@ Para obtener más información, consulta link:https://docs.netapp.com/us-en/data
 
 La restauración limpia ahora admite informes. Con los informes, puedes revisar y evaluar las restauraciones limpias, guardando esta información sin conexión como un archivo CSV.
 
-La restauración limpia también permite ahora detener el análisis. Si detienes el análisis, debes iniciar de nuevo la restauración limpia.
+Ahora, la restauración limpia también permite detener el análisis. Si detienes el análisis, deberás volver a iniciar la restauración limpia.
 
 Para saber más sobre informes, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["Descargar informes de Ransomware Resilience"^]. Para saber más sobre recuperación, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["Recupera cargas de trabajo con una restauración limpia"^].
 
@@ -338,7 +338,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference
 [[clean-restore]]
 === Restauración limpia
 
-Ransomware Resilience ahora es compatible con las restauraciones limpias, una nueva opción de recuperación que te ayuda a recuperarte rápida y fácilmente de los ataques de ransomware. Las restauraciones limpias ofrecen flujos de trabajo guiados que identifican los puntos de restauración óptimos para que tus cargas de trabajo vuelvan a funcionar mientras se minimiza el tiempo de inactividad. Los flujos de trabajo de la restauración limpia también proporcionan información a nivel de archivos sobre tus datos, asegurando que puedas restaurar cargas de trabajo libres de malware que evitan la reinfección y minimizan la pérdida de datos.
+Ransomware Resilience ahora admite las restauraciones limpias, una nueva opción de recuperación que te ayuda a recuperarte rápida y fácilmente de ataques de ransomware. Las restauraciones limpias ofrecen flujos de trabajo guiados que identifican los puntos de restauración óptimos para que tus cargas de trabajo vuelvan a estar en funcionamiento y minimizan el tiempo de inactividad. Los flujos de trabajo de la restauración limpia también te proporcionan información a nivel de archivo sobre tus datos, lo que garantiza que puedas restaurar cargas de trabajo sin malware para evitar una reinfección y minimizar la pérdida de datos.
 
 Para obtener información sobre las configuraciones compatibles y cómo configurar tu sistema para una restauración limpia, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Crear un entorno de recuperación aislado"^]. Para aprender cómo recuperar con una restauración limpia, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["Recupera cargas de trabajo con una restauración limpia"^].
 
@@ -347,7 +347,7 @@ Para obtener información sobre las configuraciones compatibles y cómo configur
 [[siem-support-for-splunk-enterprise]]
 === Soporte SIEM para Splunk Enterprise
 
-Ransomware Resilience ahora proporciona soporte de gestión de eventos de información de seguridad (SIEM) para Splunk Enterprise, lo que te permite centralizar los datos de registros y eventos y agilizar el análisis y la detección de amenazas.
+Ransomware Resilience ofrece ahora compatibilidad con la gestión de información y eventos de seguridad (SIEM) para Splunk Enterprise, lo que te permite centralizar los datos de registro y eventos y optimizar el análisis y la detección de amenazas.
 
 Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-splunk.html["Configura un SIEM de Splunk"^].
 

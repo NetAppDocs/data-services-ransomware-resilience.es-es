@@ -12,7 +12,7 @@ summary: Empieza con NetApp Ransomware Resilience en unos pocos pasos.
 
 
 [role="lead"]
-Utiliza esta guía de inicio rápido para configurar NetApp Ransomware Resilience, descubrir cargas de trabajo y configurar la protección.
+Configura NetApp Ransomware Resilience, descubre las cargas de trabajo y configura la protección para defenderlas frente a ataques de ransomware.
 
 Siga los enlaces en cada paso para obtener información detallada.
 
@@ -21,8 +21,8 @@ Siga los enlaces en cada paso para obtener información detallada.
 Necesitas el rol de _Super admin_ o _Organization admin_ para implementar un agente de Console y asignar permisos.
 
 [role="quick-margin-list"]
-* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation["Asegúrese de haber instalado un agente de consola"^]
-* link:rp-start-prerequisites.html["Asegúrese de que su sistema cumpla con los requisitos"]
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation["Comprueba que has instalado un agente de NetApp Console"^]
+* link:rp-start-prerequisites.html["Comprueba que tu sistema cumple los requisitos"]
 +
 ** Consulta los requisitos de link:reference-user-activity-requirements.html["detección de comportamientos sospechosos de los usuarios"] y link:task-clean-restore.html["restauraciones limpias"].
 

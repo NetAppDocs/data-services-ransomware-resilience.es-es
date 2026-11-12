@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-custom-restore.html 
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
-summary: 'Después de un ataque, NetApp Ransomware Resilience verifica que los datos de respaldo en el almacenamiento secundario estén limpios, recomienda un punto de recuperación real (RPA) y organiza el flujo de trabajo para una recuperación resistente a fallas.' 
+summary: Recupera las cargas de trabajo tras un ataque de ransomware utilizando el punto de restauración recomendado o el que prefieras, ya sea a nivel de volumen, de archivo o de máquina virtual, sin necesidad de limpiar primero los archivos. 
 ---
-= Recupérate de un ataque de ransomware con una restauración personalizada en NetApp Ransomware Resilience
+= Recupera cargas de trabajo con una restauración personalizada en NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 'Después de un ataque, NetApp Ransomware Resilience verifica que los d
 
 
 [role="lead"]
-Con Ransomware Resilience, los administradores de almacenamiento pueden determinar la mejor forma de restaurar las cargas de trabajo, ya sea desde el punto de restauración recomendado o desde el punto de restauración preferido.
+Recupera tus cargas de trabajo tras un ataque de ransomware mediante una restauración personalizada en NetApp Ransomware Resilience. Selecciona el punto de restauración recomendado o el que prefieras para restaurar los datos sin necesidad de limpiar primero los archivos.
 
 
 TIP: Ransomware Resilience también es compatible con xref:task-clean-restore.html[opción de restauración limpia], que proporciona recuperación guiada y funciones avanzadas para garantizar que solo se recuperen datos limpios y sin cifrar.
@@ -27,7 +27,7 @@ TIP: Ransomware Resilience también es compatible con xref:task-clean-restore.ht
 El administrador de almacenamiento de seguridad puede recuperar datos en diferentes niveles:
 
 * Recuperar todos los volúmenes
-* Recupera un recurso compartido de archivos a nivel de volumen, directorio o archivo.
+* Recuperar un recurso compartido de archivos a nivel de volumen, directorio o archivo.
 * Recuperarse de un almacén de datos a nivel de VM.
 
 
@@ -143,7 +143,7 @@ TIP: El nuevo nombre del volumen aparece como el nombre del volumen original + e
 [[restore-a-workload-at-the-file-level]]
 === Restaurar una carga de trabajo a nivel de archivo
 
-Antes de restaurar una carga de trabajo a nivel de archivo, puedes ver una lista de los archivos afectados. Puedes acceder a la página Alertas para descargar una lista de los archivos afectados. Luego usa la página Recuperación para cargar la lista y elegir qué archivos restaurar.
+Antes de restaurar una carga de trabajo a nivel de archivo, puedes descargar una lista de los archivos afectados desde la página «Alerts». Usa la página «Recovery» para cargar la lista y elegir qué archivos restaurar.
 
 Puedes restaurar una carga de trabajo a nivel de archivo en el mismo sistema o en uno diferente.
 
@@ -198,7 +198,7 @@ image:screen-recovery-app-by-file-select-files.png["Seleccionar archivos manualm
 
 +
 
-NOTE: Si no se puede restaurar algún archivo utilizando el punto de restauración seleccionado, aparece un mensaje que indica la cantidad de archivos que no se pueden restaurar y le permite descargar la lista de esos archivos seleccionando *Descargar lista de archivos afectados*.
+NOTE: Si no se pueden restaurar algunos archivos con el punto de restauración seleccionado, aparecerá un mensaje indicando cuántos archivos no se pueden restaurar. Para descargar la lista de esos archivos, selecciona *Descargar lista de archivos afectados*.
 
 
 
@@ -207,7 +207,7 @@ NOTE: Si no se puede restaurar algún archivo utilizando el punto de restauraci�
 .. Elija dónde restaurar los datos: la ubicación de origen original o una ubicación alternativa que pueda especificar.
 +
 
-TIP: Aunque los archivos o directorios originales se sobrescribirán con los datos restaurados, los nombres de archivos y carpetas originales permanecerán iguales a menos que especifique nombres nuevos.
+TIP: Los datos restaurados sobrescriben los archivos o el directorio originales, pero los nombres originales de los archivos y las carpetas siguen siendo los mismos, a menos que especifiques nombres nuevos.
 
 .. Seleccione el sistema.
 .. Seleccione la máquina virtual de almacenamiento.
@@ -216,7 +216,7 @@ TIP: Aunque los archivos o directorios originales se sobrescribirán con los dat
 
 TIP: Si no especifica una ruta para la restauración, los archivos se restaurarán a un nuevo volumen en el directorio de nivel superior.
 
-.. Seleccione si desea que los nombres de los archivos o directorios restaurados sean los mismos que los de la ubicación actual o nombres diferentes.
+.. Elige si deseas conservar los nombres actuales o utilizar otros nombres para los archivos o el directorio restaurados.
 
 
 . Seleccione *Siguiente*.
@@ -271,7 +271,7 @@ TIP: Si no especifica una ruta para la restauración, los archivos se restaurar�
 [[restore-a-vm-file-share-at-the-vm-level]]
 === Restaurar un recurso compartido de archivos de VM en el nivel de VM
 
-En la página Recuperación, después de seleccionar una máquina virtual para restaurar, continúe con estos pasos.
+En la página de recuperación, una vez que selecciones una VM para restaurar, sigue estos pasos.
 
 . *Fuente*: Seleccione la flecha hacia abajo junto a Fuente para ver los detalles.
 +

@@ -7,7 +7,7 @@
 [[enhanced-isolated-recovery-environment-configuration]]
 === Configuración mejorada del entorno de recuperación aislado
 
-Ransomware Resilience ahora proporciona un flujo de trabajo mejorado para la configuración de entornos de recuperación aislados. El nuevo flujo de trabajo aclara y simplifica el proceso para configurar un entorno de recuperación aislado para entornos de cloud o on-premises.
+Ransomware Resilience ofrece ahora un flujo de trabajo mejorado para la configuración de entornos de recuperación aislados. El nuevo flujo de trabajo aclara y simplifica el proceso de configuración de un entorno de recuperación aislado para entornos en la nube o locales.
 
 Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Crea un entorno de recuperación aislado para hacer una restauración limpia"^].
 
@@ -16,7 +16,7 @@ Para obtener más información, consulta link:https://docs.netapp.com/us-en/data
 [[improved-workflow-for-enabling-user-activity-monitoring]]
 === Flujo de trabajo mejorado para habilitar la supervisión de la actividad de los usuarios
 
-Ransomware Resilience ha mejorado el flujo de trabajo para habilitar la supervisión de la actividad de los usuarios. Antes, Ransomware Resilience comprobaba la conexión del recopilador de datos cada vez que habilitabas una estrategia de protección contra ransomware con supervisión de la actividad de los usuarios en una carga de trabajo. Con esta actualización, esa comprobación ahora se omite si existe un recopilador de datos para la VM de almacenamiento y está en estado "running", lo que agiliza el flujo de trabajo de protección.
+Ransomware Resilience ha mejorado el flujo de trabajo para habilitar la supervisión de la actividad de los usuarios. Anteriormente, Ransomware Resilience comprobaba la conexión del recopilador de datos cada vez que habilitabas una estrategia de protección contra el ransomware con supervisión de la actividad de los usuarios en una carga de trabajo. Con esta actualización, Ransomware Resilience ahora omite esa comprobación si existe un recopilador de datos para la máquina virtual de almacenamiento y está en estado "running", lo que acelera el flujo de trabajo de protección.
 
 Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["proteger las cargas de trabajo"^].
 

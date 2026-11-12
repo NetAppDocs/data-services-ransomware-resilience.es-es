@@ -18,6 +18,6 @@ Para obtener más información, consulta link:https://docs.netapp.com/us-en/data
 
 La restauración limpia ahora admite informes. Con los informes, puedes revisar y evaluar las restauraciones limpias, guardando esta información sin conexión como un archivo CSV.
 
-La restauración limpia también permite ahora detener el análisis. Si detienes el análisis, debes iniciar de nuevo la restauración limpia.
+Ahora, la restauración limpia también permite detener el análisis. Si detienes el análisis, deberás volver a iniciar la restauración limpia.
 
 Para saber más sobre informes, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["Descargar informes de Ransomware Resilience"^]. Para saber más sobre recuperación, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["Recupera cargas de trabajo con una restauración limpia"^].

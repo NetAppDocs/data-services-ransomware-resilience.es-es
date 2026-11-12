@@ -24,7 +24,7 @@ TIP: Antes de descargar los archivos, actualice el panel para capturar los datos
 * **Resumen**: Incluye listas de cargas de trabajo admitidas y no admitidas, acciones recomendadas para mejorar su postura de resiliencia cibernética e información capturada en el panel de resiliencia ante ransomware.
 * *Protección*: Incluye el estado y los detalles de todas las cargas de trabajo, incluido el número total de cargas protegidas y en riesgo.
 * *Alertas*: Incluye el estado y los detalles de todas las alertas, incluido el número total de alertas e instantáneas automatizadas.
-* *Recuperación*: incluye el estado y los detalles de todas las cargas de trabajo que necesitan restaurarse, incluido el número total de cargas de trabajo marcadas como "Restauración necesaria", "En progreso", "Restauración fallida" y "Restaurada exitosamente".
+* *Recuperación*: incluye el estado y los detalles de todas las cargas de trabajo que deben restaurarse, incluido el número total de cargas de trabajo marcadas como «Se necesita restauración», «En curso», «Error en la restauración» y «Restaurada correctamente».
 * *Simulacros de preparación*: Incluye resultados de ataques simulados para resaltar áreas de mejora.
 * *Cambios en la protección*: Incluye una revisión de los cambios en las estrategias de protección de las cargas de trabajo durante un periodo de tiempo determinado: 30 días, 60 días, 90 días o 1 año.
 * *Restauración limpia*: Incluye detalles sobre las cargas de trabajo restauradas con restauración limpia.
