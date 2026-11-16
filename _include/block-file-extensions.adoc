@@ -1,0 +1,7 @@
+= 
+:allow-uri-read: 
+
+
+La opción «Bloquear extensiones de archivo sospechosas» utiliza la lista predeterminada que has configurado para la organización. Para link:task-file-extensions.html["utiliza una lista personalizada"] que has creado, selecciona el icono del lápiz.
+
++ Si has configurado listas de extensiones de archivo bloqueadas en ONTAP, puedes anular esas listas seleccionando *Sustituir las listas de ONTAP por las listas de Ransomware Resilience*. A continuación, elige si quieres que la SVM *Permita todas las extensiones de archivo excepto las de la lista bloqueada* o *Bloquee todas las extensiones de archivo excepto las de la lista permitida*. A continuación, selecciona la lista en el menú desplegable. Todas las máquinas virtuales de almacenamiento (SVM) de la carga de trabajo usarán esa lista; más adelante, puedes aplicar listas diferentes a distintas SVM de la carga de trabajo.

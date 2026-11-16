@@ -1,0 +1,151 @@
+---
+sidebar: sidebar 
+permalink: task-file-extensions.html 
+keywords: ransomware protection recovery, file list, allowlist, blocked, extensions, fpolicy, file extensions 
+summary: Configura listas de extensiones de archivo compatibles o bloqueadas en NetApp Ransomware Resilience para personalizar tu perfil de protección. 
+---
+= Gestiona las extensiones de archivo bloqueadas o permitidas en NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience permite configurar una estrategia de protección que bloquea extensiones de archivo sospechosas. Ransomware Resilience proporciona una lista predeterminada de extensiones de archivo sospechosas conocidas para bloquear y prevenir ataques de ransomware. Puedes personalizar la lista de extensiones de archivo, añadiendo o eliminando entradas según sea necesario.
+
+Cuando configuras la protección con el bloqueo de extensiones de archivo sospechosas, esta se establece a nivel de carga de trabajo. Sin embargo, puedes personalizar qué extensiones de archivo se bloquean a nivel de máquina virtual de almacenamiento (SVM), lo que significa que diferentes SVM de la misma carga de trabajo pueden usar listas distintas.
+
+
+
+[[how-file-extension-blocking-works]]
+== Cómo funciona el bloqueo de extensiones de archivo
+
+Existen dos formas de configurar las listas de extensiones de archivo:
+
+* *Bloquear extensiones de archivo* - todas las extensiones de archivo incluidas en la lista se bloquearán y se marcarán como amenazas de ransomware.
+* *Permitir extensiones de archivo* - Solo se permiten los archivos con extensiones de esta lista. Cualquier archivo con una extensión que no figure en la lista se bloquea y se considera una amenaza de ransomware.
+
+
+
+
+[[file-extension-blocking-from-ontap]]
+=== Bloqueo de extensiones de archivo desde ONTAP
+
+Si has configurado en ONTAP el bloqueo de determinadas extensiones de archivo, Ransomware Resilience reconoce esa configuración. Si configuras link:rp-use-protect.html["configurar la protección"] en Ransomware Resilience para bloquear extensiones de archivo sospechosas, Ransomware Resilience pasará a usar una lista predeterminada más selectiva de extensiones de archivo, a menos que hayas configurado un valor predeterminado diferente.
+
+
+
+[[default-file-extensions]]
+=== Extensiones de archivo predeterminadas
+
+Ransomware Resilience proporciona una lista predeterminada de extensiones de archivo bloqueadas llamada «NetApp». De forma predeterminada, todas las cargas de trabajo habilitadas para _bloquear_ extensiones de archivo sospechosas utilizan esta lista, que contiene más de 3.900 extensiones de archivo maliciosas conocidas. Puedes modificar esta lista o copiarla para usarla como base de una lista personalizada.
+
+Puedes configurar una lista diferente como predeterminada. Después de configurar una lista como predeterminada, todas las cargas de trabajo que habilites posteriormente para el bloqueo de archivos usarán esa lista, a menos que selecciones manualmente otra lista.
+
+
+
+[[create-a-file-extensions-list]]
+== Crear una lista de extensiones de archivo
+
+.Pasos
+. En Ransomware Resilience, seleccione **Configuración**.
+. En el apartado «Extensiones de archivo», selecciona **Gestionar**.
+. Seleccione **Agregar**.
+. Introduce un *Nombre* para la lista.
+. Selecciona cómo debe funcionar la lista:
++
+** Selecciona *Bloquear extensiones* para marcar automáticamente cualquier extensión de archivo de la lista como una amenaza de ransomware.
+** Selecciona *Permitir extensiones* para autorizar únicamente las solicitudes de las extensiones de archivo que figuran en la lista.
+
+
+. Elige cómo quieres crear la lista:
++
+** Selecciona la pestaña *Copiar lista* para crear a partir de una lista existente.
++
+Revisa la lista de extensiones de archivo. Selecciona la "X" junto al tipo de extensión de archivo para eliminar extensiones. Selecciona *+ Add to list* para añadir extensiones adicionales; esta selección te lleva a la pestaña *Enter manually*.
+
+** Selecciona la pestaña *Upload* para añadir una lista de extensiones de archivo desde un archivo CSV.
++
+Selecciona *Subir* y luego elige un archivo CSV que incluya la lista de extensiones de archivo que quieres bloquear o permitir.
+
+** Selecciona *Introducir manualmente* para escribir en la lista. Introduce la lista como un conjunto de valores separados por comas, por ejemplo "vvv, xyz, zzz".
+
+
+. Revisa la lista de extensiones de archivo y luego selecciona *Add* para crear la nueva lista.
++
+image:blocked-file-extensions.png["Captura de pantalla de las extensiones de archivo bloqueadas."]
+
+
+
+
+
+[[apply-a-file-extension-list-to-an-svm]]
+[[svm]]
+== Aplicar una lista de extensiones de archivo a una SVM
+
+Al asignar una estrategia de protección contra el ransomware con la política para bloquear extensiones de archivo sospechosas, puedes designar una lista específica de extensiones de archivo para toda la carga de trabajo. Después de aplicar la política de protección, puedes aplicar listas diferentes a distintos SVMs.
+
+La carga de trabajo debe incluir una política de detección que bloquee las extensiones de archivo sospechosas antes de que puedas realizar esta tarea. Aprende a link:rp-use-protect.html["configurar una estrategia de protección contra el ransomware"]. Solo puedes asignar una lista de extensiones de archivo a cada SVM.
+
+.Pasos
+. En Ransomware Resilience, seleccione **Configuración**.
+. En el apartado «Extensiones de archivo», selecciona **Gestionar**.
+. Selecciona la pestaña *Storage VM*.
+. Revisa la lista de SVM con las protecciones de bloqueo de extensiones de archivo sospechosas activadas. Puedes ver qué SVM utiliza cada lista. Para cambiar la lista, selecciona *Cambiar lista*.
+. En el cuadro de diálogo, selecciona la nueva lista en el menú desplegable y luego selecciona *Guardar*.
+
+
+
+
+[[manage-file-extension-lists]]
+== Gestionar listas de extensiones de archivo
+
+Puedes modificar el contenido de la lista de extensiones de archivo en cualquier momento. Puedes eliminar una lista o establecer una como predeterminada para cuando actives el bloqueo de archivos sospechosos.
+
+.Modificar una lista de extensiones de archivo
+. En Ransomware Resilience, seleccione **Configuración**.
+. En el apartado «Extensiones de archivo», selecciona **Gestionar**.
+. Selecciona la lista de extensiones de archivo que deseas modificar.
+. Para añadir extensiones de archivo a la lista, selecciona el menú de acciones y, a continuación, *Add file extensions*.
++
+.. Selecciona la pestaña correspondiente al método que quieres utilizar para modificar la lista. Selecciona *Copiar lista* para importar una lista existente; selecciona *Cargar* para importar extensiones de archivo desde un archivo CSV; selecciona *Introducir manualmente* para introducir manualmente las extensiones de archivo.
+.. Selecciona *Add* para guardar los cambios.
+
+
+. Para eliminar las extensiones de archivo, en el menú Extensiones de archivo, selecciona el nombre de la lista que quieras modificar.
++
+.. En la lista de extensiones de archivo, marca la casilla situada junto a cada extensión de archivo que quieras eliminar. En la parte superior de la lista, selecciona **Eliminar**.
++
+También puedes seleccionar el menú de acciones al final de la fila de la extensión de archivo individual que quieras eliminar y luego *Eliminar*.
+
+
+
+. Selecciona *Guardar* para modificar la lista.
+
+
+.Configura una lista de extensiones de archivo como predeterminada
+. En Ransomware Resilience, seleccione **Configuración**.
+. En el apartado «Extensiones de archivo», selecciona **Gestionar**.
+. Selecciona el menú de acciones de la lista que quieras establecer como predeterminada y luego *Marcar como lista predeterminada*.
+. A continuación, la lista se marca como predeterminada. Las cargas de trabajo protegidas con la lista de extensiones de archivo bloqueadas que no se hayan marcado con una lista específica bloquearán o permitirán las extensiones de archivo según la nueva configuración predeterminada.
+
+
+.Eliminar una lista de extensiones de archivo
+No puedes eliminar una lista que esté aplicada a una SVM. Primero debes <<svm,modificar la lista asociada a la SVM>>.
+
+No puedes eliminar la lista NetApp.
+
+. En Ransomware Resilience, seleccione **Configuración**.
+. En el apartado «Extensiones de archivo», selecciona **Gestionar**.
+. Selecciona el menú de acciones de la lista que quieras eliminar y luego *Delete list*.
+. Confirma la eliminación en el cuadro de diálogo.
+
+
+
+
+[[more-information]]
+== Más información
+
+* link:rp-use-protect.html["Configura una estrategia de protección contra el ransomware"]
+

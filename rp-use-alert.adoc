@@ -120,6 +120,10 @@ Puedes acceder a las alertas desde el panel de Ransomware Resilience o desde la 
 . En el panel de Ransomware Resilience, revisa el panel de Alertas.
 . Seleccione *Ver todo* en uno de los estados.
 . Seleccione una alerta para revisar todos los incidentes en cada volumen para cada alerta.
++
+
+TIP: Si la alerta se activó por una extensión de archivo sospechosa, puedes evitar que ese tipo de archivo se vuelva a permitir en la VM de almacenamiento. En la alerta, selecciona *Eliminar extensiones de la lista de permitidos* link:task-file-extensions.html["para modificar la lista de extensiones de archivo permitidas"].
+
 . Para revisar alertas adicionales, seleccione *Alerta* en las rutas de navegación de la parte superior izquierda.
 . Revise las alertas en la página Alertas.
 +

@@ -104,6 +104,7 @@ NOTE: Realizar una restauración limpia en un entorno basado en cloud puede incu
 
 
 * Cuando inicias una restauración limpia, se desmonta el volumen original, lo que puede interrumpir el acceso IO.
+* Actualmente, la restauración limpia no es compatible con las cargas de trabajo de MetroCluster ni con las de SAN.
 
 
 

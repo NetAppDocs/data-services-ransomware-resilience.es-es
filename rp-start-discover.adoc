@@ -25,6 +25,18 @@ Ransomware Resilience comprueba tu protección actual de copias de seguridad, co
 
 
 
+[[metrocluster-discovery]]
+== Detección de MetroCluster
+
+Ransomware Resilience carga automáticamente las configuraciones de MetroCluster para la detección. Debes haber añadido ambos sistemas del par MetroCluster a NetApp Console para realizar la detección correctamente.
+
+Si ambos sistemas del par MetroCluster se han añadido correctamente a la organización de NetApp Console, ambos sistemas serán visibles en la selección de detección. Solo tienes que seleccionar un sistema para la detección; el par reflejado se añadirá automáticamente.
+
+
+TIP: Los sistemas MetroCluster aparecen marcados con un **+1** en el panel de control de Discovery. Pasa el cursor por encima del **+1** para ver todos los sistemas del par.
+
+
+
 [[select-workloads-to-discover]]
 == Selecciona las cargas de trabajo para descubrir
 

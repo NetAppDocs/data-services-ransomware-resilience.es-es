@@ -18,6 +18,36 @@ Descubra las novedades en NetApp Ransomware Resilience.
 
 
 
+[[16-november-2026]]
+== 16 noviembre 2026
+
+
+
+[[metrocluster-support]]
+=== MetroCluster soporte
+
+Ransomware Resilience ahora es compatible con MetroCluster, lo que permite la protección, la detección y la recuperación frente al ransomware para configuraciones reflejadas de MetroCluster. Al habilitar la protección frente al ransomware en configuraciones de MetroCluster, ambos sistemas del par de MetroCluster deben añadirse a la NetApp Console. Cuando descubres y habilitas la protección en un lado del par, se habilita automáticamente en el otro lado.
+
+Al recuperar una carga de trabajo de MetroCluster tras un ataque de ransomware, actualmente solo es posible utilizar una restauración personalizada.
+
+Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html#metrocluster-discovery["Detección de MetroCluster"].
+
+
+
+[[09-november-2026]]
+== 09 noviembre 2026
+
+
+
+[[managed-blocked-file-extensions]]
+=== Extensiones de archivo bloqueadas administradas
+
+Ransomware Resilience ahora te permite personalizar la lista de extensiones de archivo permitidas o bloqueadas en una carga de trabajo cuando has habilitado la opción de protección *Bloquear extensiones de archivo sospechosas*. Con esta mejora, puedes configurar la carga de trabajo para que solo permita tipos de archivo específicos en la VM de almacenamiento (SVM) o para bloquear extensiones de archivo específicas. Si migras una carga de trabajo existente con FPolicy para bloquear extensiones de archivo sospechosas con Ransomware Resilience, de forma predeterminada usa una lista de extensiones más depurada, aunque puedes personalizarla. Esta mejora admite un control más detallado sobre la opción de extensiones de archivo y también te permite crear listas diferentes para distintas SVM.
+
+Para obtener más información, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-file-extensions.html["Gestionar las extensiones de archivo bloqueadas en Ransomware Resilience"].
+
+
+
 [[26-october-2026]]
 == 26 de octubre de 2026
 
