@@ -54,7 +54,6 @@ También puedes consultar el historial de los archivos en el paso de planificaci
 
 * Sólo puedes crear una IRE por cuenta de Ransomware Resilience. Cada IRE puede tener tres salas limpias.
 * Actualmente, la restauración limpia solo es compatible con archivos compartidos NAS (NFS/CIFS).
-* Con una restauración limpia, solo puedes restaurar en el entorno de origen.
 * Puedes crear una IRE en la nube o en las instalaciones. Actualmente, se admiten las siguientes configuraciones:
 +
 |===
