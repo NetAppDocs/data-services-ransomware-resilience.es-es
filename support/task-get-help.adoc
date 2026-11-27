@@ -7,7 +7,7 @@ summary: 'NetApp ofrece soporte para Ransomware Resilience de diversas formas. H
 = Obtén ayuda para Ransomware Resilience
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: https://docs.netapp.com/us-en/console-family/media/
 
 
 [role="lead"]
@@ -87,7 +87,7 @@ Los archivos adjuntos están limitados a 25 MB por archivo. Se admiten las sigui
 
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/console-family/main/media/screenshot-create-case.png["Una captura de pantalla del formulario Crear un caso que le permite crear un caso con el soporte de NetApp ."]
+image:screenshot-create-case.png["Una captura de pantalla del formulario Crear un caso que le permite crear un caso con el soporte de NetApp ."]
 
 
 
@@ -141,10 +141,10 @@ La página *Administración de casos* muestra los casos abiertos relacionados co
 ** En *Casos de la organización*, seleccione *Ver* para ver todos los casos asociados a su empresa.
 ** Modifique el rango de fechas eligiendo un rango de fechas exacto o eligiendo un período de tiempo diferente.
 ** Filtrar el contenido de las columnas.
-** Cambie las columnas que aparecen en la tabla seleccionandoimage:https://raw.githubusercontent.com/NetAppDocs/console-family/main/media/icon-table-columns.png["El icono más que aparece en la tabla"] y luego elegir las columnas que desea mostrar.
+** Cambia las columnas que aparecen en la tabla seleccionando image:icon-table-columns.png["El icono más que aparece en la tabla"] y luego elige las columnas que te gustaría mostrar.
 
 
-. Gestionar un caso existente seleccionandoimage:https://raw.githubusercontent.com/NetAppDocs/console-family/main/media/icon-table-action.png["Un icono con tres puntos que aparece en la última columna de la tabla."] y seleccionando una de las opciones disponibles:
+. Gestiona un caso existente seleccionando image:icon-table-action.png["Un icono con tres puntos que aparece en la última columna de la tabla."] y eligiendo una de las opciones disponibles:
 +
 ** *Ver caso*: Ver detalles completos sobre un caso específico.
 ** *Actualizar notas del caso*: proporcione detalles adicionales sobre su problema o seleccione *Cargar archivos* para adjuntar hasta un máximo de cinco archivos.
